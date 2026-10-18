@@ -59,3 +59,15 @@ def test_every_beat_is_a_real_decision():
 def test_groups_cover_the_plan():
     groups = {s.group for s in load_scenarios(ROOT / "scenarios.yaml")}
     assert {"speaks", "quiet", "bad-data", "per-person"} <= groups
+
+
+def test_capabilities_page_links_every_capability_to_a_scenario():
+    from watch_demo.capabilities import CAPABILITIES
+
+    scenarios = load_scenarios(ROOT / "scenarios.yaml")
+    client = TestClient(create_app(FixtureAgentClient(ROOT / "fixtures"), scenarios))
+    html = client.get("/capabilities").text
+    for cap in CAPABILITIES.values():
+        assert cap.label in html
+    unshown = [k for k in CAPABILITIES if not any(k in s.shows for s in scenarios)]
+    assert unshown == ["budget"], unshown  # the 90-day replay never hit the daily budget

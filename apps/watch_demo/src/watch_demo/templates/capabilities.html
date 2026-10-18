@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>What it can do · Air quality agent (watch demo)</title>
+  <link rel="stylesheet" href="{{ url_for('static', path='watch.css') }}">
+</head>
+<body>
+  <header class="masthead">
+    <span class="brand">Air quality agent · what it can do</span>
+    <span class="promise"><a href="/">Back to the watch</a></span>
+  </header>
+  <section class="story">
+    <h1 class="story-title">Every capability, and where to see it</h1>
+    <p class="story-lead">Each row is something the agent does, the part of the brief it answers, and the real
+      replayed moments that show it. Each link opens the scenario at its first beat.</p>
+  </section>
+  <table class="caps">
+    <thead><tr><th>Capability</th><th>Brief</th><th>What it does</th><th>See it in</th></tr></thead>
+    <tbody>
+      {% for r in rows %}
+        <tr id="{{ r.cap.label | replace(' ', '-') }}">
+          <td>{{ r.cap.label }}</td>
+          <td class="brief">{{ r.cap.brief }}</td>
+          <td class="what">{{ r.cap.what }}</td>
+          <td>
+            {% for s in r.scenarios %}<a class="chip" href="/?scenario={{ s.id }}">{{ s.label }}</a>{% endfor %}
+            {% if not r.scenarios %}<span class="none">not in these scenarios</span>{% endif %}
+          </td>
+        </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+  <footer class="frame-notes"><p class="caption">data: replay of real OpenAQ data · demo only</p></footer>
+</body>
+</html>

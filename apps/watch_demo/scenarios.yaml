@@ -269,3 +269,120 @@ scenarios:
   - at: '2026-09-23T04:20:00Z'
     title: Closed quietly
     note: 'A day without data: the story ends, no message.'
+- id: too-soon
+  label: Too soon to repeat
+  user_id: arjun
+  replay_run: too-soon
+  until: '2026-09-15T02:00:00Z'
+  description: 'Delhi, 14 Sep: a message at 9:50pm, then the air got a band worse three hours later. Pacing holds
+    the update; Arjun hears next at his morning check-in.'
+  chart_hours: 24
+  group: quiet
+  brief:
+  - BX1
+  - B3
+  question: The air gets worse soon after a message. Should the agent message again right away?
+  shows:
+  - pace
+  - no-repeats
+  - check-in
+  beats:
+  - at: '2026-09-14T16:20:00Z'
+    title: First message
+    note: 'The bad spell starts: worth saying.'
+  - at: '2026-09-14T19:20:00Z'
+    title: Worse, but too soon
+    note: 3 hours after the last message; 6 needed.
+  - at: '2026-09-15T01:00:00Z'
+    title: Next morning
+    note: The check-in carries the update.
+- id: gone-by-morning
+  label: Gone by morning
+  user_id: arjun
+  replay_run: gone-by-morning
+  until: '2026-09-12T03:00:00Z'
+  description: 'Delhi, night of 11 Sep: a bad spell started after midnight and the message was held for quiet hours.
+    By 07:00 it was over, so the agent dropped it instead of reporting old news.'
+  chart_hours: 24
+  group: quiet
+  brief:
+  - D8
+  - B3
+  question: A message was held overnight, and the problem is gone by morning. Send it anyway?
+  shows:
+  - quiet-hours
+  - logged
+  beats:
+  - at: '2026-09-11T19:20:00Z'
+    title: Held overnight
+    note: Worth saying, but it's quiet hours.
+  - at: '2026-09-12T01:30:00Z'
+    title: Dropped at 07:00
+    note: 'The spell ended: nothing left worth saying.'
+- id: no-all-clear
+  label: Blip, no all-clear
+  user_id: aino
+  replay_run: no-all-clear
+  until: '2026-09-17T08:00:00Z'
+  description: 'Helsinki, 17 Sep: Aino got a heads-up at 07:00; the air eased soon after. The spell was short and
+    mild, so an all-clear would only be noise.'
+  chart_hours: 14
+  group: quiet
+  brief:
+  - B2c
+  question: The air recovers an hour after a heads-up. Does Aino need a second message?
+  shows:
+  - quiet-clear
+  - no-repeats
+  beats:
+  - at: '2026-09-17T04:00:00Z'
+    title: Morning heads-up
+    note: Held overnight, sent at 07:00.
+  - at: '2026-09-17T05:20:00Z'
+    title: No all-clear
+    note: Too short and mild to announce its end.
+- id: harmless
+  label: Unusual but harmless
+  user_id: aino
+  replay_run: harmless
+  until: '2026-07-26T03:00:00Z'
+  description: 'Helsinki, 25 Jul: PM2.5 rose well above its usual level, enough to trip the detectors even for sensitive
+    Aino. But it stayed in the Good band, so there was nothing worth her attention.'
+  chart_hours: 14
+  group: quiet
+  brief:
+  - B2d
+  - B5
+  question: Unusual for this city, but the air is still good. Should Aino hear about it?
+  shows:
+  - climb
+  - elevated
+  - spike
+  - baseline
+  - logged
+  beats:
+  - at: '2026-07-25T17:20:00Z'
+    title: Unusual, still good
+    note: Detector fired; below the bar that matters.
+  - at: '2026-07-26T00:20:00Z'
+    title: Sharper, still good
+    note: Even a spike in Good air isn't news.
+- id: two-people
+  label: Two people, one city
+  user_id: meera
+  replay_run: two-people
+  until: '2026-08-24T10:00:00Z'
+  description: 'Delhi, 24 Aug: the same reading, the same station. Meera has asthma and high sensitivity, so the
+    bar is lower for her and she gets a heads-up. In the same hour, Arjun''s decision was NO_TRIGGER: "Nothing unusual."'
+  chart_hours: 24
+  group: per-person
+  brief:
+  - B5
+  question: Same air, two people. Why does Meera get a message and Arjun doesn't?
+  shows:
+  - sensitivity
+  - baseline
+  beats:
+  - at: '2026-08-24T07:20:00Z'
+    title: Meera hears
+    note: 'Sensitive: her bar is lower. Arjun: NO_TRIGGER.'

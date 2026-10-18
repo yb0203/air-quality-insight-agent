@@ -1,0 +1,24 @@
+[
+ {
+  "id": "ntf_140",
+  "created_at": "2026-09-15 01:00:00+00:00",
+  "delivered_at": "2026-09-15 01:00:00+00:00",
+  "kind": "check_in",
+  "event_kind": "climb",
+  "band": "unhealthy",
+  "body": "Delhi's air has been unhealthy since 9:50pm, worse than a usual morning here, the worst since 11 Sep. Best to skip the outdoor run for now.",
+  "next_action": "skip the outdoor run",
+  "decision_id": "dec_9675"
+ },
+ {
+  "id": "ntf_138",
+  "created_at": "2026-09-14 16:20:00+00:00",
+  "delivered_at": "2026-09-14 16:20:00+00:00",
+  "kind": "opened",
+  "event_kind": "elevated",
+  "band": "usg",
+  "body": "Delhi's air has been stuck above normal for 1 hour, since 9:50pm, and is now unhealthy for sensitive groups. Best to keep windows closed for now.",
+  "next_action": "keep windows closed",
+  "decision_id": "dec_9616"
+ }
+]

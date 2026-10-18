@@ -204,6 +204,15 @@ def create_app(client: AgentClient | None = None, scenarios: list[Scenario] | No
             **side,
         )
 
+    @app.get("/capabilities", response_class=HTMLResponse)
+    def capabilities(request: Request):
+        """Every capability, the brief requirement it answers, and the scenarios (and beat) that show it."""
+        rows = []
+        for key, cap in sorted(CAPABILITIES.items(), key=lambda kv: (kv[1].brief, kv[1].label)):
+            shown = [s for s in scenarios if key in s.shows]
+            rows.append({"key": key, "cap": cap, "scenarios": shown})
+        return templates.TemplateResponse(request, "capabilities.html", {"rows": rows, "groups": groups})
+
     @app.get("/healthz")
     def healthz():
         return {"ok": True}

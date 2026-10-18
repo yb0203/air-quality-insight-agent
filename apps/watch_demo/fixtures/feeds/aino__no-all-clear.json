@@ -1,0 +1,13 @@
+[
+ {
+  "id": "ntf_152",
+  "created_at": "2026-09-17 04:00:00+00:00",
+  "delivered_at": "2026-09-17 04:00:00+00:00",
+  "kind": "released",
+  "event_kind": "spike",
+  "band": "good",
+  "body": "Overnight, Helsinki's air reached moderate, and it's good now. Good time to open the windows.",
+  "next_action": "open the windows",
+  "decision_id": "dec_10044"
+ }
+]

@@ -204,6 +204,88 @@ def tier_one() -> list[dict]:
     return out
 
 
+def tier_two() -> list[dict]:
+    """The quieter restraint rules, each at a real moment the replay found."""
+    out = []
+
+    # Too soon to repeat: Delhi, 14 Sep. Worse within 6h of a message: held back by pacing.
+    a, b = utc("2026-09-14T14:00"), utc("2026-09-15T02:00")
+    opened = need(first_decision("arjun", "SENT_OPENED", a, b), "Arjun's 14 Sep notice")
+    cool = need(first_decision("arjun", "COOLDOWN", opened["evaluated_at"], b), "a COOLDOWN after it")
+    chk = need(first_decision("arjun", "SENT_CHECK_IN", cool["evaluated_at"], b), "the next morning's check-in")
+    out.append(export("too-soon", "Too soon to repeat",
+                      "Delhi, 14 Sep: a message at 9:50pm, then the air got a band worse three hours later. "
+                      "Pacing holds the update; Arjun hears next at his morning check-in.",
+                      {"user": "arjun", "start": b - 24 * H, "end": b},
+                      story={"group": "quiet", "brief": ["BX1", "B3"],
+                             "question": "The air gets worse soon after a message. Should the agent message again right away?",
+                             "shows": ["pace", "no-repeats", "check-in"],
+                             "beats": [(opened["evaluated_at"], "First message", "The bad spell starts: worth saying."),
+                                       (cool["evaluated_at"], "Worse, but too soon", "3 hours after the last message; 6 needed."),
+                                       (chk["evaluated_at"], "Next morning", "The check-in carries the update.")]}))
+
+    # Gone by morning: Delhi, 12 Sep. Held at night, the spell passed before 07:00: nothing sent.
+    a, b = utc("2026-09-11T16:00"), utc("2026-09-12T03:00")
+    exp = need(first_decision("arjun", "HELD_EXPIRED", a, b), "a HELD_EXPIRED on 12 Sep")
+    held = need(first_decision("arjun", "QUIET_HOURS_HELD", exp["evaluated_at"] - 12 * H, exp["evaluated_at"]), "the hold before it")
+    out.append(export("gone-by-morning", "Gone by morning",
+                      "Delhi, night of 11 Sep: a bad spell started after midnight and the message was held for quiet "
+                      "hours. By 07:00 it was over, so the agent dropped it instead of reporting old news.",
+                      {"user": "arjun", "start": b - 24 * H, "end": b},
+                      story={"group": "quiet", "brief": ["D8", "B3"],
+                             "question": "A message was held overnight, and the problem is gone by morning. Send it anyway?",
+                             "shows": ["quiet-hours", "logged"],
+                             "beats": [(held["evaluated_at"], "Held overnight", "Worth saying, but it's quiet hours."),
+                                       (exp["evaluated_at"], "Dropped at 07:00", "The spell ended: nothing left worth saying.")]}))
+
+    # No needless all-clear: Helsinki, 17 Sep. Told at 07:00, eased an hour later: no all-clear.
+    a, b = utc("2026-09-16T20:00"), utc("2026-09-17T08:00")
+    rel = need(first_decision("aino", "HELD_RELEASED", a, b), "Aino's 17 Sep morning message")
+    rec = need(first_decision("aino", "RECOVERY_NOT_WORTH_SAYING", rel["evaluated_at"], b), "the skipped all-clear")
+    out.append(export("no-all-clear", "Blip, no all-clear",
+                      "Helsinki, 17 Sep: Aino got a heads-up at 07:00; the air eased soon after. The spell was short "
+                      "and mild, so an all-clear would only be noise.",
+                      {"user": "aino", "start": b - 14 * H, "end": b}, chart_hours=14,
+                      story={"group": "quiet", "brief": ["B2c"],
+                             "question": "The air recovers an hour after a heads-up. Does Aino need a second message?",
+                             "shows": ["quiet-clear", "no-repeats"],
+                             "beats": [(rel["evaluated_at"], "Morning heads-up", "Held overnight, sent at 07:00."),
+                                       (rec["evaluated_at"], "No all-clear", "Too short and mild to announce its end.")]}))
+
+    # Unusual but harmless: Helsinki, 25-26 Jul. The detector fires, but the air is still Good.
+    a, b = utc("2026-07-25T14:00"), utc("2026-07-26T03:00")
+    first = need(first_decision("aino", "BELOW_RELEVANCE", a, b), "a BELOW_RELEVANCE on 25 Jul")
+    spike = need(first_decision("aino", "BELOW_RELEVANCE", utc("2026-07-26T00:00"), b), "a spike-level one after midnight")
+    out.append(export("harmless", "Unusual but harmless",
+                      "Helsinki, 25 Jul: PM2.5 rose well above its usual level, enough to trip the detectors even for "
+                      "sensitive Aino. But it stayed in the Good band, so there was nothing worth her attention.",
+                      {"user": "aino", "start": b - 14 * H, "end": b}, chart_hours=14,
+                      story={"group": "quiet", "brief": ["B2d", "B5"],
+                             "question": "Unusual for this city, but the air is still good. Should Aino hear about it?",
+                             "shows": [*kinds(first["id"], spike["id"]), "baseline", "logged"],
+                             "beats": [(first["evaluated_at"], "Unusual, still good", "Detector fired; below the bar that matters."),
+                                       (spike["evaluated_at"], "Sharper, still good", "Even a spike in Good air isn't news.")]}))
+
+    # Two people, one city: Delhi, 24 Aug. Meera (asthma, high sensitivity) hears; Arjun, same hour, doesn't.
+    a, b = utc("2026-08-24T00:00"), utc("2026-08-24T10:00")
+    meera = need(first_decision("meera", "SENT_OPENED", a, b), "Meera's 24 Aug notice")
+    arjun = need(conn.execute(sa.select(d).where(d.c.user_id == "arjun", d.c.replay_run == RUN,
+                                                 d.c.evaluated_at == meera["evaluated_at"])).mappings().first(),
+                 "Arjun's decision in the same hour")
+    if arjun["outcome"] == "sent":
+        raise SystemExit("replay mismatch: Arjun was also notified on 24 Aug")
+    out.append(export("two-people", "Two people, one city",
+                      f"Delhi, 24 Aug: the same reading, the same station. Meera has asthma and high sensitivity, so "
+                      f"the bar is lower for her and she gets a heads-up. In the same hour, Arjun's decision was "
+                      f"{arjun['reason_code']}: \"{arjun['reason']}\"",
+                      {"user": "meera", "start": b - 24 * H, "end": b},
+                      story={"group": "per-person", "brief": ["B5"],
+                             "question": "Same air, two people. Why does Meera get a message and Arjun doesn't?",
+                             "shows": ["sensitivity", *kinds(meera["id"]), "baseline"],
+                             "beats": [(meera["evaluated_at"], "Meera hears", f"Sensitive: her bar is lower. Arjun: {arjun['reason_code']}.")]}))
+    return out
+
+
 def write(path: Path, data) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(json.dumps(data, indent=1, ensure_ascii=False, default=str) + "\n")
@@ -322,7 +404,7 @@ if __name__ == "__main__":
                                 *([(quiet_chk["evaluated_at"], "Check-in stays quiet", "Nothing worse than usual, so no message.")]
                                   if quiet_chk else [])]}),
     ]
-    scenarios += tier_one()
+    scenarios += tier_one() + tier_two()
     SCENARIOS.write_text("# Generated by scripts/export_watch_fixtures.py from the real 90-day replay (data/replay.db).\n"
                          "# Each scenario's `replay_run` names its own fixture files; `until` is the replayed 'now'.\n"
                          + yaml.safe_dump({"scenarios": scenarios}, sort_keys=False, allow_unicode=True, width=110))
