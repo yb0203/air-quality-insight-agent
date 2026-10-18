@@ -1,0 +1,13 @@
+# Local Claude Code settings
+.claude/settings.local.json
+
+# Secrets
+.env
+.env.*
+!.env.example
+
+# Source PDFs (company brief + JD) kept local only
+docs/*.pdf
+
+# OS
+.DS_Store
