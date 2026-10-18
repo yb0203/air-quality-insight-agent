@@ -92,7 +92,7 @@ Every silence has a logged reason.
 - [x] AI tooling transcripts (Claude Code sessions, JSONL): [docs/transcripts/](docs/transcripts/)
 - [x] Public demo: <https://air-quality-watch-demo.vercel.app>
 - [x] Submission checklist: [docs/SUBMISSION.md](docs/SUBMISSION.md)
-- [ ] Demo video
+- [x] 60-second launch video (rendered locally with HyperFrames): [docs/demo/video/air-agent-60s-vertical.mp4](https://github.com/yb0203/air-quality-insight-agent/blob/main/docs/demo/video/air-agent-60s-vertical.mp4)
 
 ## Built with
 
