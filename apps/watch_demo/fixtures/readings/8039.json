@@ -1,0 +1,9746 @@
+[
+ {
+  "at": "2026-08-17T21:30:00Z",
+  "pm25": 15.0,
+  "nowcast": null,
+  "band": null,
+  "typical_pm25": null,
+  "dq": "NO_BASELINE"
+ },
+ {
+  "at": "2026-08-19T05:30:00Z",
+  "pm25": 13.0,
+  "nowcast": null,
+  "band": null,
+  "typical_pm25": null,
+  "dq": "NO_BASELINE"
+ },
+ {
+  "at": "2026-08-19T06:30:00Z",
+  "pm25": 17.0,
+  "nowcast": 15.2,
+  "band": "moderate",
+  "typical_pm25": null,
+  "dq": "NO_BASELINE"
+ },
+ {
+  "at": "2026-08-19T07:30:00Z",
+  "pm25": 18.0,
+  "nowcast": 16.5,
+  "band": "moderate",
+  "typical_pm25": null,
+  "dq": "NO_BASELINE"
+ },
+ {
+  "at": "2026-08-19T08:30:00Z",
+  "pm25": 18.0,
+  "nowcast": 17.0,
+  "band": "moderate",
+  "typical_pm25": null,
+  "dq": "NO_BASELINE"
+ },
+ {
+  "at": "2026-08-19T09:30:00Z",
+  "pm25": 16.0,
+  "nowcast": 16.7,
+  "band": "moderate",
+  "typical_pm25": null,
+  "dq": "NO_BASELINE"
+ },
+ {
+  "at": "2026-08-19T10:30:00Z",
+  "pm25": 12.0,
+  "nowcast": 15.0,
+  "band": "moderate",
+  "typical_pm25": null,
+  "dq": "NO_BASELINE"
+ },
+ {
+  "at": "2026-08-19T11:30:00Z",
+  "pm25": 10.0,
+  "nowcast": 12.5,
+  "band": "moderate",
+  "typical_pm25": null,
+  "dq": "NO_BASELINE"
+ },
+ {
+  "at": "2026-08-19T12:30:00Z",
+  "pm25": 17.0,
+  "nowcast": 14.5,
+  "band": "moderate",
+  "typical_pm25": null,
+  "dq": "NO_BASELINE"
+ },
+ {
+  "at": "2026-08-19T13:30:00Z",
+  "pm25": 14.0,
+  "nowcast": 14.2,
+  "band": "moderate",
+  "typical_pm25": null,
+  "dq": "NO_BASELINE"
+ },
+ {
+  "at": "2026-08-19T14:30:00Z",
+  "pm25": 19.0,
+  "nowcast": 16.5,
+  "band": "moderate",
+  "typical_pm25": null,
+  "dq": "NO_BASELINE"
+ },
+ {
+  "at": "2026-08-19T15:30:00Z",
+  "pm25": 14.0,
+  "nowcast": 15.3,
+  "band": "moderate",
+  "typical_pm25": null,
+  "dq": "NO_BASELINE"
+ },
+ {
+  "at": "2026-08-19T16:30:00Z",
+  "pm25": 16.0,
+  "nowcast": 15.6,
+  "band": "moderate",
+  "typical_pm25": null,
+  "dq": "NO_BASELINE"
+ },
+ {
+  "at": "2026-08-19T17:30:00Z",
+  "pm25": 18.0,
+  "nowcast": 16.7,
+  "band": "moderate",
+  "typical_pm25": null,
+  "dq": "NO_BASELINE"
+ },
+ {
+  "at": "2026-08-19T18:30:00Z",
+  "pm25": 14.0,
+  "nowcast": 15.4,
+  "band": "moderate",
+  "typical_pm25": null,
+  "dq": "NO_BASELINE"
+ },
+ {
+  "at": "2026-08-19T19:30:00Z",
+  "pm25": 9.0,
+  "nowcast": 12.2,
+  "band": "moderate",
+  "typical_pm25": null,
+  "dq": "NO_BASELINE"
+ },
+ {
+  "at": "2026-08-19T20:30:00Z",
+  "pm25": 9.0,
+  "nowcast": 10.6,
+  "band": "moderate",
+  "typical_pm25": null,
+  "dq": "NO_BASELINE"
+ },
+ {
+  "at": "2026-08-20T07:30:00Z",
+  "pm25": 13.0,
+  "nowcast": null,
+  "band": null,
+  "typical_pm25": null,
+  "dq": "NO_BASELINE"
+ },
+ {
+  "at": "2026-08-20T08:30:00Z",
+  "pm25": 11.0,
+  "nowcast": 11.9,
+  "band": "moderate",
+  "typical_pm25": null,
+  "dq": "NO_BASELINE"
+ },
+ {
+  "at": "2026-08-20T09:30:00Z",
+  "pm25": 12.0,
+  "nowcast": 11.9,
+  "band": "moderate",
+  "typical_pm25": null,
+  "dq": "NO_BASELINE"
+ },
+ {
+  "at": "2026-08-20T10:30:00Z",
+  "pm25": 14.0,
+  "nowcast": 12.6,
+  "band": "moderate",
+  "typical_pm25": null,
+  "dq": "NO_BASELINE"
+ },
+ {
+  "at": "2026-08-20T11:30:00Z",
+  "pm25": 14.0,
+  "nowcast": 13.0,
+  "band": "moderate",
+  "typical_pm25": null,
+  "dq": "NO_BASELINE"
+ },
+ {
+  "at": "2026-08-20T12:30:00Z",
+  "pm25": 14.0,
+  "nowcast": 13.3,
+  "band": "moderate",
+  "typical_pm25": null,
+  "dq": "NO_BASELINE"
+ },
+ {
+  "at": "2026-08-20T13:30:00Z",
+  "pm25": 14.0,
+  "nowcast": 13.5,
+  "band": "moderate",
+  "typical_pm25": null,
+  "dq": "NO_BASELINE"
+ },
+ {
+  "at": "2026-08-20T14:30:00Z",
+  "pm25": 16.0,
+  "nowcast": 14.4,
+  "band": "moderate",
+  "typical_pm25": null,
+  "dq": "NO_BASELINE"
+ },
+ {
+  "at": "2026-08-20T15:30:00Z",
+  "pm25": 16.0,
+  "nowcast": 14.9,
+  "band": "moderate",
+  "typical_pm25": null,
+  "dq": "NO_BASELINE"
+ },
+ {
+  "at": "2026-08-20T16:30:00Z",
+  "pm25": 15.0,
+  "nowcast": 14.9,
+  "band": "moderate",
+  "typical_pm25": null,
+  "dq": "NO_BASELINE"
+ },
+ {
+  "at": "2026-08-20T17:30:00Z",
+  "pm25": 14.0,
+  "nowcast": 14.6,
+  "band": "moderate",
+  "typical_pm25": null,
+  "dq": "NO_BASELINE"
+ },
+ {
+  "at": "2026-08-20T18:30:00Z",
+  "pm25": 12.0,
+  "nowcast": 13.8,
+  "band": "moderate",
+  "typical_pm25": null,
+  "dq": "NO_BASELINE"
+ },
+ {
+  "at": "2026-08-20T19:30:00Z",
+  "pm25": 13.0,
+  "nowcast": 13.5,
+  "band": "moderate",
+  "typical_pm25": null,
+  "dq": "NO_BASELINE"
+ },
+ {
+  "at": "2026-08-20T20:30:00Z",
+  "pm25": 12.0,
+  "nowcast": 13.2,
+  "band": "moderate",
+  "typical_pm25": null,
+  "dq": "NO_BASELINE"
+ },
+ {
+  "at": "2026-08-20T21:30:00Z",
+  "pm25": 12.0,
+  "nowcast": 12.9,
+  "band": "moderate",
+  "typical_pm25": null,
+  "dq": "NO_BASELINE"
+ },
+ {
+  "at": "2026-08-20T22:30:00Z",
+  "pm25": 9.0,
+  "nowcast": 10.9,
+  "band": "moderate",
+  "typical_pm25": null,
+  "dq": "NO_BASELINE"
+ },
+ {
+  "at": "2026-08-20T23:30:00Z",
+  "pm25": 11.0,
+  "nowcast": 10.9,
+  "band": "moderate",
+  "typical_pm25": null,
+  "dq": "NO_BASELINE"
+ },
+ {
+  "at": "2026-08-21T00:30:00Z",
+  "pm25": 8.0,
+  "nowcast": 9.4,
+  "band": "moderate",
+  "typical_pm25": null,
+  "dq": "NO_BASELINE"
+ },
+ {
+  "at": "2026-08-21T01:30:00Z",
+  "pm25": 11.0,
+  "nowcast": 10.2,
+  "band": "moderate",
+  "typical_pm25": null,
+  "dq": "NO_BASELINE"
+ },
+ {
+  "at": "2026-08-21T02:30:00Z",
+  "pm25": 12.0,
+  "nowcast": 11.1,
+  "band": "moderate",
+  "typical_pm25": null,
+  "dq": "NO_BASELINE"
+ },
+ {
+  "at": "2026-08-21T03:30:00Z",
+  "pm25": 17.0,
+  "nowcast": 14.0,
+  "band": "moderate",
+  "typical_pm25": null,
+  "dq": "NO_BASELINE"
+ },
+ {
+  "at": "2026-08-21T04:30:00Z",
+  "pm25": 15.0,
+  "nowcast": 14.5,
+  "band": "moderate",
+  "typical_pm25": null,
+  "dq": "NO_BASELINE"
+ },
+ {
+  "at": "2026-08-21T05:30:00Z",
+  "pm25": 12.0,
+  "nowcast": 13.2,
+  "band": "moderate",
+  "typical_pm25": null,
+  "dq": "NO_BASELINE"
+ },
+ {
+  "at": "2026-08-21T06:30:00Z",
+  "pm25": 10.0,
+  "nowcast": 11.6,
+  "band": "moderate",
+  "typical_pm25": null,
+  "dq": "NO_BASELINE"
+ },
+ {
+  "at": "2026-08-21T07:30:00Z",
+  "pm25": 12.0,
+  "nowcast": 11.8,
+  "band": "moderate",
+  "typical_pm25": null,
+  "dq": "NO_BASELINE"
+ },
+ {
+  "at": "2026-08-21T08:30:00Z",
+  "pm25": 10.0,
+  "nowcast": 10.9,
+  "band": "moderate",
+  "typical_pm25": null,
+  "dq": "NO_BASELINE"
+ },
+ {
+  "at": "2026-08-21T09:30:00Z",
+  "pm25": 11.0,
+  "nowcast": 10.9,
+  "band": "moderate",
+  "typical_pm25": null,
+  "dq": "NO_BASELINE"
+ },
+ {
+  "at": "2026-08-21T10:30:00Z",
+  "pm25": 17.0,
+  "nowcast": 13.9,
+  "band": "moderate",
+  "typical_pm25": null,
+  "dq": "NO_BASELINE"
+ },
+ {
+  "at": "2026-08-21T11:30:00Z",
+  "pm25": 14.0,
+  "nowcast": 13.9,
+  "band": "moderate",
+  "typical_pm25": null,
+  "dq": "NO_BASELINE"
+ },
+ {
+  "at": "2026-08-21T12:30:00Z",
+  "pm25": 17.0,
+  "nowcast": 15.0,
+  "band": "moderate",
+  "typical_pm25": null,
+  "dq": "NO_BASELINE"
+ },
+ {
+  "at": "2026-08-21T13:30:00Z",
+  "pm25": 14.0,
+  "nowcast": 14.6,
+  "band": "moderate",
+  "typical_pm25": null,
+  "dq": "NO_BASELINE"
+ },
+ {
+  "at": "2026-08-21T14:30:00Z",
+  "pm25": 13.0,
+  "nowcast": 13.9,
+  "band": "moderate",
+  "typical_pm25": null,
+  "dq": "NO_BASELINE"
+ },
+ {
+  "at": "2026-08-21T15:30:00Z",
+  "pm25": 16.0,
+  "nowcast": 14.8,
+  "band": "moderate",
+  "typical_pm25": null,
+  "dq": "NO_BASELINE"
+ },
+ {
+  "at": "2026-08-21T16:30:00Z",
+  "pm25": 11.0,
+  "nowcast": 13.2,
+  "band": "moderate",
+  "typical_pm25": null,
+  "dq": "NO_BASELINE"
+ },
+ {
+  "at": "2026-08-21T17:30:00Z",
+  "pm25": 17.0,
+  "nowcast": 14.7,
+  "band": "moderate",
+  "typical_pm25": null,
+  "dq": "NO_BASELINE"
+ },
+ {
+  "at": "2026-08-21T18:30:00Z",
+  "pm25": 12.0,
+  "nowcast": 13.6,
+  "band": "moderate",
+  "typical_pm25": null,
+  "dq": "NO_BASELINE"
+ },
+ {
+  "at": "2026-08-21T19:30:00Z",
+  "pm25": 9.0,
+  "nowcast": 11.4,
+  "band": "moderate",
+  "typical_pm25": null,
+  "dq": "NO_BASELINE"
+ },
+ {
+  "at": "2026-08-21T20:30:00Z",
+  "pm25": 14.0,
+  "nowcast": 12.6,
+  "band": "moderate",
+  "typical_pm25": null,
+  "dq": "NO_BASELINE"
+ },
+ {
+  "at": "2026-08-21T21:30:00Z",
+  "pm25": 10.0,
+  "nowcast": 11.3,
+  "band": "moderate",
+  "typical_pm25": null,
+  "dq": "NO_BASELINE"
+ },
+ {
+  "at": "2026-08-21T22:30:00Z",
+  "pm25": 11.0,
+  "nowcast": 11.2,
+  "band": "moderate",
+  "typical_pm25": null,
+  "dq": "NO_BASELINE"
+ },
+ {
+  "at": "2026-08-21T23:30:00Z",
+  "pm25": 9.0,
+  "nowcast": 10.1,
+  "band": "moderate",
+  "typical_pm25": null,
+  "dq": "NO_BASELINE"
+ },
+ {
+  "at": "2026-08-22T00:30:00Z",
+  "pm25": 9.0,
+  "nowcast": 9.6,
+  "band": "moderate",
+  "typical_pm25": null,
+  "dq": "NO_BASELINE"
+ },
+ {
+  "at": "2026-08-22T01:30:00Z",
+  "pm25": 11.0,
+  "nowcast": 10.2,
+  "band": "moderate",
+  "typical_pm25": null,
+  "dq": "NO_BASELINE"
+ },
+ {
+  "at": "2026-08-22T02:30:00Z",
+  "pm25": 14.0,
+  "nowcast": 12.0,
+  "band": "moderate",
+  "typical_pm25": null,
+  "dq": "NO_BASELINE"
+ },
+ {
+  "at": "2026-08-22T03:30:00Z",
+  "pm25": 13.0,
+  "nowcast": 12.4,
+  "band": "moderate",
+  "typical_pm25": null,
+  "dq": "NO_BASELINE"
+ },
+ {
+  "at": "2026-08-22T04:30:00Z",
+  "pm25": 15.0,
+  "nowcast": 13.6,
+  "band": "moderate",
+  "typical_pm25": null,
+  "dq": "NO_BASELINE"
+ },
+ {
+  "at": "2026-08-22T05:30:00Z",
+  "pm25": 17.0,
+  "nowcast": 15.2,
+  "band": "moderate",
+  "typical_pm25": null,
+  "dq": "NO_BASELINE"
+ },
+ {
+  "at": "2026-08-22T06:30:00Z",
+  "pm25": 17.0,
+  "nowcast": 16.0,
+  "band": "moderate",
+  "typical_pm25": null,
+  "dq": "NO_BASELINE"
+ },
+ {
+  "at": "2026-08-22T07:30:00Z",
+  "pm25": 14.0,
+  "nowcast": 15.0,
+  "band": "moderate",
+  "typical_pm25": null,
+  "dq": "NO_BASELINE"
+ },
+ {
+  "at": "2026-08-22T08:30:00Z",
+  "pm25": 13.0,
+  "nowcast": 14.1,
+  "band": "moderate",
+  "typical_pm25": null,
+  "dq": "NO_BASELINE"
+ },
+ {
+  "at": "2026-08-22T09:30:00Z",
+  "pm25": 15.0,
+  "nowcast": 14.5,
+  "band": "moderate",
+  "typical_pm25": null,
+  "dq": "NO_BASELINE"
+ },
+ {
+  "at": "2026-08-22T10:30:00Z",
+  "pm25": 12.0,
+  "nowcast": 13.3,
+  "band": "moderate",
+  "typical_pm25": null,
+  "dq": "NO_BASELINE"
+ },
+ {
+  "at": "2026-08-22T11:30:00Z",
+  "pm25": 16.0,
+  "nowcast": 14.5,
+  "band": "moderate",
+  "typical_pm25": null,
+  "dq": "NO_BASELINE"
+ },
+ {
+  "at": "2026-08-22T12:30:00Z",
+  "pm25": 16.0,
+  "nowcast": 15.0,
+  "band": "moderate",
+  "typical_pm25": null,
+  "dq": "NO_BASELINE"
+ },
+ {
+  "at": "2026-08-22T13:30:00Z",
+  "pm25": 16.0,
+  "nowcast": 15.2,
+  "band": "moderate",
+  "typical_pm25": null,
+  "dq": "NO_BASELINE"
+ },
+ {
+  "at": "2026-08-22T14:30:00Z",
+  "pm25": 18.0,
+  "nowcast": 16.2,
+  "band": "moderate",
+  "typical_pm25": 14.8,
+  "dq": null
+ },
+ {
+  "at": "2026-08-22T15:30:00Z",
+  "pm25": 20.0,
+  "nowcast": 17.8,
+  "band": "moderate",
+  "typical_pm25": 14.8,
+  "dq": null
+ },
+ {
+  "at": "2026-08-22T16:30:00Z",
+  "pm25": 12.0,
+  "nowcast": 15.5,
+  "band": "moderate",
+  "typical_pm25": 14.4,
+  "dq": null
+ },
+ {
+  "at": "2026-08-22T17:30:00Z",
+  "pm25": 15.0,
+  "nowcast": 15.3,
+  "band": "moderate",
+  "typical_pm25": 15.2,
+  "dq": null
+ },
+ {
+  "at": "2026-08-22T18:30:00Z",
+  "pm25": 20.0,
+  "nowcast": 17.1,
+  "band": "moderate",
+  "typical_pm25": 13.1,
+  "dq": null
+ },
+ {
+  "at": "2026-08-22T19:30:00Z",
+  "pm25": 19.0,
+  "nowcast": 17.9,
+  "band": "moderate",
+  "typical_pm25": 11.6,
+  "dq": null
+ },
+ {
+  "at": "2026-08-22T20:30:00Z",
+  "pm25": 13.0,
+  "nowcast": 15.9,
+  "band": "moderate",
+  "typical_pm25": 13.1,
+  "dq": null
+ },
+ {
+  "at": "2026-08-22T21:30:00Z",
+  "pm25": 13.0,
+  "nowcast": 14.7,
+  "band": "moderate",
+  "typical_pm25": 13.1,
+  "dq": null
+ },
+ {
+  "at": "2026-08-22T22:30:00Z",
+  "pm25": 15.0,
+  "nowcast": 14.8,
+  "band": "moderate",
+  "typical_pm25": 12.7,
+  "dq": null
+ },
+ {
+  "at": "2026-08-22T23:30:00Z",
+  "pm25": 15.0,
+  "nowcast": 14.9,
+  "band": "moderate",
+  "typical_pm25": 12.7,
+  "dq": null
+ },
+ {
+  "at": "2026-08-23T00:30:00Z",
+  "pm25": 10.0,
+  "nowcast": 12.4,
+  "band": "moderate",
+  "typical_pm25": 12.2,
+  "dq": null
+ },
+ {
+  "at": "2026-08-23T01:30:00Z",
+  "pm25": 11.0,
+  "nowcast": 11.7,
+  "band": "moderate",
+  "typical_pm25": 13.1,
+  "dq": null
+ },
+ {
+  "at": "2026-08-23T02:30:00Z",
+  "pm25": 15.0,
+  "nowcast": 13.3,
+  "band": "moderate",
+  "typical_pm25": 13.7,
+  "dq": null
+ },
+ {
+  "at": "2026-08-23T03:30:00Z",
+  "pm25": 18.0,
+  "nowcast": 15.6,
+  "band": "moderate",
+  "typical_pm25": 14.2,
+  "dq": null
+ },
+ {
+  "at": "2026-08-23T04:30:00Z",
+  "pm25": 17.0,
+  "nowcast": 16.3,
+  "band": "moderate",
+  "typical_pm25": 14.3,
+  "dq": null
+ },
+ {
+  "at": "2026-08-23T05:30:00Z",
+  "pm25": 16.0,
+  "nowcast": 16.1,
+  "band": "moderate",
+  "typical_pm25": 13.6,
+  "dq": null
+ },
+ {
+  "at": "2026-08-23T06:30:00Z",
+  "pm25": 16.0,
+  "nowcast": 16.0,
+  "band": "moderate",
+  "typical_pm25": 15.2,
+  "dq": null
+ },
+ {
+  "at": "2026-08-23T07:30:00Z",
+  "pm25": 22.0,
+  "nowcast": 19.0,
+  "band": "moderate",
+  "typical_pm25": 13.7,
+  "dq": null
+ },
+ {
+  "at": "2026-08-23T08:30:00Z",
+  "pm25": 16.0,
+  "nowcast": 17.5,
+  "band": "moderate",
+  "typical_pm25": 12.8,
+  "dq": null
+ },
+ {
+  "at": "2026-08-23T09:30:00Z",
+  "pm25": 16.0,
+  "nowcast": 16.7,
+  "band": "moderate",
+  "typical_pm25": 13.7,
+  "dq": null
+ },
+ {
+  "at": "2026-08-23T10:30:00Z",
+  "pm25": 22.0,
+  "nowcast": 19.3,
+  "band": "moderate",
+  "typical_pm25": 13.4,
+  "dq": null
+ },
+ {
+  "at": "2026-08-23T11:30:00Z",
+  "pm25": 14.0,
+  "nowcast": 16.6,
+  "band": "moderate",
+  "typical_pm25": 14.0,
+  "dq": null
+ },
+ {
+  "at": "2026-08-23T12:30:00Z",
+  "pm25": 15.0,
+  "nowcast": 15.8,
+  "band": "moderate",
+  "typical_pm25": 15.4,
+  "dq": null
+ },
+ {
+  "at": "2026-08-23T13:30:00Z",
+  "pm25": 18.0,
+  "nowcast": 16.9,
+  "band": "moderate",
+  "typical_pm25": 14.0,
+  "dq": null
+ },
+ {
+  "at": "2026-08-23T14:30:00Z",
+  "pm25": 15.0,
+  "nowcast": 16.2,
+  "band": "moderate",
+  "typical_pm25": 15.6,
+  "dq": null
+ },
+ {
+  "at": "2026-08-23T15:30:00Z",
+  "pm25": 17.0,
+  "nowcast": 16.5,
+  "band": "moderate",
+  "typical_pm25": 15.1,
+  "dq": null
+ },
+ {
+  "at": "2026-08-23T16:30:00Z",
+  "pm25": 14.0,
+  "nowcast": 15.5,
+  "band": "moderate",
+  "typical_pm25": 13.7,
+  "dq": null
+ },
+ {
+  "at": "2026-08-23T17:30:00Z",
+  "pm25": 14.0,
+  "nowcast": 15.0,
+  "band": "moderate",
+  "typical_pm25": 15.1,
+  "dq": null
+ },
+ {
+  "at": "2026-08-23T18:30:00Z",
+  "pm25": 13.0,
+  "nowcast": 14.0,
+  "band": "moderate",
+  "typical_pm25": 13.4,
+  "dq": null
+ },
+ {
+  "at": "2026-08-23T19:30:00Z",
+  "pm25": 8.0,
+  "nowcast": 10.9,
+  "band": "moderate",
+  "typical_pm25": 12.1,
+  "dq": null
+ },
+ {
+  "at": "2026-08-23T20:30:00Z",
+  "pm25": 16.0,
+  "nowcast": 13.4,
+  "band": "moderate",
+  "typical_pm25": 13.1,
+  "dq": null
+ },
+ {
+  "at": "2026-08-23T21:30:00Z",
+  "pm25": 17.0,
+  "nowcast": 15.2,
+  "band": "moderate",
+  "typical_pm25": 13.1,
+  "dq": null
+ },
+ {
+  "at": "2026-08-23T22:30:00Z",
+  "pm25": 12.0,
+  "nowcast": 13.6,
+  "band": "moderate",
+  "typical_pm25": 12.6,
+  "dq": null
+ },
+ {
+  "at": "2026-08-23T23:30:00Z",
+  "pm25": 9.0,
+  "nowcast": 11.3,
+  "band": "moderate",
+  "typical_pm25": 12.6,
+  "dq": null
+ },
+ {
+  "at": "2026-08-24T00:30:00Z",
+  "pm25": 15.0,
+  "nowcast": 13.1,
+  "band": "moderate",
+  "typical_pm25": 11.6,
+  "dq": null
+ },
+ {
+  "at": "2026-08-24T01:30:00Z",
+  "pm25": 16.0,
+  "nowcast": 14.5,
+  "band": "moderate",
+  "typical_pm25": 12.6,
+  "dq": null
+ },
+ {
+  "at": "2026-08-24T02:30:00Z",
+  "pm25": 14.0,
+  "nowcast": 14.2,
+  "band": "moderate",
+  "typical_pm25": 14.0,
+  "dq": null
+ },
+ {
+  "at": "2026-08-24T03:30:00Z",
+  "pm25": 16.0,
+  "nowcast": 15.1,
+  "band": "moderate",
+  "typical_pm25": 15.2,
+  "dq": null
+ },
+ {
+  "at": "2026-08-24T04:30:00Z",
+  "pm25": 19.0,
+  "nowcast": 17.0,
+  "band": "moderate",
+  "typical_pm25": 14.4,
+  "dq": null
+ },
+ {
+  "at": "2026-08-24T05:30:00Z",
+  "pm25": 23.0,
+  "nowcast": 20.0,
+  "band": "moderate",
+  "typical_pm25": 14.2,
+  "dq": null
+ },
+ {
+  "at": "2026-08-24T06:30:00Z",
+  "pm25": 25.0,
+  "nowcast": 22.5,
+  "band": "moderate",
+  "typical_pm25": 15.4,
+  "dq": null
+ },
+ {
+  "at": "2026-08-24T07:30:00Z",
+  "pm25": 17.0,
+  "nowcast": 19.7,
+  "band": "moderate",
+  "typical_pm25": 14.0,
+  "dq": null
+ },
+ {
+  "at": "2026-08-24T08:30:00Z",
+  "pm25": 19.0,
+  "nowcast": 19.3,
+  "band": "moderate",
+  "typical_pm25": 13.3,
+  "dq": null
+ },
+ {
+  "at": "2026-08-24T09:30:00Z",
+  "pm25": 18.0,
+  "nowcast": 18.6,
+  "band": "moderate",
+  "typical_pm25": 14.7,
+  "dq": null
+ },
+ {
+  "at": "2026-08-24T10:30:00Z",
+  "pm25": 12.0,
+  "nowcast": 15.3,
+  "band": "moderate",
+  "typical_pm25": 14.0,
+  "dq": null
+ },
+ {
+  "at": "2026-08-24T11:30:00Z",
+  "pm25": 19.0,
+  "nowcast": 17.1,
+  "band": "moderate",
+  "typical_pm25": 14.0,
+  "dq": null
+ },
+ {
+  "at": "2026-08-24T12:30:00Z",
+  "pm25": 19.0,
+  "nowcast": 18.0,
+  "band": "moderate",
+  "typical_pm25": 15.4,
+  "dq": null
+ },
+ {
+  "at": "2026-08-24T13:30:00Z",
+  "pm25": 17.0,
+  "nowcast": 17.5,
+  "band": "moderate",
+  "typical_pm25": 14.0,
+  "dq": null
+ },
+ {
+  "at": "2026-08-24T14:30:00Z",
+  "pm25": 23.0,
+  "nowcast": 20.2,
+  "band": "moderate",
+  "typical_pm25": 15.4,
+  "dq": null
+ },
+ {
+  "at": "2026-08-24T15:30:00Z",
+  "pm25": 24.0,
+  "nowcast": 22.1,
+  "band": "moderate",
+  "typical_pm25": 15.4,
+  "dq": null
+ },
+ {
+  "at": "2026-08-24T16:30:00Z",
+  "pm25": 21.0,
+  "nowcast": 21.5,
+  "band": "moderate",
+  "typical_pm25": 14.1,
+  "dq": null
+ },
+ {
+  "at": "2026-08-24T17:30:00Z",
+  "pm25": 19.0,
+  "nowcast": 20.2,
+  "band": "moderate",
+  "typical_pm25": 15.0,
+  "dq": null
+ },
+ {
+  "at": "2026-08-24T18:30:00Z",
+  "pm25": 19.0,
+  "nowcast": 19.6,
+  "band": "moderate",
+  "typical_pm25": 13.5,
+  "dq": null
+ },
+ {
+  "at": "2026-08-24T19:30:00Z",
+  "pm25": 17.0,
+  "nowcast": 18.3,
+  "band": "moderate",
+  "typical_pm25": 10.4,
+  "dq": null
+ },
+ {
+  "at": "2026-08-24T20:30:00Z",
+  "pm25": 21.0,
+  "nowcast": 19.6,
+  "band": "moderate",
+  "typical_pm25": 13.5,
+  "dq": null
+ },
+ {
+  "at": "2026-08-24T21:30:00Z",
+  "pm25": 21.0,
+  "nowcast": 20.3,
+  "band": "moderate",
+  "typical_pm25": 13.5,
+  "dq": null
+ },
+ {
+  "at": "2026-08-24T22:30:00Z",
+  "pm25": 14.0,
+  "nowcast": 17.6,
+  "band": "moderate",
+  "typical_pm25": 12.9,
+  "dq": null
+ },
+ {
+  "at": "2026-08-24T23:30:00Z",
+  "pm25": 13.0,
+  "nowcast": 15.3,
+  "band": "moderate",
+  "typical_pm25": 11.9,
+  "dq": null
+ },
+ {
+  "at": "2026-08-25T00:30:00Z",
+  "pm25": 19.0,
+  "nowcast": 17.0,
+  "band": "moderate",
+  "typical_pm25": 11.6,
+  "dq": null
+ },
+ {
+  "at": "2026-08-25T01:30:00Z",
+  "pm25": 25.0,
+  "nowcast": 20.8,
+  "band": "moderate",
+  "typical_pm25": 12.6,
+  "dq": null
+ },
+ {
+  "at": "2026-08-25T02:30:00Z",
+  "pm25": 24.0,
+  "nowcast": 22.3,
+  "band": "moderate",
+  "typical_pm25": 14.4,
+  "dq": null
+ },
+ {
+  "at": "2026-08-25T03:30:00Z",
+  "pm25": 40.0,
+  "nowcast": 31.2,
+  "band": "moderate",
+  "typical_pm25": 15.8,
+  "dq": null
+ },
+ {
+  "at": "2026-08-25T04:30:00Z",
+  "pm25": 21.0,
+  "nowcast": 26.1,
+  "band": "moderate",
+  "typical_pm25": 15.5,
+  "dq": null
+ },
+ {
+  "at": "2026-08-25T05:30:00Z",
+  "pm25": 19.0,
+  "nowcast": 22.5,
+  "band": "moderate",
+  "typical_pm25": 15.7,
+  "dq": null
+ },
+ {
+  "at": "2026-08-25T06:30:00Z",
+  "pm25": 20.0,
+  "nowcast": 21.2,
+  "band": "moderate",
+  "typical_pm25": 16.4,
+  "dq": null
+ },
+ {
+  "at": "2026-08-25T07:30:00Z",
+  "pm25": 20.0,
+  "nowcast": 20.6,
+  "band": "moderate",
+  "typical_pm25": 15.4,
+  "dq": null
+ },
+ {
+  "at": "2026-08-25T08:30:00Z",
+  "pm25": 16.0,
+  "nowcast": 18.3,
+  "band": "moderate",
+  "typical_pm25": 14.5,
+  "dq": null
+ },
+ {
+  "at": "2026-08-25T09:30:00Z",
+  "pm25": 19.0,
+  "nowcast": 18.6,
+  "band": "moderate",
+  "typical_pm25": 15.4,
+  "dq": null
+ },
+ {
+  "at": "2026-08-25T10:30:00Z",
+  "pm25": 19.0,
+  "nowcast": 18.8,
+  "band": "moderate",
+  "typical_pm25": 13.2,
+  "dq": null
+ },
+ {
+  "at": "2026-08-25T11:30:00Z",
+  "pm25": 17.0,
+  "nowcast": 17.9,
+  "band": "moderate",
+  "typical_pm25": 14.1,
+  "dq": null
+ },
+ {
+  "at": "2026-08-25T12:30:00Z",
+  "pm25": 20.0,
+  "nowcast": 18.9,
+  "band": "moderate",
+  "typical_pm25": 16.3,
+  "dq": null
+ },
+ {
+  "at": "2026-08-25T13:30:00Z",
+  "pm25": 17.0,
+  "nowcast": 17.9,
+  "band": "moderate",
+  "typical_pm25": 15.0,
+  "dq": null
+ },
+ {
+  "at": "2026-08-25T14:30:00Z",
+  "pm25": 19.0,
+  "nowcast": 18.4,
+  "band": "moderate",
+  "typical_pm25": 16.7,
+  "dq": null
+ },
+ {
+  "at": "2026-08-25T15:30:00Z",
+  "pm25": 13.0,
+  "nowcast": 16.3,
+  "band": "moderate",
+  "typical_pm25": 16.3,
+  "dq": null
+ },
+ {
+  "at": "2026-08-25T16:30:00Z",
+  "pm25": 21.0,
+  "nowcast": 18.1,
+  "band": "moderate",
+  "typical_pm25": 14.6,
+  "dq": null
+ },
+ {
+  "at": "2026-08-25T17:30:00Z",
+  "pm25": 22.0,
+  "nowcast": 19.7,
+  "band": "moderate",
+  "typical_pm25": 15.8,
+  "dq": null
+ },
+ {
+  "at": "2026-08-25T18:30:00Z",
+  "pm25": 18.0,
+  "nowcast": 19.0,
+  "band": "moderate",
+  "typical_pm25": 13.7,
+  "dq": null
+ },
+ {
+  "at": "2026-08-25T19:30:00Z",
+  "pm25": 19.0,
+  "nowcast": 19.0,
+  "band": "moderate",
+  "typical_pm25": 11.4,
+  "dq": null
+ },
+ {
+  "at": "2026-08-25T20:30:00Z",
+  "pm25": 23.0,
+  "nowcast": 20.7,
+  "band": "moderate",
+  "typical_pm25": 13.7,
+  "dq": null
+ },
+ {
+  "at": "2026-08-25T21:30:00Z",
+  "pm25": 21.0,
+  "nowcast": 20.8,
+  "band": "moderate",
+  "typical_pm25": 14.1,
+  "dq": null
+ },
+ {
+  "at": "2026-08-25T22:30:00Z",
+  "pm25": 19.0,
+  "nowcast": 20.0,
+  "band": "moderate",
+  "typical_pm25": 12.9,
+  "dq": null
+ },
+ {
+  "at": "2026-08-25T23:30:00Z",
+  "pm25": 16.0,
+  "nowcast": 18.2,
+  "band": "moderate",
+  "typical_pm25": 12.3,
+  "dq": null
+ },
+ {
+  "at": "2026-08-26T00:30:00Z",
+  "pm25": 19.0,
+  "nowcast": 18.5,
+  "band": "moderate",
+  "typical_pm25": 11.5,
+  "dq": null
+ },
+ {
+  "at": "2026-08-26T01:30:00Z",
+  "pm25": 15.0,
+  "nowcast": 17.0,
+  "band": "moderate",
+  "typical_pm25": 12.3,
+  "dq": null
+ },
+ {
+  "at": "2026-08-26T02:30:00Z",
+  "pm25": 14.0,
+  "nowcast": 15.7,
+  "band": "moderate",
+  "typical_pm25": 14.5,
+  "dq": null
+ },
+ {
+  "at": "2026-08-26T03:30:00Z",
+  "pm25": 24.0,
+  "nowcast": 19.2,
+  "band": "moderate",
+  "typical_pm25": 16.7,
+  "dq": null
+ },
+ {
+  "at": "2026-08-26T04:30:00Z",
+  "pm25": 15.0,
+  "nowcast": 17.4,
+  "band": "moderate",
+  "typical_pm25": 16.7,
+  "dq": null
+ },
+ {
+  "at": "2026-08-26T05:30:00Z",
+  "pm25": 17.0,
+  "nowcast": 17.2,
+  "band": "moderate",
+  "typical_pm25": 16.4,
+  "dq": null
+ },
+ {
+  "at": "2026-08-26T06:30:00Z",
+  "pm25": 17.0,
+  "nowcast": 17.1,
+  "band": "moderate",
+  "typical_pm25": 16.9,
+  "dq": null
+ },
+ {
+  "at": "2026-08-26T07:30:00Z",
+  "pm25": 18.0,
+  "nowcast": 17.5,
+  "band": "moderate",
+  "typical_pm25": 17.0,
+  "dq": null
+ },
+ {
+  "at": "2026-08-26T08:30:00Z",
+  "pm25": 18.0,
+  "nowcast": 17.7,
+  "band": "moderate",
+  "typical_pm25": 16.0,
+  "dq": null
+ },
+ {
+  "at": "2026-08-26T09:30:00Z",
+  "pm25": 16.0,
+  "nowcast": 16.9,
+  "band": "moderate",
+  "typical_pm25": 16.0,
+  "dq": null
+ },
+ {
+  "at": "2026-08-26T10:30:00Z",
+  "pm25": 18.0,
+  "nowcast": 17.4,
+  "band": "moderate",
+  "typical_pm25": 14.0,
+  "dq": null
+ },
+ {
+  "at": "2026-08-26T11:30:00Z",
+  "pm25": 13.0,
+  "nowcast": 15.3,
+  "band": "moderate",
+  "typical_pm25": 14.0,
+  "dq": null
+ },
+ {
+  "at": "2026-08-26T12:30:00Z",
+  "pm25": 18.0,
+  "nowcast": 16.5,
+  "band": "moderate",
+  "typical_pm25": 17.0,
+  "dq": null
+ },
+ {
+  "at": "2026-08-26T13:30:00Z",
+  "pm25": 13.0,
+  "nowcast": 14.9,
+  "band": "moderate",
+  "typical_pm25": 16.0,
+  "dq": null
+ },
+ {
+  "at": "2026-08-26T14:30:00Z",
+  "pm25": 13.0,
+  "nowcast": 14.0,
+  "band": "moderate",
+  "typical_pm25": 18.0,
+  "dq": null
+ },
+ {
+  "at": "2026-08-26T15:30:00Z",
+  "pm25": 24.0,
+  "nowcast": 18.6,
+  "band": "moderate",
+  "typical_pm25": 16.0,
+  "dq": null
+ },
+ {
+  "at": "2026-08-26T16:30:00Z",
+  "pm25": 20.0,
+  "nowcast": 19.2,
+  "band": "moderate",
+  "typical_pm25": 15.0,
+  "dq": null
+ },
+ {
+  "at": "2026-08-26T17:30:00Z",
+  "pm25": 26.0,
+  "nowcast": 22.7,
+  "band": "moderate",
+  "typical_pm25": 17.0,
+  "dq": null
+ },
+ {
+  "at": "2026-08-26T18:30:00Z",
+  "pm25": 19.0,
+  "nowcast": 20.8,
+  "band": "moderate",
+  "typical_pm25": 14.0,
+  "dq": null
+ },
+ {
+  "at": "2026-08-26T19:30:00Z",
+  "pm25": 18.0,
+  "nowcast": 19.4,
+  "band": "moderate",
+  "typical_pm25": 13.0,
+  "dq": null
+ },
+ {
+  "at": "2026-08-26T20:30:00Z",
+  "pm25": 15.0,
+  "nowcast": 17.2,
+  "band": "moderate",
+  "typical_pm25": 14.0,
+  "dq": null
+ },
+ {
+  "at": "2026-08-26T21:30:00Z",
+  "pm25": 13.0,
+  "nowcast": 15.1,
+  "band": "moderate",
+  "typical_pm25": 15.0,
+  "dq": null
+ },
+ {
+  "at": "2026-08-26T22:30:00Z",
+  "pm25": 12.0,
+  "nowcast": 13.5,
+  "band": "moderate",
+  "typical_pm25": 13.4,
+  "dq": null
+ },
+ {
+  "at": "2026-08-26T23:30:00Z",
+  "pm25": 15.0,
+  "nowcast": 14.2,
+  "band": "moderate",
+  "typical_pm25": 12.5,
+  "dq": null
+ },
+ {
+  "at": "2026-08-27T00:30:00Z",
+  "pm25": 11.0,
+  "nowcast": 12.6,
+  "band": "moderate",
+  "typical_pm25": 12.7,
+  "dq": null
+ },
+ {
+  "at": "2026-08-27T01:30:00Z",
+  "pm25": 14.0,
+  "nowcast": 13.3,
+  "band": "moderate",
+  "typical_pm25": 13.3,
+  "dq": null
+ },
+ {
+  "at": "2026-08-27T02:30:00Z",
+  "pm25": 17.0,
+  "nowcast": 15.1,
+  "band": "moderate",
+  "typical_pm25": 14.3,
+  "dq": null
+ },
+ {
+  "at": "2026-08-27T03:30:00Z",
+  "pm25": 16.0,
+  "nowcast": 15.5,
+  "band": "moderate",
+  "typical_pm25": 17.3,
+  "dq": null
+ },
+ {
+  "at": "2026-08-27T04:30:00Z",
+  "pm25": 16.0,
+  "nowcast": 15.7,
+  "band": "moderate",
+  "typical_pm25": 16.0,
+  "dq": null
+ },
+ {
+  "at": "2026-08-27T05:30:00Z",
+  "pm25": 17.0,
+  "nowcast": 16.2,
+  "band": "moderate",
+  "typical_pm25": 17.0,
+  "dq": null
+ },
+ {
+  "at": "2026-08-27T06:30:00Z",
+  "pm25": 16.0,
+  "nowcast": 16.0,
+  "band": "moderate",
+  "typical_pm25": 17.0,
+  "dq": null
+ },
+ {
+  "at": "2026-08-27T07:30:00Z",
+  "pm25": 13.0,
+  "nowcast": 14.9,
+  "band": "moderate",
+  "typical_pm25": 17.5,
+  "dq": null
+ },
+ {
+  "at": "2026-08-27T08:30:00Z",
+  "pm25": 19.0,
+  "nowcast": 16.5,
+  "band": "moderate",
+  "typical_pm25": 16.0,
+  "dq": null
+ },
+ {
+  "at": "2026-08-27T09:30:00Z",
+  "pm25": 11.0,
+  "nowcast": 14.2,
+  "band": "moderate",
+  "typical_pm25": 16.0,
+  "dq": null
+ },
+ {
+  "at": "2026-08-27T10:30:00Z",
+  "pm25": 18.0,
+  "nowcast": 15.8,
+  "band": "moderate",
+  "typical_pm25": 15.4,
+  "dq": null
+ },
+ {
+  "at": "2026-08-27T11:30:00Z",
+  "pm25": 19.0,
+  "nowcast": 17.1,
+  "band": "moderate",
+  "typical_pm25": 14.0,
+  "dq": null
+ },
+ {
+  "at": "2026-08-27T12:30:00Z",
+  "pm25": 17.0,
+  "nowcast": 17.0,
+  "band": "moderate",
+  "typical_pm25": 17.0,
+  "dq": null
+ },
+ {
+  "at": "2026-08-27T13:30:00Z",
+  "pm25": 15.0,
+  "nowcast": 16.2,
+  "band": "moderate",
+  "typical_pm25": 15.0,
+  "dq": null
+ },
+ {
+  "at": "2026-08-27T14:30:00Z",
+  "pm25": 22.0,
+  "nowcast": 19.0,
+  "band": "moderate",
+  "typical_pm25": 17.0,
+  "dq": null
+ },
+ {
+  "at": "2026-08-27T15:30:00Z",
+  "pm25": 19.0,
+  "nowcast": 19.0,
+  "band": "moderate",
+  "typical_pm25": 16.5,
+  "dq": null
+ },
+ {
+  "at": "2026-08-27T16:30:00Z",
+  "pm25": 17.0,
+  "nowcast": 18.0,
+  "band": "moderate",
+  "typical_pm25": 15.5,
+  "dq": null
+ },
+ {
+  "at": "2026-08-27T17:30:00Z",
+  "pm25": 10.0,
+  "nowcast": 14.0,
+  "band": "moderate",
+  "typical_pm25": 17.5,
+  "dq": null
+ },
+ {
+  "at": "2026-08-27T18:30:00Z",
+  "pm25": 12.0,
+  "nowcast": 13.0,
+  "band": "moderate",
+  "typical_pm25": 15.9,
+  "dq": null
+ },
+ {
+  "at": "2026-08-27T19:30:00Z",
+  "pm25": 11.0,
+  "nowcast": 12.0,
+  "band": "moderate",
+  "typical_pm25": 14.9,
+  "dq": null
+ },
+ {
+  "at": "2026-08-27T20:30:00Z",
+  "pm25": 14.0,
+  "nowcast": 13.0,
+  "band": "moderate",
+  "typical_pm25": 14.5,
+  "dq": null
+ },
+ {
+  "at": "2026-08-27T21:30:00Z",
+  "pm25": 13.0,
+  "nowcast": 13.0,
+  "band": "moderate",
+  "typical_pm25": 14.0,
+  "dq": null
+ },
+ {
+  "at": "2026-08-27T22:30:00Z",
+  "pm25": 12.0,
+  "nowcast": 12.4,
+  "band": "moderate",
+  "typical_pm25": 12.0,
+  "dq": null
+ },
+ {
+  "at": "2026-08-27T23:30:00Z",
+  "pm25": 13.0,
+  "nowcast": 12.7,
+  "band": "moderate",
+  "typical_pm25": 13.0,
+  "dq": null
+ },
+ {
+  "at": "2026-08-28T00:30:00Z",
+  "pm25": 11.0,
+  "nowcast": 11.8,
+  "band": "moderate",
+  "typical_pm25": 11.0,
+  "dq": null
+ },
+ {
+  "at": "2026-08-28T01:30:00Z",
+  "pm25": 8.0,
+  "nowcast": 9.9,
+  "band": "moderate",
+  "typical_pm25": 14.0,
+  "dq": null
+ },
+ {
+  "at": "2026-08-28T02:30:00Z",
+  "pm25": 13.0,
+  "nowcast": 11.4,
+  "band": "moderate",
+  "typical_pm25": 14.0,
+  "dq": null
+ },
+ {
+  "at": "2026-08-28T03:30:00Z",
+  "pm25": 15.0,
+  "nowcast": 13.2,
+  "band": "moderate",
+  "typical_pm25": 17.0,
+  "dq": null
+ },
+ {
+  "at": "2026-08-28T04:30:00Z",
+  "pm25": 11.0,
+  "nowcast": 12.1,
+  "band": "moderate",
+  "typical_pm25": 16.0,
+  "dq": null
+ },
+ {
+  "at": "2026-08-28T05:30:00Z",
+  "pm25": 14.0,
+  "nowcast": 12.9,
+  "band": "moderate",
+  "typical_pm25": 17.0,
+  "dq": null
+ },
+ {
+  "at": "2026-08-28T06:30:00Z",
+  "pm25": 14.0,
+  "nowcast": 13.4,
+  "band": "moderate",
+  "typical_pm25": 17.0,
+  "dq": null
+ },
+ {
+  "at": "2026-08-28T07:30:00Z",
+  "pm25": 14.0,
+  "nowcast": 13.7,
+  "band": "moderate",
+  "typical_pm25": 17.0,
+  "dq": null
+ },
+ {
+  "at": "2026-08-28T08:30:00Z",
+  "pm25": 10.0,
+  "nowcast": 11.9,
+  "band": "moderate",
+  "typical_pm25": 16.0,
+  "dq": null
+ },
+ {
+  "at": "2026-08-28T09:30:00Z",
+  "pm25": 15.0,
+  "nowcast": 13.3,
+  "band": "moderate",
+  "typical_pm25": 16.0,
+  "dq": null
+ },
+ {
+  "at": "2026-08-28T10:30:00Z",
+  "pm25": 9.0,
+  "nowcast": 11.3,
+  "band": "moderate",
+  "typical_pm25": 17.0,
+  "dq": null
+ },
+ {
+  "at": "2026-08-28T11:30:00Z",
+  "pm25": 9.0,
+  "nowcast": 10.2,
+  "band": "moderate",
+  "typical_pm25": 14.0,
+  "dq": null
+ },
+ {
+  "at": "2026-08-28T12:30:00Z",
+  "pm25": 13.0,
+  "nowcast": 11.5,
+  "band": "moderate",
+  "typical_pm25": 17.0,
+  "dq": null
+ },
+ {
+  "at": "2026-08-28T13:30:00Z",
+  "pm25": 12.0,
+  "nowcast": 11.7,
+  "band": "moderate",
+  "typical_pm25": 15.0,
+  "dq": null
+ },
+ {
+  "at": "2026-08-28T14:30:00Z",
+  "pm25": 15.0,
+  "nowcast": 13.0,
+  "band": "moderate",
+  "typical_pm25": 18.0,
+  "dq": null
+ },
+ {
+  "at": "2026-08-28T15:30:00Z",
+  "pm25": 12.0,
+  "nowcast": 12.6,
+  "band": "moderate",
+  "typical_pm25": 17.0,
+  "dq": null
+ },
+ {
+  "at": "2026-08-28T16:30:00Z",
+  "pm25": 17.0,
+  "nowcast": 14.7,
+  "band": "moderate",
+  "typical_pm25": 16.0,
+  "dq": null
+ },
+ {
+  "at": "2026-08-28T17:30:00Z",
+  "pm25": 9.0,
+  "nowcast": 12.0,
+  "band": "moderate",
+  "typical_pm25": 17.0,
+  "dq": null
+ },
+ {
+  "at": "2026-08-28T18:30:00Z",
+  "pm25": 13.0,
+  "nowcast": 12.4,
+  "band": "moderate",
+  "typical_pm25": 14.0,
+  "dq": null
+ },
+ {
+  "at": "2026-08-28T19:30:00Z",
+  "pm25": 12.0,
+  "nowcast": 12.2,
+  "band": "moderate",
+  "typical_pm25": 13.0,
+  "dq": null
+ },
+ {
+  "at": "2026-08-28T20:30:00Z",
+  "pm25": 9.0,
+  "nowcast": 10.7,
+  "band": "moderate",
+  "typical_pm25": 14.0,
+  "dq": null
+ },
+ {
+  "at": "2026-08-28T21:30:00Z",
+  "pm25": 6.0,
+  "nowcast": 8.3,
+  "band": "good",
+  "typical_pm25": 13.0,
+  "dq": null
+ },
+ {
+  "at": "2026-08-28T22:30:00Z",
+  "pm25": 7.0,
+  "nowcast": 7.6,
+  "band": "good",
+  "typical_pm25": 12.0,
+  "dq": null
+ },
+ {
+  "at": "2026-08-28T23:30:00Z",
+  "pm25": 5.0,
+  "nowcast": 6.3,
+  "band": "good",
+  "typical_pm25": 13.0,
+  "dq": null
+ },
+ {
+  "at": "2026-08-29T00:30:00Z",
+  "pm25": 11.0,
+  "nowcast": 8.6,
+  "band": "good",
+  "typical_pm25": 11.0,
+  "dq": null
+ },
+ {
+  "at": "2026-08-29T01:30:00Z",
+  "pm25": 12.0,
+  "nowcast": 10.3,
+  "band": "moderate",
+  "typical_pm25": 12.4,
+  "dq": null
+ },
+ {
+  "at": "2026-08-29T02:30:00Z",
+  "pm25": 13.0,
+  "nowcast": 11.6,
+  "band": "moderate",
+  "typical_pm25": 14.0,
+  "dq": null
+ },
+ {
+  "at": "2026-08-29T03:30:00Z",
+  "pm25": 10.0,
+  "nowcast": 10.8,
+  "band": "moderate",
+  "typical_pm25": 16.5,
+  "dq": null
+ },
+ {
+  "at": "2026-08-29T04:30:00Z",
+  "pm25": 9.0,
+  "nowcast": 9.9,
+  "band": "moderate",
+  "typical_pm25": 15.5,
+  "dq": null
+ },
+ {
+  "at": "2026-08-29T05:30:00Z",
+  "pm25": 13.0,
+  "nowcast": 11.4,
+  "band": "moderate",
+  "typical_pm25": 17.0,
+  "dq": null
+ },
+ {
+  "at": "2026-08-29T06:30:00Z",
+  "pm25": 11.0,
+  "nowcast": 11.2,
+  "band": "moderate",
+  "typical_pm25": 17.0,
+  "dq": null
+ },
+ {
+  "at": "2026-08-29T07:30:00Z",
+  "pm25": 12.0,
+  "nowcast": 11.6,
+  "band": "moderate",
+  "typical_pm25": 15.4,
+  "dq": null
+ },
+ {
+  "at": "2026-08-29T08:30:00Z",
+  "pm25": 9.0,
+  "nowcast": 10.3,
+  "band": "moderate",
+  "typical_pm25": 16.0,
+  "dq": null
+ },
+ {
+  "at": "2026-08-29T09:30:00Z",
+  "pm25": 12.0,
+  "nowcast": 11.1,
+  "band": "moderate",
+  "typical_pm25": 15.5,
+  "dq": null
+ },
+ {
+  "at": "2026-08-29T10:30:00Z",
+  "pm25": 12.0,
+  "nowcast": 11.5,
+  "band": "moderate",
+  "typical_pm25": 15.4,
+  "dq": null
+ },
+ {
+  "at": "2026-08-29T11:30:00Z",
+  "pm25": 15.0,
+  "nowcast": 12.8,
+  "band": "moderate",
+  "typical_pm25": 14.0,
+  "dq": null
+ },
+ {
+  "at": "2026-08-29T12:30:00Z",
+  "pm25": 16.0,
+  "nowcast": 14.3,
+  "band": "moderate",
+  "typical_pm25": 17.0,
+  "dq": null
+ },
+ {
+  "at": "2026-08-29T13:30:00Z",
+  "pm25": 16.0,
+  "nowcast": 15.0,
+  "band": "moderate",
+  "typical_pm25": 14.5,
+  "dq": null
+ },
+ {
+  "at": "2026-08-29T14:30:00Z",
+  "pm25": 17.0,
+  "nowcast": 16.0,
+  "band": "moderate",
+  "typical_pm25": 17.0,
+  "dq": null
+ },
+ {
+  "at": "2026-08-29T15:30:00Z",
+  "pm25": 15.0,
+  "nowcast": 15.5,
+  "band": "moderate",
+  "typical_pm25": 16.5,
+  "dq": null
+ },
+ {
+  "at": "2026-08-29T16:30:00Z",
+  "pm25": 15.0,
+  "nowcast": 15.2,
+  "band": "moderate",
+  "typical_pm25": 16.5,
+  "dq": null
+ },
+ {
+  "at": "2026-08-29T20:30:00Z",
+  "pm25": 17.0,
+  "nowcast": null,
+  "band": null,
+  "typical_pm25": 14.0,
+  "dq": null
+ },
+ {
+  "at": "2026-08-29T21:30:00Z",
+  "pm25": 13.0,
+  "nowcast": 14.8,
+  "band": "moderate",
+  "typical_pm25": 13.0,
+  "dq": null
+ },
+ {
+  "at": "2026-08-29T22:30:00Z",
+  "pm25": 11.0,
+  "nowcast": 13.0,
+  "band": "moderate",
+  "typical_pm25": 12.0,
+  "dq": null
+ },
+ {
+  "at": "2026-08-29T23:30:00Z",
+  "pm25": 8.0,
+  "nowcast": 10.1,
+  "band": "moderate",
+  "typical_pm25": 13.0,
+  "dq": null
+ },
+ {
+  "at": "2026-08-30T00:30:00Z",
+  "pm25": 13.0,
+  "nowcast": 11.5,
+  "band": "moderate",
+  "typical_pm25": 11.0,
+  "dq": null
+ },
+ {
+  "at": "2026-08-30T01:30:00Z",
+  "pm25": 9.0,
+  "nowcast": 10.2,
+  "band": "moderate",
+  "typical_pm25": 12.0,
+  "dq": null
+ },
+ {
+  "at": "2026-08-30T02:30:00Z",
+  "pm25": 13.0,
+  "nowcast": 11.6,
+  "band": "moderate",
+  "typical_pm25": 14.0,
+  "dq": null
+ },
+ {
+  "at": "2026-08-30T03:30:00Z",
+  "pm25": 13.0,
+  "nowcast": 12.3,
+  "band": "moderate",
+  "typical_pm25": 16.0,
+  "dq": null
+ },
+ {
+  "at": "2026-08-30T04:30:00Z",
+  "pm25": 13.0,
+  "nowcast": 12.6,
+  "band": "moderate",
+  "typical_pm25": 15.0,
+  "dq": null
+ },
+ {
+  "at": "2026-08-30T05:30:00Z",
+  "pm25": 9.0,
+  "nowcast": 10.8,
+  "band": "moderate",
+  "typical_pm25": 16.5,
+  "dq": null
+ },
+ {
+  "at": "2026-08-30T06:30:00Z",
+  "pm25": -4.0,
+  "nowcast": 10.8,
+  "band": "moderate",
+  "typical_pm25": 16.5,
+  "dq": "DQ_INVALID"
+ },
+ {
+  "at": "2026-08-30T07:30:00Z",
+  "pm25": 15.0,
+  "nowcast": 13.6,
+  "band": "moderate",
+  "typical_pm25": 14.0,
+  "dq": null
+ },
+ {
+  "at": "2026-08-30T08:30:00Z",
+  "pm25": 6.0,
+  "nowcast": 9.2,
+  "band": "moderate",
+  "typical_pm25": 16.0,
+  "dq": null
+ },
+ {
+  "at": "2026-08-30T09:30:00Z",
+  "pm25": 6.0,
+  "nowcast": 7.5,
+  "band": "good",
+  "typical_pm25": 15.0,
+  "dq": null
+ },
+ {
+  "at": "2026-08-30T10:30:00Z",
+  "pm25": 8.0,
+  "nowcast": 7.7,
+  "band": "good",
+  "typical_pm25": 14.0,
+  "dq": null
+ },
+ {
+  "at": "2026-08-30T11:30:00Z",
+  "pm25": 11.0,
+  "nowcast": 9.4,
+  "band": "moderate",
+  "typical_pm25": 14.0,
+  "dq": null
+ },
+ {
+  "at": "2026-08-30T12:30:00Z",
+  "pm25": 10.0,
+  "nowcast": 9.7,
+  "band": "moderate",
+  "typical_pm25": 17.0,
+  "dq": null
+ },
+ {
+  "at": "2026-08-30T13:30:00Z",
+  "pm25": 13.0,
+  "nowcast": 11.3,
+  "band": "moderate",
+  "typical_pm25": 15.0,
+  "dq": null
+ },
+ {
+  "at": "2026-08-30T14:30:00Z",
+  "pm25": 10.0,
+  "nowcast": 10.6,
+  "band": "moderate",
+  "typical_pm25": 17.0,
+  "dq": null
+ },
+ {
+  "at": "2026-08-30T15:30:00Z",
+  "pm25": 11.0,
+  "nowcast": 10.8,
+  "band": "moderate",
+  "typical_pm25": 16.0,
+  "dq": null
+ },
+ {
+  "at": "2026-08-30T16:30:00Z",
+  "pm25": 13.0,
+  "nowcast": 11.9,
+  "band": "moderate",
+  "typical_pm25": 16.0,
+  "dq": null
+ },
+ {
+  "at": "2026-08-30T17:30:00Z",
+  "pm25": 12.0,
+  "nowcast": 11.9,
+  "band": "moderate",
+  "typical_pm25": 16.0,
+  "dq": null
+ },
+ {
+  "at": "2026-08-30T18:30:00Z",
+  "pm25": 11.0,
+  "nowcast": 11.4,
+  "band": "moderate",
+  "typical_pm25": 13.5,
+  "dq": null
+ },
+ {
+  "at": "2026-08-30T19:30:00Z",
+  "pm25": 8.0,
+  "nowcast": 9.7,
+  "band": "moderate",
+  "typical_pm25": 12.5,
+  "dq": null
+ },
+ {
+  "at": "2026-08-30T20:30:00Z",
+  "pm25": 6.0,
+  "nowcast": 7.8,
+  "band": "good",
+  "typical_pm25": 14.0,
+  "dq": null
+ },
+ {
+  "at": "2026-08-30T21:30:00Z",
+  "pm25": 9.0,
+  "nowcast": 8.4,
+  "band": "good",
+  "typical_pm25": 13.0,
+  "dq": null
+ },
+ {
+  "at": "2026-08-30T22:30:00Z",
+  "pm25": 6.0,
+  "nowcast": 7.2,
+  "band": "good",
+  "typical_pm25": 12.0,
+  "dq": null
+ },
+ {
+  "at": "2026-08-30T23:30:00Z",
+  "pm25": 7.0,
+  "nowcast": 7.1,
+  "band": "good",
+  "typical_pm25": 12.0,
+  "dq": null
+ },
+ {
+  "at": "2026-08-31T00:30:00Z",
+  "pm25": 8.0,
+  "nowcast": 7.5,
+  "band": "good",
+  "typical_pm25": 11.0,
+  "dq": null
+ },
+ {
+  "at": "2026-08-31T01:30:00Z",
+  "pm25": 7.0,
+  "nowcast": 7.2,
+  "band": "good",
+  "typical_pm25": 11.5,
+  "dq": null
+ },
+ {
+  "at": "2026-08-31T02:30:00Z",
+  "pm25": 12.0,
+  "nowcast": 9.6,
+  "band": "moderate",
+  "typical_pm25": 14.0,
+  "dq": null
+ },
+ {
+  "at": "2026-08-31T03:30:00Z",
+  "pm25": 12.0,
+  "nowcast": 10.8,
+  "band": "moderate",
+  "typical_pm25": 16.0,
+  "dq": null
+ },
+ {
+  "at": "2026-08-31T04:30:00Z",
+  "pm25": 18.0,
+  "nowcast": 14.4,
+  "band": "moderate",
+  "typical_pm25": 15.0,
+  "dq": null
+ },
+ {
+  "at": "2026-08-31T05:30:00Z",
+  "pm25": 14.0,
+  "nowcast": 14.2,
+  "band": "moderate",
+  "typical_pm25": 16.0,
+  "dq": null
+ },
+ {
+  "at": "2026-08-31T06:30:00Z",
+  "pm25": 10.0,
+  "nowcast": 12.1,
+  "band": "moderate",
+  "typical_pm25": 16.5,
+  "dq": null
+ },
+ {
+  "at": "2026-08-31T07:30:00Z",
+  "pm25": 6.0,
+  "nowcast": 9.0,
+  "band": "good",
+  "typical_pm25": 14.5,
+  "dq": null
+ },
+ {
+  "at": "2026-08-31T08:30:00Z",
+  "pm25": 13.0,
+  "nowcast": 11.0,
+  "band": "moderate",
+  "typical_pm25": 14.4,
+  "dq": null
+ },
+ {
+  "at": "2026-08-31T09:30:00Z",
+  "pm25": 11.0,
+  "nowcast": 11.0,
+  "band": "moderate",
+  "typical_pm25": 15.0,
+  "dq": null
+ },
+ {
+  "at": "2026-08-31T10:30:00Z",
+  "pm25": 9.0,
+  "nowcast": 10.0,
+  "band": "moderate",
+  "typical_pm25": 13.0,
+  "dq": null
+ },
+ {
+  "at": "2026-08-31T11:30:00Z",
+  "pm25": 11.0,
+  "nowcast": 10.5,
+  "band": "moderate",
+  "typical_pm25": 14.0,
+  "dq": null
+ },
+ {
+  "at": "2026-08-31T12:30:00Z",
+  "pm25": 10.0,
+  "nowcast": 10.2,
+  "band": "moderate",
+  "typical_pm25": 16.5,
+  "dq": null
+ },
+ {
+  "at": "2026-08-31T13:30:00Z",
+  "pm25": 10.0,
+  "nowcast": 10.1,
+  "band": "moderate",
+  "typical_pm25": 14.5,
+  "dq": null
+ },
+ {
+  "at": "2026-08-31T14:30:00Z",
+  "pm25": 10.0,
+  "nowcast": 10.0,
+  "band": "moderate",
+  "typical_pm25": 16.5,
+  "dq": null
+ },
+ {
+  "at": "2026-08-31T15:30:00Z",
+  "pm25": 9.0,
+  "nowcast": 9.5,
+  "band": "moderate",
+  "typical_pm25": 16.0,
+  "dq": null
+ },
+ {
+  "at": "2026-08-31T16:30:00Z",
+  "pm25": 10.0,
+  "nowcast": 9.7,
+  "band": "moderate",
+  "typical_pm25": 15.5,
+  "dq": null
+ },
+ {
+  "at": "2026-08-31T17:30:00Z",
+  "pm25": 11.0,
+  "nowcast": 10.3,
+  "band": "moderate",
+  "typical_pm25": 15.0,
+  "dq": null
+ },
+ {
+  "at": "2026-08-31T18:30:00Z",
+  "pm25": 10.0,
+  "nowcast": 10.1,
+  "band": "moderate",
+  "typical_pm25": 13.0,
+  "dq": null
+ },
+ {
+  "at": "2026-08-31T19:30:00Z",
+  "pm25": 11.0,
+  "nowcast": 10.4,
+  "band": "moderate",
+  "typical_pm25": 12.0,
+  "dq": null
+ },
+ {
+  "at": "2026-08-31T20:30:00Z",
+  "pm25": 10.0,
+  "nowcast": 10.2,
+  "band": "moderate",
+  "typical_pm25": 14.0,
+  "dq": null
+ },
+ {
+  "at": "2026-08-31T21:30:00Z",
+  "pm25": 7.0,
+  "nowcast": 9.0,
+  "band": "good",
+  "typical_pm25": 13.0,
+  "dq": null
+ },
+ {
+  "at": "2026-08-31T22:30:00Z",
+  "pm25": 8.0,
+  "nowcast": 8.6,
+  "band": "good",
+  "typical_pm25": 12.0,
+  "dq": null
+ },
+ {
+  "at": "2026-08-31T23:30:00Z",
+  "pm25": 5.0,
+  "nowcast": 6.6,
+  "band": "good",
+  "typical_pm25": 11.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-01T00:30:00Z",
+  "pm25": 5.0,
+  "nowcast": 5.8,
+  "band": "good",
+  "typical_pm25": 11.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-01T01:30:00Z",
+  "pm25": 7.0,
+  "nowcast": 6.4,
+  "band": "good",
+  "typical_pm25": 11.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-01T02:30:00Z",
+  "pm25": 9.0,
+  "nowcast": 7.7,
+  "band": "good",
+  "typical_pm25": 14.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-01T03:30:00Z",
+  "pm25": 9.0,
+  "nowcast": 8.3,
+  "band": "good",
+  "typical_pm25": 16.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-01T04:30:00Z",
+  "pm25": 11.0,
+  "nowcast": 9.6,
+  "band": "moderate",
+  "typical_pm25": 15.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-01T05:30:00Z",
+  "pm25": 7.0,
+  "nowcast": 8.3,
+  "band": "good",
+  "typical_pm25": 15.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-01T06:30:00Z",
+  "pm25": 10.0,
+  "nowcast": 9.1,
+  "band": "moderate",
+  "typical_pm25": 16.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-01T07:30:00Z",
+  "pm25": 10.0,
+  "nowcast": 9.5,
+  "band": "moderate",
+  "typical_pm25": 14.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-01T08:30:00Z",
+  "pm25": 9.0,
+  "nowcast": 9.2,
+  "band": "moderate",
+  "typical_pm25": 13.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-01T09:30:00Z",
+  "pm25": 8.0,
+  "nowcast": 8.6,
+  "band": "good",
+  "typical_pm25": 15.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-01T10:30:00Z",
+  "pm25": 9.0,
+  "nowcast": 8.8,
+  "band": "good",
+  "typical_pm25": 12.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-01T11:30:00Z",
+  "pm25": 15.0,
+  "nowcast": 11.9,
+  "band": "moderate",
+  "typical_pm25": 14.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-01T12:30:00Z",
+  "pm25": 12.0,
+  "nowcast": 11.9,
+  "band": "moderate",
+  "typical_pm25": 16.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-01T13:30:00Z",
+  "pm25": 8.0,
+  "nowcast": 9.9,
+  "band": "moderate",
+  "typical_pm25": 14.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-01T14:30:00Z",
+  "pm25": 14.0,
+  "nowcast": 11.9,
+  "band": "moderate",
+  "typical_pm25": 16.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-01T15:30:00Z",
+  "pm25": 17.0,
+  "nowcast": 14.4,
+  "band": "moderate",
+  "typical_pm25": 16.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-01T16:30:00Z",
+  "pm25": 13.0,
+  "nowcast": 13.7,
+  "band": "moderate",
+  "typical_pm25": 15.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-01T17:30:00Z",
+  "pm25": 10.0,
+  "nowcast": 11.8,
+  "band": "moderate",
+  "typical_pm25": 14.5,
+  "dq": null
+ },
+ {
+  "at": "2026-09-01T18:30:00Z",
+  "pm25": 6.0,
+  "nowcast": 8.9,
+  "band": "good",
+  "typical_pm25": 13.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-01T19:30:00Z",
+  "pm25": 5.0,
+  "nowcast": 6.9,
+  "band": "good",
+  "typical_pm25": 11.5,
+  "dq": null
+ },
+ {
+  "at": "2026-09-01T20:30:00Z",
+  "pm25": 5.0,
+  "nowcast": 5.9,
+  "band": "good",
+  "typical_pm25": 14.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-01T21:30:00Z",
+  "pm25": 5.0,
+  "nowcast": 5.4,
+  "band": "good",
+  "typical_pm25": 13.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-01T22:30:00Z",
+  "pm25": 5.0,
+  "nowcast": 5.2,
+  "band": "good",
+  "typical_pm25": 11.5,
+  "dq": null
+ },
+ {
+  "at": "2026-09-01T23:30:00Z",
+  "pm25": 7.0,
+  "nowcast": 6.1,
+  "band": "good",
+  "typical_pm25": 10.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-02T00:30:00Z",
+  "pm25": 7.0,
+  "nowcast": 6.5,
+  "band": "good",
+  "typical_pm25": 11.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-02T01:30:00Z",
+  "pm25": 6.0,
+  "nowcast": 6.2,
+  "band": "good",
+  "typical_pm25": 11.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-02T02:30:00Z",
+  "pm25": 8.0,
+  "nowcast": 7.1,
+  "band": "good",
+  "typical_pm25": 13.5,
+  "dq": null
+ },
+ {
+  "at": "2026-09-02T03:30:00Z",
+  "pm25": 5.0,
+  "nowcast": 6.0,
+  "band": "good",
+  "typical_pm25": 15.5,
+  "dq": null
+ },
+ {
+  "at": "2026-09-02T04:30:00Z",
+  "pm25": 8.0,
+  "nowcast": 7.0,
+  "band": "good",
+  "typical_pm25": 15.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-02T05:30:00Z",
+  "pm25": 10.0,
+  "nowcast": 8.5,
+  "band": "good",
+  "typical_pm25": 14.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-02T06:30:00Z",
+  "pm25": 14.0,
+  "nowcast": 11.2,
+  "band": "moderate",
+  "typical_pm25": 16.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-02T07:30:00Z",
+  "pm25": 10.0,
+  "nowcast": 10.6,
+  "band": "moderate",
+  "typical_pm25": 14.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-02T08:30:00Z",
+  "pm25": 9.0,
+  "nowcast": 9.8,
+  "band": "moderate",
+  "typical_pm25": 13.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-02T09:30:00Z",
+  "pm25": 11.0,
+  "nowcast": 10.4,
+  "band": "moderate",
+  "typical_pm25": 13.4,
+  "dq": null
+ },
+ {
+  "at": "2026-09-02T10:30:00Z",
+  "pm25": 12.0,
+  "nowcast": 11.2,
+  "band": "moderate",
+  "typical_pm25": 12.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-02T11:30:00Z",
+  "pm25": 11.0,
+  "nowcast": 11.1,
+  "band": "moderate",
+  "typical_pm25": 14.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-02T12:30:00Z",
+  "pm25": 13.0,
+  "nowcast": 12.0,
+  "band": "moderate",
+  "typical_pm25": 16.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-02T13:30:00Z",
+  "pm25": 10.0,
+  "nowcast": 11.0,
+  "band": "moderate",
+  "typical_pm25": 14.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-02T14:30:00Z",
+  "pm25": 14.0,
+  "nowcast": 12.5,
+  "band": "moderate",
+  "typical_pm25": 15.5,
+  "dq": null
+ },
+ {
+  "at": "2026-09-02T15:30:00Z",
+  "pm25": 22.0,
+  "nowcast": 17.2,
+  "band": "moderate",
+  "typical_pm25": 16.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-02T16:30:00Z",
+  "pm25": 17.0,
+  "nowcast": 17.1,
+  "band": "moderate",
+  "typical_pm25": 15.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-02T17:30:00Z",
+  "pm25": 16.0,
+  "nowcast": 16.5,
+  "band": "moderate",
+  "typical_pm25": 14.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-02T18:30:00Z",
+  "pm25": 15.0,
+  "nowcast": 15.7,
+  "band": "moderate",
+  "typical_pm25": 13.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-02T19:30:00Z",
+  "pm25": 10.0,
+  "nowcast": 12.8,
+  "band": "moderate",
+  "typical_pm25": 11.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-02T20:30:00Z",
+  "pm25": 16.0,
+  "nowcast": 14.4,
+  "band": "moderate",
+  "typical_pm25": 13.5,
+  "dq": null
+ },
+ {
+  "at": "2026-09-02T21:30:00Z",
+  "pm25": 13.0,
+  "nowcast": 13.7,
+  "band": "moderate",
+  "typical_pm25": 13.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-02T22:30:00Z",
+  "pm25": 10.0,
+  "nowcast": 11.8,
+  "band": "moderate",
+  "typical_pm25": 11.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-02T23:30:00Z",
+  "pm25": 13.0,
+  "nowcast": 12.4,
+  "band": "moderate",
+  "typical_pm25": 9.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-03T00:30:00Z",
+  "pm25": 11.0,
+  "nowcast": 11.7,
+  "band": "moderate",
+  "typical_pm25": 11.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-03T01:30:00Z",
+  "pm25": 8.0,
+  "nowcast": 9.8,
+  "band": "moderate",
+  "typical_pm25": 11.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-03T02:30:00Z",
+  "pm25": 8.0,
+  "nowcast": 8.9,
+  "band": "good",
+  "typical_pm25": 13.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-03T03:30:00Z",
+  "pm25": 11.0,
+  "nowcast": 9.9,
+  "band": "moderate",
+  "typical_pm25": 15.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-03T04:30:00Z",
+  "pm25": 11.0,
+  "nowcast": 10.4,
+  "band": "moderate",
+  "typical_pm25": 15.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-03T05:30:00Z",
+  "pm25": 8.0,
+  "nowcast": 9.2,
+  "band": "moderate",
+  "typical_pm25": 14.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-03T06:30:00Z",
+  "pm25": 16.0,
+  "nowcast": 12.6,
+  "band": "moderate",
+  "typical_pm25": 15.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-03T07:30:00Z",
+  "pm25": 12.0,
+  "nowcast": 12.3,
+  "band": "moderate",
+  "typical_pm25": 13.5,
+  "dq": null
+ },
+ {
+  "at": "2026-09-03T08:30:00Z",
+  "pm25": 16.0,
+  "nowcast": 14.1,
+  "band": "moderate",
+  "typical_pm25": 12.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-03T09:30:00Z",
+  "pm25": 15.0,
+  "nowcast": 14.5,
+  "band": "moderate",
+  "typical_pm25": 12.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-03T10:30:00Z",
+  "pm25": 11.0,
+  "nowcast": 12.7,
+  "band": "moderate",
+  "typical_pm25": 12.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-03T11:30:00Z",
+  "pm25": 14.0,
+  "nowcast": 13.3,
+  "band": "moderate",
+  "typical_pm25": 14.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-03T12:30:00Z",
+  "pm25": 13.0,
+  "nowcast": 13.1,
+  "band": "moderate",
+  "typical_pm25": 15.5,
+  "dq": null
+ },
+ {
+  "at": "2026-09-03T13:30:00Z",
+  "pm25": 15.0,
+  "nowcast": 14.0,
+  "band": "moderate",
+  "typical_pm25": 14.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-03T14:30:00Z",
+  "pm25": 13.0,
+  "nowcast": 13.5,
+  "band": "moderate",
+  "typical_pm25": 15.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-03T15:30:00Z",
+  "pm25": 11.0,
+  "nowcast": 12.2,
+  "band": "moderate",
+  "typical_pm25": 16.5,
+  "dq": null
+ },
+ {
+  "at": "2026-09-03T16:30:00Z",
+  "pm25": 14.0,
+  "nowcast": 13.1,
+  "band": "moderate",
+  "typical_pm25": 15.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-03T17:30:00Z",
+  "pm25": 14.0,
+  "nowcast": 13.4,
+  "band": "moderate",
+  "typical_pm25": 14.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-03T18:30:00Z",
+  "pm25": 12.0,
+  "nowcast": 12.9,
+  "band": "moderate",
+  "typical_pm25": 13.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-03T19:30:00Z",
+  "pm25": 10.0,
+  "nowcast": 11.8,
+  "band": "moderate",
+  "typical_pm25": 11.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-03T20:30:00Z",
+  "pm25": 15.0,
+  "nowcast": 12.9,
+  "band": "moderate",
+  "typical_pm25": 14.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-03T21:30:00Z",
+  "pm25": 14.0,
+  "nowcast": 13.3,
+  "band": "moderate",
+  "typical_pm25": 13.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-03T22:30:00Z",
+  "pm25": 12.0,
+  "nowcast": 12.8,
+  "band": "moderate",
+  "typical_pm25": 11.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-03T23:30:00Z",
+  "pm25": 14.0,
+  "nowcast": 13.2,
+  "band": "moderate",
+  "typical_pm25": 10.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-04T00:30:00Z",
+  "pm25": 21.0,
+  "nowcast": 17.2,
+  "band": "moderate",
+  "typical_pm25": 11.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-04T01:30:00Z",
+  "pm25": 18.0,
+  "nowcast": 17.6,
+  "band": "moderate",
+  "typical_pm25": 11.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-04T02:30:00Z",
+  "pm25": 14.0,
+  "nowcast": 15.8,
+  "band": "moderate",
+  "typical_pm25": 13.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-04T03:30:00Z",
+  "pm25": 12.0,
+  "nowcast": 13.9,
+  "band": "moderate",
+  "typical_pm25": 14.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-04T04:30:00Z",
+  "pm25": 11.0,
+  "nowcast": 12.4,
+  "band": "moderate",
+  "typical_pm25": 15.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-04T05:30:00Z",
+  "pm25": 10.0,
+  "nowcast": 11.2,
+  "band": "moderate",
+  "typical_pm25": 14.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-04T06:30:00Z",
+  "pm25": 16.0,
+  "nowcast": 13.6,
+  "band": "moderate",
+  "typical_pm25": 16.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-04T07:30:00Z",
+  "pm25": 13.0,
+  "nowcast": 13.3,
+  "band": "moderate",
+  "typical_pm25": 13.5,
+  "dq": null
+ },
+ {
+  "at": "2026-09-04T08:30:00Z",
+  "pm25": 12.0,
+  "nowcast": 12.6,
+  "band": "moderate",
+  "typical_pm25": 13.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-04T09:30:00Z",
+  "pm25": 12.0,
+  "nowcast": 12.3,
+  "band": "moderate",
+  "typical_pm25": 13.4,
+  "dq": null
+ },
+ {
+  "at": "2026-09-04T10:30:00Z",
+  "pm25": 13.0,
+  "nowcast": 12.6,
+  "band": "moderate",
+  "typical_pm25": 12.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-04T11:30:00Z",
+  "pm25": 10.0,
+  "nowcast": 11.3,
+  "band": "moderate",
+  "typical_pm25": 14.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-04T12:30:00Z",
+  "pm25": 12.0,
+  "nowcast": 11.7,
+  "band": "moderate",
+  "typical_pm25": 15.5,
+  "dq": null
+ },
+ {
+  "at": "2026-09-04T13:30:00Z",
+  "pm25": 9.0,
+  "nowcast": 10.5,
+  "band": "moderate",
+  "typical_pm25": 14.5,
+  "dq": null
+ },
+ {
+  "at": "2026-09-04T14:30:00Z",
+  "pm25": 12.0,
+  "nowcast": 11.1,
+  "band": "moderate",
+  "typical_pm25": 14.5,
+  "dq": null
+ },
+ {
+  "at": "2026-09-04T15:30:00Z",
+  "pm25": 15.0,
+  "nowcast": 12.8,
+  "band": "moderate",
+  "typical_pm25": 16.5,
+  "dq": null
+ },
+ {
+  "at": "2026-09-04T16:30:00Z",
+  "pm25": 15.0,
+  "nowcast": 13.7,
+  "band": "moderate",
+  "typical_pm25": 14.5,
+  "dq": null
+ },
+ {
+  "at": "2026-09-04T17:30:00Z",
+  "pm25": 31.0,
+  "nowcast": 22.5,
+  "band": "moderate",
+  "typical_pm25": 14.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-04T18:30:00Z",
+  "pm25": 21.0,
+  "nowcast": 21.7,
+  "band": "moderate",
+  "typical_pm25": 13.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-04T19:30:00Z",
+  "pm25": 15.0,
+  "nowcast": 18.3,
+  "band": "moderate",
+  "typical_pm25": 11.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-04T20:30:00Z",
+  "pm25": 10.0,
+  "nowcast": 14.1,
+  "band": "moderate",
+  "typical_pm25": 14.5,
+  "dq": null
+ },
+ {
+  "at": "2026-09-04T21:30:00Z",
+  "pm25": 10.0,
+  "nowcast": 12.0,
+  "band": "moderate",
+  "typical_pm25": 13.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-04T22:30:00Z",
+  "pm25": 15.0,
+  "nowcast": 13.5,
+  "band": "moderate",
+  "typical_pm25": 11.5,
+  "dq": null
+ },
+ {
+  "at": "2026-09-04T23:30:00Z",
+  "pm25": 14.0,
+  "nowcast": 13.7,
+  "band": "moderate",
+  "typical_pm25": 10.8,
+  "dq": null
+ },
+ {
+  "at": "2026-09-05T00:30:00Z",
+  "pm25": 12.0,
+  "nowcast": 12.8,
+  "band": "moderate",
+  "typical_pm25": 11.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-05T01:30:00Z",
+  "pm25": 9.0,
+  "nowcast": 10.9,
+  "band": "moderate",
+  "typical_pm25": 11.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-05T02:30:00Z",
+  "pm25": 9.0,
+  "nowcast": 9.9,
+  "band": "moderate",
+  "typical_pm25": 13.5,
+  "dq": null
+ },
+ {
+  "at": "2026-09-05T03:30:00Z",
+  "pm25": 11.0,
+  "nowcast": 10.4,
+  "band": "moderate",
+  "typical_pm25": 13.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-05T04:30:00Z",
+  "pm25": 13.0,
+  "nowcast": 11.7,
+  "band": "moderate",
+  "typical_pm25": 14.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-05T05:30:00Z",
+  "pm25": 12.0,
+  "nowcast": 11.8,
+  "band": "moderate",
+  "typical_pm25": 14.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-05T06:30:00Z",
+  "pm25": 17.0,
+  "nowcast": 14.2,
+  "band": "moderate",
+  "typical_pm25": 16.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-05T07:30:00Z",
+  "pm25": 12.0,
+  "nowcast": 13.1,
+  "band": "moderate",
+  "typical_pm25": 13.5,
+  "dq": null
+ },
+ {
+  "at": "2026-09-05T08:30:00Z",
+  "pm25": 8.0,
+  "nowcast": 10.6,
+  "band": "moderate",
+  "typical_pm25": 13.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-05T09:30:00Z",
+  "pm25": 8.0,
+  "nowcast": 9.3,
+  "band": "moderate",
+  "typical_pm25": 13.4,
+  "dq": null
+ },
+ {
+  "at": "2026-09-05T10:30:00Z",
+  "pm25": 10.0,
+  "nowcast": 9.6,
+  "band": "moderate",
+  "typical_pm25": 12.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-05T11:30:00Z",
+  "pm25": 8.0,
+  "nowcast": 8.8,
+  "band": "good",
+  "typical_pm25": 14.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-05T12:30:00Z",
+  "pm25": 13.0,
+  "nowcast": 10.9,
+  "band": "moderate",
+  "typical_pm25": 14.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-05T13:30:00Z",
+  "pm25": 11.0,
+  "nowcast": 10.9,
+  "band": "moderate",
+  "typical_pm25": 14.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-05T14:30:00Z",
+  "pm25": 14.0,
+  "nowcast": 12.4,
+  "band": "moderate",
+  "typical_pm25": 14.5,
+  "dq": null
+ },
+ {
+  "at": "2026-09-05T15:30:00Z",
+  "pm25": 16.0,
+  "nowcast": 14.2,
+  "band": "moderate",
+  "typical_pm25": 16.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-05T16:30:00Z",
+  "pm25": 13.0,
+  "nowcast": 13.6,
+  "band": "moderate",
+  "typical_pm25": 15.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-05T17:30:00Z",
+  "pm25": 14.0,
+  "nowcast": 13.8,
+  "band": "moderate",
+  "typical_pm25": 14.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-05T18:30:00Z",
+  "pm25": 47.0,
+  "nowcast": 30.4,
+  "band": "moderate",
+  "typical_pm25": 13.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-05T19:30:00Z",
+  "pm25": 28.0,
+  "nowcast": 29.2,
+  "band": "moderate",
+  "typical_pm25": 11.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-05T20:30:00Z",
+  "pm25": 40.0,
+  "nowcast": 34.6,
+  "band": "moderate",
+  "typical_pm25": 14.5,
+  "dq": null
+ },
+ {
+  "at": "2026-09-05T21:30:00Z",
+  "pm25": 49.0,
+  "nowcast": 41.8,
+  "band": "usg",
+  "typical_pm25": 13.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-05T22:30:00Z",
+  "pm25": 38.0,
+  "nowcast": 39.9,
+  "band": "usg",
+  "typical_pm25": 12.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-05T23:30:00Z",
+  "pm25": 20.0,
+  "nowcast": 29.9,
+  "band": "moderate",
+  "typical_pm25": 13.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-06T00:30:00Z",
+  "pm25": 15.0,
+  "nowcast": 22.4,
+  "band": "moderate",
+  "typical_pm25": 11.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-06T01:30:00Z",
+  "pm25": 18.0,
+  "nowcast": 20.2,
+  "band": "moderate",
+  "typical_pm25": 10.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-06T02:30:00Z",
+  "pm25": 26.0,
+  "nowcast": 23.1,
+  "band": "moderate",
+  "typical_pm25": 13.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-06T03:30:00Z",
+  "pm25": 30.0,
+  "nowcast": 26.5,
+  "band": "moderate",
+  "typical_pm25": 12.5,
+  "dq": null
+ },
+ {
+  "at": "2026-09-06T04:30:00Z",
+  "pm25": 21.0,
+  "nowcast": 23.7,
+  "band": "moderate",
+  "typical_pm25": 13.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-06T05:30:00Z",
+  "pm25": 11.0,
+  "nowcast": 17.3,
+  "band": "moderate",
+  "typical_pm25": 13.5,
+  "dq": null
+ },
+ {
+  "at": "2026-09-06T06:30:00Z",
+  "pm25": 10.0,
+  "nowcast": 13.6,
+  "band": "moderate",
+  "typical_pm25": 16.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-06T07:30:00Z",
+  "pm25": 12.0,
+  "nowcast": 12.8,
+  "band": "moderate",
+  "typical_pm25": 13.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-06T08:30:00Z",
+  "pm25": 10.0,
+  "nowcast": 11.4,
+  "band": "moderate",
+  "typical_pm25": 12.5,
+  "dq": null
+ },
+ {
+  "at": "2026-09-06T09:30:00Z",
+  "pm25": 13.0,
+  "nowcast": 12.2,
+  "band": "moderate",
+  "typical_pm25": 12.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-06T10:30:00Z",
+  "pm25": 9.0,
+  "nowcast": 10.5,
+  "band": "moderate",
+  "typical_pm25": 12.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-06T11:30:00Z",
+  "pm25": 6.0,
+  "nowcast": 8.2,
+  "band": "good",
+  "typical_pm25": 13.5,
+  "dq": null
+ },
+ {
+  "at": "2026-09-06T12:30:00Z",
+  "pm25": 6.0,
+  "nowcast": 7.1,
+  "band": "good",
+  "typical_pm25": 13.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-06T13:30:00Z",
+  "pm25": 12.0,
+  "nowcast": 9.5,
+  "band": "moderate",
+  "typical_pm25": 13.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-06T14:30:00Z",
+  "pm25": 8.0,
+  "nowcast": 8.7,
+  "band": "good",
+  "typical_pm25": 14.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-06T15:30:00Z",
+  "pm25": 8.0,
+  "nowcast": 8.3,
+  "band": "good",
+  "typical_pm25": 15.5,
+  "dq": null
+ },
+ {
+  "at": "2026-09-06T16:30:00Z",
+  "pm25": 17.0,
+  "nowcast": 12.6,
+  "band": "moderate",
+  "typical_pm25": 15.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-06T17:30:00Z",
+  "pm25": 18.0,
+  "nowcast": 15.3,
+  "band": "moderate",
+  "typical_pm25": 14.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-06T18:30:00Z",
+  "pm25": 9.0,
+  "nowcast": 12.1,
+  "band": "moderate",
+  "typical_pm25": 13.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-06T19:30:00Z",
+  "pm25": 8.0,
+  "nowcast": 10.0,
+  "band": "moderate",
+  "typical_pm25": 11.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-06T20:30:00Z",
+  "pm25": 10.0,
+  "nowcast": 10.0,
+  "band": "moderate",
+  "typical_pm25": 15.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-06T21:30:00Z",
+  "pm25": 7.0,
+  "nowcast": 8.5,
+  "band": "good",
+  "typical_pm25": 13.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-06T22:30:00Z",
+  "pm25": 6.0,
+  "nowcast": 7.2,
+  "band": "good",
+  "typical_pm25": 12.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-06T23:30:00Z",
+  "pm25": 4.0,
+  "nowcast": 5.6,
+  "band": "good",
+  "typical_pm25": 13.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-07T00:30:00Z",
+  "pm25": 14.0,
+  "nowcast": 9.8,
+  "band": "moderate",
+  "typical_pm25": 11.5,
+  "dq": null
+ },
+ {
+  "at": "2026-09-07T01:30:00Z",
+  "pm25": 9.0,
+  "nowcast": 9.4,
+  "band": "moderate",
+  "typical_pm25": 10.4,
+  "dq": null
+ },
+ {
+  "at": "2026-09-07T02:30:00Z",
+  "pm25": 14.0,
+  "nowcast": 11.7,
+  "band": "moderate",
+  "typical_pm25": 13.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-07T03:30:00Z",
+  "pm25": 13.0,
+  "nowcast": 12.3,
+  "band": "moderate",
+  "typical_pm25": 12.5,
+  "dq": null
+ },
+ {
+  "at": "2026-09-07T04:30:00Z",
+  "pm25": 10.0,
+  "nowcast": 11.1,
+  "band": "moderate",
+  "typical_pm25": 13.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-07T05:30:00Z",
+  "pm25": 17.0,
+  "nowcast": 14.0,
+  "band": "moderate",
+  "typical_pm25": 12.5,
+  "dq": null
+ },
+ {
+  "at": "2026-09-07T06:30:00Z",
+  "pm25": 17.0,
+  "nowcast": 15.5,
+  "band": "moderate",
+  "typical_pm25": 16.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-07T07:30:00Z",
+  "pm25": 16.0,
+  "nowcast": 15.7,
+  "band": "moderate",
+  "typical_pm25": 12.5,
+  "dq": null
+ },
+ {
+  "at": "2026-09-07T08:30:00Z",
+  "pm25": 10.0,
+  "nowcast": 12.8,
+  "band": "moderate",
+  "typical_pm25": 11.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-07T09:30:00Z",
+  "pm25": 13.0,
+  "nowcast": 12.9,
+  "band": "moderate",
+  "typical_pm25": 12.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-07T10:30:00Z",
+  "pm25": 16.0,
+  "nowcast": 14.4,
+  "band": "moderate",
+  "typical_pm25": 11.5,
+  "dq": null
+ },
+ {
+  "at": "2026-09-07T11:30:00Z",
+  "pm25": 15.0,
+  "nowcast": 14.6,
+  "band": "moderate",
+  "typical_pm25": 12.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-07T12:30:00Z",
+  "pm25": 13.0,
+  "nowcast": 13.8,
+  "band": "moderate",
+  "typical_pm25": 13.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-07T13:30:00Z",
+  "pm25": 13.0,
+  "nowcast": 13.5,
+  "band": "moderate",
+  "typical_pm25": 12.5,
+  "dq": null
+ },
+ {
+  "at": "2026-09-07T14:30:00Z",
+  "pm25": 13.0,
+  "nowcast": 13.3,
+  "band": "moderate",
+  "typical_pm25": 14.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-07T15:30:00Z",
+  "pm25": 21.0,
+  "nowcast": 17.1,
+  "band": "moderate",
+  "typical_pm25": 15.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-07T16:30:00Z",
+  "pm25": 16.0,
+  "nowcast": 16.5,
+  "band": "moderate",
+  "typical_pm25": 16.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-07T17:30:00Z",
+  "pm25": 17.0,
+  "nowcast": 16.7,
+  "band": "moderate",
+  "typical_pm25": 14.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-07T18:30:00Z",
+  "pm25": 11.0,
+  "nowcast": 13.8,
+  "band": "moderate",
+  "typical_pm25": 13.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-07T19:30:00Z",
+  "pm25": 12.0,
+  "nowcast": 12.9,
+  "band": "moderate",
+  "typical_pm25": 11.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-07T20:30:00Z",
+  "pm25": 12.0,
+  "nowcast": 12.5,
+  "band": "moderate",
+  "typical_pm25": 14.5,
+  "dq": null
+ },
+ {
+  "at": "2026-09-07T21:30:00Z",
+  "pm25": 15.0,
+  "nowcast": 13.7,
+  "band": "moderate",
+  "typical_pm25": 13.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-07T22:30:00Z",
+  "pm25": 13.0,
+  "nowcast": 13.3,
+  "band": "moderate",
+  "typical_pm25": 11.5,
+  "dq": null
+ },
+ {
+  "at": "2026-09-07T23:30:00Z",
+  "pm25": 16.0,
+  "nowcast": 14.6,
+  "band": "moderate",
+  "typical_pm25": 13.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-08T00:30:00Z",
+  "pm25": 11.0,
+  "nowcast": 12.8,
+  "band": "moderate",
+  "typical_pm25": 11.5,
+  "dq": null
+ },
+ {
+  "at": "2026-09-08T01:30:00Z",
+  "pm25": 11.0,
+  "nowcast": 11.9,
+  "band": "moderate",
+  "typical_pm25": 9.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-08T02:30:00Z",
+  "pm25": 18.0,
+  "nowcast": 14.8,
+  "band": "moderate",
+  "typical_pm25": 13.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-08T03:30:00Z",
+  "pm25": 13.0,
+  "nowcast": 13.9,
+  "band": "moderate",
+  "typical_pm25": 12.5,
+  "dq": null
+ },
+ {
+  "at": "2026-09-08T04:30:00Z",
+  "pm25": 11.0,
+  "nowcast": 12.7,
+  "band": "moderate",
+  "typical_pm25": 12.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-08T05:30:00Z",
+  "pm25": 12.0,
+  "nowcast": 12.4,
+  "band": "moderate",
+  "typical_pm25": 12.5,
+  "dq": null
+ },
+ {
+  "at": "2026-09-08T06:30:00Z",
+  "pm25": 10.0,
+  "nowcast": 11.3,
+  "band": "moderate",
+  "typical_pm25": 16.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-08T07:30:00Z",
+  "pm25": 12.0,
+  "nowcast": 11.6,
+  "band": "moderate",
+  "typical_pm25": 12.5,
+  "dq": null
+ },
+ {
+  "at": "2026-09-08T08:30:00Z",
+  "pm25": 15.0,
+  "nowcast": 13.1,
+  "band": "moderate",
+  "typical_pm25": 10.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-08T09:30:00Z",
+  "pm25": 12.0,
+  "nowcast": 12.6,
+  "band": "moderate",
+  "typical_pm25": 12.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-08T10:30:00Z",
+  "pm25": 10.0,
+  "nowcast": 11.4,
+  "band": "moderate",
+  "typical_pm25": 11.5,
+  "dq": null
+ },
+ {
+  "at": "2026-09-08T11:30:00Z",
+  "pm25": 10.0,
+  "nowcast": 10.8,
+  "band": "moderate",
+  "typical_pm25": 12.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-08T12:30:00Z",
+  "pm25": 8.0,
+  "nowcast": 9.3,
+  "band": "moderate",
+  "typical_pm25": 13.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-08T13:30:00Z",
+  "pm25": 18.0,
+  "nowcast": 13.6,
+  "band": "moderate",
+  "typical_pm25": 12.5,
+  "dq": null
+ },
+ {
+  "at": "2026-09-08T14:30:00Z",
+  "pm25": 14.0,
+  "nowcast": 13.8,
+  "band": "moderate",
+  "typical_pm25": 13.5,
+  "dq": null
+ },
+ {
+  "at": "2026-09-08T15:30:00Z",
+  "pm25": 13.0,
+  "nowcast": 13.4,
+  "band": "moderate",
+  "typical_pm25": 15.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-08T16:30:00Z",
+  "pm25": 9.0,
+  "nowcast": 11.2,
+  "band": "moderate",
+  "typical_pm25": 15.5,
+  "dq": null
+ },
+ {
+  "at": "2026-09-08T17:30:00Z",
+  "pm25": 7.0,
+  "nowcast": 9.1,
+  "band": "moderate",
+  "typical_pm25": 14.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-08T18:30:00Z",
+  "pm25": 8.0,
+  "nowcast": 8.5,
+  "band": "good",
+  "typical_pm25": 12.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-08T19:30:00Z",
+  "pm25": 9.0,
+  "nowcast": 8.7,
+  "band": "good",
+  "typical_pm25": 11.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-08T20:30:00Z",
+  "pm25": 9.0,
+  "nowcast": 8.8,
+  "band": "good",
+  "typical_pm25": 13.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-08T21:30:00Z",
+  "pm25": 10.0,
+  "nowcast": 9.4,
+  "band": "moderate",
+  "typical_pm25": 13.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-08T22:30:00Z",
+  "pm25": 6.0,
+  "nowcast": 7.7,
+  "band": "good",
+  "typical_pm25": 11.5,
+  "dq": null
+ },
+ {
+  "at": "2026-09-08T23:30:00Z",
+  "pm25": 7.0,
+  "nowcast": 7.3,
+  "band": "good",
+  "typical_pm25": 13.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-09T00:30:00Z",
+  "pm25": 9.0,
+  "nowcast": 8.1,
+  "band": "good",
+  "typical_pm25": 11.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-09T01:30:00Z",
+  "pm25": 8.0,
+  "nowcast": 8.0,
+  "band": "good",
+  "typical_pm25": 9.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-09T02:30:00Z",
+  "pm25": 11.0,
+  "nowcast": 9.5,
+  "band": "moderate",
+  "typical_pm25": 13.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-09T03:30:00Z",
+  "pm25": 10.0,
+  "nowcast": 9.6,
+  "band": "moderate",
+  "typical_pm25": 12.5,
+  "dq": null
+ },
+ {
+  "at": "2026-09-09T04:30:00Z",
+  "pm25": 9.0,
+  "nowcast": 9.3,
+  "band": "moderate",
+  "typical_pm25": 11.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-09T05:30:00Z",
+  "pm25": 11.0,
+  "nowcast": 10.1,
+  "band": "moderate",
+  "typical_pm25": 12.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-09T06:30:00Z",
+  "pm25": 11.0,
+  "nowcast": 10.5,
+  "band": "moderate",
+  "typical_pm25": 14.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-09T07:30:00Z",
+  "pm25": 9.0,
+  "nowcast": 9.8,
+  "band": "moderate",
+  "typical_pm25": 12.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-09T08:30:00Z",
+  "pm25": 7.0,
+  "nowcast": 8.5,
+  "band": "good",
+  "typical_pm25": 10.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-09T09:30:00Z",
+  "pm25": 11.0,
+  "nowcast": 9.6,
+  "band": "moderate",
+  "typical_pm25": 12.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-09T10:30:00Z",
+  "pm25": 11.0,
+  "nowcast": 10.1,
+  "band": "moderate",
+  "typical_pm25": 10.5,
+  "dq": null
+ },
+ {
+  "at": "2026-09-09T11:30:00Z",
+  "pm25": 9.0,
+  "nowcast": 9.7,
+  "band": "moderate",
+  "typical_pm25": 11.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-09T12:30:00Z",
+  "pm25": 13.0,
+  "nowcast": 11.2,
+  "band": "moderate",
+  "typical_pm25": 13.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-09T13:30:00Z",
+  "pm25": 11.0,
+  "nowcast": 11.1,
+  "band": "moderate",
+  "typical_pm25": 12.5,
+  "dq": null
+ },
+ {
+  "at": "2026-09-09T14:30:00Z",
+  "pm25": 13.0,
+  "nowcast": 11.9,
+  "band": "moderate",
+  "typical_pm25": 13.5,
+  "dq": null
+ },
+ {
+  "at": "2026-09-09T15:30:00Z",
+  "pm25": 10.0,
+  "nowcast": 11.0,
+  "band": "moderate",
+  "typical_pm25": 15.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-09T16:30:00Z",
+  "pm25": 12.0,
+  "nowcast": 11.5,
+  "band": "moderate",
+  "typical_pm25": 15.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-09T17:30:00Z",
+  "pm25": 8.0,
+  "nowcast": 9.8,
+  "band": "moderate",
+  "typical_pm25": 14.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-09T18:30:00Z",
+  "pm25": 11.0,
+  "nowcast": 10.3,
+  "band": "moderate",
+  "typical_pm25": 12.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-09T19:30:00Z",
+  "pm25": 7.0,
+  "nowcast": 8.8,
+  "band": "good",
+  "typical_pm25": 11.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-09T20:30:00Z",
+  "pm25": 11.0,
+  "nowcast": 9.8,
+  "band": "moderate",
+  "typical_pm25": 11.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-09T21:30:00Z",
+  "pm25": 11.0,
+  "nowcast": 10.3,
+  "band": "moderate",
+  "typical_pm25": 11.4,
+  "dq": null
+ },
+ {
+  "at": "2026-09-09T22:30:00Z",
+  "pm25": 9.0,
+  "nowcast": 9.7,
+  "band": "moderate",
+  "typical_pm25": 10.5,
+  "dq": null
+ },
+ {
+  "at": "2026-09-09T23:30:00Z",
+  "pm25": 9.0,
+  "nowcast": 9.3,
+  "band": "moderate",
+  "typical_pm25": 10.2,
+  "dq": null
+ },
+ {
+  "at": "2026-09-10T00:30:00Z",
+  "pm25": 9.0,
+  "nowcast": 9.2,
+  "band": "moderate",
+  "typical_pm25": 11.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-10T01:30:00Z",
+  "pm25": 14.0,
+  "nowcast": 11.5,
+  "band": "moderate",
+  "typical_pm25": 9.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-10T02:30:00Z",
+  "pm25": 14.0,
+  "nowcast": 12.7,
+  "band": "moderate",
+  "typical_pm25": 13.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-10T03:30:00Z",
+  "pm25": 20.0,
+  "nowcast": 16.3,
+  "band": "moderate",
+  "typical_pm25": 12.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-10T04:30:00Z",
+  "pm25": 17.0,
+  "nowcast": 16.6,
+  "band": "moderate",
+  "typical_pm25": 11.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-10T05:30:00Z",
+  "pm25": 14.0,
+  "nowcast": 15.3,
+  "band": "moderate",
+  "typical_pm25": 11.5,
+  "dq": null
+ },
+ {
+  "at": "2026-09-10T06:30:00Z",
+  "pm25": 17.0,
+  "nowcast": 16.1,
+  "band": "moderate",
+  "typical_pm25": 14.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-10T07:30:00Z",
+  "pm25": 7.0,
+  "nowcast": 11.5,
+  "band": "moderate",
+  "typical_pm25": 12.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-10T08:30:00Z",
+  "pm25": 17.0,
+  "nowcast": 14.2,
+  "band": "moderate",
+  "typical_pm25": 10.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-10T09:30:00Z",
+  "pm25": 13.0,
+  "nowcast": 13.6,
+  "band": "moderate",
+  "typical_pm25": 11.5,
+  "dq": null
+ },
+ {
+  "at": "2026-09-10T10:30:00Z",
+  "pm25": 9.0,
+  "nowcast": 11.3,
+  "band": "moderate",
+  "typical_pm25": 10.5,
+  "dq": null
+ },
+ {
+  "at": "2026-09-10T11:30:00Z",
+  "pm25": 10.0,
+  "nowcast": 10.6,
+  "band": "moderate",
+  "typical_pm25": 11.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-10T12:30:00Z",
+  "pm25": 10.0,
+  "nowcast": 10.3,
+  "band": "moderate",
+  "typical_pm25": 13.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-10T13:30:00Z",
+  "pm25": 9.0,
+  "nowcast": 9.6,
+  "band": "moderate",
+  "typical_pm25": 12.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-10T14:30:00Z",
+  "pm25": 9.0,
+  "nowcast": 9.3,
+  "band": "moderate",
+  "typical_pm25": 13.5,
+  "dq": null
+ },
+ {
+  "at": "2026-09-10T15:30:00Z",
+  "pm25": 10.0,
+  "nowcast": 9.6,
+  "band": "moderate",
+  "typical_pm25": 14.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-10T16:30:00Z",
+  "pm25": 8.0,
+  "nowcast": 8.8,
+  "band": "good",
+  "typical_pm25": 14.5,
+  "dq": null
+ },
+ {
+  "at": "2026-09-10T17:30:00Z",
+  "pm25": 7.0,
+  "nowcast": 7.9,
+  "band": "good",
+  "typical_pm25": 12.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-10T18:30:00Z",
+  "pm25": 12.0,
+  "nowcast": 9.9,
+  "band": "moderate",
+  "typical_pm25": 11.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-10T19:30:00Z",
+  "pm25": 10.0,
+  "nowcast": 9.9,
+  "band": "moderate",
+  "typical_pm25": 10.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-10T20:30:00Z",
+  "pm25": 10.0,
+  "nowcast": 9.9,
+  "band": "moderate",
+  "typical_pm25": 10.5,
+  "dq": null
+ },
+ {
+  "at": "2026-09-10T21:30:00Z",
+  "pm25": 12.0,
+  "nowcast": 10.7,
+  "band": "moderate",
+  "typical_pm25": 10.5,
+  "dq": null
+ },
+ {
+  "at": "2026-09-10T22:30:00Z",
+  "pm25": 8.0,
+  "nowcast": 9.6,
+  "band": "moderate",
+  "typical_pm25": 9.5,
+  "dq": null
+ },
+ {
+  "at": "2026-09-10T23:30:00Z",
+  "pm25": 13.0,
+  "nowcast": 11.1,
+  "band": "moderate",
+  "typical_pm25": 8.5,
+  "dq": null
+ },
+ {
+  "at": "2026-09-11T00:30:00Z",
+  "pm25": 26.0,
+  "nowcast": 18.6,
+  "band": "moderate",
+  "typical_pm25": 11.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-11T01:30:00Z",
+  "pm25": 35.0,
+  "nowcast": 26.8,
+  "band": "moderate",
+  "typical_pm25": 9.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-11T02:30:00Z",
+  "pm25": 24.0,
+  "nowcast": 25.4,
+  "band": "moderate",
+  "typical_pm25": 13.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-11T03:30:00Z",
+  "pm25": 26.0,
+  "nowcast": 25.7,
+  "band": "moderate",
+  "typical_pm25": 12.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-11T04:30:00Z",
+  "pm25": 15.0,
+  "nowcast": 20.3,
+  "band": "moderate",
+  "typical_pm25": 11.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-11T05:30:00Z",
+  "pm25": 24.0,
+  "nowcast": 22.1,
+  "band": "moderate",
+  "typical_pm25": 11.5,
+  "dq": null
+ },
+ {
+  "at": "2026-09-11T06:30:00Z",
+  "pm25": 18.0,
+  "nowcast": 20.0,
+  "band": "moderate",
+  "typical_pm25": 14.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-11T07:30:00Z",
+  "pm25": 12.0,
+  "nowcast": 16.0,
+  "band": "moderate",
+  "typical_pm25": 12.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-11T08:30:00Z",
+  "pm25": 12.0,
+  "nowcast": 14.0,
+  "band": "moderate",
+  "typical_pm25": 10.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-11T09:30:00Z",
+  "pm25": 11.0,
+  "nowcast": 12.5,
+  "band": "moderate",
+  "typical_pm25": 12.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-11T10:30:00Z",
+  "pm25": 13.0,
+  "nowcast": 12.7,
+  "band": "moderate",
+  "typical_pm25": 10.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-11T11:30:00Z",
+  "pm25": 11.0,
+  "nowcast": 11.8,
+  "band": "moderate",
+  "typical_pm25": 10.5,
+  "dq": null
+ },
+ {
+  "at": "2026-09-11T12:30:00Z",
+  "pm25": 6.0,
+  "nowcast": 8.9,
+  "band": "good",
+  "typical_pm25": 12.5,
+  "dq": null
+ },
+ {
+  "at": "2026-09-11T13:30:00Z",
+  "pm25": 10.0,
+  "nowcast": 9.4,
+  "band": "moderate",
+  "typical_pm25": 11.5,
+  "dq": null
+ },
+ {
+  "at": "2026-09-11T14:30:00Z",
+  "pm25": 8.0,
+  "nowcast": 8.7,
+  "band": "good",
+  "typical_pm25": 13.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-11T15:30:00Z",
+  "pm25": 10.0,
+  "nowcast": 9.3,
+  "band": "moderate",
+  "typical_pm25": 12.5,
+  "dq": null
+ },
+ {
+  "at": "2026-09-11T16:30:00Z",
+  "pm25": 10.0,
+  "nowcast": 9.6,
+  "band": "moderate",
+  "typical_pm25": 13.5,
+  "dq": null
+ },
+ {
+  "at": "2026-09-11T17:30:00Z",
+  "pm25": 11.0,
+  "nowcast": 10.3,
+  "band": "moderate",
+  "typical_pm25": 12.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-11T18:30:00Z",
+  "pm25": 7.0,
+  "nowcast": 8.6,
+  "band": "good",
+  "typical_pm25": 11.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-11T19:30:00Z",
+  "pm25": 13.0,
+  "nowcast": 10.8,
+  "band": "moderate",
+  "typical_pm25": 10.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-11T20:30:00Z",
+  "pm25": 9.0,
+  "nowcast": 9.9,
+  "band": "moderate",
+  "typical_pm25": 10.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-11T21:30:00Z",
+  "pm25": 11.0,
+  "nowcast": 10.4,
+  "band": "moderate",
+  "typical_pm25": 10.5,
+  "dq": null
+ },
+ {
+  "at": "2026-09-11T22:30:00Z",
+  "pm25": 7.0,
+  "nowcast": 8.7,
+  "band": "good",
+  "typical_pm25": 8.5,
+  "dq": null
+ },
+ {
+  "at": "2026-09-11T23:30:00Z",
+  "pm25": 5.0,
+  "nowcast": 6.8,
+  "band": "good",
+  "typical_pm25": 8.5,
+  "dq": null
+ },
+ {
+  "at": "2026-09-12T00:30:00Z",
+  "pm25": 10.0,
+  "nowcast": 8.4,
+  "band": "good",
+  "typical_pm25": 11.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-12T01:30:00Z",
+  "pm25": 11.0,
+  "nowcast": 9.7,
+  "band": "moderate",
+  "typical_pm25": 9.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-12T02:30:00Z",
+  "pm25": 13.0,
+  "nowcast": 11.3,
+  "band": "moderate",
+  "typical_pm25": 13.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-12T03:30:00Z",
+  "pm25": 12.0,
+  "nowcast": 11.6,
+  "band": "moderate",
+  "typical_pm25": 12.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-12T04:30:00Z",
+  "pm25": 9.0,
+  "nowcast": 10.3,
+  "band": "moderate",
+  "typical_pm25": 11.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-12T05:30:00Z",
+  "pm25": 10.0,
+  "nowcast": 10.1,
+  "band": "moderate",
+  "typical_pm25": 11.5,
+  "dq": null
+ },
+ {
+  "at": "2026-09-12T06:30:00Z",
+  "pm25": 12.0,
+  "nowcast": 11.0,
+  "band": "moderate",
+  "typical_pm25": 14.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-12T07:30:00Z",
+  "pm25": 10.0,
+  "nowcast": 10.5,
+  "band": "moderate",
+  "typical_pm25": 12.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-12T08:30:00Z",
+  "pm25": 6.0,
+  "nowcast": 8.2,
+  "band": "good",
+  "typical_pm25": 10.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-12T09:30:00Z",
+  "pm25": 5.0,
+  "nowcast": 6.6,
+  "band": "good",
+  "typical_pm25": 11.5,
+  "dq": null
+ },
+ {
+  "at": "2026-09-12T10:30:00Z",
+  "pm25": 7.0,
+  "nowcast": 6.8,
+  "band": "good",
+  "typical_pm25": 10.5,
+  "dq": null
+ },
+ {
+  "at": "2026-09-12T11:30:00Z",
+  "pm25": 6.0,
+  "nowcast": 6.4,
+  "band": "good",
+  "typical_pm25": 11.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-12T12:30:00Z",
+  "pm25": 9.0,
+  "nowcast": 7.7,
+  "band": "good",
+  "typical_pm25": 12.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-12T13:30:00Z",
+  "pm25": 9.0,
+  "nowcast": 8.3,
+  "band": "good",
+  "typical_pm25": 11.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-12T14:30:00Z",
+  "pm25": 12.0,
+  "nowcast": 10.1,
+  "band": "moderate",
+  "typical_pm25": 13.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-12T15:30:00Z",
+  "pm25": 18.0,
+  "nowcast": 14.0,
+  "band": "moderate",
+  "typical_pm25": 12.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-12T16:30:00Z",
+  "pm25": 23.0,
+  "nowcast": 18.5,
+  "band": "moderate",
+  "typical_pm25": 13.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-12T17:30:00Z",
+  "pm25": 33.0,
+  "nowcast": 25.7,
+  "band": "moderate",
+  "typical_pm25": 12.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-12T18:30:00Z",
+  "pm25": 54.0,
+  "nowcast": 39.8,
+  "band": "usg",
+  "typical_pm25": 11.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-12T19:30:00Z",
+  "pm25": 48.0,
+  "nowcast": 43.9,
+  "band": "usg",
+  "typical_pm25": 10.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-12T20:30:00Z",
+  "pm25": 19.0,
+  "nowcast": 31.4,
+  "band": "moderate",
+  "typical_pm25": 10.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-12T21:30:00Z",
+  "pm25": 8.0,
+  "nowcast": 19.7,
+  "band": "moderate",
+  "typical_pm25": 11.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-12T22:30:00Z",
+  "pm25": 14.0,
+  "nowcast": 16.8,
+  "band": "moderate",
+  "typical_pm25": 8.5,
+  "dq": null
+ },
+ {
+  "at": "2026-09-12T23:30:00Z",
+  "pm25": 11.0,
+  "nowcast": 13.9,
+  "band": "moderate",
+  "typical_pm25": 8.5,
+  "dq": null
+ },
+ {
+  "at": "2026-09-13T00:30:00Z",
+  "pm25": 13.0,
+  "nowcast": 13.4,
+  "band": "moderate",
+  "typical_pm25": 11.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-13T01:30:00Z",
+  "pm25": 12.0,
+  "nowcast": 12.7,
+  "band": "moderate",
+  "typical_pm25": 9.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-13T02:30:00Z",
+  "pm25": 32.0,
+  "nowcast": 22.3,
+  "band": "moderate",
+  "typical_pm25": 13.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-13T03:30:00Z",
+  "pm25": 19.0,
+  "nowcast": 20.6,
+  "band": "moderate",
+  "typical_pm25": 12.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-13T04:30:00Z",
+  "pm25": 15.0,
+  "nowcast": 17.8,
+  "band": "moderate",
+  "typical_pm25": 11.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-13T05:30:00Z",
+  "pm25": 10.0,
+  "nowcast": 13.9,
+  "band": "moderate",
+  "typical_pm25": 11.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-13T06:30:00Z",
+  "pm25": 20.0,
+  "nowcast": 16.9,
+  "band": "moderate",
+  "typical_pm25": 14.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-13T07:30:00Z",
+  "pm25": 14.0,
+  "nowcast": 15.4,
+  "band": "moderate",
+  "typical_pm25": 12.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-13T08:30:00Z",
+  "pm25": 12.0,
+  "nowcast": 13.7,
+  "band": "moderate",
+  "typical_pm25": 10.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-13T09:30:00Z",
+  "pm25": 14.0,
+  "nowcast": 13.8,
+  "band": "moderate",
+  "typical_pm25": 11.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-13T10:30:00Z",
+  "pm25": 21.0,
+  "nowcast": 17.4,
+  "band": "moderate",
+  "typical_pm25": 10.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-13T11:30:00Z",
+  "pm25": 31.0,
+  "nowcast": 24.2,
+  "band": "moderate",
+  "typical_pm25": 10.5,
+  "dq": null
+ },
+ {
+  "at": "2026-09-13T12:30:00Z",
+  "pm25": 24.0,
+  "nowcast": 24.1,
+  "band": "moderate",
+  "typical_pm25": 11.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-13T13:30:00Z",
+  "pm25": 17.0,
+  "nowcast": 20.5,
+  "band": "moderate",
+  "typical_pm25": 10.5,
+  "dq": null
+ },
+ {
+  "at": "2026-09-13T14:30:00Z",
+  "pm25": 22.0,
+  "nowcast": 21.2,
+  "band": "moderate",
+  "typical_pm25": 12.5,
+  "dq": null
+ },
+ {
+  "at": "2026-09-13T15:30:00Z",
+  "pm25": 53.0,
+  "nowcast": 37.1,
+  "band": "usg",
+  "typical_pm25": 12.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-13T16:30:00Z",
+  "pm25": 41.0,
+  "nowcast": 39.0,
+  "band": "usg",
+  "typical_pm25": 13.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-13T17:30:00Z",
+  "pm25": 25.0,
+  "nowcast": 32.0,
+  "band": "moderate",
+  "typical_pm25": 13.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-13T18:30:00Z",
+  "pm25": 15.0,
+  "nowcast": 23.5,
+  "band": "moderate",
+  "typical_pm25": 11.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-13T19:30:00Z",
+  "pm25": 44.0,
+  "nowcast": 33.7,
+  "band": "moderate",
+  "typical_pm25": 10.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-13T20:30:00Z",
+  "pm25": 45.0,
+  "nowcast": 39.3,
+  "band": "usg",
+  "typical_pm25": 10.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-13T21:30:00Z",
+  "pm25": 37.0,
+  "nowcast": 38.1,
+  "band": "usg",
+  "typical_pm25": 10.5,
+  "dq": null
+ },
+ {
+  "at": "2026-09-13T22:30:00Z",
+  "pm25": 16.0,
+  "nowcast": 27.0,
+  "band": "moderate",
+  "typical_pm25": 8.5,
+  "dq": null
+ },
+ {
+  "at": "2026-09-13T23:30:00Z",
+  "pm25": 13.0,
+  "nowcast": 20.0,
+  "band": "moderate",
+  "typical_pm25": 10.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-14T00:30:00Z",
+  "pm25": 7.0,
+  "nowcast": 13.5,
+  "band": "moderate",
+  "typical_pm25": 11.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-14T01:30:00Z",
+  "pm25": 6.0,
+  "nowcast": 9.7,
+  "band": "moderate",
+  "typical_pm25": 10.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-14T02:30:00Z",
+  "pm25": 14.0,
+  "nowcast": 11.8,
+  "band": "moderate",
+  "typical_pm25": 13.5,
+  "dq": null
+ },
+ {
+  "at": "2026-09-14T03:30:00Z",
+  "pm25": 16.0,
+  "nowcast": 13.9,
+  "band": "moderate",
+  "typical_pm25": 12.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-14T04:30:00Z",
+  "pm25": 17.0,
+  "nowcast": 15.4,
+  "band": "moderate",
+  "typical_pm25": 11.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-14T05:30:00Z",
+  "pm25": 26.0,
+  "nowcast": 20.7,
+  "band": "moderate",
+  "typical_pm25": 11.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-14T06:30:00Z",
+  "pm25": 16.0,
+  "nowcast": 18.3,
+  "band": "moderate",
+  "typical_pm25": 15.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-14T07:30:00Z",
+  "pm25": 13.0,
+  "nowcast": 15.6,
+  "band": "moderate",
+  "typical_pm25": 12.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-14T08:30:00Z",
+  "pm25": 7.0,
+  "nowcast": 11.3,
+  "band": "moderate",
+  "typical_pm25": 11.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-14T09:30:00Z",
+  "pm25": 6.0,
+  "nowcast": 8.6,
+  "band": "good",
+  "typical_pm25": 11.5,
+  "dq": null
+ },
+ {
+  "at": "2026-09-14T10:30:00Z",
+  "pm25": 16.0,
+  "nowcast": 12.3,
+  "band": "moderate",
+  "typical_pm25": 10.5,
+  "dq": null
+ },
+ {
+  "at": "2026-09-14T11:30:00Z",
+  "pm25": 12.0,
+  "nowcast": 12.1,
+  "band": "moderate",
+  "typical_pm25": 10.5,
+  "dq": null
+ },
+ {
+  "at": "2026-09-14T12:30:00Z",
+  "pm25": 11.0,
+  "nowcast": 11.5,
+  "band": "moderate",
+  "typical_pm25": 12.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-14T13:30:00Z",
+  "pm25": 11.0,
+  "nowcast": 11.2,
+  "band": "moderate",
+  "typical_pm25": 10.5,
+  "dq": null
+ },
+ {
+  "at": "2026-09-14T14:30:00Z",
+  "pm25": 13.0,
+  "nowcast": 12.1,
+  "band": "moderate",
+  "typical_pm25": 13.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-14T15:30:00Z",
+  "pm25": 10.0,
+  "nowcast": 11.0,
+  "band": "moderate",
+  "typical_pm25": 14.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-14T16:30:00Z",
+  "pm25": 12.0,
+  "nowcast": 11.5,
+  "band": "moderate",
+  "typical_pm25": 13.5,
+  "dq": null
+ },
+ {
+  "at": "2026-09-14T17:30:00Z",
+  "pm25": 27.0,
+  "nowcast": 19.2,
+  "band": "moderate",
+  "typical_pm25": 14.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-14T18:30:00Z",
+  "pm25": 32.0,
+  "nowcast": 25.6,
+  "band": "moderate",
+  "typical_pm25": 11.5,
+  "dq": null
+ },
+ {
+  "at": "2026-09-14T19:30:00Z",
+  "pm25": 8.0,
+  "nowcast": 16.8,
+  "band": "moderate",
+  "typical_pm25": 10.5,
+  "dq": null
+ },
+ {
+  "at": "2026-09-14T20:30:00Z",
+  "pm25": 8.0,
+  "nowcast": 12.4,
+  "band": "moderate",
+  "typical_pm25": 10.5,
+  "dq": null
+ },
+ {
+  "at": "2026-09-14T21:30:00Z",
+  "pm25": 20.0,
+  "nowcast": 16.2,
+  "band": "moderate",
+  "typical_pm25": 11.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-14T22:30:00Z",
+  "pm25": 22.0,
+  "nowcast": 19.1,
+  "band": "moderate",
+  "typical_pm25": 9.5,
+  "dq": null
+ },
+ {
+  "at": "2026-09-14T23:30:00Z",
+  "pm25": 22.0,
+  "nowcast": 20.5,
+  "band": "moderate",
+  "typical_pm25": 12.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-15T00:30:00Z",
+  "pm25": 18.0,
+  "nowcast": 19.2,
+  "band": "moderate",
+  "typical_pm25": 11.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-15T01:30:00Z",
+  "pm25": 25.0,
+  "nowcast": 22.1,
+  "band": "moderate",
+  "typical_pm25": 10.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-15T02:30:00Z",
+  "pm25": 26.0,
+  "nowcast": 24.0,
+  "band": "moderate",
+  "typical_pm25": 14.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-15T03:30:00Z",
+  "pm25": 22.0,
+  "nowcast": 23.0,
+  "band": "moderate",
+  "typical_pm25": 12.5,
+  "dq": null
+ },
+ {
+  "at": "2026-09-15T04:30:00Z",
+  "pm25": 10.0,
+  "nowcast": 16.5,
+  "band": "moderate",
+  "typical_pm25": 11.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-15T05:30:00Z",
+  "pm25": 16.0,
+  "nowcast": 16.2,
+  "band": "moderate",
+  "typical_pm25": 11.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-15T06:30:00Z",
+  "pm25": 8.0,
+  "nowcast": 12.1,
+  "band": "moderate",
+  "typical_pm25": 16.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-15T07:30:00Z",
+  "pm25": 10.0,
+  "nowcast": 11.0,
+  "band": "moderate",
+  "typical_pm25": 12.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-15T08:30:00Z",
+  "pm25": 14.0,
+  "nowcast": 12.5,
+  "band": "moderate",
+  "typical_pm25": 10.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-15T09:30:00Z",
+  "pm25": 11.0,
+  "nowcast": 11.7,
+  "band": "moderate",
+  "typical_pm25": 11.5,
+  "dq": null
+ },
+ {
+  "at": "2026-09-15T10:30:00Z",
+  "pm25": 16.0,
+  "nowcast": 13.8,
+  "band": "moderate",
+  "typical_pm25": 11.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-15T11:30:00Z",
+  "pm25": 14.0,
+  "nowcast": 13.9,
+  "band": "moderate",
+  "typical_pm25": 10.5,
+  "dq": null
+ },
+ {
+  "at": "2026-09-15T12:30:00Z",
+  "pm25": 8.0,
+  "nowcast": 10.9,
+  "band": "moderate",
+  "typical_pm25": 12.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-15T13:30:00Z",
+  "pm25": 13.0,
+  "nowcast": 11.9,
+  "band": "moderate",
+  "typical_pm25": 11.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-15T14:30:00Z",
+  "pm25": 14.0,
+  "nowcast": 12.9,
+  "band": "moderate",
+  "typical_pm25": 13.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-15T15:30:00Z",
+  "pm25": 33.0,
+  "nowcast": 22.9,
+  "band": "moderate",
+  "typical_pm25": 14.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-15T16:30:00Z",
+  "pm25": 14.0,
+  "nowcast": 18.4,
+  "band": "moderate",
+  "typical_pm25": 13.5,
+  "dq": null
+ },
+ {
+  "at": "2026-09-15T17:30:00Z",
+  "pm25": 17.0,
+  "nowcast": 17.7,
+  "band": "moderate",
+  "typical_pm25": 15.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-15T18:30:00Z",
+  "pm25": 14.0,
+  "nowcast": 15.8,
+  "band": "moderate",
+  "typical_pm25": 12.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-15T19:30:00Z",
+  "pm25": 19.0,
+  "nowcast": 17.4,
+  "band": "moderate",
+  "typical_pm25": 10.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-15T20:30:00Z",
+  "pm25": 27.0,
+  "nowcast": 22.2,
+  "band": "moderate",
+  "typical_pm25": 10.5,
+  "dq": null
+ },
+ {
+  "at": "2026-09-15T21:30:00Z",
+  "pm25": 19.0,
+  "nowcast": 20.6,
+  "band": "moderate",
+  "typical_pm25": 11.5,
+  "dq": null
+ },
+ {
+  "at": "2026-09-15T22:30:00Z",
+  "pm25": 17.0,
+  "nowcast": 18.8,
+  "band": "moderate",
+  "typical_pm25": 11.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-15T23:30:00Z",
+  "pm25": 18.0,
+  "nowcast": 18.4,
+  "band": "moderate",
+  "typical_pm25": 13.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-16T00:30:00Z",
+  "pm25": 17.0,
+  "nowcast": 17.7,
+  "band": "moderate",
+  "typical_pm25": 11.5,
+  "dq": null
+ },
+ {
+  "at": "2026-09-16T01:30:00Z",
+  "pm25": 33.0,
+  "nowcast": 25.3,
+  "band": "moderate",
+  "typical_pm25": 11.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-16T02:30:00Z",
+  "pm25": 47.0,
+  "nowcast": 36.1,
+  "band": "usg",
+  "typical_pm25": 14.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-16T03:30:00Z",
+  "pm25": 36.0,
+  "nowcast": 36.0,
+  "band": "usg",
+  "typical_pm25": 13.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-16T04:30:00Z",
+  "pm25": 12.0,
+  "nowcast": 24.0,
+  "band": "moderate",
+  "typical_pm25": 11.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-16T05:30:00Z",
+  "pm25": 8.0,
+  "nowcast": 16.0,
+  "band": "moderate",
+  "typical_pm25": 11.5,
+  "dq": null
+ },
+ {
+  "at": "2026-09-16T06:30:00Z",
+  "pm25": 7.0,
+  "nowcast": 11.5,
+  "band": "moderate",
+  "typical_pm25": 16.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-16T07:30:00Z",
+  "pm25": 9.0,
+  "nowcast": 10.2,
+  "band": "moderate",
+  "typical_pm25": 12.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-16T08:30:00Z",
+  "pm25": 6.0,
+  "nowcast": 8.1,
+  "band": "good",
+  "typical_pm25": 11.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-16T09:30:00Z",
+  "pm25": 6.0,
+  "nowcast": 7.0,
+  "band": "good",
+  "typical_pm25": 11.5,
+  "dq": null
+ },
+ {
+  "at": "2026-09-16T10:30:00Z",
+  "pm25": 11.0,
+  "nowcast": 9.0,
+  "band": "good",
+  "typical_pm25": 11.5,
+  "dq": null
+ },
+ {
+  "at": "2026-09-16T11:30:00Z",
+  "pm25": 10.0,
+  "nowcast": 9.5,
+  "band": "moderate",
+  "typical_pm25": 10.5,
+  "dq": null
+ },
+ {
+  "at": "2026-09-16T12:30:00Z",
+  "pm25": 11.0,
+  "nowcast": 10.2,
+  "band": "moderate",
+  "typical_pm25": 11.5,
+  "dq": null
+ },
+ {
+  "at": "2026-09-16T13:30:00Z",
+  "pm25": 13.0,
+  "nowcast": 11.6,
+  "band": "moderate",
+  "typical_pm25": 11.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-16T14:30:00Z",
+  "pm25": 12.0,
+  "nowcast": 11.8,
+  "band": "moderate",
+  "typical_pm25": 13.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-16T15:30:00Z",
+  "pm25": 13.0,
+  "nowcast": 12.4,
+  "band": "moderate",
+  "typical_pm25": 14.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-16T16:30:00Z",
+  "pm25": 14.0,
+  "nowcast": 13.2,
+  "band": "moderate",
+  "typical_pm25": 14.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-16T17:30:00Z",
+  "pm25": 14.0,
+  "nowcast": 13.6,
+  "band": "moderate",
+  "typical_pm25": 16.5,
+  "dq": null
+ },
+ {
+  "at": "2026-09-16T18:30:00Z",
+  "pm25": 19.0,
+  "nowcast": 16.3,
+  "band": "moderate",
+  "typical_pm25": 13.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-16T19:30:00Z",
+  "pm25": 32.0,
+  "nowcast": 24.1,
+  "band": "moderate",
+  "typical_pm25": 11.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-16T20:30:00Z",
+  "pm25": 33.0,
+  "nowcast": 28.5,
+  "band": "moderate",
+  "typical_pm25": 11.5,
+  "dq": null
+ },
+ {
+  "at": "2026-09-16T21:30:00Z",
+  "pm25": 23.0,
+  "nowcast": 25.7,
+  "band": "moderate",
+  "typical_pm25": 12.5,
+  "dq": null
+ },
+ {
+  "at": "2026-09-16T22:30:00Z",
+  "pm25": 15.0,
+  "nowcast": 20.3,
+  "band": "moderate",
+  "typical_pm25": 12.5,
+  "dq": null
+ },
+ {
+  "at": "2026-09-16T23:30:00Z",
+  "pm25": 14.0,
+  "nowcast": 17.1,
+  "band": "moderate",
+  "typical_pm25": 13.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-17T00:30:00Z",
+  "pm25": 16.0,
+  "nowcast": 16.6,
+  "band": "moderate",
+  "typical_pm25": 12.5,
+  "dq": null
+ },
+ {
+  "at": "2026-09-17T01:30:00Z",
+  "pm25": 21.0,
+  "nowcast": 18.8,
+  "band": "moderate",
+  "typical_pm25": 11.5,
+  "dq": null
+ },
+ {
+  "at": "2026-09-17T02:30:00Z",
+  "pm25": 30.0,
+  "nowcast": 24.4,
+  "band": "moderate",
+  "typical_pm25": 14.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-17T03:30:00Z",
+  "pm25": 22.0,
+  "nowcast": 23.2,
+  "band": "moderate",
+  "typical_pm25": 14.4,
+  "dq": null
+ },
+ {
+  "at": "2026-09-17T04:30:00Z",
+  "pm25": 20.0,
+  "nowcast": 21.6,
+  "band": "moderate",
+  "typical_pm25": 11.5,
+  "dq": null
+ },
+ {
+  "at": "2026-09-17T05:30:00Z",
+  "pm25": 16.0,
+  "nowcast": 18.8,
+  "band": "moderate",
+  "typical_pm25": 11.5,
+  "dq": null
+ },
+ {
+  "at": "2026-09-17T06:30:00Z",
+  "pm25": 12.0,
+  "nowcast": 15.3,
+  "band": "moderate",
+  "typical_pm25": 16.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-17T07:30:00Z",
+  "pm25": 11.0,
+  "nowcast": 13.1,
+  "band": "moderate",
+  "typical_pm25": 12.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-17T08:30:00Z",
+  "pm25": 9.0,
+  "nowcast": 11.0,
+  "band": "moderate",
+  "typical_pm25": 11.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-17T09:30:00Z",
+  "pm25": 6.0,
+  "nowcast": 8.5,
+  "band": "good",
+  "typical_pm25": 11.5,
+  "dq": null
+ },
+ {
+  "at": "2026-09-17T10:30:00Z",
+  "pm25": 6.0,
+  "nowcast": 7.2,
+  "band": "good",
+  "typical_pm25": 11.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-17T11:30:00Z",
+  "pm25": 7.0,
+  "nowcast": 7.1,
+  "band": "good",
+  "typical_pm25": 10.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-17T12:30:00Z",
+  "pm25": 7.0,
+  "nowcast": 7.0,
+  "band": "good",
+  "typical_pm25": 11.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-17T13:30:00Z",
+  "pm25": 9.0,
+  "nowcast": 8.0,
+  "band": "good",
+  "typical_pm25": 11.5,
+  "dq": null
+ },
+ {
+  "at": "2026-09-17T14:30:00Z",
+  "pm25": 13.0,
+  "nowcast": 10.5,
+  "band": "moderate",
+  "typical_pm25": 13.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-17T15:30:00Z",
+  "pm25": 12.0,
+  "nowcast": 11.2,
+  "band": "moderate",
+  "typical_pm25": 13.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-17T16:30:00Z",
+  "pm25": 11.0,
+  "nowcast": 11.1,
+  "band": "moderate",
+  "typical_pm25": 14.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-17T17:30:00Z",
+  "pm25": 17.0,
+  "nowcast": 14.0,
+  "band": "moderate",
+  "typical_pm25": 15.4,
+  "dq": null
+ },
+ {
+  "at": "2026-09-17T18:30:00Z",
+  "pm25": 10.0,
+  "nowcast": 12.0,
+  "band": "moderate",
+  "typical_pm25": 13.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-17T19:30:00Z",
+  "pm25": 9.0,
+  "nowcast": 10.5,
+  "band": "moderate",
+  "typical_pm25": 12.5,
+  "dq": null
+ },
+ {
+  "at": "2026-09-17T20:30:00Z",
+  "pm25": 7.0,
+  "nowcast": 8.7,
+  "band": "good",
+  "typical_pm25": 11.5,
+  "dq": null
+ },
+ {
+  "at": "2026-09-17T21:30:00Z",
+  "pm25": 8.0,
+  "nowcast": 8.3,
+  "band": "good",
+  "typical_pm25": 13.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-17T22:30:00Z",
+  "pm25": 5.0,
+  "nowcast": 6.6,
+  "band": "good",
+  "typical_pm25": 13.5,
+  "dq": null
+ },
+ {
+  "at": "2026-09-17T23:30:00Z",
+  "pm25": 4.0,
+  "nowcast": 5.3,
+  "band": "good",
+  "typical_pm25": 13.5,
+  "dq": null
+ },
+ {
+  "at": "2026-09-18T00:30:00Z",
+  "pm25": 7.0,
+  "nowcast": 6.1,
+  "band": "good",
+  "typical_pm25": 13.5,
+  "dq": null
+ },
+ {
+  "at": "2026-09-18T01:30:00Z",
+  "pm25": 10.0,
+  "nowcast": 8.0,
+  "band": "good",
+  "typical_pm25": 13.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-18T02:30:00Z",
+  "pm25": 14.0,
+  "nowcast": 11.0,
+  "band": "moderate",
+  "typical_pm25": 15.9,
+  "dq": null
+ },
+ {
+  "at": "2026-09-18T03:30:00Z",
+  "pm25": 10.0,
+  "nowcast": 10.5,
+  "band": "moderate",
+  "typical_pm25": 17.4,
+  "dq": null
+ },
+ {
+  "at": "2026-09-18T04:30:00Z",
+  "pm25": 12.0,
+  "nowcast": 11.2,
+  "band": "moderate",
+  "typical_pm25": 12.5,
+  "dq": null
+ },
+ {
+  "at": "2026-09-18T05:30:00Z",
+  "pm25": 12.0,
+  "nowcast": 11.6,
+  "band": "moderate",
+  "typical_pm25": 12.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-18T06:30:00Z",
+  "pm25": 14.0,
+  "nowcast": 12.8,
+  "band": "moderate",
+  "typical_pm25": 13.9,
+  "dq": null
+ },
+ {
+  "at": "2026-09-18T07:30:00Z",
+  "pm25": 11.0,
+  "nowcast": 11.9,
+  "band": "moderate",
+  "typical_pm25": 12.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-18T08:30:00Z",
+  "pm25": 11.0,
+  "nowcast": 11.4,
+  "band": "moderate",
+  "typical_pm25": 10.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-18T09:30:00Z",
+  "pm25": 12.0,
+  "nowcast": 11.7,
+  "band": "moderate",
+  "typical_pm25": 11.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-18T10:30:00Z",
+  "pm25": 8.0,
+  "nowcast": 9.8,
+  "band": "moderate",
+  "typical_pm25": 11.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-18T11:30:00Z",
+  "pm25": 18.0,
+  "nowcast": 13.9,
+  "band": "moderate",
+  "typical_pm25": 10.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-18T12:30:00Z",
+  "pm25": 7.0,
+  "nowcast": 10.4,
+  "band": "moderate",
+  "typical_pm25": 10.5,
+  "dq": null
+ },
+ {
+  "at": "2026-09-18T13:30:00Z",
+  "pm25": 10.0,
+  "nowcast": 10.2,
+  "band": "moderate",
+  "typical_pm25": 11.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-18T14:30:00Z",
+  "pm25": 11.0,
+  "nowcast": 10.6,
+  "band": "moderate",
+  "typical_pm25": 13.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-18T15:30:00Z",
+  "pm25": 13.0,
+  "nowcast": 11.8,
+  "band": "moderate",
+  "typical_pm25": 13.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-18T16:30:00Z",
+  "pm25": 15.0,
+  "nowcast": 13.4,
+  "band": "moderate",
+  "typical_pm25": 13.5,
+  "dq": null
+ },
+ {
+  "at": "2026-09-18T17:30:00Z",
+  "pm25": 19.0,
+  "nowcast": 16.2,
+  "band": "moderate",
+  "typical_pm25": 17.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-18T18:30:00Z",
+  "pm25": 14.0,
+  "nowcast": 15.1,
+  "band": "moderate",
+  "typical_pm25": 13.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-18T19:30:00Z",
+  "pm25": 13.0,
+  "nowcast": 14.0,
+  "band": "moderate",
+  "typical_pm25": 12.5,
+  "dq": null
+ },
+ {
+  "at": "2026-09-18T20:30:00Z",
+  "pm25": 11.0,
+  "nowcast": 12.5,
+  "band": "moderate",
+  "typical_pm25": 10.5,
+  "dq": null
+ },
+ {
+  "at": "2026-09-18T21:30:00Z",
+  "pm25": 8.0,
+  "nowcast": 10.2,
+  "band": "moderate",
+  "typical_pm25": 11.5,
+  "dq": null
+ },
+ {
+  "at": "2026-09-18T22:30:00Z",
+  "pm25": 10.0,
+  "nowcast": 10.1,
+  "band": "moderate",
+  "typical_pm25": 13.5,
+  "dq": null
+ },
+ {
+  "at": "2026-09-18T23:30:00Z",
+  "pm25": 9.0,
+  "nowcast": 9.5,
+  "band": "moderate",
+  "typical_pm25": 13.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-19T00:30:00Z",
+  "pm25": 10.0,
+  "nowcast": 9.7,
+  "band": "moderate",
+  "typical_pm25": 12.5,
+  "dq": null
+ },
+ {
+  "at": "2026-09-19T01:30:00Z",
+  "pm25": 5.0,
+  "nowcast": 7.3,
+  "band": "good",
+  "typical_pm25": 11.5,
+  "dq": null
+ },
+ {
+  "at": "2026-09-19T02:30:00Z",
+  "pm25": 12.0,
+  "nowcast": 9.6,
+  "band": "moderate",
+  "typical_pm25": 15.9,
+  "dq": null
+ },
+ {
+  "at": "2026-09-19T03:30:00Z",
+  "pm25": 21.0,
+  "nowcast": 15.3,
+  "band": "moderate",
+  "typical_pm25": 17.4,
+  "dq": null
+ },
+ {
+  "at": "2026-09-19T04:30:00Z",
+  "pm25": 23.0,
+  "nowcast": 19.1,
+  "band": "moderate",
+  "typical_pm25": 12.5,
+  "dq": null
+ },
+ {
+  "at": "2026-09-19T05:30:00Z",
+  "pm25": 24.0,
+  "nowcast": 21.5,
+  "band": "moderate",
+  "typical_pm25": 12.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-19T06:30:00Z",
+  "pm25": 32.0,
+  "nowcast": 26.7,
+  "band": "moderate",
+  "typical_pm25": 13.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-19T07:30:00Z",
+  "pm25": 33.0,
+  "nowcast": 29.9,
+  "band": "moderate",
+  "typical_pm25": 11.5,
+  "dq": null
+ },
+ {
+  "at": "2026-09-19T08:30:00Z",
+  "pm25": 14.0,
+  "nowcast": 21.9,
+  "band": "moderate",
+  "typical_pm25": 10.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-19T09:30:00Z",
+  "pm25": 11.0,
+  "nowcast": 16.4,
+  "band": "moderate",
+  "typical_pm25": 11.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-19T10:30:00Z",
+  "pm25": 15.0,
+  "nowcast": 15.7,
+  "band": "moderate",
+  "typical_pm25": 10.5,
+  "dq": null
+ },
+ {
+  "at": "2026-09-19T11:30:00Z",
+  "pm25": 27.0,
+  "nowcast": 21.3,
+  "band": "moderate",
+  "typical_pm25": 10.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-19T12:30:00Z",
+  "pm25": 22.0,
+  "nowcast": 21.6,
+  "band": "moderate",
+  "typical_pm25": 9.5,
+  "dq": null
+ },
+ {
+  "at": "2026-09-19T13:30:00Z",
+  "pm25": 21.0,
+  "nowcast": 21.3,
+  "band": "moderate",
+  "typical_pm25": 11.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-19T14:30:00Z",
+  "pm25": 23.0,
+  "nowcast": 22.1,
+  "band": "moderate",
+  "typical_pm25": 13.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-19T15:30:00Z",
+  "pm25": 27.0,
+  "nowcast": 24.5,
+  "band": "moderate",
+  "typical_pm25": 13.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-19T16:30:00Z",
+  "pm25": 35.0,
+  "nowcast": 29.7,
+  "band": "moderate",
+  "typical_pm25": 13.5,
+  "dq": null
+ },
+ {
+  "at": "2026-09-19T17:30:00Z",
+  "pm25": 21.0,
+  "nowcast": 25.3,
+  "band": "moderate",
+  "typical_pm25": 17.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-19T18:30:00Z",
+  "pm25": 20.0,
+  "nowcast": 22.6,
+  "band": "moderate",
+  "typical_pm25": 13.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-19T19:30:00Z",
+  "pm25": 23.0,
+  "nowcast": 22.8,
+  "band": "moderate",
+  "typical_pm25": 12.5,
+  "dq": null
+ },
+ {
+  "at": "2026-09-19T20:30:00Z",
+  "pm25": 24.0,
+  "nowcast": 23.4,
+  "band": "moderate",
+  "typical_pm25": 11.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-19T21:30:00Z",
+  "pm25": 25.0,
+  "nowcast": 24.2,
+  "band": "moderate",
+  "typical_pm25": 11.5,
+  "dq": null
+ },
+ {
+  "at": "2026-09-19T22:30:00Z",
+  "pm25": 26.0,
+  "nowcast": 24.9,
+  "band": "moderate",
+  "typical_pm25": 11.4,
+  "dq": null
+ },
+ {
+  "at": "2026-09-19T23:30:00Z",
+  "pm25": 27.0,
+  "nowcast": 25.8,
+  "band": "moderate",
+  "typical_pm25": 12.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-20T00:30:00Z",
+  "pm25": 31.0,
+  "nowcast": 28.0,
+  "band": "moderate",
+  "typical_pm25": 12.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-20T01:30:00Z",
+  "pm25": 33.0,
+  "nowcast": 30.1,
+  "band": "moderate",
+  "typical_pm25": 11.5,
+  "dq": null
+ },
+ {
+  "at": "2026-09-20T02:30:00Z",
+  "pm25": 33.0,
+  "nowcast": 31.3,
+  "band": "moderate",
+  "typical_pm25": 15.9,
+  "dq": null
+ },
+ {
+  "at": "2026-09-20T03:30:00Z",
+  "pm25": 31.0,
+  "nowcast": 31.2,
+  "band": "moderate",
+  "typical_pm25": 19.5,
+  "dq": null
+ },
+ {
+  "at": "2026-09-20T04:30:00Z",
+  "pm25": 25.0,
+  "nowcast": 28.6,
+  "band": "moderate",
+  "typical_pm25": 13.4,
+  "dq": null
+ },
+ {
+  "at": "2026-09-20T05:30:00Z",
+  "pm25": 25.0,
+  "nowcast": 27.2,
+  "band": "moderate",
+  "typical_pm25": 13.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-20T06:30:00Z",
+  "pm25": 17.0,
+  "nowcast": 21.9,
+  "band": "moderate",
+  "typical_pm25": 13.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-20T07:30:00Z",
+  "pm25": 19.0,
+  "nowcast": 20.5,
+  "band": "moderate",
+  "typical_pm25": 11.5,
+  "dq": null
+ },
+ {
+  "at": "2026-09-20T08:30:00Z",
+  "pm25": 19.0,
+  "nowcast": 19.7,
+  "band": "moderate",
+  "typical_pm25": 10.5,
+  "dq": null
+ },
+ {
+  "at": "2026-09-20T09:30:00Z",
+  "pm25": 20.0,
+  "nowcast": 19.8,
+  "band": "moderate",
+  "typical_pm25": 11.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-20T10:30:00Z",
+  "pm25": 21.0,
+  "nowcast": 20.4,
+  "band": "moderate",
+  "typical_pm25": 11.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-20T11:30:00Z",
+  "pm25": 12.0,
+  "nowcast": 16.2,
+  "band": "moderate",
+  "typical_pm25": 10.5,
+  "dq": null
+ },
+ {
+  "at": "2026-09-20T12:30:00Z",
+  "pm25": 14.0,
+  "nowcast": 15.1,
+  "band": "moderate",
+  "typical_pm25": 9.5,
+  "dq": null
+ },
+ {
+  "at": "2026-09-20T13:30:00Z",
+  "pm25": 19.0,
+  "nowcast": 17.0,
+  "band": "moderate",
+  "typical_pm25": 11.5,
+  "dq": null
+ },
+ {
+  "at": "2026-09-20T14:30:00Z",
+  "pm25": 26.0,
+  "nowcast": 21.5,
+  "band": "moderate",
+  "typical_pm25": 13.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-20T15:30:00Z",
+  "pm25": 25.0,
+  "nowcast": 23.2,
+  "band": "moderate",
+  "typical_pm25": 13.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-20T16:30:00Z",
+  "pm25": 31.0,
+  "nowcast": 27.1,
+  "band": "moderate",
+  "typical_pm25": 14.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-20T17:30:00Z",
+  "pm25": 27.0,
+  "nowcast": 27.0,
+  "band": "moderate",
+  "typical_pm25": 17.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-20T18:30:00Z",
+  "pm25": 27.0,
+  "nowcast": 27.0,
+  "band": "moderate",
+  "typical_pm25": 13.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-20T19:30:00Z",
+  "pm25": 36.0,
+  "nowcast": 31.5,
+  "band": "moderate",
+  "typical_pm25": 12.5,
+  "dq": null
+ },
+ {
+  "at": "2026-09-20T20:30:00Z",
+  "pm25": 30.0,
+  "nowcast": 30.7,
+  "band": "moderate",
+  "typical_pm25": 11.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-20T21:30:00Z",
+  "pm25": 38.0,
+  "nowcast": 34.3,
+  "band": "moderate",
+  "typical_pm25": 11.5,
+  "dq": null
+ },
+ {
+  "at": "2026-09-20T22:30:00Z",
+  "pm25": 36.0,
+  "nowcast": 35.1,
+  "band": "moderate",
+  "typical_pm25": 11.4,
+  "dq": null
+ },
+ {
+  "at": "2026-09-20T23:30:00Z",
+  "pm25": 39.0,
+  "nowcast": 37.0,
+  "band": "usg",
+  "typical_pm25": 12.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-21T00:30:00Z",
+  "pm25": 44.0,
+  "nowcast": 40.5,
+  "band": "usg",
+  "typical_pm25": 12.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-21T01:30:00Z",
+  "pm25": 50.0,
+  "nowcast": 45.2,
+  "band": "usg",
+  "typical_pm25": 11.5,
+  "dq": null
+ },
+ {
+  "at": "2026-09-21T02:30:00Z",
+  "pm25": 46.0,
+  "nowcast": 45.6,
+  "band": "usg",
+  "typical_pm25": 15.9,
+  "dq": null
+ },
+ {
+  "at": "2026-09-21T03:30:00Z",
+  "pm25": 43.0,
+  "nowcast": 44.2,
+  "band": "usg",
+  "typical_pm25": 19.5,
+  "dq": null
+ },
+ {
+  "at": "2026-09-21T04:30:00Z",
+  "pm25": 44.0,
+  "nowcast": 44.1,
+  "band": "usg",
+  "typical_pm25": 13.4,
+  "dq": null
+ },
+ {
+  "at": "2026-09-21T05:30:00Z",
+  "pm25": 44.0,
+  "nowcast": 44.0,
+  "band": "usg",
+  "typical_pm25": 15.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-21T06:30:00Z",
+  "pm25": 37.0,
+  "nowcast": 41.2,
+  "band": "usg",
+  "typical_pm25": 15.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-21T10:30:00Z",
+  "pm25": 27.0,
+  "nowcast": null,
+  "band": null,
+  "typical_pm25": 12.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-21T11:30:00Z",
+  "pm25": 21.0,
+  "nowcast": 23.6,
+  "band": "moderate",
+  "typical_pm25": 11.5,
+  "dq": null
+ },
+ {
+  "at": "2026-09-21T13:30:00Z",
+  "pm25": 18.0,
+  "nowcast": 19.5,
+  "band": "moderate",
+  "typical_pm25": 12.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-21T14:30:00Z",
+  "pm25": 3.0,
+  "nowcast": 9.7,
+  "band": "moderate",
+  "typical_pm25": 13.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-21T15:30:00Z",
+  "pm25": 21.0,
+  "nowcast": 15.8,
+  "band": "moderate",
+  "typical_pm25": 13.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-21T16:30:00Z",
+  "pm25": 15.0,
+  "nowcast": 15.4,
+  "band": "moderate",
+  "typical_pm25": 14.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-21T17:30:00Z",
+  "pm25": 21.0,
+  "nowcast": 18.2,
+  "band": "moderate",
+  "typical_pm25": 17.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-21T18:30:00Z",
+  "pm25": 21.0,
+  "nowcast": 19.6,
+  "band": "moderate",
+  "typical_pm25": 14.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-21T19:30:00Z",
+  "pm25": 26.0,
+  "nowcast": 22.8,
+  "band": "moderate",
+  "typical_pm25": 13.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-21T20:30:00Z",
+  "pm25": 34.0,
+  "nowcast": 28.4,
+  "band": "moderate",
+  "typical_pm25": 11.5,
+  "dq": null
+ },
+ {
+  "at": "2026-09-21T21:30:00Z",
+  "pm25": 39.0,
+  "nowcast": 33.7,
+  "band": "moderate",
+  "typical_pm25": 13.4,
+  "dq": null
+ },
+ {
+  "at": "2026-09-21T22:30:00Z",
+  "pm25": 34.0,
+  "nowcast": 33.8,
+  "band": "moderate",
+  "typical_pm25": 13.5,
+  "dq": null
+ },
+ {
+  "at": "2026-09-21T23:30:00Z",
+  "pm25": 38.0,
+  "nowcast": 35.9,
+  "band": "usg",
+  "typical_pm25": 13.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-22T00:30:00Z",
+  "pm25": 35.0,
+  "nowcast": 35.4,
+  "band": "moderate",
+  "typical_pm25": 12.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-22T01:30:00Z",
+  "pm25": 36.0,
+  "nowcast": 35.7,
+  "band": "usg",
+  "typical_pm25": 13.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-22T02:30:00Z",
+  "pm25": 39.0,
+  "nowcast": 37.3,
+  "band": "usg",
+  "typical_pm25": 20.8,
+  "dq": null
+ },
+ {
+  "at": "2026-09-22T03:30:00Z",
+  "pm25": 39.0,
+  "nowcast": 38.1,
+  "band": "usg",
+  "typical_pm25": 20.5,
+  "dq": null
+ },
+ {
+  "at": "2026-09-28T07:30:00Z",
+  "pm25": 7.0,
+  "nowcast": null,
+  "band": null,
+  "typical_pm25": 11.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-28T08:30:00Z",
+  "pm25": 5.0,
+  "nowcast": 5.8,
+  "band": "good",
+  "typical_pm25": 11.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-28T09:30:00Z",
+  "pm25": 19.0,
+  "nowcast": 13.2,
+  "band": "moderate",
+  "typical_pm25": 11.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-28T10:30:00Z",
+  "pm25": 26.0,
+  "nowcast": 20.0,
+  "band": "moderate",
+  "typical_pm25": 15.5,
+  "dq": null
+ },
+ {
+  "at": "2026-09-28T11:30:00Z",
+  "pm25": 1.0,
+  "nowcast": 10.2,
+  "band": "moderate",
+  "typical_pm25": 13.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-28T12:30:00Z",
+  "pm25": 1.0,
+  "nowcast": 5.5,
+  "band": "good",
+  "typical_pm25": 11.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-28T13:30:00Z",
+  "pm25": 4.0,
+  "nowcast": 4.7,
+  "band": "good",
+  "typical_pm25": 13.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-28T14:30:00Z",
+  "pm25": 7.0,
+  "nowcast": 5.8,
+  "band": "good",
+  "typical_pm25": 13.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-28T15:30:00Z",
+  "pm25": 8.0,
+  "nowcast": 6.9,
+  "band": "good",
+  "typical_pm25": 16.5,
+  "dq": null
+ },
+ {
+  "at": "2026-09-28T16:30:00Z",
+  "pm25": 7.0,
+  "nowcast": 6.9,
+  "band": "good",
+  "typical_pm25": 14.5,
+  "dq": null
+ },
+ {
+  "at": "2026-09-28T17:30:00Z",
+  "pm25": 7.0,
+  "nowcast": 6.9,
+  "band": "good",
+  "typical_pm25": 20.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-28T18:30:00Z",
+  "pm25": 6.0,
+  "nowcast": 6.4,
+  "band": "good",
+  "typical_pm25": 19.5,
+  "dq": null
+ },
+ {
+  "at": "2026-09-28T19:30:00Z",
+  "pm25": 15.0,
+  "nowcast": 10.7,
+  "band": "moderate",
+  "typical_pm25": 20.9,
+  "dq": null
+ },
+ {
+  "at": "2026-09-28T20:30:00Z",
+  "pm25": 14.0,
+  "nowcast": 12.3,
+  "band": "moderate",
+  "typical_pm25": 25.5,
+  "dq": null
+ },
+ {
+  "at": "2026-09-28T21:30:00Z",
+  "pm25": 15.0,
+  "nowcast": 13.6,
+  "band": "moderate",
+  "typical_pm25": 21.4,
+  "dq": null
+ },
+ {
+  "at": "2026-09-28T22:30:00Z",
+  "pm25": 14.0,
+  "nowcast": 13.8,
+  "band": "moderate",
+  "typical_pm25": 19.3,
+  "dq": null
+ },
+ {
+  "at": "2026-09-28T23:30:00Z",
+  "pm25": 11.0,
+  "nowcast": 12.4,
+  "band": "moderate",
+  "typical_pm25": 19.9,
+  "dq": null
+ },
+ {
+  "at": "2026-09-29T00:30:00Z",
+  "pm25": 13.0,
+  "nowcast": 12.7,
+  "band": "moderate",
+  "typical_pm25": 17.5,
+  "dq": null
+ },
+ {
+  "at": "2026-09-29T01:30:00Z",
+  "pm25": 15.0,
+  "nowcast": 13.8,
+  "band": "moderate",
+  "typical_pm25": 28.7,
+  "dq": null
+ },
+ {
+  "at": "2026-09-29T02:30:00Z",
+  "pm25": 16.0,
+  "nowcast": 14.9,
+  "band": "moderate",
+  "typical_pm25": 31.5,
+  "dq": null
+ },
+ {
+  "at": "2026-09-29T03:30:00Z",
+  "pm25": 14.0,
+  "nowcast": 14.4,
+  "band": "moderate",
+  "typical_pm25": 26.1,
+  "dq": null
+ },
+ {
+  "at": "2026-09-29T04:30:00Z",
+  "pm25": 14.0,
+  "nowcast": 14.2,
+  "band": "moderate",
+  "typical_pm25": 20.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-29T06:30:00Z",
+  "pm25": 29.0,
+  "nowcast": 24.0,
+  "band": "moderate",
+  "typical_pm25": 14.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-29T08:30:00Z",
+  "pm25": 32.0,
+  "nowcast": 29.8,
+  "band": "moderate",
+  "typical_pm25": 11.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-29T09:30:00Z",
+  "pm25": 278.0,
+  "nowcast": null,
+  "band": null,
+  "typical_pm25": 11.0,
+  "dq": "DQ_SUSPECT"
+ },
+ {
+  "at": "2026-09-29T10:30:00Z",
+  "pm25": 18.0,
+  "nowcast": 21.0,
+  "band": "moderate",
+  "typical_pm25": 15.5,
+  "dq": null
+ },
+ {
+  "at": "2026-09-29T11:30:00Z",
+  "pm25": 22.0,
+  "nowcast": 21.6,
+  "band": "moderate",
+  "typical_pm25": 13.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-29T12:30:00Z",
+  "pm25": 17.0,
+  "nowcast": 19.1,
+  "band": "moderate",
+  "typical_pm25": 8.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-29T13:30:00Z",
+  "pm25": 18.0,
+  "nowcast": 18.5,
+  "band": "moderate",
+  "typical_pm25": 13.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-29T14:30:00Z",
+  "pm25": 3.0,
+  "nowcast": 10.5,
+  "band": "moderate",
+  "typical_pm25": 12.5,
+  "dq": null
+ },
+ {
+  "at": "2026-09-29T15:30:00Z",
+  "pm25": 4.0,
+  "nowcast": 7.2,
+  "band": "good",
+  "typical_pm25": 16.5,
+  "dq": null
+ },
+ {
+  "at": "2026-09-29T16:30:00Z",
+  "pm25": 20.0,
+  "nowcast": 13.6,
+  "band": "moderate",
+  "typical_pm25": 14.5,
+  "dq": null
+ },
+ {
+  "at": "2026-09-29T17:30:00Z",
+  "pm25": 44.0,
+  "nowcast": 28.8,
+  "band": "moderate",
+  "typical_pm25": 18.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-29T18:30:00Z",
+  "pm25": 42.0,
+  "nowcast": 35.4,
+  "band": "moderate",
+  "typical_pm25": 16.3,
+  "dq": null
+ },
+ {
+  "at": "2026-09-29T19:30:00Z",
+  "pm25": 30.0,
+  "nowcast": 32.7,
+  "band": "moderate",
+  "typical_pm25": 20.9,
+  "dq": null
+ },
+ {
+  "at": "2026-09-29T20:30:00Z",
+  "pm25": 27.0,
+  "nowcast": 29.8,
+  "band": "moderate",
+  "typical_pm25": 25.5,
+  "dq": null
+ },
+ {
+  "at": "2026-09-29T21:30:00Z",
+  "pm25": 36.0,
+  "nowcast": 32.9,
+  "band": "moderate",
+  "typical_pm25": 20.9,
+  "dq": null
+ },
+ {
+  "at": "2026-09-29T22:30:00Z",
+  "pm25": 56.0,
+  "nowcast": 44.4,
+  "band": "usg",
+  "typical_pm25": 16.0,
+  "dq": null
+ },
+ {
+  "at": "2026-09-29T23:30:00Z",
+  "pm25": 56.0,
+  "nowcast": 50.2,
+  "band": "usg",
+  "typical_pm25": 15.9,
+  "dq": null
+ },
+ {
+  "at": "2026-09-30T00:30:00Z",
+  "pm25": 49.0,
+  "nowcast": 49.6,
+  "band": "usg",
+  "typical_pm25": 16.5,
+  "dq": null
+ },
+ {
+  "at": "2026-09-30T01:30:00Z",
+  "pm25": 48.0,
+  "nowcast": 48.8,
+  "band": "usg",
+  "typical_pm25": 26.3,
+  "dq": null
+ },
+ {
+  "at": "2026-09-30T02:30:00Z",
+  "pm25": 48.0,
+  "nowcast": 48.4,
+  "band": "usg",
+  "typical_pm25": 31.5,
+  "dq": null
+ },
+ {
+  "at": "2026-09-30T03:30:00Z",
+  "pm25": 48.0,
+  "nowcast": 48.2,
+  "band": "usg",
+  "typical_pm25": 26.1,
+  "dq": null
+ },
+ {
+  "at": "2026-10-01T02:30:00Z",
+  "pm25": 56.0,
+  "nowcast": null,
+  "band": null,
+  "typical_pm25": 31.5,
+  "dq": null
+ },
+ {
+  "at": "2026-10-01T03:30:00Z",
+  "pm25": 51.0,
+  "nowcast": 53.3,
+  "band": "usg",
+  "typical_pm25": 26.1,
+  "dq": null
+ },
+ {
+  "at": "2026-10-01T04:30:00Z",
+  "pm25": 61.0,
+  "nowcast": 56.3,
+  "band": "unhealthy",
+  "typical_pm25": 21.1,
+  "dq": null
+ },
+ {
+  "at": "2026-10-01T05:30:00Z",
+  "pm25": 60.0,
+  "nowcast": 57.5,
+  "band": "unhealthy",
+  "typical_pm25": 22.5,
+  "dq": null
+ },
+ {
+  "at": "2026-10-01T06:30:00Z",
+  "pm25": 56.0,
+  "nowcast": 57.0,
+  "band": "unhealthy",
+  "typical_pm25": 21.7,
+  "dq": null
+ },
+ {
+  "at": "2026-10-01T07:30:00Z",
+  "pm25": 62.0,
+  "nowcast": 58.3,
+  "band": "unhealthy",
+  "typical_pm25": 12.9,
+  "dq": null
+ },
+ {
+  "at": "2026-10-01T08:30:00Z",
+  "pm25": 64.0,
+  "nowcast": 59.8,
+  "band": "unhealthy",
+  "typical_pm25": 13.2,
+  "dq": null
+ },
+ {
+  "at": "2026-10-01T09:30:00Z",
+  "pm25": 78.0,
+  "nowcast": 67.0,
+  "band": "unhealthy",
+  "typical_pm25": 13.8,
+  "dq": null
+ },
+ {
+  "at": "2026-10-01T10:30:00Z",
+  "pm25": 101.0,
+  "nowcast": 85.3,
+  "band": "unhealthy",
+  "typical_pm25": 18.0,
+  "dq": null
+ },
+ {
+  "at": "2026-10-01T11:30:00Z",
+  "pm25": 122.0,
+  "nowcast": 103.7,
+  "band": "unhealthy",
+  "typical_pm25": 18.0,
+  "dq": null
+ },
+ {
+  "at": "2026-10-01T12:30:00Z",
+  "pm25": 86.0,
+  "nowcast": 94.8,
+  "band": "unhealthy",
+  "typical_pm25": 11.1,
+  "dq": null
+ },
+ {
+  "at": "2026-10-01T13:30:00Z",
+  "pm25": 75.0,
+  "nowcast": 84.9,
+  "band": "unhealthy",
+  "typical_pm25": 18.0,
+  "dq": null
+ },
+ {
+  "at": "2026-10-01T14:30:00Z",
+  "pm25": 91.0,
+  "nowcast": 87.9,
+  "band": "unhealthy",
+  "typical_pm25": 11.0,
+  "dq": null
+ },
+ {
+  "at": "2026-10-01T15:30:00Z",
+  "pm25": 110.0,
+  "nowcast": 98.9,
+  "band": "unhealthy",
+  "typical_pm25": 13.0,
+  "dq": null
+ },
+ {
+  "at": "2026-10-01T16:30:00Z",
+  "pm25": 117.0,
+  "nowcast": 108.0,
+  "band": "unhealthy",
+  "typical_pm25": 15.0,
+  "dq": null
+ },
+ {
+  "at": "2026-10-01T17:30:00Z",
+  "pm25": 112.0,
+  "nowcast": 110.0,
+  "band": "unhealthy",
+  "typical_pm25": 21.0,
+  "dq": null
+ },
+ {
+  "at": "2026-10-01T18:30:00Z",
+  "pm25": 104.0,
+  "nowcast": 106.9,
+  "band": "unhealthy",
+  "typical_pm25": 20.0,
+  "dq": null
+ },
+ {
+  "at": "2026-10-01T19:30:00Z",
+  "pm25": 71.0,
+  "nowcast": 89.8,
+  "band": "unhealthy",
+  "typical_pm25": 23.0,
+  "dq": null
+ },
+ {
+  "at": "2026-10-01T20:30:00Z",
+  "pm25": 65.0,
+  "nowcast": 78.3,
+  "band": "unhealthy",
+  "typical_pm25": 24.0,
+  "dq": null
+ },
+ {
+  "at": "2026-10-01T21:30:00Z",
+  "pm25": 52.0,
+  "nowcast": 64.4,
+  "band": "unhealthy",
+  "typical_pm25": 25.0,
+  "dq": null
+ },
+ {
+  "at": "2026-10-01T22:30:00Z",
+  "pm25": 67.0,
+  "nowcast": 65.7,
+  "band": "unhealthy",
+  "typical_pm25": 26.0,
+  "dq": null
+ },
+ {
+  "at": "2026-10-01T23:30:00Z",
+  "pm25": 73.0,
+  "nowcast": 69.3,
+  "band": "unhealthy",
+  "typical_pm25": 27.0,
+  "dq": null
+ },
+ {
+  "at": "2026-10-02T00:30:00Z",
+  "pm25": 77.0,
+  "nowcast": 73.1,
+  "band": "unhealthy",
+  "typical_pm25": 31.0,
+  "dq": null
+ },
+ {
+  "at": "2026-10-02T01:30:00Z",
+  "pm25": 89.0,
+  "nowcast": 81.0,
+  "band": "unhealthy",
+  "typical_pm25": 33.0,
+  "dq": null
+ },
+ {
+  "at": "2026-10-02T02:30:00Z",
+  "pm25": 59.0,
+  "nowcast": 70.0,
+  "band": "unhealthy",
+  "typical_pm25": 35.9,
+  "dq": null
+ },
+ {
+  "at": "2026-10-02T03:30:00Z",
+  "pm25": 71.0,
+  "nowcast": 70.5,
+  "band": "unhealthy",
+  "typical_pm25": 34.8,
+  "dq": null
+ },
+ {
+  "at": "2026-10-02T04:30:00Z",
+  "pm25": 60.0,
+  "nowcast": 65.2,
+  "band": "unhealthy",
+  "typical_pm25": 24.1,
+  "dq": null
+ },
+ {
+  "at": "2026-10-02T05:30:00Z",
+  "pm25": 49.0,
+  "nowcast": 57.1,
+  "band": "unhealthy",
+  "typical_pm25": 25.0,
+  "dq": null
+ },
+ {
+  "at": "2026-10-02T06:30:00Z",
+  "pm25": 60.0,
+  "nowcast": 59.0,
+  "band": "unhealthy",
+  "typical_pm25": 29.6,
+  "dq": null
+ },
+ {
+  "at": "2026-10-02T07:30:00Z",
+  "pm25": 65.0,
+  "nowcast": 61.7,
+  "band": "unhealthy",
+  "typical_pm25": 20.7,
+  "dq": null
+ },
+ {
+  "at": "2026-10-02T08:30:00Z",
+  "pm25": 83.0,
+  "nowcast": 71.2,
+  "band": "unhealthy",
+  "typical_pm25": 17.5,
+  "dq": null
+ },
+ {
+  "at": "2026-10-02T09:30:00Z",
+  "pm25": 72.0,
+  "nowcast": 71.6,
+  "band": "unhealthy",
+  "typical_pm25": 20.8,
+  "dq": null
+ },
+ {
+  "at": "2026-10-02T10:30:00Z",
+  "pm25": 368.0,
+  "nowcast": 220.1,
+  "band": "very_unhealthy",
+  "typical_pm25": 21.0,
+  "dq": null
+ },
+ {
+  "at": "2026-10-02T11:30:00Z",
+  "pm25": 406.0,
+  "nowcast": 313.1,
+  "band": "hazardous",
+  "typical_pm25": 21.0,
+  "dq": null
+ },
+ {
+  "at": "2026-10-02T12:30:00Z",
+  "pm25": 47.0,
+  "nowcast": 180.0,
+  "band": "very_unhealthy",
+  "typical_pm25": 16.7,
+  "dq": null
+ },
+ {
+  "at": "2026-10-02T13:30:00Z",
+  "pm25": 44.0,
+  "nowcast": 112.0,
+  "band": "unhealthy",
+  "typical_pm25": 18.0,
+  "dq": null
+ },
+ {
+  "at": "2026-10-02T14:30:00Z",
+  "pm25": 45.0,
+  "nowcast": 78.5,
+  "band": "unhealthy",
+  "typical_pm25": 11.0,
+  "dq": null
+ },
+ {
+  "at": "2026-10-02T15:30:00Z",
+  "pm25": 51.0,
+  "nowcast": 64.7,
+  "band": "unhealthy",
+  "typical_pm25": 21.0,
+  "dq": null
+ },
+ {
+  "at": "2026-10-02T16:30:00Z",
+  "pm25": 56.0,
+  "nowcast": 60.3,
+  "band": "unhealthy",
+  "typical_pm25": 20.0,
+  "dq": null
+ },
+ {
+  "at": "2026-10-02T17:30:00Z",
+  "pm25": 54.0,
+  "nowcast": 57.1,
+  "band": "unhealthy",
+  "typical_pm25": 21.0,
+  "dq": null
+ },
+ {
+  "at": "2026-10-02T18:30:00Z",
+  "pm25": 57.0,
+  "nowcast": 57.0,
+  "band": "unhealthy",
+  "typical_pm25": 21.0,
+  "dq": null
+ },
+ {
+  "at": "2026-10-02T19:30:00Z",
+  "pm25": 60.0,
+  "nowcast": 58.5,
+  "band": "unhealthy",
+  "typical_pm25": 26.0,
+  "dq": null
+ },
+ {
+  "at": "2026-10-02T20:30:00Z",
+  "pm25": 54.0,
+  "nowcast": 56.2,
+  "band": "unhealthy",
+  "typical_pm25": 27.0,
+  "dq": null
+ },
+ {
+  "at": "2026-10-02T21:30:00Z",
+  "pm25": 48.0,
+  "nowcast": 52.1,
+  "band": "usg",
+  "typical_pm25": 36.0,
+  "dq": null
+ },
+ {
+  "at": "2026-10-02T22:30:00Z",
+  "pm25": 52.0,
+  "nowcast": 52.0,
+  "band": "usg",
+  "typical_pm25": 34.0,
+  "dq": null
+ },
+ {
+  "at": "2026-10-02T23:30:00Z",
+  "pm25": 48.0,
+  "nowcast": 51.3,
+  "band": "usg",
+  "typical_pm25": 38.0,
+  "dq": null
+ },
+ {
+  "at": "2026-10-03T00:30:00Z",
+  "pm25": 62.0,
+  "nowcast": 54.4,
+  "band": "usg",
+  "typical_pm25": 35.0,
+  "dq": null
+ },
+ {
+  "at": "2026-10-03T01:30:00Z",
+  "pm25": 67.0,
+  "nowcast": 58.7,
+  "band": "unhealthy",
+  "typical_pm25": 36.0,
+  "dq": null
+ },
+ {
+  "at": "2026-10-03T02:30:00Z",
+  "pm25": 70.0,
+  "nowcast": 62.2,
+  "band": "unhealthy",
+  "typical_pm25": 42.4,
+  "dq": null
+ },
+ {
+  "at": "2026-10-03T03:30:00Z",
+  "pm25": 53.0,
+  "nowcast": 59.3,
+  "band": "unhealthy",
+  "typical_pm25": 41.0,
+  "dq": null
+ },
+ {
+  "at": "2026-10-03T04:30:00Z",
+  "pm25": 42.0,
+  "nowcast": 52.5,
+  "band": "usg",
+  "typical_pm25": 33.2,
+  "dq": null
+ },
+ {
+  "at": "2026-10-03T05:30:00Z",
+  "pm25": 30.0,
+  "nowcast": 40.3,
+  "band": "usg",
+  "typical_pm25": 40.7,
+  "dq": null
+ },
+ {
+  "at": "2026-10-03T06:30:00Z",
+  "pm25": 36.0,
+  "nowcast": 38.1,
+  "band": "usg",
+  "typical_pm25": 34.3,
+  "dq": null
+ },
+ {
+  "at": "2026-10-03T07:30:00Z",
+  "pm25": 64.0,
+  "nowcast": 51.0,
+  "band": "usg",
+  "typical_pm25": 33.3,
+  "dq": null
+ },
+ {
+  "at": "2026-10-03T08:30:00Z",
+  "pm25": 54.0,
+  "nowcast": 52.5,
+  "band": "usg",
+  "typical_pm25": 25.9,
+  "dq": null
+ },
+ {
+  "at": "2026-10-03T09:30:00Z",
+  "pm25": 434.0,
+  "nowcast": 52.5,
+  "band": "usg",
+  "typical_pm25": 23.5,
+  "dq": "DQ_SUSPECT"
+ },
+ {
+  "at": "2026-10-03T10:30:00Z",
+  "pm25": 36.0,
+  "nowcast": 41.5,
+  "band": "usg",
+  "typical_pm25": 26.0,
+  "dq": null
+ },
+ {
+  "at": "2026-10-03T11:30:00Z",
+  "pm25": 22.0,
+  "nowcast": 30.3,
+  "band": "moderate",
+  "typical_pm25": 22.0,
+  "dq": null
+ },
+ {
+  "at": "2026-10-03T12:30:00Z",
+  "pm25": 27.0,
+  "nowcast": 28.5,
+  "band": "moderate",
+  "typical_pm25": 21.2,
+  "dq": null
+ },
+ {
+  "at": "2026-10-03T13:30:00Z",
+  "pm25": 36.0,
+  "nowcast": 32.3,
+  "band": "moderate",
+  "typical_pm25": 19.0,
+  "dq": null
+ },
+ {
+  "at": "2026-10-03T14:30:00Z",
+  "pm25": 48.0,
+  "nowcast": 40.3,
+  "band": "usg",
+  "typical_pm25": 23.0,
+  "dq": null
+ },
+ {
+  "at": "2026-10-03T15:30:00Z",
+  "pm25": 51.0,
+  "nowcast": 45.7,
+  "band": "usg",
+  "typical_pm25": 25.0,
+  "dq": null
+ },
+ {
+  "at": "2026-10-03T16:30:00Z",
+  "pm25": 59.0,
+  "nowcast": 52.3,
+  "band": "usg",
+  "typical_pm25": 31.0,
+  "dq": null
+ },
+ {
+  "at": "2026-10-03T17:30:00Z",
+  "pm25": 53.0,
+  "nowcast": 52.6,
+  "band": "usg",
+  "typical_pm25": 27.0,
+  "dq": null
+ },
+ {
+  "at": "2026-10-03T18:30:00Z",
+  "pm25": 35.0,
+  "nowcast": 43.8,
+  "band": "usg",
+  "typical_pm25": 27.0,
+  "dq": null
+ },
+ {
+  "at": "2026-10-03T19:30:00Z",
+  "pm25": 42.0,
+  "nowcast": 42.9,
+  "band": "usg",
+  "typical_pm25": 30.0,
+  "dq": null
+ },
+ {
+  "at": "2026-10-03T20:30:00Z",
+  "pm25": 61.0,
+  "nowcast": 51.9,
+  "band": "usg",
+  "typical_pm25": 30.0,
+  "dq": null
+ },
+ {
+  "at": "2026-10-03T21:30:00Z",
+  "pm25": 57.0,
+  "nowcast": 54.4,
+  "band": "usg",
+  "typical_pm25": 38.0,
+  "dq": null
+ },
+ {
+  "at": "2026-10-03T22:30:00Z",
+  "pm25": 50.0,
+  "nowcast": 52.2,
+  "band": "usg",
+  "typical_pm25": 36.0,
+  "dq": null
+ },
+ {
+  "at": "2026-10-03T23:30:00Z",
+  "pm25": 46.0,
+  "nowcast": 49.1,
+  "band": "usg",
+  "typical_pm25": 39.0,
+  "dq": null
+ },
+ {
+  "at": "2026-10-04T00:30:00Z",
+  "pm25": 67.0,
+  "nowcast": 57.7,
+  "band": "unhealthy",
+  "typical_pm25": 44.0,
+  "dq": null
+ },
+ {
+  "at": "2026-10-04T01:30:00Z",
+  "pm25": 71.0,
+  "nowcast": 64.5,
+  "band": "unhealthy",
+  "typical_pm25": 48.0,
+  "dq": null
+ },
+ {
+  "at": "2026-10-04T02:30:00Z",
+  "pm25": 79.0,
+  "nowcast": 71.7,
+  "band": "unhealthy",
+  "typical_pm25": 47.0,
+  "dq": null
+ },
+ {
+  "at": "2026-10-04T03:30:00Z",
+  "pm25": 72.0,
+  "nowcast": 71.8,
+  "band": "unhealthy",
+  "typical_pm25": 45.4,
+  "dq": null
+ },
+ {
+  "at": "2026-10-04T04:30:00Z",
+  "pm25": 52.0,
+  "nowcast": 61.9,
+  "band": "unhealthy",
+  "typical_pm25": 42.8,
+  "dq": null
+ },
+ {
+  "at": "2026-10-04T05:30:00Z",
+  "pm25": 48.0,
+  "nowcast": 54.9,
+  "band": "usg",
+  "typical_pm25": 43.4,
+  "dq": null
+ },
+ {
+  "at": "2026-10-04T06:30:00Z",
+  "pm25": 44.0,
+  "nowcast": 50.1,
+  "band": "usg",
+  "typical_pm25": 37.2,
+  "dq": null
+ },
+ {
+  "at": "2026-10-04T07:30:00Z",
+  "pm25": 44.0,
+  "nowcast": 47.7,
+  "band": "usg",
+  "typical_pm25": 55.9,
+  "dq": null
+ },
+ {
+  "at": "2026-10-04T08:30:00Z",
+  "pm25": 43.0,
+  "nowcast": 45.4,
+  "band": "usg",
+  "typical_pm25": 41.9,
+  "dq": null
+ },
+ {
+  "at": "2026-10-04T09:30:00Z",
+  "pm25": 43.0,
+  "nowcast": 44.3,
+  "band": "usg",
+  "typical_pm25": 40.6,
+  "dq": null
+ },
+ {
+  "at": "2026-10-04T11:30:00Z",
+  "pm25": 341.0,
+  "nowcast": null,
+  "band": null,
+  "typical_pm25": 22.0,
+  "dq": "DQ_SUSPECT"
+ },
+ {
+  "at": "2026-10-04T12:30:00Z",
+  "pm25": 57.0,
+  "nowcast": null,
+  "band": null,
+  "typical_pm25": 23.8,
+  "dq": null
+ },
+ {
+  "at": "2026-10-04T13:30:00Z",
+  "pm25": 70.0,
+  "nowcast": 63.0,
+  "band": "unhealthy",
+  "typical_pm25": 19.0,
+  "dq": null
+ },
+ {
+  "at": "2026-10-04T14:30:00Z",
+  "pm25": 45.0,
+  "nowcast": 53.9,
+  "band": "usg",
+  "typical_pm25": 26.0,
+  "dq": null
+ },
+ {
+  "at": "2026-10-04T15:30:00Z",
+  "pm25": 37.0,
+  "nowcast": 45.3,
+  "band": "usg",
+  "typical_pm25": 25.0,
+  "dq": null
+ },
+ {
+  "at": "2026-10-04T16:30:00Z",
+  "pm25": 44.0,
+  "nowcast": 44.6,
+  "band": "usg",
+  "typical_pm25": 31.0,
+  "dq": null
+ },
+ {
+  "at": "2026-10-04T17:30:00Z",
+  "pm25": 55.0,
+  "nowcast": 49.6,
+  "band": "usg",
+  "typical_pm25": 44.0,
+  "dq": null
+ },
+ {
+  "at": "2026-10-04T18:30:00Z",
+  "pm25": 57.0,
+  "nowcast": 53.1,
+  "band": "usg",
+  "typical_pm25": 35.0,
+  "dq": null
+ },
+ {
+  "at": "2026-10-04T19:30:00Z",
+  "pm25": 69.0,
+  "nowcast": 60.6,
+  "band": "unhealthy",
+  "typical_pm25": 36.0,
+  "dq": null
+ },
+ {
+  "at": "2026-10-04T20:30:00Z",
+  "pm25": 69.0,
+  "nowcast": 64.6,
+  "band": "unhealthy",
+  "typical_pm25": 34.0,
+  "dq": null
+ },
+ {
+  "at": "2026-10-04T21:30:00Z",
+  "pm25": 63.0,
+  "nowcast": 63.8,
+  "band": "unhealthy",
+  "typical_pm25": 39.0,
+  "dq": null
+ },
+ {
+  "at": "2026-10-04T22:30:00Z",
+  "pm25": 57.0,
+  "nowcast": 60.6,
+  "band": "unhealthy",
+  "typical_pm25": 50.0,
+  "dq": null
+ },
+ {
+  "at": "2026-10-04T23:30:00Z",
+  "pm25": 59.0,
+  "nowcast": 59.8,
+  "band": "unhealthy",
+  "typical_pm25": 46.0,
+  "dq": null
+ },
+ {
+  "at": "2026-10-05T00:30:00Z",
+  "pm25": 58.0,
+  "nowcast": 58.9,
+  "band": "unhealthy",
+  "typical_pm25": 49.0,
+  "dq": null
+ },
+ {
+  "at": "2026-10-05T01:30:00Z",
+  "pm25": 53.0,
+  "nowcast": 56.2,
+  "band": "unhealthy",
+  "typical_pm25": 50.0,
+  "dq": null
+ },
+ {
+  "at": "2026-10-05T02:30:00Z",
+  "pm25": 53.0,
+  "nowcast": 54.7,
+  "band": "usg",
+  "typical_pm25": 51.8,
+  "dq": null
+ },
+ {
+  "at": "2026-10-05T04:30:00Z",
+  "pm25": 36.0,
+  "nowcast": 42.7,
+  "band": "usg",
+  "typical_pm25": 47.9,
+  "dq": null
+ },
+ {
+  "at": "2026-10-05T05:30:00Z",
+  "pm25": 36.0,
+  "nowcast": 39.0,
+  "band": "usg",
+  "typical_pm25": 48.0,
+  "dq": null
+ },
+ {
+  "at": "2026-10-05T06:30:00Z",
+  "pm25": 44.0,
+  "nowcast": 41.5,
+  "band": "usg",
+  "typical_pm25": 41.4,
+  "dq": null
+ },
+ {
+  "at": "2026-10-05T07:30:00Z",
+  "pm25": 47.0,
+  "nowcast": 44.2,
+  "band": "usg",
+  "typical_pm25": 57.6,
+  "dq": null
+ },
+ {
+  "at": "2026-10-05T08:30:00Z",
+  "pm25": 59.0,
+  "nowcast": 50.6,
+  "band": "usg",
+  "typical_pm25": 48.2,
+  "dq": null
+ },
+ {
+  "at": "2026-10-05T09:30:00Z",
+  "pm25": 39.0,
+  "nowcast": 45.7,
+  "band": "usg",
+  "typical_pm25": 52.2,
+  "dq": null
+ },
+ {
+  "at": "2026-10-05T10:30:00Z",
+  "pm25": 39.0,
+  "nowcast": 43.0,
+  "band": "usg",
+  "typical_pm25": 33.2,
+  "dq": null
+ },
+ {
+  "at": "2026-10-05T13:30:00Z",
+  "pm25": 52.0,
+  "nowcast": null,
+  "band": null,
+  "typical_pm25": 36.0,
+  "dq": null
+ },
+ {
+  "at": "2026-10-05T14:30:00Z",
+  "pm25": 53.0,
+  "nowcast": 50.8,
+  "band": "usg",
+  "typical_pm25": 45.0,
+  "dq": null
+ },
+ {
+  "at": "2026-10-05T15:30:00Z",
+  "pm25": 50.0,
+  "nowcast": 50.4,
+  "band": "usg",
+  "typical_pm25": 37.0,
+  "dq": null
+ },
+ {
+  "at": "2026-10-05T16:30:00Z",
+  "pm25": 52.0,
+  "nowcast": 51.1,
+  "band": "usg",
+  "typical_pm25": 44.0,
+  "dq": null
+ },
+ {
+  "at": "2026-10-05T17:30:00Z",
+  "pm25": 47.0,
+  "nowcast": 49.5,
+  "band": "usg",
+  "typical_pm25": 53.0,
+  "dq": null
+ },
+ {
+  "at": "2026-10-05T18:30:00Z",
+  "pm25": 42.0,
+  "nowcast": 46.8,
+  "band": "usg",
+  "typical_pm25": 42.0,
+  "dq": null
+ },
+ {
+  "at": "2026-10-05T19:30:00Z",
+  "pm25": 44.0,
+  "nowcast": 45.8,
+  "band": "usg",
+  "typical_pm25": 42.0,
+  "dq": null
+ },
+ {
+  "at": "2026-10-05T20:30:00Z",
+  "pm25": 46.0,
+  "nowcast": 46.1,
+  "band": "usg",
+  "typical_pm25": 54.0,
+  "dq": null
+ },
+ {
+  "at": "2026-10-05T21:30:00Z",
+  "pm25": 46.0,
+  "nowcast": 46.1,
+  "band": "usg",
+  "typical_pm25": 48.0,
+  "dq": null
+ },
+ {
+  "at": "2026-10-05T22:30:00Z",
+  "pm25": 41.0,
+  "nowcast": 45.1,
+  "band": "usg",
+  "typical_pm25": 52.0,
+  "dq": null
+ },
+ {
+  "at": "2026-10-05T23:30:00Z",
+  "pm25": 48.0,
+  "nowcast": 45.8,
+  "band": "usg",
+  "typical_pm25": 48.0,
+  "dq": null
+ },
+ {
+  "at": "2026-10-06T00:30:00Z",
+  "pm25": 35.0,
+  "nowcast": 41.9,
+  "band": "usg",
+  "typical_pm25": 58.0,
+  "dq": null
+ },
+ {
+  "at": "2026-10-06T01:30:00Z",
+  "pm25": 27.0,
+  "nowcast": 33.8,
+  "band": "moderate",
+  "typical_pm25": 53.0,
+  "dq": null
+ },
+ {
+  "at": "2026-10-06T02:30:00Z",
+  "pm25": 57.0,
+  "nowcast": 45.3,
+  "band": "usg",
+  "typical_pm25": 54.5,
+  "dq": null
+ },
+ {
+  "at": "2026-10-06T03:30:00Z",
+  "pm25": 44.0,
+  "nowcast": 44.6,
+  "band": "usg",
+  "typical_pm25": 51.0,
+  "dq": null
+ },
+ {
+  "at": "2026-10-06T04:30:00Z",
+  "pm25": 29.0,
+  "nowcast": 36.8,
+  "band": "usg",
+  "typical_pm25": 47.0,
+  "dq": null
+ },
+ {
+  "at": "2026-10-06T05:30:00Z",
+  "pm25": 33.0,
+  "nowcast": 34.9,
+  "band": "moderate",
+  "typical_pm25": 48.0,
+  "dq": null
+ },
+ {
+  "at": "2026-10-06T06:30:00Z",
+  "pm25": 33.0,
+  "nowcast": 33.9,
+  "band": "moderate",
+  "typical_pm25": 44.6,
+  "dq": null
+ },
+ {
+  "at": "2026-10-06T07:30:00Z",
+  "pm25": 53.0,
+  "nowcast": 43.4,
+  "band": "usg",
+  "typical_pm25": 53.1,
+  "dq": null
+ },
+ {
+  "at": "2026-10-06T08:30:00Z",
+  "pm25": 40.0,
+  "nowcast": 41.7,
+  "band": "usg",
+  "typical_pm25": 54.0,
+  "dq": null
+ },
+ {
+  "at": "2026-10-06T09:30:00Z",
+  "pm25": 44.0,
+  "nowcast": 42.8,
+  "band": "usg",
+  "typical_pm25": 44.4,
+  "dq": null
+ },
+ {
+  "at": "2026-10-06T10:30:00Z",
+  "pm25": 32.0,
+  "nowcast": 37.4,
+  "band": "usg",
+  "typical_pm25": 38.8,
+  "dq": null
+ },
+ {
+  "at": "2026-10-06T11:30:00Z",
+  "pm25": 43.0,
+  "nowcast": 40.2,
+  "band": "usg",
+  "typical_pm25": 27.5,
+  "dq": null
+ },
+ {
+  "at": "2026-10-06T12:30:00Z",
+  "pm25": 53.0,
+  "nowcast": 46.6,
+  "band": "usg",
+  "typical_pm25": 37.2,
+  "dq": null
+ },
+ {
+  "at": "2026-10-06T13:30:00Z",
+  "pm25": 66.0,
+  "nowcast": 56.3,
+  "band": "unhealthy",
+  "typical_pm25": 44.0,
+  "dq": null
+ },
+ {
+  "at": "2026-10-06T14:30:00Z",
+  "pm25": 61.0,
+  "nowcast": 58.6,
+  "band": "unhealthy",
+  "typical_pm25": 45.0,
+  "dq": null
+ },
+ {
+  "at": "2026-10-06T15:30:00Z",
+  "pm25": 63.0,
+  "nowcast": 60.8,
+  "band": "unhealthy",
+  "typical_pm25": 50.0,
+  "dq": null
+ },
+ {
+  "at": "2026-10-06T16:30:00Z",
+  "pm25": 56.0,
+  "nowcast": 58.4,
+  "band": "unhealthy",
+  "typical_pm25": 52.0,
+  "dq": null
+ },
+ {
+  "at": "2026-10-06T17:30:00Z",
+  "pm25": 41.0,
+  "nowcast": 49.7,
+  "band": "usg",
+  "typical_pm25": 53.0,
+  "dq": null
+ },
+ {
+  "at": "2026-10-06T18:30:00Z",
+  "pm25": 42.0,
+  "nowcast": 45.8,
+  "band": "usg",
+  "typical_pm25": 42.0,
+  "dq": null
+ },
+ {
+  "at": "2026-10-06T19:30:00Z",
+  "pm25": 51.0,
+  "nowcast": 48.4,
+  "band": "usg",
+  "typical_pm25": 44.0,
+  "dq": null
+ },
+ {
+  "at": "2026-10-06T20:30:00Z",
+  "pm25": 53.0,
+  "nowcast": 50.7,
+  "band": "usg",
+  "typical_pm25": 54.0,
+  "dq": null
+ },
+ {
+  "at": "2026-10-06T21:30:00Z",
+  "pm25": 52.0,
+  "nowcast": 51.3,
+  "band": "usg",
+  "typical_pm25": 48.0,
+  "dq": null
+ },
+ {
+  "at": "2026-10-06T22:30:00Z",
+  "pm25": 51.0,
+  "nowcast": 51.0,
+  "band": "usg",
+  "typical_pm25": 52.0,
+  "dq": null
+ },
+ {
+  "at": "2026-10-06T23:30:00Z",
+  "pm25": 54.0,
+  "nowcast": 52.2,
+  "band": "usg",
+  "typical_pm25": 48.0,
+  "dq": null
+ },
+ {
+  "at": "2026-10-07T00:30:00Z",
+  "pm25": 72.0,
+  "nowcast": 60.8,
+  "band": "unhealthy",
+  "typical_pm25": 58.0,
+  "dq": null
+ },
+ {
+  "at": "2026-10-07T01:30:00Z",
+  "pm25": 65.0,
+  "nowcast": 62.6,
+  "band": "unhealthy",
+  "typical_pm25": 53.0,
+  "dq": null
+ },
+ {
+  "at": "2026-10-07T02:30:00Z",
+  "pm25": 65.0,
+  "nowcast": 63.6,
+  "band": "unhealthy",
+  "typical_pm25": 56.5,
+  "dq": null
+ },
+ {
+  "at": "2026-10-07T03:30:00Z",
+  "pm25": 78.0,
+  "nowcast": 70.6,
+  "band": "unhealthy",
+  "typical_pm25": 51.0,
+  "dq": null
+ },
+ {
+  "at": "2026-10-07T04:30:00Z",
+  "pm25": 76.0,
+  "nowcast": 73.2,
+  "band": "unhealthy",
+  "typical_pm25": 42.0,
+  "dq": null
+ },
+ {
+  "at": "2026-10-07T05:30:00Z",
+  "pm25": 80.0,
+  "nowcast": 76.4,
+  "band": "unhealthy",
+  "typical_pm25": 42.7,
+  "dq": null
+ },
+ {
+  "at": "2026-10-07T06:30:00Z",
+  "pm25": 85.0,
+  "nowcast": 79.1,
+  "band": "unhealthy",
+  "typical_pm25": 44.0,
+  "dq": null
+ },
+ {
+  "at": "2026-10-07T07:30:00Z",
+  "pm25": 73.0,
+  "nowcast": 76.7,
+  "band": "unhealthy",
+  "typical_pm25": 53.0,
+  "dq": null
+ },
+ {
+  "at": "2026-10-07T08:30:00Z",
+  "pm25": 94.0,
+  "nowcast": 84.7,
+  "band": "unhealthy",
+  "typical_pm25": 48.2,
+  "dq": null
+ },
+ {
+  "at": "2026-10-07T09:30:00Z",
+  "pm25": 94.0,
+  "nowcast": 88.9,
+  "band": "unhealthy",
+  "typical_pm25": 44.5,
+  "dq": null
+ },
+ {
+  "at": "2026-10-07T11:30:00Z",
+  "pm25": 395.0,
+  "nowcast": null,
+  "band": null,
+  "typical_pm25": 33.1,
+  "dq": "DQ_SUSPECT"
+ },
+ {
+  "at": "2026-10-07T12:30:00Z",
+  "pm25": 78.0,
+  "nowcast": null,
+  "band": null,
+  "typical_pm25": 47.0,
+  "dq": null
+ },
+ {
+  "at": "2026-10-07T13:30:00Z",
+  "pm25": 83.0,
+  "nowcast": 82.5,
+  "band": "unhealthy",
+  "typical_pm25": 47.8,
+  "dq": null
+ },
+ {
+  "at": "2026-10-07T14:30:00Z",
+  "pm25": 82.0,
+  "nowcast": 82.6,
+  "band": "unhealthy",
+  "typical_pm25": 46.5,
+  "dq": null
+ },
+ {
+  "at": "2026-10-07T15:30:00Z",
+  "pm25": 90.0,
+  "nowcast": 84.7,
+  "band": "unhealthy",
+  "typical_pm25": 50.5,
+  "dq": null
+ },
+ {
+  "at": "2026-10-07T16:30:00Z",
+  "pm25": 97.0,
+  "nowcast": 88.4,
+  "band": "unhealthy",
+  "typical_pm25": 54.0,
+  "dq": null
+ },
+ {
+  "at": "2026-10-07T17:30:00Z",
+  "pm25": 102.0,
+  "nowcast": 93.0,
+  "band": "unhealthy",
+  "typical_pm25": 49.9,
+  "dq": null
+ },
+ {
+  "at": "2026-10-07T18:30:00Z",
+  "pm25": 101.0,
+  "nowcast": 95.4,
+  "band": "unhealthy",
+  "typical_pm25": 42.0,
+  "dq": null
+ },
+ {
+  "at": "2026-10-07T19:30:00Z",
+  "pm25": 94.0,
+  "nowcast": 94.5,
+  "band": "unhealthy",
+  "typical_pm25": 47.4,
+  "dq": null
+ },
+ {
+  "at": "2026-10-07T20:30:00Z",
+  "pm25": 90.0,
+  "nowcast": 93.4,
+  "band": "unhealthy",
+  "typical_pm25": 53.5,
+  "dq": null
+ },
+ {
+  "at": "2026-10-07T21:30:00Z",
+  "pm25": 83.0,
+  "nowcast": 90.7,
+  "band": "unhealthy",
+  "typical_pm25": 50.0,
+  "dq": null
+ },
+ {
+  "at": "2026-10-07T22:30:00Z",
+  "pm25": 94.0,
+  "nowcast": 91.5,
+  "band": "unhealthy",
+  "typical_pm25": 51.5,
+  "dq": null
+ },
+ {
+  "at": "2026-10-07T23:30:00Z",
+  "pm25": 97.0,
+  "nowcast": 92.9,
+  "band": "unhealthy",
+  "typical_pm25": 50.9,
+  "dq": null
+ },
+ {
+  "at": "2026-10-08T00:30:00Z",
+  "pm25": 90.0,
+  "nowcast": 92.3,
+  "band": "unhealthy",
+  "typical_pm25": 60.0,
+  "dq": null
+ },
+ {
+  "at": "2026-10-08T01:30:00Z",
+  "pm25": 100.0,
+  "nowcast": 94.1,
+  "band": "unhealthy",
+  "typical_pm25": 58.7,
+  "dq": null
+ },
+ {
+  "at": "2026-10-08T02:30:00Z",
+  "pm25": 114.0,
+  "nowcast": 100.0,
+  "band": "unhealthy",
+  "typical_pm25": 57.0,
+  "dq": null
+ },
+ {
+  "at": "2026-10-08T03:30:00Z",
+  "pm25": 89.0,
+  "nowcast": 97.0,
+  "band": "unhealthy",
+  "typical_pm25": 52.0,
+  "dq": null
+ },
+ {
+  "at": "2026-10-08T04:30:00Z",
+  "pm25": 72.0,
+  "nowcast": 87.9,
+  "band": "unhealthy",
+  "typical_pm25": 46.7,
+  "dq": null
+ },
+ {
+  "at": "2026-10-08T05:30:00Z",
+  "pm25": 65.0,
+  "nowcast": 77.1,
+  "band": "unhealthy",
+  "typical_pm25": 48.0,
+  "dq": null
+ },
+ {
+  "at": "2026-10-08T06:30:00Z",
+  "pm25": 58.0,
+  "nowcast": 66.6,
+  "band": "unhealthy",
+  "typical_pm25": 44.0,
+  "dq": null
+ },
+ {
+  "at": "2026-10-08T07:30:00Z",
+  "pm25": 83.0,
+  "nowcast": 74.6,
+  "band": "unhealthy",
+  "typical_pm25": 57.3,
+  "dq": null
+ },
+ {
+  "at": "2026-10-08T14:30:00Z",
+  "pm25": 68.0,
+  "nowcast": null,
+  "band": null,
+  "typical_pm25": 48.0,
+  "dq": null
+ },
+ {
+  "at": "2026-10-08T15:30:00Z",
+  "pm25": 76.0,
+  "nowcast": 72.5,
+  "band": "unhealthy",
+  "typical_pm25": 51.0,
+  "dq": null
+ },
+ {
+  "at": "2026-10-08T16:30:00Z",
+  "pm25": 95.0,
+  "nowcast": 83.9,
+  "band": "unhealthy",
+  "typical_pm25": 56.0,
+  "dq": null
+ },
+ {
+  "at": "2026-10-08T17:30:00Z",
+  "pm25": 112.0,
+  "nowcast": 99.2,
+  "band": "unhealthy",
+  "typical_pm25": 53.0,
+  "dq": null
+ },
+ {
+  "at": "2026-10-08T18:30:00Z",
+  "pm25": 105.0,
+  "nowcast": 100.2,
+  "band": "unhealthy",
+  "typical_pm25": 42.0,
+  "dq": null
+ },
+ {
+  "at": "2026-10-08T19:30:00Z",
+  "pm25": 91.0,
+  "nowcast": 96.4,
+  "band": "unhealthy",
+  "typical_pm25": 51.0,
+  "dq": null
+ },
+ {
+  "at": "2026-10-08T20:30:00Z",
+  "pm25": 87.0,
+  "nowcast": 92.6,
+  "band": "unhealthy",
+  "typical_pm25": 54.0,
+  "dq": null
+ },
+ {
+  "at": "2026-10-08T21:30:00Z",
+  "pm25": 67.0,
+  "nowcast": 82.1,
+  "band": "unhealthy",
+  "typical_pm25": 52.0,
+  "dq": null
+ },
+ {
+  "at": "2026-10-08T22:30:00Z",
+  "pm25": 86.0,
+  "nowcast": 83.6,
+  "band": "unhealthy",
+  "typical_pm25": 52.0,
+  "dq": null
+ },
+ {
+  "at": "2026-10-08T23:30:00Z",
+  "pm25": 108.0,
+  "nowcast": 93.5,
+  "band": "unhealthy",
+  "typical_pm25": 54.0,
+  "dq": null
+ },
+ {
+  "at": "2026-10-09T00:30:00Z",
+  "pm25": 104.0,
+  "nowcast": 97.7,
+  "band": "unhealthy",
+  "typical_pm25": 62.0,
+  "dq": null
+ },
+ {
+  "at": "2026-10-09T01:30:00Z",
+  "pm25": 119.0,
+  "nowcast": 107.4,
+  "band": "unhealthy",
+  "typical_pm25": 65.0,
+  "dq": null
+ },
+ {
+  "at": "2026-10-09T02:30:00Z",
+  "pm25": 119.0,
+  "nowcast": 112.5,
+  "band": "unhealthy",
+  "typical_pm25": 58.0,
+  "dq": null
+ },
+ {
+  "at": "2026-10-09T04:30:00Z",
+  "pm25": 93.0,
+  "nowcast": 101.2,
+  "band": "unhealthy",
+  "typical_pm25": 52.0,
+  "dq": null
+ },
+ {
+  "at": "2026-10-09T05:30:00Z",
+  "pm25": 61.0,
+  "nowcast": 78.3,
+  "band": "unhealthy",
+  "typical_pm25": 48.5,
+  "dq": null
+ },
+ {
+  "at": "2026-10-09T06:30:00Z",
+  "pm25": 60.0,
+  "nowcast": 68.4,
+  "band": "unhealthy",
+  "typical_pm25": 44.0,
+  "dq": null
+ },
+ {
+  "at": "2026-10-09T07:30:00Z",
+  "pm25": 577.0,
+  "nowcast": 330.9,
+  "band": "hazardous",
+  "typical_pm25": 62.0,
+  "dq": null
+ },
+ {
+  "at": "2026-10-09T08:30:00Z",
+  "pm25": 196.0,
+  "nowcast": 262.3,
+  "band": "hazardous",
+  "typical_pm25": 54.0,
+  "dq": null
+ },
+ {
+  "at": "2026-10-09T09:30:00Z",
+  "pm25": 249.0,
+  "nowcast": 255.6,
+  "band": "hazardous",
+  "typical_pm25": 44.0,
+  "dq": null
+ },
+ {
+  "at": "2026-10-09T10:30:00Z",
+  "pm25": 295.0,
+  "nowcast": 275.4,
+  "band": "hazardous",
+  "typical_pm25": 36.0,
+  "dq": null
+ },
+ {
+  "at": "2026-10-09T13:30:00Z",
+  "pm25": 56.0,
+  "nowcast": null,
+  "band": null,
+  "typical_pm25": 52.0,
+  "dq": null
+ },
+ {
+  "at": "2026-10-09T14:30:00Z",
+  "pm25": 57.0,
+  "nowcast": 73.4,
+  "band": "unhealthy",
+  "typical_pm25": 50.4,
+  "dq": null
+ },
+ {
+  "at": "2026-10-09T15:30:00Z",
+  "pm25": 68.0,
+  "nowcast": 70.4,
+  "band": "unhealthy",
+  "typical_pm25": 51.0,
+  "dq": null
+ },
+ {
+  "at": "2026-10-09T16:30:00Z",
+  "pm25": 74.0,
+  "nowcast": 72.2,
+  "band": "unhealthy",
+  "typical_pm25": 56.0,
+  "dq": null
+ },
+ {
+  "at": "2026-10-09T17:30:00Z",
+  "pm25": 68.0,
+  "nowcast": 70.0,
+  "band": "unhealthy",
+  "typical_pm25": 53.5,
+  "dq": null
+ },
+ {
+  "at": "2026-10-09T18:30:00Z",
+  "pm25": 66.0,
+  "nowcast": 68.0,
+  "band": "unhealthy",
+  "typical_pm25": 48.9,
+  "dq": null
+ },
+ {
+  "at": "2026-10-09T19:30:00Z",
+  "pm25": 73.0,
+  "nowcast": 70.4,
+  "band": "unhealthy",
+  "typical_pm25": 55.3,
+  "dq": null
+ },
+ {
+  "at": "2026-10-09T20:30:00Z",
+  "pm25": 92.0,
+  "nowcast": 81.2,
+  "band": "unhealthy",
+  "typical_pm25": 57.4,
+  "dq": null
+ },
+ {
+  "at": "2026-10-09T21:30:00Z",
+  "pm25": 92.0,
+  "nowcast": 86.6,
+  "band": "unhealthy",
+  "typical_pm25": 52.0,
+  "dq": null
+ },
+ {
+  "at": "2026-10-09T22:30:00Z",
+  "pm25": 86.0,
+  "nowcast": 84.6,
+  "band": "unhealthy",
+  "typical_pm25": 54.0,
+  "dq": null
+ },
+ {
+  "at": "2026-10-09T23:30:00Z",
+  "pm25": 88.0,
+  "nowcast": 85.9,
+  "band": "unhealthy",
+  "typical_pm25": 55.0,
+  "dq": null
+ },
+ {
+  "at": "2026-10-10T00:30:00Z",
+  "pm25": 95.0,
+  "nowcast": 89.8,
+  "band": "unhealthy",
+  "typical_pm25": 64.5,
+  "dq": null
+ },
+ {
+  "at": "2026-10-10T01:30:00Z",
+  "pm25": 90.0,
+  "nowcast": 89.8,
+  "band": "unhealthy",
+  "typical_pm25": 66.0,
+  "dq": null
+ },
+ {
+  "at": "2026-10-10T02:30:00Z",
+  "pm25": 79.0,
+  "nowcast": 85.6,
+  "band": "unhealthy",
+  "typical_pm25": 59.0,
+  "dq": null
+ },
+ {
+  "at": "2026-10-10T03:30:00Z",
+  "pm25": 99.0,
+  "nowcast": 90.2,
+  "band": "unhealthy",
+  "typical_pm25": 53.0,
+  "dq": null
+ },
+ {
+  "at": "2026-10-10T04:30:00Z",
+  "pm25": 85.0,
+  "nowcast": 88.5,
+  "band": "unhealthy",
+  "typical_pm25": 55.9,
+  "dq": null
+ },
+ {
+  "at": "2026-10-10T05:30:00Z",
+  "pm25": 136.0,
+  "nowcast": 112.2,
+  "band": "unhealthy",
+  "typical_pm25": 49.0,
+  "dq": null
+ },
+ {
+  "at": "2026-10-10T06:30:00Z",
+  "pm25": 81.0,
+  "nowcast": 96.8,
+  "band": "unhealthy",
+  "typical_pm25": 49.6,
+  "dq": null
+ },
+ {
+  "at": "2026-10-10T07:30:00Z",
+  "pm25": 85.0,
+  "nowcast": 91.9,
+  "band": "unhealthy",
+  "typical_pm25": 63.0,
+  "dq": null
+ },
+ {
+  "at": "2026-10-10T08:30:00Z",
+  "pm25": 61.0,
+  "nowcast": 75.9,
+  "band": "unhealthy",
+  "typical_pm25": 56.4,
+  "dq": null
+ },
+ {
+  "at": "2026-10-10T09:30:00Z",
+  "pm25": 89.0,
+  "nowcast": 82.4,
+  "band": "unhealthy",
+  "typical_pm25": 56.3,
+  "dq": null
+ },
+ {
+  "at": "2026-10-10T10:30:00Z",
+  "pm25": 701.0,
+  "nowcast": 391.8,
+  "band": "hazardous",
+  "typical_pm25": 37.5,
+  "dq": null
+ },
+ {
+  "at": "2026-10-10T11:30:00Z",
+  "pm25": 493.0,
+  "nowcast": 442.4,
+  "band": "hazardous",
+  "typical_pm25": 33.7,
+  "dq": null
+ },
+ {
+  "at": "2026-10-10T12:30:00Z",
+  "pm25": 77.0,
+  "nowcast": 259.7,
+  "band": "hazardous",
+  "typical_pm25": 49.9,
+  "dq": null
+ },
+ {
+  "at": "2026-10-10T13:30:00Z",
+  "pm25": 79.0,
+  "nowcast": 169.3,
+  "band": "very_unhealthy",
+  "typical_pm25": 54.0,
+  "dq": null
+ },
+ {
+  "at": "2026-10-10T14:30:00Z",
+  "pm25": 80.0,
+  "nowcast": 124.6,
+  "band": "unhealthy",
+  "typical_pm25": 53.0,
+  "dq": null
+ },
+ {
+  "at": "2026-10-10T15:30:00Z",
+  "pm25": 70.0,
+  "nowcast": 97.3,
+  "band": "unhealthy",
+  "typical_pm25": 51.0,
+  "dq": null
+ },
+ {
+  "at": "2026-10-10T16:30:00Z",
+  "pm25": 74.0,
+  "nowcast": 85.6,
+  "band": "unhealthy",
+  "typical_pm25": 56.0,
+  "dq": null
+ },
+ {
+  "at": "2026-10-10T17:30:00Z",
+  "pm25": 70.0,
+  "nowcast": 77.8,
+  "band": "unhealthy",
+  "typical_pm25": 54.0,
+  "dq": null
+ },
+ {
+  "at": "2026-10-10T18:30:00Z",
+  "pm25": 67.0,
+  "nowcast": 72.4,
+  "band": "unhealthy",
+  "typical_pm25": 57.0,
+  "dq": null
+ },
+ {
+  "at": "2026-10-10T19:30:00Z",
+  "pm25": 55.0,
+  "nowcast": 63.7,
+  "band": "unhealthy",
+  "typical_pm25": 60.0,
+  "dq": null
+ },
+ {
+  "at": "2026-10-10T20:30:00Z",
+  "pm25": 44.0,
+  "nowcast": 53.8,
+  "band": "usg",
+  "typical_pm25": 61.0,
+  "dq": null
+ },
+ {
+  "at": "2026-10-10T21:30:00Z",
+  "pm25": 66.0,
+  "nowcast": 59.9,
+  "band": "unhealthy",
+  "typical_pm25": 52.0,
+  "dq": null
+ },
+ {
+  "at": "2026-10-10T22:30:00Z",
+  "pm25": 73.0,
+  "nowcast": 66.3,
+  "band": "unhealthy",
+  "typical_pm25": 56.0,
+  "dq": null
+ },
+ {
+  "at": "2026-10-10T23:30:00Z",
+  "pm25": 75.0,
+  "nowcast": 69.8,
+  "band": "unhealthy",
+  "typical_pm25": 56.0,
+  "dq": null
+ },
+ {
+  "at": "2026-10-11T00:30:00Z",
+  "pm25": 77.0,
+  "nowcast": 73.0,
+  "band": "unhealthy",
+  "typical_pm25": 67.0,
+  "dq": null
+ },
+ {
+  "at": "2026-10-11T01:30:00Z",
+  "pm25": 81.0,
+  "nowcast": 76.7,
+  "band": "unhealthy",
+  "typical_pm25": 67.0,
+  "dq": null
+ },
+ {
+  "at": "2026-10-11T02:30:00Z",
+  "pm25": 92.0,
+  "nowcast": 84.7,
+  "band": "unhealthy",
+  "typical_pm25": 61.9,
+  "dq": null
+ },
+ {
+  "at": "2026-10-11T03:30:00Z",
+  "pm25": 83.0,
+  "nowcast": 83.8,
+  "band": "unhealthy",
+  "typical_pm25": 61.4,
+  "dq": null
+ },
+ {
+  "at": "2026-10-11T04:30:00Z",
+  "pm25": 104.0,
+  "nowcast": 93.9,
+  "band": "unhealthy",
+  "typical_pm25": 60.0,
+  "dq": null
+ },
+ {
+  "at": "2026-10-11T05:30:00Z",
+  "pm25": 64.0,
+  "nowcast": 78.9,
+  "band": "unhealthy",
+  "typical_pm25": 54.2,
+  "dq": null
+ },
+ {
+  "at": "2026-10-11T06:30:00Z",
+  "pm25": 60.0,
+  "nowcast": 69.4,
+  "band": "unhealthy",
+  "typical_pm25": 56.0,
+  "dq": null
+ },
+ {
+  "at": "2026-10-11T07:30:00Z",
+  "pm25": 56.0,
+  "nowcast": 62.7,
+  "band": "unhealthy",
+  "typical_pm25": 64.0,
+  "dq": null
+ },
+ {
+  "at": "2026-10-11T08:30:00Z",
+  "pm25": 59.0,
+  "nowcast": 61.6,
+  "band": "unhealthy",
+  "typical_pm25": 59.0,
+  "dq": null
+ },
+ {
+  "at": "2026-10-11T09:30:00Z",
+  "pm25": 70.0,
+  "nowcast": 65.4,
+  "band": "unhealthy",
+  "typical_pm25": 72.0,
+  "dq": null
+ },
+ {
+  "at": "2026-10-11T10:30:00Z",
+  "pm25": 430.0,
+  "nowcast": 247.7,
+  "band": "hazardous",
+  "typical_pm25": 39.0,
+  "dq": null
+ },
+ {
+  "at": "2026-10-11T11:30:00Z",
+  "pm25": 480.0,
+  "nowcast": 363.9,
+  "band": "hazardous",
+  "typical_pm25": 43.0,
+  "dq": null
+ },
+ {
+  "at": "2026-10-11T12:30:00Z",
+  "pm25": 636.0,
+  "nowcast": 500.0,
+  "band": "hazardous",
+  "typical_pm25": 53.0,
+  "dq": null
+ },
+ {
+  "at": "2026-10-11T13:30:00Z",
+  "pm25": 636.0,
+  "nowcast": 568.0,
+  "band": "hazardous",
+  "typical_pm25": 56.0,
+  "dq": null
+ },
+ {
+  "at": "2026-10-11T15:30:00Z",
+  "pm25": 64.0,
+  "nowcast": 232.0,
+  "band": "hazardous",
+  "typical_pm25": 56.7,
+  "dq": null
+ },
+ {
+  "at": "2026-10-11T16:30:00Z",
+  "pm25": 64.0,
+  "nowcast": 136.0,
+  "band": "very_unhealthy",
+  "typical_pm25": 57.5,
+  "dq": null
+ },
+ {
+  "at": "2026-10-11T17:30:00Z",
+  "pm25": 55.0,
+  "nowcast": 92.8,
+  "band": "unhealthy",
+  "typical_pm25": 54.5,
+  "dq": null
+ },
+ {
+  "at": "2026-10-11T18:30:00Z",
+  "pm25": 46.0,
+  "nowcast": 68.6,
+  "band": "unhealthy",
+  "typical_pm25": 57.0,
+  "dq": null
+ },
+ {
+  "at": "2026-10-11T19:30:00Z",
+  "pm25": 40.0,
+  "nowcast": 54.0,
+  "band": "usg",
+  "typical_pm25": 57.4,
+  "dq": null
+ },
+ {
+  "at": "2026-10-11T20:30:00Z",
+  "pm25": 49.0,
+  "nowcast": 51.5,
+  "band": "usg",
+  "typical_pm25": 57.4,
+  "dq": null
+ },
+ {
+  "at": "2026-10-11T21:30:00Z",
+  "pm25": 43.0,
+  "nowcast": 47.2,
+  "band": "usg",
+  "typical_pm25": 54.4,
+  "dq": null
+ },
+ {
+  "at": "2026-10-11T22:30:00Z",
+  "pm25": 48.0,
+  "nowcast": 47.5,
+  "band": "usg",
+  "typical_pm25": 56.5,
+  "dq": null
+ },
+ {
+  "at": "2026-10-11T23:30:00Z",
+  "pm25": 55.0,
+  "nowcast": 51.2,
+  "band": "usg",
+  "typical_pm25": 57.5,
+  "dq": null
+ },
+ {
+  "at": "2026-10-12T00:30:00Z",
+  "pm25": 57.0,
+  "nowcast": 54.0,
+  "band": "usg",
+  "typical_pm25": 69.5,
+  "dq": null
+ },
+ {
+  "at": "2026-10-12T01:30:00Z",
+  "pm25": 55.0,
+  "nowcast": 53.5,
+  "band": "usg",
+  "typical_pm25": 69.0,
+  "dq": null
+ },
+ {
+  "at": "2026-10-12T02:30:00Z",
+  "pm25": 60.0,
+  "nowcast": 55.9,
+  "band": "unhealthy",
+  "typical_pm25": 65.0,
+  "dq": null
+ },
+ {
+  "at": "2026-10-12T03:30:00Z",
+  "pm25": 73.0,
+  "nowcast": 64.1,
+  "band": "unhealthy",
+  "typical_pm25": 71.0,
+  "dq": null
+ },
+ {
+  "at": "2026-10-12T04:30:00Z",
+  "pm25": 59.0,
+  "nowcast": 61.8,
+  "band": "unhealthy",
+  "typical_pm25": 60.5,
+  "dq": null
+ },
+ {
+  "at": "2026-10-12T05:30:00Z",
+  "pm25": 193.0,
+  "nowcast": 127.5,
+  "band": "very_unhealthy",
+  "typical_pm25": 60.0,
+  "dq": null
+ },
+ {
+  "at": "2026-10-12T06:30:00Z",
+  "pm25": 299.0,
+  "nowcast": 213.3,
+  "band": "very_unhealthy",
+  "typical_pm25": 57.0,
+  "dq": null
+ },
+ {
+  "at": "2026-10-12T07:30:00Z",
+  "pm25": 400.0,
+  "nowcast": 306.6,
+  "band": "hazardous",
+  "typical_pm25": 63.0,
+  "dq": null
+ },
+ {
+  "at": "2026-10-12T08:30:00Z",
+  "pm25": 48.0,
+  "nowcast": 177.3,
+  "band": "very_unhealthy",
+  "typical_pm25": 59.0,
+  "dq": null
+ },
+ {
+  "at": "2026-10-12T09:30:00Z",
+  "pm25": 86.0,
+  "nowcast": 131.6,
+  "band": "very_unhealthy",
+  "typical_pm25": 71.0,
+  "dq": null
+ },
+ {
+  "at": "2026-10-12T11:30:00Z",
+  "pm25": 62.0,
+  "nowcast": 85.2,
+  "band": "unhealthy",
+  "typical_pm25": 72.6,
+  "dq": null
+ },
+ {
+  "at": "2026-10-12T12:30:00Z",
+  "pm25": 62.0,
+  "nowcast": 71.9,
+  "band": "unhealthy",
+  "typical_pm25": 55.0,
+  "dq": null
+ },
+ {
+  "at": "2026-10-12T13:30:00Z",
+  "pm25": 56.0,
+  "nowcast": 63.4,
+  "band": "unhealthy",
+  "typical_pm25": 60.8,
+  "dq": null
+ },
+ {
+  "at": "2026-10-12T14:30:00Z",
+  "pm25": 51.0,
+  "nowcast": 57.0,
+  "band": "unhealthy",
+  "typical_pm25": 55.0,
+  "dq": null
+ },
+ {
+  "at": "2026-10-12T15:30:00Z",
+  "pm25": 64.0,
+  "nowcast": 60.5,
+  "band": "unhealthy",
+  "typical_pm25": 63.0,
+  "dq": null
+ },
+ {
+  "at": "2026-10-12T16:30:00Z",
+  "pm25": 65.0,
+  "nowcast": 62.8,
+  "band": "unhealthy",
+  "typical_pm25": 59.0,
+  "dq": null
+ },
+ {
+  "at": "2026-10-12T17:30:00Z",
+  "pm25": 59.0,
+  "nowcast": 60.8,
+  "band": "unhealthy",
+  "typical_pm25": 55.0,
+  "dq": null
+ },
+ {
+  "at": "2026-10-12T18:30:00Z",
+  "pm25": 49.0,
+  "nowcast": 54.8,
+  "band": "usg",
+  "typical_pm25": 57.0,
+  "dq": null
+ },
+ {
+  "at": "2026-10-12T19:30:00Z",
+  "pm25": 39.0,
+  "nowcast": 46.8,
+  "band": "usg",
+  "typical_pm25": 55.0,
+  "dq": null
+ },
+ {
+  "at": "2026-10-12T20:30:00Z",
+  "pm25": 40.0,
+  "nowcast": 43.4,
+  "band": "usg",
+  "typical_pm25": 54.0,
+  "dq": null
+ },
+ {
+  "at": "2026-10-12T21:30:00Z",
+  "pm25": 41.0,
+  "nowcast": 43.6,
+  "band": "usg",
+  "typical_pm25": 52.0,
+  "dq": null
+ },
+ {
+  "at": "2026-10-12T22:30:00Z",
+  "pm25": 56.0,
+  "nowcast": 48.5,
+  "band": "usg",
+  "typical_pm25": 56.0,
+  "dq": null
+ },
+ {
+  "at": "2026-10-12T23:30:00Z",
+  "pm25": 55.0,
+  "nowcast": 51.1,
+  "band": "usg",
+  "typical_pm25": 56.0,
+  "dq": null
+ },
+ {
+  "at": "2026-10-13T00:30:00Z",
+  "pm25": 55.0,
+  "nowcast": 52.6,
+  "band": "usg",
+  "typical_pm25": 67.0,
+  "dq": null
+ },
+ {
+  "at": "2026-10-13T01:30:00Z",
+  "pm25": 63.0,
+  "nowcast": 56.8,
+  "band": "unhealthy",
+  "typical_pm25": 67.0,
+  "dq": null
+ },
+ {
+  "at": "2026-10-13T02:30:00Z",
+  "pm25": 87.0,
+  "nowcast": 72.6,
+  "band": "unhealthy",
+  "typical_pm25": 62.5,
+  "dq": null
+ },
+ {
+  "at": "2026-10-13T03:30:00Z",
+  "pm25": 89.0,
+  "nowcast": 80.8,
+  "band": "unhealthy",
+  "typical_pm25": 71.5,
+  "dq": null
+ },
+ {
+  "at": "2026-10-13T04:30:00Z",
+  "pm25": 81.0,
+  "nowcast": 80.9,
+  "band": "unhealthy",
+  "typical_pm25": 60.0,
+  "dq": null
+ },
+ {
+  "at": "2026-10-13T05:30:00Z",
+  "pm25": 54.0,
+  "nowcast": 67.4,
+  "band": "unhealthy",
+  "typical_pm25": 60.5,
+  "dq": null
+ },
+ {
+  "at": "2026-10-13T06:30:00Z",
+  "pm25": 75.0,
+  "nowcast": 71.2,
+  "band": "unhealthy",
+  "typical_pm25": 58.0,
+  "dq": null
+ },
+ {
+  "at": "2026-10-13T07:30:00Z",
+  "pm25": 75.0,
+  "nowcast": 73.1,
+  "band": "unhealthy",
+  "typical_pm25": 64.5,
+  "dq": null
+ },
+ {
+  "at": "2026-10-13T09:30:00Z",
+  "pm25": 15.0,
+  "nowcast": 34.3,
+  "band": "moderate",
+  "typical_pm25": 74.9,
+  "dq": null
+ },
+ {
+  "at": "2026-10-13T10:30:00Z",
+  "pm25": 63.0,
+  "nowcast": 50.7,
+  "band": "usg",
+  "typical_pm25": 101.0,
+  "dq": null
+ },
+ {
+  "at": "2026-10-13T11:30:00Z",
+  "pm25": 367.0,
+  "nowcast": 50.7,
+  "band": "usg",
+  "typical_pm25": 87.0,
+  "dq": "DQ_SUSPECT"
+ },
+ {
+  "at": "2026-10-13T12:30:00Z",
+  "pm25": 68.0,
+  "nowcast": 62.7,
+  "band": "unhealthy",
+  "typical_pm25": 59.4,
+  "dq": null
+ },
+ {
+  "at": "2026-10-13T13:30:00Z",
+  "pm25": 76.0,
+  "nowcast": 70.4,
+  "band": "unhealthy",
+  "typical_pm25": 60.8,
+  "dq": null
+ },
+ {
+  "at": "2026-10-13T14:30:00Z",
+  "pm25": 99.0,
+  "nowcast": 85.8,
+  "band": "unhealthy",
+  "typical_pm25": 55.0,
+  "dq": null
+ },
+ {
+  "at": "2026-10-13T15:30:00Z",
+  "pm25": 116.0,
+  "nowcast": 101.4,
+  "band": "unhealthy",
+  "typical_pm25": 64.0,
+  "dq": null
+ },
+ {
+  "at": "2026-10-13T16:30:00Z",
+  "pm25": 145.0,
+  "nowcast": 123.6,
+  "band": "unhealthy",
+  "typical_pm25": 64.0,
+  "dq": null
+ },
+ {
+  "at": "2026-10-13T17:30:00Z",
+  "pm25": 103.0,
+  "nowcast": 113.2,
+  "band": "unhealthy",
+  "typical_pm25": 55.0,
+  "dq": null
+ },
+ {
+  "at": "2026-10-13T18:30:00Z",
+  "pm25": 97.0,
+  "nowcast": 105.0,
+  "band": "unhealthy",
+  "typical_pm25": 57.0,
+  "dq": null
+ },
+ {
+  "at": "2026-10-13T19:30:00Z",
+  "pm25": 100.0,
+  "nowcast": 102.5,
+  "band": "unhealthy",
+  "typical_pm25": 55.0,
+  "dq": null
+ },
+ {
+  "at": "2026-10-13T20:30:00Z",
+  "pm25": 112.0,
+  "nowcast": 107.2,
+  "band": "unhealthy",
+  "typical_pm25": 54.0,
+  "dq": null
+ },
+ {
+  "at": "2026-10-13T21:30:00Z",
+  "pm25": 112.0,
+  "nowcast": 109.6,
+  "band": "unhealthy",
+  "typical_pm25": 52.0,
+  "dq": null
+ },
+ {
+  "at": "2026-10-13T22:30:00Z",
+  "pm25": 84.0,
+  "nowcast": 96.8,
+  "band": "unhealthy",
+  "typical_pm25": 56.0,
+  "dq": null
+ },
+ {
+  "at": "2026-10-13T23:30:00Z",
+  "pm25": 81.0,
+  "nowcast": 88.9,
+  "band": "unhealthy",
+  "typical_pm25": 56.0,
+  "dq": null
+ },
+ {
+  "at": "2026-10-14T00:30:00Z",
+  "pm25": 78.0,
+  "nowcast": 84.0,
+  "band": "unhealthy",
+  "typical_pm25": 67.0,
+  "dq": null
+ },
+ {
+  "at": "2026-10-14T01:30:00Z",
+  "pm25": 74.0,
+  "nowcast": 78.9,
+  "band": "unhealthy",
+  "typical_pm25": 67.0,
+  "dq": null
+ },
+ {
+  "at": "2026-10-14T02:30:00Z",
+  "pm25": 80.0,
+  "nowcast": 79.4,
+  "band": "unhealthy",
+  "typical_pm25": 67.5,
+  "dq": null
+ },
+ {
+  "at": "2026-10-14T04:30:00Z",
+  "pm25": 57.0,
+  "nowcast": 64.7,
+  "band": "unhealthy",
+  "typical_pm25": 61.0,
+  "dq": null
+ },
+ {
+  "at": "2026-10-14T05:30:00Z",
+  "pm25": 65.0,
+  "nowcast": 64.8,
+  "band": "unhealthy",
+  "typical_pm25": 60.0,
+  "dq": null
+ },
+ {
+  "at": "2026-10-14T06:30:00Z",
+  "pm25": 75.0,
+  "nowcast": 70.1,
+  "band": "unhealthy",
+  "typical_pm25": 60.0,
+  "dq": null
+ },
+ {
+  "at": "2026-10-14T07:30:00Z",
+  "pm25": 980.0,
+  "nowcast": 70.1,
+  "band": "unhealthy",
+  "typical_pm25": 65.0,
+  "dq": "DQ_SUSPECT"
+ },
+ {
+  "at": "2026-10-14T08:30:00Z",
+  "pm25": 90.0,
+  "nowcast": 83.4,
+  "band": "unhealthy",
+  "typical_pm25": 59.0,
+  "dq": null
+ },
+ {
+  "at": "2026-10-14T09:30:00Z",
+  "pm25": 89.0,
+  "nowcast": 84.0,
+  "band": "unhealthy",
+  "typical_pm25": 72.0,
+  "dq": null
+ },
+ {
+  "at": "2026-10-14T10:30:00Z",
+  "pm25": 89.0,
+  "nowcast": 86.1,
+  "band": "unhealthy",
+  "typical_pm25": 101.0,
+  "dq": null
+ },
+ {
+  "at": "2026-10-14T14:30:00Z",
+  "pm25": 67.0,
+  "nowcast": null,
+  "band": null,
+  "typical_pm25": 59.0,
+  "dq": null
+ },
+ {
+  "at": "2026-10-14T15:30:00Z",
+  "pm25": 64.0,
+  "nowcast": 67.8,
+  "band": "unhealthy",
+  "typical_pm25": 64.0,
+  "dq": null
+ },
+ {
+  "at": "2026-10-14T16:30:00Z",
+  "pm25": 75.0,
+  "nowcast": 71.8,
+  "band": "unhealthy",
+  "typical_pm25": 65.0,
+  "dq": null
+ },
+ {
+  "at": "2026-10-14T17:30:00Z",
+  "pm25": 70.0,
+  "nowcast": 71.2,
+  "band": "unhealthy",
+  "typical_pm25": 59.0,
+  "dq": null
+ },
+ {
+  "at": "2026-10-14T18:30:00Z",
+  "pm25": 75.0,
+  "nowcast": 72.4,
+  "band": "unhealthy",
+  "typical_pm25": 57.0,
+  "dq": null
+ },
+ {
+  "at": "2026-10-14T19:30:00Z",
+  "pm25": 60.0,
+  "nowcast": 67.9,
+  "band": "unhealthy",
+  "typical_pm25": 60.0,
+  "dq": null
+ },
+ {
+  "at": "2026-10-14T20:30:00Z",
+  "pm25": 68.0,
+  "nowcast": 67.9,
+  "band": "unhealthy",
+  "typical_pm25": 61.0,
+  "dq": null
+ },
+ {
+  "at": "2026-10-14T21:30:00Z",
+  "pm25": 66.0,
+  "nowcast": 67.2,
+  "band": "unhealthy",
+  "typical_pm25": 57.0,
+  "dq": null
+ },
+ {
+  "at": "2026-10-14T22:30:00Z",
+  "pm25": 81.0,
+  "nowcast": 71.1,
+  "band": "unhealthy",
+  "typical_pm25": 57.0,
+  "dq": null
+ },
+ {
+  "at": "2026-10-14T23:30:00Z",
+  "pm25": 68.0,
+  "nowcast": 70.3,
+  "band": "unhealthy",
+  "typical_pm25": 59.0,
+  "dq": null
+ },
+ {
+  "at": "2026-10-15T00:30:00Z",
+  "pm25": 71.0,
+  "nowcast": 70.4,
+  "band": "unhealthy",
+  "typical_pm25": 72.0,
+  "dq": null
+ },
+ {
+  "at": "2026-10-15T01:30:00Z",
+  "pm25": 71.0,
+  "nowcast": 70.6,
+  "band": "unhealthy",
+  "typical_pm25": 71.0,
+  "dq": null
+ },
+ {
+  "at": "2026-10-15T02:30:00Z",
+  "pm25": 84.0,
+  "nowcast": 74.5,
+  "band": "unhealthy",
+  "typical_pm25": 74.4,
+  "dq": null
+ },
+ {
+  "at": "2026-10-15T03:30:00Z",
+  "pm25": 77.0,
+  "nowcast": 75.3,
+  "band": "unhealthy",
+  "typical_pm25": 73.0,
+  "dq": null
+ },
+ {
+  "at": "2026-10-15T04:30:00Z",
+  "pm25": 82.0,
+  "nowcast": 77.2,
+  "band": "unhealthy",
+  "typical_pm25": 60.5,
+  "dq": null
+ },
+ {
+  "at": "2026-10-15T05:30:00Z",
+  "pm25": 107.0,
+  "nowcast": 91.3,
+  "band": "unhealthy",
+  "typical_pm25": 60.5,
+  "dq": null
+ },
+ {
+  "at": "2026-10-15T06:30:00Z",
+  "pm25": 107.0,
+  "nowcast": 98.2,
+  "band": "unhealthy",
+  "typical_pm25": 60.0,
+  "dq": null
+ },
+ {
+  "at": "2026-10-15T10:30:00Z",
+  "pm25": 613.0,
+  "nowcast": null,
+  "band": null,
+  "typical_pm25": 94.8,
+  "dq": "DQ_SUSPECT"
+ },
+ {
+  "at": "2026-10-15T11:30:00Z",
+  "pm25": 71.0,
+  "nowcast": null,
+  "band": null,
+  "typical_pm25": 122.0,
+  "dq": null
+ },
+ {
+  "at": "2026-10-15T12:30:00Z",
+  "pm25": 575.0,
+  "nowcast": null,
+  "band": null,
+  "typical_pm25": 64.9,
+  "dq": "DQ_SUSPECT"
+ },
+ {
+  "at": "2026-10-15T13:30:00Z",
+  "pm25": 73.0,
+  "nowcast": 74.7,
+  "band": "unhealthy",
+  "typical_pm25": 68.0,
+  "dq": null
+ },
+ {
+  "at": "2026-10-15T14:30:00Z",
+  "pm25": 62.0,
+  "nowcast": 67.0,
+  "band": "unhealthy",
+  "typical_pm25": 61.0,
+  "dq": null
+ },
+ {
+  "at": "2026-10-15T15:30:00Z",
+  "pm25": 70.0,
+  "nowcast": 68.5,
+  "band": "unhealthy",
+  "typical_pm25": 64.0,
+  "dq": null
+ },
+ {
+  "at": "2026-10-15T16:30:00Z",
+  "pm25": 70.0,
+  "nowcast": 69.1,
+  "band": "unhealthy",
+  "typical_pm25": 69.4,
+  "dq": null
+ },
+ {
+  "at": "2026-10-15T17:30:00Z",
+  "pm25": 67.0,
+  "nowcast": 68.1,
+  "band": "unhealthy",
+  "typical_pm25": 63.3,
+  "dq": null
+ },
+ {
+  "at": "2026-10-15T18:30:00Z",
+  "pm25": 79.0,
+  "nowcast": 71.2,
+  "band": "unhealthy",
+  "typical_pm25": 61.3,
+  "dq": null
+ },
+ {
+  "at": "2026-10-15T19:30:00Z",
+  "pm25": 73.0,
+  "nowcast": 71.6,
+  "band": "unhealthy",
+  "typical_pm25": 60.0,
+  "dq": null
+ },
+ {
+  "at": "2026-10-15T20:30:00Z",
+  "pm25": 73.0,
+  "nowcast": 72.0,
+  "band": "unhealthy",
+  "typical_pm25": 63.0,
+  "dq": null
+ },
+ {
+  "at": "2026-10-15T22:30:00Z",
+  "pm25": 96.0,
+  "nowcast": 83.5,
+  "band": "unhealthy",
+  "typical_pm25": 61.8,
+  "dq": null
+ },
+ {
+  "at": "2026-10-15T23:30:00Z",
+  "pm25": 90.0,
+  "nowcast": 86.2,
+  "band": "unhealthy",
+  "typical_pm25": 63.3,
+  "dq": null
+ },
+ {
+  "at": "2026-10-16T00:30:00Z",
+  "pm25": 93.0,
+  "nowcast": 88.9,
+  "band": "unhealthy",
+  "typical_pm25": 71.5,
+  "dq": null
+ },
+ {
+  "at": "2026-10-16T01:30:00Z",
+  "pm25": 111.0,
+  "nowcast": 100.0,
+  "band": "unhealthy",
+  "typical_pm25": 71.0,
+  "dq": null
+ },
+ {
+  "at": "2026-10-16T02:30:00Z",
+  "pm25": 113.0,
+  "nowcast": 104.9,
+  "band": "unhealthy",
+  "typical_pm25": 79.0,
+  "dq": null
+ },
+ {
+  "at": "2026-10-16T03:30:00Z",
+  "pm25": 112.0,
+  "nowcast": 107.8,
+  "band": "unhealthy",
+  "typical_pm25": 77.0,
+  "dq": null
+ },
+ {
+  "at": "2026-10-16T04:30:00Z",
+  "pm25": 71.0,
+  "nowcast": 92.7,
+  "band": "unhealthy",
+  "typical_pm25": 65.7,
+  "dq": null
+ },
+ {
+  "at": "2026-10-16T05:30:00Z",
+  "pm25": 105.0,
+  "nowcast": 97.8,
+  "band": "unhealthy",
+  "typical_pm25": 62.5,
+  "dq": null
+ },
+ {
+  "at": "2026-10-16T06:30:00Z",
+  "pm25": 105.0,
+  "nowcast": 100.5,
+  "band": "unhealthy",
+  "typical_pm25": 60.0,
+  "dq": null
+ },
+ {
+  "at": "2026-10-16T09:30:00Z",
+  "pm25": 982.0,
+  "nowcast": null,
+  "band": null,
+  "typical_pm25": 72.0,
+  "dq": "DQ_SUSPECT"
+ },
+ {
+  "at": "2026-10-16T12:30:00Z",
+  "pm25": 784.0,
+  "nowcast": null,
+  "band": null,
+  "typical_pm25": 62.0,
+  "dq": null
+ },
+ {
+  "at": "2026-10-16T13:30:00Z",
+  "pm25": 81.0,
+  "nowcast": 339.6,
+  "band": "hazardous",
+  "typical_pm25": 68.0,
+  "dq": null
+ },
+ {
+  "at": "2026-10-16T14:30:00Z",
+  "pm25": 90.0,
+  "nowcast": 200.1,
+  "band": "very_unhealthy",
+  "typical_pm25": 61.0,
+  "dq": null
+ },
+ {
+  "at": "2026-10-16T15:30:00Z",
+  "pm25": 97.0,
+  "nowcast": 145.6,
+  "band": "very_unhealthy",
+  "typical_pm25": 64.0,
+  "dq": null
+ },
+ {
+  "at": "2026-10-16T16:30:00Z",
+  "pm25": 119.0,
+  "nowcast": 131.9,
+  "band": "very_unhealthy",
+  "typical_pm25": 67.5,
+  "dq": null
+ },
+ {
+  "at": "2026-10-16T17:30:00Z",
+  "pm25": 118.0,
+  "nowcast": 124.9,
+  "band": "unhealthy",
+  "typical_pm25": 62.9,
+  "dq": null
+ },
+ {
+  "at": "2026-10-16T18:30:00Z",
+  "pm25": 114.0,
+  "nowcast": 119.4,
+  "band": "unhealthy",
+  "typical_pm25": 61.3,
+  "dq": null
+ },
+ {
+  "at": "2026-10-16T19:30:00Z",
+  "pm25": 103.0,
+  "nowcast": 111.1,
+  "band": "unhealthy",
+  "typical_pm25": 60.0,
+  "dq": null
+ },
+ {
+  "at": "2026-10-16T20:30:00Z",
+  "pm25": 119.0,
+  "nowcast": 115.0,
+  "band": "unhealthy",
+  "typical_pm25": 64.4,
+  "dq": null
+ },
+ {
+  "at": "2026-10-16T21:30:00Z",
+  "pm25": 122.0,
+  "nowcast": 118.4,
+  "band": "unhealthy",
+  "typical_pm25": 63.0,
+  "dq": null
+ },
+ {
+  "at": "2026-10-16T22:30:00Z",
+  "pm25": 115.0,
+  "nowcast": 116.7,
+  "band": "unhealthy",
+  "typical_pm25": 64.5,
+  "dq": null
+ },
+ {
+  "at": "2026-10-16T23:30:00Z",
+  "pm25": 128.0,
+  "nowcast": 122.3,
+  "band": "unhealthy",
+  "typical_pm25": 63.3,
+  "dq": null
+ },
+ {
+  "at": "2026-10-17T00:30:00Z",
+  "pm25": 116.0,
+  "nowcast": 118.6,
+  "band": "unhealthy",
+  "typical_pm25": 71.5,
+  "dq": null
+ },
+ {
+  "at": "2026-10-17T01:30:00Z",
+  "pm25": 111.0,
+  "nowcast": 115.9,
+  "band": "unhealthy",
+  "typical_pm25": 71.0,
+  "dq": null
+ },
+ {
+  "at": "2026-10-17T02:30:00Z",
+  "pm25": 133.0,
+  "nowcast": 120.8,
+  "band": "unhealthy",
+  "typical_pm25": 79.5,
+  "dq": null
+ },
+ {
+  "at": "2026-10-17T03:30:00Z",
+  "pm25": 126.0,
+  "nowcast": 121.7,
+  "band": "unhealthy",
+  "typical_pm25": 78.0,
+  "dq": null
+ },
+ {
+  "at": "2026-10-17T05:30:00Z",
+  "pm25": 194.0,
+  "nowcast": 168.0,
+  "band": "very_unhealthy",
+  "typical_pm25": 64.5,
+  "dq": null
+ },
+ {
+  "at": "2026-10-17T06:30:00Z",
+  "pm25": 194.0,
+  "nowcast": 182.0,
+  "band": "very_unhealthy",
+  "typical_pm25": 67.1,
+  "dq": null
+ },
+ {
+  "at": "2026-10-17T07:30:00Z",
+  "pm25": 194.0,
+  "nowcast": 185.9,
+  "band": "very_unhealthy",
+  "typical_pm25": 73.0,
+  "dq": null
+ },
+ {
+  "at": "2026-10-17T13:30:00Z",
+  "pm25": 93.0,
+  "nowcast": null,
+  "band": null,
+  "typical_pm25": 71.5,
+  "dq": null
+ },
+ {
+  "at": "2026-10-17T14:30:00Z",
+  "pm25": 93.0,
+  "nowcast": 93.9,
+  "band": "unhealthy",
+  "typical_pm25": 62.0,
+  "dq": null
+ },
+ {
+  "at": "2026-10-17T16:30:00Z",
+  "pm25": 105.0,
+  "nowcast": 101.9,
+  "band": "unhealthy",
+  "typical_pm25": 72.0,
+  "dq": null
+ },
+ {
+  "at": "2026-10-17T17:30:00Z",
+  "pm25": 136.0,
+  "nowcast": 122.0,
+  "band": "unhealthy",
+  "typical_pm25": 67.5,
+  "dq": null
+ },
+ {
+  "at": "2026-10-17T18:30:00Z",
+  "pm25": 121.0,
+  "nowcast": 121.4,
+  "band": "unhealthy",
+  "typical_pm25": 66.5,
+  "dq": null
+ },
+ {
+  "at": "2026-10-17T19:30:00Z",
+  "pm25": 109.0,
+  "nowcast": 114.7,
+  "band": "unhealthy",
+  "typical_pm25": 64.3,
+  "dq": null
+ },
+ {
+  "at": "2026-10-17T20:30:00Z",
+  "pm25": 113.0,
+  "nowcast": 114.1,
+  "band": "unhealthy",
+  "typical_pm25": 68.5,
+  "dq": null
+ },
+ {
+  "at": "2026-10-17T21:30:00Z",
+  "pm25": 108.0,
+  "nowcast": 112.0,
+  "band": "unhealthy",
+  "typical_pm25": 66.0,
+  "dq": null
+ },
+ {
+  "at": "2026-10-17T22:30:00Z",
+  "pm25": 123.0,
+  "nowcast": 115.6,
+  "band": "unhealthy",
+  "typical_pm25": 76.9,
+  "dq": null
+ },
+ {
+  "at": "2026-10-17T23:30:00Z",
+  "pm25": 124.0,
+  "nowcast": 118.3,
+  "band": "unhealthy",
+  "typical_pm25": 71.4,
+  "dq": null
+ },
+ {
+  "at": "2026-10-18T00:30:00Z",
+  "pm25": 105.0,
+  "nowcast": 114.0,
+  "band": "unhealthy",
+  "typical_pm25": 74.5,
+  "dq": null
+ },
+ {
+  "at": "2026-10-18T01:30:00Z",
+  "pm25": 109.0,
+  "nowcast": 112.5,
+  "band": "unhealthy",
+  "typical_pm25": 72.5,
+  "dq": null
+ },
+ {
+  "at": "2026-10-18T02:30:00Z",
+  "pm25": 121.0,
+  "nowcast": 115.2,
+  "band": "unhealthy",
+  "typical_pm25": 82.0,
+  "dq": null
+ },
+ {
+  "at": "2026-10-18T03:30:00Z",
+  "pm25": 135.0,
+  "nowcast": 119.9,
+  "band": "unhealthy",
+  "typical_pm25": 83.0,
+  "dq": null
+ },
+ {
+  "at": "2026-10-18T04:30:00Z",
+  "pm25": 175.0,
+  "nowcast": 144.0,
+  "band": "very_unhealthy",
+  "typical_pm25": 72.0,
+  "dq": null
+ },
+ {
+  "at": "2026-10-18T05:30:00Z",
+  "pm25": 195.0,
+  "nowcast": 169.6,
+  "band": "very_unhealthy",
+  "typical_pm25": 65.0,
+  "dq": null
+ }
+]

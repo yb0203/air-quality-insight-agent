@@ -8,12 +8,30 @@
  },
  "trace": [
   {
+   "layer": "D2",
+   "passed": true,
+   "reason_code": null,
+   "inputs": {},
+   "values": {
+    "state": "ACTIVE",
+    "started_at": "2026-08-08T23:20:00+00:00",
+    "hours": 1.7,
+    "ended_at": null,
+    "peak": {
+     "pm25": 82,
+     "at": "2026-08-08T22:30:00+00:00",
+     "band": "unhealthy"
+    }
+   }
+  },
+  {
    "layer": "D8",
    "passed": true,
    "reason_code": null,
    "inputs": {},
    "values": {
-    "check_in": true,
+    "check_in": "06:30",
+    "absorbed_held": 1,
     "hours_considered": 6,
     "band": "unhealthy",
     "typical_band": "usg",

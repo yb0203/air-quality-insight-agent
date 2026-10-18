@@ -8,12 +8,14 @@ scenarios:
   until: '2026-08-09T14:20:00Z'
   description: Arjun runs at 06:30. The air turned bad overnight; the notice was held through quiet hours and folded
     into one check-in at 06:30 on 9 Aug, then an all-clear once it eased.
+  chart_hours: 24
 - id: back-to-normal
   label: Back to normal
   user_id: arjun
   replay_run: back-to-normal
   until: '2026-08-09T14:20:00Z'
   description: 'The same Delhi episode closing: the all-clear is only sent after a genuinely bad period.'
+  chart_hours: 24
   limit: 1
 - id: helsinki-smoke
   label: Helsinki smoke
@@ -22,6 +24,7 @@ scenarios:
   until: '2026-08-24T12:00:00Z'
   description: 'Aino has asthma. Smoke took Helsinki to ~27 µg/m³ against a usual ~4 on 24 Aug: still ''Moderate'',
     but very unusual here, so it''s worth a heads-up.'
+  chart_hours: 24
 - id: glitch-ignored
   label: Glitch ignored
   user_id: rohan
@@ -29,9 +32,11 @@ scenarios:
   until: '2026-10-15T15:30:00Z'
   description: Mumbai's monitor reported one implausible hour (2026-10-15T12:30:00Z). OpenAQ didn't flag it; the
     agent excluded it as a glitch and said nothing.
+  chart_hours: 14
 - id: quiet-night
   label: Quiet night
   user_id: priya
   replay_run: quiet-night
   until: '2026-10-18T01:30:00Z'
-  description: 'Nothing worth saying: Priya''s 06:00 check-in found Bengaluru no worse than usual.'
+  description: 'Nothing worth saying: Priya''s 06:00 check-in found Bengaluru''s night cleaner than usual.'
+  chart_hours: 24
