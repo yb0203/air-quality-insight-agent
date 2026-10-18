@@ -39,7 +39,7 @@ This is the first slice of a bigger idea: a proactive personal health agent. Tod
 
 ## Try it
 
-**The demo:** a smartwatch view of what the agent says, and why, replayed from 90 days of real OpenAQ data. *(Public link coming with the Vercel deploy.)*
+**The demo:** <https://air-quality-watch-demo.vercel.app>. It's a smartwatch view of what the agent says, and why, replayed from 90 days of real OpenAQ data. Pick a scenario, then tap a notice to see why it was sent.
 
 **Run it yourself** (Python 3.12+, [uv](https://docs.astral.sh/uv/)):
 
@@ -90,7 +90,9 @@ Every silence has a logged reason.
 - [x] Architecture and decision note: [docs/architecture-note.md](docs/architecture-note.md)
 - [x] Notification history from the replay: [docs/notification-history/](docs/notification-history/)
 - [x] AI tooling transcripts (Claude Code sessions, JSONL): [docs/transcripts/](docs/transcripts/)
-- [ ] Public demo link and video
+- [x] Public demo: <https://air-quality-watch-demo.vercel.app>
+- [x] Submission checklist: [docs/SUBMISSION.md](docs/SUBMISSION.md)
+- [ ] Demo video
 
 ## Built with
 
