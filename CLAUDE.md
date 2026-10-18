@@ -6,6 +6,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 Greenfield. No code, build tooling, or tests exist yet — only the brief in `docs/` (the PDFs are gitignored and exist only in the local checkout; the summary below is the canonical copy). Once a stack is chosen and scaffolded, add the real build/run/test commands (including how to run a single test) to this file.
 
+- `docs/requirements.md` — the agreed product vision, v1 scope, decisions log and traceability to every brief requirement. Read it before designing or building; when a decision changes, update its section 8.
 - `docs/Assignment_Orange.pdf` — the take-home brief. This is the source of truth for scope.
 - `docs/Orange-Invest-JD-Founding-Engineer.pdf` — the role this assignment is for (Orange Invest, Founding Engineer). Useful for judging what the reviewers value: stateful async/event-driven backends, LLM infra (structured outputs, tool calling), queues (Temporal/BullMQ/Kafka/RabbitMQ), Redis, agent-step tracing and token/cost guardrails. Preferred stacks named there are TypeScript/Node.js or Python/FastAPI.
 
