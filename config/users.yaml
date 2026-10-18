@@ -1,0 +1,63 @@
+# Seeded demo users: one or two per tracked city. Rules follow S-C §8; omitted fields take the defaults.
+users:
+  - id: arjun
+    display_name: Arjun
+    city: Delhi
+    persona:
+      conditions: []
+      habits: ["morning run 06:30"]
+    rules:
+      location: { station_id: 4712609 }
+      sensitivity: default
+      check_in: { cron: "30 6 * * *" }
+
+  - id: meera
+    display_name: Meera
+    city: Delhi
+    persona:
+      conditions: ["asthma"]
+      habits: []
+    rules:
+      location: { station_id: 4712609 }
+      sensitivity: high
+
+  - id: priya
+    display_name: Priya
+    city: Bengaluru
+    persona:
+      conditions: []
+      habits: ["morning run 06:00"]
+    rules:
+      location: { station_id: 6206921 }
+      sensitivity: default
+      check_in: { cron: "0 6 * * *" }
+
+  - id: omar
+    display_name: Omar
+    city: Dubai
+    persona:
+      conditions: []
+      habits: []
+    rules:
+      location: { station_id: 6096447 }
+      sensitivity: low
+
+  - id: maya
+    display_name: Maya
+    city: Los Angeles
+    persona:
+      conditions: []
+      habits: ["commutes to work"]
+    rules:
+      location: { station_id: 7936 }
+      sensitivity: default
+
+  - id: aino
+    display_name: Aino
+    city: Helsinki
+    persona:
+      conditions: ["asthma"]
+      habits: []
+    rules:
+      location: { station_id: 4588 }
+      sensitivity: high
