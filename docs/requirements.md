@@ -1,10 +1,10 @@
 # Requirements — Proactive Health Insight Agent
 
-Status: draft for review · 2026-10-18 · Owner: Yashvi Bansal
+Status: approved · updated 2026-10-18 from the closed [explainer](explainer.md) · Owner: Yashvi Bansal
 
 This document turns the Orange Invest take-home brief ("Proactive Air Quality Insight Agent") into a product vision plus a v1 scope. Every requirement in the brief has an ID here and a row in the traceability table (section 9), so nothing gets missed. Detailed specs are listed in section 10.
 
-This document is the **spec**: what to build and why. **How each requirement is verified** lives in [QA.csv](QA.csv): one row per test case, with `requirement_ids` tracing back to the IDs here and the brief (B1–B6, BX1–2, S1–5). Every requirement ID in this document has at least one test case. When a requirement changes, update its rows in QA.csv in the same change.
+The design behind these requirements, with diagrams of every layer, is in [explainer.md](explainer.md), the design source of truth. This document is the **spec**: what to build and why. **How each requirement is verified** lives in [QA.csv](QA.csv): one row per test case, with `requirement_ids` tracing back to the IDs here and the brief (B1–B6, BX1–2, S1–5). Every requirement ID in this document has at least one test case. When a requirement changes, update its rows in QA.csv in the same change.
 
 ---
 
@@ -63,25 +63,32 @@ A proactive personal health agent that watches signals about a person's environm
 
 ## 4. System shape and extension seams
 
-The pipeline, conceptually:
+The system is eighteen layers in five planes, the same at full scope and in v1. They're explained, with diagrams, in [explainer.md](explainer.md) §2–3.
 
 ```
-Signal source ──> Reading store ──> Detector ──> Rule evaluation ──> Episode & dedup state ──> Message composer ──> Action / channel
-   (OpenAQ)        (history)       (learned)    (user rules +        (what's been said,       (natural language)     (notification)
-                                                 defaults)            cooldowns)
-                         └──────────────────────── Decision log (every step, every outcome) ─────────────────────────┘
-                                                                                     Feedback capture <── user response
+ SENSE       S1 Ingest · S2 Validate · S3 Resolve                         per source
+ UNDERSTAND  U1 Learn · U2 Score · U3 Fuse                                per stream / person
+ DECIDE      D1 Trigger · D2 Episode · D3 Worth it · D4 Pace              per story
+             D5 Arbitrate · D6 Respond · D7 Budget · D8 Timing            per person
+ ACT         A1 Compose · A2 Deliver                                      per response
+ LEARN       L1 Feedback · L2 Adapt                                       per person
+ ACROSS      Record · Replay · Guard · Operate
 ```
 
-Seams are where the long-term vision plugs in. In v1 each has **exactly one** implementation. The seam is a clear boundary in the code, not a plugin framework.
+In v1, each layer is either **real**, a **stub** (a single named rule, visible in every decision trace) or **none**:
+- Real: S1, S2, U1, U2, D1–D4, D8, A1, L1 (minimal).
+- Stubs: S3, D5, D6, D7, A2, L2.
+- None: U3 FUSE and GUARD.
 
-| Seam | v1 implementation | How the future plugs in |
+That's how the long-term vision plugs in without half-built frameworks. Stubs get filled in, not invented.
+
+| Seam | v1 | How the future plugs in |
 |---|---|---|
-| Signal source | OpenAQ hourly poller | Pollen API, wearable heart-rate stream: same "readings over time per subject" shape |
-| Detector | Learned anomaly / change-point model per station | Same contract for any time series (e.g. resting heart rate) |
-| Rule input | Schedule, geo, air quality params | Movement, home-system state become new rule conditions |
-| Action | Notification | Alarm, SOS email, device control behind the same "act on a decision" boundary |
-| Config source | Defaults + per-user overrides | Learned adjustments write to the same config layer |
+| Signal source (S1–S3) | OpenAQ hourly poller, one station per user | Pollen API, wearable heart-rate stream: same "readings over time per subject" shape, plus identity and consent in S3 |
+| Understanding (U1–U3) | Learned per-station baseline; unusual and harmful scores | The same contract for any time series; U3 fuses streams per person |
+| Rule input (D1, D8) | Schedule, geo, air quality params | Movement and home-system state become new trigger conditions |
+| Response (D6, A2) | Notification into a feed | Alarm, SOS email, device control, behind GUARD |
+| Config source (L2) | Defaults + per-user overrides, versioned | Learned adjustments write a new "learned" version |
 
 ---
 
@@ -106,24 +113,29 @@ IDs in brackets map to the brief (section 9).
 - FR-ING-5. Backfill: on first run, load enough history (e.g. several days to weeks) so baselines exist from day one.
 - FR-ING-6. Runs unattended ("always on"). A missed or failed poll is logged and recovered on the next run.
 
+### FR-CLK — Clock-driven evaluation [supports B2d, FR-RULE-2]
+- FR-CLK-1. Besides the data-driven run, a **clock tick** evaluates every user every hour even when no new data arrived. It marks silent sensors as NO_DATA, releases notices held through quiet hours, and runs scheduled check-ins. Every user gets a decision row every hour, whichever clock fired.
+
 ### FR-DET — Insight / trigger detection [B2]
 - FR-DET-1. **Primary detection is a simple learned anomaly / change-point model on recent history**, fitted per station. Fixed thresholds may act only as guard rails (e.g. severity floors), never as the primary detector.
-- FR-DET-2. Detect a **sustained trend**: the level has been climbing over the last N hours.
+- FR-DET-2. Detect a **sustained trend ("climb")**: the level has been *rising* over the last N hours. Being high alone isn't enough; the recent slope must be upward.
 - FR-DET-3. Detect a **sudden spike**: a sharp jump versus the station's recent baseline.
 - FR-DET-4. Detect a **return to normal** after a bad period.
 - FR-DET-5. **False positives:** suppress single-reading blips, sensor glitches and data-quality artifacts (e.g. require persistence or confirmation, gate on data quality, apply hysteresis between "enter" and "exit" states).
 - FR-DET-6. **Missed triggers** (core, not dependent on the bonus harness). The live system must actively reduce misses, not just measure them:
-  - catch slow-burn rises that never cross a per-hour bar (accumulated drift over a longer window);
+  - catch slow-burn build-ups that never cross a per-hour bar (the **"elevated"** event: accumulated excess over a longer window, flat-and-high rather than rising);
   - re-evaluate a station when late or back-filled readings arrive, not only on the newest hour;
   - after a polling gap, evaluate the whole gap rather than only the latest reading;
   - log near-misses (scores just below the bar) so they can be reviewed in the decision log.
   The evaluation harness (FR-EVAL) then *measures* the remaining misses.
 - FR-DET-7. The model choice and parameters are decided in the rule engine spec (S-C), informed by research (S-B).
+- FR-DET-8. Each event gets **exactly one kind**, by precedence: spike, then climb, then elevated (plus clearing and floor crossings). The kind drives the message wording.
 
 ### FR-SENS — Per-city and per-user sensitivity [B5]
 - FR-SENS-1. "Unusual" is defined relative to each station's own learned baseline, so a clean city has a lower bar than a naturally dusty one by construction.
 - FR-SENS-2. Each user can tighten or loosen sensitivity on top of the station baseline (e.g. a health-sensitive user hears about smaller deviations).
 - FR-SENS-3. Absolute health-risk levels still matter: a reading that is "normal for Delhi" but unhealthy in absolute terms must not be silently ignored. How baseline-relative and absolute severity combine is decided in S-C.
+- FR-SENS-4. Station scores ("how unusual", "how harmful") are computed once per station and **never depend on the user**. A user's sensitivity only moves that user's trigger bars.
 
 ### FR-RULE — User notification rules [user scope; supports B3, B5]
 Rules let a user shape *when and about what* the agent speaks. They filter and tune the detector's output. They never replace it.
@@ -131,19 +143,22 @@ Rules let a user shape *when and about what* the agent speaks. They filter and t
 - FR-RULE-1. **Defaults:** every user has sensible default rules, so the agent works on its own judgment with zero configuration.
 - FR-RULE-2. **Schedule rules (cron-style):**
   - Quiet hours. Non-urgent insights detected during quiet hours are held and delivered when quiet hours end. Severe events can break through.
-  - Optional daily check-in time (e.g. 06:30 before a morning run). The agent compares overnight levels and the current trend against the station's normal for that hour, and speaks only if today is shaping up meaningfully worse than usual. No forecast source in v1. It is not a fixed daily report.
+  - Optional daily check-in time (e.g. 06:30 before a morning run). The agent compares overnight levels and the current trend against the station's normal for that hour, and speaks only if today is shaping up meaningfully worse than usual. No forecast source in v1. It is not a fixed daily report. The check-in is the user's explicit "talk to me now": it **wins over quiet hours** and absorbs any held notices into one message.
 - FR-RULE-3. **Geo rules:** which location(s) a user cares about (home city/station, possibly more than one). Resolved to the nearest tracked station(s).
 - FR-RULE-4. **Air quality parameter rules:** which pollutant(s) or index matter to the user, sensitivity level, and optional absolute floors.
 - FR-RULE-5. Rules are declarative data (config), not code, so they can later be edited by a UI or by the self-learning layer.
 - FR-RULE-6. Every rule evaluation result (passed, held, suppressed, and why) is written to the decision log.
 - FR-RULE-7. **The rule engine must be thought through well.** Its logic, rule format, evaluation order and conflict handling are specified in S-C, after researching industry monitoring/alerting rule engines and open-source libraries (S-B).
 
-### FR-DEDUP — Deduplication, rate limiting, cooldown [B3, BX1]
+### FR-DEDUP — Deduplication, arbitration, budget, cooldown [B3, BX1]
 - FR-DEDUP-1. Track **episodes** per user per location: a bad period has a start, an evolution, and an end.
 - FR-DEDUP-2. Persist what has already been said in each episode. Six straight bad hours must not produce six identical notifications.
 - FR-DEDUP-3. Speak again only on a **meaningful change**, e.g. escalation to a worse severity band, a new kind of event (a spike on top of a trend), or recovery. The exact definition of "meaningful" is decided in S-C.
 - FR-DEDUP-4. **Decay / cooldown (bonus):** even after a legitimate re-trigger, enforce a cooldown so the user isn't nagged. The cooldown can relax or decay over time and is overridable by severe escalation.
 - FR-DEDUP-5. State survives restarts.
+- FR-DEDUP-6. **Arbitration:** at most one notice per user per hour. When candidates compete, keep one by priority: got worse > opened > cleared > check-in. The rest are logged as arbitrated out.
+- FR-DEDUP-7. **Attention budget:** at most 3 non-severe notices per user per local day, across all episodes. This is distinct from cooldown, which paces one episode. Severe air is never over budget.
+- FR-DEDUP-8. **No-data timeout:** if a user's sensor stays silent for 24 hours, the open episode closes **quietly** (no message to the user), and the close is logged with its reason.
 
 ### FR-MSG — Message generation [B4]
 - FR-MSG-1. Each notification is a short, natural-language message a real phone notification would show.
@@ -208,7 +223,14 @@ Rules let a user shape *when and about what* the agent speaks. They filter and t
 | Severe events break through quiet hours | Claude's call | Resolves Q3; "severe" defined in S-C |
 | 4–5 distinct cities, one primary station each | Claude's call | Brief counts cities |
 | Readings carry measured and ingested timestamps; replay is "as known" | Claude's call | Makes replay faithful to live; small schema cost |
-| Missed-trigger handling is live (drift, late data, gaps), not only via the harness | Claude's call | B2d is core; the harness is a bonus |
+| Missed-trigger handling is live (elevated build-ups, late data, gaps, clock tick), not only via the harness | Claude's call | B2d is core; the harness is a bonus |
+| Eighteen-layer model, same at full scope and in v1; v1 uses stubs, not shortcuts | Proposed by Claude, accepted | [explainer.md](explainer.md) §2–3 |
+| Station scores are shared and never depend on the user | Proposed by Claude, accepted | explainer §2; FR-SENS-4 |
+| Event kinds are spike / climb / elevated (+ clearing, floor), one label each; climb must be rising | Proposed by Claude, accepted | Audit: 53% of the old "trend" hours were flat or falling |
+| Arbitration and attention budget are separate layers from cooldown | Proposed by Claude, accepted | They differ by scope: per person vs per episode |
+| A clock tick evaluates every user hourly, even with no new data | Proposed by Claude, accepted | FR-CLK-1 |
+| A sensor silent for 24h closes its episode quietly, without telling the user | Yashvi | FR-DEDUP-8 |
+| The morning check-in wins over quiet hours and absorbs held notices | Yashvi | FR-RULE-2 |
 
 ---
 
@@ -219,14 +241,14 @@ Test cases for each row: filter [QA.csv](QA.csv) by `requirement_ids`.
 | ID | Brief requirement | Covered by |
 |---|---|---|
 | B1 | Ingestion: hourly pull for chosen stations, stored with history | FR-ING-1…6 |
-| B2a | Sustained trend | FR-DET-2 |
+| B2a | Sustained trend (climbing) | FR-DET-2, FR-DET-8 |
 | B2b | Sudden spike vs. recent baseline | FR-DET-3 |
 | B2c | Return to normal after a bad period | FR-DET-4 |
-| B2d | False positives and missed triggers | FR-DET-5, FR-DET-6, FR-EVAL |
+| B2d | False positives and missed triggers | FR-DET-5, FR-DET-6, FR-CLK-1, FR-EVAL |
 | B2e | Primary detection = simple learned anomaly/change-point model | FR-DET-1, FR-DET-7 |
-| B3 | Dedup / rate limiting; remember what's been said; speak on meaningful change | FR-DEDUP-1…3, FR-DEDUP-5 |
+| B3 | Dedup / rate limiting; remember what's been said; speak on meaningful change | FR-DEDUP-1…3, FR-DEDUP-5…8 |
 | B4 | Natural-language message, past context, one clear next action, not a status update | FR-MSG-1…6 |
-| B5 | Multiple cities/users with different baseline sensitivities | FR-SENS-1…3, FR-RULE-4, section 5 |
+| B5 | Multiple cities/users with different baseline sensitivities | FR-SENS-1…4, FR-RULE-4, section 5 |
 | B6 | Observability: what fired, when, why, what data | FR-OBS-1…4 |
 | — | 4–5 cities/stations, OpenAQ, hourly | section 5, FR-ING-1 |
 | — | Not in focus: frontend, auth, multi-tenancy | section 3 non-goals |
@@ -246,7 +268,7 @@ Test cases for each row: filter [QA.csv](QA.csv) by `requirement_ids`.
 2. **S-B — Rule engine research.** Survey how industry monitoring and alerting systems handle rules, state, dedup and silencing (e.g. Prometheus Alertmanager, Grafana alerting, Datadog monitors, PagerDuty event rules), plus open-source rule engines and anomaly/change-point libraries, for inspiration.
 3. **S-C — Rule engine and detection spec.** The final logic: detector model, event types, the user rule format, evaluation order, severity bands, episode state machine, the definition of "meaningful change", cooldown/decay, and labelling for the evaluation harness.
 
-Then the architecture/design note and an implementation plan.
+All three are written. The design that ties them together is [explainer.md](explainer.md) (closed). Next: the implementation plan, then the architecture/decision note for submission.
 
 ---
 

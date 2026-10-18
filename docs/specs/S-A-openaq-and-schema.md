@@ -1,6 +1,6 @@
 # S-A — OpenAQ API and data schema
 
-Status: draft · 2026-10-18 · Implements: FR-ING, FR-SENS-1, FR-EVAL-4/5, FR-OBS-1, NFR-2/3/4 in [requirements.md](../requirements.md)
+Status: approved · updated 2026-10-18 from the closed [explainer](../explainer.md) · Layers S1–S3, U1–U2, RECORD, REPLAY · Implements: FR-ING, FR-SENS-1, FR-EVAL-4/5, FR-OBS-1, NFR-2/3/4 in [requirements.md](../requirements.md)
 
 Everything below was verified against the live OpenAQ v3 API on 2026-10-18 (about 65 calls). The probe scripts aren't part of the repo; their output is summarised here and the raw sample lives in `data/samples/`.
 
@@ -152,19 +152,25 @@ CREATE TABLE baselines (                        -- learned per-station model sta
   params           JSON NOT NULL                -- e.g. hour-of-day medians, MAD, EWMA/CUSUM state
 );
 
-CREATE TABLE detections (                       -- one row per (sensor, evaluated hour, event type), incl. near-misses
-  id               INTEGER PRIMARY KEY,
+CREATE TABLE station_scores (                   -- U2 SCORE: one row per (sensor, evaluated hour). Shared by all users:
+  id               INTEGER PRIMARY KEY,         -- contains NO user sensitivity (explainer §2, FR-SENS-4)
   sensor_id        INTEGER NOT NULL REFERENCES sensors(id),
   period_end       TIMESTAMP NOT NULL,          -- the hour evaluated
   evaluated_at     TIMESTAMP NOT NULL,          -- clock time of evaluation (injected)
   baseline_id      INTEGER REFERENCES baselines(id),
-  event_type       TEXT NOT NULL,               -- 'spike' | 'trend' | 'drift' | 'recovery' | 'none' (S-C)
-  fired            BOOLEAN NOT NULL,            -- false = near-miss or quiet
-  score            REAL, threshold REAL,
-  severity_band    TEXT,                        -- from AQI (NowCast)
-  quality          JSON,                        -- coverage, gap info, glitch checks applied
-  evidence         JSON NOT NULL                -- input window, expected vs observed, stats
+  z                REAL,                        -- unusual: distance from normal for this hour of day
+  ewma             REAL,                        -- smoothed z (lambda 0.3)
+  cusum            REAL,                        -- accumulated excess (resets after an "elevated" signal)
+  slope_6h         REAL,                        -- Theil-Sen slope of log1p(PM2.5) over 6h
+  nowcast          REAL,                        -- harmful: NowCast PM2.5
+  band             TEXT,                        -- EPA band of nowcast
+  typical_band     TEXT,                        -- EPA band of the station's 14-day median
+  quality          JSON,                        -- coverage, gap info, glitch checks applied (S2)
+  evidence         JSON NOT NULL,               -- input window, expected vs observed
+  UNIQUE (sensor_id, period_end, evaluated_at)
 );
+-- Per-user triggers (D1: event kind, the user's scaled bars, near-misses) are NOT stored here.
+-- They are part of each user's decision trace, because they depend on the user's sensitivity.
 
 -- Episodes, decisions, notifications ---------------------------------------
 CREATE TABLE episodes (                         -- per user + station + parameter (FR-DEDUP-1)
@@ -172,7 +178,8 @@ CREATE TABLE episodes (                         -- per user + station + paramete
   user_id          TEXT NOT NULL REFERENCES users(id),
   sensor_id        INTEGER NOT NULL REFERENCES sensors(id),
   opened_at        TIMESTAMP NOT NULL, closed_at TIMESTAMP,
-  state            TEXT NOT NULL,               -- state machine defined in S-C
+  state            TEXT NOT NULL,               -- NORMAL | ACTIVE | RECOVERING | CLOSED (S-C §5)
+  close_reason     TEXT,                        -- 'calm' | 'no_data_timeout' (closed quietly after 24h silence)
   peak_value       REAL, peak_band TEXT,
   last_notified_at TIMESTAMP, last_notified_band TEXT, last_notified_kind TEXT,
   notifications_sent INTEGER NOT NULL DEFAULT 0,
@@ -187,11 +194,12 @@ CREATE TABLE decisions (                        -- THE observability record (FR-
   sensor_id        INTEGER NOT NULL REFERENCES sensors(id),
   rules_version    INTEGER NOT NULL,
   episode_id       INTEGER REFERENCES episodes(id),
-  detection_ids    JSON,                        -- detections considered
+  score_ids        JSON,                        -- station_scores rows considered
   outcome          TEXT NOT NULL,               -- 'sent' | 'held' | 'suppressed' | 'no_event'
-  reason_code      TEXT NOT NULL,               -- machine-readable, e.g. 'DEDUP_SAME_BAND', 'QUIET_HOURS_HELD'
+  reason_code      TEXT NOT NULL,               -- machine-readable, e.g. 'DEDUP_SAME_BAND', 'QUIET_HOURS_HELD' (S-C §9)
+  trigger          TEXT NOT NULL DEFAULT 'data', -- 'data' (new/revised hours) | 'clock' (hourly tick, check-in, release)
   reason           TEXT NOT NULL,               -- human-readable sentence
-  trace            JSON NOT NULL,               -- ordered rule-evaluation steps with inputs/results
+  trace            JSON NOT NULL,               -- ordered layer steps (D1..D8) with inputs, scaled bars, results
   replay_run       TEXT                         -- null for live; replay id for evaluation runs
 );
 
@@ -219,8 +227,8 @@ CREATE TABLE feedback (                         -- FR-FB: recorded only, no lear
 ```
 
 How the requirements land in the schema:
-- **Explain any decision from stored data alone (NFR-2):** `decisions.trace` plus `detection_ids` → `detections.evidence` → `readings` as of `evaluated_at`, with `rules_version` and `baseline_id` pinning the exact config and model.
-- **Missing nudges are debuggable (FR-OBS-2):** a `decisions` row exists for *every* user × evaluated hour, including `no_event`, and near-misses are kept in `detections` with `fired = false`.
+- **Explain any decision from stored data alone (NFR-2):** `decisions.trace` (the user's triggers and every layer's result) plus `score_ids` → `station_scores.evidence` → `readings` as of `evaluated_at`, with `rules_version` and `baseline_id` pinning the exact config and model.
+- **Missing nudges are debuggable (FR-OBS-2):** a `decisions` row exists for *every* user × hour, including `no_event`, written by the data run or the clock tick (FR-CLK-1). Near-misses are recorded in the user's trace.
 - **Replay (FR-EVAL):** the replay loads `data/samples/` into `readings` with synthetic `ingested_at` values matching the original publication lag. Replay decisions carry `replay_run`, so they never mix with live ones.
 - **Restart-safe (NFR-4):** episodes, cooldowns and baselines are rows, not memory.
 
@@ -236,4 +244,4 @@ Licences: AirGradient data is **CC BY 4.0** (attribution to each sensor owner, l
 
 ## 7. Left for S-C
 
-The detector model and its state in `baselines.params`; event types; severity band thresholds; the episode state machine; the user rule format in `user_rules.rules`; `reason_code` vocabulary; and how replay labels "interesting moments".
+The detector model and its state in `baselines.params`; event kinds (spike / climb / elevated / clearing / floor); severity band thresholds; the episode state machine; the user rule format in `user_rules.rules`; `reason_code` vocabulary; and how replay labels "interesting moments".

@@ -23,7 +23,7 @@ This is the first slice of a bigger idea: a proactive personal health agent. Tod
 1. **It learns what's normal for each place.** Every hour it pulls fresh readings from [OpenAQ](https://openaq.org) and learns each station's usual levels for each hour of the day over the last two weeks. A rise from 4 to 15 is a big deal in Helsinki. The same reading is a calm day in Delhi.
 2. **It looks for patterns, not thresholds.** It watches for three things: a sudden spike, a sustained climb, and a slow build-up that never looks dramatic in any single hour. It also notices when things return to normal. It ignores sensor glitches.
 3. **It checks whether the change matters to your health.** Being statistically unusual isn't enough. The air also has to reach a level that matters on the official air quality scale.
-4. **It remembers what it already told you.** Each bad period is one story with a beginning, a middle and an end. You hear about it when it starts, if it gets meaningfully worse, and when it's over. Not every hour in between.
+4. **It remembers what it already told you.** Each bad period is one story with a beginning, a middle and an end. You hear about it when it starts, if it gets meaningfully worse, and when it's over. Not every hour in between. It also keeps a daily limit on how much of your attention it uses.
 5. **It respects your settings.** You can set quiet hours (only severe air gets through at night), an optional morning check-in, and how sensitive you are. Sensible defaults mean it works without any setup.
 6. **It writes everything down.** Every decision is logged with the data and the reasoning behind it, including the decisions to stay quiet. "Why didn't I get warned?" always has an answer.
 
@@ -41,6 +41,7 @@ This is the first slice of a bigger idea: a proactive personal health agent. Tod
 
 The design is complete and the build is next.
 
+- [x] **How the agent decides**, with diagrams of every layer, at full scope and demo scope: [docs/explainer.md](docs/explainer.md). Start here.
 - [x] Requirements, with every point in the original brief traced: [docs/requirements.md](docs/requirements.md)
 - [x] Test cases for every requirement: [docs/QA.csv](docs/QA.csv)
 - [x] Data source study and storage design: [docs/specs/S-A-openaq-and-schema.md](docs/specs/S-A-openaq-and-schema.md)

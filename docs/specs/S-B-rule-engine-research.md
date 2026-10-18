@@ -2,6 +2,8 @@
 
 Status: research input for S-C · 2026-10-18 · Feeds FR-DET, FR-SENS, FR-RULE, FR-DEDUP, FR-OBS, FR-EVAL
 
+> This is the research as gathered, kept for its sources and reasoning. Where it differs from the final design, the closed [explainer](../explainer.md) and [S-C](S-C-rule-engine-spec.md) win. The main differences: "trend" became **climb** (it must be rising), "drift" became **elevated**, inhibition became the **ARBITRATE** layer, the daily cap became the **BUDGET** layer, and the CUSUM bar is 8, not 5.
+
 Claims were checked against official docs or package metadata on 2026-10-18. Anything marked **[unverified]** could not be confirmed from a primary source.
 
 ---

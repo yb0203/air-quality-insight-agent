@@ -1,6 +1,6 @@
 # How the agent decides
 
-Status: draft for closing · 2026-10-18 · This document is the design source of truth. Once it's closed, its decisions are carried into [requirements.md](requirements.md), the specs ([S-A](specs/S-A-openaq-and-schema.md), [S-B](specs/S-B-rule-engine-research.md), [S-C](specs/S-C-rule-engine-spec.md)) and [QA.csv](QA.csv).
+Status: **closed** · 2026-10-18 · This document is the design source of truth. Its decisions have been carried into [requirements.md](requirements.md), the specs ([S-A](specs/S-A-openaq-and-schema.md), [S-B](specs/S-B-rule-engine-research.md), [S-C](specs/S-C-rule-engine-spec.md)) and [QA.csv](QA.csv).
 
 ---
 
@@ -416,7 +416,7 @@ Two messages in about 20 hours, each with context and one action. Every silent h
 | 14 | PM2.5 only in the demo | the only pollutant all five stations measure | multi-pollutant with gaps | — |
 | 15 | Messages written by an LLM from verified facts, with a template fallback | natural wording without invented facts; works offline | free-form LLM; templates only | — |
 | 16 | A 90-day sample ships in the repo | anyone can replay without an API key | live-only | — |
-| 17 | **Proposed:** a sensor silent for 24h closes its episode quietly, with no message | the story can't be finished honestly without data | telling the person the sensor went quiet | — |
-| 18 | **Proposed:** the morning check-in wins over quiet hours and absorbs held messages | the person chose that time to hear from us | quiet hours win | — |
+| 17 | A sensor silent for 24h closes its episode quietly, with no message | the story can't be finished honestly without data | telling the person the sensor went quiet | — |
+| 18 | The morning check-in wins over quiet hours and absorbs held messages | the person chose that time to hear from us | quiet hours win | — |
 
-Decisions 17 and 18 are awaiting confirmation.
+Decisions 17 and 18 were confirmed by Yashvi on 2026-10-18.

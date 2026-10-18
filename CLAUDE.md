@@ -6,6 +6,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 Greenfield. No code, build tooling, or tests exist yet — only the brief in `docs/` (the PDFs are gitignored and exist only in the local checkout; the summary below is the canonical copy). Once a stack is chosen and scaffolded, add the real build/run/test commands (including how to run a single test) to this file.
 
+- `docs/explainer.md` — **the design source of truth**: the 18-layer model (S1–S3, U1–U3, D1–D8, A1–A2, L1–L2, plus RECORD/REPLAY/GUARD/OPERATE) at full and demo scope, with diagrams and the decision record. Design changes are made here first, closed with the user, then propagated to requirements, specs and QA.csv. Keep audit/review material out of it.
 - `docs/requirements.md` — the spec: agreed product vision, v1 scope, decisions log and traceability to every brief requirement. Read it before designing or building; when a decision changes, update its section 8.
 - `docs/QA.csv` — test cases, one row each, `requirement_ids` tracing to requirements.md and the brief. Every requirement ID has at least one row. Changing a requirement means updating its rows in the same change; implemented tests should reference their `test_id`.
 - `docs/specs/S-A-openaq-and-schema.md` (OpenAQ API facts, chosen stations, storage schema), `S-B-rule-engine-research.md` (sources and rationale), `S-C-rule-engine-spec.md` (the detector, pipeline order, rule format, reason codes and all parameter defaults; the source of truth for decision logic).
