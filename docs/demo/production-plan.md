@@ -96,3 +96,16 @@ docs/demo/video/
 - Voiced or music-only as the main cut (recommendation: render both, then choose).
 - Synthesised music, or a track Yashvi supplies.
 - Whether the watch front end can offer the capture mode in §4, or a screen recording is used instead.
+
+---
+
+## 10. As built: first cut (2026-10-18)
+
+The composition, scripts and README are in `docs/demo/video/`. Where the first cut differs from the storyboard, and why:
+
+- **Shot 6 follows the real replayed night, not the design's example.** On the night of 8–9 August, Delhi was calm until 4:50am, then jumped sharply. The notice was held for quiet hours, 5:50 was "the same story", and one message went out at the 06:30 check-in. The watch ticks through real captures for every quiet hour, and the line under it shows each hour's real decision and reason code.
+- **Shot 7 shows replay numbers, not the earlier calibration.** It shows event alerts a week per person, one person per city, read from the replay database: 1.6–2.3 at the time of the first cut.
+- **Shot 8 zooms into the 06:30 message**, the real row behind the hero shot, and shows three lines of its real trace (episode, check-in, budget).
+- **Voice-over is not in the first cut.** The music-only version comes first; a voiced version needs a local text-to-speech engine (Kokoro via `pip install kokoro-onnx soundfile`), which isn't installed yet.
+- **The watch demo already had a capture mode** (`?scenario=…&t=…`), so no screen recording was needed.
+- **Guardrails in practice:** HyperFrames telemetry is off, its skills were read from a scratch copy rather than installed into the Claude configuration, every font and script is bundled locally, and snapshots run with `--describe false` so no frame is sent for AI description.
