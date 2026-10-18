@@ -182,7 +182,7 @@ Most work happens when new data arrives. Some must happen when **no** data arriv
 | Stuck | the same value for 6+ hours | — |
 | Glitch | 3× higher than both neighbours and +20 µg/m³ | Mumbai: 75 → **980** → 90 in three hours; 8 such hours in 58 days, none flagged by OpenAQ |
 
-Excluded readings stay visible as evidence. They just don't count. The newest hour can't be glitch-checked until the next one arrives. That costs nothing, because a spike needs two hours of confirmation anyway.
+Excluded readings stay visible as evidence. They just don't count. The newest hour can't be fully glitch-checked until the next one arrives. So if it *jumps* more than 3× and by more than 20 µg/m³ over the previous hour, it's treated as a suspected glitch until the next hour either confirms it (still high: real, re-scored as clean) or clears it (fell back: a glitch, and the decision log says so). That costs nothing for spikes, which need two hours of confirmation anyway. Only a severity jump waits one hour, and it stops one bad reading from escalating an open episode straight to "hazardous".
 
 **S3 RESOLVE.** In the demo, each person follows exactly one station. At full scope this layer answers whose device a reading came from, which places a person cares about, and whether we have consent to use each signal.
 
@@ -254,8 +254,9 @@ That's how a clean city gets a lower bar for "unusual" without anyone hearing ab
       last few hours           hour                      for many hours, but
                                                          not rising
       far above normal in      smoothed level above      running total of excess
-      2 of the last 3 hours    the bar for 3 hours       crosses the bar; resets
-                               AND the 6h slope is up    once it fires
+      2 of the last 3 hours    the bar for 3 hours       crosses the bar (each hour
+                               AND the 6h slope is up    counts at most a spike's
+                                                         worth); resets once it fires
 
       CLEARING   an open episode has 4 calm hours AND is back to the station's typical band
       FLOOR      crossing UP into the person's alert band, whatever is "normal" there
@@ -327,7 +328,7 @@ That's how a clean city gets a lower bar for "unusual" without anyone hearing ab
 - **Held messages are never just dropped.** At release, everything held for a person becomes **one** message about the current state. It's re-checked against D3–D7 at that moment. If the story ended overnight without ever being told, nothing is sent.
 - **The check-in is not a daily report.** At the person's chosen time, it looks at the last 8 hours. It speaks only if the air is at least Moderate and worse than usual for that time, and nothing was sent in the last 6 hours.
 
-**How the numbers were chosen.** Every bar and waiting time above was tuned by replaying 90 days of real data from all five cities. On the earlier version of these rules, a default person got about 1.5 messages a week in Helsinki, 2–2.5 in Los Angeles, Bengaluru and Dubai, and 3.5 in Delhi during its build-up season. The replay harness re-measures this whenever a rule changes.
+**How the numbers were chosen.** Every bar and waiting time above was tuned by replaying 90 days of real data from all five cities. The final replay made 15,345 decisions and sent 251 notices. Default users get 1.6–2.3 event notices a week, plus their optional morning check-ins. Delhi is the busiest as it enters smog season. The replay harness re-measures this whenever a rule changes.
 
 ---
 
@@ -421,5 +422,9 @@ Two messages in about 20 hours, each with context and one action. Every silent h
 | 19 | A late hour older than a person's last evaluated hour is scored, but doesn't rewind their story | re-running old hours would double-count episode changes; the score still shapes every later hour | re-evaluating history in place | — |
 | 20 | The clock records "no data" only once the newest reading is over 3 hours old | normal publishing delay (0.5–2.5 h) isn't silence | marking every quiet tick as no data | — |
 | 21 | One scheduler (APScheduler) runs both the live schedule and cron parsing for check-ins, also in replay | one source of truth for "when is 06:30 local" | a separate cron library | — |
+| 22 | A newest-hour jump is a suspected glitch until the next hour confirms or clears it; each arrival re-checks the hour before | the Mumbai replay showed single glitch hours leaking through severity escalation | evaluating the newest hour as clean | — |
+| 23 | Each hour adds at most a spike's worth (z 3.5) to the slow-build running total | one wild hour could otherwise fire "elevated" on its own | an unclipped CUSUM | robust (clipped) CUSUM |
+| 24 | The replay counts a moment as caught within 6 hours either side of its onset | an early catch is a good catch (Helsinki smoke was flagged before the hand-labelled start) | after-onset only | — |
+| 25 | Volume guard: at most 4 event notices a week, and 5 including morning check-ins | check-ins are opt-in and answer "should I run today?" | one combined cap | — |
 
-Decisions 17 and 18 were confirmed by Yashvi on 2026-10-18, and 19–21 with the implementation plan.
+Decisions 17 and 18 were confirmed by Yashvi on 2026-10-18, 19–21 with the implementation plan, and 22–25 came out of the 90-day replay during the build.

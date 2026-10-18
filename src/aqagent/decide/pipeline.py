@@ -215,8 +215,8 @@ def _restrain(ctx, candidate: Candidate, ep: EpisodeState | None, trace: list[Tr
             return stop(Outcome.suppressed, step.reason_code)
         bypassed |= bool(step.values.get("severe_bypass"))
 
-    _winner, _losers = restraint.arbitrate([candidate])
-    trace.append(TraceStep("D5", True, values={"candidates": 1, "kept": candidate.kind.value}))
+    candidate, outranked = restraint.arbitrate([candidate])  # D5 stub: one candidate per user per hour in v1
+    trace.append(TraceStep("D5", True, values={"candidates": 1 + len(outranked), "kept": candidate.kind.value}))
     trace.append(restraint.respond(candidate))
     step = restraint.budget(ctx.sent_today_nonsevere, ctx.rules.budget.max_per_day, candidate.severe)
     trace.append(step)

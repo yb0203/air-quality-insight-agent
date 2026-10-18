@@ -44,7 +44,7 @@ The replay surfaced design fixes, each covered by a test:
 - re-checking the previous hour when a new one arrives;
 - a ±6-hour catch window in the evaluation harness.
 
-These are recorded as rulings and are still to be folded back into the explainer.
+Each is now part of the design (explainer decisions 22–25) and the rule spec.
 
 ## Known limitations
 
@@ -55,4 +55,4 @@ These are recorded as rulings and are still to be folded back into the explainer
 
 ## Process and tools
 
-Built with Claude Code as orchestrator: parallel subagents per layer in isolated git worktrees, plus separate sessions for the watch demo, the Vercel deploy and the explainer video. Test-driven throughout: 225 core tests and 21 watch tests. Transcripts are in [transcripts/](transcripts/), and the notification history is in [notification-history/](notification-history/).
+Built with Claude Code as orchestrator: parallel subagents per layer in isolated git worktrees, plus separate sessions for the watch demo, the Vercel deploy and the explainer video. Test-driven throughout: 225 core tests and 41 watch-demo tests. The live demo has 16 scenarios, each pinned to real replay decisions. Transcripts are in [transcripts/](transcripts/), and the notification history is in [notification-history/](notification-history/).

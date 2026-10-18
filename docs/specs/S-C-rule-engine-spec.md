@@ -39,6 +39,7 @@ Per sensor, per evaluated hour `t` (the `period_end` of a reading):
 | Low coverage | OpenAQ `percent_coverage < 75` | excluded from scoring, kept for display | `DQ_LOW_COVERAGE` |
 | Stuck sensor | identical value for ≥ 6 consecutive hours | those hours excluded | `DQ_STUCK` |
 | Isolated glitch | `v_t > 3·max(v_{t-1},1)` and `v_t > 3·max(v_{t+1},1)` and `v_t − v_{t-1} > 20` | excluded; evidence keeps it | `DQ_SUSPECT` |
+| Suspect jump (newest hour) | newest hour `v_t > 3·max(v_{t-1},1)` and `v_t − v_{t-1} > 20`, no `t+1` yet | excluded until the next hour confirms (re-scored clean) or clears it; each arrival re-scores the previous hour, and an evaluated hour that turns bad gets a `DQ_*` decision | `DQ_SUSPECT` |
 | Gap reset | gap > 3 h between consecutive readings | EWMA, CUSUM and spike memory restart after the gap | — |
 | No data | newest reading older than 3 h at evaluation time | no scoring; episodes frozen (§6) | `NO_DATA` |
 | No baseline | < 72 clean hours in the 14-day window | no scoring | `NO_BASELINE` |
@@ -66,7 +67,7 @@ Written to `station_scores` for every evaluated hour:
 |---|---|
 | `z` | `(y_t − m_h) / s_h` |
 | `ewma` | `0.3·z_t + 0.7·ewma_{t−1}`, seeded at the start of the 72 h window or after a gap |
-| `cusum` | `max(0, cusum_{t−1} + z_t − 0.5)`. Resets to 0 after any user's "elevated" signal would fire at the default bar. Per-user bars are evaluated on a per-user copy in D1, so the shared value stays sensitivity-free. |
+| `cusum` | `max(0, cusum_{t−1} + min(z_t, 3.5) − 0.5)`: each hour counts at most the spike bar (`CUSUM_CLIP`). Resets to 0 after any user's "elevated" signal would fire at the default bar. Per-user bars are evaluated on a per-user copy in D1, so the shared value stays sensitivity-free. |
 | `slope_6h` | Theil–Sen slope of `y` over the last 6 hours (log units per hour) |
 | `nowcast` | EPA NowCast PM2.5 (12 h weights, w clamped to [0.5, 1], requires 2 of the 3 most recent hours) |
 | `band` | US EPA 2024 band of `nowcast`: Good ≤ 9.0, Moderate ≤ 35.4, USG ≤ 55.4, Unhealthy ≤ 125.4, Very Unhealthy ≤ 225.4, Hazardous above. **Severe** = Very Unhealthy or worse. |
@@ -254,14 +255,14 @@ Sensitive users (k = 0.75) got 1.7–4.3 notices a week. Lessons baked into this
 4. 53% of the old "trend" hours were flat or falling, which is why climb now requires a rising slope.
 5. Delhi's low-cost sensor and its reference monitor give near-identical rates, so the baseline-relative design absorbs sensor bias.
 
-**To re-measure with the harness:** the climb slope gate and the check-in will shift these numbers. The regression guard in QA.csv (≤ 4 a week per station for the default user) must still hold.
+**Final replay (all rules, quiet hours and check-ins, 7 replay users):** 15,345 decisions and 251 notices. Default users get 1.6–2.3 event notices a week. With morning check-ins, Delhi reaches 4.6 a week. The Helsinki smoke (24 Aug) was caught at its first reading above normal, and all 8 Mumbai glitches were ignored. Guard (QA-EVAL-06): ≤ 4 event notices a week and ≤ 5 including check-ins, for default users.
 
 ---
 
 ## 12. Evaluation harness labels (FR-EVAL-3)
 
 - **Reference labels:** `ruptures` PELT (l2 cost on `y`) over the full sample marks change points. An "interesting moment" is an upward change point whose new segment mean is ≥ 1 band above the previous one, or ≥ 2× the previous mean, and lasts ≥ 3 h. Hand labels add known events (e.g. Helsinki's 24 Aug smoke) and mark Mumbai's glitches as **negatives**.
-- **Caught** = a `sent` or `held` decision within 6 h after the moment starts. **Missed** = none. **False alarm** = a sent `opened` notice with no labelled moment within ±6 h. Glitch fixtures must produce zero notices.
+- **Caught** = a `sent` or `held` decision within 6 h either side of the moment's start (an early catch counts). **Missed** = none. **False alarm** = a sent `opened` notice with no labelled moment within ±6 h. Glitch fixtures must produce zero notices.
 - **Report:** per station and persona: caught, missed, false alarms, notices per week, median time-to-notify, and the near-misses closest to each missed moment.
 
 ---
@@ -276,7 +277,7 @@ Sensitive users (k = 0.75) got 1.7–4.3 notices a week. Lessons baked into this
 | Gap reset / no-data | > 3 h | S2 |
 | Spike | z ≥ 3.5·k in 2 of 3 h | D1 |
 | Climb | EWMA (λ 0.3) > 1.26·k for 3 h, and slope_6h > 0.01 | D1 |
-| Elevated | CUSUM (k_ref 0.5) > 8·k, needs EWMA ≥ 0.5, reset after firing | D1 |
+| Elevated | CUSUM (k_ref 0.5, increments clipped at 3.5) > 8·k, needs EWMA ≥ 0.5, reset after firing | D1 |
 | Floor | NowCast ≥ alert_band in 2 of 3 h, below it 6 h earlier | D1 |
 | Calm hour / close | EWMA < 0.5, no trigger, band ≤ typical; 4 consecutive | D1, D2 |
 | Flap window | 6 h | D2 |

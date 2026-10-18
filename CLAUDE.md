@@ -2,52 +2,60 @@
 
 This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
-## Project status
+## What this is
 
-Greenfield. No code, build tooling, or tests exist yet — only the brief in `docs/` (the PDFs are gitignored and exist only in the local checkout; the summary below is the canonical copy). Once a stack is chosen and scaffolded, add the real build/run/test commands (including how to run a single test) to this file.
+A proactive air quality insight agent: a take-home for Orange Invest (Founding Engineer). It polls OpenAQ PM2.5 hourly for five cities, learns each station's normal level per hour of day, detects spike, climb and elevated events, tracks episodes, applies restraint, and writes short messages with past context and one action. Every decision is logged with a reason code and a layer-by-layer trace. The public demo is a separate watch app at https://air-quality-watch-demo.vercel.app.
 
-- `docs/explainer.md` — **the design source of truth**: the 18-layer model (S1–S3, U1–U3, D1–D8, A1–A2, L1–L2, plus RECORD/REPLAY/GUARD/OPERATE) at full and demo scope, with diagrams and the decision record. Design changes are made here first, closed with the user, then propagated to requirements, specs and QA.csv. Keep audit/review material out of it.
-- `docs/requirements.md` — the spec: agreed product vision, v1 scope, decisions log and traceability to every brief requirement. Read it before designing or building; when a decision changes, update its section 8.
-- `docs/QA.csv` — test cases, one row each, `requirement_ids` tracing to requirements.md and the brief. Every requirement ID has at least one row. Changing a requirement means updating its rows in the same change; implemented tests should reference their `test_id`.
-- `docs/specs/S-A-openaq-and-schema.md` (OpenAQ API facts, chosen stations, storage schema), `S-B-rule-engine-research.md` (sources and rationale), `S-C-rule-engine-spec.md` (the detector, pipeline order, rule format, reason codes and all parameter defaults; the source of truth for decision logic).
-- `data/samples/` — 90 days of hourly PM2.5 for the 5 tracked stations plus 2 fixtures (Mumbai glitches, Delhi reference gaps); used for replay and tests without an API key.
-- `README.md` is for human readers only: plain prose about what, why and status. Keep agent instructions, internal conventions and spec detail out of it.
-- `docs/Assignment_Orange.pdf` — the take-home brief. This is the source of truth for scope.
-- `docs/Orange-Invest-JD-Founding-Engineer.pdf` — the role this assignment is for (Orange Invest, Founding Engineer). Useful for judging what the reviewers value: stateful async/event-driven backends, LLM infra (structured outputs, tool calling), queues (Temporal/BullMQ/Kafka/RabbitMQ), Redis, agent-step tracing and token/cost guardrails. Preferred stacks named there are TypeScript/Node.js or Python/FastAPI.
+## Commands
 
-## What we're building: Proactive Air Quality Insight Agent
+```bash
+uv sync --all-extras                                   # all deps incl. eval extras (numpy, ruptures) needed by tests
+uv run pytest -q                                       # full core suite (~4 min; includes a full 90-day replay)
+uv run pytest -q --ignore=tests/test_replay.py         # fast core suite (~25 s)
+uv run pytest tests/test_pipeline.py::test_qa_dedup_01_six_bad_hours_one_notice -q   # one test
+uv run python scripts/replay_sample.py                 # replay data/samples into data/replay.db and print the report
+uv run python scripts/export_watch_fixtures.py         # regenerate apps/watch_demo fixtures + scenarios from data/replay.db
+uv run python scripts/serve_api.py                     # core API on :8000 over data/replay.db
+uv run python scripts/tick_once.py                     # one live hour against OpenAQ (needs OPENAQ_API_KEY in .env)
+uv run python scripts/run_live.py                      # live scheduler: hourly at :20 UTC + check-ins + quiet-hours ends
+uv run --project apps/watch_demo pytest apps/watch_demo/tests -q   # watch demo tests
+uv run --project apps/watch_demo watch-demo            # watch demo on :8100 (fixtures)
+```
 
-A backend service that watches air quality continuously and decides on its own when, and what, to proactively tell a user. The product goal is "only speak when something is worth knowing", so restraint (not notifying) is as important as detection.
+There is no CLI. Operations are plain functions in `aqagent.ops`, called from `scripts/`. A plain `uv sync` drops the eval extras and breaks `tests/test_replay_load.py`, so always use `--all-extras`.
 
-Data source: OpenAQ (https://openaq.org/), 4–5 cities/stations, polled hourly.
+## Architecture
 
-### Core requirements (all mandatory)
+The design source of truth is `docs/explainer.md`: 18 layers, shown at full scope and demo scope. Exact logic and every parameter are in `docs/specs/S-C-rule-engine-spec.md`, and all values live in `src/aqagent/params.py`. Change the design in the explainer first, close it with the user, then carry the change into requirements, specs and `docs/QA.csv`.
 
-1. **Ingestion** — hourly pull of new readings per station, stored with full history (trend detection needs it, not just the latest value).
-2. **Insight/trigger logic** — detect patterns, not raw thresholds:
-   - sustained trend (climbing for the last N hours)
-   - sudden spike (sharp jump vs. recent baseline)
-   - return to normal after a bad period
-   - explicitly handle false positives and missed triggers
-   - **primary detection must be a simple learned anomaly/change-point model on recent history** (e.g. rolling z-score / EWMA residuals, CUSUM, Bayesian online change-point) — fixed thresholds alone don't satisfy this.
-3. **Dedup / rate limiting** — persistent per-user state of what has already been said; 6 straight bad hours must not produce 6 identical notifications. Re-notify only on a meaningful change.
-4. **Message generation** — short natural-language notification text that references relevant past context and includes exactly one clear next action. Not JSON, not a template like "AQI is now 142", not a pure status update.
-5. **Per-city / per-user sensitivity** — baselines differ by location: a user in a clean city gets a lower "unusual" bar than one in a naturally dusty region. Sensitivity should derive from each station's own learned baseline, optionally scaled per user.
-6. **Observability** — an internal log/endpoint/dashboard showing what fired, when, why, and the exact data that triggered it, so a bad or missing nudge can be debugged later. Suppressed/deduped decisions should be recorded too, not just sent ones.
+How the layers map to code (`src/aqagent/`):
+- **Sense:** `sense/openaq.py` and `sense/ingest.py` (S1, trailing 24 h window, revisions kept, backfill), `sense/validate.py` (S2 data quality; a newest-hour jump is suspect until the next hour), `sense/resolve.py` (S3 stub).
+- **Understand:** `understand/baseline.py` (U1 hour-of-day median/MAD), `understand/score.py` (U2 z, EWMA, clipped CUSUM, slope, NowCast and band; shared per station, never per user), `understand/aqi.py` (EPA 2024 bands).
+- **Decide:** `decide/trigger.py` (D1 spike, climb, elevated, floor, calm; user sensitivity scales the bars), `decide/episode.py` (D2 lifecycle, flap guard, 24 h no-data close), `decide/restraint.py` (D3 worth it, D4 pace, D5 arbitrate stub, D6 respond stub, D7 budget, D8 timing) and `decide/pipeline.py` (the per-user order, as pure functions), with `decide/rules.py` holding the user rule model.
+- **Act:** `act/facts.py` and `act/compose.py` (A1: an insight from verified facts, then LLM or template, then a validator), `act/deliver.py` (A2 stub: write to the feed).
+- **Wiring:** `runner.py`, with two triggers: `data_run` for new or revised hours and `clock_tick` for silence, check-ins and quiet-hours release. It also re-checks the previous hour on each arrival.
+- **Storage and API:** `db.py` and `repo.py` (SQLAlchemy Core; SQLite, Postgres-ready; readings are append-only revisions for as-known reads), `queries.py` and `api.py` (read API), `learn/feedback.py`.
+- **Replay:** `replay/load.py` (the sample with synthetic arrival times), `replay/harness.py` (a simulated clock over hourly ticks, check-ins and quiet ends, plus the report), `replay/labels.py` (ruptures reference labels; must not import `aqagent.decide`).
 
-Out of scope: polished frontend, auth, multi-tenancy. A few hardcoded users per city is fine.
+Invariants:
+- Nothing under `src/aqagent/` except `clock.py` reads wall-clock time. A test enforces this.
+- Every hour is recomputed from the readings known at that moment, so replay equals live.
+- Replays use their own database (`data/replay.db`).
 
-### Bonus
+## Docs and data
 
-- Decay/cooldown so the system doesn't nag even after a legitimate re-trigger.
-- Evaluation harness that replays historical OpenAQ data and reports interesting moments caught vs. missed. Designing ingestion/detection so it can run against a replayed clock (rather than wall-clock "now") makes this nearly free.
+- `docs/requirements.md`: the spec, traced to the brief. `docs/QA.csv`: one row per test case, keyed by `requirement_ids`. Tests are named `test_qa_<id>_…` so they trace back to a row.
+- `docs/architecture-note.md` (short) and `docs/SUBMISSION.md` (the deliverables checklist).
+- `data/samples/`: 90 days of hourly PM2.5 for 5 tracked stations plus 2 fixtures (Mumbai glitches, Delhi reference gaps). Licences are in `stations.json`.
+- `config/users.yaml` (the 6 demo users) and `config/fixture_users.yaml` (Rohan on Mumbai, for replay only).
+- `apps/watch_demo/` is the decoupled demo app, its own uv project. It reads fixtures exported from the replay, and deploys to Vercel from `main` through `index.py` and `vercel.json`. Its hand-written test fixtures are in `apps/watch_demo/tests/data/`.
+- `README.md` is for human readers only. Keep agent instructions out of it.
 
-### Submission deliverables
+## OpenAQ facts that bite
 
-GitHub repo, recorded demo video (e.g. Loom), decision/architecture note, transcript of coding tools/AI used, and conversation/notification history. Keep the architecture note and a notification history export in the repo as the work progresses.
-
-## Domain notes
-
-- OpenAQ reports pollutant concentrations (e.g. PM2.5 in µg/m³), not AQI. AQI must be computed from concentrations (e.g. US EPA breakpoints), and the choice should be documented.
-- The current OpenAQ API (v3) requires a free API key sent as an `X-API-Key` header; older v1/v2 endpoints are retired. Keep the key in an env var, never in the repo.
-- Station readings can be missing, delayed, or duplicated across polls; ingestion should be idempotent and the detector should tolerate gaps.
+- v3 needs an `X-API-Key` header on every call. The limits are 60 requests a minute and 2,000 an hour.
+- OpenAQ reports concentrations, not AQI.
+- Indian periods end at `:30 UTC`.
+- Missing hours are simply absent.
+- Glitches are not flagged, so S2 has to catch them.
+- On this Mac, Python's urllib needs `SSL_CERT_FILE=/etc/ssl/cert.pem`. httpx uses certifi and is fine.

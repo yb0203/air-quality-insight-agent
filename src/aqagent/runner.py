@@ -23,6 +23,7 @@ from aqagent.decide.pipeline import (
     REASON_TEXT, Evaluation, UserClockContext, UserHourContext, evaluate_check_in, evaluate_hour, evaluate_release,
 )
 from aqagent.decide.rules import Rules, load_rules
+from aqagent.sense.resolve import station_for
 from aqagent.types import Band, Candidate, CandidateKind, EventKind, Outcome, ReasonCode, TraceStep
 from aqagent.understand.score import score_hours
 
@@ -105,11 +106,12 @@ def users_for(conn: sa.Connection, station_id: int | None = None, user_ids: list
         current = repo.current_rules(conn, r["id"])
         version, raw = current if current else (0, None)
         rules, _code = load_rules(raw, None, default_station=r["station_id"])
+        station_id = station_for(rules)  # S3 RESOLVE (stub): the one station in the user's rules
         param = rules.pollutants[0]
-        sensor_id = conn.execute(sa.select(sn.c.id).where(sn.c.station_id == r["station_id"], sn.c.parameter == param)).scalar()
+        sensor_id = conn.execute(sa.select(sn.c.id).where(sn.c.station_id == station_id, sn.c.parameter == param)).scalar()
         if sensor_id is None:
             continue
-        out.append(UserRow(r["id"], r["display_name"], r["city"] or "", r["station_id"], sensor_id,
+        out.append(UserRow(r["id"], r["display_name"], r["city"] or "", station_id, sensor_id,
                            ZoneInfo(r["timezone"]), r["persona"] or {}, rules, version))
     return out
 
