@@ -123,7 +123,9 @@ Episode fields are in S-A: `opened_at`, `state`, kinds seen, `peak_value`, `peak
 - **Data run:** after each ingestion, evaluate every user for every hour that was new or revised.
 - **Clock tick:** every hour at `:20`, and at each user's check-in time and quiet-hours end, evaluate every user, even with no new data. This is what writes `NO_DATA` decisions, advances the 24 h timeout, releases held notices and runs check-ins.
 
-Both write one `decisions` row per user per hour, with `trigger = 'data' | 'clock'`.
+Both write `decisions` rows with `trigger = 'data' | 'clock'`. Every hour ends up with a decision for every user: either its reading arrives and the data run evaluates it, or the clock tick writes `NO_DATA` once the newest reading is more than 3 h old (normal publishing delay isn't silence).
+
+**Late hours** older than a user's last evaluated hour are scored and stored, so they shape every later window, but they don't re-run D2–D8 for that past hour: the decision is `no_event · LATE_HOUR_SCORED`. In a sensor outage, all the late hours are newer than the last evaluated one, so they *are* evaluated in order.
 
 ### 7.2 Layer order
 
@@ -175,7 +177,7 @@ Declarative JSON in `user_rules.rules`, versioned, with `source` = `default | us
 | `relevance_floor` | `moderate` | D2, D3 |
 | `alert_band` | `very_unhealthy`; `unhealthy` for `sensitivity: high` | D1 floor |
 | `quiet_hours` | `22:00–07:00`, breakthrough at `very_unhealthy`; station local time | D8 |
-| `check_in.cron` | none; 5-field cron in station local time (the cron library is left to the builder) | D8 |
+| `check_in.cron` | none; 5-field cron in station local time, parsed by APScheduler's `CronTrigger.from_crontab` (live and replay) | D8 |
 | `pace.base_gap_hours` | 6, doubling within an episode | D4 |
 | `budget.max_per_day` | 3 non-severe | D7 |
 
@@ -217,7 +219,7 @@ The pipeline hands A1 a **structured insight**, never raw data:
 `outcome` ∈ `sent | held | suppressed | no_event`. `trigger` ∈ `data | clock`.
 
 Reason codes by layer:
-- **inputs:** `NO_DATA`, `NO_BASELINE`, `DQ_INVALID`, `DQ_LOW_COVERAGE`, `DQ_STUCK`, `DQ_SUSPECT`
+- **inputs:** `NO_DATA`, `NO_BASELINE`, `DQ_INVALID`, `DQ_LOW_COVERAGE`, `DQ_STUCK`, `DQ_SUSPECT`, `LATE_HOUR_SCORED`
 - **D2:** `NO_TRIGGER`, `EPISODE_CONTINUES`, `NO_DATA_TIMEOUT`
 - **D3:** `BELOW_RELEVANCE`, `DEDUP_SAME_BAND`, `RECOVERY_NOT_WORTH_SAYING`
 - **D4:** `COOLDOWN`

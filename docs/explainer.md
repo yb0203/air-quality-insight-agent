@@ -418,5 +418,8 @@ Two messages in about 20 hours, each with context and one action. Every silent h
 | 16 | A 90-day sample ships in the repo | anyone can replay without an API key | live-only | — |
 | 17 | A sensor silent for 24h closes its episode quietly, with no message | the story can't be finished honestly without data | telling the person the sensor went quiet | — |
 | 18 | The morning check-in wins over quiet hours and absorbs held messages | the person chose that time to hear from us | quiet hours win | — |
+| 19 | A late hour older than a person's last evaluated hour is scored, but doesn't rewind their story | re-running old hours would double-count episode changes; the score still shapes every later hour | re-evaluating history in place | — |
+| 20 | The clock records "no data" only once the newest reading is over 3 hours old | normal publishing delay (0.5–2.5 h) isn't silence | marking every quiet tick as no data | — |
+| 21 | One scheduler (APScheduler) runs both the live schedule and cron parsing for check-ins, also in replay | one source of truth for "when is 06:30 local" | a separate cron library | — |
 
-Decisions 17 and 18 were confirmed by Yashvi on 2026-10-18.
+Decisions 17 and 18 were confirmed by Yashvi on 2026-10-18, and 19–21 with the implementation plan.
