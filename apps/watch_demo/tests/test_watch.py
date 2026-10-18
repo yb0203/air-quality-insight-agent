@@ -13,8 +13,8 @@ from watch_demo.client import FixtureAgentClient, HttpAgentClient
 from watch_demo.scenarios import load_scenarios
 
 ROOT = Path(__file__).resolve().parents[1]
-FIXTURES = ROOT / "fixtures"
-SCENARIOS = load_scenarios(ROOT / "scenarios.yaml")
+FIXTURES = ROOT / "tests" / "data" / "fixtures"  # hand-written test fixtures; the app ships real replay fixtures
+SCENARIOS = load_scenarios(ROOT / "tests" / "data" / "scenarios.yaml")
 IDS = [s.id for s in SCENARIOS]
 
 

@@ -1,0 +1,30 @@
+delivered_at_utc,kind,body,next_action,decision_id
+2026-08-23 01:30:00+00:00,released,"Overnight, Mumbai's air reached moderate, and it's still moderate. Best to take it easy outdoors for now.",take it easy outdoors,5753
+2026-08-23 12:20:00+00:00,opened,"Mumbai's air has been stuck above normal for 1 hour, since 5:50pm, and is now moderate. Best to take it easy outdoors for now.",take it easy outdoors,5825
+2026-08-24 08:20:00+00:00,opened,"Mumbai's air has been stuck above normal for 1 hour, since 1:50pm, and is now moderate. Best to take it easy outdoors for now.",take it easy outdoors,5968
+2026-08-26 09:20:00+00:00,cleared,Mumbai's air is back to its usual level after 2 days. Good time to open the windows.,open the windows,6319
+2026-09-06 01:30:00+00:00,released,"Overnight, Mumbai's air reached unhealthy for sensitive groups, and it's moderate now. Best to take it easy outdoors for now.",take it easy outdoors,8145
+2026-09-06 11:20:00+00:00,cleared,Mumbai's air is back to its usual level after 13 hours. Good time to open the windows.,open the windows,8210
+2026-09-10 07:20:00+00:00,opened,Mumbai's air has been getting worse since 12:50pm and is now moderate. Best to take it easy outdoors for now.,take it easy outdoors,8863
+2026-09-11 03:20:00+00:00,opened,Mumbai's air jumped sharply to moderate since 8:50am. Best to take it easy outdoors for now.,take it easy outdoors,9005
+2026-09-13 01:30:00+00:00,released,"Overnight, Mumbai's air reached unhealthy for sensitive groups, and it's moderate now. Best to take it easy outdoors for now.",take it easy outdoors,9340
+2026-09-14 13:20:00+00:00,cleared,Mumbai's air is back to its usual level after 41 hours. Good time to open the windows.,open the windows,9591
+2026-09-15 03:20:00+00:00,opened,"Mumbai's air has been stuck above normal for 1 hour, since 8:50am, and is now moderate. Best to take it easy outdoors for now.",take it easy outdoors,9692
+2026-09-16 01:30:00+00:00,released,"Overnight, Mumbai's air reached moderate, and it's still moderate. Best to take it easy outdoors for now.",take it easy outdoors,9857
+2026-09-16 10:20:00+00:00,cleared,Mumbai's air is back to its usual level after 10 hours. Good time to open the windows.,open the windows,9915
+2026-09-17 01:30:00+00:00,released,"Overnight, Mumbai's air reached moderate, and it's still moderate. Best to take it easy outdoors for now.",take it easy outdoors,10029
+2026-09-17 11:20:00+00:00,cleared,Mumbai's air is back to its usual level after 12 hours. Good time to open the windows.,open the windows,10095
+2026-09-19 09:20:00+00:00,opened,Mumbai's air jumped sharply to moderate since 2:50pm. Best to take it easy outdoors for now.,take it easy outdoors,10421
+2026-09-21 01:30:00+00:00,released,"Overnight, Mumbai's air reached unhealthy for sensitive groups, and it's still unhealthy for sensitive groups. Best to keep windows closed for now.",keep windows closed,10712
+2026-09-22 01:30:00+00:00,released,"Overnight, Mumbai's air reached unhealthy for sensitive groups, and it's still unhealthy for sensitive groups. Best to keep windows closed for now.",keep windows closed,10881
+2026-09-30 01:30:00+00:00,released,"Overnight, Mumbai's air reached unhealthy for sensitive groups, and it's still unhealthy for sensitive groups. Best to keep windows closed for now.",keep windows closed,12244
+2026-10-01 06:20:00+00:00,escalated,"Mumbai's air jumped sharply to unhealthy, the worst in 14 days. Best to keep windows closed for now.",keep windows closed,12445
+2026-10-02 13:20:00+00:00,escalated,"Mumbai's air jumped sharply to hazardous, the worst in 14 days. Best to stay indoors with windows closed for now.",stay indoors with windows closed,12666
+2026-10-05 08:20:00+00:00,cleared,Mumbai's air is back to its usual level after 5 days. Good time to air out the house for a bit.,air out the house for a bit,13144
+2026-10-06 16:20:00+00:00,opened,"Mumbai's air has crossed into unhealthy, the fourth bad evening this week. Best to keep windows closed for now.",keep windows closed,13369
+2026-10-09 10:20:00+00:00,escalated,"Mumbai's air jumped sharply to hazardous, the worst in 11 days. Best to stay indoors with windows closed for now.",stay indoors with windows closed,13836
+2026-10-11 14:20:00+00:00,opened,"Mumbai's air has been stuck above normal for 1 hour, since 7:50pm, and is now hazardous, the sixth bad evening this week. Best to stay indoors with windows closed for now.",stay indoors with windows closed,14204
+2026-10-13 04:20:00+00:00,opened,Mumbai's air has crossed into unhealthy since 9:50am. Best to keep windows closed for now.,keep windows closed,14474
+2026-10-14 01:30:00+00:00,released,"Overnight, Mumbai's air reached unhealthy, and it's still unhealthy. Best to keep windows closed for now.",keep windows closed,14628
+2026-10-16 05:20:00+00:00,opened,Mumbai's air has been getting worse since 10:50am and is now unhealthy. Best to keep windows closed for now.,keep windows closed,14990
+2026-10-16 15:20:00+00:00,escalated,"Mumbai's air has been getting worse since 10:50am and is now hazardous, the worst since 11 Oct. Best to stay indoors with windows closed for now.",stay indoors with windows closed,15058

@@ -1,0 +1,24 @@
+delivered_at_utc,kind,body,next_action,decision_id
+2026-07-25 00:20:00+00:00,opened,Los Angeles's air has been getting worse since 5:20pm and is now moderate. Best to take it easy outdoors for now.,take it easy outdoors,794
+2026-07-25 15:20:00+00:00,cleared,Los Angeles's air is back to its usual level after 15 hours. Good time to open the windows.,open the windows,902
+2026-07-26 14:00:00+00:00,released,"Overnight, Los Angeles's air reached moderate, and it's still moderate. Best to take it easy outdoors for now.",take it easy outdoors,1064
+2026-07-31 22:20:00+00:00,opened,Los Angeles's air has been getting worse since 3:20pm and is now moderate. Best to take it easy outdoors for now.,take it easy outdoors,1980
+2026-08-02 14:20:00+00:00,cleared,Los Angeles's air is back to its usual level after 40 hours. Good time to open the windows.,open the windows,2266
+2026-08-20 15:20:00+00:00,opened,"Los Angeles's air has been stuck above normal for 1 hour, since 8:20am, and is now moderate, the third bad morning this week. Best to take it easy outdoors for now.",take it easy outdoors,5334
+2026-08-23 04:20:00+00:00,cleared,Los Angeles's air is back to its usual level after 2 days. Good time to open the windows.,open the windows,5770
+2026-08-23 14:00:00+00:00,released,"Overnight, Los Angeles's air reached moderate, and it's still moderate. Best to take it easy outdoors for now.",take it easy outdoors,5838
+2026-08-25 00:20:00+00:00,cleared,Los Angeles's air is back to its usual level after 36 hours. Good time to open the windows.,open the windows,6081
+2026-08-27 04:20:00+00:00,opened,"Los Angeles's air has been stuck above normal for 1 hour, since 9:20pm, and is now moderate. Best to take it easy outdoors for now.",take it easy outdoors,6456
+2026-08-27 20:20:00+00:00,cleared,Los Angeles's air is back to its usual level after 16 hours. Good time to open the windows.,open the windows,6568
+2026-08-28 14:00:00+00:00,released,"Overnight, Los Angeles's air reached moderate, and it's still moderate. Best to take it easy outdoors for now.",take it easy outdoors,6694
+2026-08-29 18:20:00+00:00,cleared,Los Angeles's air is back to its usual level after 35 hours. Good time to open the windows.,open the windows,6896
+2026-08-30 04:20:00+00:00,opened,"Los Angeles's air has been stuck above normal for 1 hour, since 9:20pm, and is now moderate. Best to take it easy outdoors for now.",take it easy outdoors,6968
+2026-08-30 22:20:00+00:00,cleared,Los Angeles's air is back to its usual level after 18 hours. Good time to open the windows.,open the windows,7094
+2026-08-31 14:00:00+00:00,released,"Overnight, Los Angeles's air reached moderate, and it's still moderate. Best to take it easy outdoors for now.",take it easy outdoors,7206
+2026-09-12 21:20:00+00:00,opened,"Los Angeles's air has been stuck above normal for 1 hour, since 2:20pm, and is now moderate, the second bad afternoon this week. Best to take it easy outdoors for now.",take it easy outdoors,9305
+2026-09-24 19:20:00+00:00,opened,"Los Angeles's air has been getting worse since 12:20pm and is now moderate, the fifth bad afternoon this week. Best to take it easy outdoors for now.",take it easy outdoors,11341
+2026-09-27 14:00:00+00:00,released,"Overnight, Los Angeles's air reached moderate, and it's still moderate. Best to take it easy outdoors for now.",take it easy outdoors,11816
+2026-09-28 04:20:00+00:00,cleared,Los Angeles's air is back to its usual level after 21 hours. Good time to open the windows.,open the windows,11918
+2026-09-29 14:00:00+00:00,released,"Overnight, Los Angeles's air reached moderate, and it's still moderate. Best to take it easy outdoors for now.",take it easy outdoors,12156
+2026-10-02 23:20:00+00:00,cleared,Los Angeles's air is back to its usual level after 3 days. Good time to open the windows.,open the windows,12737
+2026-10-08 03:20:00+00:00,opened,"Los Angeles's air has been stuck above normal for 1 hour, since 8:20pm, and is now moderate. Best to take it easy outdoors for now.",take it easy outdoors,13620

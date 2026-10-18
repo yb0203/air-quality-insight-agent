@@ -1,0 +1,172 @@
+[
+ {
+  "id": "dec_5895",
+  "evaluated_at": "2026-08-23 22:20:00+00:00",
+  "period_end": "2026-08-23 20:00:00+00:00",
+  "user_id": "aino",
+  "outcome": "no_event",
+  "reason_code": "NO_TRIGGER",
+  "reason": "Nothing unusual.",
+  "trigger": "data"
+ },
+ {
+  "id": "dec_5902",
+  "evaluated_at": "2026-08-23 23:20:00+00:00",
+  "period_end": "2026-08-23 21:00:00+00:00",
+  "user_id": "aino",
+  "outcome": "no_event",
+  "reason_code": "NO_TRIGGER",
+  "reason": "Nothing unusual.",
+  "trigger": "data"
+ },
+ {
+  "id": "dec_5909",
+  "evaluated_at": "2026-08-24 00:20:00+00:00",
+  "period_end": "2026-08-23 22:00:00+00:00",
+  "user_id": "aino",
+  "outcome": "no_event",
+  "reason_code": "NO_TRIGGER",
+  "reason": "Nothing unusual.",
+  "trigger": "data"
+ },
+ {
+  "id": "dec_5918",
+  "evaluated_at": "2026-08-24 01:20:00+00:00",
+  "period_end": "2026-08-23 23:00:00+00:00",
+  "user_id": "aino",
+  "outcome": "no_event",
+  "reason_code": "NO_TRIGGER",
+  "reason": "Nothing unusual.",
+  "trigger": "data"
+ },
+ {
+  "id": "dec_5925",
+  "evaluated_at": "2026-08-24 02:20:00+00:00",
+  "period_end": "2026-08-24 00:00:00+00:00",
+  "user_id": "aino",
+  "outcome": "no_event",
+  "reason_code": "NO_TRIGGER",
+  "reason": "Nothing unusual.",
+  "trigger": "data"
+ },
+ {
+  "id": "dec_5932",
+  "evaluated_at": "2026-08-24 03:20:00+00:00",
+  "period_end": "2026-08-24 01:00:00+00:00",
+  "user_id": "aino",
+  "outcome": "no_event",
+  "reason_code": "NO_TRIGGER",
+  "reason": "Nothing unusual.",
+  "trigger": "data"
+ },
+ {
+  "id": "dec_5939",
+  "evaluated_at": "2026-08-24 04:20:00+00:00",
+  "period_end": "2026-08-24 02:00:00+00:00",
+  "user_id": "aino",
+  "outcome": "no_event",
+  "reason_code": "NO_TRIGGER",
+  "reason": "Nothing unusual.",
+  "trigger": "data"
+ },
+ {
+  "id": "dec_5946",
+  "evaluated_at": "2026-08-24 05:20:00+00:00",
+  "period_end": "2026-08-24 03:00:00+00:00",
+  "user_id": "aino",
+  "outcome": "sent",
+  "reason_code": "SENT_OPENED",
+  "reason": "Sent: air quality turned bad.",
+  "trigger": "data"
+ },
+ {
+  "id": "dec_5953",
+  "evaluated_at": "2026-08-24 06:20:00+00:00",
+  "period_end": "2026-08-24 04:00:00+00:00",
+  "user_id": "aino",
+  "outcome": "suppressed",
+  "reason_code": "DEDUP_SAME_BAND",
+  "reason": "Already told you about this level; nothing new to say.",
+  "trigger": "data"
+ },
+ {
+  "id": "dec_5960",
+  "evaluated_at": "2026-08-24 07:20:00+00:00",
+  "period_end": "2026-08-24 05:00:00+00:00",
+  "user_id": "aino",
+  "outcome": "suppressed",
+  "reason_code": "DEDUP_SAME_BAND",
+  "reason": "Already told you about this level; nothing new to say.",
+  "trigger": "data"
+ },
+ {
+  "id": "dec_5967",
+  "evaluated_at": "2026-08-24 08:20:00+00:00",
+  "period_end": "2026-08-24 06:00:00+00:00",
+  "user_id": "aino",
+  "outcome": "suppressed",
+  "reason_code": "DEDUP_SAME_BAND",
+  "reason": "Already told you about this level; nothing new to say.",
+  "trigger": "data"
+ },
+ {
+  "id": "dec_5974",
+  "evaluated_at": "2026-08-24 09:20:00+00:00",
+  "period_end": "2026-08-24 07:00:00+00:00",
+  "user_id": "aino",
+  "outcome": "suppressed",
+  "reason_code": "DEDUP_SAME_BAND",
+  "reason": "Already told you about this level; nothing new to say.",
+  "trigger": "data"
+ },
+ {
+  "id": "dec_5981",
+  "evaluated_at": "2026-08-24 10:20:00+00:00",
+  "period_end": "2026-08-24 08:00:00+00:00",
+  "user_id": "aino",
+  "outcome": "suppressed",
+  "reason_code": "DEDUP_SAME_BAND",
+  "reason": "Already told you about this level; nothing new to say.",
+  "trigger": "data"
+ },
+ {
+  "id": "dec_5988",
+  "evaluated_at": "2026-08-24 11:20:00+00:00",
+  "period_end": "2026-08-24 09:00:00+00:00",
+  "user_id": "aino",
+  "outcome": "suppressed",
+  "reason_code": "DEDUP_SAME_BAND",
+  "reason": "Already told you about this level; nothing new to say.",
+  "trigger": "data"
+ },
+ {
+  "id": "dec_5995",
+  "evaluated_at": "2026-08-24 12:20:00+00:00",
+  "period_end": "2026-08-24 10:00:00+00:00",
+  "user_id": "aino",
+  "outcome": "suppressed",
+  "reason_code": "DEDUP_SAME_BAND",
+  "reason": "Already told you about this level; nothing new to say.",
+  "trigger": "data"
+ },
+ {
+  "id": "dec_6002",
+  "evaluated_at": "2026-08-24 13:20:00+00:00",
+  "period_end": "2026-08-24 11:00:00+00:00",
+  "user_id": "aino",
+  "outcome": "suppressed",
+  "reason_code": "DEDUP_SAME_BAND",
+  "reason": "Already told you about this level; nothing new to say.",
+  "trigger": "data"
+ },
+ {
+  "id": "dec_6009",
+  "evaluated_at": "2026-08-24 14:20:00+00:00",
+  "period_end": "2026-08-24 12:00:00+00:00",
+  "user_id": "aino",
+  "outcome": "suppressed",
+  "reason_code": "DEDUP_SAME_BAND",
+  "reason": "Already told you about this level; nothing new to say.",
+  "trigger": "data"
+ }
+]

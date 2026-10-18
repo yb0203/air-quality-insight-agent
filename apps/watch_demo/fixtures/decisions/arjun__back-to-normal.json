@@ -1,0 +1,262 @@
+[
+ {
+  "id": "dec_3298",
+  "evaluated_at": "2026-08-08 15:20:00+00:00",
+  "period_end": "2026-08-08 13:30:00+00:00",
+  "user_id": "arjun",
+  "outcome": "no_event",
+  "reason_code": "NO_TRIGGER",
+  "reason": "Nothing unusual.",
+  "trigger": "data"
+ },
+ {
+  "id": "dec_3305",
+  "evaluated_at": "2026-08-08 16:20:00+00:00",
+  "period_end": "2026-08-08 14:30:00+00:00",
+  "user_id": "arjun",
+  "outcome": "no_event",
+  "reason_code": "NO_TRIGGER",
+  "reason": "Nothing unusual.",
+  "trigger": "data"
+ },
+ {
+  "id": "dec_3312",
+  "evaluated_at": "2026-08-08 17:20:00+00:00",
+  "period_end": "2026-08-08 15:30:00+00:00",
+  "user_id": "arjun",
+  "outcome": "no_event",
+  "reason_code": "NO_TRIGGER",
+  "reason": "Nothing unusual.",
+  "trigger": "data"
+ },
+ {
+  "id": "dec_3319",
+  "evaluated_at": "2026-08-08 18:20:00+00:00",
+  "period_end": "2026-08-08 16:30:00+00:00",
+  "user_id": "arjun",
+  "outcome": "no_event",
+  "reason_code": "NO_TRIGGER",
+  "reason": "Nothing unusual.",
+  "trigger": "data"
+ },
+ {
+  "id": "dec_3326",
+  "evaluated_at": "2026-08-08 19:20:00+00:00",
+  "period_end": "2026-08-08 17:30:00+00:00",
+  "user_id": "arjun",
+  "outcome": "no_event",
+  "reason_code": "NO_TRIGGER",
+  "reason": "Nothing unusual.",
+  "trigger": "data"
+ },
+ {
+  "id": "dec_3333",
+  "evaluated_at": "2026-08-08 20:20:00+00:00",
+  "period_end": "2026-08-08 18:30:00+00:00",
+  "user_id": "arjun",
+  "outcome": "no_event",
+  "reason_code": "NO_TRIGGER",
+  "reason": "Nothing unusual.",
+  "trigger": "data"
+ },
+ {
+  "id": "dec_3340",
+  "evaluated_at": "2026-08-08 21:20:00+00:00",
+  "period_end": "2026-08-08 19:30:00+00:00",
+  "user_id": "arjun",
+  "outcome": "no_event",
+  "reason_code": "NO_TRIGGER",
+  "reason": "Nothing unusual.",
+  "trigger": "data"
+ },
+ {
+  "id": "dec_3347",
+  "evaluated_at": "2026-08-08 22:20:00+00:00",
+  "period_end": "2026-08-08 20:30:00+00:00",
+  "user_id": "arjun",
+  "outcome": "no_event",
+  "reason_code": "NO_TRIGGER",
+  "reason": "Nothing unusual.",
+  "trigger": "data"
+ },
+ {
+  "id": "dec_3354",
+  "evaluated_at": "2026-08-08 23:20:00+00:00",
+  "period_end": "2026-08-08 21:30:00+00:00",
+  "user_id": "arjun",
+  "outcome": "held",
+  "reason_code": "QUIET_HOURS_HELD",
+  "reason": "Held: quiet hours until 07:00.",
+  "trigger": "data"
+ },
+ {
+  "id": "dec_3361",
+  "evaluated_at": "2026-08-09 00:20:00+00:00",
+  "period_end": "2026-08-08 22:30:00+00:00",
+  "user_id": "arjun",
+  "outcome": "no_event",
+  "reason_code": "EPISODE_CONTINUES",
+  "reason": "The same bad period is continuing; nothing new to say.",
+  "trigger": "data"
+ },
+ {
+  "id": "dec_3365",
+  "evaluated_at": "2026-08-09 01:00:00+00:00",
+  "period_end": "2026-08-08 23:30:00+00:00",
+  "user_id": "arjun",
+  "outcome": "sent",
+  "reason_code": "SENT_CHECK_IN",
+  "reason": "Sent at your check-in time.",
+  "trigger": "clock"
+ },
+ {
+  "id": "dec_3370",
+  "evaluated_at": "2026-08-09 01:20:00+00:00",
+  "period_end": "2026-08-08 23:30:00+00:00",
+  "user_id": "arjun",
+  "outcome": "suppressed",
+  "reason_code": "DEDUP_SAME_BAND",
+  "reason": "Already told you about this level; nothing new to say.",
+  "trigger": "data"
+ },
+ {
+  "id": "dec_3378",
+  "evaluated_at": "2026-08-09 02:20:00+00:00",
+  "period_end": "2026-08-09 00:30:00+00:00",
+  "user_id": "arjun",
+  "outcome": "suppressed",
+  "reason_code": "DEDUP_SAME_BAND",
+  "reason": "Already told you about this level; nothing new to say.",
+  "trigger": "data"
+ },
+ {
+  "id": "dec_3385",
+  "evaluated_at": "2026-08-09 03:20:00+00:00",
+  "period_end": "2026-08-09 01:30:00+00:00",
+  "user_id": "arjun",
+  "outcome": "suppressed",
+  "reason_code": "DEDUP_SAME_BAND",
+  "reason": "Already told you about this level; nothing new to say.",
+  "trigger": "data"
+ },
+ {
+  "id": "dec_3392",
+  "evaluated_at": "2026-08-09 04:20:00+00:00",
+  "period_end": "2026-08-09 02:30:00+00:00",
+  "user_id": "arjun",
+  "outcome": "suppressed",
+  "reason_code": "DEDUP_SAME_BAND",
+  "reason": "Already told you about this level; nothing new to say.",
+  "trigger": "data"
+ },
+ {
+  "id": "dec_3399",
+  "evaluated_at": "2026-08-09 05:20:00+00:00",
+  "period_end": "2026-08-09 03:30:00+00:00",
+  "user_id": "arjun",
+  "outcome": "no_event",
+  "reason_code": "EPISODE_CONTINUES",
+  "reason": "The same bad period is continuing; nothing new to say.",
+  "trigger": "data"
+ },
+ {
+  "id": "dec_3406",
+  "evaluated_at": "2026-08-09 06:20:00+00:00",
+  "period_end": "2026-08-09 04:30:00+00:00",
+  "user_id": "arjun",
+  "outcome": "no_event",
+  "reason_code": "EPISODE_CONTINUES",
+  "reason": "The same bad period is continuing; nothing new to say.",
+  "trigger": "data"
+ },
+ {
+  "id": "dec_3413",
+  "evaluated_at": "2026-08-09 07:20:00+00:00",
+  "period_end": "2026-08-09 05:30:00+00:00",
+  "user_id": "arjun",
+  "outcome": "no_event",
+  "reason_code": "EPISODE_CONTINUES",
+  "reason": "The same bad period is continuing; nothing new to say.",
+  "trigger": "data"
+ },
+ {
+  "id": "dec_3420",
+  "evaluated_at": "2026-08-09 08:20:00+00:00",
+  "period_end": "2026-08-09 06:30:00+00:00",
+  "user_id": "arjun",
+  "outcome": "no_event",
+  "reason_code": "EPISODE_CONTINUES",
+  "reason": "The same bad period is continuing; nothing new to say.",
+  "trigger": "data"
+ },
+ {
+  "id": "dec_3427",
+  "evaluated_at": "2026-08-09 09:20:00+00:00",
+  "period_end": "2026-08-09 07:30:00+00:00",
+  "user_id": "arjun",
+  "outcome": "no_event",
+  "reason_code": "EPISODE_CONTINUES",
+  "reason": "The same bad period is continuing; nothing new to say.",
+  "trigger": "data"
+ },
+ {
+  "id": "dec_3434",
+  "evaluated_at": "2026-08-09 10:20:00+00:00",
+  "period_end": "2026-08-09 08:30:00+00:00",
+  "user_id": "arjun",
+  "outcome": "no_event",
+  "reason_code": "EPISODE_CONTINUES",
+  "reason": "The same bad period is continuing; nothing new to say.",
+  "trigger": "data"
+ },
+ {
+  "id": "dec_3441",
+  "evaluated_at": "2026-08-09 11:20:00+00:00",
+  "period_end": "2026-08-09 09:30:00+00:00",
+  "user_id": "arjun",
+  "outcome": "no_event",
+  "reason_code": "EPISODE_CONTINUES",
+  "reason": "The same bad period is continuing; nothing new to say.",
+  "trigger": "data"
+ },
+ {
+  "id": "dec_3448",
+  "evaluated_at": "2026-08-09 12:20:00+00:00",
+  "period_end": "2026-08-09 10:30:00+00:00",
+  "user_id": "arjun",
+  "outcome": "no_event",
+  "reason_code": "EPISODE_CONTINUES",
+  "reason": "The same bad period is continuing; nothing new to say.",
+  "trigger": "data"
+ },
+ {
+  "id": "dec_3455",
+  "evaluated_at": "2026-08-09 13:20:00+00:00",
+  "period_end": "2026-08-09 11:30:00+00:00",
+  "user_id": "arjun",
+  "outcome": "sent",
+  "reason_code": "SENT_CLEARED",
+  "reason": "Sent: back to normal after a bad period.",
+  "trigger": "data"
+ },
+ {
+  "id": "dec_3462",
+  "evaluated_at": "2026-08-09 14:20:00+00:00",
+  "period_end": "2026-08-09 12:30:00+00:00",
+  "user_id": "arjun",
+  "outcome": "no_event",
+  "reason_code": "NO_TRIGGER",
+  "reason": "Nothing unusual.",
+  "trigger": "data"
+ },
+ {
+  "id": "dec_3469",
+  "evaluated_at": "2026-08-09 15:20:00+00:00",
+  "period_end": "2026-08-09 13:30:00+00:00",
+  "user_id": "arjun",
+  "outcome": "no_event",
+  "reason_code": "NO_TRIGGER",
+  "reason": "Nothing unusual.",
+  "trigger": "data"
+ }
+]

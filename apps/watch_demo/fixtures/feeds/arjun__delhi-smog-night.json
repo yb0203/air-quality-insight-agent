@@ -1,0 +1,24 @@
+[
+ {
+  "id": "ntf_46",
+  "created_at": "2026-08-09 13:20:00+00:00",
+  "delivered_at": "2026-08-09 13:20:00+00:00",
+  "kind": "cleared",
+  "event_kind": null,
+  "band": "usg",
+  "body": "Delhi's air is back to its usual level after 14 hours. Good time to go for an easy run.",
+  "next_action": "go for an easy run",
+  "decision_id": "dec_3455"
+ },
+ {
+  "id": "ntf_45",
+  "created_at": "2026-08-09 01:00:00+00:00",
+  "delivered_at": "2026-08-09 01:00:00+00:00",
+  "kind": "check_in",
+  "event_kind": "spike",
+  "band": "unhealthy",
+  "body": "Delhi's air has been unhealthy since 4:50am, worse than a usual morning here, the second bad morning this week. Best to skip the outdoor run for now.",
+  "next_action": "skip the outdoor run",
+  "decision_id": "dec_3365"
+ }
+]

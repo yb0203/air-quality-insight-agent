@@ -1,0 +1,21 @@
+delivered_at_utc,kind,body,next_action,decision_id
+2026-07-25 03:00:00+00:00,released,"Overnight, Dubai's air reached unhealthy, and it's still unhealthy. Best to keep windows closed for now.",keep windows closed,816
+2026-07-26 08:20:00+00:00,cleared,Dubai's air is back to its usual level after 38 hours. Good time to air out the house for a bit.,air out the house for a bit,1024
+2026-07-29 03:00:00+00:00,released,"Overnight, Dubai's air reached unhealthy, and it's still unhealthy. Best to keep windows closed for now.",keep windows closed,1503
+2026-07-30 17:20:00+00:00,cleared,Dubai's air is back to its usual level after 44 hours. Good time to air out the house for a bit.,air out the house for a bit,1774
+2026-08-01 03:20:00+00:00,opened,"Dubai's air has been stuck above normal for 1 hour, since 7:20am, and is now unhealthy, the fifth bad morning this week. Best to keep windows closed for now.",keep windows closed,2018
+2026-08-03 07:20:00+00:00,cleared,Dubai's air is back to its usual level after 2 days. Good time to air out the house for a bit.,air out the house for a bit,2388
+2026-08-13 03:00:00+00:00,released,"Overnight, Dubai's air reached unhealthy, and it's still unhealthy. Best to keep windows closed for now.",keep windows closed,4062
+2026-08-13 11:20:00+00:00,cleared,Dubai's air is back to its usual level after 14 hours. Good time to open the windows.,open the windows,4121
+2026-08-15 11:20:00+00:00,opened,"Dubai's air has been getting worse since 3:20pm and is now unhealthy, the second bad afternoon this week. Best to keep windows closed for now.",keep windows closed,4463
+2026-08-29 03:00:00+00:00,released,"Overnight, Dubai's air reached unhealthy, and it's still unhealthy. Best to keep windows closed for now.",keep windows closed,6788
+2026-08-29 11:20:00+00:00,cleared,Dubai's air is back to its usual level after 9 hours. Good time to open the windows.,open the windows,6848
+2026-08-30 03:00:00+00:00,released,"Overnight, Dubai's air reached unhealthy, and it's still unhealthy. Best to keep windows closed for now.",keep windows closed,6958
+2026-08-30 09:20:00+00:00,cleared,Dubai's air is back to its usual level after 12 hours. Good time to open the windows.,open the windows,7004
+2026-09-01 03:00:00+00:00,released,"Overnight, Dubai's air reached unhealthy, and it's still unhealthy. Best to keep windows closed for now.",keep windows closed,7299
+2026-09-16 06:20:00+00:00,opened,"Dubai's air has been stuck above normal for 1 hour, since 10:20am, and is now unhealthy for sensitive groups. Best to keep windows closed for now.",keep windows closed,9889
+2026-09-17 06:20:00+00:00,escalated,"Dubai's air has been getting worse since 16 Sep and is now unhealthy, the worst in 14 days. Best to keep windows closed for now.",keep windows closed,10062
+2026-09-24 04:20:00+00:00,opened,"Dubai's air has been stuck above normal for 1 hour, since 8:20am, and is now unhealthy, the third bad morning this week. Best to keep windows closed for now.",keep windows closed,11237
+2026-10-12 12:20:00+00:00,opened,"Dubai's air has been stuck above normal for 1 hour, since 4:20pm, and is now unhealthy, the second bad afternoon this week. Best to keep windows closed for now.",keep windows closed,14361
+2026-10-13 13:20:00+00:00,cleared,Dubai's air is back to its usual level after 25 hours. Good time to open the windows.,open the windows,14538
+2026-10-15 17:20:00+00:00,opened,"Dubai's air has been stuck above normal for 1 hour, since 9:20pm, and is now unhealthy, the third bad evening this week. Best to keep windows closed for now.",keep windows closed,14906

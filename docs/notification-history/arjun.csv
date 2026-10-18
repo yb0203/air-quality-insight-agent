@@ -1,0 +1,60 @@
+delivered_at_utc,kind,body,next_action,decision_id
+2026-07-28 01:30:00+00:00,released,"Overnight, Delhi's air reached unhealthy, and it's unhealthy for sensitive groups now. Best to keep windows closed for now.",keep windows closed,1322
+2026-07-29 01:30:00+00:00,released,"Overnight, Delhi's air reached unhealthy, and it's still unhealthy. Best to keep windows closed for now.",keep windows closed,1494
+2026-07-30 01:00:00+00:00,check_in,"Delhi's air has been unhealthy since 29 Jul, worse than a usual morning here, the worst in 10 days. Best to skip the outdoor run for now.",skip the outdoor run,1659
+2026-08-01 15:20:00+00:00,opened,"Delhi's air has been stuck above normal for 1 hour, since 8:50pm, and is now unhealthy for sensitive groups. Best to keep windows closed for now.",keep windows closed,2104
+2026-08-02 02:20:00+00:00,cleared,Delhi's air is back to its usual level after 11 hours. Good time to go for that run.,go for that run,2185
+2026-08-02 11:20:00+00:00,opened,"Delhi's air has been stuck above normal for 1 hour, since 4:50pm, and is now unhealthy for sensitive groups. Best to keep windows closed for now.",keep windows closed,2248
+2026-08-05 10:20:00+00:00,opened,"Delhi's air has been stuck above normal for 1 hour, since 3:50pm, and is now unhealthy. Best to keep windows closed for now.",keep windows closed,2751
+2026-08-06 03:20:00+00:00,cleared,Delhi's air is back to its usual level after 17 hours. Good time to go for an easy run.,go for an easy run,2872
+2026-08-09 01:00:00+00:00,check_in,"Delhi's air has been unhealthy since 4:50am, worse than a usual morning here, the second bad morning this week. Best to skip the outdoor run for now.",skip the outdoor run,3365
+2026-08-09 13:20:00+00:00,cleared,Delhi's air is back to its usual level after 14 hours. Good time to go for an easy run.,go for an easy run,3455
+2026-08-10 01:00:00+00:00,check_in,"Delhi's air is unhealthy, worse than a usual morning here, the worst since 9 Aug. Best to skip the outdoor run for now.",skip the outdoor run,3536
+2026-08-10 03:20:00+00:00,opened,"Delhi's air has been stuck above normal for 1 hour, since 8:50am, and is now unhealthy, the fourth bad morning this week. Best to keep windows closed for now.",keep windows closed,3556
+2026-08-11 02:20:00+00:00,cleared,Delhi's air is back to its usual level after 23 hours. Good time to go for an easy run.,go for an easy run,3719
+2026-08-11 10:20:00+00:00,opened,"Delhi's air jumped sharply to unhealthy, the fifth bad afternoon this week. Best to keep windows closed for now.",keep windows closed,3775
+2026-08-12 01:00:00+00:00,check_in,"Delhi's air has been unhealthy since 3:50pm, worse than a usual morning here, the worst since 11 Aug. Best to skip the outdoor run for now.",skip the outdoor run,3877
+2026-08-13 01:00:00+00:00,check_in,"Delhi's air has been unhealthy since 11 Aug, worse than a usual morning here, the worst since 11 Aug. Best to skip the outdoor run for now.",skip the outdoor run,4047
+2026-08-14 01:00:00+00:00,check_in,"Delhi's air is unhealthy, worse than a usual morning here, the worst since 11 Aug. Best to skip the outdoor run for now.",skip the outdoor run,4218
+2026-08-15 01:00:00+00:00,check_in,"Delhi's air is unhealthy, worse than a usual morning here, the sixth bad morning this week. Best to skip the outdoor run for now.",skip the outdoor run,4389
+2026-08-21 01:00:00+00:00,check_in,"Delhi's air is unhealthy, worse than a usual morning. Best to skip the outdoor run for now.",skip the outdoor run,5403
+2026-08-24 23:20:00+00:00,escalated,"Delhi's air has been getting worse since 12:50am and is now very unhealthy, the worst in 14 days. Best to skip the outdoor run for now.",skip the outdoor run,6077
+2026-08-26 06:20:00+00:00,opened,"Delhi's air has been stuck above normal for 1 hour, since 11:50am, and is now unhealthy, the fourth bad morning this week. Best to keep windows closed for now.",keep windows closed,6302
+2026-08-27 01:00:00+00:00,check_in,"Delhi's air has been unhealthy since 11:50am, worse than a usual morning here, the worst since 25 Aug. Best to skip the outdoor run for now.",skip the outdoor run,6431
+2026-08-28 01:00:00+00:00,check_in,"Delhi's air has been unhealthy since 26 Aug, worse than a usual morning here, the worst since 25 Aug. Best to skip the outdoor run for now.",skip the outdoor run,6602
+2026-09-02 06:20:00+00:00,opened,"Delhi's air has been getting worse since 11:50am and is now unhealthy, the second bad morning this week. Best to keep windows closed for now.",keep windows closed,7496
+2026-09-02 13:20:00+00:00,cleared,Delhi's air is back to its usual level after 7 hours. Good time to go for that run.,go for that run,7545
+2026-09-07 09:20:00+00:00,opened,"Delhi's air has been stuck above normal for 1 hour, since 2:50pm, and is now unhealthy, the second bad afternoon this week. Best to keep windows closed for now.",keep windows closed,8370
+2026-09-08 03:20:00+00:00,cleared,Delhi's air is back to its usual level after 18 hours. Good time to go for an easy run.,go for an easy run,8499
+2026-09-11 05:20:00+00:00,opened,"Delhi's air has been getting worse since 10:50am and is now unhealthy, the second bad morning this week. Best to keep windows closed for now.",keep windows closed,9023
+2026-09-13 16:20:00+00:00,opened,"Delhi's air has been stuck above normal for 1 hour, since 9:50pm, and is now unhealthy for sensitive groups. Best to keep windows closed for now.",keep windows closed,9444
+2026-09-14 16:20:00+00:00,opened,"Delhi's air has been stuck above normal for 1 hour, since 9:50pm, and is now unhealthy for sensitive groups. Best to keep windows closed for now.",keep windows closed,9616
+2026-09-15 01:00:00+00:00,check_in,"Delhi's air has been unhealthy since 9:50pm, worse than a usual morning here, the worst since 11 Sep. Best to skip the outdoor run for now.",skip the outdoor run,9675
+2026-09-17 01:00:00+00:00,check_in,"Delhi's air has been unhealthy since 2:50am, worse than a usual morning here, the worst since 7 Sep. Best to skip the outdoor run for now.",skip the outdoor run,10020
+2026-09-17 07:20:00+00:00,cleared,Delhi's air is back to its usual level after 10 hours. Good time to go for an easy run.,go for an easy run,10071
+2026-09-19 07:20:00+00:00,opened,Delhi's air has been getting worse since 12:50pm and is now unhealthy. Best to keep windows closed for now.,keep windows closed,10411
+2026-09-20 01:00:00+00:00,check_in,"Delhi's air has been unhealthy since 12:50pm, worse than a usual morning here, the worst in 14 days. Best to skip the outdoor run for now.",skip the outdoor run,10533
+2026-09-20 05:20:00+00:00,escalated,"Delhi's air jumped sharply to very unhealthy, the worst in 14 days. Best to stay indoors with windows closed for now.",stay indoors with windows closed,10568
+2026-09-21 01:00:00+00:00,check_in,"Delhi's air has been unhealthy since 19 Sep, worse than a usual morning here, the worst in 14 days. Best to skip the outdoor run for now.",skip the outdoor run,10704
+2026-09-21 03:20:00+00:00,escalated,"Delhi's air jumped sharply to very unhealthy, the worst in 14 days. Best to stay indoors with windows closed for now.",stay indoors with windows closed,10725
+2026-09-22 01:00:00+00:00,check_in,"Delhi's air has been unhealthy since 19 Sep, worse than a usual morning here, the worst in 14 days. Best to skip the outdoor run for now.",skip the outdoor run,10873
+2026-09-23 01:00:00+00:00,check_in,"Delhi's air has been unhealthy since 19 Sep, worse than a usual morning here, the worst in 14 days. Best to skip the outdoor run for now.",skip the outdoor run,11043
+2026-09-24 01:00:00+00:00,check_in,"Delhi's air has been unhealthy since 19 Sep, worse than a usual morning here, the worst in 14 days. Best to skip the outdoor run for now.",skip the outdoor run,11213
+2026-09-30 01:00:00+00:00,check_in,"Delhi's air is unhealthy, worse than a usual morning here, the second bad morning this week. Best to skip the outdoor run for now.",skip the outdoor run,12235
+2026-10-01 01:00:00+00:00,check_in,"Delhi's air is unhealthy, worse than a usual morning here, the second bad morning this week. Best to skip the outdoor run for now.",skip the outdoor run,12407
+2026-10-02 01:00:00+00:00,check_in,"Delhi's air is unhealthy, worse than a usual morning here, the worst since 1 Oct. Best to skip the outdoor run for now.",skip the outdoor run,12578
+2026-10-03 01:00:00+00:00,check_in,"Delhi's air is unhealthy, worse than a usual morning here, the fourth bad morning this week. Best to skip the outdoor run for now.",skip the outdoor run,12750
+2026-10-04 01:00:00+00:00,check_in,"Delhi's air is unhealthy, worse than a usual morning here, the worst since 1 Oct. Best to skip the outdoor run for now.",skip the outdoor run,12921
+2026-10-05 01:00:00+00:00,check_in,"Delhi's air is unhealthy, worse than a usual morning here, the sixth bad morning this week. Best to skip the outdoor run for now.",skip the outdoor run,13092
+2026-10-08 01:00:00+00:00,check_in,"Delhi's air has been unhealthy since 3:50am, worse than a usual morning here, the worst in 14 days. Best to skip the outdoor run for now.",skip the outdoor run,13602
+2026-10-09 01:00:00+00:00,check_in,"Delhi's air has been unhealthy since 8 Oct, worse than a usual morning here, the worst in 14 days. Best to skip the outdoor run for now.",skip the outdoor run,13772
+2026-10-10 01:00:00+00:00,check_in,"Delhi's air has been unhealthy since 8 Oct, worse than a usual morning here, the worst in 14 days. Best to skip the outdoor run for now.",skip the outdoor run,13940
+2026-10-11 01:00:00+00:00,check_in,"Delhi's air has been unhealthy since 8 Oct, worse than a usual morning here, the worst in 14 days. Best to skip the outdoor run for now.",skip the outdoor run,14110
+2026-10-12 16:20:00+00:00,opened,"Delhi's air has been stuck above normal for 1 hour, since 9:50pm, and is now unhealthy. Best to keep windows closed for now.",keep windows closed,14391
+2026-10-13 01:00:00+00:00,check_in,"Delhi's air has been unhealthy since 9:50pm, about usual for this time of day. Best to skip the outdoor run for now.",skip the outdoor run,14450
+2026-10-13 03:20:00+00:00,escalated,"Delhi's air jumped sharply to very unhealthy, the worst in 14 days. Best to stay indoors with windows closed for now.",stay indoors with windows closed,14471
+2026-10-14 01:00:00+00:00,check_in,"Delhi's air has been very unhealthy since 12 Oct, worse than a usual morning here, the worst in 14 days. Best to skip the outdoor run for now.",skip the outdoor run,14620
+2026-10-15 01:00:00+00:00,check_in,"Delhi's air has been unhealthy since 12 Oct, about usual for this time of day, the worst in 14 days. Best to skip the outdoor run for now.",skip the outdoor run,14789
+2026-10-15 03:20:00+00:00,escalated,"Delhi's air has been stuck above normal for 59 hours, since 12 Oct, and is now very unhealthy, the worst in 14 days. Best to stay indoors with windows closed for now.",stay indoors with windows closed,14811
+2026-10-17 10:20:00+00:00,opened,"Delhi's air has been stuck above normal for 1 hour, since 3:50pm, and is now unhealthy. Best to keep windows closed for now.",keep windows closed,15196
+2026-10-17 21:20:00+00:00,escalated,"Delhi's air has been getting worse since 3:50pm and is now very unhealthy, the worst since 15 Oct. Best to skip the outdoor run for now.",skip the outdoor run,15272

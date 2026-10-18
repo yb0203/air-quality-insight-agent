@@ -1,0 +1,142 @@
+[
+ {
+  "id": "dec_15230",
+  "evaluated_at": "2026-10-17 15:20:00+00:00",
+  "period_end": "2026-10-17 13:30:00+00:00",
+  "user_id": "priya",
+  "outcome": "no_event",
+  "reason_code": "NO_TRIGGER",
+  "reason": "Nothing unusual.",
+  "trigger": "data"
+ },
+ {
+  "id": "dec_15237",
+  "evaluated_at": "2026-10-17 16:20:00+00:00",
+  "period_end": "2026-10-17 14:30:00+00:00",
+  "user_id": "priya",
+  "outcome": "no_event",
+  "reason_code": "NO_TRIGGER",
+  "reason": "Nothing unusual.",
+  "trigger": "data"
+ },
+ {
+  "id": "dec_15243",
+  "evaluated_at": "2026-10-17 17:20:00+00:00",
+  "period_end": "2026-10-17 15:30:00+00:00",
+  "user_id": "priya",
+  "outcome": "no_event",
+  "reason_code": "NO_TRIGGER",
+  "reason": "Nothing unusual.",
+  "trigger": "data"
+ },
+ {
+  "id": "dec_15250",
+  "evaluated_at": "2026-10-17 18:20:00+00:00",
+  "period_end": "2026-10-17 16:30:00+00:00",
+  "user_id": "priya",
+  "outcome": "no_event",
+  "reason_code": "NO_TRIGGER",
+  "reason": "Nothing unusual.",
+  "trigger": "data"
+ },
+ {
+  "id": "dec_15257",
+  "evaluated_at": "2026-10-17 19:20:00+00:00",
+  "period_end": "2026-10-17 17:30:00+00:00",
+  "user_id": "priya",
+  "outcome": "no_event",
+  "reason_code": "NO_TRIGGER",
+  "reason": "Nothing unusual.",
+  "trigger": "data"
+ },
+ {
+  "id": "dec_15264",
+  "evaluated_at": "2026-10-17 20:20:00+00:00",
+  "period_end": "2026-10-17 18:30:00+00:00",
+  "user_id": "priya",
+  "outcome": "no_event",
+  "reason_code": "NO_TRIGGER",
+  "reason": "Nothing unusual.",
+  "trigger": "data"
+ },
+ {
+  "id": "dec_15271",
+  "evaluated_at": "2026-10-17 21:20:00+00:00",
+  "period_end": "2026-10-17 19:30:00+00:00",
+  "user_id": "priya",
+  "outcome": "no_event",
+  "reason_code": "NO_TRIGGER",
+  "reason": "Nothing unusual.",
+  "trigger": "data"
+ },
+ {
+  "id": "dec_15278",
+  "evaluated_at": "2026-10-17 22:20:00+00:00",
+  "period_end": "2026-10-17 20:30:00+00:00",
+  "user_id": "priya",
+  "outcome": "no_event",
+  "reason_code": "NO_TRIGGER",
+  "reason": "Nothing unusual.",
+  "trigger": "data"
+ },
+ {
+  "id": "dec_15285",
+  "evaluated_at": "2026-10-17 23:20:00+00:00",
+  "period_end": "2026-10-17 21:30:00+00:00",
+  "user_id": "priya",
+  "outcome": "no_event",
+  "reason_code": "NO_TRIGGER",
+  "reason": "Nothing unusual.",
+  "trigger": "data"
+ },
+ {
+  "id": "dec_15292",
+  "evaluated_at": "2026-10-18 00:20:00+00:00",
+  "period_end": "2026-10-17 22:30:00+00:00",
+  "user_id": "priya",
+  "outcome": "no_event",
+  "reason_code": "NO_TRIGGER",
+  "reason": "Nothing unusual.",
+  "trigger": "data"
+ },
+ {
+  "id": "dec_15295",
+  "evaluated_at": "2026-10-18 00:30:00+00:00",
+  "period_end": "2026-10-17 22:30:00+00:00",
+  "user_id": "priya",
+  "outcome": "no_event",
+  "reason_code": "CHECKIN_QUIET",
+  "reason": "Check-in: nothing worse than usual today.",
+  "trigger": "clock"
+ },
+ {
+  "id": "dec_15301",
+  "evaluated_at": "2026-10-18 01:20:00+00:00",
+  "period_end": "2026-10-17 23:30:00+00:00",
+  "user_id": "priya",
+  "outcome": "no_event",
+  "reason_code": "NO_TRIGGER",
+  "reason": "Nothing unusual.",
+  "trigger": "data"
+ },
+ {
+  "id": "dec_15308",
+  "evaluated_at": "2026-10-18 02:20:00+00:00",
+  "period_end": "2026-10-18 00:30:00+00:00",
+  "user_id": "priya",
+  "outcome": "no_event",
+  "reason_code": "NO_TRIGGER",
+  "reason": "Nothing unusual.",
+  "trigger": "data"
+ },
+ {
+  "id": "dec_15315",
+  "evaluated_at": "2026-10-18 03:20:00+00:00",
+  "period_end": "2026-10-18 01:30:00+00:00",
+  "user_id": "priya",
+  "outcome": "no_event",
+  "reason_code": "NO_TRIGGER",
+  "reason": "Nothing unusual.",
+  "trigger": "data"
+ }
+]

@@ -1,0 +1,41 @@
+delivered_at_utc,kind,body,next_action,decision_id
+2026-07-30 00:30:00+00:00,check_in,"Bengaluru's air has been moderate since 12:50am, about usual for this time of day. Best to keep the run short and easy for now.",keep the run short and easy,1658
+2026-07-30 15:20:00+00:00,cleared,Bengaluru's air is back to its usual level after 20 hours. Good time to go for that run.,go for that run,1761
+2026-08-01 10:20:00+00:00,opened,Bengaluru's air has been getting worse since 3:50pm and is now moderate. Best to take it easy outdoors for now.,take it easy outdoors,2068
+2026-08-03 13:20:00+00:00,opened,"Bengaluru's air has been stuck above normal for 1 hour, since 6:50pm, and is now moderate. Best to take it easy outdoors for now.",take it easy outdoors,2431
+2026-08-04 03:20:00+00:00,cleared,Bengaluru's air is back to its usual level after 14 hours. Good time to go for that run.,go for that run,2531
+2026-08-05 00:30:00+00:00,check_in,"Bengaluru's air is moderate, about usual for this time of day. Best to keep the run short and easy for now.",keep the run short and easy,2682
+2026-08-05 02:20:00+00:00,opened,"Bengaluru's air has been stuck above normal for 1 hour, since 7:50am, and is now moderate. Best to take it easy outdoors for now.",take it easy outdoors,2694
+2026-08-06 00:30:00+00:00,check_in,"Bengaluru's air has been moderate since 7:50am, about usual for this time of day. Best to keep the run short and easy for now.",keep the run short and easy,2852
+2026-08-07 00:30:00+00:00,check_in,"Bengaluru's air has been moderate since 5 Aug, about usual for this time of day. Best to keep the run short and easy for now.",keep the run short and easy,3022
+2026-08-08 00:30:00+00:00,check_in,"Bengaluru's air has been moderate since 12:50am, about usual for this time of day. Best to keep the run short and easy for now.",keep the run short and easy,3193
+2026-08-08 13:20:00+00:00,opened,"Bengaluru's air has been stuck above normal for 1 hour, since 6:50pm, and is now moderate. Best to take it easy outdoors for now.",take it easy outdoors,3283
+2026-08-12 15:20:00+00:00,opened,"Bengaluru's air has been stuck above normal for 1 hour, since 8:50pm, and is now moderate. Best to take it easy outdoors for now.",take it easy outdoors,3978
+2026-08-21 14:20:00+00:00,opened,"Bengaluru's air has been stuck above normal for 1 hour, since 7:50pm, and is now moderate. Best to take it easy outdoors for now.",take it easy outdoors,5501
+2026-08-22 00:30:00+00:00,check_in,"Bengaluru's air has been moderate since 7:50pm, about usual for this time of day. Best to keep the run short and easy for now.",keep the run short and easy,5574
+2026-08-23 11:20:00+00:00,opened,"Bengaluru's air has been stuck above normal for 1 hour, since 4:50pm, and is now moderate. Best to take it easy outdoors for now.",take it easy outdoors,5821
+2026-08-26 08:20:00+00:00,opened,"Bengaluru's air has been stuck above normal for 1 hour, since 1:50pm, and is now moderate. Best to take it easy outdoors for now.",take it easy outdoors,6315
+2026-09-05 10:20:00+00:00,opened,"Bengaluru's air has been stuck above normal for 1 hour, since 3:50pm, and is now moderate. Best to take it easy outdoors for now.",take it easy outdoors,8034
+2026-09-06 00:30:00+00:00,check_in,"Bengaluru's air has been moderate since 3:50pm, about usual for this time of day, the worst in 14 days. Best to keep the run short and easy for now.",keep the run short and easy,8135
+2026-09-08 14:20:00+00:00,cleared,Bengaluru's air is back to its usual level after 3 days. Good time to go for that run.,go for that run,8575
+2026-09-10 13:20:00+00:00,opened,"Bengaluru's air has been stuck above normal for 1 hour, since 6:50pm, and is now moderate. Best to take it easy outdoors for now.",take it easy outdoors,8908
+2026-09-11 00:30:00+00:00,check_in,"Bengaluru's air has been moderate since 6:50pm, about usual for this time of day, the worst in 14 days. Best to keep the run short and easy for now.",keep the run short and easy,8988
+2026-09-12 00:30:00+00:00,check_in,"Bengaluru's air has been moderate since 10 Sep, about usual for this time of day, the worst in 14 days. Best to keep the run short and easy for now.",keep the run short and easy,9158
+2026-09-13 13:20:00+00:00,opened,"Bengaluru's air has been stuck above normal for 1 hour, since 6:50pm, and is now moderate. Best to take it easy outdoors for now.",take it easy outdoors,9422
+2026-09-14 10:20:00+00:00,escalated,"Bengaluru's air has been stuck above normal for 21 hours, since 6:50pm, and is now unhealthy for sensitive groups, the worst since 12 Sep. Best to keep windows closed for now.",keep windows closed,9573
+2026-09-15 00:30:00+00:00,check_in,"Bengaluru's air is moderate, about usual for this time of day. Best to keep the run short and easy for now.",keep the run short and easy,9674
+2026-09-15 06:20:00+00:00,opened,"Bengaluru's air has been stuck above normal for 1 hour, since 11:50am, and is now moderate. Best to take it easy outdoors for now.",take it easy outdoors,9716
+2026-09-15 14:20:00+00:00,escalated,"Bengaluru's air has been stuck above normal for 8 hours, since 11:50am, and is now unhealthy for sensitive groups, the worst since 14 Sep. Best to keep windows closed for now.",keep windows closed,9773
+2026-09-17 00:30:00+00:00,check_in,"Bengaluru's air is unhealthy for sensitive groups, worse than a usual morning. Best to move the run indoors for now.",move the run indoors,10019
+2026-09-28 00:30:00+00:00,check_in,"Bengaluru's air has been unhealthy for sensitive groups since 11:50pm, worse than a usual morning here, the worst in 14 days. Best to move the run indoors for now.",move the run indoors,11894
+2026-09-29 00:30:00+00:00,check_in,"Bengaluru's air has been unhealthy for sensitive groups since 27 Sep, worse than a usual morning here, the worst in 14 days. Best to move the run indoors for now.",move the run indoors,12064
+2026-09-30 00:30:00+00:00,check_in,"Bengaluru's air has been unhealthy for sensitive groups since 27 Sep, worse than a usual morning here, the worst in 14 days. Best to move the run indoors for now.",move the run indoors,12234
+2026-10-01 09:20:00+00:00,opened,"Bengaluru's air has been getting worse since 2:50pm and is now unhealthy, the third bad afternoon this week. Best to keep windows closed for now.",keep windows closed,12469
+2026-10-02 00:30:00+00:00,check_in,"Bengaluru's air has been unhealthy since 2:50pm, worse than a usual morning here, the worst in 14 days. Best to skip the outdoor run for now.",skip the outdoor run,12577
+2026-10-03 00:30:00+00:00,check_in,"Bengaluru's air has been unhealthy for sensitive groups since 1 Oct, worse than a usual morning here, the worst in 14 days. Best to move the run indoors for now.",move the run indoors,12749
+2026-10-04 00:30:00+00:00,check_in,"Bengaluru's air has been unhealthy since 1 Oct, worse than a usual morning here, the worst in 14 days. Best to skip the outdoor run for now.",skip the outdoor run,12920
+2026-10-05 00:30:00+00:00,check_in,"Bengaluru's air has been unhealthy for sensitive groups since 1 Oct, worse than a usual morning here, the worst in 14 days. Best to move the run indoors for now.",move the run indoors,13091
+2026-10-12 07:20:00+00:00,opened,"Bengaluru's air has been stuck above normal for 1 hour, since 12:50pm, and is now unhealthy. Best to keep windows closed for now.",keep windows closed,14328
+2026-10-13 00:30:00+00:00,check_in,"Bengaluru's air has been unhealthy since 12:50pm, worse than a usual morning here, the worst since 4 Oct. Best to skip the outdoor run for now.",skip the outdoor run,14449
+2026-10-13 13:20:00+00:00,cleared,Bengaluru's air is back to its usual level after 30 hours. Good time to go for an easy run.,go for an easy run,14539
+2026-10-14 00:30:00+00:00,check_in,"Bengaluru's air has been unhealthy since 1:50am, worse than a usual morning here, the second bad morning this week. Best to skip the outdoor run for now.",skip the outdoor run,14619

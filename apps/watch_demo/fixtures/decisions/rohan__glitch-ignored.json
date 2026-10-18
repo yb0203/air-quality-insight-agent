@@ -1,0 +1,132 @@
+[
+ {
+  "id": "dec_14814",
+  "evaluated_at": "2026-10-15 04:20:00+00:00",
+  "period_end": "2026-10-15 02:30:00+00:00",
+  "user_id": "rohan",
+  "outcome": "no_event",
+  "reason_code": "NO_TRIGGER",
+  "reason": "Nothing unusual.",
+  "trigger": "data"
+ },
+ {
+  "id": "dec_14821",
+  "evaluated_at": "2026-10-15 05:20:00+00:00",
+  "period_end": "2026-10-15 03:30:00+00:00",
+  "user_id": "rohan",
+  "outcome": "no_event",
+  "reason_code": "NO_TRIGGER",
+  "reason": "Nothing unusual.",
+  "trigger": "data"
+ },
+ {
+  "id": "dec_14828",
+  "evaluated_at": "2026-10-15 06:20:00+00:00",
+  "period_end": "2026-10-15 04:30:00+00:00",
+  "user_id": "rohan",
+  "outcome": "no_event",
+  "reason_code": "NO_TRIGGER",
+  "reason": "Nothing unusual.",
+  "trigger": "data"
+ },
+ {
+  "id": "dec_14835",
+  "evaluated_at": "2026-10-15 07:20:00+00:00",
+  "period_end": "2026-10-15 05:30:00+00:00",
+  "user_id": "rohan",
+  "outcome": "no_event",
+  "reason_code": "NO_TRIGGER",
+  "reason": "Nothing unusual.",
+  "trigger": "data"
+ },
+ {
+  "id": "dec_14842",
+  "evaluated_at": "2026-10-15 08:20:00+00:00",
+  "period_end": "2026-10-15 06:30:00+00:00",
+  "user_id": "rohan",
+  "outcome": "no_event",
+  "reason_code": "NO_TRIGGER",
+  "reason": "Nothing unusual.",
+  "trigger": "data"
+ },
+ {
+  "id": "dec_14860",
+  "evaluated_at": "2026-10-15 10:20:00+00:00",
+  "period_end": "2026-10-15 06:30:00+00:00",
+  "user_id": "rohan",
+  "outcome": "no_event",
+  "reason_code": "NO_DATA",
+  "reason": "No fresh reading from the station.",
+  "trigger": "clock"
+ },
+ {
+  "id": "dec_14867",
+  "evaluated_at": "2026-10-15 11:20:00+00:00",
+  "period_end": "2026-10-15 06:30:00+00:00",
+  "user_id": "rohan",
+  "outcome": "no_event",
+  "reason_code": "NO_DATA",
+  "reason": "No fresh reading from the station.",
+  "trigger": "clock"
+ },
+ {
+  "id": "dec_14869",
+  "evaluated_at": "2026-10-15 12:20:00+00:00",
+  "period_end": "2026-10-15 10:30:00+00:00",
+  "user_id": "rohan",
+  "outcome": "no_event",
+  "reason_code": "DQ_SUSPECT",
+  "reason": "A one-hour sensor glitch was ignored.",
+  "trigger": "data"
+ },
+ {
+  "id": "dec_14876",
+  "evaluated_at": "2026-10-15 13:20:00+00:00",
+  "period_end": "2026-10-15 11:30:00+00:00",
+  "user_id": "rohan",
+  "outcome": "no_event",
+  "reason_code": "NO_TRIGGER",
+  "reason": "Nothing unusual.",
+  "trigger": "data"
+ },
+ {
+  "id": "dec_14883",
+  "evaluated_at": "2026-10-15 14:20:00+00:00",
+  "period_end": "2026-10-15 12:30:00+00:00",
+  "user_id": "rohan",
+  "outcome": "no_event",
+  "reason_code": "DQ_SUSPECT",
+  "reason": "A one-hour sensor glitch was ignored.",
+  "trigger": "data"
+ },
+ {
+  "id": "dec_14889",
+  "evaluated_at": "2026-10-15 15:20:00+00:00",
+  "period_end": "2026-10-15 13:30:00+00:00",
+  "user_id": "rohan",
+  "outcome": "no_event",
+  "reason_code": "NO_TRIGGER",
+  "reason": "Nothing unusual.",
+  "trigger": "data"
+ },
+ {
+  "id": "dec_14897",
+  "evaluated_at": "2026-10-15 16:20:00+00:00",
+  "period_end": "2026-10-15 14:30:00+00:00",
+  "user_id": "rohan",
+  "outcome": "no_event",
+  "reason_code": "NO_TRIGGER",
+  "reason": "Nothing unusual.",
+  "trigger": "data"
+ },
+ {
+  "id": "dec_14904",
+  "evaluated_at": "2026-10-15 17:20:00+00:00",
+  "period_end": "2026-10-15 15:30:00+00:00",
+  "user_id": "rohan",
+  "outcome": "no_event",
+  "reason_code": "NO_TRIGGER",
+  "reason": "Nothing unusual.",
+  "trigger": "data"
+ }
+]

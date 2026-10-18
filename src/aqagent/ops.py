@@ -125,6 +125,7 @@ def replay_sample(url: str, days: int, run_id: str, llm=None) -> dict:
         end = conn.execute(sa.select(sa.func.max(r.c.ingested_at))).scalar() + timedelta(hours=1)
         start = end - timedelta(days=days)
         seed_users(conn, start)
+        seed_users(conn, start, ROOT / "config" / "fixture_users.yaml")
         summary = replay(conn, start, end, run_id, llm)
         rep = report(conn, run_id, all_moments(conn, ROOT / "data" / "labels.yaml"), start, end)
     return {"summary": summary.__dict__, "start": start.isoformat(), "end": end.isoformat(), "users": rep}

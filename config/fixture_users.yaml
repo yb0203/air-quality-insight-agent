@@ -1,0 +1,12 @@
+# Replay-only users on the fixture stations (not tracked live). Rohan is on Mumbai's glitchy AirNow
+# monitor, so the demo can show a sensor glitch being ignored.
+users:
+  - id: rohan
+    display_name: Rohan
+    city: Mumbai
+    persona:
+      conditions: ["asthma"]
+      habits: []
+    rules:
+      location: { station_id: 8039 }
+      sensitivity: high

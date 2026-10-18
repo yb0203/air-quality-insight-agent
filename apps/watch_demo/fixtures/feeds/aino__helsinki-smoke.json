@@ -1,0 +1,13 @@
+[
+ {
+  "id": "ntf_81",
+  "created_at": "2026-08-24 05:20:00+00:00",
+  "delivered_at": "2026-08-24 05:20:00+00:00",
+  "kind": "opened",
+  "event_kind": "climb",
+  "band": "moderate",
+  "body": "Helsinki's air has been getting worse since 8:20am and is now moderate. Best to take it easy outdoors for now.",
+  "next_action": "take it easy outdoors",
+  "decision_id": "dec_5946"
+ }
+]
