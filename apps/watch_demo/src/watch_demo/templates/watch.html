@@ -8,16 +8,58 @@
 </head>
 <body>
   {# Everything outside .watch is the demo frame; everything inside is the product. #}
-  <nav class="chips" aria-label="Demo scenarios">
-    {% for s in scenarios %}
-      <a class="chip{% if s.id == scenario.id %} active{% endif %}"
-         href="/?scenario={{ s.id }}"
-         {% if s.id == scenario.id %}aria-current="page"{% endif %}>{{ s.label }}</a>
+  <header class="masthead">
+    <span class="brand">Air quality agent · watch demo</span>
+    <span class="promise">Speaks only when something is worth knowing · replay of real OpenAQ data</span>
+  </header>
+
+  <nav class="navigator" aria-label="Demo scenarios">
+    {% for g in groups %}
+      <div class="nav-row">
+        <span class="nav-group">{{ g.title }}</span>
+        <div class="nav-chips">
+          {% for s in g["items"] %}
+            <a class="chip{% if s.id == scenario.id %} active{% endif %}"
+               href="/?scenario={{ s.id }}"
+               {% if s.id == scenario.id %}aria-current="page"{% endif %}>{{ s.label }}</a>
+          {% endfor %}
+        </div>
+      </div>
     {% endfor %}
   </nav>
 
+  <section class="story" aria-label="About this scenario">
+    <h1 class="story-title">{{ scenario.label }}</h1>
+    <p class="story-lead">{{ scenario.question or scenario.description }}</p>
+    {% if scenario.question %}<p class="story-desc">{{ scenario.description }}</p>{% endif %}
+    {% if story.tags or scenario.brief %}
+      <p class="story-tags">
+        {% if story.tags %}<span class="tags-label">Shows</span>{% endif %}
+        {% for t in story.tags %}<span class="tag" title="{{ t.what }}">{{ t.label }}</span>{% endfor %}
+        {% if scenario.brief %}<span class="brief-ids">brief {{ scenario.brief | join(", ") }}</span>{% endif %}
+      </p>
+    {% endif %}
+    {% if story.beats %}
+      <ol class="beats">
+        {% for b in story.beats %}
+          <li><a class="beat{% if b.current %} current{% endif %}" href="{{ b.href }}"
+                 {% if b.current %}aria-current="step"{% endif %}>
+            <span class="beat-n">{{ b.n }}</span>
+            <span class="beat-title">{{ b.beat.title }}</span>
+            {% if b.beat.note %}<span class="beat-note">{{ b.beat.note }}</span>{% endif %}
+          </a></li>
+        {% endfor %}
+      </ol>
+    {% endif %}
+  </section>
+
   <main class="stage">
-    {% if chart %}{% include "chart.html" %}{% endif %}
+    {% if chart %}
+      <div class="chart-col">
+        {% include "chart.html" %}
+        {% include "moment.html" %}
+      </div>
+    {% endif %}
 
     <div class="watch" data-view="{{ view }}">
       <span class="crown" aria-hidden="true"></span>
@@ -63,8 +105,10 @@
           <section class="calm">
             <p class="calm-time">{{ now_local.strftime("%H:%M") }}</p>
             <p class="calm-date">{{ now_local.strftime("%a") }} {{ now_local.day }} {{ now_local.strftime("%b") }}</p>
-            {% if holding %}
+            {% if face == "holding" %}
               <p class="calm-headline"><span class="moon" aria-hidden="true"></span>Quiet hours</p>
+            {% elif face == "no-data" %}
+              <p class="calm-headline"><span class="ring ring-muted" aria-hidden="true"></span>No new readings</p>
             {% else %}
               <p class="calm-headline"><span class="ring" aria-hidden="true"></span>All clear in {{ user.city }}</p>
             {% endif %}
@@ -82,7 +126,6 @@
   </main>
 
   <footer class="frame-notes">
-    <p class="scenario-desc">{{ scenario.description }}</p>
     {% if view == "why" %}
       <p class="decision-ref">notice decided: {{ decision.reason_code }} at {{ decision.evaluated_at.strftime("%Y-%m-%d %H:%M") }} UTC ({{ decision.trigger or "data" }} trigger)</p>
     {% elif view == "error" %}

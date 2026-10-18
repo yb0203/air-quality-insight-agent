@@ -79,6 +79,26 @@ def helsinki_smoke() -> dict:
     return {"user": "aino", "start": start, "end": end}
 
 
+def first_decision(user: str, code: str, start: datetime, end: datetime):
+    """The first decision with `code` for `user` evaluated in [start, end], or None."""
+    return conn.execute(sa.select(d).where(d.c.user_id == user, d.c.reason_code == code, d.c.replay_run == RUN,
+                                           d.c.evaluated_at >= start, d.c.evaluated_at <= end)
+                        .order_by(d.c.evaluated_at)).mappings().first()
+
+
+def kinds(*decision_ids) -> list[str]:
+    """Capability keys for the event kinds the real trace says fired (D1), so tags never overclaim."""
+    out = []
+    for did in decision_ids:
+        trace = conn.execute(sa.select(d.c.trace).where(d.c.id == did)).scalar() or []
+        for t in trace:
+            if t.get("layer") == "D1":
+                for k in (t.get("values") or {}).get("fired") or []:
+                    if k in ("spike", "climb", "elevated") and k not in out:
+                        out.append(k)
+    return out
+
+
 def write(path: Path, data) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(json.dumps(data, indent=1, ensure_ascii=False, default=str) + "\n")
@@ -110,14 +130,16 @@ def export_readings() -> None:
             write(OUT / "readings" / f"{station_id}.json", rows)
 
 
-def export(sid: str, label: str, desc: str, spec: dict, limit: int | None = None, chart_hours: int = 24) -> dict:
+def export(sid: str, label: str, desc: str, spec: dict, limit: int | None = None, chart_hours: int = 24,
+           story: dict | None = None) -> dict:
     user, start, end = spec["user"], spec["start"], spec["end"]
     start = min(start, end - timedelta(hours=chart_hours))
     feed = feed_rows(user, start, end)
     write(OUT / "feeds" / f"{user}__{sid}.json", feed)
     decs = queries.decisions(conn, user_id=user, start=start - 2 * H, end=end, replay_run=RUN)
+    traces = dict(conn.execute(sa.select(d.c.id, d.c.trace).where(d.c.id.in_([r["id"] for r in decs]))).all())
     write(OUT / "decisions" / f"{user}__{sid}.json",
-          [{**r, "id": f"dec_{r['id']}"} for r in decs])
+          [{**r, "id": f"dec_{r['id']}", "trace": traces.get(r["id"]) or []} for r in decs])
     for row in feed:
         nid = int(row["id"].removeprefix("ntf_"))
         write(OUT / "explain" / f"{row['id']}.json", queries.explain(conn, nid))
@@ -125,6 +147,10 @@ def export(sid: str, label: str, desc: str, spec: dict, limit: int | None = None
            "chart_hours": chart_hours}
     if limit:
         out["limit"] = limit
+    if story:
+        beats = [{"at": iso(at), "title": title, "note": note} for at, title, note in story.pop("beats", [])]
+        out.update(story)
+        out["beats"] = [b for b in beats if start <= datetime.fromisoformat(b["at"].replace("Z", "+00:00")) <= end]
     print(f"{sid:16} {user:6} {iso(start)} → {iso(end)}  notices={len(feed)} decisions={len(decs)}")
     return out
 
@@ -135,21 +161,59 @@ if __name__ == "__main__":
         shutil.rmtree(OUT)
     write(OUT / "users.json", queries.list_users(conn))
     export_readings()
-    c_local = smog["check_in"]["delivered_at"].astimezone(__import__("zoneinfo").ZoneInfo("Asia/Kolkata"))
+    ist = __import__("zoneinfo").ZoneInfo("Asia/Kolkata")
+    chk, clr = smog["check_in"]["delivered_at"], smog["cleared"]["delivered_at"]
+    c_local = chk.astimezone(ist)
+    held = first_decision("arjun", "QUIET_HOURS_HELD", chk - 12 * H, chk)
+    cont = first_decision("arjun", "EPISODE_CONTINUES", held["evaluated_at"], chk) if held else None
+    smog_beats = ([(held["evaluated_at"], "Held overnight", "Worth telling Arjun, but it's quiet hours.")] if held else []) + [
+        *([(cont["evaluated_at"], "Silent, same story", "The bad spell continues; nothing new to say.")] if cont else []),
+        (chk, "One check-in", "At 06:30 the held notice folds into one message."),
+        (clr, "All-clear", "The spell is over and was long enough to be worth saying."),
+    ]
+    smoke_n = notes("aino", smoke["start"], smoke["end"])[-1]
+    smoke_note, smoke_dec = smoke_n["delivered_at"], smoke_n["decision_id"]
+    glitch_dec = first_decision("rohan", "DQ_SUSPECT", glitch["glitch"], glitch["end"])
+    quiet_chk = first_decision("priya", "CHECKIN_QUIET", quiet["start"], quiet["end"])
     scenarios = [
         export("delhi-smog-night", "Delhi smog night",
-               f"Arjun runs at 06:30. The air turned bad overnight; the notice was held through quiet hours and "
-               f"folded into one check-in at {c_local:%H:%M} on {c_local:%-d %b}, then an all-clear once it eased.", smog),
+               f"The air turned bad overnight; the notice was held through quiet hours and folded into one check-in "
+               f"at {c_local:%H:%M} on {c_local:%-d %b}, then an all-clear once it eased.", smog,
+               story={"group": "speaks", "brief": ["B2a", "B3"],
+                      "question": "Arjun runs at 06:30 and the air turns bad overnight. How does the agent avoid "
+                                  "waking him, yet still warn him before his run?",
+                      "shows": [*kinds(held["id"]), "quiet-hours", "check-in", "no-repeats", "clearing"],
+                      "beats": smog_beats}),
         export("back-to-normal", "Back to normal",
-               "The same Delhi episode closing: the all-clear is only sent after a genuinely bad period.", smog, limit=1),
+               "The same Delhi episode closing: the all-clear is only sent after a genuinely bad period.", smog, limit=1,
+               story={"group": "speaks", "brief": ["B2c"],
+                      "question": "When the bad spell ends, is it worth a message? Only if it was long or bad enough.",
+                      "shows": ["clearing", "message"],
+                      "beats": [(clr, "All-clear", "Sent with one suggestion for the better air.")]}),
         export("helsinki-smoke", "Helsinki smoke",
-               "Aino has asthma. Smoke took Helsinki to ~27 µg/m³ against a usual ~4 on 24 Aug: still 'Moderate', "
-               "but very unusual here, so it's worth a heads-up.", smoke),
+               "Smoke took Helsinki to ~27 µg/m³ against a usual ~4 on 24 Aug: still 'Moderate', "
+               "but very unusual here, so it's worth a heads-up.", smoke,
+               story={"group": "per-person", "brief": ["B2", "B5"],
+                      "question": "Aino has asthma. The official scale says 'Moderate'. Should she hear about it?",
+                      "shows": ["baseline", "sensitivity", *kinds(smoke_dec), "message"],
+                      "beats": [(smoke_note, "Heads-up", "Six times Helsinki's usual: unusual here, and Aino is sensitive.")]}),
         export("glitch-ignored", "Glitch ignored",
                f"Mumbai's monitor reported one implausible hour ({iso(glitch['glitch'])}). OpenAQ didn't flag it; "
-               "the agent excluded it as a glitch and said nothing.", glitch, chart_hours=14),
+               "the agent excluded it as a glitch and said nothing.", glitch, chart_hours=14,
+               story={"group": "bad-data", "brief": ["B2d"],
+                      "question": "A sensor reports one absurd hour. Does the agent raise an alarm?",
+                      "shows": ["glitch", "logged"],
+                      "beats": [(glitch_dec["evaluated_at"], "Glitch ignored",
+                                 "One absurd hour between two normal ones: excluded, and nothing sent.")]
+                                if glitch_dec else []}),
         export("quiet-night", "Quiet night",
-               "Nothing worth saying: Priya's 06:00 check-in found Bengaluru's night cleaner than usual.", quiet),
+               "Nothing worth saying: Priya's 06:00 check-in found Bengaluru's night cleaner than usual.", quiet,
+               story={"group": "quiet", "brief": ["B6"],
+                      "question": "A normal night. The agent says nothing, but can it still tell you why?",
+                      "shows": ["logged", "check-in"],
+                      "beats": [(quiet["start"] + 2 * H, "Every hour logged", "Nothing unusual, and the reason is recorded."),
+                                *([(quiet_chk["evaluated_at"], "Check-in stays quiet", "Nothing worse than usual, so no message.")]
+                                  if quiet_chk else [])]}),
     ]
     SCENARIOS.write_text("# Generated by scripts/export_watch_fixtures.py from the real 90-day replay (data/replay.db).\n"
                          "# Each scenario's `replay_run` names its own fixture files; `until` is the replayed 'now'.\n"

@@ -6,9 +6,35 @@ scenarios:
   user_id: arjun
   replay_run: delhi-smog-night
   until: '2026-08-09T14:20:00Z'
-  description: Arjun runs at 06:30. The air turned bad overnight; the notice was held through quiet hours and folded
-    into one check-in at 06:30 on 9 Aug, then an all-clear once it eased.
+  description: The air turned bad overnight; the notice was held through quiet hours and folded into one check-in
+    at 06:30 on 9 Aug, then an all-clear once it eased.
   chart_hours: 24
+  group: speaks
+  brief:
+  - B2a
+  - B3
+  question: Arjun runs at 06:30 and the air turns bad overnight. How does the agent avoid waking him, yet still
+    warn him before his run?
+  shows:
+  - elevated
+  - spike
+  - quiet-hours
+  - check-in
+  - no-repeats
+  - clearing
+  beats:
+  - at: '2026-08-08T23:20:00Z'
+    title: Held overnight
+    note: Worth telling Arjun, but it's quiet hours.
+  - at: '2026-08-09T00:20:00Z'
+    title: Silent, same story
+    note: The bad spell continues; nothing new to say.
+  - at: '2026-08-09T01:00:00Z'
+    title: One check-in
+    note: At 06:30 the held notice folds into one message.
+  - at: '2026-08-09T13:20:00Z'
+    title: All-clear
+    note: The spell is over and was long enough to be worth saying.
 - id: back-to-normal
   label: Back to normal
   user_id: arjun
@@ -17,14 +43,40 @@ scenarios:
   description: 'The same Delhi episode closing: the all-clear is only sent after a genuinely bad period.'
   chart_hours: 24
   limit: 1
+  group: speaks
+  brief:
+  - B2c
+  question: When the bad spell ends, is it worth a message? Only if it was long or bad enough.
+  shows:
+  - clearing
+  - message
+  beats:
+  - at: '2026-08-09T13:20:00Z'
+    title: All-clear
+    note: Sent with one suggestion for the better air.
 - id: helsinki-smoke
   label: Helsinki smoke
   user_id: aino
   replay_run: helsinki-smoke
   until: '2026-08-24T12:00:00Z'
-  description: 'Aino has asthma. Smoke took Helsinki to ~27 µg/m³ against a usual ~4 on 24 Aug: still ''Moderate'',
-    but very unusual here, so it''s worth a heads-up.'
+  description: 'Smoke took Helsinki to ~27 µg/m³ against a usual ~4 on 24 Aug: still ''Moderate'', but very unusual
+    here, so it''s worth a heads-up.'
   chart_hours: 24
+  group: per-person
+  brief:
+  - B2
+  - B5
+  question: Aino has asthma. The official scale says 'Moderate'. Should she hear about it?
+  shows:
+  - baseline
+  - sensitivity
+  - climb
+  - elevated
+  - message
+  beats:
+  - at: '2026-08-24T05:20:00Z'
+    title: Heads-up
+    note: 'Six times Helsinki''s usual: unusual here, and Aino is sensitive.'
 - id: glitch-ignored
   label: Glitch ignored
   user_id: rohan
@@ -33,6 +85,17 @@ scenarios:
   description: Mumbai's monitor reported one implausible hour (2026-10-15T12:30:00Z). OpenAQ didn't flag it; the
     agent excluded it as a glitch and said nothing.
   chart_hours: 14
+  group: bad-data
+  brief:
+  - B2d
+  question: A sensor reports one absurd hour. Does the agent raise an alarm?
+  shows:
+  - glitch
+  - logged
+  beats:
+  - at: '2026-10-15T14:20:00Z'
+    title: Glitch ignored
+    note: 'One absurd hour between two normal ones: excluded, and nothing sent.'
 - id: quiet-night
   label: Quiet night
   user_id: priya
@@ -40,3 +103,17 @@ scenarios:
   until: '2026-10-18T01:30:00Z'
   description: 'Nothing worth saying: Priya''s 06:00 check-in found Bengaluru''s night cleaner than usual.'
   chart_hours: 24
+  group: quiet
+  brief:
+  - B6
+  question: A normal night. The agent says nothing, but can it still tell you why?
+  shows:
+  - logged
+  - check-in
+  beats:
+  - at: '2026-10-17T17:30:00Z'
+    title: Every hour logged
+    note: Nothing unusual, and the reason is recorded.
+  - at: '2026-10-18T00:30:00Z'
+    title: Check-in stays quiet
+    note: Nothing worse than usual, so no message.

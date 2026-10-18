@@ -7,7 +7,56 @@
   "outcome": "no_event",
   "reason_code": "NO_TRIGGER",
   "reason": "Nothing unusual.",
-  "trigger": "data"
+  "trigger": "data",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "period_end": "2026-10-16T23:30:00+00:00",
+     "z": -6.956,
+     "ewma": -6.024,
+     "cusum": 0.0,
+     "slope_6h": -0.038,
+     "nowcast": 5.6,
+     "band": "good",
+     "typical_band": "usg"
+    }
+   },
+   {
+    "layer": "D1",
+    "passed": false,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "label": null,
+     "fired": [],
+     "calm": true,
+     "near_misses": [],
+     "bars": {
+      "spike": 3.5,
+      "climb": 1.26,
+      "elevated": 8.0,
+      "floor": 4.0
+     },
+     "cusum": 0.0,
+     "k": 1.0
+    }
+   },
+   {
+    "layer": "D2",
+    "passed": false,
+    "reason_code": "NO_TRIGGER",
+    "inputs": {},
+    "values": {
+     "state": null,
+     "calm_run": 57,
+     "candidate": null
+    }
+   }
+  ]
  },
  {
   "id": "dec_15141",
@@ -17,7 +66,56 @@
   "outcome": "no_event",
   "reason_code": "NO_TRIGGER",
   "reason": "Nothing unusual.",
-  "trigger": "data"
+  "trigger": "data",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "period_end": "2026-10-17T00:30:00+00:00",
+     "z": -5.613,
+     "ewma": -5.403,
+     "cusum": 0.0,
+     "slope_6h": 0.016,
+     "nowcast": 8.0,
+     "band": "good",
+     "typical_band": "usg"
+    }
+   },
+   {
+    "layer": "D1",
+    "passed": false,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "label": null,
+     "fired": [],
+     "calm": true,
+     "near_misses": [],
+     "bars": {
+      "spike": 3.5,
+      "climb": 1.26,
+      "elevated": 8.0,
+      "floor": 4.0
+     },
+     "cusum": 0.0,
+     "k": 1.0
+    }
+   },
+   {
+    "layer": "D2",
+    "passed": false,
+    "reason_code": "NO_TRIGGER",
+    "inputs": {},
+    "values": {
+     "state": null,
+     "calm_run": 58,
+     "candidate": null
+    }
+   }
+  ]
  },
  {
   "id": "dec_15148",
@@ -27,7 +125,56 @@
   "outcome": "no_event",
   "reason_code": "NO_TRIGGER",
   "reason": "Nothing unusual.",
-  "trigger": "data"
+  "trigger": "data",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "period_end": "2026-10-17T01:30:00+00:00",
+     "z": -1.684,
+     "ewma": -3.831,
+     "cusum": 0.0,
+     "slope_6h": 0.144,
+     "nowcast": 18.4,
+     "band": "moderate",
+     "typical_band": "usg"
+    }
+   },
+   {
+    "layer": "D1",
+    "passed": false,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "label": null,
+     "fired": [],
+     "calm": true,
+     "near_misses": [],
+     "bars": {
+      "spike": 3.5,
+      "climb": 1.26,
+      "elevated": 8.0,
+      "floor": 4.0
+     },
+     "cusum": 0.0,
+     "k": 1.0
+    }
+   },
+   {
+    "layer": "D2",
+    "passed": false,
+    "reason_code": "NO_TRIGGER",
+    "inputs": {},
+    "values": {
+     "state": null,
+     "calm_run": 59,
+     "candidate": null
+    }
+   }
+  ]
  },
  {
   "id": "dec_15154",
@@ -37,7 +184,56 @@
   "outcome": "no_event",
   "reason_code": "NO_TRIGGER",
   "reason": "Nothing unusual.",
-  "trigger": "data"
+  "trigger": "data",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "period_end": "2026-10-17T02:30:00+00:00",
+     "z": -1.457,
+     "ewma": -2.977,
+     "cusum": 0.0,
+     "slope_6h": 0.349,
+     "nowcast": 24.6,
+     "band": "moderate",
+     "typical_band": "usg"
+    }
+   },
+   {
+    "layer": "D1",
+    "passed": false,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "label": null,
+     "fired": [],
+     "calm": true,
+     "near_misses": [],
+     "bars": {
+      "spike": 3.5,
+      "climb": 1.26,
+      "elevated": 8.0,
+      "floor": 4.0
+     },
+     "cusum": 0.0,
+     "k": 1.0
+    }
+   },
+   {
+    "layer": "D2",
+    "passed": false,
+    "reason_code": "NO_TRIGGER",
+    "inputs": {},
+    "values": {
+     "state": null,
+     "calm_run": 60,
+     "candidate": null
+    }
+   }
+  ]
  },
  {
   "id": "dec_15162",
@@ -47,7 +243,56 @@
   "outcome": "no_event",
   "reason_code": "NO_TRIGGER",
   "reason": "Nothing unusual.",
-  "trigger": "data"
+  "trigger": "data",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "period_end": "2026-10-17T03:30:00+00:00",
+     "z": -1.581,
+     "ewma": -2.467,
+     "cusum": 0.0,
+     "slope_6h": 0.405,
+     "nowcast": 28.6,
+     "band": "moderate",
+     "typical_band": "usg"
+    }
+   },
+   {
+    "layer": "D1",
+    "passed": false,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "label": null,
+     "fired": [],
+     "calm": true,
+     "near_misses": [],
+     "bars": {
+      "spike": 3.5,
+      "climb": 1.26,
+      "elevated": 8.0,
+      "floor": 4.0
+     },
+     "cusum": 0.0,
+     "k": 1.0
+    }
+   },
+   {
+    "layer": "D2",
+    "passed": false,
+    "reason_code": "NO_TRIGGER",
+    "inputs": {},
+    "values": {
+     "state": null,
+     "calm_run": 61,
+     "candidate": null
+    }
+   }
+  ]
  },
  {
   "id": "dec_15168",
@@ -57,7 +302,56 @@
   "outcome": "no_event",
   "reason_code": "NO_TRIGGER",
   "reason": "Nothing unusual.",
-  "trigger": "data"
+  "trigger": "data",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "period_end": "2026-10-17T04:30:00+00:00",
+     "z": -1.382,
+     "ewma": -2.078,
+     "cusum": 0.0,
+     "slope_6h": 0.347,
+     "nowcast": 31.9,
+     "band": "moderate",
+     "typical_band": "usg"
+    }
+   },
+   {
+    "layer": "D1",
+    "passed": false,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "label": null,
+     "fired": [],
+     "calm": true,
+     "near_misses": [],
+     "bars": {
+      "spike": 3.5,
+      "climb": 1.26,
+      "elevated": 8.0,
+      "floor": 4.0
+     },
+     "cusum": 0.0,
+     "k": 1.0
+    }
+   },
+   {
+    "layer": "D2",
+    "passed": false,
+    "reason_code": "NO_TRIGGER",
+    "inputs": {},
+    "values": {
+     "state": null,
+     "calm_run": 62,
+     "candidate": null
+    }
+   }
+  ]
  },
  {
   "id": "dec_15175",
@@ -67,7 +361,56 @@
   "outcome": "no_event",
   "reason_code": "NO_TRIGGER",
   "reason": "Nothing unusual.",
-  "trigger": "data"
+  "trigger": "data",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "period_end": "2026-10-17T05:30:00+00:00",
+     "z": -0.987,
+     "ewma": -1.694,
+     "cusum": 0.0,
+     "slope_6h": 0.098,
+     "nowcast": 36.8,
+     "band": "usg",
+     "typical_band": "usg"
+    }
+   },
+   {
+    "layer": "D1",
+    "passed": false,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "label": null,
+     "fired": [],
+     "calm": true,
+     "near_misses": [],
+     "bars": {
+      "spike": 3.5,
+      "climb": 1.26,
+      "elevated": 8.0,
+      "floor": 4.0
+     },
+     "cusum": 0.0,
+     "k": 1.0
+    }
+   },
+   {
+    "layer": "D2",
+    "passed": false,
+    "reason_code": "NO_TRIGGER",
+    "inputs": {},
+    "values": {
+     "state": null,
+     "calm_run": 63,
+     "candidate": null
+    }
+   }
+  ]
  },
  {
   "id": "dec_15182",
@@ -77,7 +420,56 @@
   "outcome": "no_event",
   "reason_code": "NO_TRIGGER",
   "reason": "Nothing unusual.",
-  "trigger": "data"
+  "trigger": "data",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "period_end": "2026-10-17T06:30:00+00:00",
+     "z": -1.025,
+     "ewma": -1.421,
+     "cusum": 0.0,
+     "slope_6h": 0.062,
+     "nowcast": 37.8,
+     "band": "usg",
+     "typical_band": "usg"
+    }
+   },
+   {
+    "layer": "D1",
+    "passed": false,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "label": null,
+     "fired": [],
+     "calm": true,
+     "near_misses": [],
+     "bars": {
+      "spike": 3.5,
+      "climb": 1.26,
+      "elevated": 8.0,
+      "floor": 4.0
+     },
+     "cusum": 0.0,
+     "k": 1.0
+    }
+   },
+   {
+    "layer": "D2",
+    "passed": false,
+    "reason_code": "NO_TRIGGER",
+    "inputs": {},
+    "values": {
+     "state": null,
+     "calm_run": 64,
+     "candidate": null
+    }
+   }
+  ]
  },
  {
   "id": "dec_15189",
@@ -87,7 +479,56 @@
   "outcome": "no_event",
   "reason_code": "NO_TRIGGER",
   "reason": "Nothing unusual.",
-  "trigger": "data"
+  "trigger": "data",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "period_end": "2026-10-17T07:30:00+00:00",
+     "z": -0.563,
+     "ewma": -1.125,
+     "cusum": 0.0,
+     "slope_6h": 0.055,
+     "nowcast": 37.6,
+     "band": "usg",
+     "typical_band": "usg"
+    }
+   },
+   {
+    "layer": "D1",
+    "passed": false,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "label": null,
+     "fired": [],
+     "calm": true,
+     "near_misses": [],
+     "bars": {
+      "spike": 3.5,
+      "climb": 1.26,
+      "elevated": 8.0,
+      "floor": 4.0
+     },
+     "cusum": 0.0,
+     "k": 1.0
+    }
+   },
+   {
+    "layer": "D2",
+    "passed": false,
+    "reason_code": "NO_TRIGGER",
+    "inputs": {},
+    "values": {
+     "state": null,
+     "calm_run": 65,
+     "candidate": null
+    }
+   }
+  ]
  },
  {
   "id": "dec_15195",
@@ -97,7 +538,56 @@
   "outcome": "no_event",
   "reason_code": "NO_TRIGGER",
   "reason": "Nothing unusual.",
-  "trigger": "data"
+  "trigger": "data",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "period_end": "2026-10-17T08:30:00+00:00",
+     "z": -1.138,
+     "ewma": -1.09,
+     "cusum": 0.0,
+     "slope_6h": -0.001,
+     "nowcast": 35.0,
+     "band": "moderate",
+     "typical_band": "usg"
+    }
+   },
+   {
+    "layer": "D1",
+    "passed": false,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "label": null,
+     "fired": [],
+     "calm": true,
+     "near_misses": [],
+     "bars": {
+      "spike": 3.5,
+      "climb": 1.26,
+      "elevated": 8.0,
+      "floor": 4.0
+     },
+     "cusum": 0.0,
+     "k": 1.0
+    }
+   },
+   {
+    "layer": "D2",
+    "passed": false,
+    "reason_code": "NO_TRIGGER",
+    "inputs": {},
+    "values": {
+     "state": null,
+     "calm_run": 66,
+     "candidate": null
+    }
+   }
+  ]
  },
  {
   "id": "dec_15201",
@@ -107,7 +597,56 @@
   "outcome": "no_event",
   "reason_code": "NO_TRIGGER",
   "reason": "Nothing unusual.",
-  "trigger": "data"
+  "trigger": "data",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "period_end": "2026-10-17T09:30:00+00:00",
+     "z": -2.049,
+     "ewma": -1.304,
+     "cusum": 0.0,
+     "slope_6h": -0.068,
+     "nowcast": 30.4,
+     "band": "moderate",
+     "typical_band": "usg"
+    }
+   },
+   {
+    "layer": "D1",
+    "passed": false,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "label": null,
+     "fired": [],
+     "calm": true,
+     "near_misses": [],
+     "bars": {
+      "spike": 3.5,
+      "climb": 1.26,
+      "elevated": 8.0,
+      "floor": 4.0
+     },
+     "cusum": 0.0,
+     "k": 1.0
+    }
+   },
+   {
+    "layer": "D2",
+    "passed": false,
+    "reason_code": "NO_TRIGGER",
+    "inputs": {},
+    "values": {
+     "state": null,
+     "calm_run": 67,
+     "candidate": null
+    }
+   }
+  ]
  },
  {
   "id": "dec_15208",
@@ -117,7 +656,56 @@
   "outcome": "no_event",
   "reason_code": "NO_TRIGGER",
   "reason": "Nothing unusual.",
-  "trigger": "data"
+  "trigger": "data",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "period_end": "2026-10-17T10:30:00+00:00",
+     "z": -4.473,
+     "ewma": -2.182,
+     "cusum": 0.0,
+     "slope_6h": -0.14,
+     "nowcast": 23.7,
+     "band": "moderate",
+     "typical_band": "usg"
+    }
+   },
+   {
+    "layer": "D1",
+    "passed": false,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "label": null,
+     "fired": [],
+     "calm": true,
+     "near_misses": [],
+     "bars": {
+      "spike": 3.5,
+      "climb": 1.26,
+      "elevated": 8.0,
+      "floor": 4.0
+     },
+     "cusum": 0.0,
+     "k": 1.0
+    }
+   },
+   {
+    "layer": "D2",
+    "passed": false,
+    "reason_code": "NO_TRIGGER",
+    "inputs": {},
+    "values": {
+     "state": null,
+     "calm_run": 68,
+     "candidate": null
+    }
+   }
+  ]
  },
  {
   "id": "dec_15215",
@@ -127,7 +715,56 @@
   "outcome": "no_event",
   "reason_code": "NO_TRIGGER",
   "reason": "Nothing unusual.",
-  "trigger": "data"
+  "trigger": "data",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "period_end": "2026-10-17T11:30:00+00:00",
+     "z": -2.663,
+     "ewma": -1.921,
+     "cusum": 0.0,
+     "slope_6h": -0.161,
+     "nowcast": 21.4,
+     "band": "moderate",
+     "typical_band": "usg"
+    }
+   },
+   {
+    "layer": "D1",
+    "passed": false,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "label": null,
+     "fired": [],
+     "calm": true,
+     "near_misses": [],
+     "bars": {
+      "spike": 3.5,
+      "climb": 1.26,
+      "elevated": 8.0,
+      "floor": 4.0
+     },
+     "cusum": 0.0,
+     "k": 1.0
+    }
+   },
+   {
+    "layer": "D2",
+    "passed": false,
+    "reason_code": "NO_TRIGGER",
+    "inputs": {},
+    "values": {
+     "state": null,
+     "calm_run": 69,
+     "candidate": null
+    }
+   }
+  ]
  },
  {
   "id": "dec_15222",
@@ -137,7 +774,56 @@
   "outcome": "no_event",
   "reason_code": "NO_TRIGGER",
   "reason": "Nothing unusual.",
-  "trigger": "data"
+  "trigger": "data",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "period_end": "2026-10-17T12:30:00+00:00",
+     "z": -2.102,
+     "ewma": -1.854,
+     "cusum": 0.0,
+     "slope_6h": -0.141,
+     "nowcast": 21.5,
+     "band": "moderate",
+     "typical_band": "usg"
+    }
+   },
+   {
+    "layer": "D1",
+    "passed": false,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "label": null,
+     "fired": [],
+     "calm": true,
+     "near_misses": [],
+     "bars": {
+      "spike": 3.5,
+      "climb": 1.26,
+      "elevated": 8.0,
+      "floor": 4.0
+     },
+     "cusum": 0.0,
+     "k": 1.0
+    }
+   },
+   {
+    "layer": "D2",
+    "passed": false,
+    "reason_code": "NO_TRIGGER",
+    "inputs": {},
+    "values": {
+     "state": null,
+     "calm_run": 70,
+     "candidate": null
+    }
+   }
+  ]
  },
  {
   "id": "dec_15230",
@@ -147,7 +833,56 @@
   "outcome": "no_event",
   "reason_code": "NO_TRIGGER",
   "reason": "Nothing unusual.",
-  "trigger": "data"
+  "trigger": "data",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "period_end": "2026-10-17T13:30:00+00:00",
+     "z": -1.384,
+     "ewma": -1.629,
+     "cusum": 0.0,
+     "slope_6h": -0.04,
+     "nowcast": 23.9,
+     "band": "moderate",
+     "typical_band": "usg"
+    }
+   },
+   {
+    "layer": "D1",
+    "passed": false,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "label": null,
+     "fired": [],
+     "calm": true,
+     "near_misses": [],
+     "bars": {
+      "spike": 3.5,
+      "climb": 1.26,
+      "elevated": 8.0,
+      "floor": 4.0
+     },
+     "cusum": 0.0,
+     "k": 1.0
+    }
+   },
+   {
+    "layer": "D2",
+    "passed": false,
+    "reason_code": "NO_TRIGGER",
+    "inputs": {},
+    "values": {
+     "state": null,
+     "calm_run": 71,
+     "candidate": null
+    }
+   }
+  ]
  },
  {
   "id": "dec_15237",
@@ -157,7 +892,56 @@
   "outcome": "no_event",
   "reason_code": "NO_TRIGGER",
   "reason": "Nothing unusual.",
-  "trigger": "data"
+  "trigger": "data",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "period_end": "2026-10-17T14:30:00+00:00",
+     "z": -2.338,
+     "ewma": -1.747,
+     "cusum": 0.0,
+     "slope_6h": 0.114,
+     "nowcast": 26.3,
+     "band": "moderate",
+     "typical_band": "usg"
+    }
+   },
+   {
+    "layer": "D1",
+    "passed": false,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "label": null,
+     "fired": [],
+     "calm": true,
+     "near_misses": [],
+     "bars": {
+      "spike": 3.5,
+      "climb": 1.26,
+      "elevated": 8.0,
+      "floor": 4.0
+     },
+     "cusum": 0.0,
+     "k": 1.0
+    }
+   },
+   {
+    "layer": "D2",
+    "passed": false,
+    "reason_code": "NO_TRIGGER",
+    "inputs": {},
+    "values": {
+     "state": null,
+     "calm_run": 72,
+     "candidate": null
+    }
+   }
+  ]
  },
  {
   "id": "dec_15243",
@@ -167,7 +951,56 @@
   "outcome": "no_event",
   "reason_code": "NO_TRIGGER",
   "reason": "Nothing unusual.",
-  "trigger": "data"
+  "trigger": "data",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "period_end": "2026-10-17T15:30:00+00:00",
+     "z": -11.694,
+     "ewma": -4.611,
+     "cusum": 0.0,
+     "slope_6h": 0.114,
+     "nowcast": 16.6,
+     "band": "moderate",
+     "typical_band": "usg"
+    }
+   },
+   {
+    "layer": "D1",
+    "passed": false,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "label": null,
+     "fired": [],
+     "calm": true,
+     "near_misses": [],
+     "bars": {
+      "spike": 3.5,
+      "climb": 1.26,
+      "elevated": 8.0,
+      "floor": 4.0
+     },
+     "cusum": 0.0,
+     "k": 1.0
+    }
+   },
+   {
+    "layer": "D2",
+    "passed": false,
+    "reason_code": "NO_TRIGGER",
+    "inputs": {},
+    "values": {
+     "state": null,
+     "calm_run": 72,
+     "candidate": null
+    }
+   }
+  ]
  },
  {
   "id": "dec_15250",
@@ -177,7 +1010,56 @@
   "outcome": "no_event",
   "reason_code": "NO_TRIGGER",
   "reason": "Nothing unusual.",
-  "trigger": "data"
+  "trigger": "data",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "period_end": "2026-10-17T16:30:00+00:00",
+     "z": -7.823,
+     "ewma": -4.664,
+     "cusum": 0.0,
+     "slope_6h": -0.066,
+     "nowcast": 15.0,
+     "band": "moderate",
+     "typical_band": "usg"
+    }
+   },
+   {
+    "layer": "D1",
+    "passed": false,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "label": null,
+     "fired": [],
+     "calm": true,
+     "near_misses": [],
+     "bars": {
+      "spike": 3.5,
+      "climb": 1.26,
+      "elevated": 8.0,
+      "floor": 4.0
+     },
+     "cusum": 0.0,
+     "k": 1.0
+    }
+   },
+   {
+    "layer": "D2",
+    "passed": false,
+    "reason_code": "NO_TRIGGER",
+    "inputs": {},
+    "values": {
+     "state": null,
+     "calm_run": 72,
+     "candidate": null
+    }
+   }
+  ]
  },
  {
   "id": "dec_15257",
@@ -187,7 +1069,56 @@
   "outcome": "no_event",
   "reason_code": "NO_TRIGGER",
   "reason": "Nothing unusual.",
-  "trigger": "data"
+  "trigger": "data",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "period_end": "2026-10-17T17:30:00+00:00",
+     "z": -7.224,
+     "ewma": -5.399,
+     "cusum": 0.0,
+     "slope_6h": -0.111,
+     "nowcast": 14.4,
+     "band": "moderate",
+     "typical_band": "usg"
+    }
+   },
+   {
+    "layer": "D1",
+    "passed": false,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "label": null,
+     "fired": [],
+     "calm": true,
+     "near_misses": [],
+     "bars": {
+      "spike": 3.5,
+      "climb": 1.26,
+      "elevated": 8.0,
+      "floor": 4.0
+     },
+     "cusum": 0.0,
+     "k": 1.0
+    }
+   },
+   {
+    "layer": "D2",
+    "passed": false,
+    "reason_code": "NO_TRIGGER",
+    "inputs": {},
+    "values": {
+     "state": null,
+     "calm_run": 72,
+     "candidate": null
+    }
+   }
+  ]
  },
  {
   "id": "dec_15264",
@@ -197,7 +1128,56 @@
   "outcome": "no_event",
   "reason_code": "NO_TRIGGER",
   "reason": "Nothing unusual.",
-  "trigger": "data"
+  "trigger": "data",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "period_end": "2026-10-17T18:30:00+00:00",
+     "z": -4.689,
+     "ewma": -5.045,
+     "cusum": 0.0,
+     "slope_6h": -0.11,
+     "nowcast": 14.6,
+     "band": "moderate",
+     "typical_band": "usg"
+    }
+   },
+   {
+    "layer": "D1",
+    "passed": false,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "label": null,
+     "fired": [],
+     "calm": true,
+     "near_misses": [],
+     "bars": {
+      "spike": 3.5,
+      "climb": 1.26,
+      "elevated": 8.0,
+      "floor": 4.0
+     },
+     "cusum": 0.0,
+     "k": 1.0
+    }
+   },
+   {
+    "layer": "D2",
+    "passed": false,
+    "reason_code": "NO_TRIGGER",
+    "inputs": {},
+    "values": {
+     "state": null,
+     "calm_run": 72,
+     "candidate": null
+    }
+   }
+  ]
  },
  {
   "id": "dec_15271",
@@ -207,7 +1187,56 @@
   "outcome": "no_event",
   "reason_code": "NO_TRIGGER",
   "reason": "Nothing unusual.",
-  "trigger": "data"
+  "trigger": "data",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "period_end": "2026-10-17T19:30:00+00:00",
+     "z": -1.896,
+     "ewma": -4.079,
+     "cusum": 0.0,
+     "slope_6h": 0.065,
+     "nowcast": 18.5,
+     "band": "moderate",
+     "typical_band": "usg"
+    }
+   },
+   {
+    "layer": "D1",
+    "passed": false,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "label": null,
+     "fired": [],
+     "calm": true,
+     "near_misses": [],
+     "bars": {
+      "spike": 3.5,
+      "climb": 1.26,
+      "elevated": 8.0,
+      "floor": 4.0
+     },
+     "cusum": 0.0,
+     "k": 1.0
+    }
+   },
+   {
+    "layer": "D2",
+    "passed": false,
+    "reason_code": "NO_TRIGGER",
+    "inputs": {},
+    "values": {
+     "state": null,
+     "calm_run": 72,
+     "candidate": null
+    }
+   }
+  ]
  },
  {
   "id": "dec_15278",
@@ -217,7 +1246,56 @@
   "outcome": "no_event",
   "reason_code": "NO_TRIGGER",
   "reason": "Nothing unusual.",
-  "trigger": "data"
+  "trigger": "data",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "period_end": "2026-10-17T20:30:00+00:00",
+     "z": -0.705,
+     "ewma": -2.934,
+     "cusum": 0.0,
+     "slope_6h": 0.246,
+     "nowcast": 24.2,
+     "band": "moderate",
+     "typical_band": "usg"
+    }
+   },
+   {
+    "layer": "D1",
+    "passed": false,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "label": null,
+     "fired": [],
+     "calm": true,
+     "near_misses": [],
+     "bars": {
+      "spike": 3.5,
+      "climb": 1.26,
+      "elevated": 8.0,
+      "floor": 4.0
+     },
+     "cusum": 0.0,
+     "k": 1.0
+    }
+   },
+   {
+    "layer": "D2",
+    "passed": false,
+    "reason_code": "NO_TRIGGER",
+    "inputs": {},
+    "values": {
+     "state": null,
+     "calm_run": 72,
+     "candidate": null
+    }
+   }
+  ]
  },
  {
   "id": "dec_15285",
@@ -227,7 +1305,56 @@
   "outcome": "no_event",
   "reason_code": "NO_TRIGGER",
   "reason": "Nothing unusual.",
-  "trigger": "data"
+  "trigger": "data",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "period_end": "2026-10-17T21:30:00+00:00",
+     "z": -1.119,
+     "ewma": -2.359,
+     "cusum": 0.0,
+     "slope_6h": 0.174,
+     "nowcast": 26.4,
+     "band": "moderate",
+     "typical_band": "usg"
+    }
+   },
+   {
+    "layer": "D1",
+    "passed": false,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "label": null,
+     "fired": [],
+     "calm": true,
+     "near_misses": [],
+     "bars": {
+      "spike": 3.5,
+      "climb": 1.26,
+      "elevated": 8.0,
+      "floor": 4.0
+     },
+     "cusum": 0.0,
+     "k": 1.0
+    }
+   },
+   {
+    "layer": "D2",
+    "passed": false,
+    "reason_code": "NO_TRIGGER",
+    "inputs": {},
+    "values": {
+     "state": null,
+     "calm_run": 72,
+     "candidate": null
+    }
+   }
+  ]
  },
  {
   "id": "dec_15292",
@@ -237,7 +1364,56 @@
   "outcome": "no_event",
   "reason_code": "NO_TRIGGER",
   "reason": "Nothing unusual.",
-  "trigger": "data"
+  "trigger": "data",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "period_end": "2026-10-17T22:30:00+00:00",
+     "z": -0.978,
+     "ewma": -1.861,
+     "cusum": 0.0,
+     "slope_6h": 0.172,
+     "nowcast": 28.4,
+     "band": "moderate",
+     "typical_band": "usg"
+    }
+   },
+   {
+    "layer": "D1",
+    "passed": false,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "label": null,
+     "fired": [],
+     "calm": true,
+     "near_misses": [],
+     "bars": {
+      "spike": 3.5,
+      "climb": 1.26,
+      "elevated": 8.0,
+      "floor": 4.0
+     },
+     "cusum": 0.0,
+     "k": 1.0
+    }
+   },
+   {
+    "layer": "D2",
+    "passed": false,
+    "reason_code": "NO_TRIGGER",
+    "inputs": {},
+    "values": {
+     "state": null,
+     "calm_run": 72,
+     "candidate": null
+    }
+   }
+  ]
  },
  {
   "id": "dec_15295",
@@ -247,7 +1423,24 @@
   "outcome": "no_event",
   "reason_code": "CHECKIN_QUIET",
   "reason": "Check-in: nothing worse than usual today.",
-  "trigger": "clock"
+  "trigger": "clock",
+  "trace": [
+   {
+    "layer": "D8",
+    "passed": false,
+    "reason_code": "CHECKIN_QUIET",
+    "inputs": {},
+    "values": {
+     "check_in": "06:00",
+     "absorbed_held": 0,
+     "hours_considered": 6,
+     "band": "moderate",
+     "typical_band": "usg",
+     "ewma": -1.8610449793747779,
+     "recent_notice": false
+    }
+   }
+  ]
  },
  {
   "id": "dec_15301",
@@ -257,7 +1450,56 @@
   "outcome": "no_event",
   "reason_code": "NO_TRIGGER",
   "reason": "Nothing unusual.",
-  "trigger": "data"
+  "trigger": "data",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "period_end": "2026-10-17T23:30:00+00:00",
+     "z": -0.679,
+     "ewma": -1.448,
+     "cusum": 0.0,
+     "slope_6h": 0.098,
+     "nowcast": 30.8,
+     "band": "moderate",
+     "typical_band": "usg"
+    }
+   },
+   {
+    "layer": "D1",
+    "passed": false,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "label": null,
+     "fired": [],
+     "calm": true,
+     "near_misses": [],
+     "bars": {
+      "spike": 3.5,
+      "climb": 1.26,
+      "elevated": 8.0,
+      "floor": 4.0
+     },
+     "cusum": 0.0,
+     "k": 1.0
+    }
+   },
+   {
+    "layer": "D2",
+    "passed": false,
+    "reason_code": "NO_TRIGGER",
+    "inputs": {},
+    "values": {
+     "state": null,
+     "calm_run": 72,
+     "candidate": null
+    }
+   }
+  ]
  },
  {
   "id": "dec_15308",
@@ -267,7 +1509,56 @@
   "outcome": "no_event",
   "reason_code": "NO_TRIGGER",
   "reason": "Nothing unusual.",
-  "trigger": "data"
+  "trigger": "data",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "period_end": "2026-10-18T00:30:00+00:00",
+     "z": -0.491,
+     "ewma": -1.151,
+     "cusum": 0.0,
+     "slope_6h": 0.09,
+     "nowcast": 34.4,
+     "band": "moderate",
+     "typical_band": "usg"
+    }
+   },
+   {
+    "layer": "D1",
+    "passed": false,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "label": null,
+     "fired": [],
+     "calm": true,
+     "near_misses": [],
+     "bars": {
+      "spike": 3.5,
+      "climb": 1.26,
+      "elevated": 8.0,
+      "floor": 4.0
+     },
+     "cusum": 0.0,
+     "k": 1.0
+    }
+   },
+   {
+    "layer": "D2",
+    "passed": false,
+    "reason_code": "NO_TRIGGER",
+    "inputs": {},
+    "values": {
+     "state": null,
+     "calm_run": 72,
+     "candidate": null
+    }
+   }
+  ]
  },
  {
   "id": "dec_15315",
@@ -277,6 +1568,55 @@
   "outcome": "no_event",
   "reason_code": "NO_TRIGGER",
   "reason": "Nothing unusual.",
-  "trigger": "data"
+  "trigger": "data",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "period_end": "2026-10-18T01:30:00+00:00",
+     "z": -0.291,
+     "ewma": -0.879,
+     "cusum": 0.0,
+     "slope_6h": 0.085,
+     "nowcast": 38.2,
+     "band": "usg",
+     "typical_band": "usg"
+    }
+   },
+   {
+    "layer": "D1",
+    "passed": false,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "label": null,
+     "fired": [],
+     "calm": true,
+     "near_misses": [],
+     "bars": {
+      "spike": 3.5,
+      "climb": 1.26,
+      "elevated": 8.0,
+      "floor": 4.0
+     },
+     "cusum": 0.0,
+     "k": 1.0
+    }
+   },
+   {
+    "layer": "D2",
+    "passed": false,
+    "reason_code": "NO_TRIGGER",
+    "inputs": {},
+    "values": {
+     "state": null,
+     "calm_run": 72,
+     "candidate": null
+    }
+   }
+  ]
  }
 ]

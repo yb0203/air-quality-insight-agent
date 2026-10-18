@@ -1,7 +1,7 @@
 {# The data behind the watch: what the agent saw, and what it decided each hour. Demo frame, not product. #}
 <section class="chart-panel" aria-label="Readings and decisions">
   <h2 class="chart-title">{{ chart.title }}</h2>
-  <p class="chart-sub">Click any hour to see the watch at that moment.</p>
+  <p class="chart-sub">White line: PM2.5 each hour. Grey: what's usual here at that hour. Click any hour to see the watch when the agent decided about it.</p>
 
   <svg class="chart" viewBox="0 0 {{ chart.width }} {{ chart.height }}" role="img"
        aria-label="{{ chart.title }}, with the usual level for each hour and the agent's decisions">
@@ -49,6 +49,14 @@
               height="{{ chart.lane_y + 14 - chart.top }}"></rect></a>
     {% endfor %}
 
+    {% for b in chart.beats %}
+      <a href="{{ b.href }}" class="beat-pin{% if b.current %} current{% endif %}"><title>Beat {{ b.n }}</title>
+        <line x1="{{ '%.1f' % b.x }}" x2="{{ '%.1f' % b.x }}" y1="{{ chart.beat_y + 9 }}" y2="{{ chart.lane_y }}"></line>
+        <circle cx="{{ '%.1f' % b.bx }}" cy="{{ chart.beat_y }}" r="9"></circle>
+        <text x="{{ '%.1f' % b.bx }}" y="{{ chart.beat_y + 4 }}" text-anchor="middle">{{ b.n }}</text>
+      </a>
+    {% endfor %}
+
     {% for m in chart.marks %}
       <a href="{{ m.href }}" class="mark mark-{{ m.kind }}"><title>{{ m.tip }}</title>
         {% if m.focus %}<circle class="focus-ring" cx="{{ '%.1f' % m.x }}" cy="{{ chart.lane_y }}" r="10"></circle>{% endif %}
@@ -71,14 +79,4 @@
     {% if chart.ignored %}<li><span class="key key-ignored"></span>ignored reading</li>{% endif %}
   </ul>
 
-  <div class="decided">
-    {% if reading %}
-      <p class="decided-reading"><strong>{{ reading_at }}</strong> · PM2.5 {{ '%.0f' % reading.pm25 }}{% if reading.typical_pm25 is not none %}, usual {{ '%.0f' % reading.typical_pm25 }}{% endif %}{% if reading.band %} · {{ band_labels[reading.band] }}{% endif %}{% if reading.dq %} · excluded ({{ reading.dq }}){% endif %}</p>
-    {% endif %}
-    {% if decided %}
-      <p class="decided-line"><span class="pill pill-{{ decided.outcome }}">{{ decided_label }}</span>
-        <code>{{ decided.reason_code }}</code> at {{ decided_at }}{% if decided.trigger == "clock" %} (clock){% endif %}</p>
-      <p class="decided-reason">{{ decided.reason }}</p>
-    {% endif %}
-  </div>
 </section>

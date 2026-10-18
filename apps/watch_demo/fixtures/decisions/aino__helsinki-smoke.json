@@ -7,7 +7,56 @@
   "outcome": "no_event",
   "reason_code": "NO_TRIGGER",
   "reason": "Nothing unusual.",
-  "trigger": "data"
+  "trigger": "data",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "period_end": "2026-08-23T10:00:00+00:00",
+     "z": -1.176,
+     "ewma": -1.43,
+     "cusum": 0.0,
+     "slope_6h": 0.031,
+     "nowcast": 1.3,
+     "band": "good",
+     "typical_band": "good"
+    }
+   },
+   {
+    "layer": "D1",
+    "passed": false,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "label": null,
+     "fired": [],
+     "calm": true,
+     "near_misses": [],
+     "bars": {
+      "spike": 2.625,
+      "climb": 0.9450000000000001,
+      "elevated": 6.0,
+      "floor": 3.0
+     },
+     "cusum": 0.0,
+     "k": 0.75
+    }
+   },
+   {
+    "layer": "D2",
+    "passed": false,
+    "reason_code": "NO_TRIGGER",
+    "inputs": {},
+    "values": {
+     "state": null,
+     "calm_run": 11,
+     "candidate": null
+    }
+   }
+  ]
  },
  {
   "id": "dec_5831",
@@ -17,7 +66,56 @@
   "outcome": "no_event",
   "reason_code": "NO_TRIGGER",
   "reason": "Nothing unusual.",
-  "trigger": "data"
+  "trigger": "data",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "period_end": "2026-08-23T11:00:00+00:00",
+     "z": -1.38,
+     "ewma": -1.374,
+     "cusum": 0.0,
+     "slope_6h": 0.031,
+     "nowcast": 1.6,
+     "band": "good",
+     "typical_band": "good"
+    }
+   },
+   {
+    "layer": "D1",
+    "passed": false,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "label": null,
+     "fired": [],
+     "calm": true,
+     "near_misses": [],
+     "bars": {
+      "spike": 2.625,
+      "climb": 0.9450000000000001,
+      "elevated": 6.0,
+      "floor": 3.0
+     },
+     "cusum": 0.0,
+     "k": 0.75
+    }
+   },
+   {
+    "layer": "D2",
+    "passed": false,
+    "reason_code": "NO_TRIGGER",
+    "inputs": {},
+    "values": {
+     "state": null,
+     "calm_run": 12,
+     "candidate": null
+    }
+   }
+  ]
  },
  {
   "id": "dec_5839",
@@ -27,7 +125,56 @@
   "outcome": "no_event",
   "reason_code": "NO_TRIGGER",
   "reason": "Nothing unusual.",
-  "trigger": "data"
+  "trigger": "data",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "period_end": "2026-08-23T12:00:00+00:00",
+     "z": -0.726,
+     "ewma": -1.085,
+     "cusum": 0.0,
+     "slope_6h": 0.066,
+     "nowcast": 1.9,
+     "band": "good",
+     "typical_band": "good"
+    }
+   },
+   {
+    "layer": "D1",
+    "passed": false,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "label": null,
+     "fired": [],
+     "calm": true,
+     "near_misses": [],
+     "bars": {
+      "spike": 2.625,
+      "climb": 0.9450000000000001,
+      "elevated": 6.0,
+      "floor": 3.0
+     },
+     "cusum": 0.0,
+     "k": 0.75
+    }
+   },
+   {
+    "layer": "D2",
+    "passed": false,
+    "reason_code": "NO_TRIGGER",
+    "inputs": {},
+    "values": {
+     "state": null,
+     "calm_run": 13,
+     "candidate": null
+    }
+   }
+  ]
  },
  {
   "id": "dec_5846",
@@ -37,7 +184,56 @@
   "outcome": "no_event",
   "reason_code": "NO_TRIGGER",
   "reason": "Nothing unusual.",
-  "trigger": "data"
+  "trigger": "data",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "period_end": "2026-08-23T13:00:00+00:00",
+     "z": -0.979,
+     "ewma": -1.05,
+     "cusum": 0.0,
+     "slope_6h": 0.092,
+     "nowcast": 2.1,
+     "band": "good",
+     "typical_band": "good"
+    }
+   },
+   {
+    "layer": "D1",
+    "passed": false,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "label": null,
+     "fired": [],
+     "calm": true,
+     "near_misses": [],
+     "bars": {
+      "spike": 2.625,
+      "climb": 0.9450000000000001,
+      "elevated": 6.0,
+      "floor": 3.0
+     },
+     "cusum": 0.0,
+     "k": 0.75
+    }
+   },
+   {
+    "layer": "D2",
+    "passed": false,
+    "reason_code": "NO_TRIGGER",
+    "inputs": {},
+    "values": {
+     "state": null,
+     "calm_run": 14,
+     "candidate": null
+    }
+   }
+  ]
  },
  {
   "id": "dec_5853",
@@ -47,7 +243,56 @@
   "outcome": "no_event",
   "reason_code": "NO_TRIGGER",
   "reason": "Nothing unusual.",
-  "trigger": "data"
+  "trigger": "data",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "period_end": "2026-08-23T14:00:00+00:00",
+     "z": -0.648,
+     "ewma": -0.881,
+     "cusum": 0.0,
+     "slope_6h": 0.092,
+     "nowcast": 2.3,
+     "band": "good",
+     "typical_band": "good"
+    }
+   },
+   {
+    "layer": "D1",
+    "passed": false,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "label": null,
+     "fired": [],
+     "calm": true,
+     "near_misses": [],
+     "bars": {
+      "spike": 2.625,
+      "climb": 0.9450000000000001,
+      "elevated": 6.0,
+      "floor": 3.0
+     },
+     "cusum": 0.0,
+     "k": 0.75
+    }
+   },
+   {
+    "layer": "D2",
+    "passed": false,
+    "reason_code": "NO_TRIGGER",
+    "inputs": {},
+    "values": {
+     "state": null,
+     "calm_run": 15,
+     "candidate": null
+    }
+   }
+  ]
  },
  {
   "id": "dec_5860",
@@ -57,7 +302,56 @@
   "outcome": "no_event",
   "reason_code": "NO_TRIGGER",
   "reason": "Nothing unusual.",
-  "trigger": "data"
+  "trigger": "data",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "period_end": "2026-08-23T15:00:00+00:00",
+     "z": -0.705,
+     "ewma": -0.805,
+     "cusum": 0.0,
+     "slope_6h": 0.077,
+     "nowcast": 2.5,
+     "band": "good",
+     "typical_band": "good"
+    }
+   },
+   {
+    "layer": "D1",
+    "passed": false,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "label": null,
+     "fired": [],
+     "calm": true,
+     "near_misses": [],
+     "bars": {
+      "spike": 2.625,
+      "climb": 0.9450000000000001,
+      "elevated": 6.0,
+      "floor": 3.0
+     },
+     "cusum": 0.0,
+     "k": 0.75
+    }
+   },
+   {
+    "layer": "D2",
+    "passed": false,
+    "reason_code": "NO_TRIGGER",
+    "inputs": {},
+    "values": {
+     "state": null,
+     "calm_run": 16,
+     "candidate": null
+    }
+   }
+  ]
  },
  {
   "id": "dec_5867",
@@ -67,7 +361,56 @@
   "outcome": "no_event",
   "reason_code": "NO_TRIGGER",
   "reason": "Nothing unusual.",
-  "trigger": "data"
+  "trigger": "data",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "period_end": "2026-08-23T16:00:00+00:00",
+     "z": -0.634,
+     "ewma": -0.734,
+     "cusum": 0.0,
+     "slope_6h": 0.048,
+     "nowcast": 2.7,
+     "band": "good",
+     "typical_band": "good"
+    }
+   },
+   {
+    "layer": "D1",
+    "passed": false,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "label": null,
+     "fired": [],
+     "calm": true,
+     "near_misses": [],
+     "bars": {
+      "spike": 2.625,
+      "climb": 0.9450000000000001,
+      "elevated": 6.0,
+      "floor": 3.0
+     },
+     "cusum": 0.0,
+     "k": 0.75
+    }
+   },
+   {
+    "layer": "D2",
+    "passed": false,
+    "reason_code": "NO_TRIGGER",
+    "inputs": {},
+    "values": {
+     "state": null,
+     "calm_run": 17,
+     "candidate": null
+    }
+   }
+  ]
  },
  {
   "id": "dec_5874",
@@ -77,7 +420,56 @@
   "outcome": "no_event",
   "reason_code": "NO_TRIGGER",
   "reason": "Nothing unusual.",
-  "trigger": "data"
+  "trigger": "data",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "period_end": "2026-08-23T17:00:00+00:00",
+     "z": -0.488,
+     "ewma": -0.622,
+     "cusum": 0.0,
+     "slope_6h": 0.048,
+     "nowcast": 3.0,
+     "band": "good",
+     "typical_band": "good"
+    }
+   },
+   {
+    "layer": "D1",
+    "passed": false,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "label": null,
+     "fired": [],
+     "calm": true,
+     "near_misses": [],
+     "bars": {
+      "spike": 2.625,
+      "climb": 0.9450000000000001,
+      "elevated": 6.0,
+      "floor": 3.0
+     },
+     "cusum": 0.0,
+     "k": 0.75
+    }
+   },
+   {
+    "layer": "D2",
+    "passed": false,
+    "reason_code": "NO_TRIGGER",
+    "inputs": {},
+    "values": {
+     "state": null,
+     "calm_run": 18,
+     "candidate": null
+    }
+   }
+  ]
  },
  {
   "id": "dec_5881",
@@ -87,7 +479,56 @@
   "outcome": "no_event",
   "reason_code": "NO_TRIGGER",
   "reason": "Nothing unusual.",
-  "trigger": "data"
+  "trigger": "data",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "period_end": "2026-08-23T18:00:00+00:00",
+     "z": -0.445,
+     "ewma": -0.522,
+     "cusum": 0.0,
+     "slope_6h": 0.053,
+     "nowcast": 3.2,
+     "band": "good",
+     "typical_band": "good"
+    }
+   },
+   {
+    "layer": "D1",
+    "passed": false,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "label": null,
+     "fired": [],
+     "calm": true,
+     "near_misses": [],
+     "bars": {
+      "spike": 2.625,
+      "climb": 0.9450000000000001,
+      "elevated": 6.0,
+      "floor": 3.0
+     },
+     "cusum": 0.0,
+     "k": 0.75
+    }
+   },
+   {
+    "layer": "D2",
+    "passed": false,
+    "reason_code": "NO_TRIGGER",
+    "inputs": {},
+    "values": {
+     "state": null,
+     "calm_run": 19,
+     "candidate": null
+    }
+   }
+  ]
  },
  {
   "id": "dec_5888",
@@ -97,7 +538,56 @@
   "outcome": "no_event",
   "reason_code": "NO_TRIGGER",
   "reason": "Nothing unusual.",
-  "trigger": "data"
+  "trigger": "data",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "period_end": "2026-08-23T19:00:00+00:00",
+     "z": -0.082,
+     "ewma": -0.339,
+     "cusum": 0.0,
+     "slope_6h": 0.064,
+     "nowcast": 3.5,
+     "band": "good",
+     "typical_band": "good"
+    }
+   },
+   {
+    "layer": "D1",
+    "passed": false,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "label": null,
+     "fired": [],
+     "calm": true,
+     "near_misses": [],
+     "bars": {
+      "spike": 2.625,
+      "climb": 0.9450000000000001,
+      "elevated": 6.0,
+      "floor": 3.0
+     },
+     "cusum": 0.0,
+     "k": 0.75
+    }
+   },
+   {
+    "layer": "D2",
+    "passed": false,
+    "reason_code": "NO_TRIGGER",
+    "inputs": {},
+    "values": {
+     "state": null,
+     "calm_run": 20,
+     "candidate": null
+    }
+   }
+  ]
  },
  {
   "id": "dec_5895",
@@ -107,7 +597,56 @@
   "outcome": "no_event",
   "reason_code": "NO_TRIGGER",
   "reason": "Nothing unusual.",
-  "trigger": "data"
+  "trigger": "data",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "period_end": "2026-08-23T20:00:00+00:00",
+     "z": 0.357,
+     "ewma": -0.106,
+     "cusum": 0.0,
+     "slope_6h": 0.069,
+     "nowcast": 3.8,
+     "band": "good",
+     "typical_band": "good"
+    }
+   },
+   {
+    "layer": "D1",
+    "passed": false,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "label": null,
+     "fired": [],
+     "calm": true,
+     "near_misses": [],
+     "bars": {
+      "spike": 2.625,
+      "climb": 0.9450000000000001,
+      "elevated": 6.0,
+      "floor": 3.0
+     },
+     "cusum": 0.0,
+     "k": 0.75
+    }
+   },
+   {
+    "layer": "D2",
+    "passed": false,
+    "reason_code": "NO_TRIGGER",
+    "inputs": {},
+    "values": {
+     "state": null,
+     "calm_run": 21,
+     "candidate": null
+    }
+   }
+  ]
  },
  {
   "id": "dec_5902",
@@ -117,7 +656,56 @@
   "outcome": "no_event",
   "reason_code": "NO_TRIGGER",
   "reason": "Nothing unusual.",
-  "trigger": "data"
+  "trigger": "data",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "period_end": "2026-08-23T21:00:00+00:00",
+     "z": 0.371,
+     "ewma": 0.037,
+     "cusum": 0.0,
+     "slope_6h": 0.076,
+     "nowcast": 4.4,
+     "band": "good",
+     "typical_band": "good"
+    }
+   },
+   {
+    "layer": "D1",
+    "passed": false,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "label": null,
+     "fired": [],
+     "calm": true,
+     "near_misses": [],
+     "bars": {
+      "spike": 2.625,
+      "climb": 0.9450000000000001,
+      "elevated": 6.0,
+      "floor": 3.0
+     },
+     "cusum": 0.0,
+     "k": 0.75
+    }
+   },
+   {
+    "layer": "D2",
+    "passed": false,
+    "reason_code": "NO_TRIGGER",
+    "inputs": {},
+    "values": {
+     "state": null,
+     "calm_run": 22,
+     "candidate": null
+    }
+   }
+  ]
  },
  {
   "id": "dec_5909",
@@ -127,7 +715,56 @@
   "outcome": "no_event",
   "reason_code": "NO_TRIGGER",
   "reason": "Nothing unusual.",
-  "trigger": "data"
+  "trigger": "data",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "period_end": "2026-08-23T22:00:00+00:00",
+     "z": 0.643,
+     "ewma": 0.219,
+     "cusum": 0.143,
+     "slope_6h": 0.086,
+     "nowcast": 5.1,
+     "band": "good",
+     "typical_band": "good"
+    }
+   },
+   {
+    "layer": "D1",
+    "passed": false,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "label": null,
+     "fired": [],
+     "calm": true,
+     "near_misses": [],
+     "bars": {
+      "spike": 2.625,
+      "climb": 0.9450000000000001,
+      "elevated": 6.0,
+      "floor": 3.0
+     },
+     "cusum": 0.143,
+     "k": 0.75
+    }
+   },
+   {
+    "layer": "D2",
+    "passed": false,
+    "reason_code": "NO_TRIGGER",
+    "inputs": {},
+    "values": {
+     "state": null,
+     "calm_run": 23,
+     "candidate": null
+    }
+   }
+  ]
  },
  {
   "id": "dec_5918",
@@ -137,7 +774,56 @@
   "outcome": "no_event",
   "reason_code": "NO_TRIGGER",
   "reason": "Nothing unusual.",
-  "trigger": "data"
+  "trigger": "data",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "period_end": "2026-08-23T23:00:00+00:00",
+     "z": 1.305,
+     "ewma": 0.544,
+     "cusum": 0.947,
+     "slope_6h": 0.117,
+     "nowcast": 5.8,
+     "band": "good",
+     "typical_band": "good"
+    }
+   },
+   {
+    "layer": "D1",
+    "passed": false,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "label": null,
+     "fired": [],
+     "calm": false,
+     "near_misses": [],
+     "bars": {
+      "spike": 2.625,
+      "climb": 0.9450000000000001,
+      "elevated": 6.0,
+      "floor": 3.0
+     },
+     "cusum": 0.947,
+     "k": 0.75
+    }
+   },
+   {
+    "layer": "D2",
+    "passed": false,
+    "reason_code": "NO_TRIGGER",
+    "inputs": {},
+    "values": {
+     "state": null,
+     "calm_run": 0,
+     "candidate": null
+    }
+   }
+  ]
  },
  {
   "id": "dec_5925",
@@ -147,7 +833,58 @@
   "outcome": "no_event",
   "reason_code": "NO_TRIGGER",
   "reason": "Nothing unusual.",
-  "trigger": "data"
+  "trigger": "data",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "period_end": "2026-08-24T00:00:00+00:00",
+     "z": 1.568,
+     "ewma": 0.763,
+     "cusum": 1.595,
+     "slope_6h": 0.131,
+     "nowcast": 7.0,
+     "band": "good",
+     "typical_band": "good"
+    }
+   },
+   {
+    "layer": "D1",
+    "passed": false,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "label": null,
+     "fired": [],
+     "calm": false,
+     "near_misses": [
+      "climb"
+     ],
+     "bars": {
+      "spike": 2.625,
+      "climb": 0.9450000000000001,
+      "elevated": 6.0,
+      "floor": 3.0
+     },
+     "cusum": 2.015,
+     "k": 0.75
+    }
+   },
+   {
+    "layer": "D2",
+    "passed": false,
+    "reason_code": "NO_TRIGGER",
+    "inputs": {},
+    "values": {
+     "state": null,
+     "calm_run": 0,
+     "candidate": null
+    }
+   }
+  ]
  },
  {
   "id": "dec_5932",
@@ -157,7 +894,58 @@
   "outcome": "no_event",
   "reason_code": "NO_TRIGGER",
   "reason": "Nothing unusual.",
-  "trigger": "data"
+  "trigger": "data",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "period_end": "2026-08-24T01:00:00+00:00",
+     "z": 1.916,
+     "ewma": 1.075,
+     "cusum": 2.848,
+     "slope_6h": 0.151,
+     "nowcast": 9.3,
+     "band": "moderate",
+     "typical_band": "good"
+    }
+   },
+   {
+    "layer": "D1",
+    "passed": false,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "label": null,
+     "fired": [],
+     "calm": false,
+     "near_misses": [
+      "climb"
+     ],
+     "bars": {
+      "spike": 2.625,
+      "climb": 0.9450000000000001,
+      "elevated": 6.0,
+      "floor": 3.0
+     },
+     "cusum": 3.431,
+     "k": 0.75
+    }
+   },
+   {
+    "layer": "D2",
+    "passed": false,
+    "reason_code": "NO_TRIGGER",
+    "inputs": {},
+    "values": {
+     "state": null,
+     "calm_run": 0,
+     "candidate": null
+    }
+   }
+  ]
  },
  {
   "id": "dec_5939",
@@ -167,7 +955,60 @@
   "outcome": "no_event",
   "reason_code": "NO_TRIGGER",
   "reason": "Nothing unusual.",
-  "trigger": "data"
+  "trigger": "data",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "period_end": "2026-08-24T02:00:00+00:00",
+     "z": 2.545,
+     "ewma": 1.495,
+     "cusum": 4.793,
+     "slope_6h": 0.193,
+     "nowcast": 12.0,
+     "band": "moderate",
+     "typical_band": "good"
+    }
+   },
+   {
+    "layer": "D1",
+    "passed": false,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "label": null,
+     "fired": [],
+     "calm": false,
+     "near_misses": [
+      "spike",
+      "climb",
+      "elevated"
+     ],
+     "bars": {
+      "spike": 2.625,
+      "climb": 0.9450000000000001,
+      "elevated": 6.0,
+      "floor": 3.0
+     },
+     "cusum": 5.476,
+     "k": 0.75
+    }
+   },
+   {
+    "layer": "D2",
+    "passed": false,
+    "reason_code": "NO_TRIGGER",
+    "inputs": {},
+    "values": {
+     "state": null,
+     "calm_run": 0,
+     "candidate": null
+    }
+   }
+  ]
  },
  {
   "id": "dec_5946",
@@ -177,7 +1018,136 @@
   "outcome": "sent",
   "reason_code": "SENT_OPENED",
   "reason": "Sent: air quality turned bad.",
-  "trigger": "data"
+  "trigger": "data",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "period_end": "2026-08-24T03:00:00+00:00",
+     "z": 2.702,
+     "ewma": 1.856,
+     "cusum": 6.992,
+     "slope_6h": 0.207,
+     "nowcast": 14.1,
+     "band": "moderate",
+     "typical_band": "good"
+    }
+   },
+   {
+    "layer": "D1",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "label": "climb",
+     "fired": [
+      "climb",
+      "elevated"
+     ],
+     "calm": false,
+     "near_misses": [
+      "spike"
+     ],
+     "bars": {
+      "spike": 2.625,
+      "climb": 0.9450000000000001,
+      "elevated": 6.0,
+      "floor": 3.0
+     },
+     "cusum": 7.679,
+     "k": 0.75
+    }
+   },
+   {
+    "layer": "D2",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "state": "ACTIVE",
+     "calm_run": 0,
+     "candidate": "opened",
+     "started_at": "2026-08-24T05:20:00+00:00",
+     "hours": 0.0,
+     "ended_at": null,
+     "peak": {
+      "pm25": 14,
+      "at": "2026-08-24T03:00:00+00:00",
+      "band": "moderate"
+     }
+    }
+   },
+   {
+    "layer": "D3",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "kind": "opened",
+     "band": "moderate"
+    }
+   },
+   {
+    "layer": "D4",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "notices_in_episode": 0
+    }
+   },
+   {
+    "layer": "D5",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "candidates": 1,
+     "kept": "opened"
+    }
+   },
+   {
+    "layer": "D6",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "response": "notify"
+    }
+   },
+   {
+    "layer": "D7",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "sent_today": 0,
+     "max_per_day": 3
+    }
+   },
+   {
+    "layer": "D8",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "local_time": "08:20",
+     "quiet_hours": false
+    }
+   },
+   {
+    "layer": "A",
+    "passed": true,
+    "reason_code": "SENT_OPENED",
+    "inputs": {},
+    "values": {
+     "compose": "opened"
+    }
+   }
+  ]
  },
  {
   "id": "dec_5953",
@@ -187,7 +1157,77 @@
   "outcome": "suppressed",
   "reason_code": "DEDUP_SAME_BAND",
   "reason": "Already told you about this level; nothing new to say.",
-  "trigger": "data"
+  "trigger": "data",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "period_end": "2026-08-24T04:00:00+00:00",
+     "z": 2.844,
+     "ewma": 2.005,
+     "cusum": 8.633,
+     "slope_6h": 0.197,
+     "nowcast": 16.7,
+     "band": "moderate",
+     "typical_band": "good"
+    }
+   },
+   {
+    "layer": "D1",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "label": "spike",
+     "fired": [
+      "climb",
+      "spike"
+     ],
+     "calm": false,
+     "near_misses": [],
+     "bars": {
+      "spike": 2.625,
+      "climb": 0.9450000000000001,
+      "elevated": 6.0,
+      "floor": 3.0
+     },
+     "cusum": 2.344,
+     "k": 0.75
+    }
+   },
+   {
+    "layer": "D2",
+    "passed": false,
+    "reason_code": "EPISODE_CONTINUES",
+    "inputs": {},
+    "values": {
+     "state": "ACTIVE",
+     "calm_run": 0,
+     "candidate": null,
+     "started_at": "2026-08-24T05:20:00+00:00",
+     "hours": 1.0,
+     "ended_at": null,
+     "peak": {
+      "pm25": 17,
+      "at": "2026-08-24T04:00:00+00:00",
+      "band": "moderate"
+     }
+    }
+   },
+   {
+    "layer": "D3",
+    "passed": false,
+    "reason_code": "DEDUP_SAME_BAND",
+    "inputs": {},
+    "values": {
+     "band": "moderate",
+     "last_told": "moderate"
+    }
+   }
+  ]
  },
  {
   "id": "dec_5960",
@@ -197,7 +1237,77 @@
   "outcome": "suppressed",
   "reason_code": "DEDUP_SAME_BAND",
   "reason": "Already told you about this level; nothing new to say.",
-  "trigger": "data"
+  "trigger": "data",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "period_end": "2026-08-24T05:00:00+00:00",
+     "z": 2.562,
+     "ewma": 1.971,
+     "cusum": 9.736,
+     "slope_6h": 0.164,
+     "nowcast": 19.8,
+     "band": "moderate",
+     "typical_band": "good"
+    }
+   },
+   {
+    "layer": "D1",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "label": "spike",
+     "fired": [
+      "climb",
+      "spike"
+     ],
+     "calm": false,
+     "near_misses": [],
+     "bars": {
+      "spike": 2.625,
+      "climb": 0.9450000000000001,
+      "elevated": 6.0,
+      "floor": 3.0
+     },
+     "cusum": 4.406,
+     "k": 0.75
+    }
+   },
+   {
+    "layer": "D2",
+    "passed": false,
+    "reason_code": "EPISODE_CONTINUES",
+    "inputs": {},
+    "values": {
+     "state": "ACTIVE",
+     "calm_run": 0,
+     "candidate": null,
+     "started_at": "2026-08-24T05:20:00+00:00",
+     "hours": 2.0,
+     "ended_at": null,
+     "peak": {
+      "pm25": 20,
+      "at": "2026-08-24T05:00:00+00:00",
+      "band": "moderate"
+     }
+    }
+   },
+   {
+    "layer": "D3",
+    "passed": false,
+    "reason_code": "DEDUP_SAME_BAND",
+    "inputs": {},
+    "values": {
+     "band": "moderate",
+     "last_told": "moderate"
+    }
+   }
+  ]
  },
  {
   "id": "dec_5967",
@@ -207,7 +1317,78 @@
   "outcome": "suppressed",
   "reason_code": "DEDUP_SAME_BAND",
   "reason": "Already told you about this level; nothing new to say.",
-  "trigger": "data"
+  "trigger": "data",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "period_end": "2026-08-24T06:00:00+00:00",
+     "z": 3.294,
+     "ewma": 2.349,
+     "cusum": 2.794,
+     "slope_6h": 0.156,
+     "nowcast": 23.2,
+     "band": "moderate",
+     "typical_band": "good"
+    }
+   },
+   {
+    "layer": "D1",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "label": "spike",
+     "fired": [
+      "climb",
+      "elevated",
+      "spike"
+     ],
+     "calm": false,
+     "near_misses": [],
+     "bars": {
+      "spike": 2.625,
+      "climb": 0.9450000000000001,
+      "elevated": 6.0,
+      "floor": 3.0
+     },
+     "cusum": 7.2,
+     "k": 0.75
+    }
+   },
+   {
+    "layer": "D2",
+    "passed": false,
+    "reason_code": "EPISODE_CONTINUES",
+    "inputs": {},
+    "values": {
+     "state": "ACTIVE",
+     "calm_run": 0,
+     "candidate": null,
+     "started_at": "2026-08-24T05:20:00+00:00",
+     "hours": 3.0,
+     "ended_at": null,
+     "peak": {
+      "pm25": 23,
+      "at": "2026-08-24T06:00:00+00:00",
+      "band": "moderate"
+     }
+    }
+   },
+   {
+    "layer": "D3",
+    "passed": false,
+    "reason_code": "DEDUP_SAME_BAND",
+    "inputs": {},
+    "values": {
+     "band": "moderate",
+     "last_told": "moderate"
+    }
+   }
+  ]
  },
  {
   "id": "dec_5974",
@@ -217,7 +1398,77 @@
   "outcome": "suppressed",
   "reason_code": "DEDUP_SAME_BAND",
   "reason": "Already told you about this level; nothing new to say.",
-  "trigger": "data"
+  "trigger": "data",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "period_end": "2026-08-24T07:00:00+00:00",
+     "z": 4.911,
+     "ewma": 3.12,
+     "cusum": 5.808,
+     "slope_6h": 0.139,
+     "nowcast": 25.2,
+     "band": "moderate",
+     "typical_band": "good"
+    }
+   },
+   {
+    "layer": "D1",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "label": "spike",
+     "fired": [
+      "climb",
+      "spike"
+     ],
+     "calm": false,
+     "near_misses": [],
+     "bars": {
+      "spike": 2.625,
+      "climb": 0.9450000000000001,
+      "elevated": 6.0,
+      "floor": 3.0
+     },
+     "cusum": 3.0,
+     "k": 0.75
+    }
+   },
+   {
+    "layer": "D2",
+    "passed": false,
+    "reason_code": "EPISODE_CONTINUES",
+    "inputs": {},
+    "values": {
+     "state": "ACTIVE",
+     "calm_run": 0,
+     "candidate": null,
+     "started_at": "2026-08-24T05:20:00+00:00",
+     "hours": 4.0,
+     "ended_at": null,
+     "peak": {
+      "pm25": 25,
+      "at": "2026-08-24T07:00:00+00:00",
+      "band": "moderate"
+     }
+    }
+   },
+   {
+    "layer": "D3",
+    "passed": false,
+    "reason_code": "DEDUP_SAME_BAND",
+    "inputs": {},
+    "values": {
+     "band": "moderate",
+     "last_told": "moderate"
+    }
+   }
+  ]
  },
  {
   "id": "dec_5981",
@@ -227,7 +1478,79 @@
   "outcome": "suppressed",
   "reason_code": "DEDUP_SAME_BAND",
   "reason": "Already told you about this level; nothing new to say.",
-  "trigger": "data"
+  "trigger": "data",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "period_end": "2026-08-24T08:00:00+00:00",
+     "z": 4.963,
+     "ewma": 3.471,
+     "cusum": 8.808,
+     "slope_6h": 0.111,
+     "nowcast": 25.3,
+     "band": "moderate",
+     "typical_band": "good"
+    }
+   },
+   {
+    "layer": "D1",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "label": "spike",
+     "fired": [
+      "climb",
+      "spike"
+     ],
+     "calm": false,
+     "near_misses": [
+      "elevated"
+     ],
+     "bars": {
+      "spike": 2.625,
+      "climb": 0.9450000000000001,
+      "elevated": 6.0,
+      "floor": 3.0
+     },
+     "cusum": 6.0,
+     "k": 0.75
+    }
+   },
+   {
+    "layer": "D2",
+    "passed": false,
+    "reason_code": "EPISODE_CONTINUES",
+    "inputs": {},
+    "values": {
+     "state": "ACTIVE",
+     "calm_run": 0,
+     "candidate": null,
+     "started_at": "2026-08-24T05:20:00+00:00",
+     "hours": 5.0,
+     "ended_at": null,
+     "peak": {
+      "pm25": 25,
+      "at": "2026-08-24T08:00:00+00:00",
+      "band": "moderate"
+     }
+    }
+   },
+   {
+    "layer": "D3",
+    "passed": false,
+    "reason_code": "DEDUP_SAME_BAND",
+    "inputs": {},
+    "values": {
+     "band": "moderate",
+     "last_told": "moderate"
+    }
+   }
+  ]
  },
  {
   "id": "dec_5988",
@@ -237,7 +1560,78 @@
   "outcome": "suppressed",
   "reason_code": "DEDUP_SAME_BAND",
   "reason": "Already told you about this level; nothing new to say.",
-  "trigger": "data"
+  "trigger": "data",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "period_end": "2026-08-24T09:00:00+00:00",
+     "z": 4.236,
+     "ewma": 3.701,
+     "cusum": 3.0,
+     "slope_6h": 0.031,
+     "nowcast": 24.0,
+     "band": "moderate",
+     "typical_band": "good"
+    }
+   },
+   {
+    "layer": "D1",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "label": "spike",
+     "fired": [
+      "climb",
+      "elevated",
+      "spike"
+     ],
+     "calm": false,
+     "near_misses": [],
+     "bars": {
+      "spike": 2.625,
+      "climb": 0.9450000000000001,
+      "elevated": 6.0,
+      "floor": 3.0
+     },
+     "cusum": 9.0,
+     "k": 0.75
+    }
+   },
+   {
+    "layer": "D2",
+    "passed": false,
+    "reason_code": "EPISODE_CONTINUES",
+    "inputs": {},
+    "values": {
+     "state": "ACTIVE",
+     "calm_run": 0,
+     "candidate": null,
+     "started_at": "2026-08-24T05:20:00+00:00",
+     "hours": 6.0,
+     "ended_at": null,
+     "peak": {
+      "pm25": 25,
+      "at": "2026-08-24T08:00:00+00:00",
+      "band": "moderate"
+     }
+    }
+   },
+   {
+    "layer": "D3",
+    "passed": false,
+    "reason_code": "DEDUP_SAME_BAND",
+    "inputs": {},
+    "values": {
+     "band": "moderate",
+     "last_told": "moderate"
+    }
+   }
+  ]
  },
  {
   "id": "dec_5995",
@@ -247,7 +1641,76 @@
   "outcome": "suppressed",
   "reason_code": "DEDUP_SAME_BAND",
   "reason": "Already told you about this level; nothing new to say.",
-  "trigger": "data"
+  "trigger": "data",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "period_end": "2026-08-24T10:00:00+00:00",
+     "z": 2.844,
+     "ewma": 3.191,
+     "cusum": 4.876,
+     "slope_6h": -0.052,
+     "nowcast": 21.9,
+     "band": "moderate",
+     "typical_band": "good"
+    }
+   },
+   {
+    "layer": "D1",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "label": "spike",
+     "fired": [
+      "spike"
+     ],
+     "calm": false,
+     "near_misses": [],
+     "bars": {
+      "spike": 2.625,
+      "climb": 0.9450000000000001,
+      "elevated": 6.0,
+      "floor": 3.0
+     },
+     "cusum": 2.344,
+     "k": 0.75
+    }
+   },
+   {
+    "layer": "D2",
+    "passed": false,
+    "reason_code": "EPISODE_CONTINUES",
+    "inputs": {},
+    "values": {
+     "state": "ACTIVE",
+     "calm_run": 0,
+     "candidate": null,
+     "started_at": "2026-08-24T05:20:00+00:00",
+     "hours": 7.0,
+     "ended_at": null,
+     "peak": {
+      "pm25": 25,
+      "at": "2026-08-24T08:00:00+00:00",
+      "band": "moderate"
+     }
+    }
+   },
+   {
+    "layer": "D3",
+    "passed": false,
+    "reason_code": "DEDUP_SAME_BAND",
+    "inputs": {},
+    "values": {
+     "band": "moderate",
+     "last_told": "moderate"
+    }
+   }
+  ]
  },
  {
   "id": "dec_6002",
@@ -257,7 +1720,76 @@
   "outcome": "suppressed",
   "reason_code": "DEDUP_SAME_BAND",
   "reason": "Already told you about this level; nothing new to say.",
-  "trigger": "data"
+  "trigger": "data",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "period_end": "2026-08-24T11:00:00+00:00",
+     "z": 1.972,
+     "ewma": 2.778,
+     "cusum": 6.124,
+     "slope_6h": -0.104,
+     "nowcast": 17.6,
+     "band": "moderate",
+     "typical_band": "good"
+    }
+   },
+   {
+    "layer": "D1",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "label": "spike",
+     "fired": [
+      "spike"
+     ],
+     "calm": false,
+     "near_misses": [],
+     "bars": {
+      "spike": 2.625,
+      "climb": 0.9450000000000001,
+      "elevated": 6.0,
+      "floor": 3.0
+     },
+     "cusum": 3.817,
+     "k": 0.75
+    }
+   },
+   {
+    "layer": "D2",
+    "passed": false,
+    "reason_code": "EPISODE_CONTINUES",
+    "inputs": {},
+    "values": {
+     "state": "ACTIVE",
+     "calm_run": 0,
+     "candidate": null,
+     "started_at": "2026-08-24T05:20:00+00:00",
+     "hours": 8.0,
+     "ended_at": null,
+     "peak": {
+      "pm25": 25,
+      "at": "2026-08-24T08:00:00+00:00",
+      "band": "moderate"
+     }
+    }
+   },
+   {
+    "layer": "D3",
+    "passed": false,
+    "reason_code": "DEDUP_SAME_BAND",
+    "inputs": {},
+    "values": {
+     "band": "moderate",
+     "last_told": "moderate"
+    }
+   }
+  ]
  },
  {
   "id": "dec_6009",
@@ -267,6 +1799,76 @@
   "outcome": "suppressed",
   "reason_code": "DEDUP_SAME_BAND",
   "reason": "Already told you about this level; nothing new to say.",
-  "trigger": "data"
+  "trigger": "data",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "period_end": "2026-08-24T12:00:00+00:00",
+     "z": 3.073,
+     "ewma": 2.867,
+     "cusum": 8.697,
+     "slope_6h": -0.175,
+     "nowcast": 14.2,
+     "band": "moderate",
+     "typical_band": "good"
+    }
+   },
+   {
+    "layer": "D1",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "label": "spike",
+     "fired": [
+      "elevated",
+      "spike"
+     ],
+     "calm": false,
+     "near_misses": [],
+     "bars": {
+      "spike": 2.625,
+      "climb": 0.9450000000000001,
+      "elevated": 6.0,
+      "floor": 3.0
+     },
+     "cusum": 6.39,
+     "k": 0.75
+    }
+   },
+   {
+    "layer": "D2",
+    "passed": false,
+    "reason_code": "EPISODE_CONTINUES",
+    "inputs": {},
+    "values": {
+     "state": "ACTIVE",
+     "calm_run": 0,
+     "candidate": null,
+     "started_at": "2026-08-24T05:20:00+00:00",
+     "hours": 9.0,
+     "ended_at": null,
+     "peak": {
+      "pm25": 25,
+      "at": "2026-08-24T08:00:00+00:00",
+      "band": "moderate"
+     }
+    }
+   },
+   {
+    "layer": "D3",
+    "passed": false,
+    "reason_code": "DEDUP_SAME_BAND",
+    "inputs": {},
+    "values": {
+     "band": "moderate",
+     "last_told": "moderate"
+    }
+   }
+  ]
  }
 ]

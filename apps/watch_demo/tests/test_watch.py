@@ -69,8 +69,9 @@ def test_every_scenario_renders(web, scenario_id):
     html = r.text
     assert 'class="watch"' in html
     watch_start, watch_end = html.index('class="watch"'), html.index("</main>")
-    assert html.index('class="chips"') < watch_start, "chips must sit outside the watch"
-    assert html.index("replay of real OpenAQ data") > watch_end, "data caption must sit outside the watch"
+    assert html.index('class="navigator"') < watch_start, "scenario chips must sit outside the watch"
+    assert "replay of real OpenAQ data" in html
+    assert "replay of real OpenAQ data" not in html[watch_start:watch_end], "data caption must sit outside the watch"
 
 
 # WD-02: each card carries exactly one action, and the body is short and never a bare status.
@@ -236,7 +237,7 @@ def test_scrub_to_held_hour_shows_quiet_hours(web):
     html = web.get("/", params={"scenario": "delhi-smog-night", "t": "2026-10-08T19:30:00Z"}).text
     assert not parse(html).cards
     assert "Quiet hours" in html and "Something is being held until morning" in html
-    assert "QUIET_HOURS_HELD</code> at 1am" in html
+    assert "QUIET_HOURS_HELD</code> · decided 1am" in html
 
 
 def test_scrub_to_check_in_shows_only_that_message(web):
@@ -290,4 +291,4 @@ def test_http_client_reads_readings():
 def test_why_view_focuses_the_chart_on_that_notice(web):
     html = web.get("/why/ntf_arjun_0630", params={"scenario": "delhi-smog-night"}).text
     assert html.count('class="focus-ring"') == 1
-    assert "SENT_CHECK_IN</code> at 6:30am" in html
+    assert "SENT_CHECK_IN</code> · decided 6:30am" in html

@@ -15,9 +15,10 @@ from zoneinfo import ZoneInfo
 from .models import Decision, Reading
 from .why import clock
 
-WIDTH, HEIGHT = 600, 318
-LEFT, RIGHT, TOP, BOTTOM = 44, 548, 14, 226
-LANE_Y = 276
+WIDTH, HEIGHT = 600, 330
+LEFT, RIGHT, TOP, BOTTOM = 44, 548, 30, 238
+LANE_Y = 288
+BEAT_Y = 12
 GAP = timedelta(hours=3)  # a longer gap between readings breaks the line
 
 BANDS = [
@@ -53,6 +54,8 @@ class Chart:
     marks: list[dict] = field(default_factory=list)
     cursor_x: float = RIGHT
     title: str = ""
+    beats: list[dict] = field(default_factory=list)
+    beat_y: int = BEAT_Y
 
 
 def _nice_max(v: float) -> tuple[float, float]:
@@ -83,6 +86,7 @@ def build_chart(
     href,
     city: str,
     focus: datetime | None = None,
+    beats: list[tuple[int, datetime]] = (),
 ) -> Chart:
     span = (end - start).total_seconds()
 
@@ -136,9 +140,10 @@ def build_chart(
                 "flip": gx > RIGHT - 90,  # label to the left near the right edge
             })
 
-    by_time: dict[datetime, list[Decision]] = {}
+    # Decisions are about a reading hour but made later, once the data has arrived.
+    by_hour: dict[datetime, list[Decision]] = {}
     for d in decisions:
-        by_time.setdefault(d.evaluated_at, []).append(d)
+        by_hour.setdefault(d.about, []).append(d)
 
     # Hit targets: one column per reading, wider than any mark.
     xs = [x(r.at) for r in readings]
@@ -150,18 +155,23 @@ def build_chart(
             tip.append(f"usual {r.typical_pm25:.0f}")
         if r.dq:
             tip.append(f"excluded ({r.dq})")
-        for d in by_time.get(r.at, []):
-            tip.append(f"{OUTCOME_LABELS[d.outcome].lower()}: {d.reason_code}")
-        c.columns.append({"x": left, "w": right - left, "href": href(r.at), "tip": " · ".join(tip)})
+        about = by_hour.get(r.at, [])
+        for d in about:
+            tip.append(f"{OUTCOME_LABELS[d.outcome].lower()}: {d.reason_code}, decided {clock(d.evaluated_at, tz)}")
+        # Jump to when the agent decided about this hour, so the watch shows the result.
+        when = min((d.evaluated_at for d in about), default=r.at)
+        c.columns.append({"x": left, "w": right - left, "href": href(when), "tip": " · ".join(tip)})
 
     for d in decisions:
-        if not start <= d.evaluated_at <= end:
+        # Clock-triggered decisions (check-ins, releases) sit where they happened; data ones on their hour.
+        pos = d.evaluated_at if d.trigger == "clock" else d.about
+        if not start <= pos <= end:
             continue
         mark = {
-            "x": x(d.evaluated_at),
+            "x": x(pos),
             "kind": d.outcome,
             "href": href(d.evaluated_at),
-            "tip": f"{clock(d.evaluated_at, tz)} · {OUTCOME_LABELS[d.outcome]} · {d.reason_code}",
+            "tip": f"{OUTCOME_LABELS[d.outcome]} · {d.reason_code} · decided {clock(d.evaluated_at, tz)} about {clock(d.about, tz)}",
             "label": None,
             "focus": focus is not None and d.evaluated_at == focus and d.outcome == "sent",
         }
@@ -175,4 +185,17 @@ def build_chart(
     # Loud marks last so they sit on top.
     order = {"no_event": 0, "suppressed": 1, "ignored": 2, "held": 3, "sent": 4}
     c.marks.sort(key=lambda m: order[m["kind"]])
+
+    for n, at in beats:
+        if start <= at <= end:
+            c.beats.append({"n": n, "x": x(at), "href": href(at), "current": at <= cursor})
+    # Keep badges from overlapping: nudge each at least 20px right of the previous (the guide stays true).
+    for prev, b in zip(c.beats, c.beats[1:]):
+        b["bx"] = max(b["x"], prev.get("bx", prev["x"]) + 20)
+    for b in c.beats:
+        b.setdefault("bx", b["x"])
+    # Only the latest beat at or before the cursor is "current".
+    passed = [b for b in c.beats if b["current"]]
+    for b in c.beats:
+        b["current"] = bool(passed) and b is passed[-1]
     return c

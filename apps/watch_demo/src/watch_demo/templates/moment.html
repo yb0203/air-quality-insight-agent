@@ -1,0 +1,37 @@
+{# What the agent decided at the selected moment: plain English first, then the layer path, then the code. #}
+<section class="moment" aria-label="At this moment">
+  <div class="moment-head">
+    <span>
+      {% if reading %}
+        <strong>{{ reading_at }}</strong> reading · PM2.5 {{ '%.0f' % reading.pm25 }}{% if reading.typical_pm25 is not none %}, usual for {{ reading_at }} {{ '%.0f' % reading.typical_pm25 }}{% endif %}{% if reading.band %} · {{ band_labels[reading.band] }}{% endif %}{% if reading.dq %} · ignored ({{ reading.dq }}){% endif %}
+      {% else %}
+        No reading yet
+      {% endif %}
+    </span>
+    <span class="steps">
+      {% if story.prev_beat %}<a href="{{ story.prev_beat.href }}">◀ beat {{ story.prev_beat.n }}</a>{% endif %}
+      {% if story.prev_hour %}<a href="{{ story.prev_hour }}">− 1h</a>{% endif %}
+      {% if story.next_hour %}<a href="{{ story.next_hour }}">+ 1h</a>{% endif %}
+      {% if story.next_beat %}<a class="next-beat" href="{{ story.next_beat.href }}">beat {{ story.next_beat.n }} ▶</a>{% endif %}
+    </span>
+  </div>
+
+  {% if decided %}
+    <p class="moment-sentence"><span class="pill pill-{{ decided.outcome }}">{{ decided_label }}</span> {{ decided_sentence }}</p>
+    {% if path %}
+      <ol class="path" aria-label="Layer path">
+        {% for c in path %}
+          <li class="layer{% if not c.passed %} failed{% endif %}{% if c.stop %} stop{% endif %}" title="{{ c.layer }}{% if c.code %} · {{ c.code }}{% endif %}">
+            {{ c.label }} {{ "✓" if c.passed else "✗" }}{% if c.detail %} <span class="layer-detail">{{ c.detail }}</span>{% endif %}
+          </li>
+        {% endfor %}
+      </ol>
+    {% endif %}
+    {% if decided.reason %}<p class="moment-reason">Agent's note: {{ decided.reason }}</p>{% endif %}
+    <p class="moment-code">
+      <code>{{ decided.reason_code }}</code> · decided {{ decided_at }}{% if decided_about %} about the {{ decided_about }} reading{% endif %}{% if decided.trigger == "clock" %} (clock){% endif %}
+    </p>
+  {% else %}
+    <p class="moment-sentence">No decision yet at this moment.</p>
+  {% endif %}
+</section>

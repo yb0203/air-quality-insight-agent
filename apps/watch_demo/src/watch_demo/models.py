@@ -46,12 +46,28 @@ class Notification(_Model):
         return self.delivered_at or self.created_at
 
 
+class TraceEntry(_Model):
+    layer: str
+    passed: bool
+    reason_code: str | None = None
+    values: dict[str, Any] = Field(default_factory=dict)
+
+
 class Decision(_Model):
+    id: str | None = None
     evaluated_at: datetime
+    # The reading hour the decision is about; clock-triggered decisions may not have one.
+    period_end: datetime | None = None
     outcome: Literal["sent", "held", "suppressed", "no_event"]
     reason_code: str
     reason: str = ""
     trigger: str | None = None
+    # Layer-by-layer trace, when the source provides it (fixtures do; the API's /decisions doesn't yet).
+    trace: list[TraceEntry] = Field(default_factory=list)
+
+    @property
+    def about(self) -> datetime:
+        return self.period_end or self.evaluated_at
 
 
 class Reading(_Model):
@@ -62,13 +78,6 @@ class Reading(_Model):
     typical_pm25: float | None = None
     # Data-quality code when the agent excluded this hour (e.g. DQ_SUSPECT).
     dq: str | None = None
-
-
-class TraceEntry(_Model):
-    layer: str
-    passed: bool
-    reason_code: str | None = None
-    values: dict[str, Any] = Field(default_factory=dict)
 
 
 class Explain(_Model):
