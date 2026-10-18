@@ -1,5 +1,104 @@
 [
   {
+    "id": "dec_rohan_20261013T0930",
+    "user_id": "rohan",
+    "evaluated_at": "2026-10-13T09:30:00Z",
+    "outcome": "no_event",
+    "reason_code": "NO_TRIGGER",
+    "reason": "Normal for this hour.",
+    "trigger": "data"
+  },
+  {
+    "id": "dec_rohan_20261013T1030",
+    "user_id": "rohan",
+    "evaluated_at": "2026-10-13T10:30:00Z",
+    "outcome": "no_event",
+    "reason_code": "NO_TRIGGER",
+    "reason": "Normal for this hour.",
+    "trigger": "data"
+  },
+  {
+    "id": "dec_rohan_20261013T1130",
+    "user_id": "rohan",
+    "evaluated_at": "2026-10-13T11:30:00Z",
+    "outcome": "no_event",
+    "reason_code": "NO_TRIGGER",
+    "reason": "Normal for this hour.",
+    "trigger": "data"
+  },
+  {
+    "id": "dec_rohan_20261013T1230",
+    "user_id": "rohan",
+    "evaluated_at": "2026-10-13T12:30:00Z",
+    "outcome": "no_event",
+    "reason_code": "NO_TRIGGER",
+    "reason": "Normal for this hour.",
+    "trigger": "data"
+  },
+  {
+    "id": "dec_rohan_20261013T1330",
+    "user_id": "rohan",
+    "evaluated_at": "2026-10-13T13:30:00Z",
+    "outcome": "no_event",
+    "reason_code": "NO_TRIGGER",
+    "reason": "Normal for this hour.",
+    "trigger": "data"
+  },
+  {
+    "id": "dec_rohan_20261013T1430",
+    "user_id": "rohan",
+    "evaluated_at": "2026-10-13T14:30:00Z",
+    "outcome": "no_event",
+    "reason_code": "NO_TRIGGER",
+    "reason": "Normal for this hour.",
+    "trigger": "data"
+  },
+  {
+    "id": "dec_rohan_20261013T1530",
+    "user_id": "rohan",
+    "evaluated_at": "2026-10-13T15:30:00Z",
+    "outcome": "no_event",
+    "reason_code": "NO_TRIGGER",
+    "reason": "Normal for this hour.",
+    "trigger": "data"
+  },
+  {
+    "id": "dec_rohan_20261013T1630",
+    "user_id": "rohan",
+    "evaluated_at": "2026-10-13T16:30:00Z",
+    "outcome": "no_event",
+    "reason_code": "NO_TRIGGER",
+    "reason": "Normal for this hour.",
+    "trigger": "data"
+  },
+  {
+    "id": "dec_rohan_20261013T1730",
+    "user_id": "rohan",
+    "evaluated_at": "2026-10-13T17:30:00Z",
+    "outcome": "no_event",
+    "reason_code": "NO_TRIGGER",
+    "reason": "Normal for this hour.",
+    "trigger": "data"
+  },
+  {
+    "id": "dec_rohan_20261013T1830",
+    "user_id": "rohan",
+    "evaluated_at": "2026-10-13T18:30:00Z",
+    "outcome": "no_event",
+    "reason_code": "NO_TRIGGER",
+    "reason": "Normal for this hour.",
+    "trigger": "data"
+  },
+  {
+    "id": "dec_rohan_20261013T1930",
+    "user_id": "rohan",
+    "evaluated_at": "2026-10-13T19:30:00Z",
+    "outcome": "no_event",
+    "reason_code": "NO_TRIGGER",
+    "reason": "Normal for this hour.",
+    "trigger": "data"
+  },
+  {
     "id": "dec_rohan_20261013T2030",
     "user_id": "rohan",
     "evaluated_at": "2026-10-13T20:30:00Z",

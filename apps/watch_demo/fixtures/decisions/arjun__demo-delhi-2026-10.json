@@ -1,5 +1,41 @@
 [
   {
+    "id": "dec_arjun_20261008T1230",
+    "user_id": "arjun",
+    "evaluated_at": "2026-10-08T12:30:00Z",
+    "outcome": "no_event",
+    "reason_code": "NO_TRIGGER",
+    "reason": "Normal for this hour.",
+    "trigger": "data"
+  },
+  {
+    "id": "dec_arjun_20261008T1330",
+    "user_id": "arjun",
+    "evaluated_at": "2026-10-08T13:30:00Z",
+    "outcome": "no_event",
+    "reason_code": "NO_TRIGGER",
+    "reason": "Normal for this hour.",
+    "trigger": "data"
+  },
+  {
+    "id": "dec_arjun_20261008T1430",
+    "user_id": "arjun",
+    "evaluated_at": "2026-10-08T14:30:00Z",
+    "outcome": "no_event",
+    "reason_code": "NO_TRIGGER",
+    "reason": "Normal for this hour.",
+    "trigger": "data"
+  },
+  {
+    "id": "dec_arjun_20261008T1530",
+    "user_id": "arjun",
+    "evaluated_at": "2026-10-08T15:30:00Z",
+    "outcome": "no_event",
+    "reason_code": "NO_TRIGGER",
+    "reason": "Normal for this hour.",
+    "trigger": "data"
+  },
+  {
     "id": "dec_arjun_20261008T1630",
     "user_id": "arjun",
     "evaluated_at": "2026-10-08T16:30:00Z",

@@ -54,6 +54,16 @@ class Decision(_Model):
     trigger: str | None = None
 
 
+class Reading(_Model):
+    at: datetime
+    pm25: float | None = None
+    nowcast: float | None = None
+    band: Band | None = None
+    typical_pm25: float | None = None
+    # Data-quality code when the agent excluded this hour (e.g. DQ_SUSPECT).
+    dq: str | None = None
+
+
 class TraceEntry(_Model):
     layer: str
     passed: bool

@@ -205,3 +205,89 @@ def test_unreachable_core_shows_calm_error():
     app = create_app(HttpAgentClient("http://core.test", transport=httpx.MockTransport(down)), SCENARIOS)
     r = TestClient(app).get("/")
     assert r.status_code == 200 and "Can't reach the agent" in r.text
+
+
+# WD-08: a chart of the real readings sits beside the watch, outside it, with one mark per decision.
+@pytest.mark.parametrize("scenario_id", IDS)
+def test_chart_renders_beside_the_watch(web, scenario_id):
+    html = web.get("/", params={"scenario": scenario_id}).text
+    assert html.index('class="chart-panel"') < html.index('class="watch"'), "chart is demo frame, not product"
+    pm = re.search(r'class="pm" d="([^"]*)"', html).group(1)
+    assert pm.startswith("M") and pm.count("L") >= 8
+    assert re.search(r'class="usual" d="M', html)
+    assert html.count('class="mark mark-') >= 10
+
+
+def test_delhi_chart_marks_the_story(web):
+    html = web.get("/", params={"scenario": "delhi-smog-night"}).text
+    assert html.count('class="mark mark-sent"') == 2
+    assert html.count('class="mark mark-held"') == 1
+    assert "QUIET_HOURS_HELD" in html and "SENT_CHECK_IN" in html
+
+
+def test_glitch_chart_shows_the_ignored_reading(web):
+    html = web.get("/", params={"scenario": "glitch-ignored"}).text
+    assert "980 ignored" in html
+    assert 'class="mark mark-ignored"' in html
+
+
+# WD-09: clicking an hour moves the watch to that moment.
+def test_scrub_to_held_hour_shows_quiet_hours(web):
+    html = web.get("/", params={"scenario": "delhi-smog-night", "t": "2026-10-08T19:30:00Z"}).text
+    assert not parse(html).cards
+    assert "Quiet hours" in html and "Something is being held until morning" in html
+    assert "QUIET_HOURS_HELD</code> at 1am" in html
+
+
+def test_scrub_to_check_in_shows_only_that_message(web):
+    html = web.get("/", params={"scenario": "delhi-smog-night", "t": "2026-10-09T01:00:00Z"}).text
+    cards = parse(html).cards
+    assert [c["href"] for c in cards] == ["/why/ntf_arjun_0630?scenario=delhi-smog-night&t=2026-10-09T01%3A00%3A00Z"]
+    assert ">now<" in html and ">06:30<" in html
+
+
+def test_before_the_episode_watch_is_all_clear(web):
+    html = web.get("/", params={"scenario": "delhi-smog-night", "t": "2026-10-08T14:30:00Z"}).text
+    assert "All clear in Delhi" in html
+
+
+def test_chart_hour_links_work(web):
+    html = web.get("/", params={"scenario": "helsinki-smoke"}).text
+    hrefs = set(re.findall(r'<a href="(/\?scenario=helsinki-smoke[^"]*)"', html))
+    assert len(hrefs) >= 20
+    for href in sorted(hrefs)[:5]:
+        assert web.get(href.replace("&amp;", "&")).status_code == 200
+
+
+def test_why_keeps_the_moment(web):
+    html = web.get("/why/ntf_arjun_0630", params={"scenario": "delhi-smog-night", "t": "2026-10-09T02:00:00Z"}).text
+    assert 'href="/?scenario=delhi-smog-night&amp;t=2026-10-09T02%3A00%3A00Z"' in html
+    assert "1h ago" in html
+
+
+def test_bad_or_out_of_range_time(web):
+    assert web.get("/", params={"scenario": "quiet-night", "t": "yesterday"}).status_code == 400
+    late = web.get("/", params={"scenario": "quiet-night", "t": "2030-01-01T00:00:00Z"}).text
+    assert "07:10" in late  # clamped to the scenario's `until`
+
+
+def test_http_client_reads_readings():
+    rows = json.loads((FIXTURES / "readings" / "4712609.json").read_text())
+    seen = []
+
+    def handler(request):
+        seen.append(request.url)
+        return httpx.Response(200, json=rows)
+
+    client = HttpAgentClient("http://core.test", transport=httpx.MockTransport(handler))
+    start, end = datetime(2026, 10, 8, 11, 40, tzinfo=timezone.utc), datetime(2026, 10, 9, 11, 40, tzinfo=timezone.utc)
+    got = client.readings(4712609, start, end)
+    assert len(got) == len(rows) and got[0].typical_pm25 is not None
+    assert seen[0].path == "/stations/4712609/readings"
+    assert seen[0].params["start"] == "2026-10-08T11:40:00Z" and seen[0].params["end"] == "2026-10-09T11:40:00Z"
+
+
+def test_why_view_focuses_the_chart_on_that_notice(web):
+    html = web.get("/why/ntf_arjun_0630", params={"scenario": "delhi-smog-night"}).text
+    assert html.count('class="focus-ring"') == 1
+    assert "SENT_CHECK_IN</code> at 6:30am" in html
