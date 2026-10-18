@@ -25,7 +25,7 @@ What the brief asked for, and where each piece is.
 | Bonus | Decay / cooldown | Pace doubles within an episode; severe bypass | `test_qa_dedup_05` |
 | Bonus | Evaluation harness | Replays 90 days as-known; caught / missed / false alarms / volume | `scripts/replay_sample.py`, `tests/test_replay.py` |
 
-Every requirement has test cases in [QA.csv](QA.csv) (102 rows). The suite has 225 core tests and 41 watch-demo tests. The live demo has 16 scenarios, each pinned to real decisions from the replay, plus a capabilities page (/capabilities) mapping each brief requirement to the scenarios that show it.
+Every requirement has test cases in [QA.csv](QA.csv) (102 rows). The suite has 225 core tests and 42 watch-demo tests. The live demo has 16 scenarios, each pinned to real decisions from the replay, plus a capabilities page (/capabilities) mapping each brief requirement to the scenarios that show it.
 
 ## Try it
 
