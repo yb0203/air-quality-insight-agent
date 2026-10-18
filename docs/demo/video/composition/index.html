@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en" data-resolution="portrait">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1080, height=1920" />
+    <title>Proactive Air Quality Agent: 60-second launch video</title>
+    <link rel="stylesheet" href="assets/styles.css" />
+    <script src="assets/lib/gsap.min.js"></script>
+    <script src="assets/beatmap.js"></script>
+    <script src="assets/data.js"></script>
+  </head>
+  <body>
+    <div
+      id="root"
+      data-composition-id="main"
+      data-start="0"
+      data-duration="60"
+      data-width="1080"
+      data-height="1920"
+      data-fps="30"
+    >
+      <div id="bg" class="bg"></div>
+
+      <!-- 1 · The flood · 0:00–0:04 -->
+      <section id="s01" class="clip scene" data-start="0" data-duration="4" data-track-index="1">
+        <div id="s01-cam" class="cam" data-layout-allow-overflow><div id="s01-cards" class="flood" data-layout-allow-overlap data-layout-allow-occlusion></div></div>
+        <div class="flood-words">
+          <div id="s01-w0" class="fw small">Your air app.</div>
+          <div id="s01-w1" class="fw">Every.</div>
+          <div id="s01-w2" class="fw">Single.</div>
+          <div id="s01-w3" class="fw">Hour.</div>
+        </div>
+      </section>
+
+      <!-- 2 · Silence · 0:04–0:08 -->
+      <section id="s02" class="clip scene" data-start="4" data-duration="4" data-track-index="1">
+        <div id="s02-q" class="headline top">What if it only spoke when it mattered?</div>
+        <div id="s02-watch" class="watch-wrap mid"><img src="assets/watch/07-calm.png" alt="" /></div>
+        <div id="s02-title" class="title-lockup">
+          <div class="kicker">Introducing</div>
+          <div class="title">Proactive Air&nbsp;Quality&nbsp;Agent</div>
+        </div>
+      </section>
+
+      <!-- 3 · Normal is local · 0:08–0:14 -->
+      <section id="s03" class="clip scene" data-start="8" data-duration="6" data-track-index="1">
+        <div class="headline top"><span id="s03-h1" class="line">It learns what's normal.</span><span id="s03-h2" class="line sub">Per city. Per hour.</span></div>
+        <div id="s03-chart" class="cities"></div>
+        <div class="footnote" id="s03-note">Typical PM2.5 over 90 days, µg/m³</div>
+      </section>
+
+      <!-- 4 · Unusual × harmful · 0:14–0:20 -->
+      <section id="s04" class="clip scene" data-start="14" data-duration="6" data-track-index="1">
+        <div class="headline top"><span id="s04-h1" class="line">Unusual isn't enough.</span><span id="s04-h2" class="line sub">It has to be harmful too.</span></div>
+        <div class="matrix">
+          <div class="axis-top"><span>Harmless</span><span>Harmful</span></div>
+          <div class="axis-left"><span>Unusual here</span><span>Normal here</span></div>
+          <div class="cells">
+            <div id="s04-c0" class="cell quiet"><b>Stay quiet</b><i>odd, but harmless</i></div>
+            <div id="s04-c1" class="cell tell"><b>Tell them</b><i>worse than usual, and it matters</i></div>
+            <div id="s04-c2" class="cell quiet"><b>Nothing to say</b><i>a normal day</i></div>
+            <div id="s04-c3" class="cell quiet"><b>Mostly quiet</b><i>bad, but usual here</i></div>
+            <div id="s04-gv" class="gridline v"></div>
+            <div id="s04-gh" class="gridline h"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 5 · One story · 0:20–0:26 -->
+      <section id="s05" class="clip scene" data-start="20" data-duration="6" data-track-index="1">
+        <div class="headline top"><span id="s05-h1" class="line">One bad night = one story.</span><span id="s05-h2" class="line sub">Not twelve alerts.</span></div>
+        <div class="story">
+          <div id="s05-list" class="story-list"></div>
+          <div id="s05-bracket" class="bracket"><span>one story</span></div>
+        </div>
+      </section>
+
+      <!-- 6 · A real night in Delhi · 0:26–0:40 -->
+      <section id="s06" class="clip scene" data-start="26" data-duration="14" data-track-index="1">
+        <div id="s06-night" class="night-tint" data-layout-ignore></div>
+        <div class="s06-head">
+          <div class="eyebrow">A real night in Delhi, replayed</div>
+          <div id="s06-chips" class="chips"><img src="assets/watch/chips.png" alt="" /><div id="s06-tap1" class="tap" style="left: 9.5%; top: 50%"></div></div>
+        </div>
+        <div id="s06-watch" class="watch-wrap hero">
+          <div id="s06-glow" class="glow"></div>
+          <img id="s06-w-evening" src="assets/watch/01-evening.png" alt="" />
+          <img id="s06-w-held" src="assets/watch/02-held.png" alt="" />
+          <img id="s06-w-checkin" src="assets/watch/03-checkin.png" alt="" />
+          <img id="s06-w-why" src="assets/watch/04-why.png" alt="" />
+          <div id="s06-tap2" class="tap" style="left: 50%; top: 40%"></div>
+        </div>
+        <div id="s06-log" class="decision-line"></div>
+        <div class="captions" id="s06-caps"></div>
+      </section>
+
+      <!-- 7 · Proof, on real data · 0:40–0:46 -->
+      <section id="s07" class="clip scene" data-start="40" data-duration="6" data-track-index="1">
+        <div class="eyebrow top-eyebrow">90 days · 5 cities · real data</div>
+        <div id="s07-card0" class="proof">
+          <div class="big-claim">A sensor says <em>980</em>.</div>
+          <div id="s07-spark" class="spark"></div>
+          <div id="s07-stamp" class="stamp">Glitch · ignored</div>
+          <div class="proof-note" id="s07-note0"></div>
+        </div>
+        <div id="s07-card1" class="proof">
+          <div class="big-claim" id="s07-rate"></div>
+          <div id="s07-rates" class="rates"></div>
+          <div class="proof-note">alerts a week, per person, from a 90-day replay</div>
+        </div>
+        <div id="s07-card2" class="proof">
+          <div class="mega">53%</div>
+          <div class="proof-note left">of first-draft "trends" were flat or falling.</div>
+          <svg id="s07-lines" class="trend" viewBox="0 0 800 300">
+            <path id="s07-flat" d="M30 170 L120 130 L210 138 L300 150 L370 160" />
+            <line id="s07-x1" x1="110" y1="70" x2="290" y2="230" />
+            <line id="s07-x2" x1="290" y1="70" x2="110" y2="230" />
+            <path id="s07-rise" d="M440 240 L520 205 L600 160 L690 105 L770 50" />
+            <text x="200" y="290" text-anchor="middle">flat, called a trend</text>
+            <text x="605" y="290" text-anchor="middle">rising: a real climb</text>
+          </svg>
+          <div class="proof-note accent" id="s07-fix">So now a climb has to rise.</div>
+        </div>
+      </section>
+
+      <!-- 8 · Every silence has a reason · 0:46–0:52 -->
+      <section id="s08" class="clip scene" data-start="46" data-duration="6" data-track-index="1">
+        <div class="headline top"><span id="s08-h1" class="line">Every hour, logged.</span><span id="s08-h2" class="line sub">Every silence, explained.</span></div>
+        <div id="s08-cam" class="log-cam"><div id="s08-rows" class="log" data-layout-allow-overflow></div></div>
+        <div id="s08-trace" class="trace" data-layout-allow-overlap data-layout-allow-occlusion></div>
+      </section>
+
+      <!-- 9 · Built to grow · 0:52–0:56 -->
+      <section id="s09" class="clip scene" data-start="52" data-duration="4" data-track-index="1">
+        <div class="headline top"><span id="s09-h1" class="line">18 layers.</span><span id="s09-h2" class="line sub">Air today. Pollen, heart rate, SOS next.</span></div>
+        <div id="s09-grid" class="layers"></div>
+        <div class="legend"><span class="lg real">real</span><span class="lg stub">stub, one rule</span><span class="lg none">not yet</span></div>
+      </section>
+
+      <!-- 10 · End card · 0:56–1:00 -->
+      <section id="s10" class="clip scene" data-start="56" data-duration="4" data-track-index="1">
+        <div class="end">
+          <div id="s10-l1" class="end-line">Speaks rarely.</div>
+          <div id="s10-l2" class="end-line accent">Explains itself.</div>
+          <div id="s10-brand" class="end-brand">
+            <div class="title small">Proactive Air&nbsp;Quality&nbsp;Agent</div>
+            <div class="repo">github.com/yb0203/air-quality-insight-agent</div>
+          </div>
+        </div>
+        <div id="s10-fade" class="fade-black" data-layout-ignore></div>
+      </section>
+
+      <div class="vignette" data-layout-ignore></div>
+
+      <audio id="mix" src="assets/audio/mix.m4a" data-start="0" data-duration="60" data-track-index="10" data-volume="1"></audio>
+    </div>
+    <script src="assets/main.js"></script>
+    <script>
+      window.__timelines["main"] = window.buildMainTimeline();
+    </script>
+  </body>
+</html>
