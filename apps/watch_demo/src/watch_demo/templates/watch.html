@@ -10,7 +10,8 @@
   {# Everything outside .watch is the demo frame; everything inside is the product. #}
   <header class="masthead">
     <span class="brand">Air quality agent · watch demo</span>
-    <span class="promise">Speaks only when something is worth knowing · replay of real OpenAQ data</span>
+    <span class="promise">Speaks only when something is worth knowing · replay of real OpenAQ data ·
+      <a href="/capabilities">What it can do</a></span>
   </header>
 
   <nav class="navigator" aria-label="Demo scenarios">
@@ -35,7 +36,7 @@
     {% if story.tags or scenario.brief %}
       <p class="story-tags">
         {% if story.tags %}<span class="tags-label">Shows</span>{% endif %}
-        {% for t in story.tags %}<span class="tag" title="{{ t.what }}">{{ t.label }}</span>{% endfor %}
+        {% for t in story.tags %}<a class="tag" href="/capabilities#{{ t.label | replace(' ', '-') }}" title="{{ t.what }}">{{ t.label }}</a>{% endfor %}
         {% if scenario.brief %}<span class="brief-ids">brief {{ scenario.brief | join(", ") }}</span>{% endif %}
       </p>
     {% endif %}

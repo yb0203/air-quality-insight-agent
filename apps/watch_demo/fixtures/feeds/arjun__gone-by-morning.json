@@ -1,0 +1,13 @@
+[
+ {
+  "id": "ntf_128",
+  "created_at": "2026-09-11 05:20:00+00:00",
+  "delivered_at": "2026-09-11 05:20:00+00:00",
+  "kind": "opened",
+  "event_kind": "climb",
+  "band": "unhealthy",
+  "body": "Delhi's air has been getting worse since 10:50am and is now unhealthy, the second bad morning this week. Best to keep windows closed for now.",
+  "next_action": "keep windows closed",
+  "decision_id": "dec_9023"
+ }
+]

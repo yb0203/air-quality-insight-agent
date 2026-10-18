@@ -1,0 +1,2103 @@
+[
+ {
+  "id": "dec_9518",
+  "evaluated_at": "2026-09-14 02:20:00+00:00",
+  "period_end": "2026-09-14 00:30:00+00:00",
+  "user_id": "arjun",
+  "outcome": "no_event",
+  "reason_code": "NO_TRIGGER",
+  "reason": "Nothing unusual.",
+  "trigger": "data",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "period_end": "2026-09-14T00:30:00+00:00",
+     "z": 0.543,
+     "ewma": -0.09,
+     "cusum": 0.043,
+     "slope_6h": 0.019,
+     "nowcast": 40.3,
+     "band": "usg",
+     "typical_band": "usg"
+    }
+   },
+   {
+    "layer": "D1",
+    "passed": false,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "label": null,
+     "fired": [],
+     "calm": true,
+     "near_misses": [],
+     "bars": {
+      "spike": 3.5,
+      "climb": 1.26,
+      "elevated": 8.0,
+      "floor": 4.0
+     },
+     "cusum": 0.043,
+     "k": 1.0
+    }
+   },
+   {
+    "layer": "D2",
+    "passed": false,
+    "reason_code": "NO_TRIGGER",
+    "inputs": {},
+    "values": {
+     "state": null,
+     "calm_run": 8,
+     "candidate": null
+    }
+   }
+  ]
+ },
+ {
+  "id": "dec_9525",
+  "evaluated_at": "2026-09-14 03:20:00+00:00",
+  "period_end": "2026-09-14 01:30:00+00:00",
+  "user_id": "arjun",
+  "outcome": "no_event",
+  "reason_code": "NO_TRIGGER",
+  "reason": "Nothing unusual.",
+  "trigger": "data",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "period_end": "2026-09-14T01:30:00+00:00",
+     "z": 0.493,
+     "ewma": 0.033,
+     "cusum": 0.0,
+     "slope_6h": 0.024,
+     "nowcast": 41.3,
+     "band": "usg",
+     "typical_band": "usg"
+    }
+   },
+   {
+    "layer": "D1",
+    "passed": false,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "label": null,
+     "fired": [],
+     "calm": true,
+     "near_misses": [],
+     "bars": {
+      "spike": 3.5,
+      "climb": 1.26,
+      "elevated": 8.0,
+      "floor": 4.0
+     },
+     "cusum": 0.036,
+     "k": 1.0
+    }
+   },
+   {
+    "layer": "D2",
+    "passed": false,
+    "reason_code": "NO_TRIGGER",
+    "inputs": {},
+    "values": {
+     "state": null,
+     "calm_run": 9,
+     "candidate": null
+    }
+   }
+  ]
+ },
+ {
+  "id": "dec_9532",
+  "evaluated_at": "2026-09-14 04:20:00+00:00",
+  "period_end": "2026-09-14 02:30:00+00:00",
+  "user_id": "arjun",
+  "outcome": "no_event",
+  "reason_code": "NO_TRIGGER",
+  "reason": "Nothing unusual.",
+  "trigger": "data",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "period_end": "2026-09-14T02:30:00+00:00",
+     "z": 0.613,
+     "ewma": 0.173,
+     "cusum": 0.113,
+     "slope_6h": 0.031,
+     "nowcast": 42.6,
+     "band": "usg",
+     "typical_band": "usg"
+    }
+   },
+   {
+    "layer": "D1",
+    "passed": false,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "label": null,
+     "fired": [],
+     "calm": true,
+     "near_misses": [],
+     "bars": {
+      "spike": 3.5,
+      "climb": 1.26,
+      "elevated": 8.0,
+      "floor": 4.0
+     },
+     "cusum": 0.149,
+     "k": 1.0
+    }
+   },
+   {
+    "layer": "D2",
+    "passed": false,
+    "reason_code": "NO_TRIGGER",
+    "inputs": {},
+    "values": {
+     "state": null,
+     "calm_run": 10,
+     "candidate": null
+    }
+   }
+  ]
+ },
+ {
+  "id": "dec_9539",
+  "evaluated_at": "2026-09-14 05:20:00+00:00",
+  "period_end": "2026-09-14 03:30:00+00:00",
+  "user_id": "arjun",
+  "outcome": "no_event",
+  "reason_code": "NO_TRIGGER",
+  "reason": "Nothing unusual.",
+  "trigger": "data",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "period_end": "2026-09-14T03:30:00+00:00",
+     "z": 0.423,
+     "ewma": 0.254,
+     "cusum": 0.065,
+     "slope_6h": 0.038,
+     "nowcast": 45.1,
+     "band": "usg",
+     "typical_band": "usg"
+    }
+   },
+   {
+    "layer": "D1",
+    "passed": false,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "label": null,
+     "fired": [],
+     "calm": true,
+     "near_misses": [],
+     "bars": {
+      "spike": 3.5,
+      "climb": 1.26,
+      "elevated": 8.0,
+      "floor": 4.0
+     },
+     "cusum": 0.073,
+     "k": 1.0
+    }
+   },
+   {
+    "layer": "D2",
+    "passed": false,
+    "reason_code": "NO_TRIGGER",
+    "inputs": {},
+    "values": {
+     "state": null,
+     "calm_run": 11,
+     "candidate": null
+    }
+   }
+  ]
+ },
+ {
+  "id": "dec_9546",
+  "evaluated_at": "2026-09-14 06:20:00+00:00",
+  "period_end": "2026-09-14 04:30:00+00:00",
+  "user_id": "arjun",
+  "outcome": "no_event",
+  "reason_code": "NO_TRIGGER",
+  "reason": "Nothing unusual.",
+  "trigger": "data",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "period_end": "2026-09-14T04:30:00+00:00",
+     "z": 0.151,
+     "ewma": 0.202,
+     "cusum": 0.0,
+     "slope_6h": 0.038,
+     "nowcast": 45.9,
+     "band": "usg",
+     "typical_band": "usg"
+    }
+   },
+   {
+    "layer": "D1",
+    "passed": false,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "label": null,
+     "fired": [],
+     "calm": true,
+     "near_misses": [],
+     "bars": {
+      "spike": 3.5,
+      "climb": 1.26,
+      "elevated": 8.0,
+      "floor": 4.0
+     },
+     "cusum": 0.0,
+     "k": 1.0
+    }
+   },
+   {
+    "layer": "D2",
+    "passed": false,
+    "reason_code": "NO_TRIGGER",
+    "inputs": {},
+    "values": {
+     "state": null,
+     "calm_run": 12,
+     "candidate": null
+    }
+   }
+  ]
+ },
+ {
+  "id": "dec_9553",
+  "evaluated_at": "2026-09-14 07:20:00+00:00",
+  "period_end": "2026-09-14 05:30:00+00:00",
+  "user_id": "arjun",
+  "outcome": "no_event",
+  "reason_code": "NO_TRIGGER",
+  "reason": "Nothing unusual.",
+  "trigger": "data",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "period_end": "2026-09-14T05:30:00+00:00",
+     "z": 0.717,
+     "ewma": 0.329,
+     "cusum": 0.217,
+     "slope_6h": 0.025,
+     "nowcast": 46.1,
+     "band": "usg",
+     "typical_band": "usg"
+    }
+   },
+   {
+    "layer": "D1",
+    "passed": false,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "label": null,
+     "fired": [],
+     "calm": true,
+     "near_misses": [],
+     "bars": {
+      "spike": 3.5,
+      "climb": 1.26,
+      "elevated": 8.0,
+      "floor": 4.0
+     },
+     "cusum": 0.217,
+     "k": 1.0
+    }
+   },
+   {
+    "layer": "D2",
+    "passed": false,
+    "reason_code": "NO_TRIGGER",
+    "inputs": {},
+    "values": {
+     "state": null,
+     "calm_run": 13,
+     "candidate": null
+    }
+   }
+  ]
+ },
+ {
+  "id": "dec_9560",
+  "evaluated_at": "2026-09-14 08:20:00+00:00",
+  "period_end": "2026-09-14 06:30:00+00:00",
+  "user_id": "arjun",
+  "outcome": "no_event",
+  "reason_code": "NO_TRIGGER",
+  "reason": "Nothing unusual.",
+  "trigger": "data",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "period_end": "2026-09-14T06:30:00+00:00",
+     "z": 1.345,
+     "ewma": 0.616,
+     "cusum": 0.977,
+     "slope_6h": 0.008,
+     "nowcast": 45.7,
+     "band": "usg",
+     "typical_band": "usg"
+    }
+   },
+   {
+    "layer": "D1",
+    "passed": false,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "label": null,
+     "fired": [],
+     "calm": false,
+     "near_misses": [],
+     "bars": {
+      "spike": 3.5,
+      "climb": 1.26,
+      "elevated": 8.0,
+      "floor": 4.0
+     },
+     "cusum": 1.062,
+     "k": 1.0
+    }
+   },
+   {
+    "layer": "D2",
+    "passed": false,
+    "reason_code": "NO_TRIGGER",
+    "inputs": {},
+    "values": {
+     "state": null,
+     "calm_run": 0,
+     "candidate": null
+    }
+   }
+  ]
+ },
+ {
+  "id": "dec_9567",
+  "evaluated_at": "2026-09-14 09:20:00+00:00",
+  "period_end": "2026-09-14 07:30:00+00:00",
+  "user_id": "arjun",
+  "outcome": "no_event",
+  "reason_code": "NO_TRIGGER",
+  "reason": "Nothing unusual.",
+  "trigger": "data",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "period_end": "2026-09-14T07:30:00+00:00",
+     "z": 1.993,
+     "ewma": 1.011,
+     "cusum": 2.381,
+     "slope_6h": -0.01,
+     "nowcast": 45.5,
+     "band": "usg",
+     "typical_band": "usg"
+    }
+   },
+   {
+    "layer": "D1",
+    "passed": false,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "label": null,
+     "fired": [],
+     "calm": false,
+     "near_misses": [],
+     "bars": {
+      "spike": 3.5,
+      "climb": 1.26,
+      "elevated": 8.0,
+      "floor": 4.0
+     },
+     "cusum": 2.555,
+     "k": 1.0
+    }
+   },
+   {
+    "layer": "D2",
+    "passed": false,
+    "reason_code": "NO_TRIGGER",
+    "inputs": {},
+    "values": {
+     "state": null,
+     "calm_run": 0,
+     "candidate": null
+    }
+   }
+  ]
+ },
+ {
+  "id": "dec_9574",
+  "evaluated_at": "2026-09-14 10:20:00+00:00",
+  "period_end": "2026-09-14 08:30:00+00:00",
+  "user_id": "arjun",
+  "outcome": "no_event",
+  "reason_code": "NO_TRIGGER",
+  "reason": "Nothing unusual.",
+  "trigger": "data",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "period_end": "2026-09-14T08:30:00+00:00",
+     "z": 0.504,
+     "ewma": 0.633,
+     "cusum": 1.31,
+     "slope_6h": -0.027,
+     "nowcast": 44.9,
+     "band": "usg",
+     "typical_band": "usg"
+    }
+   },
+   {
+    "layer": "D1",
+    "passed": false,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "label": null,
+     "fired": [],
+     "calm": false,
+     "near_misses": [],
+     "bars": {
+      "spike": 3.5,
+      "climb": 1.26,
+      "elevated": 8.0,
+      "floor": 4.0
+     },
+     "cusum": 2.559,
+     "k": 1.0
+    }
+   },
+   {
+    "layer": "D2",
+    "passed": false,
+    "reason_code": "NO_TRIGGER",
+    "inputs": {},
+    "values": {
+     "state": null,
+     "calm_run": 0,
+     "candidate": null
+    }
+   }
+  ]
+ },
+ {
+  "id": "dec_9581",
+  "evaluated_at": "2026-09-14 11:20:00+00:00",
+  "period_end": "2026-09-14 09:30:00+00:00",
+  "user_id": "arjun",
+  "outcome": "no_event",
+  "reason_code": "NO_TRIGGER",
+  "reason": "Nothing unusual.",
+  "trigger": "data",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "period_end": "2026-09-14T09:30:00+00:00",
+     "z": 0.707,
+     "ewma": 0.602,
+     "cusum": 1.264,
+     "slope_6h": -0.032,
+     "nowcast": 44.3,
+     "band": "usg",
+     "typical_band": "usg"
+    }
+   },
+   {
+    "layer": "D1",
+    "passed": false,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "label": null,
+     "fired": [],
+     "calm": false,
+     "near_misses": [],
+     "bars": {
+      "spike": 3.5,
+      "climb": 1.26,
+      "elevated": 8.0,
+      "floor": 4.0
+     },
+     "cusum": 2.765,
+     "k": 1.0
+    }
+   },
+   {
+    "layer": "D2",
+    "passed": false,
+    "reason_code": "NO_TRIGGER",
+    "inputs": {},
+    "values": {
+     "state": null,
+     "calm_run": 0,
+     "candidate": null
+    }
+   }
+  ]
+ },
+ {
+  "id": "dec_9588",
+  "evaluated_at": "2026-09-14 12:20:00+00:00",
+  "period_end": "2026-09-14 10:30:00+00:00",
+  "user_id": "arjun",
+  "outcome": "no_event",
+  "reason_code": "NO_TRIGGER",
+  "reason": "Nothing unusual.",
+  "trigger": "data",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "period_end": "2026-09-14T10:30:00+00:00",
+     "z": 0.804,
+     "ewma": 0.654,
+     "cusum": 1.529,
+     "slope_6h": -0.032,
+     "nowcast": 44.0,
+     "band": "usg",
+     "typical_band": "usg"
+    }
+   },
+   {
+    "layer": "D1",
+    "passed": false,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "label": null,
+     "fired": [],
+     "calm": false,
+     "near_misses": [],
+     "bars": {
+      "spike": 3.5,
+      "climb": 1.26,
+      "elevated": 8.0,
+      "floor": 4.0
+     },
+     "cusum": 3.069,
+     "k": 1.0
+    }
+   },
+   {
+    "layer": "D2",
+    "passed": false,
+    "reason_code": "NO_TRIGGER",
+    "inputs": {},
+    "values": {
+     "state": null,
+     "calm_run": 0,
+     "candidate": null
+    }
+   }
+  ]
+ },
+ {
+  "id": "dec_9595",
+  "evaluated_at": "2026-09-14 13:20:00+00:00",
+  "period_end": "2026-09-14 11:30:00+00:00",
+  "user_id": "arjun",
+  "outcome": "no_event",
+  "reason_code": "NO_TRIGGER",
+  "reason": "Nothing unusual.",
+  "trigger": "data",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "period_end": "2026-09-14T11:30:00+00:00",
+     "z": 0.976,
+     "ewma": 0.728,
+     "cusum": 1.898,
+     "slope_6h": -0.012,
+     "nowcast": 44.3,
+     "band": "usg",
+     "typical_band": "usg"
+    }
+   },
+   {
+    "layer": "D1",
+    "passed": false,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "label": null,
+     "fired": [],
+     "calm": false,
+     "near_misses": [],
+     "bars": {
+      "spike": 3.5,
+      "climb": 1.26,
+      "elevated": 8.0,
+      "floor": 4.0
+     },
+     "cusum": 3.545,
+     "k": 1.0
+    }
+   },
+   {
+    "layer": "D2",
+    "passed": false,
+    "reason_code": "NO_TRIGGER",
+    "inputs": {},
+    "values": {
+     "state": null,
+     "calm_run": 0,
+     "candidate": null
+    }
+   }
+  ]
+ },
+ {
+  "id": "dec_9602",
+  "evaluated_at": "2026-09-14 14:20:00+00:00",
+  "period_end": "2026-09-14 12:30:00+00:00",
+  "user_id": "arjun",
+  "outcome": "no_event",
+  "reason_code": "NO_TRIGGER",
+  "reason": "Nothing unusual.",
+  "trigger": "data",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "period_end": "2026-09-14T12:30:00+00:00",
+     "z": 1.737,
+     "ewma": 0.976,
+     "cusum": 2.873,
+     "slope_6h": 0.016,
+     "nowcast": 44.8,
+     "band": "usg",
+     "typical_band": "usg"
+    }
+   },
+   {
+    "layer": "D1",
+    "passed": false,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "label": null,
+     "fired": [],
+     "calm": false,
+     "near_misses": [],
+     "bars": {
+      "spike": 3.5,
+      "climb": 1.26,
+      "elevated": 8.0,
+      "floor": 4.0
+     },
+     "cusum": 4.782,
+     "k": 1.0
+    }
+   },
+   {
+    "layer": "D2",
+    "passed": false,
+    "reason_code": "NO_TRIGGER",
+    "inputs": {},
+    "values": {
+     "state": null,
+     "calm_run": 0,
+     "candidate": null
+    }
+   }
+  ]
+ },
+ {
+  "id": "dec_9609",
+  "evaluated_at": "2026-09-14 15:20:00+00:00",
+  "period_end": "2026-09-14 13:30:00+00:00",
+  "user_id": "arjun",
+  "outcome": "no_event",
+  "reason_code": "NO_TRIGGER",
+  "reason": "Nothing unusual.",
+  "trigger": "data",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "period_end": "2026-09-14T13:30:00+00:00",
+     "z": 1.903,
+     "ewma": 1.177,
+     "cusum": 3.911,
+     "slope_6h": 0.033,
+     "nowcast": 45.3,
+     "band": "usg",
+     "typical_band": "usg"
+    }
+   },
+   {
+    "layer": "D1",
+    "passed": false,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "label": null,
+     "fired": [],
+     "calm": false,
+     "near_misses": [
+      "climb"
+     ],
+     "bars": {
+      "spike": 3.5,
+      "climb": 1.26,
+      "elevated": 8.0,
+      "floor": 4.0
+     },
+     "cusum": 6.185,
+     "k": 1.0
+    }
+   },
+   {
+    "layer": "D2",
+    "passed": false,
+    "reason_code": "NO_TRIGGER",
+    "inputs": {},
+    "values": {
+     "state": null,
+     "calm_run": 0,
+     "candidate": null
+    }
+   }
+  ]
+ },
+ {
+  "id": "dec_9616",
+  "evaluated_at": "2026-09-14 16:20:00+00:00",
+  "period_end": "2026-09-14 14:30:00+00:00",
+  "user_id": "arjun",
+  "outcome": "sent",
+  "reason_code": "SENT_OPENED",
+  "reason": "Sent: air quality turned bad.",
+  "trigger": "data",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "period_end": "2026-09-14T14:30:00+00:00",
+     "z": 2.685,
+     "ewma": 1.479,
+     "cusum": 5.378,
+     "slope_6h": 0.035,
+     "nowcast": 46.0,
+     "band": "usg",
+     "typical_band": "usg"
+    }
+   },
+   {
+    "layer": "D1",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "label": "elevated",
+     "fired": [
+      "elevated"
+     ],
+     "calm": false,
+     "near_misses": [
+      "climb"
+     ],
+     "bars": {
+      "spike": 3.5,
+      "climb": 1.26,
+      "elevated": 8.0,
+      "floor": 4.0
+     },
+     "cusum": 8.37,
+     "k": 1.0
+    }
+   },
+   {
+    "layer": "D2",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "state": "ACTIVE",
+     "calm_run": 0,
+     "candidate": "opened",
+     "started_at": "2026-09-14T16:20:00+00:00",
+     "hours": 0.0,
+     "ended_at": null,
+     "peak": {
+      "pm25": 46,
+      "at": "2026-09-14T14:30:00+00:00",
+      "band": "usg"
+     }
+    }
+   },
+   {
+    "layer": "D3",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "kind": "opened",
+     "band": "usg"
+    }
+   },
+   {
+    "layer": "D4",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "notices_in_episode": 0
+    }
+   },
+   {
+    "layer": "D5",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "candidates": 1,
+     "kept": "opened"
+    }
+   },
+   {
+    "layer": "D6",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "response": "notify"
+    }
+   },
+   {
+    "layer": "D7",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "sent_today": 0,
+     "max_per_day": 3
+    }
+   },
+   {
+    "layer": "D8",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "local_time": "21:50",
+     "quiet_hours": false
+    }
+   },
+   {
+    "layer": "A",
+    "passed": true,
+    "reason_code": "SENT_OPENED",
+    "inputs": {},
+    "values": {
+     "compose": "opened"
+    }
+   }
+  ]
+ },
+ {
+  "id": "dec_9623",
+  "evaluated_at": "2026-09-14 17:20:00+00:00",
+  "period_end": "2026-09-14 15:30:00+00:00",
+  "user_id": "arjun",
+  "outcome": "no_event",
+  "reason_code": "EPISODE_CONTINUES",
+  "reason": "The same bad period is continuing; nothing new to say.",
+  "trigger": "data",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "period_end": "2026-09-14T15:30:00+00:00",
+     "z": 2.414,
+     "ewma": 1.67,
+     "cusum": 6.865,
+     "slope_6h": 0.035,
+     "nowcast": 47.2,
+     "band": "usg",
+     "typical_band": "usg"
+    }
+   },
+   {
+    "layer": "D1",
+    "passed": false,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "label": null,
+     "fired": [],
+     "calm": false,
+     "near_misses": [
+      "climb"
+     ],
+     "bars": {
+      "spike": 3.5,
+      "climb": 1.26,
+      "elevated": 8.0,
+      "floor": 4.0
+     },
+     "cusum": 1.914,
+     "k": 1.0
+    }
+   },
+   {
+    "layer": "D2",
+    "passed": false,
+    "reason_code": "EPISODE_CONTINUES",
+    "inputs": {},
+    "values": {
+     "state": "ACTIVE",
+     "calm_run": 0,
+     "candidate": null,
+     "started_at": "2026-09-14T16:20:00+00:00",
+     "hours": 1.0,
+     "ended_at": null,
+     "peak": {
+      "pm25": 47,
+      "at": "2026-09-14T15:30:00+00:00",
+      "band": "usg"
+     }
+    }
+   }
+  ]
+ },
+ {
+  "id": "dec_9630",
+  "evaluated_at": "2026-09-14 18:20:00+00:00",
+  "period_end": "2026-09-14 16:30:00+00:00",
+  "user_id": "arjun",
+  "outcome": "suppressed",
+  "reason_code": "DEDUP_SAME_BAND",
+  "reason": "Already told you about this level; nothing new to say.",
+  "trigger": "data",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "period_end": "2026-09-14T16:30:00+00:00",
+     "z": 2.502,
+     "ewma": 1.919,
+     "cusum": 8.867,
+     "slope_6h": 0.041,
+     "nowcast": 52.4,
+     "band": "usg",
+     "typical_band": "usg"
+    }
+   },
+   {
+    "layer": "D1",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "label": "climb",
+     "fired": [
+      "climb"
+     ],
+     "calm": false,
+     "near_misses": [],
+     "bars": {
+      "spike": 3.5,
+      "climb": 1.26,
+      "elevated": 8.0,
+      "floor": 4.0
+     },
+     "cusum": 3.916,
+     "k": 1.0
+    }
+   },
+   {
+    "layer": "D2",
+    "passed": false,
+    "reason_code": "EPISODE_CONTINUES",
+    "inputs": {},
+    "values": {
+     "state": "ACTIVE",
+     "calm_run": 0,
+     "candidate": null,
+     "started_at": "2026-09-14T16:20:00+00:00",
+     "hours": 2.0,
+     "ended_at": null,
+     "peak": {
+      "pm25": 52,
+      "at": "2026-09-14T16:30:00+00:00",
+      "band": "usg"
+     }
+    }
+   },
+   {
+    "layer": "D3",
+    "passed": false,
+    "reason_code": "DEDUP_SAME_BAND",
+    "inputs": {},
+    "values": {
+     "band": "usg",
+     "last_told": "usg"
+    }
+   }
+  ]
+ },
+ {
+  "id": "dec_9637",
+  "evaluated_at": "2026-09-14 19:20:00+00:00",
+  "period_end": "2026-09-14 17:30:00+00:00",
+  "user_id": "arjun",
+  "outcome": "suppressed",
+  "reason_code": "COOLDOWN",
+  "reason": "Too soon: 3.0h since the last message, 6h needed.",
+  "trigger": "data",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "period_end": "2026-09-14T17:30:00+00:00",
+     "z": 2.368,
+     "ewma": 2.054,
+     "cusum": 1.868,
+     "slope_6h": 0.06,
+     "nowcast": 56.6,
+     "band": "unhealthy",
+     "typical_band": "usg"
+    }
+   },
+   {
+    "layer": "D1",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "label": "climb",
+     "fired": [
+      "climb"
+     ],
+     "calm": false,
+     "near_misses": [],
+     "bars": {
+      "spike": 3.5,
+      "climb": 1.26,
+      "elevated": 8.0,
+      "floor": 4.0
+     },
+     "cusum": 5.785,
+     "k": 1.0
+    }
+   },
+   {
+    "layer": "D2",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "state": "ACTIVE",
+     "calm_run": 0,
+     "candidate": "escalated",
+     "started_at": "2026-09-14T16:20:00+00:00",
+     "hours": 3.0,
+     "ended_at": null,
+     "peak": {
+      "pm25": 57,
+      "at": "2026-09-14T17:30:00+00:00",
+      "band": "unhealthy"
+     }
+    }
+   },
+   {
+    "layer": "D3",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "kind": "escalated",
+     "band": "unhealthy"
+    }
+   },
+   {
+    "layer": "D4",
+    "passed": false,
+    "reason_code": "COOLDOWN",
+    "inputs": {},
+    "values": {
+     "notices_in_episode": 1,
+     "required_gap_h": 6,
+     "elapsed_h": 3.0
+    }
+   }
+  ]
+ },
+ {
+  "id": "dec_9644",
+  "evaluated_at": "2026-09-14 20:20:00+00:00",
+  "period_end": "2026-09-14 18:30:00+00:00",
+  "user_id": "arjun",
+  "outcome": "suppressed",
+  "reason_code": "COOLDOWN",
+  "reason": "Too soon: 4.0h since the last message, 6h needed.",
+  "trigger": "data",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "period_end": "2026-09-14T18:30:00+00:00",
+     "z": 1.394,
+     "ewma": 1.663,
+     "cusum": 1.841,
+     "slope_6h": 0.071,
+     "nowcast": 60.7,
+     "band": "unhealthy",
+     "typical_band": "usg"
+    }
+   },
+   {
+    "layer": "D1",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "label": "climb",
+     "fired": [
+      "climb"
+     ],
+     "calm": false,
+     "near_misses": [
+      "elevated"
+     ],
+     "bars": {
+      "spike": 3.5,
+      "climb": 1.26,
+      "elevated": 8.0,
+      "floor": 4.0
+     },
+     "cusum": 6.679,
+     "k": 1.0
+    }
+   },
+   {
+    "layer": "D2",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "state": "ACTIVE",
+     "calm_run": 0,
+     "candidate": "escalated",
+     "started_at": "2026-09-14T16:20:00+00:00",
+     "hours": 4.0,
+     "ended_at": null,
+     "peak": {
+      "pm25": 61,
+      "at": "2026-09-14T18:30:00+00:00",
+      "band": "unhealthy"
+     }
+    }
+   },
+   {
+    "layer": "D3",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "kind": "escalated",
+     "band": "unhealthy"
+    }
+   },
+   {
+    "layer": "D4",
+    "passed": false,
+    "reason_code": "COOLDOWN",
+    "inputs": {},
+    "values": {
+     "notices_in_episode": 1,
+     "required_gap_h": 6,
+     "elapsed_h": 4.0
+    }
+   }
+  ]
+ },
+ {
+  "id": "dec_9651",
+  "evaluated_at": "2026-09-14 21:20:00+00:00",
+  "period_end": "2026-09-14 19:30:00+00:00",
+  "user_id": "arjun",
+  "outcome": "suppressed",
+  "reason_code": "COOLDOWN",
+  "reason": "Too soon: 5.0h since the last message, 6h needed.",
+  "trigger": "data",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "period_end": "2026-09-14T19:30:00+00:00",
+     "z": 3.183,
+     "ewma": 2.032,
+     "cusum": 4.109,
+     "slope_6h": 0.08,
+     "nowcast": 67.3,
+     "band": "unhealthy",
+     "typical_band": "usg"
+    }
+   },
+   {
+    "layer": "D1",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "label": "climb",
+     "fired": [
+      "climb",
+      "elevated"
+     ],
+     "calm": false,
+     "near_misses": [
+      "spike"
+     ],
+     "bars": {
+      "spike": 3.5,
+      "climb": 1.26,
+      "elevated": 8.0,
+      "floor": 4.0
+     },
+     "cusum": 9.362,
+     "k": 1.0
+    }
+   },
+   {
+    "layer": "D2",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "state": "ACTIVE",
+     "calm_run": 0,
+     "candidate": "escalated",
+     "started_at": "2026-09-14T16:20:00+00:00",
+     "hours": 5.0,
+     "ended_at": null,
+     "peak": {
+      "pm25": 67,
+      "at": "2026-09-14T19:30:00+00:00",
+      "band": "unhealthy"
+     }
+    }
+   },
+   {
+    "layer": "D3",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "kind": "escalated",
+     "band": "unhealthy"
+    }
+   },
+   {
+    "layer": "D4",
+    "passed": false,
+    "reason_code": "COOLDOWN",
+    "inputs": {},
+    "values": {
+     "notices_in_episode": 1,
+     "required_gap_h": 6,
+     "elapsed_h": 5.0
+    }
+   }
+  ]
+ },
+ {
+  "id": "dec_9658",
+  "evaluated_at": "2026-09-14 22:20:00+00:00",
+  "period_end": "2026-09-14 20:30:00+00:00",
+  "user_id": "arjun",
+  "outcome": "held",
+  "reason_code": "QUIET_HOURS_HELD",
+  "reason": "Held: quiet hours until 07:00.",
+  "trigger": "data",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "period_end": "2026-09-14T20:30:00+00:00",
+     "z": 2.722,
+     "ewma": 2.187,
+     "cusum": 6.083,
+     "slope_6h": 0.064,
+     "nowcast": 70.2,
+     "band": "unhealthy",
+     "typical_band": "usg"
+    }
+   },
+   {
+    "layer": "D1",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "label": "climb",
+     "fired": [
+      "climb"
+     ],
+     "calm": false,
+     "near_misses": [],
+     "bars": {
+      "spike": 3.5,
+      "climb": 1.26,
+      "elevated": 8.0,
+      "floor": 4.0
+     },
+     "cusum": 2.222,
+     "k": 1.0
+    }
+   },
+   {
+    "layer": "D2",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "state": "ACTIVE",
+     "calm_run": 0,
+     "candidate": "escalated",
+     "started_at": "2026-09-14T16:20:00+00:00",
+     "hours": 6.0,
+     "ended_at": null,
+     "peak": {
+      "pm25": 70,
+      "at": "2026-09-14T20:30:00+00:00",
+      "band": "unhealthy"
+     }
+    }
+   },
+   {
+    "layer": "D3",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "kind": "escalated",
+     "band": "unhealthy"
+    }
+   },
+   {
+    "layer": "D4",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "notices_in_episode": 1,
+     "required_gap_h": 6,
+     "elapsed_h": 6.0
+    }
+   },
+   {
+    "layer": "D5",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "candidates": 1,
+     "kept": "escalated"
+    }
+   },
+   {
+    "layer": "D6",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "response": "notify"
+    }
+   },
+   {
+    "layer": "D7",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "sent_today": 0,
+     "max_per_day": 3
+    }
+   },
+   {
+    "layer": "D8",
+    "passed": false,
+    "reason_code": "QUIET_HOURS_HELD",
+    "inputs": {},
+    "values": {
+     "local_time": "03:50",
+     "quiet_hours": true,
+     "held_until": "2026-09-15T07:00:00+05:30"
+    }
+   }
+  ]
+ },
+ {
+  "id": "dec_9665",
+  "evaluated_at": "2026-09-14 23:20:00+00:00",
+  "period_end": "2026-09-14 21:30:00+00:00",
+  "user_id": "arjun",
+  "outcome": "held",
+  "reason_code": "QUIET_HOURS_HELD",
+  "reason": "Held: quiet hours until 07:00.",
+  "trigger": "data",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "period_end": "2026-09-14T21:30:00+00:00",
+     "z": 2.073,
+     "ewma": 1.983,
+     "cusum": 6.849,
+     "slope_6h": 0.042,
+     "nowcast": 67.1,
+     "band": "unhealthy",
+     "typical_band": "usg"
+    }
+   },
+   {
+    "layer": "D1",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "label": "climb",
+     "fired": [
+      "climb"
+     ],
+     "calm": false,
+     "near_misses": [],
+     "bars": {
+      "spike": 3.5,
+      "climb": 1.26,
+      "elevated": 8.0,
+      "floor": 4.0
+     },
+     "cusum": 3.795,
+     "k": 1.0
+    }
+   },
+   {
+    "layer": "D2",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "state": "ACTIVE",
+     "calm_run": 0,
+     "candidate": "escalated",
+     "started_at": "2026-09-14T16:20:00+00:00",
+     "hours": 7.0,
+     "ended_at": null,
+     "peak": {
+      "pm25": 70,
+      "at": "2026-09-14T20:30:00+00:00",
+      "band": "unhealthy"
+     }
+    }
+   },
+   {
+    "layer": "D3",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "kind": "escalated",
+     "band": "unhealthy"
+    }
+   },
+   {
+    "layer": "D4",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "notices_in_episode": 1,
+     "required_gap_h": 6,
+     "elapsed_h": 7.0
+    }
+   },
+   {
+    "layer": "D5",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "candidates": 1,
+     "kept": "escalated"
+    }
+   },
+   {
+    "layer": "D6",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "response": "notify"
+    }
+   },
+   {
+    "layer": "D7",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "sent_today": 0,
+     "max_per_day": 3
+    }
+   },
+   {
+    "layer": "D8",
+    "passed": false,
+    "reason_code": "QUIET_HOURS_HELD",
+    "inputs": {},
+    "values": {
+     "local_time": "04:50",
+     "quiet_hours": true,
+     "held_until": "2026-09-15T07:00:00+05:30"
+    }
+   }
+  ]
+ },
+ {
+  "id": "dec_9672",
+  "evaluated_at": "2026-09-15 00:20:00+00:00",
+  "period_end": "2026-09-14 22:30:00+00:00",
+  "user_id": "arjun",
+  "outcome": "held",
+  "reason_code": "QUIET_HOURS_HELD",
+  "reason": "Held: quiet hours until 07:00.",
+  "trigger": "data",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "period_end": "2026-09-14T22:30:00+00:00",
+     "z": 2.406,
+     "ewma": 2.101,
+     "cusum": 8.714,
+     "slope_6h": -0.005,
+     "nowcast": 64.9,
+     "band": "unhealthy",
+     "typical_band": "usg"
+    }
+   },
+   {
+    "layer": "D1",
+    "passed": false,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "label": null,
+     "fired": [],
+     "calm": false,
+     "near_misses": [],
+     "bars": {
+      "spike": 3.5,
+      "climb": 1.26,
+      "elevated": 8.0,
+      "floor": 4.0
+     },
+     "cusum": 5.7,
+     "k": 1.0
+    }
+   },
+   {
+    "layer": "D2",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "state": "ACTIVE",
+     "calm_run": 0,
+     "candidate": "escalated",
+     "started_at": "2026-09-14T16:20:00+00:00",
+     "hours": 8.0,
+     "ended_at": null,
+     "peak": {
+      "pm25": 70,
+      "at": "2026-09-14T20:30:00+00:00",
+      "band": "unhealthy"
+     }
+    }
+   },
+   {
+    "layer": "D3",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "kind": "escalated",
+     "band": "unhealthy"
+    }
+   },
+   {
+    "layer": "D4",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "notices_in_episode": 1,
+     "required_gap_h": 6,
+     "elapsed_h": 8.0
+    }
+   },
+   {
+    "layer": "D5",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "candidates": 1,
+     "kept": "escalated"
+    }
+   },
+   {
+    "layer": "D6",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "response": "notify"
+    }
+   },
+   {
+    "layer": "D7",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "sent_today": 0,
+     "max_per_day": 3
+    }
+   },
+   {
+    "layer": "D8",
+    "passed": false,
+    "reason_code": "QUIET_HOURS_HELD",
+    "inputs": {},
+    "values": {
+     "local_time": "05:50",
+     "quiet_hours": true,
+     "held_until": "2026-09-15T07:00:00+05:30"
+    }
+   }
+  ]
+ },
+ {
+  "id": "dec_9675",
+  "evaluated_at": "2026-09-15 01:00:00+00:00",
+  "period_end": "2026-09-14 23:30:00+00:00",
+  "user_id": "arjun",
+  "outcome": "sent",
+  "reason_code": "SENT_CHECK_IN",
+  "reason": "Sent at your check-in time.",
+  "trigger": "clock",
+  "trace": [
+   {
+    "layer": "D2",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "state": "ACTIVE",
+     "started_at": "2026-09-14T16:20:00+00:00",
+     "hours": 8.7,
+     "ended_at": null,
+     "peak": {
+      "pm25": 70,
+      "at": "2026-09-14T20:30:00+00:00",
+      "band": "unhealthy"
+     }
+    }
+   },
+   {
+    "layer": "D8",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "check_in": "06:30",
+     "absorbed_held": 3,
+     "hours_considered": 6,
+     "band": "unhealthy",
+     "typical_band": "usg",
+     "ewma": 2.1012688394251686,
+     "recent_notice": false
+    }
+   },
+   {
+    "layer": "D5",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "candidates": 1,
+     "kept": "check_in"
+    }
+   },
+   {
+    "layer": "D6",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "response": "notify"
+    }
+   },
+   {
+    "layer": "D7",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "sent_today": 0,
+     "max_per_day": 3
+    }
+   },
+   {
+    "layer": "D8",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "local_time": "06:30",
+     "quiet_hours": true,
+     "check_in_wins": true
+    }
+   },
+   {
+    "layer": "A",
+    "passed": true,
+    "reason_code": "SENT_CHECK_IN",
+    "inputs": {},
+    "values": {
+     "compose": "check_in"
+    }
+   }
+  ]
+ },
+ {
+  "id": "dec_9681",
+  "evaluated_at": "2026-09-15 01:20:00+00:00",
+  "period_end": "2026-09-14 23:30:00+00:00",
+  "user_id": "arjun",
+  "outcome": "no_event",
+  "reason_code": "EPISODE_CONTINUES",
+  "reason": "The same bad period is continuing; nothing new to say.",
+  "trigger": "data",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "period_end": "2026-09-14T23:30:00+00:00",
+     "z": 2.121,
+     "ewma": 2.038,
+     "cusum": 1.621,
+     "slope_6h": -0.018,
+     "nowcast": 64.6,
+     "band": "unhealthy",
+     "typical_band": "usg"
+    }
+   },
+   {
+    "layer": "D1",
+    "passed": false,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "label": null,
+     "fired": [],
+     "calm": false,
+     "near_misses": [
+      "elevated"
+     ],
+     "bars": {
+      "spike": 3.5,
+      "climb": 1.26,
+      "elevated": 8.0,
+      "floor": 4.0
+     },
+     "cusum": 7.321,
+     "k": 1.0
+    }
+   },
+   {
+    "layer": "D2",
+    "passed": false,
+    "reason_code": "EPISODE_CONTINUES",
+    "inputs": {},
+    "values": {
+     "state": "ACTIVE",
+     "calm_run": 0,
+     "candidate": null,
+     "started_at": "2026-09-14T16:20:00+00:00",
+     "hours": 9.0,
+     "ended_at": null,
+     "peak": {
+      "pm25": 70,
+      "at": "2026-09-14T20:30:00+00:00",
+      "band": "unhealthy"
+     }
+    }
+   }
+  ]
+ },
+ {
+  "id": "dec_9689",
+  "evaluated_at": "2026-09-15 02:20:00+00:00",
+  "period_end": "2026-09-15 00:30:00+00:00",
+  "user_id": "arjun",
+  "outcome": "suppressed",
+  "reason_code": "DEDUP_SAME_BAND",
+  "reason": "Already told you about this level; nothing new to say.",
+  "trigger": "data",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "period_end": "2026-09-15T00:30:00+00:00",
+     "z": 3.489,
+     "ewma": 2.536,
+     "cusum": 4.911,
+     "slope_6h": -0.017,
+     "nowcast": 66.2,
+     "band": "unhealthy",
+     "typical_band": "usg"
+    }
+   },
+   {
+    "layer": "D1",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "label": "elevated",
+     "fired": [
+      "elevated"
+     ],
+     "calm": false,
+     "near_misses": [
+      "spike"
+     ],
+     "bars": {
+      "spike": 3.5,
+      "climb": 1.26,
+      "elevated": 8.0,
+      "floor": 4.0
+     },
+     "cusum": 10.309,
+     "k": 1.0
+    }
+   },
+   {
+    "layer": "D2",
+    "passed": false,
+    "reason_code": "EPISODE_CONTINUES",
+    "inputs": {},
+    "values": {
+     "state": "ACTIVE",
+     "calm_run": 0,
+     "candidate": null,
+     "started_at": "2026-09-14T16:20:00+00:00",
+     "hours": 10.0,
+     "ended_at": null,
+     "peak": {
+      "pm25": 70,
+      "at": "2026-09-14T20:30:00+00:00",
+      "band": "unhealthy"
+     }
+    }
+   },
+   {
+    "layer": "D3",
+    "passed": false,
+    "reason_code": "DEDUP_SAME_BAND",
+    "inputs": {},
+    "values": {
+     "band": "unhealthy",
+     "last_told": "unhealthy"
+    }
+   }
+  ]
+ },
+ {
+  "id": "dec_9696",
+  "evaluated_at": "2026-09-15 03:20:00+00:00",
+  "period_end": "2026-09-15 01:30:00+00:00",
+  "user_id": "arjun",
+  "outcome": "suppressed",
+  "reason_code": "DEDUP_SAME_BAND",
+  "reason": "Already told you about this level; nothing new to say.",
+  "trigger": "data",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "period_end": "2026-09-15T01:30:00+00:00",
+     "z": 3.384,
+     "ewma": 2.596,
+     "cusum": 6.866,
+     "slope_6h": 0.028,
+     "nowcast": 70.1,
+     "band": "unhealthy",
+     "typical_band": "usg"
+    }
+   },
+   {
+    "layer": "D1",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "label": "climb",
+     "fired": [
+      "climb"
+     ],
+     "calm": false,
+     "near_misses": [
+      "spike"
+     ],
+     "bars": {
+      "spike": 3.5,
+      "climb": 1.26,
+      "elevated": 8.0,
+      "floor": 4.0
+     },
+     "cusum": 2.884,
+     "k": 1.0
+    }
+   },
+   {
+    "layer": "D2",
+    "passed": false,
+    "reason_code": "EPISODE_CONTINUES",
+    "inputs": {},
+    "values": {
+     "state": "ACTIVE",
+     "calm_run": 0,
+     "candidate": null,
+     "started_at": "2026-09-14T16:20:00+00:00",
+     "hours": 11.0,
+     "ended_at": null,
+     "peak": {
+      "pm25": 70,
+      "at": "2026-09-14T20:30:00+00:00",
+      "band": "unhealthy"
+     }
+    }
+   },
+   {
+    "layer": "D3",
+    "passed": false,
+    "reason_code": "DEDUP_SAME_BAND",
+    "inputs": {},
+    "values": {
+     "band": "unhealthy",
+     "last_told": "unhealthy"
+    }
+   }
+  ]
+ }
+]

@@ -32,15 +32,16 @@ uv run --project apps/watch_demo pytest apps/watch_demo/tests
 
 ## The scenarios
 
-Each chip is one entry in `scenarios.yaml`: a person, a replay run, the replayed moment the watch opens at, and how many hours of history the chart shows.
+Sixteen scenarios, grouped by what they show. Each one opens with a question, a few tags naming the capabilities involved, and two to four numbered beats. Click a beat, or step hour by hour, and the watch moves to that moment. Under the chart, a panel says in plain words what the agent decided at that moment, shows the layer-by-layer path it took, and gives the reason code.
 
-- **Delhi smog night.** Arjun runs at 06:30. On the night of 8 to 9 October the air climbed from about 1am. The agent noticed, but it was quiet hours, so it held the notice and folded it into one message at his 06:30 check-in. When the episode ended at 17:00, after 16 hours, it sent a short all-clear.
-- **Back to normal.** That all-clear on its own, with its reasons.
-- **Helsinki smoke.** Aino has asthma and asked for high sensitivity. On 24 August smoke took Helsinki to about 27 µg/m³ against a usual 4. That is only "Moderate" on the official scale, but six times normal for this city, so she hears about it.
-- **Glitch ignored.** A Mumbai sensor reported 980 µg/m³ for a single hour between readings of 75 and 90. The agent treated it as a glitch, and the watch stays calm.
-- **Quiet night.** A calm Bengaluru night, cleaner than usual. Nothing worth saying, and the watch can still tell you why.
+- **When it speaks.** Delhi smog night (held overnight, one check-in, then an all-clear); Back to normal; Sudden spike (a jump to very unhealthy sent at once); Severe night (very unhealthy air at 2:50am breaks through quiet hours); Slow build-up (Los Angeles stuck a little above normal for days: one message).
+- **When it stays quiet.** Quiet night; All day bad, one message (Dubai, twelve unhealthy hours, one message); Too soon to repeat (pacing); Gone by morning (a held message dropped because the problem passed); Blip, no all-clear; Unusual but harmless (the detector fires, but the air is still good).
+- **When the data can't be trusted.** Glitch ignored; Too short to tell (one high hour between two normal ones); Sensor went silent (no data, so nothing is said, and the story closes quietly after a day).
+- **Same air, different person.** Helsinki smoke (six times the usual, still "Moderate", and Aino is sensitive); Two people, one city (Meera hears, Arjun doesn't).
 
-The readings behind these scenarios are real hours from the 90-day sample in `data/samples/`. The messages and decision records in `fixtures/` were written to match what the agent's rules produce for those hours; once the agent's API is running, the same screens can be driven from it directly.
+The "What it can do" page lists every capability with the part of the brief it answers and links to the scenarios that show it. The one capability no scenario shows is the daily message budget: in ninety days of replay it never had to step in.
+
+Everything is real. The fixtures are exported from a replay of the 90-day sample (`scripts/export_watch_fixtures.py`), and every beat sits on a decision the replay actually made; the export stops if one doesn't.
 
 ## Screenshots
 

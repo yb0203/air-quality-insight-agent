@@ -1,0 +1,13 @@
+[
+ {
+  "id": "ntf_82",
+  "created_at": "2026-08-24 07:20:00+00:00",
+  "delivered_at": "2026-08-24 07:20:00+00:00",
+  "kind": "opened",
+  "event_kind": "floor",
+  "band": "unhealthy",
+  "body": "Delhi's air has crossed into unhealthy since 12:50pm. Best to keep windows closed for now.",
+  "next_action": "keep windows closed",
+  "decision_id": "dec_5966"
+ }
+]
