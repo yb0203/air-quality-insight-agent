@@ -3,6 +3,8 @@ from __future__ import annotations
 
 from datetime import datetime, timedelta, timezone
 
+import pytest
+
 from aqagent.decide.trigger import TriggerResult, triggers
 from aqagent.types import Band, EventKind, ReasonCode, StationScore
 
@@ -159,3 +161,22 @@ def test_excluded_hour_never_fires_and_is_not_clean():
     # The excluded hour is skipped: the last 3 clean hours are hours 0 and 2.
     skipped = triggers(win(3, z=[4, 9, 4], excluded=[None, suspect, None]), 1.0, VU)
     assert fired_at(skipped, EventKind.spike) == [2]
+
+
+def test_qa_dq_08_gap_resets_user_cusum():
+    from dataclasses import replace
+
+    w = win(8, z=1.2, ewma=1.0)  # +0.7 per hour, stays below the elevated bar (8) for 8 hours
+    w[6] = replace(w[6], gap_break=True)  # a >3h gap ended just before hour 6
+    r = triggers(w, k=1.0, alert_band=Band.VERY_UNHEALTHY)
+    assert r[5].cusum == pytest.approx(6 * 0.7)
+    assert r[6].cusum == pytest.approx(0.7)  # restarted at the gap
+
+
+def test_qa_dq_08_gap_resets_spike_memory():
+    from dataclasses import replace
+
+    w = win(6, z=[0, 0, 0, 0, 4.0, 4.0], ewma=0.0)
+    assert EventKind.spike in triggers(w, 1.0, Band.VERY_UNHEALTHY)[5].fired  # 2 of 3 without a gap
+    w[5] = replace(w[5], gap_break=True)
+    assert EventKind.spike not in triggers(w, 1.0, Band.VERY_UNHEALTHY)[5].fired  # memory restarts at the gap
