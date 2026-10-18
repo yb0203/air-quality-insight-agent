@@ -18,9 +18,6 @@ dependencies = [
 llm = ["anthropic"]
 eval = ["ruptures", "numpy"]
 
-[project.scripts]
-aqagent = "aqagent.cli:main"
-
 [dependency-groups]
 dev = ["pytest"]
 
