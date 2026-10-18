@@ -1,0 +1,202 @@
+{
+  "decision": {
+    "outcome": "sent",
+    "reason_code": "SENT_CLEARED",
+    "reason": "Episode closed after 16 hours (4 calm hours); long enough to be worth saying.",
+    "evaluated_at": "2026-10-09T11:30:00Z",
+    "trigger": "data"
+  },
+  "trace": [
+    {
+      "layer": "S2",
+      "passed": true,
+      "reason_code": null,
+      "values": {
+        "clean_hours_14d": 331,
+        "excluded": 0
+      }
+    },
+    {
+      "layer": "U2",
+      "passed": true,
+      "reason_code": null,
+      "values": {
+        "at": "2026-10-09T11:30:00Z",
+        "pm25": 37.4,
+        "nowcast": 44.0,
+        "band": "usg",
+        "typical_pm25": 26.1,
+        "typical_band": "moderate"
+      }
+    },
+    {
+      "layer": "D1",
+      "passed": true,
+      "reason_code": null,
+      "values": {
+        "fired": [],
+        "event_kind": null,
+        "sensitivity": "default",
+        "k": 1.0,
+        "calm_hours": 4
+      }
+    },
+    {
+      "layer": "D2",
+      "passed": true,
+      "reason_code": null,
+      "values": {
+        "episode_id": "ep_arjun_1009",
+        "state": "closed",
+        "transition": "cleared",
+        "started_at": "2026-10-08T19:30:00Z",
+        "ended_at": "2026-10-09T11:30:00Z",
+        "hours": 16,
+        "peak": {
+          "pm25": 125.0,
+          "at": "2026-10-09T03:30:00Z"
+        }
+      }
+    },
+    {
+      "layer": "D3",
+      "passed": true,
+      "reason_code": null,
+      "values": {
+        "was_notified": true,
+        "lasted_h": 16,
+        "min_hours": 12,
+        "peak_band": "unhealthy"
+      }
+    },
+    {
+      "layer": "D4",
+      "passed": true,
+      "reason_code": null,
+      "values": {
+        "last_sent": "2026-10-09T01:00:00Z",
+        "gap_h": 6,
+        "elapsed_h": 10.5
+      }
+    },
+    {
+      "layer": "D5",
+      "passed": true,
+      "reason_code": null,
+      "values": {
+        "candidates": 1,
+        "kept": "cleared"
+      }
+    },
+    {
+      "layer": "D6",
+      "passed": true,
+      "reason_code": null,
+      "values": {
+        "response": "notify"
+      }
+    },
+    {
+      "layer": "D7",
+      "passed": true,
+      "reason_code": null,
+      "values": {
+        "sent_today": 1,
+        "max_per_day": 3,
+        "severe": false
+      }
+    },
+    {
+      "layer": "D8",
+      "passed": true,
+      "reason_code": null,
+      "values": {
+        "quiet_hours": {
+          "start": "22:00",
+          "end": "07:00"
+        },
+        "in_quiet_hours": false,
+        "is_check_in": false,
+        "check_in": "06:30",
+        "absorbed_held": []
+      }
+    },
+    {
+      "layer": "A1",
+      "passed": true,
+      "reason_code": "SENT_CLEARED",
+      "values": {
+        "generator": "template",
+        "chars": 151,
+        "action": "Run this evening"
+      }
+    }
+  ],
+  "scores": [
+    {
+      "at": "2026-10-09T04:30:00Z",
+      "pm25": 98.6,
+      "nowcast": 110.7,
+      "band": "unhealthy",
+      "typical_pm25": 51.0,
+      "typical_band": "usg"
+    },
+    {
+      "at": "2026-10-09T05:30:00Z",
+      "pm25": 113.0,
+      "nowcast": 111.5,
+      "band": "unhealthy",
+      "typical_pm25": 44.5,
+      "typical_band": "usg"
+    },
+    {
+      "at": "2026-10-09T06:30:00Z",
+      "pm25": 75.1,
+      "nowcast": 96.9,
+      "band": "unhealthy",
+      "typical_pm25": 45.5,
+      "typical_band": "usg"
+    },
+    {
+      "at": "2026-10-09T07:30:00Z",
+      "pm25": 57.0,
+      "nowcast": 75.1,
+      "band": "unhealthy",
+      "typical_pm25": 42.3,
+      "typical_band": "usg"
+    },
+    {
+      "at": "2026-10-09T08:30:00Z",
+      "pm25": 50.2,
+      "nowcast": 62.6,
+      "band": "unhealthy",
+      "typical_pm25": 37.7,
+      "typical_band": "usg"
+    },
+    {
+      "at": "2026-10-09T09:30:00Z",
+      "pm25": 56.7,
+      "nowcast": 59.7,
+      "band": "unhealthy",
+      "typical_pm25": 33.5,
+      "typical_band": "moderate"
+    },
+    {
+      "at": "2026-10-09T10:30:00Z",
+      "pm25": 41.7,
+      "nowcast": 50.7,
+      "band": "usg",
+      "typical_pm25": 26.6,
+      "typical_band": "moderate"
+    },
+    {
+      "at": "2026-10-09T11:30:00Z",
+      "pm25": 37.4,
+      "nowcast": 44.0,
+      "band": "usg",
+      "typical_pm25": 26.1,
+      "typical_band": "moderate"
+    }
+  ],
+  "rules_version": 1
+}

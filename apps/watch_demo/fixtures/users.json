@@ -1,0 +1,94 @@
+[
+  {
+    "id": "arjun",
+    "display_name": "Arjun",
+    "city": "Delhi",
+    "station_id": 4712609,
+    "timezone": "Asia/Kolkata",
+    "persona": {
+      "habits": [
+        "morning run 06:30"
+      ],
+      "conditions": [],
+      "sensitivity": "default",
+      "check_in": "06:30",
+      "quiet_hours": "22:00-07:00"
+    }
+  },
+  {
+    "id": "aino",
+    "display_name": "Aino",
+    "city": "Helsinki",
+    "station_id": 4588,
+    "timezone": "Europe/Helsinki",
+    "persona": {
+      "habits": [
+        "walks to work"
+      ],
+      "conditions": [
+        "asthma"
+      ],
+      "sensitivity": "high",
+      "quiet_hours": "22:00-07:00"
+    }
+  },
+  {
+    "id": "rohan",
+    "display_name": "Rohan",
+    "city": "Mumbai",
+    "station_id": 8039,
+    "timezone": "Asia/Kolkata",
+    "persona": {
+      "habits": [
+        "evening walk"
+      ],
+      "conditions": [],
+      "sensitivity": "default",
+      "quiet_hours": "22:00-07:00"
+    }
+  },
+  {
+    "id": "meera",
+    "display_name": "Meera",
+    "city": "Bengaluru",
+    "station_id": 6206921,
+    "timezone": "Asia/Kolkata",
+    "persona": {
+      "habits": [
+        "cycles to work"
+      ],
+      "conditions": [],
+      "sensitivity": "default",
+      "check_in": "06:30",
+      "quiet_hours": "22:00-07:00"
+    }
+  },
+  {
+    "id": "maya",
+    "display_name": "Maya",
+    "city": "Los Angeles",
+    "station_id": 7936,
+    "timezone": "America/Los_Angeles",
+    "persona": {
+      "habits": [
+        "weekend hikes"
+      ],
+      "conditions": [],
+      "sensitivity": "default"
+    }
+  },
+  {
+    "id": "omar",
+    "display_name": "Omar",
+    "city": "Dubai",
+    "station_id": 6096447,
+    "timezone": "Asia/Dubai",
+    "persona": {
+      "habits": [
+        "evening jog"
+      ],
+      "conditions": [],
+      "sensitivity": "low"
+    }
+  }
+]

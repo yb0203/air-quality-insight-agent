@@ -1,0 +1,208 @@
+{
+  "decision": {
+    "outcome": "sent",
+    "reason_code": "SENT_CHECK_IN",
+    "reason": "Morning check-in: Unhealthy and well above a usual morning; absorbed 1 held notice.",
+    "evaluated_at": "2026-10-09T01:00:00Z",
+    "trigger": "clock"
+  },
+  "trace": [
+    {
+      "layer": "S2",
+      "passed": true,
+      "reason_code": null,
+      "values": {
+        "clean_hours_14d": 331,
+        "excluded": 0
+      }
+    },
+    {
+      "layer": "U2",
+      "passed": true,
+      "reason_code": null,
+      "values": {
+        "at": "2026-10-09T00:30:00Z",
+        "pm25": 117.0,
+        "nowcast": 111.7,
+        "band": "unhealthy",
+        "typical_pm25": 65.8,
+        "typical_band": "unhealthy"
+      }
+    },
+    {
+      "layer": "D1",
+      "passed": true,
+      "reason_code": null,
+      "values": {
+        "fired": [
+          "climb"
+        ],
+        "event_kind": "climb",
+        "sensitivity": "default",
+        "k": 1.0,
+        "first_fired_at": "2026-10-08T19:30:00Z"
+      }
+    },
+    {
+      "layer": "D2",
+      "passed": true,
+      "reason_code": null,
+      "values": {
+        "episode_id": "ep_arjun_1009",
+        "state": "open",
+        "started_at": "2026-10-08T19:30:00Z",
+        "hours": 5.5,
+        "peak": {
+          "pm25": 118.0,
+          "at": "2026-10-08T23:30:00Z"
+        }
+      }
+    },
+    {
+      "layer": "D3",
+      "passed": true,
+      "reason_code": null,
+      "values": {
+        "band": "unhealthy",
+        "relevance_floor": "moderate",
+        "typical_band": "unhealthy",
+        "last_notified_band": null
+      }
+    },
+    {
+      "layer": "D4",
+      "passed": true,
+      "reason_code": null,
+      "values": {
+        "last_sent": null,
+        "gap_h": 6,
+        "elapsed_h": null
+      }
+    },
+    {
+      "layer": "D5",
+      "passed": true,
+      "reason_code": null,
+      "values": {
+        "candidates": 1,
+        "kept": "check_in"
+      }
+    },
+    {
+      "layer": "D6",
+      "passed": true,
+      "reason_code": null,
+      "values": {
+        "response": "notify"
+      }
+    },
+    {
+      "layer": "D7",
+      "passed": true,
+      "reason_code": null,
+      "values": {
+        "sent_today": 0,
+        "max_per_day": 3,
+        "severe": false
+      }
+    },
+    {
+      "layer": "D8",
+      "passed": true,
+      "reason_code": "HELD_RELEASED",
+      "values": {
+        "quiet_hours": {
+          "start": "22:00",
+          "end": "07:00"
+        },
+        "in_quiet_hours": true,
+        "is_check_in": true,
+        "check_in": "06:30",
+        "absorbed_held": [
+          {
+            "kind": "opened",
+            "at": "2026-10-08T19:30:00Z",
+            "decision_id": "dec_arjun_20261008T1930"
+          }
+        ]
+      }
+    },
+    {
+      "layer": "A1",
+      "passed": true,
+      "reason_code": "SENT_CHECK_IN",
+      "values": {
+        "generator": "template",
+        "chars": 159,
+        "action": "Work out indoors"
+      }
+    }
+  ],
+  "scores": [
+    {
+      "at": "2026-10-08T17:30:00Z",
+      "pm25": 83.9,
+      "nowcast": 78.4,
+      "band": "unhealthy",
+      "typical_pm25": 49.8,
+      "typical_band": "usg"
+    },
+    {
+      "at": "2026-10-08T18:30:00Z",
+      "pm25": 84.9,
+      "nowcast": 80.1,
+      "band": "unhealthy",
+      "typical_pm25": 52.5,
+      "typical_band": "usg"
+    },
+    {
+      "at": "2026-10-08T19:30:00Z",
+      "pm25": 99.2,
+      "nowcast": 88.3,
+      "band": "unhealthy",
+      "typical_pm25": 55.5,
+      "typical_band": "unhealthy"
+    },
+    {
+      "at": "2026-10-08T20:30:00Z",
+      "pm25": 112.0,
+      "nowcast": 99.9,
+      "band": "unhealthy",
+      "typical_pm25": 56.7,
+      "typical_band": "unhealthy"
+    },
+    {
+      "at": "2026-10-08T21:30:00Z",
+      "pm25": 101.0,
+      "nowcast": 100.4,
+      "band": "unhealthy",
+      "typical_pm25": 55.9,
+      "typical_band": "unhealthy"
+    },
+    {
+      "at": "2026-10-08T22:30:00Z",
+      "pm25": 98.1,
+      "nowcast": 99.4,
+      "band": "unhealthy",
+      "typical_pm25": 55.6,
+      "typical_band": "unhealthy"
+    },
+    {
+      "at": "2026-10-08T23:30:00Z",
+      "pm25": 118.0,
+      "nowcast": 108.4,
+      "band": "unhealthy",
+      "typical_pm25": 60.2,
+      "typical_band": "unhealthy"
+    },
+    {
+      "at": "2026-10-09T00:30:00Z",
+      "pm25": 117.0,
+      "nowcast": 111.7,
+      "band": "unhealthy",
+      "typical_pm25": 65.8,
+      "typical_band": "unhealthy"
+    }
+  ],
+  "rules_version": 1
+}

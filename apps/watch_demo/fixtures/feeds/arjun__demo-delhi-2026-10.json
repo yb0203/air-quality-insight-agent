@@ -1,0 +1,24 @@
+[
+  {
+    "id": "ntf_arjun_1700",
+    "created_at": "2026-10-09T11:30:00Z",
+    "delivered_at": "2026-10-09T11:30:00Z",
+    "kind": "cleared",
+    "event_kind": "climb",
+    "band": "usg",
+    "body": "Delhi's air has eased after a rough 16 hours and is close to its usual level again. If you missed your run this morning, the evening looks fine for it.",
+    "next_action": "Run this evening",
+    "decision_id": "dec_arjun_20261009T1130"
+  },
+  {
+    "id": "ntf_arjun_0630",
+    "created_at": "2026-10-09T01:00:00Z",
+    "delivered_at": "2026-10-09T01:00:00Z",
+    "kind": "check_in",
+    "event_kind": "climb",
+    "band": "unhealthy",
+    "body": "Delhi's air got worse overnight from about 1am and is still unhealthy, well above a normal morning. Maybe skip the outdoor run today and try an indoor workout.",
+    "next_action": "Work out indoors",
+    "decision_id": "dec_arjun_20261009T0100"
+  }
+]

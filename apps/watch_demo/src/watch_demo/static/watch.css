@@ -1,0 +1,208 @@
+/* Letterbox: black bars, demo controls in muted grey outside the watch. */
+:root {
+  --good: #00e400;
+  --moderate: #ffff00;
+  --usg: #ff7e00;
+  --unhealthy: #ff0000;
+  --very_unhealthy: #8f3f97;
+  --hazardous: #7e0023;
+  --card: #1c1c1e;
+  --muted: #8e8e93;
+  --font: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", Arial, sans-serif;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  min-height: 100%;
+  background: #000;
+  color: #fff;
+  font-family: var(--font);
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 28px;
+  padding: 28px 16px 24px;
+  min-height: 100vh;
+}
+
+/* ---------- demo frame (outside the watch) ---------- */
+
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+  max-width: 760px;
+}
+
+.chip {
+  padding: 7px 14px;
+  border: 1px solid #3a3a3c;
+  border-radius: 999px;
+  color: #aeaeb2;
+  font-size: 14px;
+  text-decoration: none;
+}
+.chip:hover { border-color: #636366; color: #fff; }
+.chip.active { background: #fff; border-color: #fff; color: #000; font-weight: 600; }
+
+.frame-notes {
+  max-width: 520px;
+  text-align: center;
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.45;
+}
+.frame-notes p { margin: 0 0 8px; }
+.scenario-desc { color: #c7c7cc; }
+.decision-ref { font-family: ui-monospace, Menlo, monospace; font-size: 12px; }
+.caption { font-size: 12px; color: #636366; }
+
+/* ---------- the watch (Apple Watch 45 mm proportions) ---------- */
+
+.stage { display: flex; justify-content: center; }
+
+.watch {
+  position: relative;
+  width: 396px;
+  height: 484px;
+  padding: 16px;
+  border-radius: 104px;
+  background: linear-gradient(145deg, #3a3a3c 0%, #1c1c1e 45%, #2c2c2e 100%);
+  box-shadow: 0 0 0 1px #48484a, 0 30px 80px rgba(255, 255, 255, 0.04);
+}
+
+.crown, .side-button {
+  position: absolute;
+  right: -9px;
+  width: 10px;
+  border-radius: 0 6px 6px 0;
+  background: linear-gradient(90deg, #2c2c2e, #636366);
+}
+.crown { top: 118px; height: 64px; }
+.side-button { top: 214px; height: 88px; width: 7px; right: -6px; }
+
+.screen {
+  height: 100%;
+  overflow-y: auto;
+  border-radius: 88px;
+  background: #000;
+  padding: 26px 22px 28px;
+  scrollbar-width: none;
+}
+.screen::-webkit-scrollbar { display: none; }
+
+.status {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 0 18px 10px;
+  font-size: 17px;
+  font-weight: 600;
+}
+.status-app { color: var(--good); }
+.status-time { color: #fff; font-variant-numeric: tabular-nums; }
+.back { color: #0a84ff; text-decoration: none; font-weight: 600; }
+
+/* ---------- notification stack ---------- */
+
+.stack { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; }
+
+.card {
+  display: block;
+  padding: 14px 16px 16px 18px;
+  border-radius: 24px;
+  background: var(--card);
+  border-left: 5px solid var(--accent, #48484a);
+  color: inherit;
+  text-decoration: none;
+}
+.card:active { background: #2c2c2e; }
+
+.card-head {
+  display: flex;
+  justify-content: space-between;
+  font-size: 15px;
+  color: var(--muted);
+  margin-bottom: 6px;
+}
+.card-app { font-weight: 600; color: #fff; }
+
+.dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin-right: 7px;
+  border-radius: 50%;
+  background: var(--accent, #48484a);
+}
+
+.card-body {
+  margin: 0 0 12px;
+  font-size: 20px;
+  line-height: 1.28;
+  letter-spacing: -0.01em;
+}
+
+.action {
+  display: inline-block;
+  padding: 9px 16px;
+  border-radius: 999px;
+  background: #2c2c2e;
+  font-size: 17px;
+  font-weight: 600;
+}
+
+/* ---------- "Why?" view ---------- */
+
+.why { padding: 2px 8px 0; }
+.why-kicker { margin: 0 0 4px; font-size: 15px; color: var(--muted); }
+.why-title { margin: 0 0 12px; font-size: 26px; font-weight: 700; letter-spacing: -0.02em; }
+.why-lines { list-style: none; margin: 0; padding: 0; }
+.why-lines li {
+  padding: 7px 0 7px 14px;
+  border-left: 3px solid var(--accent, #48484a);
+  margin-bottom: 7px;
+  font-size: 19px;
+  line-height: 1.25;
+}
+.why-band { margin: 10px 0 0; font-size: 14px; color: var(--muted); }
+
+/* ---------- calm empty state ---------- */
+
+.calm { text-align: center; padding-top: 34px; }
+.calm-time {
+  margin: 0;
+  font-size: 84px;
+  font-weight: 200;
+  letter-spacing: -0.03em;
+  line-height: 1;
+  font-variant-numeric: tabular-nums;
+}
+.calm-date { margin: 6px 0 30px; font-size: 18px; color: var(--good); font-weight: 600; }
+.calm-headline { margin: 0 0 10px; font-size: 24px; font-weight: 600; }
+.calm-why { margin: 0 12px; font-size: 18px; line-height: 1.3; color: var(--muted); }
+.ring {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  margin-right: 9px;
+  border: 3px solid var(--good);
+  border-radius: 50%;
+  vertical-align: -1px;
+}
+
+/* ---------- EPA band accents ---------- */
+
+.band-good { --accent: var(--good); }
+.band-moderate { --accent: var(--moderate); }
+.band-usg { --accent: var(--usg); }
+.band-unhealthy { --accent: var(--unhealthy); }
+.band-very_unhealthy { --accent: var(--very_unhealthy); }
+.band-hazardous { --accent: var(--hazardous); }
