@@ -1,0 +1,25 @@
+# Hand labels for the evaluation harness (S-C §12), merged with the PELT reference moments.
+# Times are UTC period_end values (the reading's time). A one-hour label has start == end.
+#
+# positive: a known event the agent should catch (a sent or held decision within 6 h of start).
+# negative: an hour that must never produce a notice (a sensor glitch).
+#
+# Mumbai (8039, the glitch fixture): every hour in data/samples/openaq_pm25_hourly_90d.csv whose value
+# is > 3 x max(prev, 1) and > 3 x max(next, 1) and value - prev > 20 µg/m³ (prev/next = the neighbouring
+# rows of that location in time order). Values are prev -> glitch -> next, in µg/m³.
+
+moments:
+  - location_id: 4588
+    start: "2026-08-24T05:00:00Z"
+    end: "2026-08-24T09:00:00Z"
+    kind: positive
+    note: "Helsinki smoke episode"
+
+  - {location_id: 8039, start: "2026-09-29T09:30:00Z", end: "2026-09-29T09:30:00Z", kind: negative, note: "glitch 32 -> 278 -> 18"}
+  - {location_id: 8039, start: "2026-10-03T09:30:00Z", end: "2026-10-03T09:30:00Z", kind: negative, note: "glitch 54 -> 434 -> 36"}
+  - {location_id: 8039, start: "2026-10-04T11:30:00Z", end: "2026-10-04T11:30:00Z", kind: negative, note: "glitch 43 -> 341 -> 57"}
+  - {location_id: 8039, start: "2026-10-07T11:30:00Z", end: "2026-10-07T11:30:00Z", kind: negative, note: "glitch 94 -> 395 -> 78"}
+  - {location_id: 8039, start: "2026-10-13T11:30:00Z", end: "2026-10-13T11:30:00Z", kind: negative, note: "glitch 63 -> 367 -> 68"}
+  - {location_id: 8039, start: "2026-10-14T07:30:00Z", end: "2026-10-14T07:30:00Z", kind: negative, note: "glitch 75 -> 980 -> 90"}
+  - {location_id: 8039, start: "2026-10-15T10:30:00Z", end: "2026-10-15T10:30:00Z", kind: negative, note: "glitch 107 -> 613 -> 71"}
+  - {location_id: 8039, start: "2026-10-15T12:30:00Z", end: "2026-10-15T12:30:00Z", kind: negative, note: "glitch 71 -> 575 -> 73"}
