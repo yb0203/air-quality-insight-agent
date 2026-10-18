@@ -189,6 +189,8 @@ episodes = sa.Table(
     sa.Column("last_notified_kind", sa.Text),
     sa.Column("notifications_sent", sa.Integer, nullable=False, server_default="0"),
     sa.Column("cooldown_until", TS),
+    sa.Column("kinds", sa.JSON, nullable=False, default=list),  # event kinds seen in this episode
+    sa.Column("last_hour", TS),  # latest period_end processed by D2 (late-hour guard)
 )
 
 decisions = sa.Table(
