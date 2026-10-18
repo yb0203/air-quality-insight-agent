@@ -1,65 +1,206 @@
-# How the agent decides — explained, with an audit of every layer
+# How the agent decides: layers, diagrams and an audit
 
 Status: for discussion · 2026-10-18
 
-This document explains the design in [requirements.md](requirements.md) and the specs ([S-A](specs/S-A-openaq-and-schema.md), [S-B](specs/S-B-rule-engine-research.md), [S-C](specs/S-C-rule-engine-spec.md)) with diagrams. It then audits the layers. Is each one **necessary** (something breaks without it)? Are they **sufficient** together (nothing in the brief falls through)? Are they **MECE**: mutually exclusive (no two layers answer the same question) and collectively exhaustive (every question has an owner)?
+This document explains the design in [requirements.md](requirements.md) and the specs ([S-A](specs/S-A-openaq-and-schema.md), [S-B](specs/S-B-rule-engine-research.md), [S-C](specs/S-C-rule-engine-spec.md)) at **two scopes**:
 
-The audit found seven issues. They're listed in section 9 with proposed fixes. **None of the fixes has been applied to the specs yet.**
+- **Max scope**, the ultimate goal: a proactive personal health agent that watches many signals (air, pollen, weather, heart rate, sleep, movement, the home), decides when something matters, and responds, from a message up to calling for help.
+- **Min scope**, the demo goal: air quality in five cities, notifications only, every requirement in the brief met.
 
----
+Both scopes use **the same layers**. The min scope is the max scope with some layers reduced to a one-rule stub or left out. That's what makes the demo a real first slice and not a throwaway.
 
-## 1. The whole thing in one picture
+The audit (section 9) asks four things at both scopes. Is each layer **standard** (how industry solves this kind of problem)? Is each **necessary** (something breaks without it)? Are they **sufficient** together (nothing falls through)? Are they **MECE**, meaning mutually exclusive (no two answer the same question) and collectively exhaustive (every question has an owner)?
 
-Every layer answers exactly one question. The first four run once per station and are shared by all users there. The rest run once per user, because people differ in sensitivity, schedule and history.
-
-```
-                      +--------------------------------------------------------------+
-                      |  1  INGEST     Do we have the data?                          |
-  STATION LAYER       |  2  CLEAN      Can we trust this reading?                    |
-  once per sensor,    |  3  LEARN      What is normal here, at this hour of day?     |
-  shared by everyone  |  4  SCORE      How unusual is it?  How harmful is it?        |
-                      +--------------------------------------------------------------+
-                      |  5  TRIGGER    Is this an event for THIS person, and what    |
-  USER LAYER          |                kind (spike / climb / elevated / clearing)?   |
-  once per user       |  6  EPISODE    Is it a new story, or the same story?         |
-                      |  7  WORTH IT   Is there something new worth telling?         |
-                      |  8  PACE       Is it too soon after the last message?        |
-                      |  9  TIMING     Is now a good moment to say it?               |
-                      | 10  SAY        How do we say it, with one clear action?      |
-                      +--------------------------------------------------------------+
-  CROSS-CUTTING       |  RECORD every answer, including "stay quiet"                 |
-                      |  REPLAY any past hour exactly as it was known then           |
-                      +--------------------------------------------------------------+
-```
-
-> This is the **proposed** layering. The current S-C spec differs in two places: it scores and triggers in one combined per-user step (finding F4), and it has an extra "inhibition" stage (finding F2).
+Seven findings follow in section 10. **None has been applied to the specs yet.**
 
 ---
 
-## 2. Two clocks drive it, not one
+## 1. Max scope: the ultimate goal
 
-Most of the work happens when new data arrives. But some decisions have to happen even when **no** data arrives: noticing a sensor went silent, releasing messages held overnight, and running the morning check-in. So there are two triggers.
+Eighteen layers in five planes. Each layer answers **one question** for **one unit of work**: a data source, a signal stream, a person, a story (episode), or a response.
 
 ```
-   OpenAQ                                                               
-     |   every hour at :20, fetch the last 24h per sensor               
-     v                                                                  
-  [1 INGEST] --new or revised hours--> [2..4 STATION] --scores--> [5..10 USER] --> notices
-                                                                     ^
-   CLOCK ------------------------------------------------------------+
-     every hour, plus each user's check-in time and quiet-hours end:
-       - marks sensors with no fresh data as NO_DATA
-       - releases notices that were held overnight
+ MAX SCOPE: the ultimate goal
+ +================================================================================+
+ | PLANE        UNIT OF WORK   LAYER          THE ONE QUESTION IT ANSWERS         |
+ +================================================================================+
+ | SENSE        per source     S1 INGEST      Did we get the data?                 |
+ |                             S2 VALIDATE    Can we trust it?                     |
+ |                             S3 RESOLVE     Whose is it, where does it apply,    |
+ |                                            and may we use it? (consent)         |
+ +--------------------------------------------------------------------------------+
+ | UNDERSTAND   per stream     U1 LEARN       What is normal for this stream,      |
+ |                                            here, at this time?                  |
+ |                             U2 SCORE       How unusual? How harmful?            |
+ |              per person     U3 FUSE        What does it mean alongside their    |
+ |                                            other signals and context?           |
+ +--------------------------------------------------------------------------------+
+ | DECIDE       per story      D1 TRIGGER     Is this an event for this person,    |
+ |                                            and what kind?                       |
+ |                             D2 EPISODE     A new story, or the same story?      |
+ |                             D3 WORTH IT    Is there anything new in this story? |
+ |                             D4 PACE        Too soon since this story last spoke?|
+ |              per person     D5 ARBITRATE   Which candidate wins right now?      |
+ |                             D6 RESPOND     Tell them, set an alarm, call for    |
+ |                                            help, or adjust the home?            |
+ |                             D7 BUDGET      Can we afford their attention today? |
+ |                             D8 TIMING      Is now the right moment?             |
+ +--------------------------------------------------------------------------------+
+ | ACT          per response   A1 COMPOSE     How do we say it?                    |
+ |                             A2 DELIVER     Did it reach them / did it happen?   |
+ +--------------------------------------------------------------------------------+
+ | LEARN        per person     L1 FEEDBACK    How did they respond?                |
+ |                             L2 ADAPT       Should their settings change?        |
+ +================================================================================+
+ | CROSS-CUTTING  RECORD   every answer, including "stay quiet"                    |
+ |                REPLAY   any past hour, exactly as it was known then             |
+ |                GUARD    consent, and safety limits on high-stakes actions       |
+ |                OPERATE  is the pipeline itself healthy (freshness, failures)?   |
+ +================================================================================+
+```
+
+**Why DECIDE is split in two.** The first four layers judge **one story at a time**: "the air in Delhi is getting worse". The last four judge **the person as a whole**, across every story competing for their attention: Delhi air, plus high pollen, plus a heart-rate oddity. Mixing those two scopes is where alert fatigue comes from, so they are separate layers.
+
+**Why this order.** RESPOND comes before BUDGET and TIMING because the type of response changes both. A call for help ignores quiet hours and is never "over budget". A routine heads-up respects both.
+
+### What max scope looks like in action (illustrative)
+
+```
+  Fusion: three ordinary-looking signals become one clear message
+
+   air (U2):    PM2.5 above normal, Unhealthy ----+
+   body (U2):   heart rate 15% above their usual -+--> U3 FUSE: "exerting in bad air"
+   motion (S1): running for the last 20 min ------+          |
+                                                             v
+                       D1..D8 --> A1: "The air's turned unhealthy and your heart rate's
+                                       up. Maybe walk the rest of the way home."
+
+  High-stakes response: GUARD sits in front of every irreversible action
+
+   asthma profile + Hazardous air + no response to 2 messages in 30 min
+       --> D6 RESPOND proposes "SOS to emergency contact"
+       --> GUARD: is the consent on file? Is the action rate-limited? Does it need a
+                  one-tap confirmation, or is there a timeout?
+       --> A2 DELIVER: send it, and record the receipt
+```
+
+---
+
+## 2. Min scope: the demo goal
+
+The same eighteen layers. Each is **REAL** (built properly), a **STUB** (one rule, named in code and in the decision trace, so the seam is visible) or **NONE** (left out entirely, because nothing needs it yet).
+
+```
+ MIN SCOPE: the demo goal (air quality, 5 cities, notifications only)
+ +==================================================================================+
+ | LAYER          STATUS  WHAT IT IS IN THE DEMO                          BRIEF      |
+ +==================================================================================+
+ | S1 INGEST      REAL    OpenAQ hourly, trailing 24h window, backfill   B1         |
+ | S2 VALIDATE    REAL    invalid / low coverage / stuck / glitch checks B2d (FP)   |
+ | S3 RESOLVE     STUB    hardcoded user -> one station; no consent step  B5         |
+ +----------------------------------------------------------------------------------+
+ | U1 LEARN       REAL    14-day hour-of-day median/MAD per station       B2e, B5    |
+ | U2 SCORE       REAL    z, EWMA, CUSUM, 6h slope, NowCast -> EPA band   B2e        |
+ | U3 FUSE        NONE    one signal, so nothing to fuse                  -          |
+ +----------------------------------------------------------------------------------+
+ | D1 TRIGGER     REAL    spike / climb / elevated / clearing / floor,    B2a-c, B5  |
+ |                        scaled by the user's sensitivity                           |
+ | D2 EPISODE     REAL    state machine, hysteresis, flap guard           B3         |
+ | D3 WORTH IT    REAL    relevance floor, one-band escalation,           B3         |
+ |                        recovery only after a bad period                           |
+ | D4 PACE        REAL    6h gap, doubling within a story                 BX1        |
+ | D5 ARBITRATE   STUB    at most 1 message per user per hour, by         B3         |
+ |                        precedence: worse > opened > cleared > check-in            |
+ | D6 RESPOND     STUB    always "notify"                                 -          |
+ | D7 BUDGET      STUB    at most 3 non-severe messages per user per day  B3         |
+ | D8 TIMING      REAL    quiet hours (hold and release), morning check-in  (scope)  |
+ +----------------------------------------------------------------------------------+
+ | A1 COMPOSE     REAL    LLM from structured facts + template fallback   B4         |
+ | A2 DELIVER     STUB    "delivered" = visible in the API / feed / export  S5       |
+ +----------------------------------------------------------------------------------+
+ | L1 FEEDBACK    REAL*   records acted / dismissed / not useful          (scope)    |
+ | L2 ADAPT       STUB    nothing changes; rules are versioned so it can    (scope)  |
+ |                        later write a "learned" version                            |
+ +==================================================================================+
+ | RECORD  REAL   decision log for every user x hour, with reasons        B6         |
+ | REPLAY  REAL   replay harness, as-known data, caught vs missed         BX2        |
+ | GUARD   NONE   no high-stakes actions yet                              -          |
+ | OPERATE REAL*  ingestion_runs: freshness, failures, rate limits        NFR-1      |
+ +==================================================================================+
+   REAL* = real but minimal.   11 real · 6 stubs · 1 none, plus 3 of 4 cross-cutting.
+```
+
+**Why stubs and not nothing?** A stub costs one rule, but it puts the layer's name in the code and in every decision trace (`ARBITRATE: 1 candidate, passed`). When pollen or heart rate arrive, the layer gets filled in, not invented. That isn't a half-built framework: each stub is a single, tested rule with no abstraction behind it.
+
+**Why the stubs are necessary even in the demo:**
+- ARBITRATE: a check-in and an episode message can land in the same hour.
+- BUDGET: a jumpy day with back-to-back episodes could otherwise produce four or five messages.
+- DELIVER: the brief asks for a notification history (S5).
+
+---
+
+## 3. Where each layer comes from (is it standard?)
+
+The design is **two standard industry pipelines joined at the episode**. The upper half is a **monitoring and alerting** pipeline. The lower half is a **notification orchestration** pipeline, the kind consumer apps use to avoid fatiguing people. Clinical early-warning systems (e.g. the NHS NEWS2 score) follow the same shape: combine vital signs into a score, then apply an escalation policy.
+
+```
+   MONITORING & ALERTING                                NOTIFICATION ORCHESTRATION
+   (Prometheus, Datadog, Grafana)                       (Braze, Airship, LinkedIn, Duolingo)
+
+   collect -> validate -> baseline -> score -> rule       eligibility -> dedup -> rank -> cap
+     S1        S2          U1        U2      D1              D3          D3/D4    D5     D7
+                                               \           /
+                                                 EPISODE  (incident / dedup_key in PagerDuty)
+                                                   D2
+                                               /           \
+                                     escalation policy        send-time / quiet hours -> render -> deliver -> learn
+                                         D6                        D8                    A1        A2       L1/L2
+```
+
+| Layer | Industry equivalent | Our twist |
+|---|---|---|
+| S1 INGEST | scrape / collector | trailing-window re-fetch catches late data |
+| S2 VALIDATE | data-quality checks, data contracts | OpenAQ doesn't flag glitches, so we must |
+| S3 RESOLVE | identity resolution, consent management | — |
+| U1 LEARN | anomaly baselines (Datadog "robust", seasonal) | per hour of day, robust statistics, recomputed each hour |
+| U2 SCORE | anomaly score + an absolute standard | two scores: unusual (learned) and harmful (EPA) |
+| U3 FUSE | sensor fusion, complex event processing, early-warning scores | — |
+| D1 TRIGGER | alert rule with `for` (Prometheus) | shape labels: spike / climb / elevated |
+| D2 EPISODE | incident with a dedup key (PagerDuty), alert grouping | per user, with a flap guard |
+| D3 WORTH IT | Alertmanager "notify only on change" | recovery only after a genuinely bad period |
+| D4 PACE | renotify interval (Datadog), repeat interval | doubles within a story (decay) |
+| D5 ARBITRATE | inhibition (Alertmanager), notification ranking | precedence list in v1 |
+| D6 RESPOND | escalation policy (PagerDuty), action routing | — |
+| D7 BUDGET | frequency capping (Braze, Airship) | — |
+| D8 TIMING | quiet hours, send-time optimisation | **hold and release**, not drop |
+| A1 COMPOSE | templates / rendering | LLM bound to verified facts, template fallback |
+| A2 DELIVER | push providers with receipts | — |
+| L1 / L2 | engagement tracking; bandit-style tuning (Duolingo) | learned changes become a visible, reversible rules version |
+| RECORD | audit log / incident timeline | logs every *silence* too |
+| REPLAY | backtesting | as-known replay, so replay equals live |
+
+**Verdict: every layer has a standard counterpart.** The deliberate departures are holding instead of dropping, recomputing instead of accumulating, and logging silences as fully as messages.
+
+---
+
+## 4. Two clocks drive it, not one
+
+```
+   OpenAQ                                                                 
+     |   every hour at :20, fetch the last 24h per sensor                 
+     v                                                                    
+  [S1..S2] --new or revised hours--> [U1..U2] --scores--> [D1..D8] --> [A1..A2] --> feed
+                                                              ^
+   CLOCK -----------------------------------------------------+
+     every hour, plus each user's check-in time and the end of quiet hours:
+       - marks sensors without fresh data as NO_DATA (missed-trigger safety)
+       - releases notices held overnight
        - runs the morning check-in
 ```
 
-> The current spec describes the clock-driven work but never names the clock as a trigger. That's finding F5.
-
 ---
 
-## 3. Two questions, never one
-
-"Unusual" and "harmful" are different questions, so they're answered by different layers. Statistics learned per station decide what is **unusual**. The official US EPA air quality bands decide what is **harmful**. A message needs the right combination.
+## 5. Two questions, never one (U2 SCORE)
 
 ```
                               Is it HARMFUL? (EPA band, same scale everywhere)
@@ -72,8 +213,8 @@ Most of the work happens when new data arrives. But some decisions have to happe
                          +---------------------------+---------------------------------+
                       no | Nothing to say.           | Mostly quiet. Delhi sits in      |
                          |                           | "unhealthy for sensitive groups" |
-                         |                           | for weeks; saying so hourly      |
-                         |                           | would be noise. Two exceptions:  |
+                         |                           | for weeks; saying so hourly is   |
+                         |                           | noise. Two exceptions:           |
                          |                           | - crossing UP into the user's    |
                          |                           |   alert band (absolute floor)    |
                          |                           | - the morning check-in, when     |
@@ -81,13 +222,11 @@ Most of the work happens when new data arrives. But some decisions have to happe
                          +---------------------------+---------------------------------+
 ```
 
-This one picture is how we satisfy the brief's "a low-pollution city should have a lower bar for unusual" without spamming anyone about harmless changes.
+This is how a low-pollution city gets a lower bar for "unusual" (brief B5) without anyone being told about harmless changes.
 
 ---
 
-## 4. What counts as an event: shapes, not thresholds
-
-The brief asks for a sustained trend, a sudden spike and a return to normal. We also catch a slow build-up that never looks dramatic in any single hour, because that's where triggers get missed.
+## 6. Event shapes (D1 TRIGGER)
 
 ```
   how far above normal (z)
@@ -99,198 +238,223 @@ The brief asks for a sustained trend, a sudden spike and a return to normal. We 
    |   _______|  \______  __/                    __/                   
    |                                                                     
    +-----------------------------------------------------------------------> hours
-      sharp jump vs the        rising, hour after        stuck above normal
+      a sharp jump vs the      rising hour after         stuck above normal
       last few hours           hour, for 6 hours         for many hours, but
                                                          not rising
-      fastest: fires on        EWMA above the bar        CUMULATIVE excess
+      fastest: fires on        EWMA above the bar        cumulative excess
       2 of 3 hours             AND a positive slope      (CUSUM) crosses a bar
 
-      CLEARING: after an episode, 4 calm hours AND back to the station's usual band
+      CLEARING: an open episode gets 4 calm hours AND is back to the station's usual band
+      FLOOR:    crossing UP into the user's alert band, whatever is "normal" there
 ```
 
-**Mutually exclusive by precedence.** One hour can match several shapes, so each event gets exactly one label: spike first, then climb, then elevated. That label drives the wording ("jumped sharply" vs "getting worse since 2am" vs "stuck above normal all day").
-
-**Collectively exhaustive.** Any upward departure is fast (spike), rising (climb) or flat-and-high (elevated). Falling-but-still-high isn't a new event. It's the same episode continuing.
-
-> **This is where the audit found the biggest issue (F1).** In the current spec, "trend" only checks that the smoothed level is high. It doesn't check that it's *rising*. On the 90-day sample, **53% of "trend" hours were flat or falling** (Dubai 57%, Bengaluru 61%). So today's "trend" mostly duplicates "drift", and it doesn't match the brief's "climbing for the last N hours". The diagram above shows the proposed fix.
+**One label per event** (mutually exclusive), by precedence: spike > climb > elevated. **Every upward departure is covered** (collectively exhaustive): it's fast, rising or flat-and-high. Falling-but-still-high is the same episode continuing, not a new event.
 
 ---
 
-## 5. One bad period is one story: the episode
-
-Instead of reacting to every hour, each bad period becomes an **episode** with a beginning, middle and end. This is what makes "six bad hours, one message" possible.
+## 7. One bad period is one story (D2 EPISODE)
 
 ```
-                 event fires AND air is at least Moderate
+                 event fires AND the air is at least Moderate
      NORMAL  --------------------------------------------->  ACTIVE  <-----+
        ^                                                        |          |
-       |                                            a calm hour |          | event again or
+       |                                            a calm hour |          | event again, or
        |  6h pass after close                                   v          | a non-calm hour
        |                                                   RECOVERING -----+
      CLOSED  <------------- 4 calm hours in a row --------------+
+       |   ^
+       |   +---- 24h with NO DATA: close silently (NO_DATA_TIMEOUT)          [proposed, F6]
        |
-       +-- event within 6h of closing --> the SAME episode reopens
-                                          (no fresh "it's getting bad" message: anti-flapping)
+       +-- event within 6h of closing --> the SAME episode reopens (anti-flapping)
 
-     NO DATA: the episode is frozen. Nothing opens, closes or notifies.
-              When data returns, the missing hours are replayed in order.
+     NO DATA (under 24h): the episode is frozen. Nothing opens, closes or notifies.
+                          When data returns, the missing hours are replayed in order.
 ```
-
-> The current spec has no way out of a long silence. If a sensor dies mid-episode, the episode stays open forever (finding F6).
 
 ---
 
-## 6. Restraint: four different questions, in a fixed order
-
-Once there's a candidate message, it must pass four checks. Each asks a different question, so each has a different fix when it says no.
+## 8. Restraint, in order: story first, then person
 
 ```
    candidate message (opened / got worse / cleared / check-in)
         |
+   ---- per STORY -------------------------------------------------------------------
         v
-   [7 WORTH IT]   Is there anything NEW to say?
-        |           opened: always new
-        |           got worse: only if a full band worse than last told
-        |           cleared: only after a genuinely bad period (>= 12h, or peaked well above usual)
-        |   no ---> suppressed  DEDUP_SAME_BAND / RECOVERY_NOT_WORTH_SAYING / BELOW_RELEVANCE
+   [D3 WORTH IT]   anything NEW in this story?
+        |            opened: yes. got worse: only if a full band worse than last told.
+        |            cleared: only after a genuinely bad period (12h+, or peaked well above usual)
+        |   no --> suppressed  DEDUP_SAME_BAND / RECOVERY_NOT_WORTH_SAYING / BELOW_RELEVANCE
         v
-   [8 PACE]       Is it too soon after the last message?
-        |           gap starts at 6h and doubles within an episode: 6h, 12h, 24h
-        |           severe air (Very Unhealthy+) skips the queue
-        |   no ---> suppressed  COOLDOWN
-        v
-   [9 TIMING]     Is now a good moment?
-        |           quiet hours (22:00-07:00 default): hold until morning, unless severe
-        |   no ---> held  QUIET_HOURS_HELD  (released later as ONE combined message)
-        v
-   [10 SAY]       compose: what changed + past context + exactly one action
+   [D4 PACE]       too soon since this story last spoke?   6h, then 12h, then 24h
+        |   no --> suppressed  COOLDOWN                 (severe air skips the queue)
         |
+   ---- per PERSON ------------------------------------------------------------------
         v
-      sent       and every step above is written to the decision log, pass or fail
+   [D5 ARBITRATE]  several candidates this hour? keep the most important one
+        |   lost --> suppressed  ARBITRATED_OUT
+        v
+   [D6 RESPOND]    which response? (demo: always notify)
+        v
+   [D7 BUDGET]     over today's attention budget?   3 non-severe per day
+        |   yes --> suppressed  DAILY_BUDGET        (severe air is never over budget)
+        v
+   [D8 TIMING]     a good moment?   quiet hours hold until morning unless severe;
+        |                           the check-in is an explicit "talk to me now"
+        |   no --> held  QUIET_HOURS_HELD  (released later as ONE combined message)
+        v
+   [A1 COMPOSE] -> [A2 DELIVER] -> sent
+                     ...and every step above is written to the decision log, pass or fail.
 ```
 
-> Today's spec has two more gates: an "inhibition" stage between 7 and 8, and a daily cap inside 8. The audit says both overlap with other layers (findings F2 and F3).
+**Why PACE and BUDGET are not the same thing.** PACE asks "too soon *in this story*?" and resets when the story ends. BUDGET asks "how much of *this person's* attention have we spent today, across *every* story?" In the demo they rarely disagree. With several signals they disagree constantly: three different stories can each be well paced and still add up to too much for one person.
 
 ---
 
-## 7. A night in Delhi, hour by hour (illustrative)
+## 9. A night in Delhi, hour by hour (illustrative)
 
-A walkthrough of the rules. **The numbers are made up but follow the spec.** Arjun lives in Delhi and runs at 06:30. He has default sensitivity, quiet hours from 22:00 to 07:00, and a check-in at 06:30.
+**The numbers are made up but follow the spec.** Arjun lives in Delhi and runs at 06:30. He has default sensitivity, quiet hours 22:00–07:00, and a check-in at 06:30.
 
 ```
- local  band (NowCast)   station layer says          Arjun's pipeline                         outcome
+ local  band (NowCast)   station says (U)            Arjun's pipeline (D)                     outcome
  -----  ---------------  --------------------------  ---------------------------------------  -------------------
  22:00  USG              normal for a Delhi night    no event                                 no_event
  23:00  USG              rising                      climb needs 3h above the bar             no_event
  00:00  USG              rising                      not yet                                  no_event
  01:00  Unhealthy        CLIMB fires                 episode OPENS; worth it; pace ok;        held
-                                                     but quiet hours                          QUIET_HOURS_HELD
+                                                     budget ok; but quiet hours               QUIET_HOURS_HELD
  02:00  Unhealthy        still climbing              same story, same band                    suppressed
                                                                                               DEDUP_SAME_BAND
  03:00  Unhealthy (peak) flat                        same story                               suppressed
  04:00  Unhealthy        easing                      same story                               suppressed
- 06:30  Unhealthy        well above usual morning    CHECK-IN: worse than usual, and a held   SENT (one message)
-                                                     notice is waiting -> merge into one
+ 06:30  Unhealthy        well above a usual morning  CHECK-IN: worse than usual, and a held   SENT (one message)
+                                                     notice is waiting -> merged into one
           "Air got worse overnight from about 1am and is still unhealthy, well above a normal
            Delhi morning. Maybe skip the outdoor run today and try an indoor workout."
  07:00  Unhealthy        -                           quiet hours end; nothing left to release  -
  10:00  Unhealthy        -                           same story, same band                     suppressed
  14:00  USG              calm hour 1                 episode RECOVERING                        no_event
- 17:00  USG              calm hour 4                 episode CLOSES; it lasted 16h -> worth    SENT
-                                                     saying; 10.5h since last -> pace ok
+ 17:00  USG              calm hour 4                 episode CLOSES; it lasted 16h, so worth   SENT
+                                                     saying; 10.5h since last, so pace ok
           "Delhi's air is back to its usual level after a rough 16 hours. If you missed your
            run this morning, the evening looks fine for it."
 ```
 
-Two messages in about 20 hours, both carrying context and one action. Everything else is logged with a reason, so "why didn't I hear about it at 2am?" has an answer: quiet hours, then nothing new to say.
-
-> Walking through this surfaced a gap. **Arjun's check-in (06:30) falls inside his quiet hours (until 07:00).** The current spec doesn't say which wins (finding F7). The walkthrough assumes the proposed fix: the check-in is an explicit "talk to me now", so it wins and absorbs held messages.
+Two messages in about 20 hours, each with context and one action. "Why didn't I hear at 2am?" has a logged answer: quiet hours, then nothing new to say.
 
 ---
 
-## 8. The audit: is every layer necessary, sufficient and distinct?
+## 10. The audit at both scopes
 
-### 8.1 Necessary: what breaks without each layer
+### 10.1 Standard?
+Yes: every layer has an industry counterpart (section 3). The design is two standard pipelines joined at the episode.
 
-| Layer | Question it owns | Without it... | Evidence |
+### 10.2 Necessary?
+
+| Layer | Min scope | Max scope | Evidence (from the 90-day calibration unless noted) |
 |---|---|---|---|
-| 1 Ingest | Do we have the data? | no history, no trend (brief B1) | — |
-| 2 Clean | Can we trust it? | sensor glitches become alerts | Mumbai: 8 one-hour readings of 784–982 µg/m³, **none flagged by OpenAQ**, all caught by our glitch check |
-| 3 Learn | What's normal here, now? | one threshold for every city: Helsinki never alerts, or Delhi always does | medians range from 4.2 (Helsinki) to 45.9 µg/m³ (Delhi), an 11× spread |
-| 4 Score | How unusual, how harmful? | no shared measure for triggers, bands or messages | — |
-| 5 Trigger | Event for this person, and which kind? | no per-user sensitivity (brief B5); no spike/climb/elevated distinction (brief B2) | a sensitive user gets 1.7–4.3 messages a week vs 1.5–3.5 for default |
-| 6 Episode | New story or same story? | six bad hours, six messages (brief B3) | calibration pass 1: without proper closing, Bengaluru stayed "open" for **20 days** |
-| 7 Worth it | Anything new to say? | repeats; "back to normal" while still unhealthy | pass 2 sent recovery notices at "Unhealthy"; recovery-worthiness cut Delhi from 5.8 to 3.5 a week |
-| 8 Pace | Too soon? | rapid-fire messages on a jumpy day (bonus BX1) | — |
-| 9 Timing | Good moment? | 3am pings for non-urgent news | — |
-| 10 Say | How to say it? | JSON or "AQI is now 142" (brief B4) | — |
-| Record | Why did we act or not? | a missing nudge can't be debugged (brief B6) | — |
-| Replay | What would we have done? | parameters can't be tuned or measured (bonus BX2) | all three calibration passes depended on it |
+| S1 INGEST | needed | needed | — |
+| S2 VALIDATE | needed | needed | Mumbai: 8 one-hour readings of 784–982 µg/m³, none flagged by OpenAQ, all caught |
+| S3 RESOLVE | stub | needed (many users, devices, consent) | — |
+| U1 LEARN | needed | needed | station medians span 4.2 to 45.9 µg/m³ (11×); one threshold can't serve them all |
+| U2 SCORE | needed | needed | — |
+| U3 FUSE | **not needed** | needed (heart rate + air + movement) | — |
+| D1 TRIGGER | needed | needed | per-user sensitivity changes volume: 1.5–3.5 vs 1.7–4.3 messages a week |
+| D2 EPISODE | needed | needed | without proper closing, Bengaluru stayed "open" 20 days (pass 1) |
+| D3 WORTH IT | needed | needed | without it, "back to normal" went out while the air was still unhealthy (pass 2) |
+| D4 PACE | needed | needed | bonus BX1 |
+| D5 ARBITRATE | stub (check-in vs episode in the same hour) | needed (many stories) | — |
+| D6 RESPOND | stub | needed (alarm, SOS, home) | — |
+| D7 BUDGET | stub (back-to-back episodes) | needed (many stories) | — |
+| D8 TIMING | needed | needed | — |
+| A1 COMPOSE | needed | needed | brief B4 |
+| A2 DELIVER | stub | needed (channels, receipts) | — |
+| L1 FEEDBACK | minimal | needed | — |
+| L2 ADAPT | stub | needed (self-learning) | — |
+| RECORD / REPLAY | needed | needed | all calibration depended on replay; B6, BX2 |
+| GUARD | not needed | **needed before any SOS or home action** | — |
+| OPERATE | minimal | needed | Bengaluru's government stations silent for about 108h right now |
 
-**Verdict: every proposed layer is necessary.**
+**Verdict:** every layer is necessary at max scope. At min scope, eleven are necessary as real layers (one minimal), six as one-rule stubs, and only U3 FUSE and GUARD can be left out.
 
-### 8.2 Sufficient: does anything in the brief fall through?
+### 10.3 Sufficient?
 
-| Brief | Owned by | Status |
+Min scope against the brief:
+
+| Brief | Owner | Status |
 |---|---|---|
-| B1 hourly ingestion with history | 1 | covered |
-| B2a sustained trend ("climbing") | 4 + 5 | **covered only after F1** (today "trend" doesn't check climbing) |
-| B2b sudden spike | 4 + 5 | covered |
-| B2c return to normal | 5 + 6 + 7 | covered |
-| B2d false positives | 2 + 6 (confirmation, hysteresis) | covered |
-| B2d missed triggers | 5 (elevated/drift), 1 (late data), clock (gaps) | **covered after F5** (the clock must notice silence) |
-| B2e learned model is primary | 3 + 4 | covered |
-| B3 dedup, speak only on meaningful change | 6 + 7 | covered |
-| B4 natural message, context, one action | 10 | covered |
-| B5 per-city / per-user sensitivity | 3 + 5 + section 3 above | covered |
-| B6 observability | Record | covered |
-| BX1 cooldown / decay | 8 | covered |
-| BX2 replay evaluation | Replay | covered |
-| (implied) sensor dies mid-episode | 6 | **gap → F6** |
+| B1 ingestion with history | S1 | ✓ |
+| B2a sustained trend ("climbing") | U2 + D1 | ✓ **after F1** |
+| B2b sudden spike | U2 + D1 | ✓ |
+| B2c return to normal | D1 + D2 + D3 | ✓ |
+| B2d false positives | S2 + D1 (confirmation) + D2 (hysteresis) | ✓ |
+| B2d missed triggers | D1 (elevated), S1 (late data), CLOCK (silence) | ✓ **after F5** |
+| B2e learned model is primary | U1 + U2 | ✓ |
+| B3 dedup, meaningful change | D2 + D3 (+ D5, D7) | ✓ |
+| B4 natural message, context, one action | A1 | ✓ |
+| B5 per-city / per-user sensitivity | U1 + D1 + section 5 | ✓ |
+| B6 observability | RECORD | ✓ |
+| BX1 cooldown / decay | D4 | ✓ |
+| BX2 replay evaluation | REPLAY | ✓ |
+| (implied) a sensor dies mid-episode | D2 | ✓ **after F6** |
 
-### 8.3 Mutually exclusive: do two layers answer the same question?
+Max scope against the vision:
 
-| Pair | Overlap? | Verdict |
-|---|---|---|
-| "trend" vs "drift" detectors | **yes**: both mean "elevated", 53% of trend hours aren't rising | fix with F1: climb = rising, elevated = flat-high |
-| spike vs trend | partly: spikes almost always co-occur with trend | fine after F1. Precedence gives one label; spike's job is speed and wording. |
-| inhibition (S-C stage 6) vs episode + worth-it | **yes**: with one location and one pollutant per user, an episode yields at most one candidate per hour | F2: remove the stage, keep "one message per user per hour" as a rule in SAY |
-| daily cap vs doubling cooldown | **mostly**: cooldown already bounds volume (theoretical max ~4 a day across back-to-back episodes, observed 1.5–3.5 a week) | F3: drop the cap, or keep it as a silent safety net (your call) |
-| relevance floor vs absolute floor vs "typical band" | no: same scale, three different questions (worth saying a worsening / crossed a hard line / back to usual) | keep |
-| quiet hours vs check-in | **yes, at the boundary**: a check-in inside quiet hours is undefined | F7: check-in wins and absorbs held messages |
-| station scoring vs per-user triggering | **tangled** today: S-C applies user sensitivity inside detection, but detections are stored per sensor | F4: score once per station (no user knobs); apply each user's thresholds in TRIGGER |
+| Vision element | Owner |
+|---|---|
+| Pollen, UV, weather | S1 + U1 + U2 (same stream contract) |
+| Heart rate, sleep, activity | S1 + S3 (whose device) + U1 + U2 |
+| Combined meaning ("exerting in bad air") | U3 |
+| Movement and home-system triggers | S1 (as context) + U3 + D1 |
+| Alarm, SOS email, device control | D6 + A2 + GUARD |
+| Many signals, one person, no fatigue | D5 + D7 |
+| Self-learning settings | L1 + L2, bounded by GUARD |
 
-### 8.4 Collectively exhaustive: does every question have an owner?
+**Verdict:** sufficient at both scopes, once F1, F5 and F6 land.
 
-Gaps: who notices a silent sensor (F5)? Who ends an episode whose sensor died (F6)? Who decides between check-in and quiet hours (F7)? After the fixes, each has an owner.
+### 10.4 MECE?
+
+**Mutually exclusive.** Two layers may share a question only if they work on different units of work. They may share a unit only if they ask different questions.
+
+| Pair that looks alike | Why they are distinct |
+|---|---|
+| D4 PACE vs D7 BUDGET | same question family, different unit: one story vs the whole person |
+| D3 WORTH IT vs D5 ARBITRATE | within one story ("is this new?") vs across stories ("which wins?") |
+| U3 FUSE vs D1 TRIGGER | FUSE changes what the signals *mean*; TRIGGER decides whether that meaning *is an event* |
+| D6 RESPOND vs D8 TIMING | *what* response vs *when*; severity bypasses are a timing policy per response type |
+| L2 ADAPT vs user rules | ADAPT writes a new rules version; GUARD bounds it; the rules format is shared |
+| climb vs elevated (inside D1) | **overlap today** (F1): 53% of "trend" hours aren't rising |
+| station scoring vs per-user triggering | **tangled today** (F4): user sensitivity is applied inside station detection |
+
+**Collectively exhaustive.** Every question in the system now has an owner, including the previously unowned ones: who notices a silent sensor (CLOCK, F5), who ends a dead sensor's episode (D2, F6), and who decides check-in vs quiet hours (D8, F7).
 
 ---
 
-## 9. Findings and proposed fixes
+## 11. Findings and proposed fixes
 
-| # | Finding | Proposed fix | Cost | Needs your call? |
+| # | Finding | Proposed fix | Layer | Needs your call? |
 |---|---|---|---|---|
-| **F1** | "Trend" checks *high*, not *rising*: 53% of trend hours were flat or falling; it duplicates drift and misreads brief B2a | Rename the kinds to **spike / climb / elevated**. Climb = EWMA bar **and** a positive 6h slope. Elevated = CUSUM (today's drift). One label per event by precedence. Re-calibrate with the harness. | small | no: needed to meet the brief |
-| **F2** | The inhibition stage is redundant in v1 (one location and one pollutant per user) | Remove stage 6. Add an invariant to SAY: at most one message per user per hour, preferring got-worse > opened > cleared > check-in. Bring it back when users follow several places or pollutants. | removes code | no |
-| **F3** | The daily cap overlaps the doubling cooldown | Option A: drop it (fewer knobs, more MECE). Option B: keep it as a silent safety net that should never fire, with a test asserting it doesn't on the sample. | tiny | **yes** |
-| **F4** | User sensitivity is applied inside station detection, but detections are stored per station: a layering tangle | The station layer stores sensitivity-free **scores** (z, EWMA, CUSUM, slope, NowCast, band). The user layer applies `k` and floors in TRIGGER and records the result in the decision trace. The `detections` table becomes `station_scores`. | small schema change | no |
-| **F5** | The clock-driven work (silence, overnight release, check-ins) has no named trigger | Make the **clock tick** a first-class trigger next to the data tick (section 2). Every hour, every user gets a decision even when no data arrived (NO_DATA). | small | no |
-| **F6** | An episode whose sensor dies stays open forever | After 24h of NO_DATA, close the episode **silently** (`NO_DATA_TIMEOUT`, no message). Optionally tell the user the sensor went quiet. | small | **yes**: tell the user or not? |
-| **F7** | Check-in time inside quiet hours is undefined | The check-in is an explicit "talk to me now". It wins, and absorbs any held messages into one. | tiny | **yes**, but the proposal seems natural |
+| **F1** | "Trend" checks *high*, not *rising*: 53% of trend hours were flat or falling; duplicates drift; misreads brief B2a | Kinds become **spike / climb / elevated** (+ clearing, floor). Climb = EWMA bar **and** a positive 6h slope. Elevated = CUSUM. One label by precedence. Re-calibrate. | D1 | no: needed for the brief |
+| **F2** | The inhibition stage looked redundant | **Keep, rename ARBITRATE.** Standard layer, needed at max scope. In the demo it's one rule: one message per user per hour, by precedence. | D5 | no |
+| **F3** | The daily cap looked redundant with cooldown | **Keep, rename BUDGET** (per person, across stories). Distinct from PACE by unit of work. Demo: 3 non-severe a day, with a test that it rarely fires on the sample. | D7 | no |
+| **F4** | User sensitivity is tangled into station detection | The station layer stores sensitivity-free **scores**. The user layer applies sensitivity and floors in TRIGGER. The `detections` table becomes `station_scores`. | U2 / D1 | no |
+| **F5** | Clock-driven work has no named trigger | The **clock tick** becomes a first-class trigger: every user gets a decision every hour, even when no data arrived. | CLOCK | no |
+| **F6** | A dead sensor's episode never ends | After 24h of NO_DATA, close silently (`NO_DATA_TIMEOUT`). | D2 | **yes**: also tell the user the sensor went quiet? |
+| **F7** | Check-in inside quiet hours is undefined | The check-in is an explicit "talk to me now": it wins and absorbs held messages. | D8 | **yes** (the proposal seems natural) |
 
 ---
 
-## 10. Key decisions in one place
+## 12. Key decisions in one place
 
 | Decision | Why | Rejected alternative | Source |
 |---|---|---|---|
-| Learn "normal" per station **and per hour of day** | rush hours and nights differ; a flat average fires every evening in Delhi | one 24h average; fixed thresholds | S-C §3 |
-| Work in log scale with robust statistics (median/MAD) | a doubling means the same thing in clean and dirty cities; past spikes don't distort normal | mean/standard deviation (spike-sensitive) | S-B §4 |
-| Recompute everything each hour from stored data | replay equals live; late data is handled for free | incremental detector state | S-C §1 |
-| EPA bands with NowCast for "harmful" | built for hourly use; one scale for every city | India's 24h index (too slow for hourly nudges) | S-B §2 |
-| Hand-rolled rule pipeline | the hard parts (holding, cooldown, episodes) aren't covered by any rule library | rule-engine, CEL, ZEN, durable_rules | S-B §3 |
-| Episodes with hysteresis and a flap guard | industry-proven way to stop alert storms (Prometheus, Grafana, PagerDuty) | per-hour alerts with a mute timer | S-B §1 |
-| Hold overnight, don't drop | a dropped warning is a missed trigger; held ones merge into one morning message | Alertmanager-style silences that discard | S-C §6 |
-| Five cities from clean to dusty, one station each | shows per-city sensitivity; the brief counts cities | several stations per city | S-A §2 |
-| PM2.5 only in v1 | the only pollutant all five stations measure | multi-pollutant with gaps | S-A §2 |
-| Ship a 90-day sample in the repo | anyone can replay without an API key | live-only | S-A §6 |
+| Same layers at both scopes; the demo uses stubs, not shortcuts | the demo is the first slice of the product, not a throwaway | a demo-only script | this doc |
+| DECIDE split into per-story and per-person halves | that split is what prevents fatigue once there are many signals | one combined restraint step | §1, §8 |
+| Learn "normal" per station **and per hour of day** | rush hours and nights differ | one average; fixed thresholds | S-C §3 |
+| Log scale, robust statistics (median/MAD) | a doubling means the same everywhere; past spikes don't distort "normal" | mean / standard deviation | S-B §4 |
+| Recompute every hour from stored data | replay equals live; late data is handled for free | incremental detector state | S-C §1 |
+| EPA bands with NowCast for "harmful" | built for hourly use; one scale for every city | India's 24h index | S-B §2 |
+| Hand-rolled rule pipeline | holding, cooldown and episodes aren't covered by any rule library | rule-engine, CEL, ZEN, durable_rules | S-B §3 |
+| Hold overnight, don't drop | a dropped warning is a missed trigger | Alertmanager-style silences | S-C §6 |
+| Five cities, clean to dusty, one station each | shows per-city sensitivity; the brief counts cities | several stations per city | S-A §2 |
+| PM2.5 only in the demo | the only pollutant all five stations measure | multi-pollutant with gaps | S-A §2 |
+| Ship a 90-day sample | anyone can replay without an API key | live-only | S-A §6 |
