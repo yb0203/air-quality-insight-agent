@@ -121,3 +121,41 @@ class TraceStep:
             "inputs": self.inputs,
             "values": self.values,
         }
+
+
+@dataclass(frozen=True)
+class CheckedReading:
+    """S2 output: a reading plus why it was excluded (None = usable). `provisional` = newest hour, glitch check pending."""
+
+    reading: Reading
+    excluded: ReasonCode | None = None
+    provisional: bool = False
+
+
+@dataclass(frozen=True)
+class StationScore:
+    """U2 output, shared by every user on the station. Contains no user parameters (FR-SENS-4)."""
+
+    sensor_id: int
+    period_end: datetime
+    z: float | None
+    ewma: float | None
+    cusum: float | None
+    slope_6h: float | None
+    nowcast: float | None
+    band: Band | None
+    typical_band: Band | None
+    excluded: ReasonCode | None = None
+    gap_break: bool = False
+    evidence: dict = field(default_factory=dict)
+
+
+@dataclass(frozen=True)
+class Candidate:
+    """Something the decision layers might say (D2 output, D3-D8 input)."""
+
+    kind: CandidateKind
+    band: Band | None
+    episode_id: int | None = None
+    event_kind: EventKind | None = None
+    severe: bool = False
