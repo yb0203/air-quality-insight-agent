@@ -111,9 +111,161 @@ scenarios:
   - logged
   - check-in
   beats:
-  - at: '2026-10-17T17:30:00Z'
+  - at: '2026-10-17T18:20:00Z'
     title: Every hour logged
     note: Nothing unusual, and the reason is recorded.
   - at: '2026-10-18T00:30:00Z'
     title: Check-in stays quiet
     note: Nothing worse than usual, so no message.
+- id: sudden-spike
+  label: Sudden spike
+  user_id: arjun
+  replay_run: sudden-spike
+  until: '2026-09-20T09:30:00Z'
+  description: 'Delhi, 20 Sep: already unhealthy at Arjun''s check-in, then PM2.5 jumped to very unhealthy mid-morning.
+    Severe air is sent at once; the next hours at the same level stay silent.'
+  chart_hours: 24
+  group: speaks
+  brief:
+  - B2b
+  - B3
+  question: The air is already bad, then it jumps sharply. Does the agent speak again, and when?
+  shows:
+  - climb
+  - spike
+  - severe
+  - no-repeats
+  - message
+  beats:
+  - at: '2026-09-20T01:00:00Z'
+    title: Morning check-in
+    note: Unhealthy, worse than a usual morning.
+  - at: '2026-09-20T05:20:00Z'
+    title: Jumped sharply
+    note: 'Very unhealthy now: sent at once, a full band worse.'
+  - at: '2026-09-20T06:20:00Z'
+    title: Same level, silent
+    note: Already told; nothing new to say.
+- id: severe-night
+  label: Severe night
+  user_id: arjun
+  replay_run: severe-night
+  until: '2026-10-18T03:00:00Z'
+  description: 'Delhi, night of 17 Oct: the air reached very unhealthy in the small hours. Quiet hours hold ordinary
+    news, not severe air. Having just told him, the 06:30 check-in stays quiet.'
+  chart_hours: 24
+  group: speaks
+  brief:
+  - D8
+  - B3
+  question: It's 3am and the air turns very unhealthy. Does the agent wake Arjun?
+  shows:
+  - severe
+  - quiet-hours
+  - check-in
+  - no-repeats
+  beats:
+  - at: '2026-10-17T21:20:00Z'
+    title: Breaks through
+    note: 'Very unhealthy: sent despite quiet hours.'
+  - at: '2026-10-17T22:20:00Z'
+    title: Then silent
+    note: Same level, already told.
+  - at: '2026-10-18T01:00:00Z'
+    title: Check-in stays quiet
+    note: Nothing new since the night's message.
+- id: slow-build-up
+  label: Slow build-up
+  user_id: maya
+  replay_run: slow-build-up
+  until: '2026-08-21T16:00:00Z'
+  description: 'Los Angeles, 20 Aug: PM2.5 drifted to about twice its usual level with no sudden jump. A slow-drift
+    detector catches it; the spell then lasts days without another message.'
+  chart_hours: 36
+  group: speaks
+  brief:
+  - B2a
+  - B2d
+  question: 'No spike, no sharp climb: the air just sits a bit above normal. Is that missed?'
+  shows:
+  - elevated
+  - missed
+  - no-repeats
+  beats:
+  - at: '2026-08-20T15:20:00Z'
+    title: Stuck above normal
+    note: Caught by the slow-drift detector.
+  - at: '2026-08-21T11:20:00Z'
+    title: A day later, still quiet
+    note: Same spell; one message was enough.
+- id: all-day-bad
+  label: All day bad, one message
+  user_id: omar
+  replay_run: all-day-bad
+  until: '2026-09-01T16:00:00Z'
+  description: 'Dubai, 1 Sep: unhealthy from the small hours to the evening. Omar has low sensitivity, and still
+    gets one message at 07:00, then silence for the rest of the bad day.'
+  chart_hours: 24
+  group: quiet
+  brief:
+  - B3
+  - B5
+  question: Twelve unhealthy hours in a row. How many messages should that be?
+  shows:
+  - quiet-hours
+  - no-repeats
+  - sensitivity
+  - logged
+  beats:
+  - at: '2026-08-31T18:20:00Z'
+    title: Held overnight
+    note: Worth saying, but it's quiet hours.
+  - at: '2026-09-01T03:00:00Z'
+    title: One message at 07:00
+    note: Everything held goes out as one.
+  - at: '2026-09-01T08:20:00Z'
+    title: Still bad, still silent
+    note: 'Same level all day: nothing new to say.'
+- id: too-short
+  label: Too short to tell
+  user_id: priya
+  replay_run: too-short
+  until: '2026-09-02T19:00:00Z'
+  description: 'Bengaluru, 2 Sep: PM2.5 read 67 for one evening hour, between 10 and 17. Real or not, one hour can''t
+    confirm anything, and a false alarm costs trust. The agent says nothing.'
+  chart_hours: 14
+  group: bad-data
+  brief:
+  - B2d
+  question: One high hour, then back to normal. Glitch or real? What should the agent do?
+  shows:
+  - glitch
+  - missed
+  - logged
+  beats:
+  - at: '2026-09-02T16:20:00Z'
+    title: Excluded
+    note: 'One hour, 4× its neighbours: not enough to act on.'
+- id: sensor-silent
+  label: Sensor went silent
+  user_id: rohan
+  replay_run: sensor-silent
+  until: '2026-09-23T06:00:00Z'
+  description: 'Mumbai, 22 Sep: the monitor stopped reporting for six days. The agent doesn''t guess: it logs ''no
+    data'' every hour and, after a day, closes the open story without a message.'
+  chart_hours: 30
+  group: bad-data
+  brief:
+  - B1
+  - B6
+  question: The sensor goes quiet mid-story. What does the agent tell Rohan?
+  shows:
+  - no-data
+  - logged
+  beats:
+  - at: '2026-09-22T07:20:00Z'
+    title: No new readings
+    note: Nothing to judge, so nothing is said.
+  - at: '2026-09-23T04:20:00Z'
+    title: Closed quietly
+    note: 'A day without data: the story ends, no message.'

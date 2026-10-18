@@ -1,0 +1,265 @@
+{
+ "decision": {
+  "outcome": "sent",
+  "reason_code": "SENT_CHECK_IN",
+  "reason": "Sent at your check-in time.",
+  "evaluated_at": "2026-09-20 01:00:00+00:00",
+  "trigger": "clock"
+ },
+ "trace": [
+  {
+   "layer": "D2",
+   "passed": true,
+   "reason_code": null,
+   "inputs": {},
+   "values": {
+    "state": "ACTIVE",
+    "started_at": "2026-09-19T07:20:00+00:00",
+    "hours": 17.7,
+    "ended_at": null,
+    "peak": {
+     "pm25": 87,
+     "at": "2026-09-19T16:30:00+00:00",
+     "band": "unhealthy"
+    }
+   }
+  },
+  {
+   "layer": "D8",
+   "passed": true,
+   "reason_code": null,
+   "inputs": {},
+   "values": {
+    "check_in": "06:30",
+    "absorbed_held": 0,
+    "hours_considered": 6,
+    "band": "unhealthy",
+    "typical_band": "usg",
+    "ewma": 2.0414344078734623,
+    "recent_notice": false
+   }
+  },
+  {
+   "layer": "D5",
+   "passed": true,
+   "reason_code": null,
+   "inputs": {},
+   "values": {
+    "candidates": 1,
+    "kept": "check_in"
+   }
+  },
+  {
+   "layer": "D6",
+   "passed": true,
+   "reason_code": null,
+   "inputs": {},
+   "values": {
+    "response": "notify"
+   }
+  },
+  {
+   "layer": "D7",
+   "passed": true,
+   "reason_code": null,
+   "inputs": {},
+   "values": {
+    "sent_today": 0,
+    "max_per_day": 3
+   }
+  },
+  {
+   "layer": "D8",
+   "passed": true,
+   "reason_code": null,
+   "inputs": {},
+   "values": {
+    "local_time": "06:30",
+    "quiet_hours": true,
+    "check_in_wins": true
+   }
+  },
+  {
+   "layer": "A",
+   "passed": true,
+   "reason_code": "SENT_CHECK_IN",
+   "inputs": {},
+   "values": {
+    "compose": "check_in"
+   }
+  }
+ ],
+ "scores": [],
+ "readings": [
+  {
+   "sensor_id": 15289075,
+   "period_end": "2026-09-19 00:30:00+00:00",
+   "period_start": "2026-09-18 23:30:00+00:00",
+   "value": 48.6,
+   "coverage_pct": 100.0
+  },
+  {
+   "sensor_id": 15289075,
+   "period_end": "2026-09-19 01:30:00+00:00",
+   "period_start": "2026-09-19 00:30:00+00:00",
+   "value": 50.8,
+   "coverage_pct": 100.0
+  },
+  {
+   "sensor_id": 15289075,
+   "period_end": "2026-09-19 02:30:00+00:00",
+   "period_start": "2026-09-19 01:30:00+00:00",
+   "value": 52.8,
+   "coverage_pct": 100.0
+  },
+  {
+   "sensor_id": 15289075,
+   "period_end": "2026-09-19 03:30:00+00:00",
+   "period_start": "2026-09-19 02:30:00+00:00",
+   "value": 67.8,
+   "coverage_pct": 100.0
+  },
+  {
+   "sensor_id": 15289075,
+   "period_end": "2026-09-19 04:30:00+00:00",
+   "period_start": "2026-09-19 03:30:00+00:00",
+   "value": 83.6,
+   "coverage_pct": 100.0
+  },
+  {
+   "sensor_id": 15289075,
+   "period_end": "2026-09-19 05:30:00+00:00",
+   "period_start": "2026-09-19 04:30:00+00:00",
+   "value": 77.9,
+   "coverage_pct": 100.0
+  },
+  {
+   "sensor_id": 15289075,
+   "period_end": "2026-09-19 06:30:00+00:00",
+   "period_start": "2026-09-19 05:30:00+00:00",
+   "value": 84.6,
+   "coverage_pct": 100.0
+  },
+  {
+   "sensor_id": 15289075,
+   "period_end": "2026-09-19 07:30:00+00:00",
+   "period_start": "2026-09-19 06:30:00+00:00",
+   "value": 74.2,
+   "coverage_pct": 100.0
+  },
+  {
+   "sensor_id": 15289075,
+   "period_end": "2026-09-19 08:30:00+00:00",
+   "period_start": "2026-09-19 07:30:00+00:00",
+   "value": 53.4,
+   "coverage_pct": 100.0
+  },
+  {
+   "sensor_id": 15289075,
+   "period_end": "2026-09-19 09:30:00+00:00",
+   "period_start": "2026-09-19 08:30:00+00:00",
+   "value": 51.2,
+   "coverage_pct": 100.0
+  },
+  {
+   "sensor_id": 15289075,
+   "period_end": "2026-09-19 10:30:00+00:00",
+   "period_start": "2026-09-19 09:30:00+00:00",
+   "value": 54.7,
+   "coverage_pct": 100.0
+  },
+  {
+   "sensor_id": 15289075,
+   "period_end": "2026-09-19 11:30:00+00:00",
+   "period_start": "2026-09-19 10:30:00+00:00",
+   "value": 51.4,
+   "coverage_pct": 100.0
+  },
+  {
+   "sensor_id": 15289075,
+   "period_end": "2026-09-19 12:30:00+00:00",
+   "period_start": "2026-09-19 11:30:00+00:00",
+   "value": 50.0,
+   "coverage_pct": 100.0
+  },
+  {
+   "sensor_id": 15289075,
+   "period_end": "2026-09-19 13:30:00+00:00",
+   "period_start": "2026-09-19 12:30:00+00:00",
+   "value": 56.7,
+   "coverage_pct": 100.0
+  },
+  {
+   "sensor_id": 15289075,
+   "period_end": "2026-09-19 14:30:00+00:00",
+   "period_start": "2026-09-19 13:30:00+00:00",
+   "value": 68.6,
+   "coverage_pct": 100.0
+  },
+  {
+   "sensor_id": 15289075,
+   "period_end": "2026-09-19 15:30:00+00:00",
+   "period_start": "2026-09-19 14:30:00+00:00",
+   "value": 84.6,
+   "coverage_pct": 100.0
+  },
+  {
+   "sensor_id": 15289075,
+   "period_end": "2026-09-19 16:30:00+00:00",
+   "period_start": "2026-09-19 15:30:00+00:00",
+   "value": 101.0,
+   "coverage_pct": 100.0
+  },
+  {
+   "sensor_id": 15289075,
+   "period_end": "2026-09-19 17:30:00+00:00",
+   "period_start": "2026-09-19 16:30:00+00:00",
+   "value": 80.0,
+   "coverage_pct": 100.0
+  },
+  {
+   "sensor_id": 15289075,
+   "period_end": "2026-09-19 18:30:00+00:00",
+   "period_start": "2026-09-19 17:30:00+00:00",
+   "value": 68.0,
+   "coverage_pct": 100.0
+  },
+  {
+   "sensor_id": 15289075,
+   "period_end": "2026-09-19 19:30:00+00:00",
+   "period_start": "2026-09-19 18:30:00+00:00",
+   "value": 62.9,
+   "coverage_pct": 100.0
+  },
+  {
+   "sensor_id": 15289075,
+   "period_end": "2026-09-19 20:30:00+00:00",
+   "period_start": "2026-09-19 19:30:00+00:00",
+   "value": 71.7,
+   "coverage_pct": 100.0
+  },
+  {
+   "sensor_id": 15289075,
+   "period_end": "2026-09-19 21:30:00+00:00",
+   "period_start": "2026-09-19 20:30:00+00:00",
+   "value": 75.8,
+   "coverage_pct": 100.0
+  },
+  {
+   "sensor_id": 15289075,
+   "period_end": "2026-09-19 22:30:00+00:00",
+   "period_start": "2026-09-19 21:30:00+00:00",
+   "value": 84.9,
+   "coverage_pct": 100.0
+  },
+  {
+   "sensor_id": 15289075,
+   "period_end": "2026-09-19 23:30:00+00:00",
+   "period_start": "2026-09-19 22:30:00+00:00",
+   "value": 98.4,
+   "coverage_pct": 100.0
+  }
+ ],
+ "baseline": null,
+ "rules_version": 1
+}

@@ -99,6 +99,111 @@ def kinds(*decision_ids) -> list[str]:
     return out
 
 
+def utc(text: str) -> datetime:
+    return datetime.fromisoformat(text).replace(tzinfo=UTC)
+
+
+def need(row, what: str):
+    """Every beat must match the replay: stop the export if the expected decision isn't there."""
+    if row is None:
+        raise SystemExit(f"replay mismatch: expected {what}")
+    return row
+
+
+def tier_one() -> list[dict]:
+    """Six more real moments, each beat a decision the replay actually made."""
+    out = []
+
+    # Sudden spike: Delhi, 20 Sep. Check-in at 06:30, then a sharp jump to Very Unhealthy sent at once.
+    a, b = utc("2026-09-19T20:00"), utc("2026-09-20T09:30")
+    chk = need(first_decision("arjun", "SENT_CHECK_IN", a, b), "Arjun's check-in on 20 Sep")
+    sev = need(first_decision("arjun", "SENT_SEVERE_BYPASS", chk["evaluated_at"], b), "a severe notice on 20 Sep")
+    dup = need(first_decision("arjun", "DEDUP_SAME_BAND", sev["evaluated_at"], b), "a deduped hour after it")
+    out.append(export("sudden-spike", "Sudden spike",
+                      "Delhi, 20 Sep: already unhealthy at Arjun's check-in, then PM2.5 jumped to very unhealthy "
+                      "mid-morning. Severe air is sent at once; the next hours at the same level stay silent.",
+                      {"user": "arjun", "start": b - 24 * H, "end": b},
+                      story={"group": "speaks", "brief": ["B2b", "B3"],
+                             "question": "The air is already bad, then it jumps sharply. Does the agent speak again, and when?",
+                             "shows": [*kinds(sev["id"]), "severe", "no-repeats", "message"],
+                             "beats": [(chk["evaluated_at"], "Morning check-in", "Unhealthy, worse than a usual morning."),
+                                       (sev["evaluated_at"], "Jumped sharply", "Very unhealthy now: sent at once, a full band worse."),
+                                       (dup["evaluated_at"], "Same level, silent", "Already told; nothing new to say.")]}))
+
+    # Severe night: Delhi, 17-18 Oct. Very unhealthy at 2:50am breaks through quiet hours; the check-in stays quiet.
+    a, b = utc("2026-10-17T18:00"), utc("2026-10-18T03:00")
+    sev = need(first_decision("arjun", "SENT_SEVERE_BYPASS", a, b), "a severe notice on the night of 17 Oct")
+    dup = need(first_decision("arjun", "DEDUP_SAME_BAND", sev["evaluated_at"], b), "a deduped hour after it")
+    quiet = need(first_decision("arjun", "CHECKIN_QUIET", sev["evaluated_at"], b), "a quiet check-in on 18 Oct")
+    out.append(export("severe-night", "Severe night",
+                      "Delhi, night of 17 Oct: the air reached very unhealthy in the small hours. Quiet hours hold "
+                      "ordinary news, not severe air. Having just told him, the 06:30 check-in stays quiet.",
+                      {"user": "arjun", "start": b - 24 * H, "end": b},
+                      story={"group": "speaks", "brief": ["D8", "B3"],
+                             "question": "It's 3am and the air turns very unhealthy. Does the agent wake Arjun?",
+                             "shows": ["severe", "quiet-hours", "check-in", "no-repeats"],
+                             "beats": [(sev["evaluated_at"], "Breaks through", "Very unhealthy: sent despite quiet hours."),
+                                       (dup["evaluated_at"], "Then silent", "Same level, already told."),
+                                       (quiet["evaluated_at"], "Check-in stays quiet", "Nothing new since the night's message.")]}))
+
+    # Slow build-up: Los Angeles, 20-21 Aug. No spike, just stuck above normal: one message, then a day of silence.
+    a, b = utc("2026-08-20T00:00"), utc("2026-08-21T16:00")
+    opened = need(first_decision("maya", "SENT_OPENED", a, b), "an LA notice on 20 Aug")
+    later = need(first_decision("maya", "EPISODE_CONTINUES", opened["evaluated_at"] + 20 * H, b), "the same spell a day later")
+    out.append(export("slow-build-up", "Slow build-up",
+                      "Los Angeles, 20 Aug: PM2.5 drifted to about twice its usual level with no sudden jump. A "
+                      "slow-drift detector catches it; the spell then lasts days without another message.",
+                      {"user": "maya", "start": b - 36 * H, "end": b}, chart_hours=36,
+                      story={"group": "speaks", "brief": ["B2a", "B2d"],
+                             "question": "No spike, no sharp climb: the air just sits a bit above normal. Is that missed?",
+                             "shows": [*kinds(opened["id"]), "missed", "no-repeats"],
+                             "beats": [(opened["evaluated_at"], "Stuck above normal", "Caught by the slow-drift detector."),
+                                       (later["evaluated_at"], "A day later, still quiet", "Same spell; one message was enough.")]}))
+
+    # All day bad, one message: Dubai, 1 Sep. Held overnight, released at 07:00, then silent all day.
+    a, b = utc("2026-08-31T12:00"), utc("2026-09-01T16:00")
+    rel = need(first_decision("omar", "HELD_RELEASED", a, b), "Omar's released notice on 1 Sep")
+    held = need(first_decision("omar", "QUIET_HOURS_HELD", rel["evaluated_at"] - 12 * H, rel["evaluated_at"]), "the overnight hold")
+    dup = need(first_decision("omar", "DEDUP_SAME_BAND", rel["evaluated_at"] + 5 * H, b), "a deduped hour that afternoon")
+    out.append(export("all-day-bad", "All day bad, one message",
+                      "Dubai, 1 Sep: unhealthy from the small hours to the evening. Omar has low sensitivity, and "
+                      "still gets one message at 07:00, then silence for the rest of the bad day.",
+                      {"user": "omar", "start": b - 24 * H, "end": b},
+                      story={"group": "quiet", "brief": ["B3", "B5"],
+                             "question": "Twelve unhealthy hours in a row. How many messages should that be?",
+                             "shows": ["quiet-hours", "no-repeats", "sensitivity", "logged"],
+                             "beats": [(held["evaluated_at"], "Held overnight", "Worth saying, but it's quiet hours."),
+                                       (rel["evaluated_at"], "One message at 07:00", "Everything held goes out as one."),
+                                       (dup["evaluated_at"], "Still bad, still silent", "Same level all day: nothing new to say.")]}))
+
+    # Too short to tell: Bengaluru, 2 Sep, 8pm. One high hour between two normal ones: excluded.
+    a, b = utc("2026-09-02T12:00"), utc("2026-09-02T19:00")
+    dq = need(first_decision("priya", "DQ_SUSPECT", a, b), "the 2 Sep Bengaluru exclusion")
+    out.append(export("too-short", "Too short to tell",
+                      "Bengaluru, 2 Sep: PM2.5 read 67 for one evening hour, between 10 and 17. Real or not, one hour "
+                      "can't confirm anything, and a false alarm costs trust. The agent says nothing.",
+                      {"user": "priya", "start": b - 14 * H, "end": b}, chart_hours=14,
+                      story={"group": "bad-data", "brief": ["B2d"],
+                             "question": "One high hour, then back to normal. Glitch or real? What should the agent do?",
+                             "shows": ["glitch", "missed", "logged"],
+                             "beats": [(dq["evaluated_at"], "Excluded", "One hour, 4× its neighbours: not enough to act on.")]}))
+
+    # Sensor went silent: Mumbai, 22-23 Sep. No data: nothing judged, and the open story closes quietly after a day.
+    a, b = utc("2026-09-22T00:00"), utc("2026-09-23T06:00")
+    nd = need(first_decision("rohan", "NO_DATA", a, b), "NO_DATA for Rohan on 22 Sep")
+    to = need(first_decision("rohan", "NO_DATA_TIMEOUT", nd["evaluated_at"], b), "the 24h quiet close")
+    out.append(export("sensor-silent", "Sensor went silent",
+                      "Mumbai, 22 Sep: the monitor stopped reporting for six days. The agent doesn't guess: it logs "
+                      "'no data' every hour and, after a day, closes the open story without a message.",
+                      {"user": "rohan", "start": b - 30 * H, "end": b}, chart_hours=30,
+                      story={"group": "bad-data", "brief": ["B1", "B6"],
+                             "question": "The sensor goes quiet mid-story. What does the agent tell Rohan?",
+                             "shows": ["no-data", "logged"],
+                             "beats": [(nd["evaluated_at"], "No new readings", "Nothing to judge, so nothing is said."),
+                                       (to["evaluated_at"], "Closed quietly", "A day without data: the story ends, no message.")]}))
+    return out
+
+
 def write(path: Path, data) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(json.dumps(data, indent=1, ensure_ascii=False, default=str) + "\n")
@@ -211,10 +316,13 @@ if __name__ == "__main__":
                story={"group": "quiet", "brief": ["B6"],
                       "question": "A normal night. The agent says nothing, but can it still tell you why?",
                       "shows": ["logged", "check-in"],
-                      "beats": [(quiet["start"] + 2 * H, "Every hour logged", "Nothing unusual, and the reason is recorded."),
+                      "beats": [(need(first_decision("priya", "NO_TRIGGER", quiet["start"] + 2 * H, quiet["end"]),
+                                      "a logged quiet hour")["evaluated_at"],
+                                 "Every hour logged", "Nothing unusual, and the reason is recorded."),
                                 *([(quiet_chk["evaluated_at"], "Check-in stays quiet", "Nothing worse than usual, so no message.")]
                                   if quiet_chk else [])]}),
     ]
+    scenarios += tier_one()
     SCENARIOS.write_text("# Generated by scripts/export_watch_fixtures.py from the real 90-day replay (data/replay.db).\n"
                          "# Each scenario's `replay_run` names its own fixture files; `until` is the replayed 'now'.\n"
                          + yaml.safe_dump({"scenarios": scenarios}, sort_keys=False, allow_unicode=True, width=110))

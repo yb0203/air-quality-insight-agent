@@ -1,0 +1,24 @@
+[
+ {
+  "id": "ntf_160",
+  "created_at": "2026-09-20 05:20:00+00:00",
+  "delivered_at": "2026-09-20 05:20:00+00:00",
+  "kind": "escalated",
+  "event_kind": "spike",
+  "band": "very_unhealthy",
+  "body": "Delhi's air jumped sharply to very unhealthy, the worst in 14 days. Best to stay indoors with windows closed for now.",
+  "next_action": "stay indoors with windows closed",
+  "decision_id": "dec_10568"
+ },
+ {
+  "id": "ntf_159",
+  "created_at": "2026-09-20 01:00:00+00:00",
+  "delivered_at": "2026-09-20 01:00:00+00:00",
+  "kind": "check_in",
+  "event_kind": "climb",
+  "band": "unhealthy",
+  "body": "Delhi's air has been unhealthy since 12:50pm, worse than a usual morning here, the worst in 14 days. Best to skip the outdoor run for now.",
+  "next_action": "skip the outdoor run",
+  "decision_id": "dec_10533"
+ }
+]

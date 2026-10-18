@@ -1,0 +1,13 @@
+[
+ {
+  "id": "ntf_107",
+  "created_at": "2026-09-01 03:00:00+00:00",
+  "delivered_at": "2026-09-01 03:00:00+00:00",
+  "kind": "released",
+  "event_kind": "climb",
+  "band": "unhealthy",
+  "body": "Overnight, Dubai's air reached unhealthy, and it's still unhealthy. Best to keep windows closed for now.",
+  "next_action": "keep windows closed",
+  "decision_id": "dec_7299"
+ }
+]

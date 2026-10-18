@@ -143,7 +143,8 @@ def build_chart(
     # Decisions are about a reading hour but made later, once the data has arrived.
     by_hour: dict[datetime, list[Decision]] = {}
     for d in decisions:
-        by_hour.setdefault(d.about, []).append(d)
+        if d.period_end is None or d.evaluated_at - d.period_end <= timedelta(hours=3):
+            by_hour.setdefault(d.about, []).append(d)
 
     # Hit targets: one column per reading, wider than any mark.
     xs = [x(r.at) for r in readings]
@@ -164,7 +165,9 @@ def build_chart(
 
     for d in decisions:
         # Clock-triggered decisions (check-ins, releases) sit where they happened; data ones on their hour.
-        pos = d.evaluated_at if d.trigger == "clock" else d.about
+        # (and so do decisions made long after their reading, e.g. "no data" hours).
+        stale = d.period_end is not None and d.evaluated_at - d.period_end > timedelta(hours=3)
+        pos = d.evaluated_at if d.trigger == "clock" or stale else d.about
         if not start <= pos <= end:
             continue
         mark = {

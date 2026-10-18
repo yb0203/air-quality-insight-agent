@@ -1,0 +1,2170 @@
+[
+ {
+  "id": "dec_10425",
+  "evaluated_at": "2026-09-19 09:20:00+00:00",
+  "period_end": "2026-09-19 07:30:00+00:00",
+  "user_id": "arjun",
+  "outcome": "suppressed",
+  "reason_code": "DEDUP_SAME_BAND",
+  "reason": "Already told you about this level; nothing new to say.",
+  "trigger": "data",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "period_end": "2026-09-19T07:30:00+00:00",
+     "z": 1.628,
+     "ewma": 1.637,
+     "cusum": 8.615,
+     "slope_6h": 0.068,
+     "nowcast": 76.6,
+     "band": "unhealthy",
+     "typical_band": "usg"
+    }
+   },
+   {
+    "layer": "D1",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "label": "climb",
+     "fired": [
+      "climb"
+     ],
+     "calm": false,
+     "near_misses": [],
+     "bars": {
+      "spike": 3.5,
+      "climb": 1.26,
+      "elevated": 8.0,
+      "floor": 4.0
+     },
+     "cusum": 2.523,
+     "k": 1.0
+    }
+   },
+   {
+    "layer": "D2",
+    "passed": false,
+    "reason_code": "EPISODE_CONTINUES",
+    "inputs": {},
+    "values": {
+     "state": "ACTIVE",
+     "calm_run": 0,
+     "candidate": null,
+     "started_at": "2026-09-19T07:20:00+00:00",
+     "hours": 2.0,
+     "ended_at": null,
+     "peak": {
+      "pm25": 79,
+      "at": "2026-09-19T06:30:00+00:00",
+      "band": "unhealthy"
+     }
+    }
+   },
+   {
+    "layer": "D3",
+    "passed": false,
+    "reason_code": "DEDUP_SAME_BAND",
+    "inputs": {},
+    "values": {
+     "band": "unhealthy",
+     "last_told": "unhealthy"
+    }
+   }
+  ]
+ },
+ {
+  "id": "dec_10432",
+  "evaluated_at": "2026-09-19 10:20:00+00:00",
+  "period_end": "2026-09-19 08:30:00+00:00",
+  "user_id": "arjun",
+  "outcome": "no_event",
+  "reason_code": "EPISODE_CONTINUES",
+  "reason": "The same bad period is continuing; nothing new to say.",
+  "trigger": "data",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "period_end": "2026-09-19T08:30:00+00:00",
+     "z": 0.667,
+     "ewma": 1.274,
+     "cusum": 0.167,
+     "slope_6h": -0.039,
+     "nowcast": 66.5,
+     "band": "unhealthy",
+     "typical_band": "usg"
+    }
+   },
+   {
+    "layer": "D1",
+    "passed": false,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "label": null,
+     "fired": [],
+     "calm": false,
+     "near_misses": [],
+     "bars": {
+      "spike": 3.5,
+      "climb": 1.26,
+      "elevated": 8.0,
+      "floor": 4.0
+     },
+     "cusum": 2.69,
+     "k": 1.0
+    }
+   },
+   {
+    "layer": "D2",
+    "passed": false,
+    "reason_code": "EPISODE_CONTINUES",
+    "inputs": {},
+    "values": {
+     "state": "ACTIVE",
+     "calm_run": 0,
+     "candidate": null,
+     "started_at": "2026-09-19T07:20:00+00:00",
+     "hours": 3.0,
+     "ended_at": null,
+     "peak": {
+      "pm25": 79,
+      "at": "2026-09-19T06:30:00+00:00",
+      "band": "unhealthy"
+     }
+    }
+   }
+  ]
+ },
+ {
+  "id": "dec_10439",
+  "evaluated_at": "2026-09-19 11:20:00+00:00",
+  "period_end": "2026-09-19 09:30:00+00:00",
+  "user_id": "arjun",
+  "outcome": "no_event",
+  "reason_code": "EPISODE_CONTINUES",
+  "reason": "The same bad period is continuing; nothing new to say.",
+  "trigger": "data",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "period_end": "2026-09-19T09:30:00+00:00",
+     "z": 0.639,
+     "ewma": 1.095,
+     "cusum": 0.359,
+     "slope_6h": -0.103,
+     "nowcast": 60.0,
+     "band": "unhealthy",
+     "typical_band": "usg"
+    }
+   },
+   {
+    "layer": "D1",
+    "passed": false,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "label": null,
+     "fired": [],
+     "calm": false,
+     "near_misses": [],
+     "bars": {
+      "spike": 3.5,
+      "climb": 1.26,
+      "elevated": 8.0,
+      "floor": 4.0
+     },
+     "cusum": 2.829,
+     "k": 1.0
+    }
+   },
+   {
+    "layer": "D2",
+    "passed": false,
+    "reason_code": "EPISODE_CONTINUES",
+    "inputs": {},
+    "values": {
+     "state": "ACTIVE",
+     "calm_run": 0,
+     "candidate": null,
+     "started_at": "2026-09-19T07:20:00+00:00",
+     "hours": 4.0,
+     "ended_at": null,
+     "peak": {
+      "pm25": 79,
+      "at": "2026-09-19T06:30:00+00:00",
+      "band": "unhealthy"
+     }
+    }
+   }
+  ]
+ },
+ {
+  "id": "dec_10446",
+  "evaluated_at": "2026-09-19 12:20:00+00:00",
+  "period_end": "2026-09-19 10:30:00+00:00",
+  "user_id": "arjun",
+  "outcome": "no_event",
+  "reason_code": "EPISODE_CONTINUES",
+  "reason": "The same bad period is continuing; nothing new to say.",
+  "trigger": "data",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "period_end": "2026-09-19T10:30:00+00:00",
+     "z": 0.918,
+     "ewma": 1.054,
+     "cusum": 0.838,
+     "slope_6h": -0.103,
+     "nowcast": 57.7,
+     "band": "unhealthy",
+     "typical_band": "usg"
+    }
+   },
+   {
+    "layer": "D1",
+    "passed": false,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "label": null,
+     "fired": [],
+     "calm": false,
+     "near_misses": [],
+     "bars": {
+      "spike": 3.5,
+      "climb": 1.26,
+      "elevated": 8.0,
+      "floor": 4.0
+     },
+     "cusum": 3.247,
+     "k": 1.0
+    }
+   },
+   {
+    "layer": "D2",
+    "passed": false,
+    "reason_code": "EPISODE_CONTINUES",
+    "inputs": {},
+    "values": {
+     "state": "ACTIVE",
+     "calm_run": 0,
+     "candidate": null,
+     "started_at": "2026-09-19T07:20:00+00:00",
+     "hours": 5.0,
+     "ended_at": null,
+     "peak": {
+      "pm25": 79,
+      "at": "2026-09-19T06:30:00+00:00",
+      "band": "unhealthy"
+     }
+    }
+   }
+  ]
+ },
+ {
+  "id": "dec_10453",
+  "evaluated_at": "2026-09-19 13:20:00+00:00",
+  "period_end": "2026-09-19 11:30:00+00:00",
+  "user_id": "arjun",
+  "outcome": "no_event",
+  "reason_code": "EPISODE_CONTINUES",
+  "reason": "The same bad period is continuing; nothing new to say.",
+  "trigger": "data",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "period_end": "2026-09-19T11:30:00+00:00",
+     "z": 1.249,
+     "ewma": 1.113,
+     "cusum": 1.587,
+     "slope_6h": -0.098,
+     "nowcast": 55.0,
+     "band": "usg",
+     "typical_band": "usg"
+    }
+   },
+   {
+    "layer": "D1",
+    "passed": false,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "label": null,
+     "fired": [],
+     "calm": false,
+     "near_misses": [],
+     "bars": {
+      "spike": 3.5,
+      "climb": 1.26,
+      "elevated": 8.0,
+      "floor": 4.0
+     },
+     "cusum": 3.996,
+     "k": 1.0
+    }
+   },
+   {
+    "layer": "D2",
+    "passed": false,
+    "reason_code": "EPISODE_CONTINUES",
+    "inputs": {},
+    "values": {
+     "state": "ACTIVE",
+     "calm_run": 0,
+     "candidate": null,
+     "started_at": "2026-09-19T07:20:00+00:00",
+     "hours": 6.0,
+     "ended_at": null,
+     "peak": {
+      "pm25": 79,
+      "at": "2026-09-19T06:30:00+00:00",
+      "band": "unhealthy"
+     }
+    }
+   }
+  ]
+ },
+ {
+  "id": "dec_10460",
+  "evaluated_at": "2026-09-19 14:20:00+00:00",
+  "period_end": "2026-09-19 12:30:00+00:00",
+  "user_id": "arjun",
+  "outcome": "no_event",
+  "reason_code": "EPISODE_CONTINUES",
+  "reason": "The same bad period is continuing; nothing new to say.",
+  "trigger": "data",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "period_end": "2026-09-19T12:30:00+00:00",
+     "z": 1.189,
+     "ewma": 1.073,
+     "cusum": 1.977,
+     "slope_6h": -0.041,
+     "nowcast": 53.1,
+     "band": "usg",
+     "typical_band": "usg"
+    }
+   },
+   {
+    "layer": "D1",
+    "passed": false,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "label": null,
+     "fired": [],
+     "calm": false,
+     "near_misses": [],
+     "bars": {
+      "spike": 3.5,
+      "climb": 1.26,
+      "elevated": 8.0,
+      "floor": 4.0
+     },
+     "cusum": 4.685,
+     "k": 1.0
+    }
+   },
+   {
+    "layer": "D2",
+    "passed": false,
+    "reason_code": "EPISODE_CONTINUES",
+    "inputs": {},
+    "values": {
+     "state": "ACTIVE",
+     "calm_run": 0,
+     "candidate": null,
+     "started_at": "2026-09-19T07:20:00+00:00",
+     "hours": 7.0,
+     "ended_at": null,
+     "peak": {
+      "pm25": 79,
+      "at": "2026-09-19T06:30:00+00:00",
+      "band": "unhealthy"
+     }
+    }
+   }
+  ]
+ },
+ {
+  "id": "dec_10467",
+  "evaluated_at": "2026-09-19 15:20:00+00:00",
+  "period_end": "2026-09-19 13:30:00+00:00",
+  "user_id": "arjun",
+  "outcome": "no_event",
+  "reason_code": "EPISODE_CONTINUES",
+  "reason": "The same bad period is continuing; nothing new to say.",
+  "trigger": "data",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "period_end": "2026-09-19T13:30:00+00:00",
+     "z": 1.821,
+     "ewma": 1.208,
+     "cusum": 2.871,
+     "slope_6h": 0.002,
+     "nowcast": 54.6,
+     "band": "usg",
+     "typical_band": "usg"
+    }
+   },
+   {
+    "layer": "D1",
+    "passed": false,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "label": null,
+     "fired": [],
+     "calm": false,
+     "near_misses": [],
+     "bars": {
+      "spike": 3.5,
+      "climb": 1.26,
+      "elevated": 8.0,
+      "floor": 4.0
+     },
+     "cusum": 6.006,
+     "k": 1.0
+    }
+   },
+   {
+    "layer": "D2",
+    "passed": false,
+    "reason_code": "EPISODE_CONTINUES",
+    "inputs": {},
+    "values": {
+     "state": "ACTIVE",
+     "calm_run": 0,
+     "candidate": null,
+     "started_at": "2026-09-19T07:20:00+00:00",
+     "hours": 8.0,
+     "ended_at": null,
+     "peak": {
+      "pm25": 79,
+      "at": "2026-09-19T06:30:00+00:00",
+      "band": "unhealthy"
+     }
+    }
+   }
+  ]
+ },
+ {
+  "id": "dec_10474",
+  "evaluated_at": "2026-09-19 16:20:00+00:00",
+  "period_end": "2026-09-19 14:30:00+00:00",
+  "user_id": "arjun",
+  "outcome": "no_event",
+  "reason_code": "EPISODE_CONTINUES",
+  "reason": "The same bad period is continuing; nothing new to say.",
+  "trigger": "data",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "period_end": "2026-09-19T14:30:00+00:00",
+     "z": 1.954,
+     "ewma": 1.285,
+     "cusum": 3.628,
+     "slope_6h": 0.048,
+     "nowcast": 60.3,
+     "band": "unhealthy",
+     "typical_band": "usg"
+    }
+   },
+   {
+    "layer": "D1",
+    "passed": false,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "label": null,
+     "fired": [],
+     "calm": false,
+     "near_misses": [
+      "climb",
+      "elevated"
+     ],
+     "bars": {
+      "spike": 3.5,
+      "climb": 1.26,
+      "elevated": 8.0,
+      "floor": 4.0
+     },
+     "cusum": 7.46,
+     "k": 1.0
+    }
+   },
+   {
+    "layer": "D2",
+    "passed": false,
+    "reason_code": "EPISODE_CONTINUES",
+    "inputs": {},
+    "values": {
+     "state": "ACTIVE",
+     "calm_run": 0,
+     "candidate": null,
+     "started_at": "2026-09-19T07:20:00+00:00",
+     "hours": 9.0,
+     "ended_at": null,
+     "peak": {
+      "pm25": 79,
+      "at": "2026-09-19T06:30:00+00:00",
+      "band": "unhealthy"
+     }
+    }
+   }
+  ]
+ },
+ {
+  "id": "dec_10481",
+  "evaluated_at": "2026-09-19 17:20:00+00:00",
+  "period_end": "2026-09-19 15:30:00+00:00",
+  "user_id": "arjun",
+  "outcome": "suppressed",
+  "reason_code": "DEDUP_SAME_BAND",
+  "reason": "Already told you about this level; nothing new to say.",
+  "trigger": "data",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "period_end": "2026-09-19T15:30:00+00:00",
+     "z": 2.834,
+     "ewma": 1.631,
+     "cusum": 5.397,
+     "slope_6h": 0.095,
+     "nowcast": 70.2,
+     "band": "unhealthy",
+     "typical_band": "usg"
+    }
+   },
+   {
+    "layer": "D1",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "label": "elevated",
+     "fired": [
+      "elevated"
+     ],
+     "calm": false,
+     "near_misses": [
+      "spike",
+      "climb"
+     ],
+     "bars": {
+      "spike": 3.5,
+      "climb": 1.26,
+      "elevated": 8.0,
+      "floor": 4.0
+     },
+     "cusum": 9.794,
+     "k": 1.0
+    }
+   },
+   {
+    "layer": "D2",
+    "passed": false,
+    "reason_code": "EPISODE_CONTINUES",
+    "inputs": {},
+    "values": {
+     "state": "ACTIVE",
+     "calm_run": 0,
+     "candidate": null,
+     "started_at": "2026-09-19T07:20:00+00:00",
+     "hours": 10.0,
+     "ended_at": null,
+     "peak": {
+      "pm25": 79,
+      "at": "2026-09-19T06:30:00+00:00",
+      "band": "unhealthy"
+     }
+    }
+   },
+   {
+    "layer": "D3",
+    "passed": false,
+    "reason_code": "DEDUP_SAME_BAND",
+    "inputs": {},
+    "values": {
+     "band": "unhealthy",
+     "last_told": "unhealthy"
+    }
+   }
+  ]
+ },
+ {
+  "id": "dec_10488",
+  "evaluated_at": "2026-09-19 18:20:00+00:00",
+  "period_end": "2026-09-19 16:30:00+00:00",
+  "user_id": "arjun",
+  "outcome": "suppressed",
+  "reason_code": "DEDUP_SAME_BAND",
+  "reason": "Already told you about this level; nothing new to say.",
+  "trigger": "data",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "period_end": "2026-09-19T16:30:00+00:00",
+     "z": 4.246,
+     "ewma": 2.35,
+     "cusum": 8.085,
+     "slope_6h": 0.173,
+     "nowcast": 87.0,
+     "band": "unhealthy",
+     "typical_band": "usg"
+    }
+   },
+   {
+    "layer": "D1",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "label": "climb",
+     "fired": [
+      "climb"
+     ],
+     "calm": false,
+     "near_misses": [
+      "spike"
+     ],
+     "bars": {
+      "spike": 3.5,
+      "climb": 1.26,
+      "elevated": 8.0,
+      "floor": 4.0
+     },
+     "cusum": 3.0,
+     "k": 1.0
+    }
+   },
+   {
+    "layer": "D2",
+    "passed": false,
+    "reason_code": "EPISODE_CONTINUES",
+    "inputs": {},
+    "values": {
+     "state": "ACTIVE",
+     "calm_run": 0,
+     "candidate": null,
+     "started_at": "2026-09-19T07:20:00+00:00",
+     "hours": 11.0,
+     "ended_at": null,
+     "peak": {
+      "pm25": 87,
+      "at": "2026-09-19T16:30:00+00:00",
+      "band": "unhealthy"
+     }
+    }
+   },
+   {
+    "layer": "D3",
+    "passed": false,
+    "reason_code": "DEDUP_SAME_BAND",
+    "inputs": {},
+    "values": {
+     "band": "unhealthy",
+     "last_told": "unhealthy"
+    }
+   }
+  ]
+ },
+ {
+  "id": "dec_10495",
+  "evaluated_at": "2026-09-19 19:20:00+00:00",
+  "period_end": "2026-09-19 17:30:00+00:00",
+  "user_id": "arjun",
+  "outcome": "suppressed",
+  "reason_code": "DEDUP_SAME_BAND",
+  "reason": "Already told you about this level; nothing new to say.",
+  "trigger": "data",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "period_end": "2026-09-19T17:30:00+00:00",
+     "z": 2.993,
+     "ewma": 2.444,
+     "cusum": 2.493,
+     "slope_6h": 0.173,
+     "nowcast": 83.5,
+     "band": "unhealthy",
+     "typical_band": "usg"
+    }
+   },
+   {
+    "layer": "D1",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "label": "climb",
+     "fired": [
+      "climb"
+     ],
+     "calm": false,
+     "near_misses": [
+      "spike"
+     ],
+     "bars": {
+      "spike": 3.5,
+      "climb": 1.26,
+      "elevated": 8.0,
+      "floor": 4.0
+     },
+     "cusum": 5.493,
+     "k": 1.0
+    }
+   },
+   {
+    "layer": "D2",
+    "passed": false,
+    "reason_code": "EPISODE_CONTINUES",
+    "inputs": {},
+    "values": {
+     "state": "ACTIVE",
+     "calm_run": 0,
+     "candidate": null,
+     "started_at": "2026-09-19T07:20:00+00:00",
+     "hours": 12.0,
+     "ended_at": null,
+     "peak": {
+      "pm25": 87,
+      "at": "2026-09-19T16:30:00+00:00",
+      "band": "unhealthy"
+     }
+    }
+   },
+   {
+    "layer": "D3",
+    "passed": false,
+    "reason_code": "DEDUP_SAME_BAND",
+    "inputs": {},
+    "values": {
+     "band": "unhealthy",
+     "last_told": "unhealthy"
+    }
+   }
+  ]
+ },
+ {
+  "id": "dec_10501",
+  "evaluated_at": "2026-09-19 20:20:00+00:00",
+  "period_end": "2026-09-19 18:30:00+00:00",
+  "user_id": "arjun",
+  "outcome": "suppressed",
+  "reason_code": "DEDUP_SAME_BAND",
+  "reason": "Already told you about this level; nothing new to say.",
+  "trigger": "data",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "period_end": "2026-09-19T18:30:00+00:00",
+     "z": 2.385,
+     "ewma": 2.249,
+     "cusum": 3.534,
+     "slope_6h": 0.051,
+     "nowcast": 75.7,
+     "band": "unhealthy",
+     "typical_band": "usg"
+    }
+   },
+   {
+    "layer": "D1",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "label": "climb",
+     "fired": [
+      "climb"
+     ],
+     "calm": false,
+     "near_misses": [
+      "elevated"
+     ],
+     "bars": {
+      "spike": 3.5,
+      "climb": 1.26,
+      "elevated": 8.0,
+      "floor": 4.0
+     },
+     "cusum": 7.378,
+     "k": 1.0
+    }
+   },
+   {
+    "layer": "D2",
+    "passed": false,
+    "reason_code": "EPISODE_CONTINUES",
+    "inputs": {},
+    "values": {
+     "state": "ACTIVE",
+     "calm_run": 0,
+     "candidate": null,
+     "started_at": "2026-09-19T07:20:00+00:00",
+     "hours": 13.0,
+     "ended_at": null,
+     "peak": {
+      "pm25": 87,
+      "at": "2026-09-19T16:30:00+00:00",
+      "band": "unhealthy"
+     }
+    }
+   },
+   {
+    "layer": "D3",
+    "passed": false,
+    "reason_code": "DEDUP_SAME_BAND",
+    "inputs": {},
+    "values": {
+     "band": "unhealthy",
+     "last_told": "unhealthy"
+    }
+   }
+  ]
+ },
+ {
+  "id": "dec_10509",
+  "evaluated_at": "2026-09-19 21:20:00+00:00",
+  "period_end": "2026-09-19 19:30:00+00:00",
+  "user_id": "arjun",
+  "outcome": "suppressed",
+  "reason_code": "DEDUP_SAME_BAND",
+  "reason": "Already told you about this level; nothing new to say.",
+  "trigger": "data",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "period_end": "2026-09-19T19:30:00+00:00",
+     "z": 1.73,
+     "ewma": 1.915,
+     "cusum": 3.913,
+     "slope_6h": -0.072,
+     "nowcast": 69.3,
+     "band": "unhealthy",
+     "typical_band": "usg"
+    }
+   },
+   {
+    "layer": "D1",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "label": "elevated",
+     "fired": [
+      "elevated"
+     ],
+     "calm": false,
+     "near_misses": [],
+     "bars": {
+      "spike": 3.5,
+      "climb": 1.26,
+      "elevated": 8.0,
+      "floor": 4.0
+     },
+     "cusum": 8.608,
+     "k": 1.0
+    }
+   },
+   {
+    "layer": "D2",
+    "passed": false,
+    "reason_code": "EPISODE_CONTINUES",
+    "inputs": {},
+    "values": {
+     "state": "ACTIVE",
+     "calm_run": 0,
+     "candidate": null,
+     "started_at": "2026-09-19T07:20:00+00:00",
+     "hours": 14.0,
+     "ended_at": null,
+     "peak": {
+      "pm25": 87,
+      "at": "2026-09-19T16:30:00+00:00",
+      "band": "unhealthy"
+     }
+    }
+   },
+   {
+    "layer": "D3",
+    "passed": false,
+    "reason_code": "DEDUP_SAME_BAND",
+    "inputs": {},
+    "values": {
+     "band": "unhealthy",
+     "last_told": "unhealthy"
+    }
+   }
+  ]
+ },
+ {
+  "id": "dec_10516",
+  "evaluated_at": "2026-09-19 22:20:00+00:00",
+  "period_end": "2026-09-19 20:30:00+00:00",
+  "user_id": "arjun",
+  "outcome": "no_event",
+  "reason_code": "EPISODE_CONTINUES",
+  "reason": "The same bad period is continuing; nothing new to say.",
+  "trigger": "data",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "period_end": "2026-09-19T20:30:00+00:00",
+     "z": 2.005,
+     "ewma": 1.903,
+     "cusum": 5.234,
+     "slope_6h": -0.073,
+     "nowcast": 70.5,
+     "band": "unhealthy",
+     "typical_band": "usg"
+    }
+   },
+   {
+    "layer": "D1",
+    "passed": false,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "label": null,
+     "fired": [],
+     "calm": false,
+     "near_misses": [],
+     "bars": {
+      "spike": 3.5,
+      "climb": 1.26,
+      "elevated": 8.0,
+      "floor": 4.0
+     },
+     "cusum": 1.505,
+     "k": 1.0
+    }
+   },
+   {
+    "layer": "D2",
+    "passed": false,
+    "reason_code": "EPISODE_CONTINUES",
+    "inputs": {},
+    "values": {
+     "state": "ACTIVE",
+     "calm_run": 0,
+     "candidate": null,
+     "started_at": "2026-09-19T07:20:00+00:00",
+     "hours": 15.0,
+     "ended_at": null,
+     "peak": {
+      "pm25": 87,
+      "at": "2026-09-19T16:30:00+00:00",
+      "band": "unhealthy"
+     }
+    }
+   }
+  ]
+ },
+ {
+  "id": "dec_10523",
+  "evaluated_at": "2026-09-19 23:20:00+00:00",
+  "period_end": "2026-09-19 21:30:00+00:00",
+  "user_id": "arjun",
+  "outcome": "no_event",
+  "reason_code": "EPISODE_CONTINUES",
+  "reason": "The same bad period is continuing; nothing new to say.",
+  "trigger": "data",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "period_end": "2026-09-19T21:30:00+00:00",
+     "z": 1.846,
+     "ewma": 1.808,
+     "cusum": 6.207,
+     "slope_6h": -0.057,
+     "nowcast": 73.1,
+     "band": "unhealthy",
+     "typical_band": "usg"
+    }
+   },
+   {
+    "layer": "D1",
+    "passed": false,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "label": null,
+     "fired": [],
+     "calm": false,
+     "near_misses": [],
+     "bars": {
+      "spike": 3.5,
+      "climb": 1.26,
+      "elevated": 8.0,
+      "floor": 4.0
+     },
+     "cusum": 2.851,
+     "k": 1.0
+    }
+   },
+   {
+    "layer": "D2",
+    "passed": false,
+    "reason_code": "EPISODE_CONTINUES",
+    "inputs": {},
+    "values": {
+     "state": "ACTIVE",
+     "calm_run": 0,
+     "candidate": null,
+     "started_at": "2026-09-19T07:20:00+00:00",
+     "hours": 16.0,
+     "ended_at": null,
+     "peak": {
+      "pm25": 87,
+      "at": "2026-09-19T16:30:00+00:00",
+      "band": "unhealthy"
+     }
+    }
+   }
+  ]
+ },
+ {
+  "id": "dec_10530",
+  "evaluated_at": "2026-09-20 00:20:00+00:00",
+  "period_end": "2026-09-19 22:30:00+00:00",
+  "user_id": "arjun",
+  "outcome": "suppressed",
+  "reason_code": "DEDUP_SAME_BAND",
+  "reason": "Already told you about this level; nothing new to say.",
+  "trigger": "data",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "period_end": "2026-09-19T22:30:00+00:00",
+     "z": 2.901,
+     "ewma": 2.041,
+     "cusum": 8.159,
+     "slope_6h": 0.036,
+     "nowcast": 79.0,
+     "band": "unhealthy",
+     "typical_band": "usg"
+    }
+   },
+   {
+    "layer": "D1",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "label": "climb",
+     "fired": [
+      "climb"
+     ],
+     "calm": false,
+     "near_misses": [
+      "spike"
+     ],
+     "bars": {
+      "spike": 3.5,
+      "climb": 1.26,
+      "elevated": 8.0,
+      "floor": 4.0
+     },
+     "cusum": 5.252,
+     "k": 1.0
+    }
+   },
+   {
+    "layer": "D2",
+    "passed": false,
+    "reason_code": "EPISODE_CONTINUES",
+    "inputs": {},
+    "values": {
+     "state": "ACTIVE",
+     "calm_run": 0,
+     "candidate": null,
+     "started_at": "2026-09-19T07:20:00+00:00",
+     "hours": 17.0,
+     "ended_at": null,
+     "peak": {
+      "pm25": 87,
+      "at": "2026-09-19T16:30:00+00:00",
+      "band": "unhealthy"
+     }
+    }
+   },
+   {
+    "layer": "D3",
+    "passed": false,
+    "reason_code": "DEDUP_SAME_BAND",
+    "inputs": {},
+    "values": {
+     "band": "unhealthy",
+     "last_told": "unhealthy"
+    }
+   }
+  ]
+ },
+ {
+  "id": "dec_10533",
+  "evaluated_at": "2026-09-20 01:00:00+00:00",
+  "period_end": "2026-09-19 23:30:00+00:00",
+  "user_id": "arjun",
+  "outcome": "sent",
+  "reason_code": "SENT_CHECK_IN",
+  "reason": "Sent at your check-in time.",
+  "trigger": "clock",
+  "trace": [
+   {
+    "layer": "D2",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "state": "ACTIVE",
+     "started_at": "2026-09-19T07:20:00+00:00",
+     "hours": 17.7,
+     "ended_at": null,
+     "peak": {
+      "pm25": 87,
+      "at": "2026-09-19T16:30:00+00:00",
+      "band": "unhealthy"
+     }
+    }
+   },
+   {
+    "layer": "D8",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "check_in": "06:30",
+     "absorbed_held": 0,
+     "hours_considered": 6,
+     "band": "unhealthy",
+     "typical_band": "usg",
+     "ewma": 2.0414344078734623,
+     "recent_notice": false
+    }
+   },
+   {
+    "layer": "D5",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "candidates": 1,
+     "kept": "check_in"
+    }
+   },
+   {
+    "layer": "D6",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "response": "notify"
+    }
+   },
+   {
+    "layer": "D7",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "sent_today": 0,
+     "max_per_day": 3
+    }
+   },
+   {
+    "layer": "D8",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "local_time": "06:30",
+     "quiet_hours": true,
+     "check_in_wins": true
+    }
+   },
+   {
+    "layer": "A",
+    "passed": true,
+    "reason_code": "SENT_CHECK_IN",
+    "inputs": {},
+    "values": {
+     "compose": "check_in"
+    }
+   }
+  ]
+ },
+ {
+  "id": "dec_10539",
+  "evaluated_at": "2026-09-20 01:20:00+00:00",
+  "period_end": "2026-09-19 23:30:00+00:00",
+  "user_id": "arjun",
+  "outcome": "suppressed",
+  "reason_code": "DEDUP_SAME_BAND",
+  "reason": "Already told you about this level; nothing new to say.",
+  "trigger": "data",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "period_end": "2026-09-19T23:30:00+00:00",
+     "z": 4.62,
+     "ewma": 2.721,
+     "cusum": 10.711,
+     "slope_6h": 0.092,
+     "nowcast": 88.7,
+     "band": "unhealthy",
+     "typical_band": "usg"
+    }
+   },
+   {
+    "layer": "D1",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "label": "climb",
+     "fired": [
+      "climb",
+      "elevated"
+     ],
+     "calm": false,
+     "near_misses": [
+      "spike"
+     ],
+     "bars": {
+      "spike": 3.5,
+      "climb": 1.26,
+      "elevated": 8.0,
+      "floor": 4.0
+     },
+     "cusum": 8.252,
+     "k": 1.0
+    }
+   },
+   {
+    "layer": "D2",
+    "passed": false,
+    "reason_code": "EPISODE_CONTINUES",
+    "inputs": {},
+    "values": {
+     "state": "ACTIVE",
+     "calm_run": 0,
+     "candidate": null,
+     "started_at": "2026-09-19T07:20:00+00:00",
+     "hours": 18.0,
+     "ended_at": null,
+     "peak": {
+      "pm25": 89,
+      "at": "2026-09-19T23:30:00+00:00",
+      "band": "unhealthy"
+     }
+    }
+   },
+   {
+    "layer": "D3",
+    "passed": false,
+    "reason_code": "DEDUP_SAME_BAND",
+    "inputs": {},
+    "values": {
+     "band": "unhealthy",
+     "last_told": "unhealthy"
+    }
+   }
+  ]
+ },
+ {
+  "id": "dec_10546",
+  "evaluated_at": "2026-09-20 02:20:00+00:00",
+  "period_end": "2026-09-20 00:30:00+00:00",
+  "user_id": "arjun",
+  "outcome": "suppressed",
+  "reason_code": "DEDUP_SAME_BAND",
+  "reason": "Already told you about this level; nothing new to say.",
+  "trigger": "data",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "period_end": "2026-09-20T00:30:00+00:00",
+     "z": 3.97,
+     "ewma": 2.778,
+     "cusum": 3.0,
+     "slope_6h": 0.095,
+     "nowcast": 93.2,
+     "band": "unhealthy",
+     "typical_band": "usg"
+    }
+   },
+   {
+    "layer": "D1",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "label": "spike",
+     "fired": [
+      "climb",
+      "spike"
+     ],
+     "calm": false,
+     "near_misses": [],
+     "bars": {
+      "spike": 3.5,
+      "climb": 1.26,
+      "elevated": 8.0,
+      "floor": 4.0
+     },
+     "cusum": 3.0,
+     "k": 1.0
+    }
+   },
+   {
+    "layer": "D2",
+    "passed": false,
+    "reason_code": "EPISODE_CONTINUES",
+    "inputs": {},
+    "values": {
+     "state": "ACTIVE",
+     "calm_run": 0,
+     "candidate": null,
+     "started_at": "2026-09-19T07:20:00+00:00",
+     "hours": 19.0,
+     "ended_at": null,
+     "peak": {
+      "pm25": 93,
+      "at": "2026-09-20T00:30:00+00:00",
+      "band": "unhealthy"
+     }
+    }
+   },
+   {
+    "layer": "D3",
+    "passed": false,
+    "reason_code": "DEDUP_SAME_BAND",
+    "inputs": {},
+    "values": {
+     "band": "unhealthy",
+     "last_told": "unhealthy"
+    }
+   }
+  ]
+ },
+ {
+  "id": "dec_10554",
+  "evaluated_at": "2026-09-20 03:20:00+00:00",
+  "period_end": "2026-09-20 01:30:00+00:00",
+  "user_id": "arjun",
+  "outcome": "suppressed",
+  "reason_code": "DEDUP_SAME_BAND",
+  "reason": "Already told you about this level; nothing new to say.",
+  "trigger": "data",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "period_end": "2026-09-20T01:30:00+00:00",
+     "z": 4.283,
+     "ewma": 3.053,
+     "cusum": 5.626,
+     "slope_6h": 0.085,
+     "nowcast": 99.6,
+     "band": "unhealthy",
+     "typical_band": "usg"
+    }
+   },
+   {
+    "layer": "D1",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "label": "spike",
+     "fired": [
+      "climb",
+      "spike"
+     ],
+     "calm": false,
+     "near_misses": [],
+     "bars": {
+      "spike": 3.5,
+      "climb": 1.26,
+      "elevated": 8.0,
+      "floor": 4.0
+     },
+     "cusum": 6.0,
+     "k": 1.0
+    }
+   },
+   {
+    "layer": "D2",
+    "passed": false,
+    "reason_code": "EPISODE_CONTINUES",
+    "inputs": {},
+    "values": {
+     "state": "ACTIVE",
+     "calm_run": 0,
+     "candidate": null,
+     "started_at": "2026-09-19T07:20:00+00:00",
+     "hours": 20.0,
+     "ended_at": null,
+     "peak": {
+      "pm25": 100,
+      "at": "2026-09-20T01:30:00+00:00",
+      "band": "unhealthy"
+     }
+    }
+   },
+   {
+    "layer": "D3",
+    "passed": false,
+    "reason_code": "DEDUP_SAME_BAND",
+    "inputs": {},
+    "values": {
+     "band": "unhealthy",
+     "last_told": "unhealthy"
+    }
+   }
+  ]
+ },
+ {
+  "id": "dec_10561",
+  "evaluated_at": "2026-09-20 04:20:00+00:00",
+  "period_end": "2026-09-20 02:30:00+00:00",
+  "user_id": "arjun",
+  "outcome": "suppressed",
+  "reason_code": "DEDUP_SAME_BAND",
+  "reason": "Already told you about this level; nothing new to say.",
+  "trigger": "data",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "period_end": "2026-09-20T02:30:00+00:00",
+     "z": 7.485,
+     "ewma": 4.363,
+     "cusum": 8.626,
+     "slope_6h": 0.107,
+     "nowcast": 118.9,
+     "band": "unhealthy",
+     "typical_band": "usg"
+    }
+   },
+   {
+    "layer": "D1",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "label": "spike",
+     "fired": [
+      "climb",
+      "elevated",
+      "spike"
+     ],
+     "calm": false,
+     "near_misses": [],
+     "bars": {
+      "spike": 3.5,
+      "climb": 1.26,
+      "elevated": 8.0,
+      "floor": 4.0
+     },
+     "cusum": 9.0,
+     "k": 1.0
+    }
+   },
+   {
+    "layer": "D2",
+    "passed": false,
+    "reason_code": "EPISODE_CONTINUES",
+    "inputs": {},
+    "values": {
+     "state": "ACTIVE",
+     "calm_run": 0,
+     "candidate": null,
+     "started_at": "2026-09-19T07:20:00+00:00",
+     "hours": 21.0,
+     "ended_at": null,
+     "peak": {
+      "pm25": 119,
+      "at": "2026-09-20T02:30:00+00:00",
+      "band": "unhealthy"
+     }
+    }
+   },
+   {
+    "layer": "D3",
+    "passed": false,
+    "reason_code": "DEDUP_SAME_BAND",
+    "inputs": {},
+    "values": {
+     "band": "unhealthy",
+     "last_told": "unhealthy"
+    }
+   }
+  ]
+ },
+ {
+  "id": "dec_10568",
+  "evaluated_at": "2026-09-20 05:20:00+00:00",
+  "period_end": "2026-09-20 03:30:00+00:00",
+  "user_id": "arjun",
+  "outcome": "sent",
+  "reason_code": "SENT_SEVERE_BYPASS",
+  "reason": "Sent straight away: the air is severe.",
+  "trigger": "data",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "period_end": "2026-09-20T03:30:00+00:00",
+     "z": 4.566,
+     "ewma": 3.967,
+     "cusum": 3.0,
+     "slope_6h": 0.146,
+     "nowcast": 156.5,
+     "band": "very_unhealthy",
+     "typical_band": "usg"
+    }
+   },
+   {
+    "layer": "D1",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "label": "spike",
+     "fired": [
+      "climb",
+      "spike"
+     ],
+     "calm": false,
+     "near_misses": [],
+     "bars": {
+      "spike": 3.5,
+      "climb": 1.26,
+      "elevated": 8.0,
+      "floor": 4.0
+     },
+     "cusum": 3.0,
+     "k": 1.0
+    }
+   },
+   {
+    "layer": "D2",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "state": "ACTIVE",
+     "calm_run": 0,
+     "candidate": "escalated",
+     "started_at": "2026-09-19T07:20:00+00:00",
+     "hours": 22.0,
+     "ended_at": null,
+     "peak": {
+      "pm25": 156,
+      "at": "2026-09-20T03:30:00+00:00",
+      "band": "very_unhealthy"
+     }
+    }
+   },
+   {
+    "layer": "D3",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "kind": "escalated",
+     "band": "very_unhealthy"
+    }
+   },
+   {
+    "layer": "D4",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "notices_in_episode": 2,
+     "required_gap_h": 12,
+     "elapsed_h": 4.33,
+     "severe_bypass": true
+    }
+   },
+   {
+    "layer": "D5",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "candidates": 1,
+     "kept": "escalated"
+    }
+   },
+   {
+    "layer": "D6",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "response": "notify"
+    }
+   },
+   {
+    "layer": "D7",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "sent_today": 1,
+     "max_per_day": 3
+    }
+   },
+   {
+    "layer": "D8",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "local_time": "10:50",
+     "quiet_hours": false
+    }
+   },
+   {
+    "layer": "A",
+    "passed": true,
+    "reason_code": "SENT_SEVERE_BYPASS",
+    "inputs": {},
+    "values": {
+     "compose": "escalated"
+    }
+   }
+  ]
+ },
+ {
+  "id": "dec_10575",
+  "evaluated_at": "2026-09-20 06:20:00+00:00",
+  "period_end": "2026-09-20 04:30:00+00:00",
+  "user_id": "arjun",
+  "outcome": "suppressed",
+  "reason_code": "DEDUP_SAME_BAND",
+  "reason": "Already told you about this level; nothing new to say.",
+  "trigger": "data",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "period_end": "2026-09-20T04:30:00+00:00",
+     "z": 5.108,
+     "ewma": 4.166,
+     "cusum": 6.0,
+     "slope_6h": 0.166,
+     "nowcast": 176.7,
+     "band": "very_unhealthy",
+     "typical_band": "usg"
+    }
+   },
+   {
+    "layer": "D1",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "label": "spike",
+     "fired": [
+      "climb",
+      "floor",
+      "spike"
+     ],
+     "calm": false,
+     "near_misses": [],
+     "bars": {
+      "spike": 3.5,
+      "climb": 1.26,
+      "elevated": 8.0,
+      "floor": 4.0
+     },
+     "cusum": 6.0,
+     "k": 1.0
+    }
+   },
+   {
+    "layer": "D2",
+    "passed": false,
+    "reason_code": "EPISODE_CONTINUES",
+    "inputs": {},
+    "values": {
+     "state": "ACTIVE",
+     "calm_run": 0,
+     "candidate": null,
+     "started_at": "2026-09-19T07:20:00+00:00",
+     "hours": 23.0,
+     "ended_at": null,
+     "peak": {
+      "pm25": 177,
+      "at": "2026-09-20T04:30:00+00:00",
+      "band": "very_unhealthy"
+     }
+    }
+   },
+   {
+    "layer": "D3",
+    "passed": false,
+    "reason_code": "DEDUP_SAME_BAND",
+    "inputs": {},
+    "values": {
+     "band": "very_unhealthy",
+     "last_told": "very_unhealthy"
+    }
+   }
+  ]
+ },
+ {
+  "id": "dec_10582",
+  "evaluated_at": "2026-09-20 07:20:00+00:00",
+  "period_end": "2026-09-20 05:30:00+00:00",
+  "user_id": "arjun",
+  "outcome": "suppressed",
+  "reason_code": "DEDUP_SAME_BAND",
+  "reason": "Already told you about this level; nothing new to say.",
+  "trigger": "data",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "period_end": "2026-09-20T05:30:00+00:00",
+     "z": 4.135,
+     "ewma": 4.072,
+     "cusum": 6.0,
+     "slope_6h": 0.148,
+     "nowcast": 145.3,
+     "band": "very_unhealthy",
+     "typical_band": "usg"
+    }
+   },
+   {
+    "layer": "D1",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "label": "spike",
+     "fired": [
+      "climb",
+      "elevated",
+      "spike"
+     ],
+     "calm": false,
+     "near_misses": [],
+     "bars": {
+      "spike": 3.5,
+      "climb": 1.26,
+      "elevated": 8.0,
+      "floor": 4.0
+     },
+     "cusum": 9.0,
+     "k": 1.0
+    }
+   },
+   {
+    "layer": "D2",
+    "passed": false,
+    "reason_code": "EPISODE_CONTINUES",
+    "inputs": {},
+    "values": {
+     "state": "ACTIVE",
+     "calm_run": 0,
+     "candidate": null,
+     "started_at": "2026-09-19T07:20:00+00:00",
+     "hours": 24.0,
+     "ended_at": null,
+     "peak": {
+      "pm25": 177,
+      "at": "2026-09-20T04:30:00+00:00",
+      "band": "very_unhealthy"
+     }
+    }
+   },
+   {
+    "layer": "D3",
+    "passed": false,
+    "reason_code": "DEDUP_SAME_BAND",
+    "inputs": {},
+    "values": {
+     "band": "very_unhealthy",
+     "last_told": "very_unhealthy"
+    }
+   }
+  ]
+ },
+ {
+  "id": "dec_10589",
+  "evaluated_at": "2026-09-20 08:20:00+00:00",
+  "period_end": "2026-09-20 06:30:00+00:00",
+  "user_id": "arjun",
+  "outcome": "suppressed",
+  "reason_code": "DEDUP_SAME_BAND",
+  "reason": "Already told you about this level; nothing new to say.",
+  "trigger": "data",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "period_end": "2026-09-20T06:30:00+00:00",
+     "z": 1.499,
+     "ewma": 3.193,
+     "cusum": 6.999,
+     "slope_6h": -0.058,
+     "nowcast": 112.5,
+     "band": "unhealthy",
+     "typical_band": "usg"
+    }
+   },
+   {
+    "layer": "D1",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "label": "spike",
+     "fired": [
+      "spike"
+     ],
+     "calm": false,
+     "near_misses": [],
+     "bars": {
+      "spike": 3.5,
+      "climb": 1.26,
+      "elevated": 8.0,
+      "floor": 4.0
+     },
+     "cusum": 0.999,
+     "k": 1.0
+    }
+   },
+   {
+    "layer": "D2",
+    "passed": false,
+    "reason_code": "EPISODE_CONTINUES",
+    "inputs": {},
+    "values": {
+     "state": "ACTIVE",
+     "calm_run": 0,
+     "candidate": null,
+     "started_at": "2026-09-19T07:20:00+00:00",
+     "hours": 25.0,
+     "ended_at": null,
+     "peak": {
+      "pm25": 177,
+      "at": "2026-09-20T04:30:00+00:00",
+      "band": "very_unhealthy"
+     }
+    }
+   },
+   {
+    "layer": "D3",
+    "passed": false,
+    "reason_code": "DEDUP_SAME_BAND",
+    "inputs": {},
+    "values": {
+     "band": "unhealthy",
+     "last_told": "very_unhealthy"
+    }
+   }
+  ]
+ },
+ {
+  "id": "dec_10596",
+  "evaluated_at": "2026-09-20 09:20:00+00:00",
+  "period_end": "2026-09-20 07:30:00+00:00",
+  "user_id": "arjun",
+  "outcome": "no_event",
+  "reason_code": "EPISODE_CONTINUES",
+  "reason": "The same bad period is continuing; nothing new to say.",
+  "trigger": "data",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "period_end": "2026-09-20T07:30:00+00:00",
+     "z": 0.962,
+     "ewma": 2.475,
+     "cusum": 7.23,
+     "slope_6h": -0.264,
+     "nowcast": 88.4,
+     "band": "unhealthy",
+     "typical_band": "usg"
+    }
+   },
+   {
+    "layer": "D1",
+    "passed": false,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "label": null,
+     "fired": [],
+     "calm": false,
+     "near_misses": [],
+     "bars": {
+      "spike": 3.5,
+      "climb": 1.26,
+      "elevated": 8.0,
+      "floor": 4.0
+     },
+     "cusum": 1.462,
+     "k": 1.0
+    }
+   },
+   {
+    "layer": "D2",
+    "passed": false,
+    "reason_code": "EPISODE_CONTINUES",
+    "inputs": {},
+    "values": {
+     "state": "ACTIVE",
+     "calm_run": 0,
+     "candidate": null,
+     "started_at": "2026-09-19T07:20:00+00:00",
+     "hours": 26.0,
+     "ended_at": null,
+     "peak": {
+      "pm25": 177,
+      "at": "2026-09-20T04:30:00+00:00",
+      "band": "very_unhealthy"
+     }
+    }
+   }
+  ]
+ },
+ {
+  "id": "dec_10603",
+  "evaluated_at": "2026-09-20 10:20:00+00:00",
+  "period_end": "2026-09-20 08:30:00+00:00",
+  "user_id": "arjun",
+  "outcome": "no_event",
+  "reason_code": "EPISODE_CONTINUES",
+  "reason": "The same bad period is continuing; nothing new to say.",
+  "trigger": "data",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "period_end": "2026-09-20T08:30:00+00:00",
+     "z": 1.215,
+     "ewma": 2.059,
+     "cusum": 7.765,
+     "slope_6h": -0.273,
+     "nowcast": 76.3,
+     "band": "unhealthy",
+     "typical_band": "usg"
+    }
+   },
+   {
+    "layer": "D1",
+    "passed": false,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "label": null,
+     "fired": [],
+     "calm": false,
+     "near_misses": [],
+     "bars": {
+      "spike": 3.5,
+      "climb": 1.26,
+      "elevated": 8.0,
+      "floor": 4.0
+     },
+     "cusum": 2.177,
+     "k": 1.0
+    }
+   },
+   {
+    "layer": "D2",
+    "passed": false,
+    "reason_code": "EPISODE_CONTINUES",
+    "inputs": {},
+    "values": {
+     "state": "ACTIVE",
+     "calm_run": 0,
+     "candidate": null,
+     "started_at": "2026-09-19T07:20:00+00:00",
+     "hours": 27.0,
+     "ended_at": null,
+     "peak": {
+      "pm25": 177,
+      "at": "2026-09-20T04:30:00+00:00",
+      "band": "very_unhealthy"
+     }
+    }
+   }
+  ]
+ },
+ {
+  "id": "dec_10610",
+  "evaluated_at": "2026-09-20 11:20:00+00:00",
+  "period_end": "2026-09-20 09:30:00+00:00",
+  "user_id": "arjun",
+  "outcome": "no_event",
+  "reason_code": "EPISODE_CONTINUES",
+  "reason": "The same bad period is continuing; nothing new to say.",
+  "trigger": "data",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "period_end": "2026-09-20T09:30:00+00:00",
+     "z": 1.426,
+     "ewma": 1.855,
+     "cusum": 8.622,
+     "slope_6h": -0.205,
+     "nowcast": 73.1,
+     "band": "unhealthy",
+     "typical_band": "usg"
+    }
+   },
+   {
+    "layer": "D1",
+    "passed": false,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "label": null,
+     "fired": [],
+     "calm": false,
+     "near_misses": [],
+     "bars": {
+      "spike": 3.5,
+      "climb": 1.26,
+      "elevated": 8.0,
+      "floor": 4.0
+     },
+     "cusum": 3.103,
+     "k": 1.0
+    }
+   },
+   {
+    "layer": "D2",
+    "passed": false,
+    "reason_code": "EPISODE_CONTINUES",
+    "inputs": {},
+    "values": {
+     "state": "ACTIVE",
+     "calm_run": 0,
+     "candidate": null,
+     "started_at": "2026-09-19T07:20:00+00:00",
+     "hours": 28.0,
+     "ended_at": null,
+     "peak": {
+      "pm25": 177,
+      "at": "2026-09-20T04:30:00+00:00",
+      "band": "very_unhealthy"
+     }
+    }
+   }
+  ]
+ }
+]

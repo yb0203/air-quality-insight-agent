@@ -1,0 +1,908 @@
+[
+ {
+  "id": "dec_7488",
+  "evaluated_at": "2026-09-02 05:20:00+00:00",
+  "period_end": "2026-09-02 03:30:00+00:00",
+  "user_id": "priya",
+  "outcome": "no_event",
+  "reason_code": "NO_TRIGGER",
+  "reason": "Nothing unusual.",
+  "trigger": "data",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "period_end": "2026-09-02T03:30:00+00:00",
+     "z": -0.251,
+     "ewma": -0.818,
+     "cusum": 0.0,
+     "slope_6h": 0.171,
+     "nowcast": 17.9,
+     "band": "moderate",
+     "typical_band": "moderate"
+    }
+   },
+   {
+    "layer": "D1",
+    "passed": false,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "label": null,
+     "fired": [],
+     "calm": true,
+     "near_misses": [],
+     "bars": {
+      "spike": 3.5,
+      "climb": 1.26,
+      "elevated": 8.0,
+      "floor": 4.0
+     },
+     "cusum": 0.0,
+     "k": 1.0
+    }
+   },
+   {
+    "layer": "D2",
+    "passed": false,
+    "reason_code": "NO_TRIGGER",
+    "inputs": {},
+    "values": {
+     "state": null,
+     "calm_run": 25,
+     "candidate": null
+    }
+   }
+  ]
+ },
+ {
+  "id": "dec_7495",
+  "evaluated_at": "2026-09-02 06:20:00+00:00",
+  "period_end": "2026-09-02 04:30:00+00:00",
+  "user_id": "priya",
+  "outcome": "no_event",
+  "reason_code": "NO_TRIGGER",
+  "reason": "Nothing unusual.",
+  "trigger": "data",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "period_end": "2026-09-02T04:30:00+00:00",
+     "z": -0.541,
+     "ewma": -0.696,
+     "cusum": 0.0,
+     "slope_6h": 0.227,
+     "nowcast": 17.5,
+     "band": "moderate",
+     "typical_band": "moderate"
+    }
+   },
+   {
+    "layer": "D1",
+    "passed": false,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "label": null,
+     "fired": [],
+     "calm": true,
+     "near_misses": [],
+     "bars": {
+      "spike": 3.5,
+      "climb": 1.26,
+      "elevated": 8.0,
+      "floor": 4.0
+     },
+     "cusum": 0.0,
+     "k": 1.0
+    }
+   },
+   {
+    "layer": "D2",
+    "passed": false,
+    "reason_code": "NO_TRIGGER",
+    "inputs": {},
+    "values": {
+     "state": null,
+     "calm_run": 26,
+     "candidate": null
+    }
+   }
+  ]
+ },
+ {
+  "id": "dec_7502",
+  "evaluated_at": "2026-09-02 07:20:00+00:00",
+  "period_end": "2026-09-02 05:30:00+00:00",
+  "user_id": "priya",
+  "outcome": "no_event",
+  "reason_code": "NO_TRIGGER",
+  "reason": "Nothing unusual.",
+  "trigger": "data",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "period_end": "2026-09-02T05:30:00+00:00",
+     "z": -1.065,
+     "ewma": -0.808,
+     "cusum": 0.0,
+     "slope_6h": 0.175,
+     "nowcast": 16.3,
+     "band": "moderate",
+     "typical_band": "moderate"
+    }
+   },
+   {
+    "layer": "D1",
+    "passed": false,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "label": null,
+     "fired": [],
+     "calm": true,
+     "near_misses": [],
+     "bars": {
+      "spike": 3.5,
+      "climb": 1.26,
+      "elevated": 8.0,
+      "floor": 4.0
+     },
+     "cusum": 0.0,
+     "k": 1.0
+    }
+   },
+   {
+    "layer": "D2",
+    "passed": false,
+    "reason_code": "NO_TRIGGER",
+    "inputs": {},
+    "values": {
+     "state": null,
+     "calm_run": 27,
+     "candidate": null
+    }
+   }
+  ]
+ },
+ {
+  "id": "dec_7509",
+  "evaluated_at": "2026-09-02 08:20:00+00:00",
+  "period_end": "2026-09-02 06:30:00+00:00",
+  "user_id": "priya",
+  "outcome": "no_event",
+  "reason_code": "NO_TRIGGER",
+  "reason": "Nothing unusual.",
+  "trigger": "data",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "period_end": "2026-09-02T06:30:00+00:00",
+     "z": 0.036,
+     "ewma": -0.473,
+     "cusum": 0.0,
+     "slope_6h": 0.025,
+     "nowcast": 15.9,
+     "band": "moderate",
+     "typical_band": "moderate"
+    }
+   },
+   {
+    "layer": "D1",
+    "passed": false,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "label": null,
+     "fired": [],
+     "calm": true,
+     "near_misses": [],
+     "bars": {
+      "spike": 3.5,
+      "climb": 1.26,
+      "elevated": 8.0,
+      "floor": 4.0
+     },
+     "cusum": 0.0,
+     "k": 1.0
+    }
+   },
+   {
+    "layer": "D2",
+    "passed": false,
+    "reason_code": "NO_TRIGGER",
+    "inputs": {},
+    "values": {
+     "state": null,
+     "calm_run": 28,
+     "candidate": null
+    }
+   }
+  ]
+ },
+ {
+  "id": "dec_7516",
+  "evaluated_at": "2026-09-02 09:20:00+00:00",
+  "period_end": "2026-09-02 07:30:00+00:00",
+  "user_id": "priya",
+  "outcome": "no_event",
+  "reason_code": "NO_TRIGGER",
+  "reason": "Nothing unusual.",
+  "trigger": "data",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "period_end": "2026-09-02T07:30:00+00:00",
+     "z": -1.397,
+     "ewma": -0.77,
+     "cusum": 0.0,
+     "slope_6h": -0.117,
+     "nowcast": 12.3,
+     "band": "moderate",
+     "typical_band": "moderate"
+    }
+   },
+   {
+    "layer": "D1",
+    "passed": false,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "label": null,
+     "fired": [],
+     "calm": true,
+     "near_misses": [],
+     "bars": {
+      "spike": 3.5,
+      "climb": 1.26,
+      "elevated": 8.0,
+      "floor": 4.0
+     },
+     "cusum": 0.0,
+     "k": 1.0
+    }
+   },
+   {
+    "layer": "D2",
+    "passed": false,
+    "reason_code": "NO_TRIGGER",
+    "inputs": {},
+    "values": {
+     "state": null,
+     "calm_run": 29,
+     "candidate": null
+    }
+   }
+  ]
+ },
+ {
+  "id": "dec_7523",
+  "evaluated_at": "2026-09-02 10:20:00+00:00",
+  "period_end": "2026-09-02 08:30:00+00:00",
+  "user_id": "priya",
+  "outcome": "no_event",
+  "reason_code": "NO_TRIGGER",
+  "reason": "Nothing unusual.",
+  "trigger": "data",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "period_end": "2026-09-02T08:30:00+00:00",
+     "z": -1.196,
+     "ewma": -0.877,
+     "cusum": 0.0,
+     "slope_6h": -0.204,
+     "nowcast": 10.2,
+     "band": "moderate",
+     "typical_band": "moderate"
+    }
+   },
+   {
+    "layer": "D1",
+    "passed": false,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "label": null,
+     "fired": [],
+     "calm": true,
+     "near_misses": [],
+     "bars": {
+      "spike": 3.5,
+      "climb": 1.26,
+      "elevated": 8.0,
+      "floor": 4.0
+     },
+     "cusum": 0.0,
+     "k": 1.0
+    }
+   },
+   {
+    "layer": "D2",
+    "passed": false,
+    "reason_code": "NO_TRIGGER",
+    "inputs": {},
+    "values": {
+     "state": null,
+     "calm_run": 30,
+     "candidate": null
+    }
+   }
+  ]
+ },
+ {
+  "id": "dec_7530",
+  "evaluated_at": "2026-09-02 11:20:00+00:00",
+  "period_end": "2026-09-02 09:30:00+00:00",
+  "user_id": "priya",
+  "outcome": "no_event",
+  "reason_code": "NO_TRIGGER",
+  "reason": "Nothing unusual.",
+  "trigger": "data",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "period_end": "2026-09-02T09:30:00+00:00",
+     "z": -1.723,
+     "ewma": -1.099,
+     "cusum": 0.0,
+     "slope_6h": -0.199,
+     "nowcast": 7.9,
+     "band": "good",
+     "typical_band": "moderate"
+    }
+   },
+   {
+    "layer": "D1",
+    "passed": false,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "label": null,
+     "fired": [],
+     "calm": true,
+     "near_misses": [],
+     "bars": {
+      "spike": 3.5,
+      "climb": 1.26,
+      "elevated": 8.0,
+      "floor": 4.0
+     },
+     "cusum": 0.0,
+     "k": 1.0
+    }
+   },
+   {
+    "layer": "D2",
+    "passed": false,
+    "reason_code": "NO_TRIGGER",
+    "inputs": {},
+    "values": {
+     "state": null,
+     "calm_run": 31,
+     "candidate": null
+    }
+   }
+  ]
+ },
+ {
+  "id": "dec_7537",
+  "evaluated_at": "2026-09-02 12:20:00+00:00",
+  "period_end": "2026-09-02 10:30:00+00:00",
+  "user_id": "priya",
+  "outcome": "no_event",
+  "reason_code": "NO_TRIGGER",
+  "reason": "Nothing unusual.",
+  "trigger": "data",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "period_end": "2026-09-02T10:30:00+00:00",
+     "z": -1.403,
+     "ewma": -1.19,
+     "cusum": 0.0,
+     "slope_6h": -0.217,
+     "nowcast": 6.4,
+     "band": "good",
+     "typical_band": "moderate"
+    }
+   },
+   {
+    "layer": "D1",
+    "passed": false,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "label": null,
+     "fired": [],
+     "calm": true,
+     "near_misses": [],
+     "bars": {
+      "spike": 3.5,
+      "climb": 1.26,
+      "elevated": 8.0,
+      "floor": 4.0
+     },
+     "cusum": 0.0,
+     "k": 1.0
+    }
+   },
+   {
+    "layer": "D2",
+    "passed": false,
+    "reason_code": "NO_TRIGGER",
+    "inputs": {},
+    "values": {
+     "state": null,
+     "calm_run": 32,
+     "candidate": null
+    }
+   }
+  ]
+ },
+ {
+  "id": "dec_7544",
+  "evaluated_at": "2026-09-02 13:20:00+00:00",
+  "period_end": "2026-09-02 11:30:00+00:00",
+  "user_id": "priya",
+  "outcome": "no_event",
+  "reason_code": "NO_TRIGGER",
+  "reason": "Nothing unusual.",
+  "trigger": "data",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "period_end": "2026-09-02T11:30:00+00:00",
+     "z": -0.838,
+     "ewma": -1.07,
+     "cusum": 0.0,
+     "slope_6h": -0.169,
+     "nowcast": 6.2,
+     "band": "good",
+     "typical_band": "moderate"
+    }
+   },
+   {
+    "layer": "D1",
+    "passed": false,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "label": null,
+     "fired": [],
+     "calm": true,
+     "near_misses": [],
+     "bars": {
+      "spike": 3.5,
+      "climb": 1.26,
+      "elevated": 8.0,
+      "floor": 4.0
+     },
+     "cusum": 0.0,
+     "k": 1.0
+    }
+   },
+   {
+    "layer": "D2",
+    "passed": false,
+    "reason_code": "NO_TRIGGER",
+    "inputs": {},
+    "values": {
+     "state": null,
+     "calm_run": 33,
+     "candidate": null
+    }
+   }
+  ]
+ },
+ {
+  "id": "dec_7551",
+  "evaluated_at": "2026-09-02 14:20:00+00:00",
+  "period_end": "2026-09-02 12:30:00+00:00",
+  "user_id": "priya",
+  "outcome": "no_event",
+  "reason_code": "NO_TRIGGER",
+  "reason": "Nothing unusual.",
+  "trigger": "data",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "period_end": "2026-09-02T12:30:00+00:00",
+     "z": -0.56,
+     "ewma": -0.873,
+     "cusum": 0.0,
+     "slope_6h": -0.074,
+     "nowcast": 6.5,
+     "band": "good",
+     "typical_band": "moderate"
+    }
+   },
+   {
+    "layer": "D1",
+    "passed": false,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "label": null,
+     "fired": [],
+     "calm": true,
+     "near_misses": [],
+     "bars": {
+      "spike": 3.5,
+      "climb": 1.26,
+      "elevated": 8.0,
+      "floor": 4.0
+     },
+     "cusum": 0.0,
+     "k": 1.0
+    }
+   },
+   {
+    "layer": "D2",
+    "passed": false,
+    "reason_code": "NO_TRIGGER",
+    "inputs": {},
+    "values": {
+     "state": null,
+     "calm_run": 34,
+     "candidate": null
+    }
+   }
+  ]
+ },
+ {
+  "id": "dec_7558",
+  "evaluated_at": "2026-09-02 15:20:00+00:00",
+  "period_end": "2026-09-02 13:30:00+00:00",
+  "user_id": "priya",
+  "outcome": "no_event",
+  "reason_code": "NO_TRIGGER",
+  "reason": "Nothing unusual.",
+  "trigger": "data",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "period_end": "2026-09-02T13:30:00+00:00",
+     "z": -0.513,
+     "ewma": -0.762,
+     "cusum": 0.0,
+     "slope_6h": 0.055,
+     "nowcast": 8.4,
+     "band": "good",
+     "typical_band": "moderate"
+    }
+   },
+   {
+    "layer": "D1",
+    "passed": false,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "label": null,
+     "fired": [],
+     "calm": true,
+     "near_misses": [],
+     "bars": {
+      "spike": 3.5,
+      "climb": 1.26,
+      "elevated": 8.0,
+      "floor": 4.0
+     },
+     "cusum": 0.0,
+     "k": 1.0
+    }
+   },
+   {
+    "layer": "D2",
+    "passed": false,
+    "reason_code": "NO_TRIGGER",
+    "inputs": {},
+    "values": {
+     "state": null,
+     "calm_run": 35,
+     "candidate": null
+    }
+   }
+  ]
+ },
+ {
+  "id": "dec_7565",
+  "evaluated_at": "2026-09-02 16:20:00+00:00",
+  "period_end": "2026-09-02 14:30:00+00:00",
+  "user_id": "priya",
+  "outcome": "no_event",
+  "reason_code": "DQ_SUSPECT",
+  "reason": "A one-hour sensor glitch was ignored.",
+  "trigger": "data",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": false,
+    "reason_code": "DQ_SUSPECT",
+    "inputs": {},
+    "values": {
+     "period_end": "2026-09-02T14:30:00+00:00"
+    }
+   }
+  ]
+ },
+ {
+  "id": "dec_7572",
+  "evaluated_at": "2026-09-02 17:20:00+00:00",
+  "period_end": "2026-09-02 15:30:00+00:00",
+  "user_id": "priya",
+  "outcome": "no_event",
+  "reason_code": "NO_TRIGGER",
+  "reason": "Nothing unusual.",
+  "trigger": "data",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "period_end": "2026-09-02T15:30:00+00:00",
+     "z": -1.143,
+     "ewma": -0.877,
+     "cusum": 0.0,
+     "slope_6h": 0.232,
+     "nowcast": 14.6,
+     "band": "moderate",
+     "typical_band": "moderate"
+    }
+   },
+   {
+    "layer": "D1",
+    "passed": false,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "label": null,
+     "fired": [],
+     "calm": true,
+     "near_misses": [],
+     "bars": {
+      "spike": 3.5,
+      "climb": 1.26,
+      "elevated": 8.0,
+      "floor": 4.0
+     },
+     "cusum": 0.0,
+     "k": 1.0
+    }
+   },
+   {
+    "layer": "D2",
+    "passed": false,
+    "reason_code": "NO_TRIGGER",
+    "inputs": {},
+    "values": {
+     "state": null,
+     "calm_run": 1,
+     "candidate": null
+    }
+   }
+  ]
+ },
+ {
+  "id": "dec_7579",
+  "evaluated_at": "2026-09-02 18:20:00+00:00",
+  "period_end": "2026-09-02 16:30:00+00:00",
+  "user_id": "priya",
+  "outcome": "no_event",
+  "reason_code": "NO_TRIGGER",
+  "reason": "Nothing unusual.",
+  "trigger": "data",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "period_end": "2026-09-02T16:30:00+00:00",
+     "z": -1.312,
+     "ewma": -1.007,
+     "cusum": 0.0,
+     "slope_6h": 0.233,
+     "nowcast": 17.2,
+     "band": "moderate",
+     "typical_band": "moderate"
+    }
+   },
+   {
+    "layer": "D1",
+    "passed": false,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "label": null,
+     "fired": [],
+     "calm": true,
+     "near_misses": [],
+     "bars": {
+      "spike": 3.5,
+      "climb": 1.26,
+      "elevated": 8.0,
+      "floor": 4.0
+     },
+     "cusum": 0.0,
+     "k": 1.0
+    }
+   },
+   {
+    "layer": "D2",
+    "passed": false,
+    "reason_code": "NO_TRIGGER",
+    "inputs": {},
+    "values": {
+     "state": null,
+     "calm_run": 2,
+     "candidate": null
+    }
+   }
+  ]
+ },
+ {
+  "id": "dec_7586",
+  "evaluated_at": "2026-09-02 19:20:00+00:00",
+  "period_end": "2026-09-02 17:30:00+00:00",
+  "user_id": "priya",
+  "outcome": "no_event",
+  "reason_code": "NO_TRIGGER",
+  "reason": "Nothing unusual.",
+  "trigger": "data",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "period_end": "2026-09-02T17:30:00+00:00",
+     "z": -2.015,
+     "ewma": -1.202,
+     "cusum": 0.0,
+     "slope_6h": 0.158,
+     "nowcast": 15.3,
+     "band": "moderate",
+     "typical_band": "moderate"
+    }
+   },
+   {
+    "layer": "D1",
+    "passed": false,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "label": null,
+     "fired": [],
+     "calm": true,
+     "near_misses": [],
+     "bars": {
+      "spike": 3.5,
+      "climb": 1.26,
+      "elevated": 8.0,
+      "floor": 4.0
+     },
+     "cusum": 0.0,
+     "k": 1.0
+    }
+   },
+   {
+    "layer": "D2",
+    "passed": false,
+    "reason_code": "NO_TRIGGER",
+    "inputs": {},
+    "values": {
+     "state": null,
+     "calm_run": 3,
+     "candidate": null
+    }
+   }
+  ]
+ },
+ {
+  "id": "dec_7593",
+  "evaluated_at": "2026-09-02 20:20:00+00:00",
+  "period_end": "2026-09-02 18:30:00+00:00",
+  "user_id": "priya",
+  "outcome": "no_event",
+  "reason_code": "NO_TRIGGER",
+  "reason": "Nothing unusual.",
+  "trigger": "data",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "period_end": "2026-09-02T18:30:00+00:00",
+     "z": -3.323,
+     "ewma": -1.647,
+     "cusum": 0.0,
+     "slope_6h": -0.047,
+     "nowcast": 13.6,
+     "band": "moderate",
+     "typical_band": "moderate"
+    }
+   },
+   {
+    "layer": "D1",
+    "passed": false,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "label": null,
+     "fired": [],
+     "calm": true,
+     "near_misses": [],
+     "bars": {
+      "spike": 3.5,
+      "climb": 1.26,
+      "elevated": 8.0,
+      "floor": 4.0
+     },
+     "cusum": 0.0,
+     "k": 1.0
+    }
+   },
+   {
+    "layer": "D2",
+    "passed": false,
+    "reason_code": "NO_TRIGGER",
+    "inputs": {},
+    "values": {
+     "state": null,
+     "calm_run": 4,
+     "candidate": null
+    }
+   }
+  ]
+ }
+]

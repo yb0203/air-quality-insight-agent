@@ -1,0 +1,2642 @@
+[
+ {
+  "id": "dec_5259",
+  "evaluated_at": "2026-08-20 04:20:00+00:00",
+  "period_end": "2026-08-20 02:00:00+00:00",
+  "user_id": "maya",
+  "outcome": "no_event",
+  "reason_code": "NO_TRIGGER",
+  "reason": "Nothing unusual.",
+  "trigger": "data",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "period_end": "2026-08-20T02:00:00+00:00",
+     "z": 0.193,
+     "ewma": 0.618,
+     "cusum": 3.032,
+     "slope_6h": -0.142,
+     "nowcast": 10.3,
+     "band": "moderate",
+     "typical_band": "good"
+    }
+   },
+   {
+    "layer": "D1",
+    "passed": false,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "label": null,
+     "fired": [],
+     "calm": false,
+     "near_misses": [],
+     "bars": {
+      "spike": 3.5,
+      "climb": 1.26,
+      "elevated": 8.0,
+      "floor": 4.0
+     },
+     "cusum": 2.985,
+     "k": 1.0
+    }
+   },
+   {
+    "layer": "D2",
+    "passed": false,
+    "reason_code": "NO_TRIGGER",
+    "inputs": {},
+    "values": {
+     "state": null,
+     "calm_run": 0,
+     "candidate": null
+    }
+   }
+  ]
+ },
+ {
+  "id": "dec_5266",
+  "evaluated_at": "2026-08-20 05:20:00+00:00",
+  "period_end": "2026-08-20 03:00:00+00:00",
+  "user_id": "maya",
+  "outcome": "no_event",
+  "reason_code": "NO_TRIGGER",
+  "reason": "Nothing unusual.",
+  "trigger": "data",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "period_end": "2026-08-20T03:00:00+00:00",
+     "z": 0.435,
+     "ewma": 0.589,
+     "cusum": 3.092,
+     "slope_6h": -0.125,
+     "nowcast": 10.1,
+     "band": "moderate",
+     "typical_band": "good"
+    }
+   },
+   {
+    "layer": "D1",
+    "passed": false,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "label": null,
+     "fired": [],
+     "calm": false,
+     "near_misses": [],
+     "bars": {
+      "spike": 3.5,
+      "climb": 1.26,
+      "elevated": 8.0,
+      "floor": 4.0
+     },
+     "cusum": 2.92,
+     "k": 1.0
+    }
+   },
+   {
+    "layer": "D2",
+    "passed": false,
+    "reason_code": "NO_TRIGGER",
+    "inputs": {},
+    "values": {
+     "state": null,
+     "calm_run": 0,
+     "candidate": null
+    }
+   }
+  ]
+ },
+ {
+  "id": "dec_5273",
+  "evaluated_at": "2026-08-20 06:20:00+00:00",
+  "period_end": "2026-08-20 04:00:00+00:00",
+  "user_id": "maya",
+  "outcome": "no_event",
+  "reason_code": "NO_TRIGGER",
+  "reason": "Nothing unusual.",
+  "trigger": "data",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "period_end": "2026-08-20T04:00:00+00:00",
+     "z": 0.516,
+     "ewma": 0.586,
+     "cusum": 3.199,
+     "slope_6h": -0.064,
+     "nowcast": 9.9,
+     "band": "moderate",
+     "typical_band": "good"
+    }
+   },
+   {
+    "layer": "D1",
+    "passed": false,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "label": null,
+     "fired": [],
+     "calm": false,
+     "near_misses": [],
+     "bars": {
+      "spike": 3.5,
+      "climb": 1.26,
+      "elevated": 8.0,
+      "floor": 4.0
+     },
+     "cusum": 2.937,
+     "k": 1.0
+    }
+   },
+   {
+    "layer": "D2",
+    "passed": false,
+    "reason_code": "NO_TRIGGER",
+    "inputs": {},
+    "values": {
+     "state": null,
+     "calm_run": 0,
+     "candidate": null
+    }
+   }
+  ]
+ },
+ {
+  "id": "dec_5280",
+  "evaluated_at": "2026-08-20 07:20:00+00:00",
+  "period_end": "2026-08-20 05:00:00+00:00",
+  "user_id": "maya",
+  "outcome": "no_event",
+  "reason_code": "NO_TRIGGER",
+  "reason": "Nothing unusual.",
+  "trigger": "data",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "period_end": "2026-08-20T05:00:00+00:00",
+     "z": 0.081,
+     "ewma": 0.435,
+     "cusum": 2.78,
+     "slope_6h": -0.033,
+     "nowcast": 9.2,
+     "band": "moderate",
+     "typical_band": "good"
+    }
+   },
+   {
+    "layer": "D1",
+    "passed": false,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "label": null,
+     "fired": [],
+     "calm": false,
+     "near_misses": [],
+     "bars": {
+      "spike": 3.5,
+      "climb": 1.26,
+      "elevated": 8.0,
+      "floor": 4.0
+     },
+     "cusum": 2.517,
+     "k": 1.0
+    }
+   },
+   {
+    "layer": "D2",
+    "passed": false,
+    "reason_code": "NO_TRIGGER",
+    "inputs": {},
+    "values": {
+     "state": null,
+     "calm_run": 0,
+     "candidate": null
+    }
+   }
+  ]
+ },
+ {
+  "id": "dec_5284",
+  "evaluated_at": "2026-08-20 08:20:00+00:00",
+  "period_end": "2026-08-20 06:00:00+00:00",
+  "user_id": "maya",
+  "outcome": "no_event",
+  "reason_code": "NO_TRIGGER",
+  "reason": "Nothing unusual.",
+  "trigger": "data",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "period_end": "2026-08-20T06:00:00+00:00",
+     "z": 0.796,
+     "ewma": 0.552,
+     "cusum": 3.116,
+     "slope_6h": 0.007,
+     "nowcast": 9.5,
+     "band": "moderate",
+     "typical_band": "good"
+    }
+   },
+   {
+    "layer": "D1",
+    "passed": false,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "label": null,
+     "fired": [],
+     "calm": false,
+     "near_misses": [],
+     "bars": {
+      "spike": 3.5,
+      "climb": 1.26,
+      "elevated": 8.0,
+      "floor": 4.0
+     },
+     "cusum": 2.813,
+     "k": 1.0
+    }
+   },
+   {
+    "layer": "D2",
+    "passed": false,
+    "reason_code": "NO_TRIGGER",
+    "inputs": {},
+    "values": {
+     "state": null,
+     "calm_run": 0,
+     "candidate": null
+    }
+   }
+  ]
+ },
+ {
+  "id": "dec_5292",
+  "evaluated_at": "2026-08-20 09:20:00+00:00",
+  "period_end": "2026-08-20 07:00:00+00:00",
+  "user_id": "maya",
+  "outcome": "no_event",
+  "reason_code": "NO_TRIGGER",
+  "reason": "Nothing unusual.",
+  "trigger": "data",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "period_end": "2026-08-20T07:00:00+00:00",
+     "z": 1.143,
+     "ewma": 0.711,
+     "cusum": 3.673,
+     "slope_6h": 0.014,
+     "nowcast": 11.4,
+     "band": "moderate",
+     "typical_band": "good"
+    }
+   },
+   {
+    "layer": "D1",
+    "passed": false,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "label": null,
+     "fired": [],
+     "calm": false,
+     "near_misses": [],
+     "bars": {
+      "spike": 3.5,
+      "climb": 1.26,
+      "elevated": 8.0,
+      "floor": 4.0
+     },
+     "cusum": 3.456,
+     "k": 1.0
+    }
+   },
+   {
+    "layer": "D2",
+    "passed": false,
+    "reason_code": "NO_TRIGGER",
+    "inputs": {},
+    "values": {
+     "state": null,
+     "calm_run": 0,
+     "candidate": null
+    }
+   }
+  ]
+ },
+ {
+  "id": "dec_5299",
+  "evaluated_at": "2026-08-20 10:20:00+00:00",
+  "period_end": "2026-08-20 08:00:00+00:00",
+  "user_id": "maya",
+  "outcome": "no_event",
+  "reason_code": "NO_TRIGGER",
+  "reason": "Nothing unusual.",
+  "trigger": "data",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "period_end": "2026-08-20T08:00:00+00:00",
+     "z": 0.848,
+     "ewma": 0.738,
+     "cusum": 3.955,
+     "slope_6h": 0.035,
+     "nowcast": 11.4,
+     "band": "moderate",
+     "typical_band": "good"
+    }
+   },
+   {
+    "layer": "D1",
+    "passed": false,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "label": null,
+     "fired": [],
+     "calm": false,
+     "near_misses": [],
+     "bars": {
+      "spike": 3.5,
+      "climb": 1.26,
+      "elevated": 8.0,
+      "floor": 4.0
+     },
+     "cusum": 3.803,
+     "k": 1.0
+    }
+   },
+   {
+    "layer": "D2",
+    "passed": false,
+    "reason_code": "NO_TRIGGER",
+    "inputs": {},
+    "values": {
+     "state": null,
+     "calm_run": 0,
+     "candidate": null
+    }
+   }
+  ]
+ },
+ {
+  "id": "dec_5306",
+  "evaluated_at": "2026-08-20 11:20:00+00:00",
+  "period_end": "2026-08-20 09:00:00+00:00",
+  "user_id": "maya",
+  "outcome": "no_event",
+  "reason_code": "NO_TRIGGER",
+  "reason": "Nothing unusual.",
+  "trigger": "data",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "period_end": "2026-08-20T09:00:00+00:00",
+     "z": 1.648,
+     "ewma": 0.983,
+     "cusum": 4.968,
+     "slope_6h": 0.116,
+     "nowcast": 14.8,
+     "band": "moderate",
+     "typical_band": "good"
+    }
+   },
+   {
+    "layer": "D1",
+    "passed": false,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "label": null,
+     "fired": [],
+     "calm": false,
+     "near_misses": [],
+     "bars": {
+      "spike": 3.5,
+      "climb": 1.26,
+      "elevated": 8.0,
+      "floor": 4.0
+     },
+     "cusum": 4.951,
+     "k": 1.0
+    }
+   },
+   {
+    "layer": "D2",
+    "passed": false,
+    "reason_code": "NO_TRIGGER",
+    "inputs": {},
+    "values": {
+     "state": null,
+     "calm_run": 0,
+     "candidate": null
+    }
+   }
+  ]
+ },
+ {
+  "id": "dec_5313",
+  "evaluated_at": "2026-08-20 12:20:00+00:00",
+  "period_end": "2026-08-20 10:00:00+00:00",
+  "user_id": "maya",
+  "outcome": "no_event",
+  "reason_code": "NO_TRIGGER",
+  "reason": "Nothing unusual.",
+  "trigger": "data",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "period_end": "2026-08-20T10:00:00+00:00",
+     "z": 1.665,
+     "ewma": 1.142,
+     "cusum": 5.917,
+     "slope_6h": 0.089,
+     "nowcast": 14.2,
+     "band": "moderate",
+     "typical_band": "good"
+    }
+   },
+   {
+    "layer": "D1",
+    "passed": false,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "label": null,
+     "fired": [],
+     "calm": false,
+     "near_misses": [
+      "climb"
+     ],
+     "bars": {
+      "spike": 3.5,
+      "climb": 1.26,
+      "elevated": 8.0,
+      "floor": 4.0
+     },
+     "cusum": 6.116,
+     "k": 1.0
+    }
+   },
+   {
+    "layer": "D2",
+    "passed": false,
+    "reason_code": "NO_TRIGGER",
+    "inputs": {},
+    "values": {
+     "state": null,
+     "calm_run": 0,
+     "candidate": null
+    }
+   }
+  ]
+ },
+ {
+  "id": "dec_5320",
+  "evaluated_at": "2026-08-20 13:20:00+00:00",
+  "period_end": "2026-08-20 11:00:00+00:00",
+  "user_id": "maya",
+  "outcome": "no_event",
+  "reason_code": "NO_TRIGGER",
+  "reason": "Nothing unusual.",
+  "trigger": "data",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "period_end": "2026-08-20T11:00:00+00:00",
+     "z": 0.963,
+     "ewma": 1.088,
+     "cusum": 6.38,
+     "slope_6h": 0.042,
+     "nowcast": 13.2,
+     "band": "moderate",
+     "typical_band": "good"
+    }
+   },
+   {
+    "layer": "D1",
+    "passed": false,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "label": null,
+     "fired": [],
+     "calm": false,
+     "near_misses": [
+      "climb",
+      "elevated"
+     ],
+     "bars": {
+      "spike": 3.5,
+      "climb": 1.26,
+      "elevated": 8.0,
+      "floor": 4.0
+     },
+     "cusum": 6.579,
+     "k": 1.0
+    }
+   },
+   {
+    "layer": "D2",
+    "passed": false,
+    "reason_code": "NO_TRIGGER",
+    "inputs": {},
+    "values": {
+     "state": null,
+     "calm_run": 0,
+     "candidate": null
+    }
+   }
+  ]
+ },
+ {
+  "id": "dec_5327",
+  "evaluated_at": "2026-08-20 14:20:00+00:00",
+  "period_end": "2026-08-20 12:00:00+00:00",
+  "user_id": "maya",
+  "outcome": "no_event",
+  "reason_code": "NO_TRIGGER",
+  "reason": "Nothing unusual.",
+  "trigger": "data",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "period_end": "2026-08-20T12:00:00+00:00",
+     "z": 1.676,
+     "ewma": 1.244,
+     "cusum": 7.457,
+     "slope_6h": -0.01,
+     "nowcast": 12.9,
+     "band": "moderate",
+     "typical_band": "good"
+    }
+   },
+   {
+    "layer": "D1",
+    "passed": false,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "label": null,
+     "fired": [],
+     "calm": false,
+     "near_misses": [
+      "elevated"
+     ],
+     "bars": {
+      "spike": 3.5,
+      "climb": 1.26,
+      "elevated": 8.0,
+      "floor": 4.0
+     },
+     "cusum": 7.755,
+     "k": 1.0
+    }
+   },
+   {
+    "layer": "D2",
+    "passed": false,
+    "reason_code": "NO_TRIGGER",
+    "inputs": {},
+    "values": {
+     "state": null,
+     "calm_run": 0,
+     "candidate": null
+    }
+   }
+  ]
+ },
+ {
+  "id": "dec_5334",
+  "evaluated_at": "2026-08-20 15:20:00+00:00",
+  "period_end": "2026-08-20 13:00:00+00:00",
+  "user_id": "maya",
+  "outcome": "sent",
+  "reason_code": "SENT_OPENED",
+  "reason": "Sent: air quality turned bad.",
+  "trigger": "data",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "period_end": "2026-08-20T13:00:00+00:00",
+     "z": 1.04,
+     "ewma": 1.125,
+     "cusum": 7.723,
+     "slope_6h": 0.022,
+     "nowcast": 12.9,
+     "band": "moderate",
+     "typical_band": "good"
+    }
+   },
+   {
+    "layer": "D1",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "label": "elevated",
+     "fired": [
+      "elevated"
+     ],
+     "calm": false,
+     "near_misses": [
+      "climb"
+     ],
+     "bars": {
+      "spike": 3.5,
+      "climb": 1.26,
+      "elevated": 8.0,
+      "floor": 4.0
+     },
+     "cusum": 8.295,
+     "k": 1.0
+    }
+   },
+   {
+    "layer": "D2",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "state": "ACTIVE",
+     "calm_run": 0,
+     "candidate": "opened",
+     "started_at": "2026-08-20T15:20:00+00:00",
+     "hours": 0.0,
+     "ended_at": null,
+     "peak": {
+      "pm25": 14,
+      "at": "2026-08-20T10:00:00+00:00",
+      "band": "moderate"
+     }
+    }
+   },
+   {
+    "layer": "D3",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "kind": "opened",
+     "band": "moderate"
+    }
+   },
+   {
+    "layer": "D4",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "notices_in_episode": 0
+    }
+   },
+   {
+    "layer": "D5",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "candidates": 1,
+     "kept": "opened"
+    }
+   },
+   {
+    "layer": "D6",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "response": "notify"
+    }
+   },
+   {
+    "layer": "D7",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "sent_today": 0,
+     "max_per_day": 3
+    }
+   },
+   {
+    "layer": "D8",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "local_time": "08:20",
+     "quiet_hours": false
+    }
+   },
+   {
+    "layer": "A",
+    "passed": true,
+    "reason_code": "SENT_OPENED",
+    "inputs": {},
+    "values": {
+     "compose": "opened"
+    }
+   }
+  ]
+ },
+ {
+  "id": "dec_5341",
+  "evaluated_at": "2026-08-20 16:20:00+00:00",
+  "period_end": "2026-08-20 14:00:00+00:00",
+  "user_id": "maya",
+  "outcome": "no_event",
+  "reason_code": "EPISODE_CONTINUES",
+  "reason": "The same bad period is continuing; nothing new to say.",
+  "trigger": "data",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "period_end": "2026-08-20T14:00:00+00:00",
+     "z": 0.625,
+     "ewma": 0.953,
+     "cusum": 7.744,
+     "slope_6h": -0.046,
+     "nowcast": 12.1,
+     "band": "moderate",
+     "typical_band": "good"
+    }
+   },
+   {
+    "layer": "D1",
+    "passed": false,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "label": null,
+     "fired": [],
+     "calm": false,
+     "near_misses": [],
+     "bars": {
+      "spike": 3.5,
+      "climb": 1.26,
+      "elevated": 8.0,
+      "floor": 4.0
+     },
+     "cusum": 0.125,
+     "k": 1.0
+    }
+   },
+   {
+    "layer": "D2",
+    "passed": false,
+    "reason_code": "EPISODE_CONTINUES",
+    "inputs": {},
+    "values": {
+     "state": "ACTIVE",
+     "calm_run": 0,
+     "candidate": null,
+     "started_at": "2026-08-20T15:20:00+00:00",
+     "hours": 1.0,
+     "ended_at": null,
+     "peak": {
+      "pm25": 14,
+      "at": "2026-08-20T10:00:00+00:00",
+      "band": "moderate"
+     }
+    }
+   }
+  ]
+ },
+ {
+  "id": "dec_5348",
+  "evaluated_at": "2026-08-20 17:20:00+00:00",
+  "period_end": "2026-08-20 15:00:00+00:00",
+  "user_id": "maya",
+  "outcome": "no_event",
+  "reason_code": "EPISODE_CONTINUES",
+  "reason": "The same bad period is continuing; nothing new to say.",
+  "trigger": "data",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "period_end": "2026-08-20T15:00:00+00:00",
+     "z": 1.177,
+     "ewma": 0.991,
+     "cusum": 8.279,
+     "slope_6h": 0.022,
+     "nowcast": 13.7,
+     "band": "moderate",
+     "typical_band": "good"
+    }
+   },
+   {
+    "layer": "D1",
+    "passed": false,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "label": null,
+     "fired": [],
+     "calm": false,
+     "near_misses": [],
+     "bars": {
+      "spike": 3.5,
+      "climb": 1.26,
+      "elevated": 8.0,
+      "floor": 4.0
+     },
+     "cusum": 0.802,
+     "k": 1.0
+    }
+   },
+   {
+    "layer": "D2",
+    "passed": false,
+    "reason_code": "EPISODE_CONTINUES",
+    "inputs": {},
+    "values": {
+     "state": "ACTIVE",
+     "calm_run": 0,
+     "candidate": null,
+     "started_at": "2026-08-20T15:20:00+00:00",
+     "hours": 2.0,
+     "ended_at": null,
+     "peak": {
+      "pm25": 14,
+      "at": "2026-08-20T10:00:00+00:00",
+      "band": "moderate"
+     }
+    }
+   }
+  ]
+ },
+ {
+  "id": "dec_5355",
+  "evaluated_at": "2026-08-20 18:20:00+00:00",
+  "period_end": "2026-08-20 16:00:00+00:00",
+  "user_id": "maya",
+  "outcome": "no_event",
+  "reason_code": "EPISODE_CONTINUES",
+  "reason": "The same bad period is continuing; nothing new to say.",
+  "trigger": "data",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "period_end": "2026-08-20T16:00:00+00:00",
+     "z": 0.954,
+     "ewma": 0.923,
+     "cusum": 0.454,
+     "slope_6h": 0.062,
+     "nowcast": 16.3,
+     "band": "moderate",
+     "typical_band": "good"
+    }
+   },
+   {
+    "layer": "D1",
+    "passed": false,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "label": null,
+     "fired": [],
+     "calm": false,
+     "near_misses": [],
+     "bars": {
+      "spike": 3.5,
+      "climb": 1.26,
+      "elevated": 8.0,
+      "floor": 4.0
+     },
+     "cusum": 1.256,
+     "k": 1.0
+    }
+   },
+   {
+    "layer": "D2",
+    "passed": false,
+    "reason_code": "EPISODE_CONTINUES",
+    "inputs": {},
+    "values": {
+     "state": "ACTIVE",
+     "calm_run": 0,
+     "candidate": null,
+     "started_at": "2026-08-20T15:20:00+00:00",
+     "hours": 3.0,
+     "ended_at": null,
+     "peak": {
+      "pm25": 16,
+      "at": "2026-08-20T16:00:00+00:00",
+      "band": "moderate"
+     }
+    }
+   }
+  ]
+ },
+ {
+  "id": "dec_5362",
+  "evaluated_at": "2026-08-20 19:20:00+00:00",
+  "period_end": "2026-08-20 17:00:00+00:00",
+  "user_id": "maya",
+  "outcome": "no_event",
+  "reason_code": "EPISODE_CONTINUES",
+  "reason": "The same bad period is continuing; nothing new to say.",
+  "trigger": "data",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "period_end": "2026-08-20T17:00:00+00:00",
+     "z": 0.827,
+     "ewma": 0.861,
+     "cusum": 0.327,
+     "slope_6h": 0.062,
+     "nowcast": 16.5,
+     "band": "moderate",
+     "typical_band": "good"
+    }
+   },
+   {
+    "layer": "D1",
+    "passed": false,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "label": null,
+     "fired": [],
+     "calm": false,
+     "near_misses": [],
+     "bars": {
+      "spike": 3.5,
+      "climb": 1.26,
+      "elevated": 8.0,
+      "floor": 4.0
+     },
+     "cusum": 1.583,
+     "k": 1.0
+    }
+   },
+   {
+    "layer": "D2",
+    "passed": false,
+    "reason_code": "EPISODE_CONTINUES",
+    "inputs": {},
+    "values": {
+     "state": "ACTIVE",
+     "calm_run": 0,
+     "candidate": null,
+     "started_at": "2026-08-20T15:20:00+00:00",
+     "hours": 4.0,
+     "ended_at": null,
+     "peak": {
+      "pm25": 16,
+      "at": "2026-08-20T17:00:00+00:00",
+      "band": "moderate"
+     }
+    }
+   }
+  ]
+ },
+ {
+  "id": "dec_5369",
+  "evaluated_at": "2026-08-20 20:20:00+00:00",
+  "period_end": "2026-08-20 18:00:00+00:00",
+  "user_id": "maya",
+  "outcome": "no_event",
+  "reason_code": "EPISODE_CONTINUES",
+  "reason": "The same bad period is continuing; nothing new to say.",
+  "trigger": "data",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "period_end": "2026-08-20T18:00:00+00:00",
+     "z": 1.137,
+     "ewma": 0.935,
+     "cusum": 0.92,
+     "slope_6h": 0.079,
+     "nowcast": 17.2,
+     "band": "moderate",
+     "typical_band": "good"
+    }
+   },
+   {
+    "layer": "D1",
+    "passed": false,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "label": null,
+     "fired": [],
+     "calm": false,
+     "near_misses": [],
+     "bars": {
+      "spike": 3.5,
+      "climb": 1.26,
+      "elevated": 8.0,
+      "floor": 4.0
+     },
+     "cusum": 2.22,
+     "k": 1.0
+    }
+   },
+   {
+    "layer": "D2",
+    "passed": false,
+    "reason_code": "EPISODE_CONTINUES",
+    "inputs": {},
+    "values": {
+     "state": "ACTIVE",
+     "calm_run": 0,
+     "candidate": null,
+     "started_at": "2026-08-20T15:20:00+00:00",
+     "hours": 5.0,
+     "ended_at": null,
+     "peak": {
+      "pm25": 17,
+      "at": "2026-08-20T18:00:00+00:00",
+      "band": "moderate"
+     }
+    }
+   }
+  ]
+ },
+ {
+  "id": "dec_5376",
+  "evaluated_at": "2026-08-20 21:20:00+00:00",
+  "period_end": "2026-08-20 19:00:00+00:00",
+  "user_id": "maya",
+  "outcome": "no_event",
+  "reason_code": "EPISODE_CONTINUES",
+  "reason": "The same bad period is continuing; nothing new to say.",
+  "trigger": "data",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "period_end": "2026-08-20T19:00:00+00:00",
+     "z": 1.392,
+     "ewma": 1.035,
+     "cusum": 1.635,
+     "slope_6h": 0.104,
+     "nowcast": 19.0,
+     "band": "moderate",
+     "typical_band": "good"
+    }
+   },
+   {
+    "layer": "D1",
+    "passed": false,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "label": null,
+     "fired": [],
+     "calm": false,
+     "near_misses": [
+      "climb"
+     ],
+     "bars": {
+      "spike": 3.5,
+      "climb": 1.26,
+      "elevated": 8.0,
+      "floor": 4.0
+     },
+     "cusum": 3.112,
+     "k": 1.0
+    }
+   },
+   {
+    "layer": "D2",
+    "passed": false,
+    "reason_code": "EPISODE_CONTINUES",
+    "inputs": {},
+    "values": {
+     "state": "ACTIVE",
+     "calm_run": 0,
+     "candidate": null,
+     "started_at": "2026-08-20T15:20:00+00:00",
+     "hours": 6.0,
+     "ended_at": null,
+     "peak": {
+      "pm25": 19,
+      "at": "2026-08-20T19:00:00+00:00",
+      "band": "moderate"
+     }
+    }
+   }
+  ]
+ },
+ {
+  "id": "dec_5382",
+  "evaluated_at": "2026-08-20 22:20:00+00:00",
+  "period_end": "2026-08-20 20:00:00+00:00",
+  "user_id": "maya",
+  "outcome": "no_event",
+  "reason_code": "EPISODE_CONTINUES",
+  "reason": "The same bad period is continuing; nothing new to say.",
+  "trigger": "data",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "period_end": "2026-08-20T20:00:00+00:00",
+     "z": 1.644,
+     "ewma": 1.267,
+     "cusum": 2.735,
+     "slope_6h": 0.034,
+     "nowcast": 18.7,
+     "band": "moderate",
+     "typical_band": "good"
+    }
+   },
+   {
+    "layer": "D1",
+    "passed": false,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "label": null,
+     "fired": [],
+     "calm": false,
+     "near_misses": [
+      "climb"
+     ],
+     "bars": {
+      "spike": 3.5,
+      "climb": 1.26,
+      "elevated": 8.0,
+      "floor": 4.0
+     },
+     "cusum": 4.256,
+     "k": 1.0
+    }
+   },
+   {
+    "layer": "D2",
+    "passed": false,
+    "reason_code": "EPISODE_CONTINUES",
+    "inputs": {},
+    "values": {
+     "state": "ACTIVE",
+     "calm_run": 0,
+     "candidate": null,
+     "started_at": "2026-08-20T15:20:00+00:00",
+     "hours": 7.0,
+     "ended_at": null,
+     "peak": {
+      "pm25": 19,
+      "at": "2026-08-20T19:00:00+00:00",
+      "band": "moderate"
+     }
+    }
+   }
+  ]
+ },
+ {
+  "id": "dec_5389",
+  "evaluated_at": "2026-08-20 23:20:00+00:00",
+  "period_end": "2026-08-20 21:00:00+00:00",
+  "user_id": "maya",
+  "outcome": "no_event",
+  "reason_code": "EPISODE_CONTINUES",
+  "reason": "The same bad period is continuing; nothing new to say.",
+  "trigger": "data",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "period_end": "2026-08-20T21:00:00+00:00",
+     "z": 1.209,
+     "ewma": 1.25,
+     "cusum": 3.444,
+     "slope_6h": 0.013,
+     "nowcast": 19.1,
+     "band": "moderate",
+     "typical_band": "good"
+    }
+   },
+   {
+    "layer": "D1",
+    "passed": false,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "label": null,
+     "fired": [],
+     "calm": false,
+     "near_misses": [
+      "climb"
+     ],
+     "bars": {
+      "spike": 3.5,
+      "climb": 1.26,
+      "elevated": 8.0,
+      "floor": 4.0
+     },
+     "cusum": 4.965,
+     "k": 1.0
+    }
+   },
+   {
+    "layer": "D2",
+    "passed": false,
+    "reason_code": "EPISODE_CONTINUES",
+    "inputs": {},
+    "values": {
+     "state": "ACTIVE",
+     "calm_run": 0,
+     "candidate": null,
+     "started_at": "2026-08-20T15:20:00+00:00",
+     "hours": 8.0,
+     "ended_at": null,
+     "peak": {
+      "pm25": 19,
+      "at": "2026-08-20T21:00:00+00:00",
+      "band": "moderate"
+     }
+    }
+   }
+  ]
+ },
+ {
+  "id": "dec_5396",
+  "evaluated_at": "2026-08-21 00:20:00+00:00",
+  "period_end": "2026-08-20 22:00:00+00:00",
+  "user_id": "maya",
+  "outcome": "no_event",
+  "reason_code": "EPISODE_CONTINUES",
+  "reason": "The same bad period is continuing; nothing new to say.",
+  "trigger": "data",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "period_end": "2026-08-20T22:00:00+00:00",
+     "z": 2.118,
+     "ewma": 1.474,
+     "cusum": 4.891,
+     "slope_6h": 0.018,
+     "nowcast": 19.1,
+     "band": "moderate",
+     "typical_band": "good"
+    }
+   },
+   {
+    "layer": "D1",
+    "passed": false,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "label": null,
+     "fired": [],
+     "calm": false,
+     "near_misses": [
+      "climb",
+      "elevated"
+     ],
+     "bars": {
+      "spike": 3.5,
+      "climb": 1.26,
+      "elevated": 8.0,
+      "floor": 4.0
+     },
+     "cusum": 6.583,
+     "k": 1.0
+    }
+   },
+   {
+    "layer": "D2",
+    "passed": false,
+    "reason_code": "EPISODE_CONTINUES",
+    "inputs": {},
+    "values": {
+     "state": "ACTIVE",
+     "calm_run": 0,
+     "candidate": null,
+     "started_at": "2026-08-20T15:20:00+00:00",
+     "hours": 9.0,
+     "ended_at": null,
+     "peak": {
+      "pm25": 19,
+      "at": "2026-08-20T21:00:00+00:00",
+      "band": "moderate"
+     }
+    }
+   }
+  ]
+ },
+ {
+  "id": "dec_5405",
+  "evaluated_at": "2026-08-21 01:20:00+00:00",
+  "period_end": "2026-08-20 23:00:00+00:00",
+  "user_id": "maya",
+  "outcome": "no_event",
+  "reason_code": "EPISODE_CONTINUES",
+  "reason": "The same bad period is continuing; nothing new to say.",
+  "trigger": "data",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "period_end": "2026-08-20T23:00:00+00:00",
+     "z": 1.538,
+     "ewma": 1.383,
+     "cusum": 4.943,
+     "slope_6h": 0.003,
+     "nowcast": 19.1,
+     "band": "moderate",
+     "typical_band": "good"
+    }
+   },
+   {
+    "layer": "D1",
+    "passed": false,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "label": null,
+     "fired": [],
+     "calm": false,
+     "near_misses": [
+      "elevated"
+     ],
+     "bars": {
+      "spike": 3.5,
+      "climb": 1.26,
+      "elevated": 8.0,
+      "floor": 4.0
+     },
+     "cusum": 7.62,
+     "k": 1.0
+    }
+   },
+   {
+    "layer": "D2",
+    "passed": false,
+    "reason_code": "EPISODE_CONTINUES",
+    "inputs": {},
+    "values": {
+     "state": "ACTIVE",
+     "calm_run": 0,
+     "candidate": null,
+     "started_at": "2026-08-20T15:20:00+00:00",
+     "hours": 10.0,
+     "ended_at": null,
+     "peak": {
+      "pm25": 19,
+      "at": "2026-08-20T21:00:00+00:00",
+      "band": "moderate"
+     }
+    }
+   }
+  ]
+ },
+ {
+  "id": "dec_5414",
+  "evaluated_at": "2026-08-21 02:20:00+00:00",
+  "period_end": "2026-08-21 00:00:00+00:00",
+  "user_id": "maya",
+  "outcome": "suppressed",
+  "reason_code": "DEDUP_SAME_BAND",
+  "reason": "Already told you about this level; nothing new to say.",
+  "trigger": "data",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "period_end": "2026-08-21T00:00:00+00:00",
+     "z": 1.589,
+     "ewma": 1.445,
+     "cusum": 6.032,
+     "slope_6h": -0.029,
+     "nowcast": 17.3,
+     "band": "moderate",
+     "typical_band": "good"
+    }
+   },
+   {
+    "layer": "D1",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "label": "elevated",
+     "fired": [
+      "elevated"
+     ],
+     "calm": false,
+     "near_misses": [],
+     "bars": {
+      "spike": 3.5,
+      "climb": 1.26,
+      "elevated": 8.0,
+      "floor": 4.0
+     },
+     "cusum": 8.709,
+     "k": 1.0
+    }
+   },
+   {
+    "layer": "D2",
+    "passed": false,
+    "reason_code": "EPISODE_CONTINUES",
+    "inputs": {},
+    "values": {
+     "state": "ACTIVE",
+     "calm_run": 0,
+     "candidate": null,
+     "started_at": "2026-08-20T15:20:00+00:00",
+     "hours": 11.0,
+     "ended_at": null,
+     "peak": {
+      "pm25": 19,
+      "at": "2026-08-20T21:00:00+00:00",
+      "band": "moderate"
+     }
+    }
+   },
+   {
+    "layer": "D3",
+    "passed": false,
+    "reason_code": "DEDUP_SAME_BAND",
+    "inputs": {},
+    "values": {
+     "band": "moderate",
+     "last_told": "moderate"
+    }
+   }
+  ]
+ },
+ {
+  "id": "dec_5421",
+  "evaluated_at": "2026-08-21 03:20:00+00:00",
+  "period_end": "2026-08-21 01:00:00+00:00",
+  "user_id": "maya",
+  "outcome": "no_event",
+  "reason_code": "EPISODE_CONTINUES",
+  "reason": "The same bad period is continuing; nothing new to say.",
+  "trigger": "data",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "period_end": "2026-08-21T01:00:00+00:00",
+     "z": 1.15,
+     "ewma": 1.356,
+     "cusum": 6.681,
+     "slope_6h": -0.082,
+     "nowcast": 14.6,
+     "band": "moderate",
+     "typical_band": "good"
+    }
+   },
+   {
+    "layer": "D1",
+    "passed": false,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "label": null,
+     "fired": [],
+     "calm": false,
+     "near_misses": [],
+     "bars": {
+      "spike": 3.5,
+      "climb": 1.26,
+      "elevated": 8.0,
+      "floor": 4.0
+     },
+     "cusum": 0.65,
+     "k": 1.0
+    }
+   },
+   {
+    "layer": "D2",
+    "passed": false,
+    "reason_code": "EPISODE_CONTINUES",
+    "inputs": {},
+    "values": {
+     "state": "ACTIVE",
+     "calm_run": 0,
+     "candidate": null,
+     "started_at": "2026-08-20T15:20:00+00:00",
+     "hours": 12.0,
+     "ended_at": null,
+     "peak": {
+      "pm25": 19,
+      "at": "2026-08-20T21:00:00+00:00",
+      "band": "moderate"
+     }
+    }
+   }
+  ]
+ },
+ {
+  "id": "dec_5428",
+  "evaluated_at": "2026-08-21 04:20:00+00:00",
+  "period_end": "2026-08-21 02:00:00+00:00",
+  "user_id": "maya",
+  "outcome": "no_event",
+  "reason_code": "EPISODE_CONTINUES",
+  "reason": "The same bad period is continuing; nothing new to say.",
+  "trigger": "data",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "period_end": "2026-08-21T02:00:00+00:00",
+     "z": -0.143,
+     "ewma": 0.907,
+     "cusum": 6.039,
+     "slope_6h": -0.161,
+     "nowcast": 11.3,
+     "band": "moderate",
+     "typical_band": "good"
+    }
+   },
+   {
+    "layer": "D1",
+    "passed": false,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "label": null,
+     "fired": [],
+     "calm": false,
+     "near_misses": [],
+     "bars": {
+      "spike": 3.5,
+      "climb": 1.26,
+      "elevated": 8.0,
+      "floor": 4.0
+     },
+     "cusum": 0.007,
+     "k": 1.0
+    }
+   },
+   {
+    "layer": "D2",
+    "passed": false,
+    "reason_code": "EPISODE_CONTINUES",
+    "inputs": {},
+    "values": {
+     "state": "ACTIVE",
+     "calm_run": 0,
+     "candidate": null,
+     "started_at": "2026-08-20T15:20:00+00:00",
+     "hours": 13.0,
+     "ended_at": null,
+     "peak": {
+      "pm25": 19,
+      "at": "2026-08-20T21:00:00+00:00",
+      "band": "moderate"
+     }
+    }
+   }
+  ]
+ },
+ {
+  "id": "dec_5435",
+  "evaluated_at": "2026-08-21 05:20:00+00:00",
+  "period_end": "2026-08-21 03:00:00+00:00",
+  "user_id": "maya",
+  "outcome": "no_event",
+  "reason_code": "EPISODE_CONTINUES",
+  "reason": "The same bad period is continuing; nothing new to say.",
+  "trigger": "data",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "period_end": "2026-08-21T03:00:00+00:00",
+     "z": 0.34,
+     "ewma": 0.758,
+     "cusum": 5.979,
+     "slope_6h": -0.183,
+     "nowcast": 10.0,
+     "band": "moderate",
+     "typical_band": "good"
+    }
+   },
+   {
+    "layer": "D1",
+    "passed": false,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "label": null,
+     "fired": [],
+     "calm": false,
+     "near_misses": [],
+     "bars": {
+      "spike": 3.5,
+      "climb": 1.26,
+      "elevated": 8.0,
+      "floor": 4.0
+     },
+     "cusum": 0.0,
+     "k": 1.0
+    }
+   },
+   {
+    "layer": "D2",
+    "passed": false,
+    "reason_code": "EPISODE_CONTINUES",
+    "inputs": {},
+    "values": {
+     "state": "ACTIVE",
+     "calm_run": 0,
+     "candidate": null,
+     "started_at": "2026-08-20T15:20:00+00:00",
+     "hours": 14.0,
+     "ended_at": null,
+     "peak": {
+      "pm25": 19,
+      "at": "2026-08-20T21:00:00+00:00",
+      "band": "moderate"
+     }
+    }
+   }
+  ]
+ },
+ {
+  "id": "dec_5442",
+  "evaluated_at": "2026-08-21 06:20:00+00:00",
+  "period_end": "2026-08-21 04:00:00+00:00",
+  "user_id": "maya",
+  "outcome": "no_event",
+  "reason_code": "EPISODE_CONTINUES",
+  "reason": "The same bad period is continuing; nothing new to say.",
+  "trigger": "data",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "period_end": "2026-08-21T04:00:00+00:00",
+     "z": 0.893,
+     "ewma": 0.822,
+     "cusum": 6.486,
+     "slope_6h": -0.171,
+     "nowcast": 10.8,
+     "band": "moderate",
+     "typical_band": "good"
+    }
+   },
+   {
+    "layer": "D1",
+    "passed": false,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "label": null,
+     "fired": [],
+     "calm": false,
+     "near_misses": [],
+     "bars": {
+      "spike": 3.5,
+      "climb": 1.26,
+      "elevated": 8.0,
+      "floor": 4.0
+     },
+     "cusum": 0.393,
+     "k": 1.0
+    }
+   },
+   {
+    "layer": "D2",
+    "passed": false,
+    "reason_code": "EPISODE_CONTINUES",
+    "inputs": {},
+    "values": {
+     "state": "ACTIVE",
+     "calm_run": 0,
+     "candidate": null,
+     "started_at": "2026-08-20T15:20:00+00:00",
+     "hours": 15.0,
+     "ended_at": null,
+     "peak": {
+      "pm25": 19,
+      "at": "2026-08-20T21:00:00+00:00",
+      "band": "moderate"
+     }
+    }
+   }
+  ]
+ },
+ {
+  "id": "dec_5449",
+  "evaluated_at": "2026-08-21 07:20:00+00:00",
+  "period_end": "2026-08-21 05:00:00+00:00",
+  "user_id": "maya",
+  "outcome": "no_event",
+  "reason_code": "EPISODE_CONTINUES",
+  "reason": "The same bad period is continuing; nothing new to say.",
+  "trigger": "data",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "period_end": "2026-08-21T05:00:00+00:00",
+     "z": 0.843,
+     "ewma": 0.828,
+     "cusum": 6.829,
+     "slope_6h": 0.008,
+     "nowcast": 12.0,
+     "band": "moderate",
+     "typical_band": "good"
+    }
+   },
+   {
+    "layer": "D1",
+    "passed": false,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "label": null,
+     "fired": [],
+     "calm": false,
+     "near_misses": [],
+     "bars": {
+      "spike": 3.5,
+      "climb": 1.26,
+      "elevated": 8.0,
+      "floor": 4.0
+     },
+     "cusum": 0.736,
+     "k": 1.0
+    }
+   },
+   {
+    "layer": "D2",
+    "passed": false,
+    "reason_code": "EPISODE_CONTINUES",
+    "inputs": {},
+    "values": {
+     "state": "ACTIVE",
+     "calm_run": 0,
+     "candidate": null,
+     "started_at": "2026-08-20T15:20:00+00:00",
+     "hours": 16.0,
+     "ended_at": null,
+     "peak": {
+      "pm25": 19,
+      "at": "2026-08-20T21:00:00+00:00",
+      "band": "moderate"
+     }
+    }
+   }
+  ]
+ },
+ {
+  "id": "dec_5457",
+  "evaluated_at": "2026-08-21 08:20:00+00:00",
+  "period_end": "2026-08-21 06:00:00+00:00",
+  "user_id": "maya",
+  "outcome": "no_event",
+  "reason_code": "EPISODE_CONTINUES",
+  "reason": "The same bad period is continuing; nothing new to say.",
+  "trigger": "data",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "period_end": "2026-08-21T06:00:00+00:00",
+     "z": 1.016,
+     "ewma": 0.855,
+     "cusum": 7.204,
+     "slope_6h": 0.034,
+     "nowcast": 11.6,
+     "band": "moderate",
+     "typical_band": "good"
+    }
+   },
+   {
+    "layer": "D1",
+    "passed": false,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "label": null,
+     "fired": [],
+     "calm": false,
+     "near_misses": [],
+     "bars": {
+      "spike": 3.5,
+      "climb": 1.26,
+      "elevated": 8.0,
+      "floor": 4.0
+     },
+     "cusum": 1.252,
+     "k": 1.0
+    }
+   },
+   {
+    "layer": "D2",
+    "passed": false,
+    "reason_code": "EPISODE_CONTINUES",
+    "inputs": {},
+    "values": {
+     "state": "ACTIVE",
+     "calm_run": 0,
+     "candidate": null,
+     "started_at": "2026-08-20T15:20:00+00:00",
+     "hours": 17.0,
+     "ended_at": null,
+     "peak": {
+      "pm25": 19,
+      "at": "2026-08-20T21:00:00+00:00",
+      "band": "moderate"
+     }
+    }
+   }
+  ]
+ },
+ {
+  "id": "dec_5464",
+  "evaluated_at": "2026-08-21 09:20:00+00:00",
+  "period_end": "2026-08-21 07:00:00+00:00",
+  "user_id": "maya",
+  "outcome": "no_event",
+  "reason_code": "EPISODE_CONTINUES",
+  "reason": "The same bad period is continuing; nothing new to say.",
+  "trigger": "data",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "period_end": "2026-08-21T07:00:00+00:00",
+     "z": 0.374,
+     "ewma": 0.668,
+     "cusum": 6.875,
+     "slope_6h": 0.022,
+     "nowcast": 10.6,
+     "band": "moderate",
+     "typical_band": "good"
+    }
+   },
+   {
+    "layer": "D1",
+    "passed": false,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "label": null,
+     "fired": [],
+     "calm": false,
+     "near_misses": [],
+     "bars": {
+      "spike": 3.5,
+      "climb": 1.26,
+      "elevated": 8.0,
+      "floor": 4.0
+     },
+     "cusum": 1.126,
+     "k": 1.0
+    }
+   },
+   {
+    "layer": "D2",
+    "passed": false,
+    "reason_code": "EPISODE_CONTINUES",
+    "inputs": {},
+    "values": {
+     "state": "ACTIVE",
+     "calm_run": 0,
+     "candidate": null,
+     "started_at": "2026-08-20T15:20:00+00:00",
+     "hours": 18.0,
+     "ended_at": null,
+     "peak": {
+      "pm25": 19,
+      "at": "2026-08-20T21:00:00+00:00",
+      "band": "moderate"
+     }
+    }
+   }
+  ]
+ },
+ {
+  "id": "dec_5471",
+  "evaluated_at": "2026-08-21 10:20:00+00:00",
+  "period_end": "2026-08-21 08:00:00+00:00",
+  "user_id": "maya",
+  "outcome": "no_event",
+  "reason_code": "EPISODE_CONTINUES",
+  "reason": "The same bad period is continuing; nothing new to say.",
+  "trigger": "data",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "period_end": "2026-08-21T08:00:00+00:00",
+     "z": 0.916,
+     "ewma": 0.744,
+     "cusum": 7.297,
+     "slope_6h": 0.022,
+     "nowcast": 11.5,
+     "band": "moderate",
+     "typical_band": "good"
+    }
+   },
+   {
+    "layer": "D1",
+    "passed": false,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "label": null,
+     "fired": [],
+     "calm": false,
+     "near_misses": [],
+     "bars": {
+      "spike": 3.5,
+      "climb": 1.26,
+      "elevated": 8.0,
+      "floor": 4.0
+     },
+     "cusum": 1.542,
+     "k": 1.0
+    }
+   },
+   {
+    "layer": "D2",
+    "passed": false,
+    "reason_code": "EPISODE_CONTINUES",
+    "inputs": {},
+    "values": {
+     "state": "ACTIVE",
+     "calm_run": 0,
+     "candidate": null,
+     "started_at": "2026-08-20T15:20:00+00:00",
+     "hours": 19.0,
+     "ended_at": null,
+     "peak": {
+      "pm25": 19,
+      "at": "2026-08-20T21:00:00+00:00",
+      "band": "moderate"
+     }
+    }
+   }
+  ]
+ },
+ {
+  "id": "dec_5478",
+  "evaluated_at": "2026-08-21 11:20:00+00:00",
+  "period_end": "2026-08-21 09:00:00+00:00",
+  "user_id": "maya",
+  "outcome": "no_event",
+  "reason_code": "EPISODE_CONTINUES",
+  "reason": "The same bad period is continuing; nothing new to say.",
+  "trigger": "data",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "period_end": "2026-08-21T09:00:00+00:00",
+     "z": 0.764,
+     "ewma": 0.725,
+     "cusum": 7.442,
+     "slope_6h": 0.013,
+     "nowcast": 12.4,
+     "band": "moderate",
+     "typical_band": "good"
+    }
+   },
+   {
+    "layer": "D1",
+    "passed": false,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "label": null,
+     "fired": [],
+     "calm": false,
+     "near_misses": [],
+     "bars": {
+      "spike": 3.5,
+      "climb": 1.26,
+      "elevated": 8.0,
+      "floor": 4.0
+     },
+     "cusum": 1.805,
+     "k": 1.0
+    }
+   },
+   {
+    "layer": "D2",
+    "passed": false,
+    "reason_code": "EPISODE_CONTINUES",
+    "inputs": {},
+    "values": {
+     "state": "ACTIVE",
+     "calm_run": 0,
+     "candidate": null,
+     "started_at": "2026-08-20T15:20:00+00:00",
+     "hours": 20.0,
+     "ended_at": null,
+     "peak": {
+      "pm25": 19,
+      "at": "2026-08-20T21:00:00+00:00",
+      "band": "moderate"
+     }
+    }
+   }
+  ]
+ },
+ {
+  "id": "dec_5485",
+  "evaluated_at": "2026-08-21 12:20:00+00:00",
+  "period_end": "2026-08-21 10:00:00+00:00",
+  "user_id": "maya",
+  "outcome": "no_event",
+  "reason_code": "EPISODE_CONTINUES",
+  "reason": "The same bad period is continuing; nothing new to say.",
+  "trigger": "data",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "period_end": "2026-08-21T10:00:00+00:00",
+     "z": 1.769,
+     "ewma": 1.019,
+     "cusum": 8.622,
+     "slope_6h": 0.053,
+     "nowcast": 13.2,
+     "band": "moderate",
+     "typical_band": "good"
+    }
+   },
+   {
+    "layer": "D1",
+    "passed": false,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "label": null,
+     "fired": [],
+     "calm": false,
+     "near_misses": [
+      "climb"
+     ],
+     "bars": {
+      "spike": 3.5,
+      "climb": 1.26,
+      "elevated": 8.0,
+      "floor": 4.0
+     },
+     "cusum": 3.075,
+     "k": 1.0
+    }
+   },
+   {
+    "layer": "D2",
+    "passed": false,
+    "reason_code": "EPISODE_CONTINUES",
+    "inputs": {},
+    "values": {
+     "state": "ACTIVE",
+     "calm_run": 0,
+     "candidate": null,
+     "started_at": "2026-08-20T15:20:00+00:00",
+     "hours": 21.0,
+     "ended_at": null,
+     "peak": {
+      "pm25": 19,
+      "at": "2026-08-20T21:00:00+00:00",
+      "band": "moderate"
+     }
+    }
+   }
+  ]
+ },
+ {
+  "id": "dec_5492",
+  "evaluated_at": "2026-08-21 13:20:00+00:00",
+  "period_end": "2026-08-21 11:00:00+00:00",
+  "user_id": "maya",
+  "outcome": "no_event",
+  "reason_code": "EPISODE_CONTINUES",
+  "reason": "The same bad period is continuing; nothing new to say.",
+  "trigger": "data",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "period_end": "2026-08-21T11:00:00+00:00",
+     "z": 0.897,
+     "ewma": 0.921,
+     "cusum": 7.597,
+     "slope_6h": 0.053,
+     "nowcast": 12.8,
+     "band": "moderate",
+     "typical_band": "good"
+    }
+   },
+   {
+    "layer": "D1",
+    "passed": false,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "label": null,
+     "fired": [],
+     "calm": false,
+     "near_misses": [],
+     "bars": {
+      "spike": 3.5,
+      "climb": 1.26,
+      "elevated": 8.0,
+      "floor": 4.0
+     },
+     "cusum": 3.472,
+     "k": 1.0
+    }
+   },
+   {
+    "layer": "D2",
+    "passed": false,
+    "reason_code": "EPISODE_CONTINUES",
+    "inputs": {},
+    "values": {
+     "state": "ACTIVE",
+     "calm_run": 0,
+     "candidate": null,
+     "started_at": "2026-08-20T15:20:00+00:00",
+     "hours": 22.0,
+     "ended_at": null,
+     "peak": {
+      "pm25": 19,
+      "at": "2026-08-20T21:00:00+00:00",
+      "band": "moderate"
+     }
+    }
+   }
+  ]
+ },
+ {
+  "id": "dec_5499",
+  "evaluated_at": "2026-08-21 14:20:00+00:00",
+  "period_end": "2026-08-21 12:00:00+00:00",
+  "user_id": "maya",
+  "outcome": "no_event",
+  "reason_code": "EPISODE_CONTINUES",
+  "reason": "The same bad period is continuing; nothing new to say.",
+  "trigger": "data",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "period_end": "2026-08-21T12:00:00+00:00",
+     "z": 1.663,
+     "ewma": 1.112,
+     "cusum": 8.61,
+     "slope_6h": 0.06,
+     "nowcast": 13.3,
+     "band": "moderate",
+     "typical_band": "good"
+    }
+   },
+   {
+    "layer": "D1",
+    "passed": false,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "label": null,
+     "fired": [],
+     "calm": false,
+     "near_misses": [
+      "climb"
+     ],
+     "bars": {
+      "spike": 3.5,
+      "climb": 1.26,
+      "elevated": 8.0,
+      "floor": 4.0
+     },
+     "cusum": 4.635,
+     "k": 1.0
+    }
+   },
+   {
+    "layer": "D2",
+    "passed": false,
+    "reason_code": "EPISODE_CONTINUES",
+    "inputs": {},
+    "values": {
+     "state": "ACTIVE",
+     "calm_run": 0,
+     "candidate": null,
+     "started_at": "2026-08-20T15:20:00+00:00",
+     "hours": 23.0,
+     "ended_at": null,
+     "peak": {
+      "pm25": 19,
+      "at": "2026-08-20T21:00:00+00:00",
+      "band": "moderate"
+     }
+    }
+   }
+  ]
+ },
+ {
+  "id": "dec_5506",
+  "evaluated_at": "2026-08-21 15:20:00+00:00",
+  "period_end": "2026-08-21 13:00:00+00:00",
+  "user_id": "maya",
+  "outcome": "no_event",
+  "reason_code": "EPISODE_CONTINUES",
+  "reason": "The same bad period is continuing; nothing new to say.",
+  "trigger": "data",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "period_end": "2026-08-21T13:00:00+00:00",
+     "z": 1.139,
+     "ewma": 1.12,
+     "cusum": 0.639,
+     "slope_6h": 0.026,
+     "nowcast": 13.9,
+     "band": "moderate",
+     "typical_band": "good"
+    }
+   },
+   {
+    "layer": "D1",
+    "passed": false,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "label": null,
+     "fired": [],
+     "calm": false,
+     "near_misses": [
+      "climb"
+     ],
+     "bars": {
+      "spike": 3.5,
+      "climb": 1.26,
+      "elevated": 8.0,
+      "floor": 4.0
+     },
+     "cusum": 5.274,
+     "k": 1.0
+    }
+   },
+   {
+    "layer": "D2",
+    "passed": false,
+    "reason_code": "EPISODE_CONTINUES",
+    "inputs": {},
+    "values": {
+     "state": "ACTIVE",
+     "calm_run": 0,
+     "candidate": null,
+     "started_at": "2026-08-20T15:20:00+00:00",
+     "hours": 24.0,
+     "ended_at": null,
+     "peak": {
+      "pm25": 19,
+      "at": "2026-08-20T21:00:00+00:00",
+      "band": "moderate"
+     }
+    }
+   }
+  ]
+ },
+ {
+  "id": "dec_5513",
+  "evaluated_at": "2026-08-21 16:20:00+00:00",
+  "period_end": "2026-08-21 14:00:00+00:00",
+  "user_id": "maya",
+  "outcome": "no_event",
+  "reason_code": "EPISODE_CONTINUES",
+  "reason": "The same bad period is continuing; nothing new to say.",
+  "trigger": "data",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "period_end": "2026-08-21T14:00:00+00:00",
+     "z": 1.067,
+     "ewma": 1.06,
+     "cusum": 0.994,
+     "slope_6h": 0.025,
+     "nowcast": 14.5,
+     "band": "moderate",
+     "typical_band": "good"
+    }
+   },
+   {
+    "layer": "D1",
+    "passed": false,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "label": null,
+     "fired": [],
+     "calm": false,
+     "near_misses": [
+      "climb"
+     ],
+     "bars": {
+      "spike": 3.5,
+      "climb": 1.26,
+      "elevated": 8.0,
+      "floor": 4.0
+     },
+     "cusum": 5.841,
+     "k": 1.0
+    }
+   },
+   {
+    "layer": "D2",
+    "passed": false,
+    "reason_code": "EPISODE_CONTINUES",
+    "inputs": {},
+    "values": {
+     "state": "ACTIVE",
+     "calm_run": 0,
+     "candidate": null,
+     "started_at": "2026-08-20T15:20:00+00:00",
+     "hours": 25.0,
+     "ended_at": null,
+     "peak": {
+      "pm25": 19,
+      "at": "2026-08-20T21:00:00+00:00",
+      "band": "moderate"
+     }
+    }
+   }
+  ]
+ },
+ {
+  "id": "dec_5520",
+  "evaluated_at": "2026-08-21 17:20:00+00:00",
+  "period_end": "2026-08-21 15:00:00+00:00",
+  "user_id": "maya",
+  "outcome": "no_event",
+  "reason_code": "EPISODE_CONTINUES",
+  "reason": "The same bad period is continuing; nothing new to say.",
+  "trigger": "data",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "period_end": "2026-08-21T15:00:00+00:00",
+     "z": 1.524,
+     "ewma": 1.188,
+     "cusum": 1.964,
+     "slope_6h": 0.061,
+     "nowcast": 17.6,
+     "band": "moderate",
+     "typical_band": "good"
+    }
+   },
+   {
+    "layer": "D1",
+    "passed": false,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "label": null,
+     "fired": [],
+     "calm": false,
+     "near_misses": [
+      "climb",
+      "elevated"
+     ],
+     "bars": {
+      "spike": 3.5,
+      "climb": 1.26,
+      "elevated": 8.0,
+      "floor": 4.0
+     },
+     "cusum": 6.865,
+     "k": 1.0
+    }
+   },
+   {
+    "layer": "D2",
+    "passed": false,
+    "reason_code": "EPISODE_CONTINUES",
+    "inputs": {},
+    "values": {
+     "state": "ACTIVE",
+     "calm_run": 0,
+     "candidate": null,
+     "started_at": "2026-08-20T15:20:00+00:00",
+     "hours": 26.0,
+     "ended_at": null,
+     "peak": {
+      "pm25": 19,
+      "at": "2026-08-20T21:00:00+00:00",
+      "band": "moderate"
+     }
+    }
+   }
+  ]
+ },
+ {
+  "id": "dec_5527",
+  "evaluated_at": "2026-08-21 18:20:00+00:00",
+  "period_end": "2026-08-21 16:00:00+00:00",
+  "user_id": "maya",
+  "outcome": "no_event",
+  "reason_code": "EPISODE_CONTINUES",
+  "reason": "The same bad period is continuing; nothing new to say.",
+  "trigger": "data",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "period_end": "2026-08-21T16:00:00+00:00",
+     "z": 0.942,
+     "ewma": 1.055,
+     "cusum": 2.123,
+     "slope_6h": 0.093,
+     "nowcast": 19.0,
+     "band": "moderate",
+     "typical_band": "good"
+    }
+   },
+   {
+    "layer": "D1",
+    "passed": false,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "label": null,
+     "fired": [],
+     "calm": false,
+     "near_misses": [
+      "climb",
+      "elevated"
+     ],
+     "bars": {
+      "spike": 3.5,
+      "climb": 1.26,
+      "elevated": 8.0,
+      "floor": 4.0
+     },
+     "cusum": 7.307,
+     "k": 1.0
+    }
+   },
+   {
+    "layer": "D2",
+    "passed": false,
+    "reason_code": "EPISODE_CONTINUES",
+    "inputs": {},
+    "values": {
+     "state": "ACTIVE",
+     "calm_run": 0,
+     "candidate": null,
+     "started_at": "2026-08-20T15:20:00+00:00",
+     "hours": 27.0,
+     "ended_at": null,
+     "peak": {
+      "pm25": 19,
+      "at": "2026-08-20T21:00:00+00:00",
+      "band": "moderate"
+     }
+    }
+   }
+  ]
+ }
+]

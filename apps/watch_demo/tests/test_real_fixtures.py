@@ -40,3 +40,22 @@ def test_beat_links_move_the_watch():
     check_in = next(b for b in smog.beats if b.title == "One check-in")
     sent = client.get("/", params={"scenario": smog.id, "t": check_in.at.isoformat()}).text
     assert 'class="card' in sent and "SENT_CHECK_IN" in sent
+
+
+def test_every_beat_is_a_real_decision():
+    """Beats are only allowed where the replay actually decided something (the exporter enforces it too)."""
+    import json
+    from datetime import datetime
+
+    for s in load_scenarios(ROOT / "scenarios.yaml"):
+        rows = json.loads((ROOT / "fixtures" / "decisions" / f"{s.user_id}__{s.replay_run}.json").read_text())
+        made = {datetime.fromisoformat(r["evaluated_at"].replace("Z", "+00:00")) for r in rows}
+        notices = json.loads((ROOT / "fixtures" / "feeds" / f"{s.user_id}__{s.replay_run}.json").read_text())
+        made |= {datetime.fromisoformat(str(n["delivered_at"]).replace("Z", "+00:00")) for n in notices}
+        for b in s.beats:
+            assert b.at in made, f"{s.id}: beat {b.title!r} at {b.at} has no decision"
+
+
+def test_groups_cover_the_plan():
+    groups = {s.group for s in load_scenarios(ROOT / "scenarios.yaml")}
+    assert {"speaks", "quiet", "bad-data", "per-person"} <= groups

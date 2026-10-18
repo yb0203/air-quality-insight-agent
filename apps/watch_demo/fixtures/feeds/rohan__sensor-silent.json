@@ -1,0 +1,13 @@
+[
+ {
+  "id": "ntf_166",
+  "created_at": "2026-09-22 01:30:00+00:00",
+  "delivered_at": "2026-09-22 01:30:00+00:00",
+  "kind": "released",
+  "event_kind": "elevated",
+  "band": "usg",
+  "body": "Overnight, Mumbai's air reached unhealthy for sensitive groups, and it's still unhealthy for sensitive groups. Best to keep windows closed for now.",
+  "next_action": "keep windows closed",
+  "decision_id": "dec_10881"
+ }
+]

@@ -1,0 +1,3796 @@
+[
+ {
+  "id": "dec_10866",
+  "evaluated_at": "2026-09-22 00:20:00+00:00",
+  "period_end": "2026-09-21 22:30:00+00:00",
+  "user_id": "rohan",
+  "outcome": "no_event",
+  "reason_code": "NO_TRIGGER",
+  "reason": "Nothing unusual.",
+  "trigger": "data",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "period_end": "2026-09-21T22:30:00+00:00",
+     "z": 1.428,
+     "ewma": 0.989,
+     "cusum": 2.974,
+     "slope_6h": 0.134,
+     "nowcast": 33.8,
+     "band": "moderate",
+     "typical_band": "moderate"
+    }
+   },
+   {
+    "layer": "D1",
+    "passed": false,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "label": null,
+     "fired": [],
+     "calm": false,
+     "near_misses": [
+      "climb"
+     ],
+     "bars": {
+      "spike": 2.625,
+      "climb": 0.9450000000000001,
+      "elevated": 6.0,
+      "floor": 3.0
+     },
+     "cusum": 4.601,
+     "k": 0.75
+    }
+   },
+   {
+    "layer": "D2",
+    "passed": false,
+    "reason_code": "NO_TRIGGER",
+    "inputs": {},
+    "values": {
+     "state": null,
+     "calm_run": 0,
+     "candidate": null
+    }
+   }
+  ]
+ },
+ {
+  "id": "dec_10875",
+  "evaluated_at": "2026-09-22 01:20:00+00:00",
+  "period_end": "2026-09-21 23:30:00+00:00",
+  "user_id": "rohan",
+  "outcome": "held",
+  "reason_code": "QUIET_HOURS_HELD",
+  "reason": "Held: quiet hours until 07:00.",
+  "trigger": "data",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "period_end": "2026-09-21T23:30:00+00:00",
+     "z": 2.054,
+     "ewma": 1.244,
+     "cusum": 4.22,
+     "slope_6h": 0.115,
+     "nowcast": 35.9,
+     "band": "usg",
+     "typical_band": "moderate"
+    }
+   },
+   {
+    "layer": "D1",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "label": "elevated",
+     "fired": [
+      "elevated"
+     ],
+     "calm": false,
+     "near_misses": [
+      "climb"
+     ],
+     "bars": {
+      "spike": 2.625,
+      "climb": 0.9450000000000001,
+      "elevated": 6.0,
+      "floor": 3.0
+     },
+     "cusum": 6.155,
+     "k": 0.75
+    }
+   },
+   {
+    "layer": "D2",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "state": "ACTIVE",
+     "calm_run": 0,
+     "candidate": "opened",
+     "started_at": "2026-09-22T01:20:00+00:00",
+     "hours": 0.0,
+     "ended_at": null,
+     "peak": {
+      "pm25": 36,
+      "at": "2026-09-21T23:30:00+00:00",
+      "band": "usg"
+     }
+    }
+   },
+   {
+    "layer": "D3",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "kind": "opened",
+     "band": "usg"
+    }
+   },
+   {
+    "layer": "D4",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "notices_in_episode": 0
+    }
+   },
+   {
+    "layer": "D5",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "candidates": 1,
+     "kept": "opened"
+    }
+   },
+   {
+    "layer": "D6",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "response": "notify"
+    }
+   },
+   {
+    "layer": "D7",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "sent_today": 0,
+     "max_per_day": 3
+    }
+   },
+   {
+    "layer": "D8",
+    "passed": false,
+    "reason_code": "QUIET_HOURS_HELD",
+    "inputs": {},
+    "values": {
+     "local_time": "06:50",
+     "quiet_hours": true,
+     "held_until": "2026-09-22T07:00:00+05:30"
+    }
+   }
+  ]
+ },
+ {
+  "id": "dec_10881",
+  "evaluated_at": "2026-09-22 01:30:00+00:00",
+  "period_end": "2026-09-21 23:30:00+00:00",
+  "user_id": "rohan",
+  "outcome": "sent",
+  "reason_code": "HELD_RELEASED",
+  "reason": "Sent the message held overnight.",
+  "trigger": "clock",
+  "trace": [
+   {
+    "layer": "D2",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "state": "ACTIVE",
+     "started_at": "2026-09-22T01:20:00+00:00",
+     "hours": 0.2,
+     "ended_at": null,
+     "peak": {
+      "pm25": 36,
+      "at": "2026-09-21T23:30:00+00:00",
+      "band": "usg"
+     }
+    }
+   },
+   {
+    "layer": "D8",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "held": 2,
+     "released": true,
+     "episode_open": true,
+     "band": "usg"
+    }
+   },
+   {
+    "layer": "D3",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "kind": "released",
+     "band": "usg"
+    }
+   },
+   {
+    "layer": "D4",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "notices_in_episode": 0
+    }
+   },
+   {
+    "layer": "D5",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "candidates": 1,
+     "kept": "released"
+    }
+   },
+   {
+    "layer": "D6",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "response": "notify"
+    }
+   },
+   {
+    "layer": "D7",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "sent_today": 0,
+     "max_per_day": 3
+    }
+   },
+   {
+    "layer": "A",
+    "passed": true,
+    "reason_code": "HELD_RELEASED",
+    "inputs": {},
+    "values": {
+     "compose": "released"
+    }
+   }
+  ]
+ },
+ {
+  "id": "dec_10883",
+  "evaluated_at": "2026-09-22 02:20:00+00:00",
+  "period_end": "2026-09-22 00:30:00+00:00",
+  "user_id": "rohan",
+  "outcome": "suppressed",
+  "reason_code": "DEDUP_SAME_BAND",
+  "reason": "Already told you about this level; nothing new to say.",
+  "trigger": "data",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "period_end": "2026-09-22T00:30:00+00:00",
+     "z": 2.298,
+     "ewma": 1.477,
+     "cusum": 5.624,
+     "slope_6h": 0.036,
+     "nowcast": 35.4,
+     "band": "moderate",
+     "typical_band": "moderate"
+    }
+   },
+   {
+    "layer": "D1",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "label": "climb",
+     "fired": [
+      "climb"
+     ],
+     "calm": false,
+     "near_misses": [
+      "spike"
+     ],
+     "bars": {
+      "spike": 2.625,
+      "climb": 0.9450000000000001,
+      "elevated": 6.0,
+      "floor": 3.0
+     },
+     "cusum": 1.798,
+     "k": 0.75
+    }
+   },
+   {
+    "layer": "D2",
+    "passed": false,
+    "reason_code": "EPISODE_CONTINUES",
+    "inputs": {},
+    "values": {
+     "state": "ACTIVE",
+     "calm_run": 0,
+     "candidate": null,
+     "started_at": "2026-09-22T01:20:00+00:00",
+     "hours": 1.0,
+     "ended_at": null,
+     "peak": {
+      "pm25": 36,
+      "at": "2026-09-21T23:30:00+00:00",
+      "band": "usg"
+     }
+    }
+   },
+   {
+    "layer": "D3",
+    "passed": false,
+    "reason_code": "DEDUP_SAME_BAND",
+    "inputs": {},
+    "values": {
+     "band": "moderate",
+     "last_told": "usg"
+    }
+   }
+  ]
+ },
+ {
+  "id": "dec_10890",
+  "evaluated_at": "2026-09-22 03:20:00+00:00",
+  "period_end": "2026-09-22 01:30:00+00:00",
+  "user_id": "rohan",
+  "outcome": "no_event",
+  "reason_code": "EPISODE_CONTINUES",
+  "reason": "The same bad period is continuing; nothing new to say.",
+  "trigger": "data",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "period_end": "2026-09-22T01:30:00+00:00",
+     "z": 1.221,
+     "ewma": 1.195,
+     "cusum": 5.365,
+     "slope_6h": 0.007,
+     "nowcast": 35.7,
+     "band": "usg",
+     "typical_band": "moderate"
+    }
+   },
+   {
+    "layer": "D1",
+    "passed": false,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "label": null,
+     "fired": [],
+     "calm": false,
+     "near_misses": [],
+     "bars": {
+      "spike": 2.625,
+      "climb": 0.9450000000000001,
+      "elevated": 6.0,
+      "floor": 3.0
+     },
+     "cusum": 2.52,
+     "k": 0.75
+    }
+   },
+   {
+    "layer": "D2",
+    "passed": false,
+    "reason_code": "EPISODE_CONTINUES",
+    "inputs": {},
+    "values": {
+     "state": "ACTIVE",
+     "calm_run": 0,
+     "candidate": null,
+     "started_at": "2026-09-22T01:20:00+00:00",
+     "hours": 2.0,
+     "ended_at": null,
+     "peak": {
+      "pm25": 36,
+      "at": "2026-09-21T23:30:00+00:00",
+      "band": "usg"
+     }
+    }
+   }
+  ]
+ },
+ {
+  "id": "dec_10897",
+  "evaluated_at": "2026-09-22 04:20:00+00:00",
+  "period_end": "2026-09-22 02:30:00+00:00",
+  "user_id": "rohan",
+  "outcome": "no_event",
+  "reason_code": "EPISODE_CONTINUES",
+  "reason": "The same bad period is continuing; nothing new to say.",
+  "trigger": "data",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "period_end": "2026-09-22T02:30:00+00:00",
+     "z": 1.039,
+     "ewma": 1.052,
+     "cusum": 5.448,
+     "slope_6h": 0.008,
+     "nowcast": 37.3,
+     "band": "usg",
+     "typical_band": "moderate"
+    }
+   },
+   {
+    "layer": "D1",
+    "passed": false,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "label": null,
+     "fired": [],
+     "calm": false,
+     "near_misses": [],
+     "bars": {
+      "spike": 2.625,
+      "climb": 0.9450000000000001,
+      "elevated": 6.0,
+      "floor": 3.0
+     },
+     "cusum": 3.059,
+     "k": 0.75
+    }
+   },
+   {
+    "layer": "D2",
+    "passed": false,
+    "reason_code": "EPISODE_CONTINUES",
+    "inputs": {},
+    "values": {
+     "state": "ACTIVE",
+     "calm_run": 0,
+     "candidate": null,
+     "started_at": "2026-09-22T01:20:00+00:00",
+     "hours": 3.0,
+     "ended_at": null,
+     "peak": {
+      "pm25": 37,
+      "at": "2026-09-22T02:30:00+00:00",
+      "band": "usg"
+     }
+    }
+   }
+  ]
+ },
+ {
+  "id": "dec_10904",
+  "evaluated_at": "2026-09-22 05:20:00+00:00",
+  "period_end": "2026-09-22 03:30:00+00:00",
+  "user_id": "rohan",
+  "outcome": "suppressed",
+  "reason_code": "DEDUP_SAME_BAND",
+  "reason": "Already told you about this level; nothing new to say.",
+  "trigger": "data",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "period_end": "2026-09-22T03:30:00+00:00",
+     "z": 1.325,
+     "ewma": 1.027,
+     "cusum": 5.764,
+     "slope_6h": 0.027,
+     "nowcast": 38.1,
+     "band": "usg",
+     "typical_band": "moderate"
+    }
+   },
+   {
+    "layer": "D1",
+    "passed": true,
+    "reason_code": null,
+    "inputs": {},
+    "values": {
+     "label": "climb",
+     "fired": [
+      "climb"
+     ],
+     "calm": false,
+     "near_misses": [],
+     "bars": {
+      "spike": 2.625,
+      "climb": 0.9450000000000001,
+      "elevated": 6.0,
+      "floor": 3.0
+     },
+     "cusum": 3.883,
+     "k": 0.75
+    }
+   },
+   {
+    "layer": "D2",
+    "passed": false,
+    "reason_code": "EPISODE_CONTINUES",
+    "inputs": {},
+    "values": {
+     "state": "ACTIVE",
+     "calm_run": 0,
+     "candidate": null,
+     "started_at": "2026-09-22T01:20:00+00:00",
+     "hours": 4.0,
+     "ended_at": null,
+     "peak": {
+      "pm25": 38,
+      "at": "2026-09-22T03:30:00+00:00",
+      "band": "usg"
+     }
+    }
+   },
+   {
+    "layer": "D3",
+    "passed": false,
+    "reason_code": "DEDUP_SAME_BAND",
+    "inputs": {},
+    "values": {
+     "band": "usg",
+     "last_told": "usg"
+    }
+   }
+  ]
+ },
+ {
+  "id": "dec_10922",
+  "evaluated_at": "2026-09-22 07:20:00+00:00",
+  "period_end": "2026-09-22 03:30:00+00:00",
+  "user_id": "rohan",
+  "outcome": "no_event",
+  "reason_code": "NO_DATA",
+  "reason": "No fresh reading from the station.",
+  "trigger": "clock",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": false,
+    "reason_code": "NO_DATA",
+    "inputs": {},
+    "values": {
+     "newest_reading_at": "2026-09-22T03:30:00+00:00",
+     "age_h": 3.83
+    }
+   }
+  ]
+ },
+ {
+  "id": "dec_10929",
+  "evaluated_at": "2026-09-22 08:20:00+00:00",
+  "period_end": "2026-09-22 03:30:00+00:00",
+  "user_id": "rohan",
+  "outcome": "no_event",
+  "reason_code": "NO_DATA",
+  "reason": "No fresh reading from the station.",
+  "trigger": "clock",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": false,
+    "reason_code": "NO_DATA",
+    "inputs": {},
+    "values": {
+     "newest_reading_at": "2026-09-22T03:30:00+00:00",
+     "age_h": 4.83
+    }
+   }
+  ]
+ },
+ {
+  "id": "dec_10936",
+  "evaluated_at": "2026-09-22 09:20:00+00:00",
+  "period_end": "2026-09-22 03:30:00+00:00",
+  "user_id": "rohan",
+  "outcome": "no_event",
+  "reason_code": "NO_DATA",
+  "reason": "No fresh reading from the station.",
+  "trigger": "clock",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": false,
+    "reason_code": "NO_DATA",
+    "inputs": {},
+    "values": {
+     "newest_reading_at": "2026-09-22T03:30:00+00:00",
+     "age_h": 5.83
+    }
+   }
+  ]
+ },
+ {
+  "id": "dec_10943",
+  "evaluated_at": "2026-09-22 10:20:00+00:00",
+  "period_end": "2026-09-22 03:30:00+00:00",
+  "user_id": "rohan",
+  "outcome": "no_event",
+  "reason_code": "NO_DATA",
+  "reason": "No fresh reading from the station.",
+  "trigger": "clock",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": false,
+    "reason_code": "NO_DATA",
+    "inputs": {},
+    "values": {
+     "newest_reading_at": "2026-09-22T03:30:00+00:00",
+     "age_h": 6.83
+    }
+   }
+  ]
+ },
+ {
+  "id": "dec_10950",
+  "evaluated_at": "2026-09-22 11:20:00+00:00",
+  "period_end": "2026-09-22 03:30:00+00:00",
+  "user_id": "rohan",
+  "outcome": "no_event",
+  "reason_code": "NO_DATA",
+  "reason": "No fresh reading from the station.",
+  "trigger": "clock",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": false,
+    "reason_code": "NO_DATA",
+    "inputs": {},
+    "values": {
+     "newest_reading_at": "2026-09-22T03:30:00+00:00",
+     "age_h": 7.83
+    }
+   }
+  ]
+ },
+ {
+  "id": "dec_10957",
+  "evaluated_at": "2026-09-22 12:20:00+00:00",
+  "period_end": "2026-09-22 03:30:00+00:00",
+  "user_id": "rohan",
+  "outcome": "no_event",
+  "reason_code": "NO_DATA",
+  "reason": "No fresh reading from the station.",
+  "trigger": "clock",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": false,
+    "reason_code": "NO_DATA",
+    "inputs": {},
+    "values": {
+     "newest_reading_at": "2026-09-22T03:30:00+00:00",
+     "age_h": 8.83
+    }
+   }
+  ]
+ },
+ {
+  "id": "dec_10964",
+  "evaluated_at": "2026-09-22 13:20:00+00:00",
+  "period_end": "2026-09-22 03:30:00+00:00",
+  "user_id": "rohan",
+  "outcome": "no_event",
+  "reason_code": "NO_DATA",
+  "reason": "No fresh reading from the station.",
+  "trigger": "clock",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": false,
+    "reason_code": "NO_DATA",
+    "inputs": {},
+    "values": {
+     "newest_reading_at": "2026-09-22T03:30:00+00:00",
+     "age_h": 9.83
+    }
+   }
+  ]
+ },
+ {
+  "id": "dec_10971",
+  "evaluated_at": "2026-09-22 14:20:00+00:00",
+  "period_end": "2026-09-22 03:30:00+00:00",
+  "user_id": "rohan",
+  "outcome": "no_event",
+  "reason_code": "NO_DATA",
+  "reason": "No fresh reading from the station.",
+  "trigger": "clock",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": false,
+    "reason_code": "NO_DATA",
+    "inputs": {},
+    "values": {
+     "newest_reading_at": "2026-09-22T03:30:00+00:00",
+     "age_h": 10.83
+    }
+   }
+  ]
+ },
+ {
+  "id": "dec_10978",
+  "evaluated_at": "2026-09-22 15:20:00+00:00",
+  "period_end": "2026-09-22 03:30:00+00:00",
+  "user_id": "rohan",
+  "outcome": "no_event",
+  "reason_code": "NO_DATA",
+  "reason": "No fresh reading from the station.",
+  "trigger": "clock",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": false,
+    "reason_code": "NO_DATA",
+    "inputs": {},
+    "values": {
+     "newest_reading_at": "2026-09-22T03:30:00+00:00",
+     "age_h": 11.83
+    }
+   }
+  ]
+ },
+ {
+  "id": "dec_10985",
+  "evaluated_at": "2026-09-22 16:20:00+00:00",
+  "period_end": "2026-09-22 03:30:00+00:00",
+  "user_id": "rohan",
+  "outcome": "no_event",
+  "reason_code": "NO_DATA",
+  "reason": "No fresh reading from the station.",
+  "trigger": "clock",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": false,
+    "reason_code": "NO_DATA",
+    "inputs": {},
+    "values": {
+     "newest_reading_at": "2026-09-22T03:30:00+00:00",
+     "age_h": 12.83
+    }
+   }
+  ]
+ },
+ {
+  "id": "dec_10992",
+  "evaluated_at": "2026-09-22 17:20:00+00:00",
+  "period_end": "2026-09-22 03:30:00+00:00",
+  "user_id": "rohan",
+  "outcome": "no_event",
+  "reason_code": "NO_DATA",
+  "reason": "No fresh reading from the station.",
+  "trigger": "clock",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": false,
+    "reason_code": "NO_DATA",
+    "inputs": {},
+    "values": {
+     "newest_reading_at": "2026-09-22T03:30:00+00:00",
+     "age_h": 13.83
+    }
+   }
+  ]
+ },
+ {
+  "id": "dec_10999",
+  "evaluated_at": "2026-09-22 18:20:00+00:00",
+  "period_end": "2026-09-22 03:30:00+00:00",
+  "user_id": "rohan",
+  "outcome": "no_event",
+  "reason_code": "NO_DATA",
+  "reason": "No fresh reading from the station.",
+  "trigger": "clock",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": false,
+    "reason_code": "NO_DATA",
+    "inputs": {},
+    "values": {
+     "newest_reading_at": "2026-09-22T03:30:00+00:00",
+     "age_h": 14.83
+    }
+   }
+  ]
+ },
+ {
+  "id": "dec_11006",
+  "evaluated_at": "2026-09-22 19:20:00+00:00",
+  "period_end": "2026-09-22 03:30:00+00:00",
+  "user_id": "rohan",
+  "outcome": "no_event",
+  "reason_code": "NO_DATA",
+  "reason": "No fresh reading from the station.",
+  "trigger": "clock",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": false,
+    "reason_code": "NO_DATA",
+    "inputs": {},
+    "values": {
+     "newest_reading_at": "2026-09-22T03:30:00+00:00",
+     "age_h": 15.83
+    }
+   }
+  ]
+ },
+ {
+  "id": "dec_11013",
+  "evaluated_at": "2026-09-22 20:20:00+00:00",
+  "period_end": "2026-09-22 03:30:00+00:00",
+  "user_id": "rohan",
+  "outcome": "no_event",
+  "reason_code": "NO_DATA",
+  "reason": "No fresh reading from the station.",
+  "trigger": "clock",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": false,
+    "reason_code": "NO_DATA",
+    "inputs": {},
+    "values": {
+     "newest_reading_at": "2026-09-22T03:30:00+00:00",
+     "age_h": 16.83
+    }
+   }
+  ]
+ },
+ {
+  "id": "dec_11020",
+  "evaluated_at": "2026-09-22 21:20:00+00:00",
+  "period_end": "2026-09-22 03:30:00+00:00",
+  "user_id": "rohan",
+  "outcome": "no_event",
+  "reason_code": "NO_DATA",
+  "reason": "No fresh reading from the station.",
+  "trigger": "clock",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": false,
+    "reason_code": "NO_DATA",
+    "inputs": {},
+    "values": {
+     "newest_reading_at": "2026-09-22T03:30:00+00:00",
+     "age_h": 17.83
+    }
+   }
+  ]
+ },
+ {
+  "id": "dec_11027",
+  "evaluated_at": "2026-09-22 22:20:00+00:00",
+  "period_end": "2026-09-22 03:30:00+00:00",
+  "user_id": "rohan",
+  "outcome": "no_event",
+  "reason_code": "NO_DATA",
+  "reason": "No fresh reading from the station.",
+  "trigger": "clock",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": false,
+    "reason_code": "NO_DATA",
+    "inputs": {},
+    "values": {
+     "newest_reading_at": "2026-09-22T03:30:00+00:00",
+     "age_h": 18.83
+    }
+   }
+  ]
+ },
+ {
+  "id": "dec_11034",
+  "evaluated_at": "2026-09-22 23:20:00+00:00",
+  "period_end": "2026-09-22 03:30:00+00:00",
+  "user_id": "rohan",
+  "outcome": "no_event",
+  "reason_code": "NO_DATA",
+  "reason": "No fresh reading from the station.",
+  "trigger": "clock",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": false,
+    "reason_code": "NO_DATA",
+    "inputs": {},
+    "values": {
+     "newest_reading_at": "2026-09-22T03:30:00+00:00",
+     "age_h": 19.83
+    }
+   }
+  ]
+ },
+ {
+  "id": "dec_11041",
+  "evaluated_at": "2026-09-23 00:20:00+00:00",
+  "period_end": "2026-09-22 03:30:00+00:00",
+  "user_id": "rohan",
+  "outcome": "no_event",
+  "reason_code": "NO_DATA",
+  "reason": "No fresh reading from the station.",
+  "trigger": "clock",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": false,
+    "reason_code": "NO_DATA",
+    "inputs": {},
+    "values": {
+     "newest_reading_at": "2026-09-22T03:30:00+00:00",
+     "age_h": 20.83
+    }
+   }
+  ]
+ },
+ {
+  "id": "dec_11050",
+  "evaluated_at": "2026-09-23 01:20:00+00:00",
+  "period_end": "2026-09-22 03:30:00+00:00",
+  "user_id": "rohan",
+  "outcome": "no_event",
+  "reason_code": "NO_DATA",
+  "reason": "No fresh reading from the station.",
+  "trigger": "clock",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": false,
+    "reason_code": "NO_DATA",
+    "inputs": {},
+    "values": {
+     "newest_reading_at": "2026-09-22T03:30:00+00:00",
+     "age_h": 21.83
+    }
+   }
+  ]
+ },
+ {
+  "id": "dec_11057",
+  "evaluated_at": "2026-09-23 02:20:00+00:00",
+  "period_end": "2026-09-22 03:30:00+00:00",
+  "user_id": "rohan",
+  "outcome": "no_event",
+  "reason_code": "NO_DATA",
+  "reason": "No fresh reading from the station.",
+  "trigger": "clock",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": false,
+    "reason_code": "NO_DATA",
+    "inputs": {},
+    "values": {
+     "newest_reading_at": "2026-09-22T03:30:00+00:00",
+     "age_h": 22.83
+    }
+   }
+  ]
+ },
+ {
+  "id": "dec_11064",
+  "evaluated_at": "2026-09-23 03:20:00+00:00",
+  "period_end": "2026-09-22 03:30:00+00:00",
+  "user_id": "rohan",
+  "outcome": "no_event",
+  "reason_code": "NO_DATA",
+  "reason": "No fresh reading from the station.",
+  "trigger": "clock",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": false,
+    "reason_code": "NO_DATA",
+    "inputs": {},
+    "values": {
+     "newest_reading_at": "2026-09-22T03:30:00+00:00",
+     "age_h": 23.83
+    }
+   }
+  ]
+ },
+ {
+  "id": "dec_11071",
+  "evaluated_at": "2026-09-23 04:20:00+00:00",
+  "period_end": "2026-09-22 03:30:00+00:00",
+  "user_id": "rohan",
+  "outcome": "no_event",
+  "reason_code": "NO_DATA_TIMEOUT",
+  "reason": "The station went quiet for 24 hours, so the episode was closed without a message.",
+  "trigger": "clock",
+  "trace": [
+   {
+    "layer": "D2",
+    "passed": false,
+    "reason_code": "NO_DATA_TIMEOUT",
+    "inputs": {},
+    "values": {
+     "newest_reading_at": "2026-09-22T03:30:00+00:00"
+    }
+   }
+  ]
+ },
+ {
+  "id": "dec_11078",
+  "evaluated_at": "2026-09-23 05:20:00+00:00",
+  "period_end": "2026-09-22 03:30:00+00:00",
+  "user_id": "rohan",
+  "outcome": "no_event",
+  "reason_code": "NO_DATA",
+  "reason": "No fresh reading from the station.",
+  "trigger": "clock",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": false,
+    "reason_code": "NO_DATA",
+    "inputs": {},
+    "values": {
+     "newest_reading_at": "2026-09-22T03:30:00+00:00",
+     "age_h": 25.83
+    }
+   }
+  ]
+ },
+ {
+  "id": "dec_11085",
+  "evaluated_at": "2026-09-23 06:20:00+00:00",
+  "period_end": "2026-09-22 03:30:00+00:00",
+  "user_id": "rohan",
+  "outcome": "no_event",
+  "reason_code": "NO_DATA",
+  "reason": "No fresh reading from the station.",
+  "trigger": "clock",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": false,
+    "reason_code": "NO_DATA",
+    "inputs": {},
+    "values": {
+     "newest_reading_at": "2026-09-22T03:30:00+00:00",
+     "age_h": 26.83
+    }
+   }
+  ]
+ },
+ {
+  "id": "dec_11092",
+  "evaluated_at": "2026-09-23 07:20:00+00:00",
+  "period_end": "2026-09-22 03:30:00+00:00",
+  "user_id": "rohan",
+  "outcome": "no_event",
+  "reason_code": "NO_DATA",
+  "reason": "No fresh reading from the station.",
+  "trigger": "clock",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": false,
+    "reason_code": "NO_DATA",
+    "inputs": {},
+    "values": {
+     "newest_reading_at": "2026-09-22T03:30:00+00:00",
+     "age_h": 27.83
+    }
+   }
+  ]
+ },
+ {
+  "id": "dec_11099",
+  "evaluated_at": "2026-09-23 08:20:00+00:00",
+  "period_end": "2026-09-22 03:30:00+00:00",
+  "user_id": "rohan",
+  "outcome": "no_event",
+  "reason_code": "NO_DATA",
+  "reason": "No fresh reading from the station.",
+  "trigger": "clock",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": false,
+    "reason_code": "NO_DATA",
+    "inputs": {},
+    "values": {
+     "newest_reading_at": "2026-09-22T03:30:00+00:00",
+     "age_h": 28.83
+    }
+   }
+  ]
+ },
+ {
+  "id": "dec_11106",
+  "evaluated_at": "2026-09-23 09:20:00+00:00",
+  "period_end": "2026-09-22 03:30:00+00:00",
+  "user_id": "rohan",
+  "outcome": "no_event",
+  "reason_code": "NO_DATA",
+  "reason": "No fresh reading from the station.",
+  "trigger": "clock",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": false,
+    "reason_code": "NO_DATA",
+    "inputs": {},
+    "values": {
+     "newest_reading_at": "2026-09-22T03:30:00+00:00",
+     "age_h": 29.83
+    }
+   }
+  ]
+ },
+ {
+  "id": "dec_11113",
+  "evaluated_at": "2026-09-23 10:20:00+00:00",
+  "period_end": "2026-09-22 03:30:00+00:00",
+  "user_id": "rohan",
+  "outcome": "no_event",
+  "reason_code": "NO_DATA",
+  "reason": "No fresh reading from the station.",
+  "trigger": "clock",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": false,
+    "reason_code": "NO_DATA",
+    "inputs": {},
+    "values": {
+     "newest_reading_at": "2026-09-22T03:30:00+00:00",
+     "age_h": 30.83
+    }
+   }
+  ]
+ },
+ {
+  "id": "dec_11120",
+  "evaluated_at": "2026-09-23 11:20:00+00:00",
+  "period_end": "2026-09-22 03:30:00+00:00",
+  "user_id": "rohan",
+  "outcome": "no_event",
+  "reason_code": "NO_DATA",
+  "reason": "No fresh reading from the station.",
+  "trigger": "clock",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": false,
+    "reason_code": "NO_DATA",
+    "inputs": {},
+    "values": {
+     "newest_reading_at": "2026-09-22T03:30:00+00:00",
+     "age_h": 31.83
+    }
+   }
+  ]
+ },
+ {
+  "id": "dec_11127",
+  "evaluated_at": "2026-09-23 12:20:00+00:00",
+  "period_end": "2026-09-22 03:30:00+00:00",
+  "user_id": "rohan",
+  "outcome": "no_event",
+  "reason_code": "NO_DATA",
+  "reason": "No fresh reading from the station.",
+  "trigger": "clock",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": false,
+    "reason_code": "NO_DATA",
+    "inputs": {},
+    "values": {
+     "newest_reading_at": "2026-09-22T03:30:00+00:00",
+     "age_h": 32.83
+    }
+   }
+  ]
+ },
+ {
+  "id": "dec_11134",
+  "evaluated_at": "2026-09-23 13:20:00+00:00",
+  "period_end": "2026-09-22 03:30:00+00:00",
+  "user_id": "rohan",
+  "outcome": "no_event",
+  "reason_code": "NO_DATA",
+  "reason": "No fresh reading from the station.",
+  "trigger": "clock",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": false,
+    "reason_code": "NO_DATA",
+    "inputs": {},
+    "values": {
+     "newest_reading_at": "2026-09-22T03:30:00+00:00",
+     "age_h": 33.83
+    }
+   }
+  ]
+ },
+ {
+  "id": "dec_11141",
+  "evaluated_at": "2026-09-23 14:20:00+00:00",
+  "period_end": "2026-09-22 03:30:00+00:00",
+  "user_id": "rohan",
+  "outcome": "no_event",
+  "reason_code": "NO_DATA",
+  "reason": "No fresh reading from the station.",
+  "trigger": "clock",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": false,
+    "reason_code": "NO_DATA",
+    "inputs": {},
+    "values": {
+     "newest_reading_at": "2026-09-22T03:30:00+00:00",
+     "age_h": 34.83
+    }
+   }
+  ]
+ },
+ {
+  "id": "dec_11148",
+  "evaluated_at": "2026-09-23 15:20:00+00:00",
+  "period_end": "2026-09-22 03:30:00+00:00",
+  "user_id": "rohan",
+  "outcome": "no_event",
+  "reason_code": "NO_DATA",
+  "reason": "No fresh reading from the station.",
+  "trigger": "clock",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": false,
+    "reason_code": "NO_DATA",
+    "inputs": {},
+    "values": {
+     "newest_reading_at": "2026-09-22T03:30:00+00:00",
+     "age_h": 35.83
+    }
+   }
+  ]
+ },
+ {
+  "id": "dec_11155",
+  "evaluated_at": "2026-09-23 16:20:00+00:00",
+  "period_end": "2026-09-22 03:30:00+00:00",
+  "user_id": "rohan",
+  "outcome": "no_event",
+  "reason_code": "NO_DATA",
+  "reason": "No fresh reading from the station.",
+  "trigger": "clock",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": false,
+    "reason_code": "NO_DATA",
+    "inputs": {},
+    "values": {
+     "newest_reading_at": "2026-09-22T03:30:00+00:00",
+     "age_h": 36.83
+    }
+   }
+  ]
+ },
+ {
+  "id": "dec_11162",
+  "evaluated_at": "2026-09-23 17:20:00+00:00",
+  "period_end": "2026-09-22 03:30:00+00:00",
+  "user_id": "rohan",
+  "outcome": "no_event",
+  "reason_code": "NO_DATA",
+  "reason": "No fresh reading from the station.",
+  "trigger": "clock",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": false,
+    "reason_code": "NO_DATA",
+    "inputs": {},
+    "values": {
+     "newest_reading_at": "2026-09-22T03:30:00+00:00",
+     "age_h": 37.83
+    }
+   }
+  ]
+ },
+ {
+  "id": "dec_11169",
+  "evaluated_at": "2026-09-23 18:20:00+00:00",
+  "period_end": "2026-09-22 03:30:00+00:00",
+  "user_id": "rohan",
+  "outcome": "no_event",
+  "reason_code": "NO_DATA",
+  "reason": "No fresh reading from the station.",
+  "trigger": "clock",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": false,
+    "reason_code": "NO_DATA",
+    "inputs": {},
+    "values": {
+     "newest_reading_at": "2026-09-22T03:30:00+00:00",
+     "age_h": 38.83
+    }
+   }
+  ]
+ },
+ {
+  "id": "dec_11176",
+  "evaluated_at": "2026-09-23 19:20:00+00:00",
+  "period_end": "2026-09-22 03:30:00+00:00",
+  "user_id": "rohan",
+  "outcome": "no_event",
+  "reason_code": "NO_DATA",
+  "reason": "No fresh reading from the station.",
+  "trigger": "clock",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": false,
+    "reason_code": "NO_DATA",
+    "inputs": {},
+    "values": {
+     "newest_reading_at": "2026-09-22T03:30:00+00:00",
+     "age_h": 39.83
+    }
+   }
+  ]
+ },
+ {
+  "id": "dec_11183",
+  "evaluated_at": "2026-09-23 20:20:00+00:00",
+  "period_end": "2026-09-22 03:30:00+00:00",
+  "user_id": "rohan",
+  "outcome": "no_event",
+  "reason_code": "NO_DATA",
+  "reason": "No fresh reading from the station.",
+  "trigger": "clock",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": false,
+    "reason_code": "NO_DATA",
+    "inputs": {},
+    "values": {
+     "newest_reading_at": "2026-09-22T03:30:00+00:00",
+     "age_h": 40.83
+    }
+   }
+  ]
+ },
+ {
+  "id": "dec_11190",
+  "evaluated_at": "2026-09-23 21:20:00+00:00",
+  "period_end": "2026-09-22 03:30:00+00:00",
+  "user_id": "rohan",
+  "outcome": "no_event",
+  "reason_code": "NO_DATA",
+  "reason": "No fresh reading from the station.",
+  "trigger": "clock",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": false,
+    "reason_code": "NO_DATA",
+    "inputs": {},
+    "values": {
+     "newest_reading_at": "2026-09-22T03:30:00+00:00",
+     "age_h": 41.83
+    }
+   }
+  ]
+ },
+ {
+  "id": "dec_11197",
+  "evaluated_at": "2026-09-23 22:20:00+00:00",
+  "period_end": "2026-09-22 03:30:00+00:00",
+  "user_id": "rohan",
+  "outcome": "no_event",
+  "reason_code": "NO_DATA",
+  "reason": "No fresh reading from the station.",
+  "trigger": "clock",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": false,
+    "reason_code": "NO_DATA",
+    "inputs": {},
+    "values": {
+     "newest_reading_at": "2026-09-22T03:30:00+00:00",
+     "age_h": 42.83
+    }
+   }
+  ]
+ },
+ {
+  "id": "dec_11204",
+  "evaluated_at": "2026-09-23 23:20:00+00:00",
+  "period_end": "2026-09-22 03:30:00+00:00",
+  "user_id": "rohan",
+  "outcome": "no_event",
+  "reason_code": "NO_DATA",
+  "reason": "No fresh reading from the station.",
+  "trigger": "clock",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": false,
+    "reason_code": "NO_DATA",
+    "inputs": {},
+    "values": {
+     "newest_reading_at": "2026-09-22T03:30:00+00:00",
+     "age_h": 43.83
+    }
+   }
+  ]
+ },
+ {
+  "id": "dec_11211",
+  "evaluated_at": "2026-09-24 00:20:00+00:00",
+  "period_end": "2026-09-22 03:30:00+00:00",
+  "user_id": "rohan",
+  "outcome": "no_event",
+  "reason_code": "NO_DATA",
+  "reason": "No fresh reading from the station.",
+  "trigger": "clock",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": false,
+    "reason_code": "NO_DATA",
+    "inputs": {},
+    "values": {
+     "newest_reading_at": "2026-09-22T03:30:00+00:00",
+     "age_h": 44.83
+    }
+   }
+  ]
+ },
+ {
+  "id": "dec_11220",
+  "evaluated_at": "2026-09-24 01:20:00+00:00",
+  "period_end": "2026-09-22 03:30:00+00:00",
+  "user_id": "rohan",
+  "outcome": "no_event",
+  "reason_code": "NO_DATA",
+  "reason": "No fresh reading from the station.",
+  "trigger": "clock",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": false,
+    "reason_code": "NO_DATA",
+    "inputs": {},
+    "values": {
+     "newest_reading_at": "2026-09-22T03:30:00+00:00",
+     "age_h": 45.83
+    }
+   }
+  ]
+ },
+ {
+  "id": "dec_11227",
+  "evaluated_at": "2026-09-24 02:20:00+00:00",
+  "period_end": "2026-09-22 03:30:00+00:00",
+  "user_id": "rohan",
+  "outcome": "no_event",
+  "reason_code": "NO_DATA",
+  "reason": "No fresh reading from the station.",
+  "trigger": "clock",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": false,
+    "reason_code": "NO_DATA",
+    "inputs": {},
+    "values": {
+     "newest_reading_at": "2026-09-22T03:30:00+00:00",
+     "age_h": 46.83
+    }
+   }
+  ]
+ },
+ {
+  "id": "dec_11234",
+  "evaluated_at": "2026-09-24 03:20:00+00:00",
+  "period_end": "2026-09-22 03:30:00+00:00",
+  "user_id": "rohan",
+  "outcome": "no_event",
+  "reason_code": "NO_DATA",
+  "reason": "No fresh reading from the station.",
+  "trigger": "clock",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": false,
+    "reason_code": "NO_DATA",
+    "inputs": {},
+    "values": {
+     "newest_reading_at": "2026-09-22T03:30:00+00:00",
+     "age_h": 47.83
+    }
+   }
+  ]
+ },
+ {
+  "id": "dec_11241",
+  "evaluated_at": "2026-09-24 04:20:00+00:00",
+  "period_end": "2026-09-22 03:30:00+00:00",
+  "user_id": "rohan",
+  "outcome": "no_event",
+  "reason_code": "NO_DATA",
+  "reason": "No fresh reading from the station.",
+  "trigger": "clock",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": false,
+    "reason_code": "NO_DATA",
+    "inputs": {},
+    "values": {
+     "newest_reading_at": "2026-09-22T03:30:00+00:00",
+     "age_h": 48.83
+    }
+   }
+  ]
+ },
+ {
+  "id": "dec_11248",
+  "evaluated_at": "2026-09-24 05:20:00+00:00",
+  "period_end": "2026-09-22 03:30:00+00:00",
+  "user_id": "rohan",
+  "outcome": "no_event",
+  "reason_code": "NO_DATA",
+  "reason": "No fresh reading from the station.",
+  "trigger": "clock",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": false,
+    "reason_code": "NO_DATA",
+    "inputs": {},
+    "values": {
+     "newest_reading_at": "2026-09-22T03:30:00+00:00",
+     "age_h": 49.83
+    }
+   }
+  ]
+ },
+ {
+  "id": "dec_11255",
+  "evaluated_at": "2026-09-24 06:20:00+00:00",
+  "period_end": "2026-09-22 03:30:00+00:00",
+  "user_id": "rohan",
+  "outcome": "no_event",
+  "reason_code": "NO_DATA",
+  "reason": "No fresh reading from the station.",
+  "trigger": "clock",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": false,
+    "reason_code": "NO_DATA",
+    "inputs": {},
+    "values": {
+     "newest_reading_at": "2026-09-22T03:30:00+00:00",
+     "age_h": 50.83
+    }
+   }
+  ]
+ },
+ {
+  "id": "dec_11262",
+  "evaluated_at": "2026-09-24 07:20:00+00:00",
+  "period_end": "2026-09-22 03:30:00+00:00",
+  "user_id": "rohan",
+  "outcome": "no_event",
+  "reason_code": "NO_DATA",
+  "reason": "No fresh reading from the station.",
+  "trigger": "clock",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": false,
+    "reason_code": "NO_DATA",
+    "inputs": {},
+    "values": {
+     "newest_reading_at": "2026-09-22T03:30:00+00:00",
+     "age_h": 51.83
+    }
+   }
+  ]
+ },
+ {
+  "id": "dec_11269",
+  "evaluated_at": "2026-09-24 08:20:00+00:00",
+  "period_end": "2026-09-22 03:30:00+00:00",
+  "user_id": "rohan",
+  "outcome": "no_event",
+  "reason_code": "NO_DATA",
+  "reason": "No fresh reading from the station.",
+  "trigger": "clock",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": false,
+    "reason_code": "NO_DATA",
+    "inputs": {},
+    "values": {
+     "newest_reading_at": "2026-09-22T03:30:00+00:00",
+     "age_h": 52.83
+    }
+   }
+  ]
+ },
+ {
+  "id": "dec_11276",
+  "evaluated_at": "2026-09-24 09:20:00+00:00",
+  "period_end": "2026-09-22 03:30:00+00:00",
+  "user_id": "rohan",
+  "outcome": "no_event",
+  "reason_code": "NO_DATA",
+  "reason": "No fresh reading from the station.",
+  "trigger": "clock",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": false,
+    "reason_code": "NO_DATA",
+    "inputs": {},
+    "values": {
+     "newest_reading_at": "2026-09-22T03:30:00+00:00",
+     "age_h": 53.83
+    }
+   }
+  ]
+ },
+ {
+  "id": "dec_11283",
+  "evaluated_at": "2026-09-24 10:20:00+00:00",
+  "period_end": "2026-09-22 03:30:00+00:00",
+  "user_id": "rohan",
+  "outcome": "no_event",
+  "reason_code": "NO_DATA",
+  "reason": "No fresh reading from the station.",
+  "trigger": "clock",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": false,
+    "reason_code": "NO_DATA",
+    "inputs": {},
+    "values": {
+     "newest_reading_at": "2026-09-22T03:30:00+00:00",
+     "age_h": 54.83
+    }
+   }
+  ]
+ },
+ {
+  "id": "dec_11290",
+  "evaluated_at": "2026-09-24 11:20:00+00:00",
+  "period_end": "2026-09-22 03:30:00+00:00",
+  "user_id": "rohan",
+  "outcome": "no_event",
+  "reason_code": "NO_DATA",
+  "reason": "No fresh reading from the station.",
+  "trigger": "clock",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": false,
+    "reason_code": "NO_DATA",
+    "inputs": {},
+    "values": {
+     "newest_reading_at": "2026-09-22T03:30:00+00:00",
+     "age_h": 55.83
+    }
+   }
+  ]
+ },
+ {
+  "id": "dec_11297",
+  "evaluated_at": "2026-09-24 12:20:00+00:00",
+  "period_end": "2026-09-22 03:30:00+00:00",
+  "user_id": "rohan",
+  "outcome": "no_event",
+  "reason_code": "NO_DATA",
+  "reason": "No fresh reading from the station.",
+  "trigger": "clock",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": false,
+    "reason_code": "NO_DATA",
+    "inputs": {},
+    "values": {
+     "newest_reading_at": "2026-09-22T03:30:00+00:00",
+     "age_h": 56.83
+    }
+   }
+  ]
+ },
+ {
+  "id": "dec_11304",
+  "evaluated_at": "2026-09-24 13:20:00+00:00",
+  "period_end": "2026-09-22 03:30:00+00:00",
+  "user_id": "rohan",
+  "outcome": "no_event",
+  "reason_code": "NO_DATA",
+  "reason": "No fresh reading from the station.",
+  "trigger": "clock",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": false,
+    "reason_code": "NO_DATA",
+    "inputs": {},
+    "values": {
+     "newest_reading_at": "2026-09-22T03:30:00+00:00",
+     "age_h": 57.83
+    }
+   }
+  ]
+ },
+ {
+  "id": "dec_11311",
+  "evaluated_at": "2026-09-24 14:20:00+00:00",
+  "period_end": "2026-09-22 03:30:00+00:00",
+  "user_id": "rohan",
+  "outcome": "no_event",
+  "reason_code": "NO_DATA",
+  "reason": "No fresh reading from the station.",
+  "trigger": "clock",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": false,
+    "reason_code": "NO_DATA",
+    "inputs": {},
+    "values": {
+     "newest_reading_at": "2026-09-22T03:30:00+00:00",
+     "age_h": 58.83
+    }
+   }
+  ]
+ },
+ {
+  "id": "dec_11318",
+  "evaluated_at": "2026-09-24 15:20:00+00:00",
+  "period_end": "2026-09-22 03:30:00+00:00",
+  "user_id": "rohan",
+  "outcome": "no_event",
+  "reason_code": "NO_DATA",
+  "reason": "No fresh reading from the station.",
+  "trigger": "clock",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": false,
+    "reason_code": "NO_DATA",
+    "inputs": {},
+    "values": {
+     "newest_reading_at": "2026-09-22T03:30:00+00:00",
+     "age_h": 59.83
+    }
+   }
+  ]
+ },
+ {
+  "id": "dec_11325",
+  "evaluated_at": "2026-09-24 16:20:00+00:00",
+  "period_end": "2026-09-22 03:30:00+00:00",
+  "user_id": "rohan",
+  "outcome": "no_event",
+  "reason_code": "NO_DATA",
+  "reason": "No fresh reading from the station.",
+  "trigger": "clock",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": false,
+    "reason_code": "NO_DATA",
+    "inputs": {},
+    "values": {
+     "newest_reading_at": "2026-09-22T03:30:00+00:00",
+     "age_h": 60.83
+    }
+   }
+  ]
+ },
+ {
+  "id": "dec_11332",
+  "evaluated_at": "2026-09-24 17:20:00+00:00",
+  "period_end": "2026-09-22 03:30:00+00:00",
+  "user_id": "rohan",
+  "outcome": "no_event",
+  "reason_code": "NO_DATA",
+  "reason": "No fresh reading from the station.",
+  "trigger": "clock",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": false,
+    "reason_code": "NO_DATA",
+    "inputs": {},
+    "values": {
+     "newest_reading_at": "2026-09-22T03:30:00+00:00",
+     "age_h": 61.83
+    }
+   }
+  ]
+ },
+ {
+  "id": "dec_11339",
+  "evaluated_at": "2026-09-24 18:20:00+00:00",
+  "period_end": "2026-09-22 03:30:00+00:00",
+  "user_id": "rohan",
+  "outcome": "no_event",
+  "reason_code": "NO_DATA",
+  "reason": "No fresh reading from the station.",
+  "trigger": "clock",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": false,
+    "reason_code": "NO_DATA",
+    "inputs": {},
+    "values": {
+     "newest_reading_at": "2026-09-22T03:30:00+00:00",
+     "age_h": 62.83
+    }
+   }
+  ]
+ },
+ {
+  "id": "dec_11346",
+  "evaluated_at": "2026-09-24 19:20:00+00:00",
+  "period_end": "2026-09-22 03:30:00+00:00",
+  "user_id": "rohan",
+  "outcome": "no_event",
+  "reason_code": "NO_DATA",
+  "reason": "No fresh reading from the station.",
+  "trigger": "clock",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": false,
+    "reason_code": "NO_DATA",
+    "inputs": {},
+    "values": {
+     "newest_reading_at": "2026-09-22T03:30:00+00:00",
+     "age_h": 63.83
+    }
+   }
+  ]
+ },
+ {
+  "id": "dec_11353",
+  "evaluated_at": "2026-09-24 20:20:00+00:00",
+  "period_end": "2026-09-22 03:30:00+00:00",
+  "user_id": "rohan",
+  "outcome": "no_event",
+  "reason_code": "NO_DATA",
+  "reason": "No fresh reading from the station.",
+  "trigger": "clock",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": false,
+    "reason_code": "NO_DATA",
+    "inputs": {},
+    "values": {
+     "newest_reading_at": "2026-09-22T03:30:00+00:00",
+     "age_h": 64.83
+    }
+   }
+  ]
+ },
+ {
+  "id": "dec_11360",
+  "evaluated_at": "2026-09-24 21:20:00+00:00",
+  "period_end": "2026-09-22 03:30:00+00:00",
+  "user_id": "rohan",
+  "outcome": "no_event",
+  "reason_code": "NO_DATA",
+  "reason": "No fresh reading from the station.",
+  "trigger": "clock",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": false,
+    "reason_code": "NO_DATA",
+    "inputs": {},
+    "values": {
+     "newest_reading_at": "2026-09-22T03:30:00+00:00",
+     "age_h": 65.83
+    }
+   }
+  ]
+ },
+ {
+  "id": "dec_11367",
+  "evaluated_at": "2026-09-24 22:20:00+00:00",
+  "period_end": "2026-09-22 03:30:00+00:00",
+  "user_id": "rohan",
+  "outcome": "no_event",
+  "reason_code": "NO_DATA",
+  "reason": "No fresh reading from the station.",
+  "trigger": "clock",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": false,
+    "reason_code": "NO_DATA",
+    "inputs": {},
+    "values": {
+     "newest_reading_at": "2026-09-22T03:30:00+00:00",
+     "age_h": 66.83
+    }
+   }
+  ]
+ },
+ {
+  "id": "dec_11374",
+  "evaluated_at": "2026-09-24 23:20:00+00:00",
+  "period_end": "2026-09-22 03:30:00+00:00",
+  "user_id": "rohan",
+  "outcome": "no_event",
+  "reason_code": "NO_DATA",
+  "reason": "No fresh reading from the station.",
+  "trigger": "clock",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": false,
+    "reason_code": "NO_DATA",
+    "inputs": {},
+    "values": {
+     "newest_reading_at": "2026-09-22T03:30:00+00:00",
+     "age_h": 67.83
+    }
+   }
+  ]
+ },
+ {
+  "id": "dec_11381",
+  "evaluated_at": "2026-09-25 00:20:00+00:00",
+  "period_end": "2026-09-22 03:30:00+00:00",
+  "user_id": "rohan",
+  "outcome": "no_event",
+  "reason_code": "NO_DATA",
+  "reason": "No fresh reading from the station.",
+  "trigger": "clock",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": false,
+    "reason_code": "NO_DATA",
+    "inputs": {},
+    "values": {
+     "newest_reading_at": "2026-09-22T03:30:00+00:00",
+     "age_h": 68.83
+    }
+   }
+  ]
+ },
+ {
+  "id": "dec_11390",
+  "evaluated_at": "2026-09-25 01:20:00+00:00",
+  "period_end": "2026-09-22 03:30:00+00:00",
+  "user_id": "rohan",
+  "outcome": "no_event",
+  "reason_code": "NO_DATA",
+  "reason": "No fresh reading from the station.",
+  "trigger": "clock",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": false,
+    "reason_code": "NO_DATA",
+    "inputs": {},
+    "values": {
+     "newest_reading_at": "2026-09-22T03:30:00+00:00",
+     "age_h": 69.83
+    }
+   }
+  ]
+ },
+ {
+  "id": "dec_11397",
+  "evaluated_at": "2026-09-25 02:20:00+00:00",
+  "period_end": "2026-09-22 03:30:00+00:00",
+  "user_id": "rohan",
+  "outcome": "no_event",
+  "reason_code": "NO_DATA",
+  "reason": "No fresh reading from the station.",
+  "trigger": "clock",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": false,
+    "reason_code": "NO_DATA",
+    "inputs": {},
+    "values": {
+     "newest_reading_at": "2026-09-22T03:30:00+00:00",
+     "age_h": 70.83
+    }
+   }
+  ]
+ },
+ {
+  "id": "dec_11404",
+  "evaluated_at": "2026-09-25 03:20:00+00:00",
+  "period_end": "2026-09-22 03:30:00+00:00",
+  "user_id": "rohan",
+  "outcome": "no_event",
+  "reason_code": "NO_DATA",
+  "reason": "No fresh reading from the station.",
+  "trigger": "clock",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": false,
+    "reason_code": "NO_DATA",
+    "inputs": {},
+    "values": {
+     "newest_reading_at": "2026-09-22T03:30:00+00:00",
+     "age_h": 71.83
+    }
+   }
+  ]
+ },
+ {
+  "id": "dec_11411",
+  "evaluated_at": "2026-09-25 04:20:00+00:00",
+  "period_end": "2026-09-22 03:30:00+00:00",
+  "user_id": "rohan",
+  "outcome": "no_event",
+  "reason_code": "NO_DATA",
+  "reason": "No fresh reading from the station.",
+  "trigger": "clock",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": false,
+    "reason_code": "NO_DATA",
+    "inputs": {},
+    "values": {
+     "newest_reading_at": "2026-09-22T03:30:00+00:00",
+     "age_h": 72.83
+    }
+   }
+  ]
+ },
+ {
+  "id": "dec_11418",
+  "evaluated_at": "2026-09-25 05:20:00+00:00",
+  "period_end": "2026-09-22 03:30:00+00:00",
+  "user_id": "rohan",
+  "outcome": "no_event",
+  "reason_code": "NO_DATA",
+  "reason": "No fresh reading from the station.",
+  "trigger": "clock",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": false,
+    "reason_code": "NO_DATA",
+    "inputs": {},
+    "values": {
+     "newest_reading_at": "2026-09-22T03:30:00+00:00",
+     "age_h": 73.83
+    }
+   }
+  ]
+ },
+ {
+  "id": "dec_11425",
+  "evaluated_at": "2026-09-25 06:20:00+00:00",
+  "period_end": "2026-09-22 03:30:00+00:00",
+  "user_id": "rohan",
+  "outcome": "no_event",
+  "reason_code": "NO_DATA",
+  "reason": "No fresh reading from the station.",
+  "trigger": "clock",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": false,
+    "reason_code": "NO_DATA",
+    "inputs": {},
+    "values": {
+     "newest_reading_at": "2026-09-22T03:30:00+00:00",
+     "age_h": 74.83
+    }
+   }
+  ]
+ },
+ {
+  "id": "dec_11432",
+  "evaluated_at": "2026-09-25 07:20:00+00:00",
+  "period_end": "2026-09-22 03:30:00+00:00",
+  "user_id": "rohan",
+  "outcome": "no_event",
+  "reason_code": "NO_DATA",
+  "reason": "No fresh reading from the station.",
+  "trigger": "clock",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": false,
+    "reason_code": "NO_DATA",
+    "inputs": {},
+    "values": {
+     "newest_reading_at": "2026-09-22T03:30:00+00:00",
+     "age_h": 75.83
+    }
+   }
+  ]
+ },
+ {
+  "id": "dec_11439",
+  "evaluated_at": "2026-09-25 08:20:00+00:00",
+  "period_end": "2026-09-22 03:30:00+00:00",
+  "user_id": "rohan",
+  "outcome": "no_event",
+  "reason_code": "NO_DATA",
+  "reason": "No fresh reading from the station.",
+  "trigger": "clock",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": false,
+    "reason_code": "NO_DATA",
+    "inputs": {},
+    "values": {
+     "newest_reading_at": "2026-09-22T03:30:00+00:00",
+     "age_h": 76.83
+    }
+   }
+  ]
+ },
+ {
+  "id": "dec_11446",
+  "evaluated_at": "2026-09-25 09:20:00+00:00",
+  "period_end": "2026-09-22 03:30:00+00:00",
+  "user_id": "rohan",
+  "outcome": "no_event",
+  "reason_code": "NO_DATA",
+  "reason": "No fresh reading from the station.",
+  "trigger": "clock",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": false,
+    "reason_code": "NO_DATA",
+    "inputs": {},
+    "values": {
+     "newest_reading_at": "2026-09-22T03:30:00+00:00",
+     "age_h": 77.83
+    }
+   }
+  ]
+ },
+ {
+  "id": "dec_11453",
+  "evaluated_at": "2026-09-25 10:20:00+00:00",
+  "period_end": "2026-09-22 03:30:00+00:00",
+  "user_id": "rohan",
+  "outcome": "no_event",
+  "reason_code": "NO_DATA",
+  "reason": "No fresh reading from the station.",
+  "trigger": "clock",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": false,
+    "reason_code": "NO_DATA",
+    "inputs": {},
+    "values": {
+     "newest_reading_at": "2026-09-22T03:30:00+00:00",
+     "age_h": 78.83
+    }
+   }
+  ]
+ },
+ {
+  "id": "dec_11460",
+  "evaluated_at": "2026-09-25 11:20:00+00:00",
+  "period_end": "2026-09-22 03:30:00+00:00",
+  "user_id": "rohan",
+  "outcome": "no_event",
+  "reason_code": "NO_DATA",
+  "reason": "No fresh reading from the station.",
+  "trigger": "clock",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": false,
+    "reason_code": "NO_DATA",
+    "inputs": {},
+    "values": {
+     "newest_reading_at": "2026-09-22T03:30:00+00:00",
+     "age_h": 79.83
+    }
+   }
+  ]
+ },
+ {
+  "id": "dec_11467",
+  "evaluated_at": "2026-09-25 12:20:00+00:00",
+  "period_end": "2026-09-22 03:30:00+00:00",
+  "user_id": "rohan",
+  "outcome": "no_event",
+  "reason_code": "NO_DATA",
+  "reason": "No fresh reading from the station.",
+  "trigger": "clock",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": false,
+    "reason_code": "NO_DATA",
+    "inputs": {},
+    "values": {
+     "newest_reading_at": "2026-09-22T03:30:00+00:00",
+     "age_h": 80.83
+    }
+   }
+  ]
+ },
+ {
+  "id": "dec_11474",
+  "evaluated_at": "2026-09-25 13:20:00+00:00",
+  "period_end": "2026-09-22 03:30:00+00:00",
+  "user_id": "rohan",
+  "outcome": "no_event",
+  "reason_code": "NO_DATA",
+  "reason": "No fresh reading from the station.",
+  "trigger": "clock",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": false,
+    "reason_code": "NO_DATA",
+    "inputs": {},
+    "values": {
+     "newest_reading_at": "2026-09-22T03:30:00+00:00",
+     "age_h": 81.83
+    }
+   }
+  ]
+ },
+ {
+  "id": "dec_11482",
+  "evaluated_at": "2026-09-25 14:20:00+00:00",
+  "period_end": "2026-09-22 03:30:00+00:00",
+  "user_id": "rohan",
+  "outcome": "no_event",
+  "reason_code": "NO_DATA",
+  "reason": "No fresh reading from the station.",
+  "trigger": "clock",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": false,
+    "reason_code": "NO_DATA",
+    "inputs": {},
+    "values": {
+     "newest_reading_at": "2026-09-22T03:30:00+00:00",
+     "age_h": 82.83
+    }
+   }
+  ]
+ },
+ {
+  "id": "dec_11489",
+  "evaluated_at": "2026-09-25 15:20:00+00:00",
+  "period_end": "2026-09-22 03:30:00+00:00",
+  "user_id": "rohan",
+  "outcome": "no_event",
+  "reason_code": "NO_DATA",
+  "reason": "No fresh reading from the station.",
+  "trigger": "clock",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": false,
+    "reason_code": "NO_DATA",
+    "inputs": {},
+    "values": {
+     "newest_reading_at": "2026-09-22T03:30:00+00:00",
+     "age_h": 83.83
+    }
+   }
+  ]
+ },
+ {
+  "id": "dec_11496",
+  "evaluated_at": "2026-09-25 16:20:00+00:00",
+  "period_end": "2026-09-22 03:30:00+00:00",
+  "user_id": "rohan",
+  "outcome": "no_event",
+  "reason_code": "NO_DATA",
+  "reason": "No fresh reading from the station.",
+  "trigger": "clock",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": false,
+    "reason_code": "NO_DATA",
+    "inputs": {},
+    "values": {
+     "newest_reading_at": "2026-09-22T03:30:00+00:00",
+     "age_h": 84.83
+    }
+   }
+  ]
+ },
+ {
+  "id": "dec_11503",
+  "evaluated_at": "2026-09-25 17:20:00+00:00",
+  "period_end": "2026-09-22 03:30:00+00:00",
+  "user_id": "rohan",
+  "outcome": "no_event",
+  "reason_code": "NO_DATA",
+  "reason": "No fresh reading from the station.",
+  "trigger": "clock",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": false,
+    "reason_code": "NO_DATA",
+    "inputs": {},
+    "values": {
+     "newest_reading_at": "2026-09-22T03:30:00+00:00",
+     "age_h": 85.83
+    }
+   }
+  ]
+ },
+ {
+  "id": "dec_11510",
+  "evaluated_at": "2026-09-25 18:20:00+00:00",
+  "period_end": "2026-09-22 03:30:00+00:00",
+  "user_id": "rohan",
+  "outcome": "no_event",
+  "reason_code": "NO_DATA",
+  "reason": "No fresh reading from the station.",
+  "trigger": "clock",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": false,
+    "reason_code": "NO_DATA",
+    "inputs": {},
+    "values": {
+     "newest_reading_at": "2026-09-22T03:30:00+00:00",
+     "age_h": 86.83
+    }
+   }
+  ]
+ },
+ {
+  "id": "dec_11517",
+  "evaluated_at": "2026-09-25 19:20:00+00:00",
+  "period_end": "2026-09-22 03:30:00+00:00",
+  "user_id": "rohan",
+  "outcome": "no_event",
+  "reason_code": "NO_DATA",
+  "reason": "No fresh reading from the station.",
+  "trigger": "clock",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": false,
+    "reason_code": "NO_DATA",
+    "inputs": {},
+    "values": {
+     "newest_reading_at": "2026-09-22T03:30:00+00:00",
+     "age_h": 87.83
+    }
+   }
+  ]
+ },
+ {
+  "id": "dec_11524",
+  "evaluated_at": "2026-09-25 20:20:00+00:00",
+  "period_end": "2026-09-22 03:30:00+00:00",
+  "user_id": "rohan",
+  "outcome": "no_event",
+  "reason_code": "NO_DATA",
+  "reason": "No fresh reading from the station.",
+  "trigger": "clock",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": false,
+    "reason_code": "NO_DATA",
+    "inputs": {},
+    "values": {
+     "newest_reading_at": "2026-09-22T03:30:00+00:00",
+     "age_h": 88.83
+    }
+   }
+  ]
+ },
+ {
+  "id": "dec_11531",
+  "evaluated_at": "2026-09-25 21:20:00+00:00",
+  "period_end": "2026-09-22 03:30:00+00:00",
+  "user_id": "rohan",
+  "outcome": "no_event",
+  "reason_code": "NO_DATA",
+  "reason": "No fresh reading from the station.",
+  "trigger": "clock",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": false,
+    "reason_code": "NO_DATA",
+    "inputs": {},
+    "values": {
+     "newest_reading_at": "2026-09-22T03:30:00+00:00",
+     "age_h": 89.83
+    }
+   }
+  ]
+ },
+ {
+  "id": "dec_11538",
+  "evaluated_at": "2026-09-25 22:20:00+00:00",
+  "period_end": "2026-09-22 03:30:00+00:00",
+  "user_id": "rohan",
+  "outcome": "no_event",
+  "reason_code": "NO_DATA",
+  "reason": "No fresh reading from the station.",
+  "trigger": "clock",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": false,
+    "reason_code": "NO_DATA",
+    "inputs": {},
+    "values": {
+     "newest_reading_at": "2026-09-22T03:30:00+00:00",
+     "age_h": 90.83
+    }
+   }
+  ]
+ },
+ {
+  "id": "dec_11545",
+  "evaluated_at": "2026-09-25 23:20:00+00:00",
+  "period_end": "2026-09-22 03:30:00+00:00",
+  "user_id": "rohan",
+  "outcome": "no_event",
+  "reason_code": "NO_DATA",
+  "reason": "No fresh reading from the station.",
+  "trigger": "clock",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": false,
+    "reason_code": "NO_DATA",
+    "inputs": {},
+    "values": {
+     "newest_reading_at": "2026-09-22T03:30:00+00:00",
+     "age_h": 91.83
+    }
+   }
+  ]
+ },
+ {
+  "id": "dec_11552",
+  "evaluated_at": "2026-09-26 00:20:00+00:00",
+  "period_end": "2026-09-22 03:30:00+00:00",
+  "user_id": "rohan",
+  "outcome": "no_event",
+  "reason_code": "NO_DATA",
+  "reason": "No fresh reading from the station.",
+  "trigger": "clock",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": false,
+    "reason_code": "NO_DATA",
+    "inputs": {},
+    "values": {
+     "newest_reading_at": "2026-09-22T03:30:00+00:00",
+     "age_h": 92.83
+    }
+   }
+  ]
+ },
+ {
+  "id": "dec_11561",
+  "evaluated_at": "2026-09-26 01:20:00+00:00",
+  "period_end": "2026-09-22 03:30:00+00:00",
+  "user_id": "rohan",
+  "outcome": "no_event",
+  "reason_code": "NO_DATA",
+  "reason": "No fresh reading from the station.",
+  "trigger": "clock",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": false,
+    "reason_code": "NO_DATA",
+    "inputs": {},
+    "values": {
+     "newest_reading_at": "2026-09-22T03:30:00+00:00",
+     "age_h": 93.83
+    }
+   }
+  ]
+ },
+ {
+  "id": "dec_11568",
+  "evaluated_at": "2026-09-26 02:20:00+00:00",
+  "period_end": "2026-09-22 03:30:00+00:00",
+  "user_id": "rohan",
+  "outcome": "no_event",
+  "reason_code": "NO_DATA",
+  "reason": "No fresh reading from the station.",
+  "trigger": "clock",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": false,
+    "reason_code": "NO_DATA",
+    "inputs": {},
+    "values": {
+     "newest_reading_at": "2026-09-22T03:30:00+00:00",
+     "age_h": 94.83
+    }
+   }
+  ]
+ },
+ {
+  "id": "dec_11575",
+  "evaluated_at": "2026-09-26 03:20:00+00:00",
+  "period_end": "2026-09-22 03:30:00+00:00",
+  "user_id": "rohan",
+  "outcome": "no_event",
+  "reason_code": "NO_DATA",
+  "reason": "No fresh reading from the station.",
+  "trigger": "clock",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": false,
+    "reason_code": "NO_DATA",
+    "inputs": {},
+    "values": {
+     "newest_reading_at": "2026-09-22T03:30:00+00:00",
+     "age_h": 95.83
+    }
+   }
+  ]
+ },
+ {
+  "id": "dec_11582",
+  "evaluated_at": "2026-09-26 04:20:00+00:00",
+  "period_end": "2026-09-22 03:30:00+00:00",
+  "user_id": "rohan",
+  "outcome": "no_event",
+  "reason_code": "NO_DATA",
+  "reason": "No fresh reading from the station.",
+  "trigger": "clock",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": false,
+    "reason_code": "NO_DATA",
+    "inputs": {},
+    "values": {
+     "newest_reading_at": "2026-09-22T03:30:00+00:00",
+     "age_h": 96.83
+    }
+   }
+  ]
+ },
+ {
+  "id": "dec_11589",
+  "evaluated_at": "2026-09-26 05:20:00+00:00",
+  "period_end": "2026-09-22 03:30:00+00:00",
+  "user_id": "rohan",
+  "outcome": "no_event",
+  "reason_code": "NO_DATA",
+  "reason": "No fresh reading from the station.",
+  "trigger": "clock",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": false,
+    "reason_code": "NO_DATA",
+    "inputs": {},
+    "values": {
+     "newest_reading_at": "2026-09-22T03:30:00+00:00",
+     "age_h": 97.83
+    }
+   }
+  ]
+ },
+ {
+  "id": "dec_11596",
+  "evaluated_at": "2026-09-26 06:20:00+00:00",
+  "period_end": "2026-09-22 03:30:00+00:00",
+  "user_id": "rohan",
+  "outcome": "no_event",
+  "reason_code": "NO_DATA",
+  "reason": "No fresh reading from the station.",
+  "trigger": "clock",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": false,
+    "reason_code": "NO_DATA",
+    "inputs": {},
+    "values": {
+     "newest_reading_at": "2026-09-22T03:30:00+00:00",
+     "age_h": 98.83
+    }
+   }
+  ]
+ },
+ {
+  "id": "dec_11603",
+  "evaluated_at": "2026-09-26 07:20:00+00:00",
+  "period_end": "2026-09-22 03:30:00+00:00",
+  "user_id": "rohan",
+  "outcome": "no_event",
+  "reason_code": "NO_DATA",
+  "reason": "No fresh reading from the station.",
+  "trigger": "clock",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": false,
+    "reason_code": "NO_DATA",
+    "inputs": {},
+    "values": {
+     "newest_reading_at": "2026-09-22T03:30:00+00:00",
+     "age_h": 99.83
+    }
+   }
+  ]
+ },
+ {
+  "id": "dec_11610",
+  "evaluated_at": "2026-09-26 08:20:00+00:00",
+  "period_end": "2026-09-22 03:30:00+00:00",
+  "user_id": "rohan",
+  "outcome": "no_event",
+  "reason_code": "NO_DATA",
+  "reason": "No fresh reading from the station.",
+  "trigger": "clock",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": false,
+    "reason_code": "NO_DATA",
+    "inputs": {},
+    "values": {
+     "newest_reading_at": "2026-09-22T03:30:00+00:00",
+     "age_h": 100.83
+    }
+   }
+  ]
+ },
+ {
+  "id": "dec_11617",
+  "evaluated_at": "2026-09-26 09:20:00+00:00",
+  "period_end": "2026-09-22 03:30:00+00:00",
+  "user_id": "rohan",
+  "outcome": "no_event",
+  "reason_code": "NO_DATA",
+  "reason": "No fresh reading from the station.",
+  "trigger": "clock",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": false,
+    "reason_code": "NO_DATA",
+    "inputs": {},
+    "values": {
+     "newest_reading_at": "2026-09-22T03:30:00+00:00",
+     "age_h": 101.83
+    }
+   }
+  ]
+ },
+ {
+  "id": "dec_11624",
+  "evaluated_at": "2026-09-26 10:20:00+00:00",
+  "period_end": "2026-09-22 03:30:00+00:00",
+  "user_id": "rohan",
+  "outcome": "no_event",
+  "reason_code": "NO_DATA",
+  "reason": "No fresh reading from the station.",
+  "trigger": "clock",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": false,
+    "reason_code": "NO_DATA",
+    "inputs": {},
+    "values": {
+     "newest_reading_at": "2026-09-22T03:30:00+00:00",
+     "age_h": 102.83
+    }
+   }
+  ]
+ },
+ {
+  "id": "dec_11631",
+  "evaluated_at": "2026-09-26 11:20:00+00:00",
+  "period_end": "2026-09-22 03:30:00+00:00",
+  "user_id": "rohan",
+  "outcome": "no_event",
+  "reason_code": "NO_DATA",
+  "reason": "No fresh reading from the station.",
+  "trigger": "clock",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": false,
+    "reason_code": "NO_DATA",
+    "inputs": {},
+    "values": {
+     "newest_reading_at": "2026-09-22T03:30:00+00:00",
+     "age_h": 103.83
+    }
+   }
+  ]
+ },
+ {
+  "id": "dec_11638",
+  "evaluated_at": "2026-09-26 12:20:00+00:00",
+  "period_end": "2026-09-22 03:30:00+00:00",
+  "user_id": "rohan",
+  "outcome": "no_event",
+  "reason_code": "NO_DATA",
+  "reason": "No fresh reading from the station.",
+  "trigger": "clock",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": false,
+    "reason_code": "NO_DATA",
+    "inputs": {},
+    "values": {
+     "newest_reading_at": "2026-09-22T03:30:00+00:00",
+     "age_h": 104.83
+    }
+   }
+  ]
+ },
+ {
+  "id": "dec_11645",
+  "evaluated_at": "2026-09-26 13:20:00+00:00",
+  "period_end": "2026-09-22 03:30:00+00:00",
+  "user_id": "rohan",
+  "outcome": "no_event",
+  "reason_code": "NO_DATA",
+  "reason": "No fresh reading from the station.",
+  "trigger": "clock",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": false,
+    "reason_code": "NO_DATA",
+    "inputs": {},
+    "values": {
+     "newest_reading_at": "2026-09-22T03:30:00+00:00",
+     "age_h": 105.83
+    }
+   }
+  ]
+ },
+ {
+  "id": "dec_11652",
+  "evaluated_at": "2026-09-26 14:20:00+00:00",
+  "period_end": "2026-09-22 03:30:00+00:00",
+  "user_id": "rohan",
+  "outcome": "no_event",
+  "reason_code": "NO_DATA",
+  "reason": "No fresh reading from the station.",
+  "trigger": "clock",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": false,
+    "reason_code": "NO_DATA",
+    "inputs": {},
+    "values": {
+     "newest_reading_at": "2026-09-22T03:30:00+00:00",
+     "age_h": 106.83
+    }
+   }
+  ]
+ },
+ {
+  "id": "dec_11659",
+  "evaluated_at": "2026-09-26 15:20:00+00:00",
+  "period_end": "2026-09-22 03:30:00+00:00",
+  "user_id": "rohan",
+  "outcome": "no_event",
+  "reason_code": "NO_DATA",
+  "reason": "No fresh reading from the station.",
+  "trigger": "clock",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": false,
+    "reason_code": "NO_DATA",
+    "inputs": {},
+    "values": {
+     "newest_reading_at": "2026-09-22T03:30:00+00:00",
+     "age_h": 107.83
+    }
+   }
+  ]
+ },
+ {
+  "id": "dec_11666",
+  "evaluated_at": "2026-09-26 16:20:00+00:00",
+  "period_end": "2026-09-22 03:30:00+00:00",
+  "user_id": "rohan",
+  "outcome": "no_event",
+  "reason_code": "NO_DATA",
+  "reason": "No fresh reading from the station.",
+  "trigger": "clock",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": false,
+    "reason_code": "NO_DATA",
+    "inputs": {},
+    "values": {
+     "newest_reading_at": "2026-09-22T03:30:00+00:00",
+     "age_h": 108.83
+    }
+   }
+  ]
+ },
+ {
+  "id": "dec_11673",
+  "evaluated_at": "2026-09-26 17:20:00+00:00",
+  "period_end": "2026-09-22 03:30:00+00:00",
+  "user_id": "rohan",
+  "outcome": "no_event",
+  "reason_code": "NO_DATA",
+  "reason": "No fresh reading from the station.",
+  "trigger": "clock",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": false,
+    "reason_code": "NO_DATA",
+    "inputs": {},
+    "values": {
+     "newest_reading_at": "2026-09-22T03:30:00+00:00",
+     "age_h": 109.83
+    }
+   }
+  ]
+ },
+ {
+  "id": "dec_11680",
+  "evaluated_at": "2026-09-26 18:20:00+00:00",
+  "period_end": "2026-09-22 03:30:00+00:00",
+  "user_id": "rohan",
+  "outcome": "no_event",
+  "reason_code": "NO_DATA",
+  "reason": "No fresh reading from the station.",
+  "trigger": "clock",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": false,
+    "reason_code": "NO_DATA",
+    "inputs": {},
+    "values": {
+     "newest_reading_at": "2026-09-22T03:30:00+00:00",
+     "age_h": 110.83
+    }
+   }
+  ]
+ },
+ {
+  "id": "dec_11687",
+  "evaluated_at": "2026-09-26 19:20:00+00:00",
+  "period_end": "2026-09-22 03:30:00+00:00",
+  "user_id": "rohan",
+  "outcome": "no_event",
+  "reason_code": "NO_DATA",
+  "reason": "No fresh reading from the station.",
+  "trigger": "clock",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": false,
+    "reason_code": "NO_DATA",
+    "inputs": {},
+    "values": {
+     "newest_reading_at": "2026-09-22T03:30:00+00:00",
+     "age_h": 111.83
+    }
+   }
+  ]
+ },
+ {
+  "id": "dec_11694",
+  "evaluated_at": "2026-09-26 20:20:00+00:00",
+  "period_end": "2026-09-22 03:30:00+00:00",
+  "user_id": "rohan",
+  "outcome": "no_event",
+  "reason_code": "NO_DATA",
+  "reason": "No fresh reading from the station.",
+  "trigger": "clock",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": false,
+    "reason_code": "NO_DATA",
+    "inputs": {},
+    "values": {
+     "newest_reading_at": "2026-09-22T03:30:00+00:00",
+     "age_h": 112.83
+    }
+   }
+  ]
+ },
+ {
+  "id": "dec_11701",
+  "evaluated_at": "2026-09-26 21:20:00+00:00",
+  "period_end": "2026-09-22 03:30:00+00:00",
+  "user_id": "rohan",
+  "outcome": "no_event",
+  "reason_code": "NO_DATA",
+  "reason": "No fresh reading from the station.",
+  "trigger": "clock",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": false,
+    "reason_code": "NO_DATA",
+    "inputs": {},
+    "values": {
+     "newest_reading_at": "2026-09-22T03:30:00+00:00",
+     "age_h": 113.83
+    }
+   }
+  ]
+ },
+ {
+  "id": "dec_11708",
+  "evaluated_at": "2026-09-26 22:20:00+00:00",
+  "period_end": "2026-09-22 03:30:00+00:00",
+  "user_id": "rohan",
+  "outcome": "no_event",
+  "reason_code": "NO_DATA",
+  "reason": "No fresh reading from the station.",
+  "trigger": "clock",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": false,
+    "reason_code": "NO_DATA",
+    "inputs": {},
+    "values": {
+     "newest_reading_at": "2026-09-22T03:30:00+00:00",
+     "age_h": 114.83
+    }
+   }
+  ]
+ },
+ {
+  "id": "dec_11715",
+  "evaluated_at": "2026-09-26 23:20:00+00:00",
+  "period_end": "2026-09-22 03:30:00+00:00",
+  "user_id": "rohan",
+  "outcome": "no_event",
+  "reason_code": "NO_DATA",
+  "reason": "No fresh reading from the station.",
+  "trigger": "clock",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": false,
+    "reason_code": "NO_DATA",
+    "inputs": {},
+    "values": {
+     "newest_reading_at": "2026-09-22T03:30:00+00:00",
+     "age_h": 115.83
+    }
+   }
+  ]
+ },
+ {
+  "id": "dec_11722",
+  "evaluated_at": "2026-09-27 00:20:00+00:00",
+  "period_end": "2026-09-22 03:30:00+00:00",
+  "user_id": "rohan",
+  "outcome": "no_event",
+  "reason_code": "NO_DATA",
+  "reason": "No fresh reading from the station.",
+  "trigger": "clock",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": false,
+    "reason_code": "NO_DATA",
+    "inputs": {},
+    "values": {
+     "newest_reading_at": "2026-09-22T03:30:00+00:00",
+     "age_h": 116.83
+    }
+   }
+  ]
+ },
+ {
+  "id": "dec_11731",
+  "evaluated_at": "2026-09-27 01:20:00+00:00",
+  "period_end": "2026-09-22 03:30:00+00:00",
+  "user_id": "rohan",
+  "outcome": "no_event",
+  "reason_code": "NO_DATA",
+  "reason": "No fresh reading from the station.",
+  "trigger": "clock",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": false,
+    "reason_code": "NO_DATA",
+    "inputs": {},
+    "values": {
+     "newest_reading_at": "2026-09-22T03:30:00+00:00",
+     "age_h": 117.83
+    }
+   }
+  ]
+ },
+ {
+  "id": "dec_11738",
+  "evaluated_at": "2026-09-27 02:20:00+00:00",
+  "period_end": "2026-09-22 03:30:00+00:00",
+  "user_id": "rohan",
+  "outcome": "no_event",
+  "reason_code": "NO_DATA",
+  "reason": "No fresh reading from the station.",
+  "trigger": "clock",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": false,
+    "reason_code": "NO_DATA",
+    "inputs": {},
+    "values": {
+     "newest_reading_at": "2026-09-22T03:30:00+00:00",
+     "age_h": 118.83
+    }
+   }
+  ]
+ },
+ {
+  "id": "dec_11745",
+  "evaluated_at": "2026-09-27 03:20:00+00:00",
+  "period_end": "2026-09-22 03:30:00+00:00",
+  "user_id": "rohan",
+  "outcome": "no_event",
+  "reason_code": "NO_DATA",
+  "reason": "No fresh reading from the station.",
+  "trigger": "clock",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": false,
+    "reason_code": "NO_DATA",
+    "inputs": {},
+    "values": {
+     "newest_reading_at": "2026-09-22T03:30:00+00:00",
+     "age_h": 119.83
+    }
+   }
+  ]
+ },
+ {
+  "id": "dec_11752",
+  "evaluated_at": "2026-09-27 04:20:00+00:00",
+  "period_end": "2026-09-22 03:30:00+00:00",
+  "user_id": "rohan",
+  "outcome": "no_event",
+  "reason_code": "NO_DATA",
+  "reason": "No fresh reading from the station.",
+  "trigger": "clock",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": false,
+    "reason_code": "NO_DATA",
+    "inputs": {},
+    "values": {
+     "newest_reading_at": "2026-09-22T03:30:00+00:00",
+     "age_h": 120.83
+    }
+   }
+  ]
+ },
+ {
+  "id": "dec_11759",
+  "evaluated_at": "2026-09-27 05:20:00+00:00",
+  "period_end": "2026-09-22 03:30:00+00:00",
+  "user_id": "rohan",
+  "outcome": "no_event",
+  "reason_code": "NO_DATA",
+  "reason": "No fresh reading from the station.",
+  "trigger": "clock",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": false,
+    "reason_code": "NO_DATA",
+    "inputs": {},
+    "values": {
+     "newest_reading_at": "2026-09-22T03:30:00+00:00",
+     "age_h": 121.83
+    }
+   }
+  ]
+ },
+ {
+  "id": "dec_11766",
+  "evaluated_at": "2026-09-27 06:20:00+00:00",
+  "period_end": "2026-09-22 03:30:00+00:00",
+  "user_id": "rohan",
+  "outcome": "no_event",
+  "reason_code": "NO_DATA",
+  "reason": "No fresh reading from the station.",
+  "trigger": "clock",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": false,
+    "reason_code": "NO_DATA",
+    "inputs": {},
+    "values": {
+     "newest_reading_at": "2026-09-22T03:30:00+00:00",
+     "age_h": 122.83
+    }
+   }
+  ]
+ },
+ {
+  "id": "dec_11773",
+  "evaluated_at": "2026-09-27 07:20:00+00:00",
+  "period_end": "2026-09-22 03:30:00+00:00",
+  "user_id": "rohan",
+  "outcome": "no_event",
+  "reason_code": "NO_DATA",
+  "reason": "No fresh reading from the station.",
+  "trigger": "clock",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": false,
+    "reason_code": "NO_DATA",
+    "inputs": {},
+    "values": {
+     "newest_reading_at": "2026-09-22T03:30:00+00:00",
+     "age_h": 123.83
+    }
+   }
+  ]
+ },
+ {
+  "id": "dec_11780",
+  "evaluated_at": "2026-09-27 08:20:00+00:00",
+  "period_end": "2026-09-22 03:30:00+00:00",
+  "user_id": "rohan",
+  "outcome": "no_event",
+  "reason_code": "NO_DATA",
+  "reason": "No fresh reading from the station.",
+  "trigger": "clock",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": false,
+    "reason_code": "NO_DATA",
+    "inputs": {},
+    "values": {
+     "newest_reading_at": "2026-09-22T03:30:00+00:00",
+     "age_h": 124.83
+    }
+   }
+  ]
+ },
+ {
+  "id": "dec_11787",
+  "evaluated_at": "2026-09-27 09:20:00+00:00",
+  "period_end": "2026-09-22 03:30:00+00:00",
+  "user_id": "rohan",
+  "outcome": "no_event",
+  "reason_code": "NO_DATA",
+  "reason": "No fresh reading from the station.",
+  "trigger": "clock",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": false,
+    "reason_code": "NO_DATA",
+    "inputs": {},
+    "values": {
+     "newest_reading_at": "2026-09-22T03:30:00+00:00",
+     "age_h": 125.83
+    }
+   }
+  ]
+ },
+ {
+  "id": "dec_11794",
+  "evaluated_at": "2026-09-27 10:20:00+00:00",
+  "period_end": "2026-09-22 03:30:00+00:00",
+  "user_id": "rohan",
+  "outcome": "no_event",
+  "reason_code": "NO_DATA",
+  "reason": "No fresh reading from the station.",
+  "trigger": "clock",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": false,
+    "reason_code": "NO_DATA",
+    "inputs": {},
+    "values": {
+     "newest_reading_at": "2026-09-22T03:30:00+00:00",
+     "age_h": 126.83
+    }
+   }
+  ]
+ },
+ {
+  "id": "dec_11801",
+  "evaluated_at": "2026-09-27 11:20:00+00:00",
+  "period_end": "2026-09-22 03:30:00+00:00",
+  "user_id": "rohan",
+  "outcome": "no_event",
+  "reason_code": "NO_DATA",
+  "reason": "No fresh reading from the station.",
+  "trigger": "clock",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": false,
+    "reason_code": "NO_DATA",
+    "inputs": {},
+    "values": {
+     "newest_reading_at": "2026-09-22T03:30:00+00:00",
+     "age_h": 127.83
+    }
+   }
+  ]
+ },
+ {
+  "id": "dec_11808",
+  "evaluated_at": "2026-09-27 12:20:00+00:00",
+  "period_end": "2026-09-22 03:30:00+00:00",
+  "user_id": "rohan",
+  "outcome": "no_event",
+  "reason_code": "NO_DATA",
+  "reason": "No fresh reading from the station.",
+  "trigger": "clock",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": false,
+    "reason_code": "NO_DATA",
+    "inputs": {},
+    "values": {
+     "newest_reading_at": "2026-09-22T03:30:00+00:00",
+     "age_h": 128.83
+    }
+   }
+  ]
+ },
+ {
+  "id": "dec_11815",
+  "evaluated_at": "2026-09-27 13:20:00+00:00",
+  "period_end": "2026-09-22 03:30:00+00:00",
+  "user_id": "rohan",
+  "outcome": "no_event",
+  "reason_code": "NO_DATA",
+  "reason": "No fresh reading from the station.",
+  "trigger": "clock",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": false,
+    "reason_code": "NO_DATA",
+    "inputs": {},
+    "values": {
+     "newest_reading_at": "2026-09-22T03:30:00+00:00",
+     "age_h": 129.83
+    }
+   }
+  ]
+ },
+ {
+  "id": "dec_11823",
+  "evaluated_at": "2026-09-27 14:20:00+00:00",
+  "period_end": "2026-09-22 03:30:00+00:00",
+  "user_id": "rohan",
+  "outcome": "no_event",
+  "reason_code": "NO_DATA",
+  "reason": "No fresh reading from the station.",
+  "trigger": "clock",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": false,
+    "reason_code": "NO_DATA",
+    "inputs": {},
+    "values": {
+     "newest_reading_at": "2026-09-22T03:30:00+00:00",
+     "age_h": 130.83
+    }
+   }
+  ]
+ },
+ {
+  "id": "dec_11830",
+  "evaluated_at": "2026-09-27 15:20:00+00:00",
+  "period_end": "2026-09-22 03:30:00+00:00",
+  "user_id": "rohan",
+  "outcome": "no_event",
+  "reason_code": "NO_DATA",
+  "reason": "No fresh reading from the station.",
+  "trigger": "clock",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": false,
+    "reason_code": "NO_DATA",
+    "inputs": {},
+    "values": {
+     "newest_reading_at": "2026-09-22T03:30:00+00:00",
+     "age_h": 131.83
+    }
+   }
+  ]
+ },
+ {
+  "id": "dec_11837",
+  "evaluated_at": "2026-09-27 16:20:00+00:00",
+  "period_end": "2026-09-22 03:30:00+00:00",
+  "user_id": "rohan",
+  "outcome": "no_event",
+  "reason_code": "NO_DATA",
+  "reason": "No fresh reading from the station.",
+  "trigger": "clock",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": false,
+    "reason_code": "NO_DATA",
+    "inputs": {},
+    "values": {
+     "newest_reading_at": "2026-09-22T03:30:00+00:00",
+     "age_h": 132.83
+    }
+   }
+  ]
+ },
+ {
+  "id": "dec_11844",
+  "evaluated_at": "2026-09-27 17:20:00+00:00",
+  "period_end": "2026-09-22 03:30:00+00:00",
+  "user_id": "rohan",
+  "outcome": "no_event",
+  "reason_code": "NO_DATA",
+  "reason": "No fresh reading from the station.",
+  "trigger": "clock",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": false,
+    "reason_code": "NO_DATA",
+    "inputs": {},
+    "values": {
+     "newest_reading_at": "2026-09-22T03:30:00+00:00",
+     "age_h": 133.83
+    }
+   }
+  ]
+ },
+ {
+  "id": "dec_11851",
+  "evaluated_at": "2026-09-27 18:20:00+00:00",
+  "period_end": "2026-09-22 03:30:00+00:00",
+  "user_id": "rohan",
+  "outcome": "no_event",
+  "reason_code": "NO_DATA",
+  "reason": "No fresh reading from the station.",
+  "trigger": "clock",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": false,
+    "reason_code": "NO_DATA",
+    "inputs": {},
+    "values": {
+     "newest_reading_at": "2026-09-22T03:30:00+00:00",
+     "age_h": 134.83
+    }
+   }
+  ]
+ },
+ {
+  "id": "dec_11858",
+  "evaluated_at": "2026-09-27 19:20:00+00:00",
+  "period_end": "2026-09-22 03:30:00+00:00",
+  "user_id": "rohan",
+  "outcome": "no_event",
+  "reason_code": "NO_DATA",
+  "reason": "No fresh reading from the station.",
+  "trigger": "clock",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": false,
+    "reason_code": "NO_DATA",
+    "inputs": {},
+    "values": {
+     "newest_reading_at": "2026-09-22T03:30:00+00:00",
+     "age_h": 135.83
+    }
+   }
+  ]
+ },
+ {
+  "id": "dec_11865",
+  "evaluated_at": "2026-09-27 20:20:00+00:00",
+  "period_end": "2026-09-22 03:30:00+00:00",
+  "user_id": "rohan",
+  "outcome": "no_event",
+  "reason_code": "NO_DATA",
+  "reason": "No fresh reading from the station.",
+  "trigger": "clock",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": false,
+    "reason_code": "NO_DATA",
+    "inputs": {},
+    "values": {
+     "newest_reading_at": "2026-09-22T03:30:00+00:00",
+     "age_h": 136.83
+    }
+   }
+  ]
+ },
+ {
+  "id": "dec_11872",
+  "evaluated_at": "2026-09-27 21:20:00+00:00",
+  "period_end": "2026-09-22 03:30:00+00:00",
+  "user_id": "rohan",
+  "outcome": "no_event",
+  "reason_code": "NO_DATA",
+  "reason": "No fresh reading from the station.",
+  "trigger": "clock",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": false,
+    "reason_code": "NO_DATA",
+    "inputs": {},
+    "values": {
+     "newest_reading_at": "2026-09-22T03:30:00+00:00",
+     "age_h": 137.83
+    }
+   }
+  ]
+ },
+ {
+  "id": "dec_11879",
+  "evaluated_at": "2026-09-27 22:20:00+00:00",
+  "period_end": "2026-09-22 03:30:00+00:00",
+  "user_id": "rohan",
+  "outcome": "no_event",
+  "reason_code": "NO_DATA",
+  "reason": "No fresh reading from the station.",
+  "trigger": "clock",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": false,
+    "reason_code": "NO_DATA",
+    "inputs": {},
+    "values": {
+     "newest_reading_at": "2026-09-22T03:30:00+00:00",
+     "age_h": 138.83
+    }
+   }
+  ]
+ },
+ {
+  "id": "dec_11886",
+  "evaluated_at": "2026-09-27 23:20:00+00:00",
+  "period_end": "2026-09-22 03:30:00+00:00",
+  "user_id": "rohan",
+  "outcome": "no_event",
+  "reason_code": "NO_DATA",
+  "reason": "No fresh reading from the station.",
+  "trigger": "clock",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": false,
+    "reason_code": "NO_DATA",
+    "inputs": {},
+    "values": {
+     "newest_reading_at": "2026-09-22T03:30:00+00:00",
+     "age_h": 139.83
+    }
+   }
+  ]
+ },
+ {
+  "id": "dec_11893",
+  "evaluated_at": "2026-09-28 00:20:00+00:00",
+  "period_end": "2026-09-22 03:30:00+00:00",
+  "user_id": "rohan",
+  "outcome": "no_event",
+  "reason_code": "NO_DATA",
+  "reason": "No fresh reading from the station.",
+  "trigger": "clock",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": false,
+    "reason_code": "NO_DATA",
+    "inputs": {},
+    "values": {
+     "newest_reading_at": "2026-09-22T03:30:00+00:00",
+     "age_h": 140.83
+    }
+   }
+  ]
+ },
+ {
+  "id": "dec_11902",
+  "evaluated_at": "2026-09-28 01:20:00+00:00",
+  "period_end": "2026-09-22 03:30:00+00:00",
+  "user_id": "rohan",
+  "outcome": "no_event",
+  "reason_code": "NO_DATA",
+  "reason": "No fresh reading from the station.",
+  "trigger": "clock",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": false,
+    "reason_code": "NO_DATA",
+    "inputs": {},
+    "values": {
+     "newest_reading_at": "2026-09-22T03:30:00+00:00",
+     "age_h": 141.83
+    }
+   }
+  ]
+ },
+ {
+  "id": "dec_11909",
+  "evaluated_at": "2026-09-28 02:20:00+00:00",
+  "period_end": "2026-09-22 03:30:00+00:00",
+  "user_id": "rohan",
+  "outcome": "no_event",
+  "reason_code": "NO_DATA",
+  "reason": "No fresh reading from the station.",
+  "trigger": "clock",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": false,
+    "reason_code": "NO_DATA",
+    "inputs": {},
+    "values": {
+     "newest_reading_at": "2026-09-22T03:30:00+00:00",
+     "age_h": 142.83
+    }
+   }
+  ]
+ },
+ {
+  "id": "dec_11916",
+  "evaluated_at": "2026-09-28 03:20:00+00:00",
+  "period_end": "2026-09-22 03:30:00+00:00",
+  "user_id": "rohan",
+  "outcome": "no_event",
+  "reason_code": "NO_DATA",
+  "reason": "No fresh reading from the station.",
+  "trigger": "clock",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": false,
+    "reason_code": "NO_DATA",
+    "inputs": {},
+    "values": {
+     "newest_reading_at": "2026-09-22T03:30:00+00:00",
+     "age_h": 143.83
+    }
+   }
+  ]
+ },
+ {
+  "id": "dec_11923",
+  "evaluated_at": "2026-09-28 04:20:00+00:00",
+  "period_end": "2026-09-22 03:30:00+00:00",
+  "user_id": "rohan",
+  "outcome": "no_event",
+  "reason_code": "NO_DATA",
+  "reason": "No fresh reading from the station.",
+  "trigger": "clock",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": false,
+    "reason_code": "NO_DATA",
+    "inputs": {},
+    "values": {
+     "newest_reading_at": "2026-09-22T03:30:00+00:00",
+     "age_h": 144.83
+    }
+   }
+  ]
+ },
+ {
+  "id": "dec_11930",
+  "evaluated_at": "2026-09-28 05:20:00+00:00",
+  "period_end": "2026-09-22 03:30:00+00:00",
+  "user_id": "rohan",
+  "outcome": "no_event",
+  "reason_code": "NO_DATA",
+  "reason": "No fresh reading from the station.",
+  "trigger": "clock",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": false,
+    "reason_code": "NO_DATA",
+    "inputs": {},
+    "values": {
+     "newest_reading_at": "2026-09-22T03:30:00+00:00",
+     "age_h": 145.83
+    }
+   }
+  ]
+ },
+ {
+  "id": "dec_11937",
+  "evaluated_at": "2026-09-28 06:20:00+00:00",
+  "period_end": "2026-09-22 03:30:00+00:00",
+  "user_id": "rohan",
+  "outcome": "no_event",
+  "reason_code": "NO_DATA",
+  "reason": "No fresh reading from the station.",
+  "trigger": "clock",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": false,
+    "reason_code": "NO_DATA",
+    "inputs": {},
+    "values": {
+     "newest_reading_at": "2026-09-22T03:30:00+00:00",
+     "age_h": 146.83
+    }
+   }
+  ]
+ },
+ {
+  "id": "dec_11944",
+  "evaluated_at": "2026-09-28 07:20:00+00:00",
+  "period_end": "2026-09-22 03:30:00+00:00",
+  "user_id": "rohan",
+  "outcome": "no_event",
+  "reason_code": "NO_DATA",
+  "reason": "No fresh reading from the station.",
+  "trigger": "clock",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": false,
+    "reason_code": "NO_DATA",
+    "inputs": {},
+    "values": {
+     "newest_reading_at": "2026-09-22T03:30:00+00:00",
+     "age_h": 147.83
+    }
+   }
+  ]
+ },
+ {
+  "id": "dec_11951",
+  "evaluated_at": "2026-09-28 08:20:00+00:00",
+  "period_end": "2026-09-22 03:30:00+00:00",
+  "user_id": "rohan",
+  "outcome": "no_event",
+  "reason_code": "NO_DATA",
+  "reason": "No fresh reading from the station.",
+  "trigger": "clock",
+  "trace": [
+   {
+    "layer": "S2/U2",
+    "passed": false,
+    "reason_code": "NO_DATA",
+    "inputs": {},
+    "values": {
+     "newest_reading_at": "2026-09-22T03:30:00+00:00",
+     "age_h": 148.83
+    }
+   }
+  ]
+ }
+]
