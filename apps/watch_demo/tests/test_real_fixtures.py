@@ -71,3 +71,21 @@ def test_capabilities_page_links_every_capability_to_a_scenario():
         assert cap.label in html
     unshown = [k for k in CAPABILITIES if not any(k in s.shows for s in scenarios)]
     assert unshown == ["budget"], unshown  # the 90-day replay never hit the daily budget
+
+
+def test_every_scenario_beat_and_why_view_returns_200():
+    """No 500s anywhere a reviewer can click: each scenario, each beat, each hour step, each notice's Why view."""
+    import re
+
+    scenarios = load_scenarios(ROOT / "scenarios.yaml")
+    client = TestClient(create_app(FixtureAgentClient(ROOT / "fixtures"), scenarios))
+    assert client.get("/capabilities").status_code == 200
+    for s in scenarios:
+        pages = [client.get("/", params={"scenario": s.id})]
+        pages += [client.get("/", params={"scenario": s.id, "t": b.at.isoformat()}) for b in s.beats]
+        pages += [client.get("/", params={"scenario": s.id, "t": s.until.isoformat()})]
+        for p in pages:
+            assert p.status_code == 200, (s.id, p.url)
+            for href in set(re.findall(r'href="(/(?:why/[^"]+|\?scenario=[^"]+))"', p.text)):
+                r = client.get(href.replace("&amp;", "&"))
+                assert r.status_code == 200, (s.id, href)
