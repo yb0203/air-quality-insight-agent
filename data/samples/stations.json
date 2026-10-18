@@ -1,0 +1,149 @@
+[
+ {
+  "location_id": 4588,
+  "city": "Helsinki",
+  "name": "Mannerheimintie",
+  "provider": "EEA",
+  "timezone": "Europe/Helsinki",
+  "lat": 60.169640000006716,
+  "lon": 24.939240000258355,
+  "is_monitor": true,
+  "instruments": [
+   "Government Monitor"
+  ],
+  "pm25_sensor_id": 11382,
+  "licenses": [
+   {
+    "license": "ODC-BY",
+    "attribution": "Unknown Governmental Organization",
+    "url": null
+   }
+  ]
+ },
+ {
+  "location_id": 4712609,
+  "city": "Delhi",
+  "name": "Air Check",
+  "provider": "AirGradient",
+  "timezone": "Asia/Kolkata",
+  "lat": 28.623056,
+  "lon": 77.234167,
+  "is_monitor": false,
+  "instruments": [
+   "AirGradient Open Air Generation 1 (O-1PST)"
+  ],
+  "pm25_sensor_id": 15289075,
+  "licenses": [
+   {
+    "license": "CC BY 4.0",
+    "attribution": "FamilyFirst",
+    "url": null
+   }
+  ]
+ },
+ {
+  "location_id": 6096447,
+  "city": "Dubai",
+  "name": "Business Bay",
+  "provider": "AirGradient",
+  "timezone": "Asia/Dubai",
+  "lat": 25.18014,
+  "lon": 55.25271,
+  "is_monitor": false,
+  "instruments": [
+   "AirGradient Open Air Generation 1 (O-1PST)"
+  ],
+  "pm25_sensor_id": 14384841,
+  "licenses": [
+   {
+    "license": "CC BY 4.0",
+    "attribution": "batmam",
+    "url": null
+   }
+  ]
+ },
+ {
+  "location_id": 6206921,
+  "city": "Bengaluru",
+  "name": "Koramangala",
+  "provider": "AirGradient",
+  "timezone": "Asia/Kolkata",
+  "lat": 12.9370223,
+  "lon": 77.6115928,
+  "is_monitor": false,
+  "instruments": [
+   "AirGradient Open Air Generation 1 (O-1PST)"
+  ],
+  "pm25_sensor_id": 15203555,
+  "licenses": [
+   {
+    "license": "CC BY 4.0",
+    "attribution": "Bangalore - Koramangala Indoor",
+    "url": null
+   }
+  ]
+ },
+ {
+  "location_id": 7936,
+  "city": "Los Angeles",
+  "name": "Los Angeles - N. Mai",
+  "provider": "AirNow",
+  "timezone": "America/Los_Angeles",
+  "lat": 34.066429,
+  "lon": -118.226755,
+  "is_monitor": true,
+  "instruments": [
+   "Government Monitor"
+  ],
+  "pm25_sensor_id": 25196,
+  "licenses": [
+   {
+    "license": "US Public Domain",
+    "attribution": "Unknown Governmental Organization",
+    "url": null
+   }
+  ]
+ },
+ {
+  "location_id": 8039,
+  "city": "Mumbai (glitch fixture)",
+  "name": "Mumbai",
+  "provider": "AirNow",
+  "timezone": "Asia/Kolkata",
+  "lat": 19.07283,
+  "lon": 72.88261,
+  "is_monitor": true,
+  "instruments": [
+   "Government Monitor"
+  ],
+  "pm25_sensor_id": 23320,
+  "licenses": [
+   {
+    "license": "US Public Domain",
+    "attribution": "Unknown Governmental Organization",
+    "url": null
+   }
+  ]
+ },
+ {
+  "location_id": 8118,
+  "city": "Delhi (AirNow reference)",
+  "name": "New Delhi",
+  "provider": "AirNow",
+  "timezone": "Asia/Kolkata",
+  "lat": 28.63576,
+  "lon": 77.22445,
+  "is_monitor": true,
+  "instruments": [
+   "Government Monitor"
+  ],
+  "pm25_sensor_id": 23534,
+  "licenses": [
+   {
+    "license": "US Public Domain",
+    "attribution": "Unknown Governmental Organization",
+    "url": null
+   }
+  ]
+ }
+]
