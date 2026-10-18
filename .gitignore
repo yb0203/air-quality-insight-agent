@@ -11,3 +11,10 @@ docs/*.pdf
 
 # OS
 .DS_Store
+
+# Python / local runtime
+.venv/
+__pycache__/
+.pytest_cache/
+data/aqagent.db
+.superpowers/
