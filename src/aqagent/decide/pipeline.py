@@ -125,7 +125,7 @@ def evaluate_hour(ctx: UserHourContext) -> Evaluation:
                                         ctx.rules.relevance_floor, ctx.at)
     trace.append(TraceStep("D2", kind is not None, code, values={
         "state": ep_after.state if ep_after else None, "calm_run": run,
-        "candidate": kind.value if kind else None}))
+        "candidate": kind.value if kind else None, **_episode_values(ep_after, ctx.window, ctx.at)}))
 
     if kind is None:
         if code is ReasonCode.NO_TRIGGER and trig.label is not None and score.band is not None \
@@ -158,8 +158,12 @@ def evaluate_check_in(ctx: UserClockContext, held: list[Candidate]) -> Evaluatio
         bad = score.band >= ctx.rules.relevance_floor and worse
     recent_gap = ctx.last_sent_at is not None and \
         ctx.at - ctx.last_sent_at < timedelta(hours=params.CHECKIN_MIN_GAP_HOURS)
+    ep_open = ctx.episode if ctx.episode is not None and ctx.episode.is_open else None
+    if ep_open is not None:
+        trace.append(TraceStep("D2", True, values={"state": ep_open.state, **_episode_values(ep_open, ctx.window, ctx.at)}))
     trace.append(TraceStep("D8", bool(bad) and not recent_gap, None if bad and not recent_gap else ReasonCode.CHECKIN_QUIET,
-                           values={"check_in": True, "hours_considered": len(recent),
+                           values={"check_in": ctx.at.astimezone(ctx.tz).strftime("%H:%M"),
+                                   "absorbed_held": len(held), "hours_considered": len(recent),
                                    "band": _slug(score.band) if score else None,
                                    "typical_band": _slug(score.typical_band) if score else None,
                                    "ewma": score.ewma if score else None, "recent_notice": recent_gap}))
@@ -182,8 +186,11 @@ def evaluate_release(ctx: UserClockContext, held: list[Candidate]) -> Evaluation
         not held or ep is None or score is None or score.band is None
         or (ep.last_notified_band is not None and score.band <= ep.last_notified_band)
     )
+    if ep is not None:
+        trace.append(TraceStep("D2", True, values={"state": ep.state, **_episode_values(ep, ctx.window, ctx.at)}))
     trace.append(TraceStep("D8", not expired, ReasonCode.HELD_EXPIRED if expired else None, values={
-        "held": len(held), "episode_open": ep is not None, "band": _slug(score.band) if score else None}))
+        "held": len(held), "released": True, "episode_open": ep is not None,
+        "band": _slug(score.band) if score else None}))
     if expired:
         return Evaluation(Outcome.suppressed, ReasonCode.HELD_EXPIRED, trace, ctx.episode, absorbed=tuple(held), score=score)
     candidate = Candidate(CandidateKind.released, score.band, ep.id, _event_kind(None, ep), severe=score.band.is_severe)
@@ -240,6 +247,20 @@ def _event_kind(trig: TriggerResult | None, ep: EpisodeState | None) -> EventKin
         return trig.label
     kinds = ep.kinds if ep is not None else frozenset()
     return next((k for k in EVENT_PRECEDENCE if k in kinds), None)
+
+
+def _episode_values(ep: EpisodeState | None, window: list[StationScore], at: datetime) -> dict:
+    """Story facts for readers of the trace: when it started, how long, and its peak within the window."""
+    if ep is None:
+        return {}
+    end = ep.closed_at or at
+    inside = [s for s in window if s.nowcast is not None and s.period_end >= ep.opened_at - timedelta(hours=6)]
+    peak = max(inside, key=lambda s: s.nowcast) if inside else None
+    return {"started_at": ep.opened_at.isoformat(), "hours": round((end - ep.opened_at) / timedelta(hours=1), 1),
+            "ended_at": ep.closed_at.isoformat() if ep.closed_at else None,
+            "peak": {"pm25": round(peak.nowcast) if peak else ep.peak_value,
+                     "at": peak.period_end.isoformat() if peak else None,
+                     "band": ep.peak_band.slug if ep.peak_band else None}}
 
 
 def _score_values(s: StationScore) -> dict:

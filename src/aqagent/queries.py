@@ -132,7 +132,7 @@ def explain(conn: Connection, notification_id: int) -> dict | None:
     scores = []
     if score_ids:
         rows = conn.execute(sa.select(station_scores).where(station_scores.c.id.in_(score_ids)))
-        by_id = {r.id: dict(r._mapping) for r in rows}
+        by_id = {r.id: _score_view(dict(r._mapping)) for r in rows}
         scores = [by_id[i] for i in score_ids if i in by_id]
 
     start = d.period_end - timedelta(hours=EXPLAIN_READINGS_HOURS - 1)
@@ -151,3 +151,14 @@ def explain(conn: Connection, notification_id: int) -> dict | None:
         "baseline": None if b is None else dict(b._mapping),
         "rules_version": d.rules_version,
     }
+
+
+def _score_view(row: dict) -> dict:
+    """A station_scores row plus the plain fields a reader wants: when, the hour's value, and the usual level."""
+    import math
+
+    ev = row.get("evidence") or {}
+    m_h = ev.get("m_h")
+    return {**row, "at": row.get("period_end"), "pm25": ev.get("value"),
+            "typical_pm25": round(math.expm1(m_h), 1) if isinstance(m_h, (int, float)) else None}
+
