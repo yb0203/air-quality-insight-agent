@@ -7,7 +7,7 @@ What the brief asked for, and where each piece is.
 | Brief asks for | Where | Status |
 |---|---|---|
 | GitHub repository | [yb0203/air-quality-insight-agent](https://github.com/yb0203/air-quality-insight-agent) | ✅ |
-| Recorded demo video | Live demo: <https://air-quality-watch-demo.vercel.app>. Script for the video: [demo/explainer-script.md](demo/explainer-script.md) | 🎬 video in progress |
+| Recorded demo video | 60-second launch video: [demo/video/air-agent-60s-vertical.mp4](https://github.com/yb0203/air-quality-insight-agent/blob/main/docs/demo/video/air-agent-60s-vertical.mp4) (rendered locally with HyperFrames). 5-minute walkthrough script: [demo/explainer-script.md](demo/explainer-script.md). Live demo: <https://air-quality-watch-demo.vercel.app> | ✅ |
 | Decision / architecture note | [architecture-note.md](architecture-note.md) (short); [explainer.md](explainer.md) (full design with diagrams) | ✅ |
 | Transcript of coding tools / AI used | [transcripts/](transcripts/): Claude Code session transcripts (JSONL) for the orchestrator, its subagents, and the watch-demo, Vercel-deploy and explainer-video sessions | ✅ |
 | Conversation / notification history | [notification-history/](notification-history/): every notice each demo user received over the 90-day replay | ✅ |
@@ -25,7 +25,7 @@ What the brief asked for, and where each piece is.
 | Bonus | Decay / cooldown | Pace doubles within an episode; severe bypass | `test_qa_dedup_05` |
 | Bonus | Evaluation harness | Replays 90 days as-known; caught / missed / false alarms / volume | `scripts/replay_sample.py`, `tests/test_replay.py` |
 
-Every requirement has test cases in [QA.csv](QA.csv) (102 rows). The suite has 225 core tests and 36 watch-demo tests.
+Every requirement has test cases in [QA.csv](QA.csv) (102 rows). The suite has 225 core tests and 41 watch-demo tests. The live demo has 16 scenarios, each pinned to real decisions from the replay, plus a capabilities page (/capabilities) mapping each brief requirement to the scenarios that show it.
 
 ## Try it
 
