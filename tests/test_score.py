@@ -151,8 +151,9 @@ def test_score_excluded_hours():
     # the glitch hour never feeds EWMA, CUSUM, slope or NowCast
     h = rs[-1].period_end
     assert after_glitch.ewma == pytest.approx(ewma_of(window_values(rs, h, skip={glitch})))
-    assert z_of(75) - 0.5 > params.ELEVATED_H  # the 75 hour alone crosses the bar, so CUSUM restarts
-    assert after_glitch.cusum == pytest.approx(z_of(90) - 0.5)
+    # each strong hour counts at most CUSUM_CLIP (3.5) - 0.5 = 3, so 75 then 90 gives 6, below the bar of 8
+    assert z_of(75) > params.CUSUM_CLIP and z_of(90) > params.CUSUM_CLIP
+    assert after_glitch.cusum == pytest.approx(2 * (params.CUSUM_CLIP - params.CUSUM_KREF))
     missing = rs[-1].period_end + H1
     s = score_hours(rs, UTCZ, [missing], missing)[0]
     assert s.excluded is ReasonCode.NO_DATA and s.z is None
@@ -171,27 +172,28 @@ def test_qa_dq_07_no_baseline_score():
 def test_qa_dq_05_provisional_hour_is_rescored():
     rs = after(history(), [30, 200])
     newest = rs[-1].period_end
-    s = score_one(rs, newest)
-    assert s.excluded is None and s.z > 3 and s.evidence["provisional"] is True
-    rs = after(rs, [30])
-    again = score_hours(rs, UTCZ, [newest], rs[-1].period_end)[0]
-    assert again.excluded is ReasonCode.DQ_SUSPECT and again.z is None
+    s = score_one(rs, newest)  # a newest-hour jump is suspect until the next hour confirms it
+    assert s.excluded is ReasonCode.DQ_SUSPECT and s.z is None and s.evidence["provisional"] is True
+    reverted = score_hours(after(rs, [30]), UTCZ, [newest], newest + H1)[0]
+    assert reverted.excluded is ReasonCode.DQ_SUSPECT  # it reverted: a glitch
+    confirmed = score_hours(after(rs, [190]), UTCZ, [newest], newest + H1)[0]
+    assert confirmed.excluded is None and confirmed.z > 3  # it stayed high: real
     # readings newer than as_of are not known yet
-    assert score_hours(rs, UTCZ, [newest], newest)[0] == s
+    assert score_hours(after(rs, [190]), UTCZ, [newest], newest)[0] == s
 
 
 def test_score_cusum_resets_after_default_elevated_bar():
-    rs = after(history(), [v_for_z(5), v_for_z(5), FLAT])  # one isolated big hour would be DQ_SUSPECT
-    s0, s1, s2 = score_hours(rs, UTCZ, [r.period_end for r in rs[-3:]], rs[-1].period_end)
-    assert s0.cusum == pytest.approx(4.5)
-    assert s1.cusum == pytest.approx(9.0) and s1.ewma > params.ELEVATED_MIN_EWMA
-    assert s2.cusum == 0  # reset after exceeding 8, then max(0, 0 + 0 - 0.5); no reset would give 8.5
+    rs = after(history(), [v_for_z(5), v_for_z(5), v_for_z(5), FLAT])  # increments clipped to 3 each
+    s0, s1, s2, s3 = score_hours(rs, UTCZ, [r.period_end for r in rs[-4:]], rs[-1].period_end)
+    assert (s0.cusum, s1.cusum) == (pytest.approx(3.0), pytest.approx(6.0))
+    assert s2.cusum == pytest.approx(9.0) and s2.ewma > params.ELEVATED_MIN_EWMA
+    assert s3.cusum == 0  # reset after exceeding 8, then max(0, 0 + 0 - 0.5); no reset would give 8.5
 
 
 def test_score_cusum_reset_needs_elevated_ewma():
     # a long run far below normal drags EWMA negative while CUSUM sits at 0
-    lows = [v_for_z(-5 - 0.1 * i) for i in range(10)]
-    rs = after(history(), lows + [v_for_z(5), v_for_z(5), FLAT])
+    lows = [v_for_z(-10 - 0.1 * i) for i in range(10)]  # deep enough that 3 strong hours leave EWMA < 0.5
+    rs = after(history(), lows + [v_for_z(5), v_for_z(5), v_for_z(5), FLAT])
     s1, s2 = score_hours(rs, UTCZ, [rs[-2].period_end, rs[-1].period_end], rs[-1].period_end)
     assert s1.cusum == pytest.approx(9.0) and s1.ewma < params.ELEVATED_MIN_EWMA
     assert s2.cusum == pytest.approx(8.5)  # "elevated" would not fire, so no reset

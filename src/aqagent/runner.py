@@ -232,13 +232,30 @@ def data_run(conn: sa.Connection, changed: dict[int, list[datetime]], clock: Clo
         if station is None or not hours:
             continue
         tz = ZoneInfo(station.timezone)
-        known = repo.readings_as_of(conn, sensor_id, hours[0] - SCORING_LOOKBACK, hours[-1], at)
-        scores = score_hours(known, tz, hours, at, sensor_id=sensor_id)
+        # S-C §2: the newest hour was only provisionally clean; re-check the hour before each arrival.
+        recheck = sorted({h - HOUR for h in hours} - set(hours))
+        before = {h: s for h in recheck for s in repo.scores_window(conn, sensor_id, h, hours=1, as_of=at)}
+        ss = db.station_scores
+        done_now = {r for (r,) in conn.execute(sa.select(ss.c.period_end).where(
+            ss.c.sensor_id == sensor_id, ss.c.evaluated_at == at, ss.c.period_end.in_(recheck)))} if recheck else set()
+        recheck = [h for h in recheck if h in before and h not in done_now]
+        known = repo.readings_as_of(conn, sensor_id, min(hours + recheck) - SCORING_LOOKBACK, hours[-1], at)
+        scores = score_hours(known, tz, sorted(hours + recheck), at, sensor_id=sensor_id)
         repo.save_scores(conn, scores, at)
         summary.scored += len(scores)
+        turned_bad = {s.period_end: s.excluded for s in scores
+                      if s.period_end in before and before[s.period_end].excluded is None and s.excluded is not None}
 
         for user in [u for u in users_for(conn, station.station_id) if u.sensor_id == sensor_id]:
             high_water = _last_evaluated_hour(conn, user.id)
+            for hour, code in sorted(turned_bad.items()):
+                if high_water is not None and hour <= high_water:
+                    ev = Evaluation(Outcome.no_event, code, [TraceStep("S2/U2", False, code, values={
+                        "period_end": hour.isoformat(), "rechecked": True})], None)
+                    _persist(conn, user, ev, period_end=hour, at=at, trigger="data",
+                             score_ids=repo.score_ids_window(conn, sensor_id, hour, hours=1, as_of=at),
+                             llm=llm, replay_run=replay_run)
+                    summary.add(ev)
             for hour in hours:
                 if high_water is not None and hour <= high_water:
                     ev = Evaluation(Outcome.no_event, ReasonCode.LATE_HOUR_SCORED,

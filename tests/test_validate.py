@@ -59,9 +59,16 @@ def test_qa_dq_04_real_rise_is_not_a_glitch():
 
 
 def test_qa_dq_05_provisional_last():
+    # a newest hour that jumps > 3x and +20 over the previous one is a suspected glitch until confirmed
     out = validate(hourly(T0, [30, 200]))
-    assert out[-1].provisional is True and out[-1].excluded is None
+    assert out[-1].provisional is True and out[-1].excluded is ReasonCode.DQ_SUSPECT
     assert out[0].provisional is False
+    # an ordinary newest hour is provisionally clean
+    out = validate(hourly(T0, [30, 40]))
+    assert out[-1].provisional is True and out[-1].excluded is None
+    # the next hour confirms the jump (stays high): no longer suspect
+    out = validate(hourly(T0, [30, 200, 190]))
+    assert out[1].excluded is None and out[2].provisional is True and out[2].excluded is None
     out = validate(hourly(T0, [30, 200, 30]))
     assert out[1].excluded is ReasonCode.DQ_SUSPECT and out[1].provisional is False
     assert out[2].provisional is True

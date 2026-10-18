@@ -232,3 +232,26 @@ def test_qa_rule_12_pollutant_filter(conn):
     before = len(decisions(conn))
     feed(conn, [reading(n, 500.0, sensor=PM10)], T0 + n * HOUR + LAG, clock)
     assert len(decisions(conn)) == before  # pm10 hours never reach pm25 users
+
+
+def test_qa_dq_05_glitch_rechecked_when_next_hour_arrives(conn):
+    """The newest hour is provisionally clean; when the next hour arrives it is re-checked, and a glitch
+    is recorded as DQ_SUSPECT for that hour (S-C §2)."""
+    clock = FixedClock(T0)
+    n = warm_up(conn, clock)
+    feed(conn, [reading(n, 900.0)], T0 + n * HOUR + LAG, clock)  # a newest-hour jump: suspect for now
+    first = decisions(conn, user_id="arjun")[-1]
+    assert first["period_end"] == T0 + n * HOUR and first["reason_code"] == "DQ_SUSPECT"
+    feed(conn, [reading(n + 1)], T0 + (n + 1) * HOUR + LAG, clock)  # back to normal: hour n was a glitch
+    assert repo.scores_window(conn, SENSOR, T0 + n * HOUR, hours=1)[0].excluded.value == "DQ_SUSPECT"
+    assert conn.execute(sa.select(sa.func.count()).select_from(db.notifications)).scalar() == 0
+
+
+def test_confirmed_jump_is_rescored_clean_and_can_spike(conn):
+    clock = FixedClock(T0)
+    n = warm_up(conn, clock)
+    feed(conn, [reading(n, 300.0)], T0 + n * HOUR + LAG, clock)  # suspect for now
+    feed(conn, [reading(n + 1, 310.0)], T0 + (n + 1) * HOUR + LAG, clock)  # it stayed high: real
+    assert repo.scores_window(conn, SENSOR, T0 + n * HOUR, hours=1)[0].excluded is None
+    last = decisions(conn, user_id="arjun")[-1]
+    assert last["period_end"] == T0 + (n + 1) * HOUR and last["outcome"] == "sent"  # spike confirmed on 2 of 3

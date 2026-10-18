@@ -86,7 +86,7 @@ def _ewma_cusum(window: list[CheckedReading], breaks: set[datetime], b: Baseline
             ewma = params.EWMA_LAMBDA * z + (1 - params.EWMA_LAMBDA) * ewma
             if fired:
                 cusum = 0.0
-        cusum = max(0.0, cusum + z - params.CUSUM_KREF)
+        cusum = max(0.0, cusum + min(z, params.CUSUM_CLIP) - params.CUSUM_KREF)
         fired = cusum > _ELEVATED_BAR and ewma >= params.ELEVATED_MIN_EWMA
     return z, ewma, cusum
 

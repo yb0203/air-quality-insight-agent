@@ -67,7 +67,7 @@ def triggers(window: list[StationScore], k: float, alert_band: Band) -> list[Tri
         if s.gap_break:  # S-C §2: a gap > 3h restarts short-term memory
             cusum, recent_z, climb_run = 0.0, [], 0
         recent_z = (recent_z + [s.z])[-spike_of:]
-        cusum = max(0.0, cusum + s.z - params.CUSUM_KREF)
+        cusum = max(0.0, cusum + min(s.z, params.CUSUM_CLIP) - params.CUSUM_KREF)
         ewma = s.ewma
         slope = s.slope_6h
         rising = slope is not None and slope > params.CLIMB_SLOPE

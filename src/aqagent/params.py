@@ -20,6 +20,7 @@ SHRINK_SAMPLES = 7
 SCORE_WINDOW_HOURS = 72
 EWMA_LAMBDA = 0.3
 CUSUM_KREF = 0.5
+CUSUM_CLIP = 3.5  # per-hour z counted by CUSUM is capped at the spike bar: one wild hour can't fire 'elevated'
 SLOPE_HOURS = 6
 NOWCAST_HOURS = 12
 

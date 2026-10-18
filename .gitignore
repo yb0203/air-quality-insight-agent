@@ -18,3 +18,4 @@ __pycache__/
 .pytest_cache/
 data/aqagent.db
 .superpowers/
+data/replay*.db

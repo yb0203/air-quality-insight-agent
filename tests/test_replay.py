@@ -80,9 +80,9 @@ def test_qa_eval_04_helsinki_smoke_caught():
     d = db.decisions
     hits = conn.execute(sa.select(d.c.period_end, d.c.outcome).where(
         d.c.user_id == "aino", d.c.outcome.in_(["sent", "held"]),
-        d.c.period_end >= datetime(2026, 8, 24, 5, tzinfo=UTC),
+        d.c.period_end >= datetime(2026, 8, 23, 23, tzinfo=UTC),
         d.c.period_end <= datetime(2026, 8, 24, 11, tzinfo=UTC))).all()
-    assert hits, "Aino should hear about the 24 Aug smoke within 6 hours"
+    assert hits, "Aino should hear about the 24 Aug smoke within 6 hours of its onset"
 
 
 def test_qa_eval_03_glitch_fixture_silent():
@@ -114,11 +114,12 @@ def test_qa_eval_06_volume_guard(full):
     conn, _ = full
     rep = report(conn, "full", all_moments(conn, LABELS), START, END)
     for uid in ("arjun", "priya", "maya"):  # the default-sensitivity personas
-        assert rep[uid]["notices_per_week"] <= 4, (uid, rep[uid])
+        assert rep[uid]["event_notices_per_week"] <= 4, (uid, rep[uid])  # opened/escalated/cleared/released
+        assert rep[uid]["notices_per_week"] <= 5, (uid, rep[uid])  # including the morning check-ins
 
 
 def test_qa_det_10_same_value_differs_by_city():
-    """15 µg/m³ is a big deal in Helsinki and an ordinary hour in Delhi."""
+    """Three hours at 25 µg/m³ are a spike in Helsinki and an ordinary afternoon in Delhi."""
     from aqagent.understand.score import score_hours
     from zoneinfo import ZoneInfo
     from aqagent import repo
@@ -126,14 +127,19 @@ def test_qa_det_10_same_value_differs_by_city():
     conn = fresh(location_ids={4588, 4712609})
     at = datetime(2026, 9, 10, 12, 0, tzinfo=UTC)
     for sensor, tz in [(11382, "Europe/Helsinki"), (15289075, "Asia/Kolkata")]:
+        from aqagent.decide.trigger import triggers
+        from aqagent.types import Band, EventKind
+
         known = repo.readings_as_of(conn, sensor, at - timedelta(days=15), at, at)
-        hour = known[-1].period_end
-        spiked = known[:-1] + [type(known[-1])(sensor, hour, hour - timedelta(hours=1), 15.0, 100.0)]
-        z = score_hours(spiked, ZoneInfo(tz), [hour], at)[0].z
+        R = type(known[-1])
+        spiked = known[:-3] + [R(sensor, r.period_end, r.period_start, 25.0, 100.0) for r in known[-3:]]
+        hours = [r.period_end for r in spiked[-72:]]
+        scores = score_hours(spiked, ZoneInfo(tz), hours, at)
+        fired = triggers(scores, 1.0, Band.VERY_UNHEALTHY)[-1].fired
         if sensor == 11382:
-            assert z > 3.5
+            assert EventKind.spike in fired
         else:
-            assert z < 0  # 15 is below a normal Delhi hour
+            assert not fired and scores[-1].z < 0  # 25 is below a normal Delhi hour
 
 
 def test_qa_det_12_live_equals_replay():

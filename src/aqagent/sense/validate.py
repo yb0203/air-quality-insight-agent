@@ -48,6 +48,10 @@ def _is_glitch(v: float, prev: float, nxt: float) -> bool:
     )
 
 
+def _is_jump(value: float, prev: float) -> bool:
+    return value > params.GLITCH_RATIO * max(prev, 1.0) and value - prev > params.GLITCH_DELTA
+
+
 def validate(readings: list[Reading], provisional_last: bool = True) -> list[CheckedReading]:
     """Label every reading with why it is excluded from scoring (None = usable), ascending by time.
 
@@ -80,6 +84,9 @@ def validate(readings: list[Reading], provisional_last: bool = True) -> list[Che
                     code = ReasonCode.DQ_SUSPECT
             elif nxt is None and i == len(rs) - 1 and provisional_last:
                 provisional = True
+                # Suspect until the next hour confirms it: a jump that would be a glitch if it reverts.
+                if prev is not None and _is_jump(r.value, rs[prev].value):
+                    code = ReasonCode.DQ_SUSPECT
         out.append(CheckedReading(r, code, provisional))
     return out
 

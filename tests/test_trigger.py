@@ -180,3 +180,14 @@ def test_qa_dq_08_gap_resets_spike_memory():
     assert EventKind.spike in triggers(w, 1.0, Band.VERY_UNHEALTHY)[5].fired  # 2 of 3 without a gap
     w[5] = replace(w[5], gap_break=True)
     assert EventKind.spike not in triggers(w, 1.0, Band.VERY_UNHEALTHY)[5].fired  # memory restarts at the gap
+
+
+def test_review_single_wild_hour_cannot_fire_elevated():
+    """CUSUM increments are clipped at the spike bar: one glitch hour (z=18) can't push it past 8 alone."""
+    w = win(4, z=[0, 0, 0, 18.0], ewma=[0, 0, 0, 5.4])
+    assert EventKind.elevated not in triggers(w, 1.0, Band.VERY_UNHEALTHY)[-1].fired
+
+
+def test_elevated_still_fires_on_three_strong_hours():
+    w = win(4, z=[0, 4.0, 4.0, 4.0], ewma=[0, 1.2, 2.0, 2.6])
+    assert EventKind.elevated in triggers(w, 1.0, Band.VERY_UNHEALTHY)[-1].fired  # 3 x (3.5 - 0.5) = 9 > 8
