@@ -1,0 +1,209 @@
+[
+  {
+    "at": "2026-10-13T09:30:00Z",
+    "pm25": 15.0,
+    "nowcast": 34.4,
+    "band": "moderate",
+    "typical_pm25": 75.0,
+    "typical_band": "unhealthy",
+    "dq": null
+  },
+  {
+    "at": "2026-10-13T10:30:00Z",
+    "pm25": 63.0,
+    "nowcast": 50.7,
+    "band": "usg",
+    "typical_pm25": 101.0,
+    "typical_band": "unhealthy",
+    "dq": null
+  },
+  {
+    "at": "2026-10-13T11:30:00Z",
+    "pm25": 367.0,
+    "nowcast": 50.7,
+    "band": "usg",
+    "typical_pm25": 231.5,
+    "typical_band": "hazardous",
+    "dq": "DQ_SUSPECT"
+  },
+  {
+    "at": "2026-10-13T12:30:00Z",
+    "pm25": 68.0,
+    "nowcast": 62.7,
+    "band": "unhealthy",
+    "typical_pm25": 59.5,
+    "typical_band": "unhealthy",
+    "dq": null
+  },
+  {
+    "at": "2026-10-13T13:30:00Z",
+    "pm25": 76.0,
+    "nowcast": 70.5,
+    "band": "unhealthy",
+    "typical_pm25": 61.0,
+    "typical_band": "unhealthy",
+    "dq": null
+  },
+  {
+    "at": "2026-10-13T14:30:00Z",
+    "pm25": 99.0,
+    "nowcast": 85.8,
+    "band": "unhealthy",
+    "typical_pm25": 55.0,
+    "typical_band": "usg",
+    "dq": null
+  },
+  {
+    "at": "2026-10-13T15:30:00Z",
+    "pm25": 116.0,
+    "nowcast": 101.5,
+    "band": "unhealthy",
+    "typical_pm25": 64.0,
+    "typical_band": "unhealthy",
+    "dq": null
+  },
+  {
+    "at": "2026-10-13T16:30:00Z",
+    "pm25": 145.0,
+    "nowcast": 123.6,
+    "band": "unhealthy",
+    "typical_pm25": 64.0,
+    "typical_band": "unhealthy",
+    "dq": null
+  },
+  {
+    "at": "2026-10-13T17:30:00Z",
+    "pm25": 103.0,
+    "nowcast": 113.2,
+    "band": "unhealthy",
+    "typical_pm25": 55.0,
+    "typical_band": "usg",
+    "dq": null
+  },
+  {
+    "at": "2026-10-13T18:30:00Z",
+    "pm25": 97.0,
+    "nowcast": 105.1,
+    "band": "unhealthy",
+    "typical_pm25": 57.0,
+    "typical_band": "unhealthy",
+    "dq": null
+  },
+  {
+    "at": "2026-10-13T19:30:00Z",
+    "pm25": 100.0,
+    "nowcast": 102.5,
+    "band": "unhealthy",
+    "typical_pm25": 55.0,
+    "typical_band": "usg",
+    "dq": null
+  },
+  {
+    "at": "2026-10-13T20:30:00Z",
+    "pm25": 112.0,
+    "nowcast": 107.3,
+    "band": "unhealthy",
+    "typical_pm25": 54.0,
+    "typical_band": "usg",
+    "dq": null
+  },
+  {
+    "at": "2026-10-13T21:30:00Z",
+    "pm25": 112.0,
+    "nowcast": 109.7,
+    "band": "unhealthy",
+    "typical_pm25": 52.0,
+    "typical_band": "usg",
+    "dq": null
+  },
+  {
+    "at": "2026-10-13T22:30:00Z",
+    "pm25": 84.0,
+    "nowcast": 96.8,
+    "band": "unhealthy",
+    "typical_pm25": 56.0,
+    "typical_band": "unhealthy",
+    "dq": null
+  },
+  {
+    "at": "2026-10-13T23:30:00Z",
+    "pm25": 81.0,
+    "nowcast": 88.9,
+    "band": "unhealthy",
+    "typical_pm25": 56.0,
+    "typical_band": "unhealthy",
+    "dq": null
+  },
+  {
+    "at": "2026-10-14T00:30:00Z",
+    "pm25": 78.0,
+    "nowcast": 84.1,
+    "band": "unhealthy",
+    "typical_pm25": 67.0,
+    "typical_band": "unhealthy",
+    "dq": null
+  },
+  {
+    "at": "2026-10-14T01:30:00Z",
+    "pm25": 74.0,
+    "nowcast": 79.0,
+    "band": "unhealthy",
+    "typical_pm25": 67.0,
+    "typical_band": "unhealthy",
+    "dq": null
+  },
+  {
+    "at": "2026-10-14T02:30:00Z",
+    "pm25": 80.0,
+    "nowcast": 79.5,
+    "band": "unhealthy",
+    "typical_pm25": 67.5,
+    "typical_band": "unhealthy",
+    "dq": null
+  },
+  {
+    "at": "2026-10-14T04:30:00Z",
+    "pm25": 57.0,
+    "nowcast": 64.7,
+    "band": "unhealthy",
+    "typical_pm25": 61.0,
+    "typical_band": "unhealthy",
+    "dq": null
+  },
+  {
+    "at": "2026-10-14T05:30:00Z",
+    "pm25": 65.0,
+    "nowcast": 64.9,
+    "band": "unhealthy",
+    "typical_pm25": 60.0,
+    "typical_band": "unhealthy",
+    "dq": null
+  },
+  {
+    "at": "2026-10-14T06:30:00Z",
+    "pm25": 75.0,
+    "nowcast": 70.2,
+    "band": "unhealthy",
+    "typical_pm25": 60.0,
+    "typical_band": "unhealthy",
+    "dq": null
+  },
+  {
+    "at": "2026-10-14T07:30:00Z",
+    "pm25": 980.0,
+    "nowcast": 70.2,
+    "band": "unhealthy",
+    "typical_pm25": 65.0,
+    "typical_band": "unhealthy",
+    "dq": "DQ_SUSPECT"
+  },
+  {
+    "at": "2026-10-14T08:30:00Z",
+    "pm25": 90.0,
+    "nowcast": 83.4,
+    "band": "unhealthy",
+    "typical_pm25": 59.0,
+    "typical_band": "unhealthy",
+    "dq": null
+  }
+]

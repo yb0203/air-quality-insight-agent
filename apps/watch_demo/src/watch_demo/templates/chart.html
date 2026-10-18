@@ -1,0 +1,84 @@
+{# The data behind the watch: what the agent saw, and what it decided each hour. Demo frame, not product. #}
+<section class="chart-panel" aria-label="Readings and decisions">
+  <h2 class="chart-title">{{ chart.title }}</h2>
+  <p class="chart-sub">Click any hour to see the watch at that moment.</p>
+
+  <svg class="chart" viewBox="0 0 {{ chart.width }} {{ chart.height }}" role="img"
+       aria-label="{{ chart.title }}, with the usual level for each hour and the agent's decisions">
+    {% for z in chart.zones %}
+      <rect class="zone zone-{{ z.band }}" x="{{ chart.left }}" y="{{ '%.1f' % z.y }}"
+            width="{{ chart.right - chart.left }}" height="{{ '%.1f' % z.h }}"></rect>
+      {% if z.show_label %}<text class="zone-label" x="{{ chart.left + 6 }}" y="{{ '%.1f' % (z.y + 12) }}">{{ z.label }}</text>{% endif %}
+    {% endfor %}
+
+    {% for tk in chart.yticks %}
+      <line class="grid" x1="{{ chart.left }}" x2="{{ chart.right }}" y1="{{ '%.1f' % tk.y }}" y2="{{ '%.1f' % tk.y }}"></line>
+      <text class="tick" x="{{ chart.left - 6 }}" y="{{ '%.1f' % (tk.y + 4) }}" text-anchor="end">{{ tk.label }}</text>
+    {% endfor %}
+    {% for tk in chart.xticks %}
+      <text class="tick" x="{{ '%.1f' % tk.x }}" y="{{ chart.bottom + 16 }}" text-anchor="middle">{{ tk.label }}</text>
+    {% endfor %}
+
+    <path class="usual" d="{{ chart.usual }}"></path>
+    <path class="pm" d="{{ chart.line }}"></path>
+    {% if chart.usual_label %}
+      <text class="direct" x="{{ '%.1f' % (chart.usual_label.x + 6) }}" y="{{ '%.1f' % (chart.usual_label.y + 4) }}">usual</text>
+    {% endif %}
+    {% if chart.end_label %}
+      <circle class="pm-end" cx="{{ '%.1f' % chart.end_label.x }}" cy="{{ '%.1f' % chart.end_label.y }}" r="4"></circle>
+      <text class="direct strong" x="{{ '%.1f' % (chart.end_label.x + 8) }}" y="{{ '%.1f' % (chart.end_label.y - 6) }}">{{ chart.end_label.label }}</text>
+    {% endif %}
+    {% for g in chart.ignored %}
+      <circle class="ignored" cx="{{ '%.1f' % g.x }}" cy="{{ '%.1f' % g.y }}" r="5"></circle>
+      <text class="direct" x="{{ '%.1f' % (g.x - 9 if g.flip else g.x + 9) }}" y="{{ '%.1f' % (g.y + 4) }}"
+            text-anchor="{{ 'end' if g.flip else 'start' }}">{{ g.label }}</text>
+    {% endfor %}
+
+    <text class="lane-label" x="{{ chart.left - 6 }}" y="{{ chart.lane_y + 4 }}" text-anchor="end">agent</text>
+    <line class="lane" x1="{{ chart.left }}" x2="{{ chart.right }}" y1="{{ chart.lane_y }}" y2="{{ chart.lane_y }}"></line>
+
+    {# Everything after the selected moment is dimmed: the watch hasn't lived it yet. #}
+    <rect class="future" x="{{ '%.1f' % chart.cursor_x }}" y="0"
+          width="{{ '%.1f' % (chart.width - chart.cursor_x) }}" height="{{ chart.height }}"></rect>
+    <line class="cursor" x1="{{ '%.1f' % chart.cursor_x }}" x2="{{ '%.1f' % chart.cursor_x }}"
+          y1="{{ chart.top }}" y2="{{ chart.lane_y + 14 }}"></line>
+
+    {% for col in chart.columns %}
+      <a href="{{ col.href }}"><title>{{ col.tip }}</title>
+        <rect class="hit" x="{{ '%.1f' % col.x }}" y="{{ chart.top }}" width="{{ '%.1f' % col.w }}"
+              height="{{ chart.lane_y + 14 - chart.top }}"></rect></a>
+    {% endfor %}
+
+    {% for m in chart.marks %}
+      <a href="{{ m.href }}" class="mark mark-{{ m.kind }}"><title>{{ m.tip }}</title>
+        {% if m.focus %}<circle class="focus-ring" cx="{{ '%.1f' % m.x }}" cy="{{ chart.lane_y }}" r="10"></circle>{% endif %}
+        {% if m.kind == "no_event" or m.kind == "suppressed" %}
+          <line x1="{{ '%.1f' % m.x }}" x2="{{ '%.1f' % m.x }}" y1="{{ chart.lane_y - 5 }}" y2="{{ chart.lane_y + 5 }}"></line>
+        {% else %}
+          <circle cx="{{ '%.1f' % m.x }}" cy="{{ chart.lane_y }}" r="6"></circle>
+        {% endif %}
+        {% if m.label %}<text x="{{ '%.1f' % m.x }}" y="{{ chart.lane_y + 24 }}" text-anchor="middle">{{ m.label }}</text>{% endif %}
+      </a>
+    {% endfor %}
+  </svg>
+
+  <ul class="legend">
+    <li><span class="key key-pm"></span>PM2.5</li>
+    <li><span class="key key-usual"></span>usual for the hour</li>
+    <li><span class="key key-sent"></span>sent</li>
+    <li><span class="key key-held"></span>held</li>
+    <li><span class="key key-quiet"></span>nothing new to say</li>
+    {% if chart.ignored %}<li><span class="key key-ignored"></span>ignored reading</li>{% endif %}
+  </ul>
+
+  <div class="decided">
+    {% if reading %}
+      <p class="decided-reading"><strong>{{ reading_at }}</strong> · PM2.5 {{ '%.0f' % reading.pm25 }}{% if reading.typical_pm25 is not none %}, usual {{ '%.0f' % reading.typical_pm25 }}{% endif %}{% if reading.band %} · {{ band_labels[reading.band] }}{% endif %}{% if reading.dq %} · excluded ({{ reading.dq }}){% endif %}</p>
+    {% endif %}
+    {% if decided %}
+      <p class="decided-line"><span class="pill pill-{{ decided.outcome }}">{{ decided_label }}</span>
+        <code>{{ decided.reason_code }}</code> at {{ decided_at }}{% if decided.trigger == "clock" %} (clock){% endif %}</p>
+      <p class="decided-reason">{{ decided.reason }}</p>
+    {% endif %}
+  </div>
+</section>

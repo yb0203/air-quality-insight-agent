@@ -8,6 +8,8 @@
   --hazardous: #7e0023;
   --card: #1c1c1e;
   --muted: #8e8e93;
+  --speak: #ff9f0a;   /* the agent spoke */
+  --quiet: #636366;   /* the agent stayed quiet */
   --font: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", Arial, sans-serif;
 }
 
@@ -53,7 +55,7 @@ body {
 .chip.active { background: #fff; border-color: #fff; color: #000; font-weight: 600; }
 
 .frame-notes {
-  max-width: 520px;
+  max-width: 640px;
   text-align: center;
   color: var(--muted);
   font-size: 14px;
@@ -66,7 +68,13 @@ body {
 
 /* ---------- the watch (Apple Watch 45 mm proportions) ---------- */
 
-.stage { display: flex; justify-content: center; }
+.stage {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+}
 
 .watch {
   position: relative;
@@ -206,3 +214,100 @@ body {
 .band-unhealthy { --accent: var(--unhealthy); }
 .band-very_unhealthy { --accent: var(--very_unhealthy); }
 .band-hazardous { --accent: var(--hazardous); }
+
+/* ---------- chart panel (demo frame, beside the watch) ---------- */
+
+.chart-panel { width: 600px; max-width: 100%; }
+.chart-title { margin: 0; font-size: 15px; font-weight: 600; color: #e5e5ea; }
+.chart-sub { margin: 2px 0 8px; font-size: 13px; color: var(--muted); }
+.chart { display: block; width: 100%; height: auto; font-family: var(--font); }
+
+.zone { opacity: 0.1; }
+.zone-good { fill: var(--good); }
+.zone-moderate { fill: var(--moderate); }
+.zone-usg { fill: var(--usg); }
+.zone-unhealthy { fill: var(--unhealthy); }
+.zone-very_unhealthy { fill: var(--very_unhealthy); }
+.zone-hazardous { fill: var(--hazardous); }
+.zone-label { font-size: 10px; fill: var(--muted); }
+
+.grid { stroke: #2c2c2e; stroke-width: 1; }
+.tick, .lane-label { font-size: 11px; fill: var(--muted); font-variant-numeric: tabular-nums; }
+.lane { stroke: #2c2c2e; stroke-width: 1; }
+
+.pm { fill: none; stroke: #f2f2f7; stroke-width: 2; stroke-linejoin: round; stroke-linecap: round; }
+.usual { fill: none; stroke: #8e8e93; stroke-width: 2; stroke-linejoin: round; stroke-linecap: round; opacity: 0.8; }
+.pm-end { fill: #f2f2f7; stroke: #000; stroke-width: 2; }
+.direct { font-size: 11px; fill: var(--muted); }
+.direct.strong { fill: #f2f2f7; font-weight: 600; }
+.ignored { fill: none; stroke: #f2f2f7; stroke-width: 2; stroke-dasharray: 2 2; }
+
+.future { fill: #000; opacity: 0.55; pointer-events: none; }
+.cursor { stroke: #f2f2f7; stroke-width: 1; pointer-events: none; }
+
+.hit { fill: transparent; cursor: pointer; }
+.chart a:hover .hit { fill: rgba(255, 255, 255, 0.06); }
+
+.mark { cursor: pointer; }
+.mark line { stroke: var(--quiet); stroke-width: 2; stroke-linecap: round; }
+.mark text { font-size: 11px; fill: #e5e5ea; }
+.mark-sent circle { fill: var(--speak); stroke: #000; stroke-width: 2; }
+.mark-held circle { fill: #000; stroke: var(--speak); stroke-width: 2; }
+.mark .focus-ring { fill: none; stroke: #f2f2f7; stroke-width: 1.5; }
+.mark-ignored circle { fill: #000; stroke: var(--quiet); stroke-width: 2; stroke-dasharray: 2 2; }
+
+.legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 16px;
+  margin: 6px 0 12px;
+  padding: 0;
+  list-style: none;
+  font-size: 12px;
+  color: var(--muted);
+}
+.key { display: inline-block; margin-right: 6px; vertical-align: middle; }
+.key-pm, .key-usual { width: 16px; height: 2px; border-radius: 1px; background: #f2f2f7; }
+.key-usual { background: #8e8e93; }
+.key-sent, .key-held, .key-ignored { width: 10px; height: 10px; border-radius: 50%; box-sizing: border-box; }
+.key-sent { background: var(--speak); }
+.key-held { border: 2px solid var(--speak); }
+.key-ignored { border: 2px dashed var(--quiet); }
+.key-quiet { width: 2px; height: 10px; background: var(--quiet); }
+
+.decided {
+  padding: 12px 14px;
+  border: 1px solid #2c2c2e;
+  border-radius: 12px;
+  font-size: 13px;
+  line-height: 1.45;
+  color: #c7c7cc;
+}
+.decided p { margin: 0 0 4px; }
+.decided p:last-child { margin: 0; }
+.decided strong { color: #fff; }
+.decided code { font-family: ui-monospace, Menlo, monospace; font-size: 12px; color: #e5e5ea; }
+.decided-reason { color: var(--muted); }
+.pill {
+  display: inline-block;
+  margin-right: 6px;
+  padding: 1px 8px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 600;
+  background: #2c2c2e;
+  color: #e5e5ea;
+}
+.pill-sent { background: var(--speak); color: #000; }
+.pill-held { box-shadow: inset 0 0 0 1.5px var(--speak); background: transparent; }
+
+.moon {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  margin-right: 9px;
+  border-radius: 50%;
+  box-shadow: inset -5px -2px 0 0 var(--speak);
+  transform: rotate(-30deg);
+  vertical-align: -1px;
+}

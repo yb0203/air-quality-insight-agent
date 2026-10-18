@@ -15,7 +15,7 @@ from typing import Protocol
 
 import httpx
 
-from .models import Decision, Explain, Notification, User
+from .models import Decision, Explain, Notification, Reading, User
 
 
 class AgentClient(Protocol):
@@ -33,6 +33,8 @@ class AgentClient(Protocol):
         outcome: str | None = None,
         replay_run: str | None = None,
     ) -> list[Decision]: ...
+
+    def readings(self, station_id: int, start: datetime, end: datetime) -> list[Reading]: ...
 
 
 def _iso(t: datetime) -> str:
@@ -69,6 +71,10 @@ class HttpAgentClient:
         )
         return [Decision.model_validate(d) for d in rows]
 
+    def readings(self, station_id: int, start: datetime, end: datetime) -> list[Reading]:
+        rows = self._get(f"/stations/{station_id}/readings", start=_iso(start), end=_iso(end))
+        return [Reading.model_validate(r) for r in rows]
+
 
 class FixtureAgentClient:
     """Serves contract-shaped JSON from disk, applying the same filters the API does.
@@ -78,6 +84,7 @@ class FixtureAgentClient:
       feeds/<user_id>__<replay_run>.json        whole feed; filtered by `until` here
       decisions/<user_id>__<replay_run>.json    filtered by start/end/outcome here
       explain/<notification_id>.json
+      readings/<station_id>.json                filtered by start/end here
     """
 
     def __init__(self, root: Path):
@@ -112,6 +119,11 @@ class FixtureAgentClient:
             for d in items
             if start <= d.evaluated_at <= end and (outcome is None or d.outcome == outcome)
         ]
+
+    def readings(self, station_id: int, start: datetime, end: datetime) -> list[Reading]:
+        rows = self._load("readings", f"{station_id}.json") or []
+        items = [Reading.model_validate(r) for r in rows]
+        return sorted((r for r in items if start <= r.at <= end), key=lambda r: r.at)
 
 
 def default_fixtures_dir() -> Path:

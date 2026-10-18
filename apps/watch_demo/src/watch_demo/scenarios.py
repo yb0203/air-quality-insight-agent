@@ -18,6 +18,7 @@ class Scenario(BaseModel):
     until: datetime
     description: str
     limit: int | None = None
+    chart_hours: int = 24
 
 
 def default_scenarios_path() -> Path:

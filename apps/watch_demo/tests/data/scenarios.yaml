@@ -1,6 +1,7 @@
 # Demo scenarios, one filter chip each. The watch shows `user_id`'s feed from
 # `replay_run` as it stood at `until` (UTC), the replayed "now".
 # `limit` (optional) keeps only the newest N notices, for a focused shot.
+# `chart_hours` (optional, default 24) is how much history the chart shows before `until`.
 scenarios:
   - id: delhi-smog-night
     label: Delhi smog night
@@ -35,6 +36,7 @@ scenarios:
     user_id: rohan
     replay_run: demo-mumbai-2026-10
     until: "2026-10-14T08:40:00Z"
+    chart_hours: 14
     description: >-
       A Mumbai sensor reported 980 µg/m³ for one hour between readings of 75 and 90.
       The agent excluded it as a glitch and said nothing.
@@ -45,5 +47,5 @@ scenarios:
     replay_run: demo-bengaluru-2026-10
     until: "2026-10-16T01:40:00Z"
     description: >-
-      A normal Bengaluru night: Moderate, as usual. Nothing worth a message, and
-      every silent hour still has a logged reason.
+      A calm Bengaluru night: Moderate, and cleaner than usual for those hours.
+      Nothing worth a message, and every silent hour still has a logged reason.
