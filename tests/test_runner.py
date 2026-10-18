@@ -232,10 +232,3 @@ def test_qa_rule_12_pollutant_filter(conn):
     before = len(decisions(conn))
     feed(conn, [reading(n, 500.0, sensor=PM10)], T0 + n * HOUR + LAG, clock)
     assert len(decisions(conn)) == before  # pm10 hours never reach pm25 users
-
-
-@pytest.mark.xfail(reason="needs replay.harness (Task 13)", strict=False)
-def test_qa_det_12_live_equals_replay(conn):
-    from aqagent.replay.harness import replay  # noqa: F401
-
-    raise AssertionError("covered in tests/test_replay.py once the harness exists")
