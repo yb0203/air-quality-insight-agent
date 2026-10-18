@@ -2,7 +2,9 @@
 
 Status: draft for review · 2026-10-18 · Owner: Yashvi Bansal
 
-This document turns the Orange Invest take-home brief ("Proactive Air Quality Insight Agent") into a product vision plus a v1 scope. Every requirement in the brief has an ID here and a row in the traceability table (section 9), so nothing gets missed. Detailed specs come later and are listed in section 10.
+This document turns the Orange Invest take-home brief ("Proactive Air Quality Insight Agent") into a product vision plus a v1 scope. Every requirement in the brief has an ID here and a row in the traceability table (section 9), so nothing gets missed. Detailed specs are listed in section 10.
+
+This document is the **spec**: what to build and why. **How each requirement is verified** lives in [QA.csv](QA.csv): one row per test case, with `requirement_ids` tracing back to the IDs here and the brief (B1–B6, BX1–2, S1–5). Every requirement ID in this document has at least one test case. When a requirement changes, update its rows in QA.csv in the same change.
 
 ---
 
@@ -211,6 +213,8 @@ Rules let a user shape *when and about what* the agent speaks. They filter and t
 ---
 
 ## 9. Traceability to the brief
+
+Test cases for each row: filter [QA.csv](QA.csv) by `requirement_ids`.
 
 | ID | Brief requirement | Covered by |
 |---|---|---|

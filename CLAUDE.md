@@ -6,7 +6,11 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 Greenfield. No code, build tooling, or tests exist yet — only the brief in `docs/` (the PDFs are gitignored and exist only in the local checkout; the summary below is the canonical copy). Once a stack is chosen and scaffolded, add the real build/run/test commands (including how to run a single test) to this file.
 
-- `docs/requirements.md` — the agreed product vision, v1 scope, decisions log and traceability to every brief requirement. Read it before designing or building; when a decision changes, update its section 8.
+- `docs/requirements.md` — the spec: agreed product vision, v1 scope, decisions log and traceability to every brief requirement. Read it before designing or building; when a decision changes, update its section 8.
+- `docs/QA.csv` — test cases, one row each, `requirement_ids` tracing to requirements.md and the brief. Every requirement ID has at least one row. Changing a requirement means updating its rows in the same change; implemented tests should reference their `test_id`.
+- `docs/specs/S-A-openaq-and-schema.md` (OpenAQ API facts, chosen stations, storage schema), `S-B-rule-engine-research.md` (sources and rationale), `S-C-rule-engine-spec.md` (the detector, pipeline order, rule format, reason codes and all parameter defaults; the source of truth for decision logic).
+- `data/samples/` — 90 days of hourly PM2.5 for the 5 tracked stations plus 2 fixtures (Mumbai glitches, Delhi reference gaps); used for replay and tests without an API key.
+- `README.md` is for human readers only: plain prose about what, why and status. Keep agent instructions, internal conventions and spec detail out of it.
 - `docs/Assignment_Orange.pdf` — the take-home brief. This is the source of truth for scope.
 - `docs/Orange-Invest-JD-Founding-Engineer.pdf` — the role this assignment is for (Orange Invest, Founding Engineer). Useful for judging what the reviewers value: stateful async/event-driven backends, LLM infra (structured outputs, tool calling), queues (Temporal/BullMQ/Kafka/RabbitMQ), Redis, agent-step tracing and token/cost guardrails. Preferred stacks named there are TypeScript/Node.js or Python/FastAPI.
 
