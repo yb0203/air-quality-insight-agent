@@ -1,0 +1,101 @@
+[
+  {
+    "id": "dec_meera_20261015T1630",
+    "user_id": "meera",
+    "evaluated_at": "2026-10-15T16:30:00Z",
+    "outcome": "no_event",
+    "reason_code": "NO_TRIGGER",
+    "reason": "Normal for this hour.",
+    "trigger": "data"
+  },
+  {
+    "id": "dec_meera_20261015T1730",
+    "user_id": "meera",
+    "evaluated_at": "2026-10-15T17:30:00Z",
+    "outcome": "no_event",
+    "reason_code": "NO_TRIGGER",
+    "reason": "Normal for this hour.",
+    "trigger": "data"
+  },
+  {
+    "id": "dec_meera_20261015T1830",
+    "user_id": "meera",
+    "evaluated_at": "2026-10-15T18:30:00Z",
+    "outcome": "no_event",
+    "reason_code": "NO_TRIGGER",
+    "reason": "Normal for this hour.",
+    "trigger": "data"
+  },
+  {
+    "id": "dec_meera_20261015T1930",
+    "user_id": "meera",
+    "evaluated_at": "2026-10-15T19:30:00Z",
+    "outcome": "no_event",
+    "reason_code": "NO_TRIGGER",
+    "reason": "Normal for this hour.",
+    "trigger": "data"
+  },
+  {
+    "id": "dec_meera_20261015T2030",
+    "user_id": "meera",
+    "evaluated_at": "2026-10-15T20:30:00Z",
+    "outcome": "no_event",
+    "reason_code": "NO_TRIGGER",
+    "reason": "Normal for this hour.",
+    "trigger": "data"
+  },
+  {
+    "id": "dec_meera_20261015T2130",
+    "user_id": "meera",
+    "evaluated_at": "2026-10-15T21:30:00Z",
+    "outcome": "no_event",
+    "reason_code": "NO_TRIGGER",
+    "reason": "Normal for this hour.",
+    "trigger": "data"
+  },
+  {
+    "id": "dec_meera_20261015T2230",
+    "user_id": "meera",
+    "evaluated_at": "2026-10-15T22:30:00Z",
+    "outcome": "no_event",
+    "reason_code": "NO_TRIGGER",
+    "reason": "Normal for this hour.",
+    "trigger": "data"
+  },
+  {
+    "id": "dec_meera_20261015T2330",
+    "user_id": "meera",
+    "evaluated_at": "2026-10-15T23:30:00Z",
+    "outcome": "no_event",
+    "reason_code": "NO_TRIGGER",
+    "reason": "Normal for this hour.",
+    "trigger": "data"
+  },
+  {
+    "id": "dec_meera_20261016T0030",
+    "user_id": "meera",
+    "evaluated_at": "2026-10-16T00:30:00Z",
+    "outcome": "no_event",
+    "reason_code": "NO_TRIGGER",
+    "reason": "Normal for this hour.",
+    "trigger": "data"
+  },
+  {
+    "id": "dec_meera_20261016T0100",
+    "user_id": "meera",
+    "evaluated_at": "2026-10-16T01:00:00Z",
+    "outcome": "no_event",
+    "reason_code": "CHECKIN_QUIET",
+    "reason": "Morning check-in: Moderate, which is usual for a Bengaluru morning; nothing worth saying.",
+    "trigger": "clock"
+  },
+  {
+    "id": "dec_meera_20261016T0130",
+    "user_id": "meera",
+    "evaluated_at": "2026-10-16T01:30:00Z",
+    "outcome": "no_event",
+    "reason_code": "NO_TRIGGER",
+    "reason": "Normal for this hour.",
+    "trigger": "data"
+  }
+]

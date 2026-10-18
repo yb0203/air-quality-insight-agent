@@ -1,0 +1,191 @@
+[
+  {
+    "id": "dec_arjun_20261008T1630",
+    "user_id": "arjun",
+    "evaluated_at": "2026-10-08T16:30:00Z",
+    "outcome": "no_event",
+    "reason_code": "NO_TRIGGER",
+    "reason": "Rising, but not yet 3 hours above the climb bar.",
+    "trigger": "data"
+  },
+  {
+    "id": "dec_arjun_20261008T1730",
+    "user_id": "arjun",
+    "evaluated_at": "2026-10-08T17:30:00Z",
+    "outcome": "no_event",
+    "reason_code": "NO_TRIGGER",
+    "reason": "Rising, but not yet 3 hours above the climb bar.",
+    "trigger": "data"
+  },
+  {
+    "id": "dec_arjun_20261008T1830",
+    "user_id": "arjun",
+    "evaluated_at": "2026-10-08T18:30:00Z",
+    "outcome": "no_event",
+    "reason_code": "NO_TRIGGER",
+    "reason": "Rising, but not yet 3 hours above the climb bar.",
+    "trigger": "data"
+  },
+  {
+    "id": "dec_arjun_20261008T1930",
+    "user_id": "arjun",
+    "evaluated_at": "2026-10-08T19:30:00Z",
+    "outcome": "held",
+    "reason_code": "QUIET_HOURS_HELD",
+    "reason": "Climb opened an episode at Unhealthy; worth saying, but it is quiet hours, so held until morning.",
+    "trigger": "data"
+  },
+  {
+    "id": "dec_arjun_20261008T2030",
+    "user_id": "arjun",
+    "evaluated_at": "2026-10-08T20:30:00Z",
+    "outcome": "no_event",
+    "reason_code": "EPISODE_CONTINUES",
+    "reason": "Same episode, same band; nothing new to say.",
+    "trigger": "data"
+  },
+  {
+    "id": "dec_arjun_20261008T2130",
+    "user_id": "arjun",
+    "evaluated_at": "2026-10-08T21:30:00Z",
+    "outcome": "no_event",
+    "reason_code": "EPISODE_CONTINUES",
+    "reason": "Same episode, same band; nothing new to say.",
+    "trigger": "data"
+  },
+  {
+    "id": "dec_arjun_20261008T2230",
+    "user_id": "arjun",
+    "evaluated_at": "2026-10-08T22:30:00Z",
+    "outcome": "no_event",
+    "reason_code": "EPISODE_CONTINUES",
+    "reason": "Same episode, same band; nothing new to say.",
+    "trigger": "data"
+  },
+  {
+    "id": "dec_arjun_20261008T2330",
+    "user_id": "arjun",
+    "evaluated_at": "2026-10-08T23:30:00Z",
+    "outcome": "no_event",
+    "reason_code": "EPISODE_CONTINUES",
+    "reason": "Same episode, same band; nothing new to say.",
+    "trigger": "data"
+  },
+  {
+    "id": "dec_arjun_20261009T0030",
+    "user_id": "arjun",
+    "evaluated_at": "2026-10-09T00:30:00Z",
+    "outcome": "no_event",
+    "reason_code": "EPISODE_CONTINUES",
+    "reason": "Same episode, same band; nothing new to say.",
+    "trigger": "data"
+  },
+  {
+    "id": "dec_arjun_20261009T0100",
+    "user_id": "arjun",
+    "evaluated_at": "2026-10-09T01:00:00Z",
+    "outcome": "sent",
+    "reason_code": "SENT_CHECK_IN",
+    "reason": "Morning check-in: Unhealthy and well above a usual morning; absorbed 1 held notice.",
+    "trigger": "clock"
+  },
+  {
+    "id": "dec_arjun_20261009T0130",
+    "user_id": "arjun",
+    "evaluated_at": "2026-10-09T01:30:00Z",
+    "outcome": "no_event",
+    "reason_code": "EPISODE_CONTINUES",
+    "reason": "Same episode, same band; nothing new to say.",
+    "trigger": "data"
+  },
+  {
+    "id": "dec_arjun_20261009T0230",
+    "user_id": "arjun",
+    "evaluated_at": "2026-10-09T02:30:00Z",
+    "outcome": "no_event",
+    "reason_code": "EPISODE_CONTINUES",
+    "reason": "Same episode, same band; nothing new to say.",
+    "trigger": "data"
+  },
+  {
+    "id": "dec_arjun_20261009T0330",
+    "user_id": "arjun",
+    "evaluated_at": "2026-10-09T03:30:00Z",
+    "outcome": "no_event",
+    "reason_code": "EPISODE_CONTINUES",
+    "reason": "Same episode, same band; nothing new to say.",
+    "trigger": "data"
+  },
+  {
+    "id": "dec_arjun_20261009T0430",
+    "user_id": "arjun",
+    "evaluated_at": "2026-10-09T04:30:00Z",
+    "outcome": "no_event",
+    "reason_code": "EPISODE_CONTINUES",
+    "reason": "Same episode, same band; nothing new to say.",
+    "trigger": "data"
+  },
+  {
+    "id": "dec_arjun_20261009T0530",
+    "user_id": "arjun",
+    "evaluated_at": "2026-10-09T05:30:00Z",
+    "outcome": "no_event",
+    "reason_code": "EPISODE_CONTINUES",
+    "reason": "Same episode, same band; nothing new to say.",
+    "trigger": "data"
+  },
+  {
+    "id": "dec_arjun_20261009T0630",
+    "user_id": "arjun",
+    "evaluated_at": "2026-10-09T06:30:00Z",
+    "outcome": "no_event",
+    "reason_code": "EPISODE_CONTINUES",
+    "reason": "Same episode, same band; nothing new to say.",
+    "trigger": "data"
+  },
+  {
+    "id": "dec_arjun_20261009T0730",
+    "user_id": "arjun",
+    "evaluated_at": "2026-10-09T07:30:00Z",
+    "outcome": "no_event",
+    "reason_code": "EPISODE_CONTINUES",
+    "reason": "Same episode, same band; nothing new to say.",
+    "trigger": "data"
+  },
+  {
+    "id": "dec_arjun_20261009T0830",
+    "user_id": "arjun",
+    "evaluated_at": "2026-10-09T08:30:00Z",
+    "outcome": "no_event",
+    "reason_code": "EPISODE_CONTINUES",
+    "reason": "Same episode, same band; nothing new to say.",
+    "trigger": "data"
+  },
+  {
+    "id": "dec_arjun_20261009T0930",
+    "user_id": "arjun",
+    "evaluated_at": "2026-10-09T09:30:00Z",
+    "outcome": "no_event",
+    "reason_code": "EPISODE_CONTINUES",
+    "reason": "Same episode, same band; nothing new to say.",
+    "trigger": "data"
+  },
+  {
+    "id": "dec_arjun_20261009T1030",
+    "user_id": "arjun",
+    "evaluated_at": "2026-10-09T10:30:00Z",
+    "outcome": "no_event",
+    "reason_code": "EPISODE_CONTINUES",
+    "reason": "Same episode, same band; nothing new to say.",
+    "trigger": "data"
+  },
+  {
+    "id": "dec_arjun_20261009T1130",
+    "user_id": "arjun",
+    "evaluated_at": "2026-10-09T11:30:00Z",
+    "outcome": "sent",
+    "reason_code": "SENT_CLEARED",
+    "reason": "Episode closed after 16 hours (4 calm hours); long enough to be worth saying.",
+    "trigger": "data"
+  }
+]

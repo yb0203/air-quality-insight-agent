@@ -1,0 +1,49 @@
+# Demo scenarios, one filter chip each. The watch shows `user_id`'s feed from
+# `replay_run` as it stood at `until` (UTC), the replayed "now".
+# `limit` (optional) keeps only the newest N notices, for a focused shot.
+scenarios:
+  - id: delhi-smog-night
+    label: Delhi smog night
+    user_id: arjun
+    replay_run: demo-delhi-2026-10
+    until: "2026-10-09T11:40:00Z"
+    description: >-
+      Arjun runs at 06:30. The air climbed from 1am; the notice was held through
+      quiet hours and folded into one check-in at 06:30, then "back to normal" at 17:00.
+
+  - id: back-to-normal
+    label: Back to normal
+    user_id: arjun
+    replay_run: demo-delhi-2026-10
+    until: "2026-10-09T11:40:00Z"
+    limit: 1
+    description: >-
+      The same Delhi episode closing. It lasted 16 hours, so the all-clear is worth
+      saying, and it suggests what to do with the better air.
+
+  - id: helsinki-smoke
+    label: Helsinki smoke
+    user_id: aino
+    replay_run: demo-helsinki-2026-08
+    until: "2026-08-24T06:25:00Z"
+    description: >-
+      Aino has asthma and high sensitivity. Smoke took Helsinki to about 27 µg/m³
+      against a usual 4. Still "Moderate", but very unusual for this city.
+
+  - id: glitch-ignored
+    label: Glitch ignored
+    user_id: rohan
+    replay_run: demo-mumbai-2026-10
+    until: "2026-10-14T08:40:00Z"
+    description: >-
+      A Mumbai sensor reported 980 µg/m³ for one hour between readings of 75 and 90.
+      The agent excluded it as a glitch and said nothing.
+
+  - id: quiet-night
+    label: Quiet night
+    user_id: meera
+    replay_run: demo-bengaluru-2026-10
+    until: "2026-10-16T01:40:00Z"
+    description: >-
+      A normal Bengaluru night: Moderate, as usual. Nothing worth a message, and
+      every silent hour still has a logged reason.

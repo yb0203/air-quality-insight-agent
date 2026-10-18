@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ scenario.label }} · Air quality agent (watch demo)</title>
+  <link rel="stylesheet" href="{{ url_for('static', path='watch.css') }}">
+</head>
+<body>
+  {# Everything outside .watch is the demo frame; everything inside is the product. #}
+  <nav class="chips" aria-label="Demo scenarios">
+    {% for s in scenarios %}
+      <a class="chip{% if s.id == scenario.id %} active{% endif %}"
+         href="/?scenario={{ s.id }}"
+         {% if s.id == scenario.id %}aria-current="page"{% endif %}>{{ s.label }}</a>
+    {% endfor %}
+  </nav>
+
+  <main class="stage">
+    <div class="watch" data-view="{{ view }}">
+      <span class="crown" aria-hidden="true"></span>
+      <span class="side-button" aria-hidden="true"></span>
+      <div class="screen">
+        <header class="status">
+          {% if view == "why" %}
+            <a class="back" href="/?scenario={{ scenario.id }}">‹ Back</a>
+          {% else %}
+            <span class="status-app">Air</span>
+          {% endif %}
+          {% if view != "empty" %}<span class="status-time">{{ now_local.strftime("%H:%M") if now_local else "--:--" }}</span>{% endif %}
+        </header>
+
+        {% if view == "feed" %}
+          <ol class="stack">
+            {% for c in cards %}
+              {% set n = c.n %}
+              <li>
+                <a class="card band-{{ n.band }}" href="/why/{{ n.id }}?scenario={{ scenario.id }}" data-notification="{{ n.id }}">
+                  <div class="card-head">
+                    <span class="card-app"><span class="dot"></span>{{ user.city }}</span>
+                    <span class="card-time">{{ c.ago }}</span>
+                  </div>
+                  <p class="card-body">{{ n.body }}</p>
+                  <span class="action">{{ n.next_action }}</span>
+                </a>
+              </li>
+            {% endfor %}
+          </ol>
+
+        {% elif view == "why" %}
+          <section class="why band-{{ n.band }}">
+            <p class="why-kicker"><span class="dot"></span>{{ user.city }} · {{ ago }}</p>
+            <h1 class="why-title">Why you got this</h1>
+            <ul class="why-lines">
+              {% for line in lines %}<li>{{ line }}</li>{% endfor %}
+            </ul>
+            <p class="why-band">When sent: {{ band_labels[n.band] }}</p>
+          </section>
+
+        {% elif view == "empty" %}
+          <section class="calm">
+            <p class="calm-time">{{ now_local.strftime("%H:%M") }}</p>
+            <p class="calm-date">{{ now_local.strftime("%a") }} {{ now_local.day }} {{ now_local.strftime("%b") }}</p>
+            <p class="calm-headline"><span class="ring" aria-hidden="true"></span>All clear in {{ user.city }}</p>
+            {% if silence %}<p class="calm-why">{{ silence }}</p>{% endif %}
+          </section>
+
+        {% else %}
+          <section class="calm">
+            <p class="calm-headline">Can't reach the agent</p>
+            <p class="calm-why">Check that the core API is running.</p>
+          </section>
+        {% endif %}
+      </div>
+    </div>
+  </main>
+
+  <footer class="frame-notes">
+    <p class="scenario-desc">{{ scenario.description }}</p>
+    {% if view == "why" %}
+      <p class="decision-ref">decision: {{ decision.reason_code }} at {{ decision.evaluated_at.strftime("%Y-%m-%d %H:%M") }} UTC ({{ decision.trigger or "data" }} trigger)</p>
+    {% elif view == "error" %}
+      <p class="decision-ref">{{ error }}</p>
+    {% endif %}
+    <p class="caption">data: replay of real OpenAQ data · demo only</p>
+  </footer>
+</body>
+</html>
